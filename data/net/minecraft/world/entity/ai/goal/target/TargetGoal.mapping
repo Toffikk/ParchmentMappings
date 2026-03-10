@@ -1,0 +1,15 @@
+CLASS net/minecraft/world/entity/ai/goal/target/TargetGoal
+	METHOD <init> (Lnet/minecraft/world/entity/Mob;Z)V
+		ARG 1 mob
+		ARG 2 mustSee
+	METHOD <init> (Lnet/minecraft/world/entity/Mob;ZZ)V
+		ARG 1 mob
+		ARG 2 mustSee
+		ARG 3 mustReach
+	METHOD canAttack (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/ai/targeting/TargetingConditions;)Z
+		ARG 1 target
+		ARG 2 targetConditions
+	METHOD canReach (Lnet/minecraft/world/entity/LivingEntity;)Z
+		ARG 1 target
+	METHOD setUnseenMemoryTicks (I)Lnet/minecraft/world/entity/ai/goal/target/TargetGoal;
+		ARG 1 unseenMemoryTicks

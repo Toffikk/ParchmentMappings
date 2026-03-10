@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/entity/boss/enderdragon/phases/DragonSittingScanningPhase
+	METHOD lambda$new$0 (Lnet/minecraft/world/entity/boss/enderdragon/EnderDragon;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/server/level/ServerLevel;)Z
+		ARG 1 target
+		ARG 2 level

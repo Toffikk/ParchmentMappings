@@ -1,0 +1,9 @@
+CLASS net/minecraft/network/protocol/game/ServerboundJigsawGeneratePacket
+	METHOD <init> (Lnet/minecraft/core/BlockPos;IZ)V
+		ARG 1 blockPos
+		ARG 2 levels
+		ARG 3 keepJigsaws
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 input
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 output

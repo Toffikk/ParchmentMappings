@@ -1,0 +1,12 @@
+CLASS net/minecraft/world/entity/animal/fish/AbstractSchoolingFish
+	METHOD addFollowers (Ljava/util/stream/Stream;)V
+		ARG 1 abstractSchoolingFishStream
+	METHOD lambda$addFollowers$0 (Lnet/minecraft/world/entity/animal/fish/AbstractSchoolingFish;)Z
+		ARG 1 f
+	METHOD lambda$addFollowers$1 (Lnet/minecraft/world/entity/animal/fish/AbstractSchoolingFish;)V
+		ARG 1 otherFish
+	METHOD startFollowing (Lnet/minecraft/world/entity/animal/fish/AbstractSchoolingFish;)Lnet/minecraft/world/entity/animal/fish/AbstractSchoolingFish;
+		ARG 1 leader
+	CLASS SchoolSpawnGroupData
+		METHOD <init> (Lnet/minecraft/world/entity/animal/fish/AbstractSchoolingFish;)V
+			ARG 1 leader

@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/entity/ai/behavior/WorkAtPoi
+	METHOD lambda$start$0 (Lnet/minecraft/world/entity/ai/Brain;Lnet/minecraft/core/GlobalPos;)V
+		ARG 1 globalPos
+	METHOD useWorkstation (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/npc/villager/Villager;)V
+		ARG 1 level
+		ARG 2 body

@@ -1,0 +1,13 @@
+CLASS net/minecraft/world/entity/ai/behavior/warden/TryToSniff
+	METHOD lambda$create$0 (Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;J)Z
+		ARG 3 level
+		ARG 4 body
+		ARG 5 timestamp
+	METHOD lambda$create$1 (Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;)Lnet/minecraft/world/entity/ai/behavior/declarative/Trigger;
+		ARG 0 sniffing
+		ARG 1 walkTarget
+		ARG 2 cooldown
+		ARG 3 attackable
+		ARG 4 disturbance
+	METHOD lambda$create$2 (Lnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

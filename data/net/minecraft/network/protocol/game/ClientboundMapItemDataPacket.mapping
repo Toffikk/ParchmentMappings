@@ -1,0 +1,11 @@
+CLASS net/minecraft/network/protocol/game/ClientboundMapItemDataPacket
+	METHOD <init> (Lnet/minecraft/world/level/saveddata/maps/MapId;BZLjava/util/Collection;Lnet/minecraft/world/level/saveddata/maps/MapItemSavedData$MapPatch;)V
+		ARG 1 mapId
+		ARG 2 scale
+		ARG 3 locked
+		ARG 4 decorations
+		ARG 5 colorPatch
+	METHOD applyToMap (Lnet/minecraft/world/level/saveddata/maps/MapItemSavedData;)V
+		ARG 1 map
+	METHOD lambda$applyToMap$0 (Lnet/minecraft/world/level/saveddata/maps/MapItemSavedData;Lnet/minecraft/world/level/saveddata/maps/MapItemSavedData$MapPatch;)V
+		ARG 1 patch

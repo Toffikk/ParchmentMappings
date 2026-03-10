@@ -1,0 +1,4 @@
+CLASS net/minecraft/util/parsing/packrat/commands/StringReaderTerms
+	CLASS TerminalCharacters
+		METHOD isAccepted (C)Z
+			ARG 1 value

@@ -1,0 +1,8 @@
+CLASS net/minecraft/core/component/predicates/AttributeModifiersPredicate
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	CLASS EntryPredicate
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+		METHOD test (Ljava/lang/Object;)Z
+			ARG 1 value

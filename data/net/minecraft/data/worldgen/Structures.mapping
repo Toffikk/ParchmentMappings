@@ -1,0 +1,11 @@
+CLASS net/minecraft/data/worldgen/Structures
+	METHOD bootstrap (Lnet/minecraft/data/worldgen/BootstrapContext;)V
+		ARG 0 context
+	METHOD lambda$bootstrap$0 (Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/entity/MobCategory;
+		ARG 0 c
+	METHOD lambda$bootstrap$1 (Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/level/levelgen/structure/StructureSpawnOverride;
+		ARG 0 c
+	METHOD lambda$bootstrap$2 (Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/entity/MobCategory;
+		ARG 0 c
+	METHOD lambda$bootstrap$3 (Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/level/levelgen/structure/StructureSpawnOverride;
+		ARG 0 c

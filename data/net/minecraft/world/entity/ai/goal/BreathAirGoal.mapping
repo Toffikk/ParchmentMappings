@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/entity/ai/goal/BreathAirGoal
+	METHOD <init> (Lnet/minecraft/world/entity/PathfinderMob;)V
+		ARG 1 mob
+	METHOD givesAir (Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 level
+		ARG 2 pos

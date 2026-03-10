@@ -1,0 +1,18 @@
+CLASS net/minecraft/world/entity/animal/fish/Pufferfish
+	METHOD getScale (I)F
+		ARG 0 state
+	METHOD lambda$aiStep$1 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/Mob;)Z
+		ARG 2 target
+	METHOD lambda$static$0 (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/server/level/ServerLevel;)Z
+		ARG 0 target
+		ARG 1 level
+	METHOD setPuffState (I)V
+		ARG 1 state
+	METHOD touch (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/Mob;)V
+		ARG 1 level
+		ARG 2 mob
+	CLASS PufferfishPuffGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/fish/Pufferfish;)V
+			ARG 1 fish
+		METHOD lambda$canUse$0 (Lnet/minecraft/world/entity/LivingEntity;)Z
+			ARG 1 target

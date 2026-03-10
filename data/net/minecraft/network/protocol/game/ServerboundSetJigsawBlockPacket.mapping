@@ -1,0 +1,14 @@
+CLASS net/minecraft/network/protocol/game/ServerboundSetJigsawBlockPacket
+	METHOD <init> (Lnet/minecraft/core/BlockPos;Lnet/minecraft/resources/Identifier;Lnet/minecraft/resources/Identifier;Lnet/minecraft/resources/Identifier;Ljava/lang/String;Lnet/minecraft/world/level/block/entity/JigsawBlockEntity$JointType;II)V
+		ARG 1 blockPos
+		ARG 2 name
+		ARG 3 target
+		ARG 4 pool
+		ARG 5 finalState
+		ARG 6 joint
+		ARG 7 selectionPriority
+		ARG 8 placementPriority
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 input
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 output

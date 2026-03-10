@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/entity/animal/squid/Squid
+	METHOD rotateVector (Lnet/minecraft/world/phys/Vec3;)Lnet/minecraft/world/phys/Vec3;
+		ARG 1 vec
+	CLASS SquidRandomMovementGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/squid/Squid;)V
+			ARG 1 squid

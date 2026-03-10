@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/entity/ai/goal/BegGoal
+	METHOD <init> (Lnet/minecraft/world/entity/animal/wolf/Wolf;F)V
+		ARG 1 wolf
+		ARG 2 lookDistance
+	METHOD playerHoldingInteresting (Lnet/minecraft/world/entity/player/Player;)Z
+		ARG 1 player

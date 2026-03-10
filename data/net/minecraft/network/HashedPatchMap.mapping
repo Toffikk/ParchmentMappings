@@ -1,0 +1,9 @@
+CLASS net/minecraft/network/HashedPatchMap
+	METHOD create (Lnet/minecraft/core/component/DataComponentPatch;Lnet/minecraft/network/HashedPatchMap$HashGenerator;)Lnet/minecraft/network/HashedPatchMap;
+		ARG 0 patch
+		ARG 1 hasher
+	METHOD lambda$create$0 (Ljava/util/Map;Lnet/minecraft/network/HashedPatchMap$HashGenerator;Lnet/minecraft/core/component/TypedDataComponent;)V
+		ARG 2 e
+	METHOD matches (Lnet/minecraft/core/component/DataComponentPatch;Lnet/minecraft/network/HashedPatchMap$HashGenerator;)Z
+		ARG 1 patch
+		ARG 2 hasher

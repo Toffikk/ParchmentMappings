@@ -1,0 +1,14 @@
+CLASS net/minecraft/world/entity/ai/behavior/WorkAtComposter
+	METHOD compostItems (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/npc/villager/Villager;Lnet/minecraft/core/GlobalPos;Lnet/minecraft/world/level/block/state/BlockState;)V
+		ARG 1 level
+		ARG 2 body
+		ARG 3 jobSitePos
+		ARG 4 blockState
+	METHOD makeBread (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/npc/villager/Villager;)V
+		ARG 1 level
+		ARG 2 body
+	METHOD spawnComposterFillEffects (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V
+		ARG 1 level
+		ARG 2 blockState
+		ARG 3 pos
+		ARG 4 newState

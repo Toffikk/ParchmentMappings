@@ -1,0 +1,12 @@
+CLASS net/minecraft/world/attribute/modifier/FloatModifier
+	METHOD lambda$static$0 (Ljava/lang/Float;Ljava/lang/Float;)Ljava/lang/Float;
+		ARG 0 a
+		ARG 1 b
+	METHOD lambda$static$1 (Ljava/lang/Float;Ljava/lang/Float;)Ljava/lang/Float;
+		ARG 0 a
+		ARG 1 b
+	CLASS 1
+		METHOD lambda$argumentKeyframeLerp$0 (FLnet/minecraft/world/attribute/modifier/FloatWithAlpha;Lnet/minecraft/world/attribute/modifier/FloatWithAlpha;)Lnet/minecraft/world/attribute/modifier/FloatWithAlpha;
+			ARG 0 alpha
+			ARG 1 from
+			ARG 2 to

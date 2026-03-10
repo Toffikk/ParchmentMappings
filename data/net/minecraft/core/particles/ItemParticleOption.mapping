@@ -1,0 +1,16 @@
+CLASS net/minecraft/core/particles/ItemParticleOption
+	METHOD <init> (Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 type
+		ARG 2 itemStack
+	METHOD codec (Lnet/minecraft/core/particles/ParticleType;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 type
+	METHOD lambda$codec$0 (Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/core/particles/ItemParticleOption;
+		ARG 1 stack
+	METHOD lambda$codec$1 (Lnet/minecraft/core/particles/ItemParticleOption;)Lnet/minecraft/world/item/ItemStack;
+		ARG 0 o
+	METHOD lambda$streamCodec$2 (Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/core/particles/ItemParticleOption;
+		ARG 1 stack
+	METHOD lambda$streamCodec$3 (Lnet/minecraft/core/particles/ItemParticleOption;)Lnet/minecraft/world/item/ItemStack;
+		ARG 0 o
+	METHOD streamCodec (Lnet/minecraft/core/particles/ParticleType;)Lnet/minecraft/network/codec/StreamCodec;
+		ARG 0 type

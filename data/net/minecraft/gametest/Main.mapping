@@ -1,0 +1,5 @@
+CLASS net/minecraft/gametest/Main
+	METHOD lambda$main$0 (Ljava/lang/String;)V
+		ARG 0 path
+	METHOD main ([Ljava/lang/String;)V
+		ARG 0 args

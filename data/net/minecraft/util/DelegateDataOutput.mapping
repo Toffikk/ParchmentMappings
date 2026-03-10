@@ -1,0 +1,5 @@
+CLASS net/minecraft/util/DelegateDataOutput
+	METHOD <init> (Ljava/io/DataOutput;)V
+		ARG 1 parent
+	METHOD writeUTF (Ljava/lang/String;)V
+		ARG 1 s

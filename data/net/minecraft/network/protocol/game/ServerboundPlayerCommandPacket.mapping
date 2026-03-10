@@ -1,0 +1,12 @@
+CLASS net/minecraft/network/protocol/game/ServerboundPlayerCommandPacket
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 input
+	METHOD <init> (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/network/protocol/game/ServerboundPlayerCommandPacket$Action;)V
+		ARG 1 entity
+		ARG 2 action
+	METHOD <init> (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/network/protocol/game/ServerboundPlayerCommandPacket$Action;I)V
+		ARG 1 entity
+		ARG 2 action
+		ARG 3 data
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 output

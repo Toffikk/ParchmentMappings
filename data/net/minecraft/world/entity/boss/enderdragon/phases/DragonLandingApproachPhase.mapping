@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/entity/boss/enderdragon/phases/DragonLandingApproachPhase
+	METHOD findNewTarget (Lnet/minecraft/server/level/ServerLevel;)V
+		ARG 1 level

@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/entity/ai/behavior/CrossbowAttack
+	METHOD crossbowAttack (Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/entity/LivingEntity;)V
+		ARG 1 body
+		ARG 2 target
+	METHOD getAttackTarget (Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/entity/LivingEntity;
+		ARG 0 body
+	METHOD lookAtTarget (Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/entity/LivingEntity;)V
+		ARG 1 body
+		ARG 2 target

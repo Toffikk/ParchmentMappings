@@ -1,0 +1,11 @@
+CLASS net/minecraft/nbt/Tag
+	METHOD accept (Lnet/minecraft/nbt/StreamTagVisitor;)Lnet/minecraft/nbt/StreamTagVisitor$ValueResult;
+		ARG 1 visitor
+	METHOD accept (Lnet/minecraft/nbt/TagVisitor;)V
+		ARG 1 visitor
+	METHOD acceptAsRoot (Lnet/minecraft/nbt/StreamTagVisitor;)V
+		ARG 1 output
+	METHOD lambda$asBoolean$0 (Ljava/lang/Byte;)Ljava/lang/Boolean;
+		ARG 0 b
+	METHOD write (Ljava/io/DataOutput;)V
+		ARG 1 output

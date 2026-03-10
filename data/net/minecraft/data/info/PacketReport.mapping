@@ -1,0 +1,11 @@
+CLASS net/minecraft/data/info/PacketReport
+	METHOD <init> (Lnet/minecraft/data/PackOutput;)V
+		ARG 1 output
+	METHOD lambda$serializePackets$0 (Lcom/google/gson/JsonObject;Lnet/minecraft/network/protocol/PacketType;I)V
+		ARG 1 type
+		ARG 2 networkId
+	METHOD lambda$serializePackets$1 (Lcom/google/gson/JsonObject;Lnet/minecraft/network/ProtocolInfo$Details;)V
+		ARG 1 flow
+	METHOD lambda$serializePackets$2 (Lcom/google/gson/JsonObject;Lnet/minecraft/network/ConnectionProtocol;Ljava/util/List;)V
+		ARG 1 protocolId
+		ARG 2 flows

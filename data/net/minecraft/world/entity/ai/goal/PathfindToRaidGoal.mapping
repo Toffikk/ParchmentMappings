@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/entity/ai/goal/PathfindToRaidGoal
+	METHOD <init> (Lnet/minecraft/world/entity/raid/Raider;)V
+		ARG 1 mob
+	METHOD lambda$recruitNearby$0 (Lnet/minecraft/world/entity/raid/Raider;)Z
+		ARG 0 mob
+	METHOD recruitNearby (Lnet/minecraft/world/entity/raid/Raid;)V
+		ARG 1 raid

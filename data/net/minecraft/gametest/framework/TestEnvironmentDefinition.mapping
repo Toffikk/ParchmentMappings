@@ -1,0 +1,51 @@
+CLASS net/minecraft/gametest/framework/TestEnvironmentDefinition
+	METHOD bootstrap (Lnet/minecraft/core/Registry;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 registry
+	METHOD lambda$static$0 (Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 c
+	METHOD setup (Lnet/minecraft/server/level/ServerLevel;)V
+		ARG 1 level
+	METHOD teardown (Lnet/minecraft/server/level/ServerLevel;)V
+		ARG 1 level
+	CLASS AllOf
+		METHOD <init> ([Lnet/minecraft/gametest/framework/TestEnvironmentDefinition;)V
+			ARG 1 defs
+		METHOD lambda$setup$1 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/Holder;)V
+			ARG 1 b
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+		METHOD lambda$teardown$2 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/Holder;)V
+			ARG 1 b
+	CLASS Functions
+		METHOD lambda$setup$1 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/resources/Identifier;)V
+			ARG 1 p
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+		METHOD lambda$teardown$2 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/resources/Identifier;)V
+			ARG 1 p
+		METHOD run (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/resources/Identifier;)V
+			ARG 0 level
+			ARG 1 functionId
+	CLASS SetGameRules
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+		METHOD lambda$teardown$1 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/gamerules/GameRule;)V
+			ARG 2 gameRule
+		METHOD resetRule (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/gamerules/GameRule;)V
+			ARG 1 level
+			ARG 2 gameRule
+	CLASS TimeOfDay
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+	CLASS Weather
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+		CLASS Type
+			METHOD <init> (Ljava/lang/String;ILjava/lang/String;IIZZ)V
+				ARG 3 id
+				ARG 4 clearTime
+				ARG 5 rainTime
+				ARG 6 raining
+				ARG 7 thundering
+			METHOD apply (Lnet/minecraft/server/level/ServerLevel;)V
+				ARG 1 level

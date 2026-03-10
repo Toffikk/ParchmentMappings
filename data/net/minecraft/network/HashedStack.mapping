@@ -1,0 +1,11 @@
+CLASS net/minecraft/network/HashedStack
+	METHOD create (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/network/HashedPatchMap$HashGenerator;)Lnet/minecraft/network/HashedStack;
+		ARG 0 itemStack
+		ARG 1 hasher
+	METHOD lambda$static$0 (Ljava/util/Optional;)Lnet/minecraft/network/HashedStack;
+		ARG 0 actualItem
+	METHOD lambda$static$1 (Lnet/minecraft/network/HashedStack;)Ljava/util/Optional;
+		ARG 0 hashedStack
+	METHOD matches (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/network/HashedPatchMap$HashGenerator;)Z
+		ARG 1 stack
+		ARG 2 hasher

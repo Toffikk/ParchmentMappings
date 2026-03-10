@@ -1,0 +1,30 @@
+CLASS net/minecraft/world/entity/animal/parrot/Parrot
+	METHOD checkParrotSpawnRules (Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/core/BlockPos;Lnet/minecraft/util/RandomSource;)Z
+		ARG 0 type
+		ARG 1 level
+		ARG 2 spawnReason
+		ARG 3 pos
+		ARG 4 random
+	METHOD getAmbient (Lnet/minecraft/world/level/Level;Lnet/minecraft/util/RandomSource;)Lnet/minecraft/sounds/SoundEvent;
+		ARG 0 level
+		ARG 1 random
+	METHOD getImitatedSound (Lnet/minecraft/world/entity/EntityType;)Lnet/minecraft/sounds/SoundEvent;
+		ARG 0 id
+	METHOD getPitch (Lnet/minecraft/util/RandomSource;)F
+		ARG 0 random
+	METHOD imitateNearbyMobs (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/Entity;)Z
+		ARG 0 level
+		ARG 1 entity
+	METHOD lambda$static$0 (Ljava/util/HashMap;)V
+		ARG 0 map
+	METHOD setVariant (Lnet/minecraft/world/entity/animal/parrot/Parrot$Variant;)V
+		ARG 1 variant
+	CLASS 1
+		METHOD test (Ljava/lang/Object;)Z
+			ARG 1 input
+	CLASS Variant
+		METHOD <init> (Ljava/lang/String;IILjava/lang/String;)V
+			ARG 3 id
+			ARG 4 name
+		METHOD byId (I)Lnet/minecraft/world/entity/animal/parrot/Parrot$Variant;
+			ARG 0 id

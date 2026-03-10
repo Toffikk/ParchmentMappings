@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/entity/ai/behavior/HarvestFarmland
+	METHOD getValidFarmland (Lnet/minecraft/server/level/ServerLevel;)Lnet/minecraft/core/BlockPos;
+		ARG 1 level
+	METHOD validPos (Lnet/minecraft/core/BlockPos;Lnet/minecraft/server/level/ServerLevel;)Z
+		ARG 1 blockPos
+		ARG 2 level

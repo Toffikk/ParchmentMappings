@@ -1,0 +1,10 @@
+CLASS net/minecraft/network/VarInt
+	METHOD getByteSize (I)I
+		ARG 0 value
+	METHOD hasContinuationBit (B)Z
+		ARG 0 in
+	METHOD read (Lio/netty/buffer/ByteBuf;)I
+		ARG 0 input
+	METHOD write (Lio/netty/buffer/ByteBuf;I)Lio/netty/buffer/ByteBuf;
+		ARG 0 output
+		ARG 1 value

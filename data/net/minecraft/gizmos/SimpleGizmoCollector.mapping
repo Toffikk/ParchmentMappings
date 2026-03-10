@@ -1,0 +1,10 @@
+CLASS net/minecraft/gizmos/SimpleGizmoCollector
+	METHOD addTemporaryGizmos (Ljava/util/Collection;)V
+		ARG 1 gizmos
+	METHOD lambda$drainGizmos$0 (JLnet/minecraft/gizmos/SimpleGizmoCollector$GizmoInstance;)Z
+		ARG 2 gizmo
+	CLASS GizmoInstance
+		METHOD <init> (Lnet/minecraft/gizmos/Gizmo;)V
+			ARG 1 gizmo
+		METHOD getAlphaMultiplier (J)F
+			ARG 1 currentMillis

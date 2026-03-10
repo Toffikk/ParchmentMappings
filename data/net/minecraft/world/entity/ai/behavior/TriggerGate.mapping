@@ -1,0 +1,15 @@
+CLASS net/minecraft/world/entity/ai/behavior/TriggerGate
+	METHOD lambda$triggerGate$0 (Lnet/minecraft/world/entity/ai/behavior/ShufflingList;Lcom/mojang/datafixers/util/Pair;)V
+		ARG 1 entry
+	METHOD lambda$triggerGate$1 (Lnet/minecraft/world/entity/ai/behavior/GateBehavior$OrderPolicy;Lnet/minecraft/world/entity/ai/behavior/ShufflingList;Lnet/minecraft/world/entity/ai/behavior/GateBehavior$RunningPolicy;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;J)Z
+		ARG 3 level
+		ARG 4 body
+		ARG 5 timestamp
+	METHOD lambda$triggerGate$2 (Lnet/minecraft/world/entity/ai/behavior/GateBehavior$OrderPolicy;Lnet/minecraft/world/entity/ai/behavior/ShufflingList;Lnet/minecraft/world/entity/ai/behavior/GateBehavior$RunningPolicy;Lnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 3 i
+	METHOD triggerGate (Ljava/util/List;Lnet/minecraft/world/entity/ai/behavior/GateBehavior$OrderPolicy;Lnet/minecraft/world/entity/ai/behavior/GateBehavior$RunningPolicy;)Lnet/minecraft/world/entity/ai/behavior/OneShot;
+		ARG 0 weightedBehaviors
+		ARG 1 orderPolicy
+		ARG 2 runningPolicy
+	METHOD triggerOneShuffled (Ljava/util/List;)Lnet/minecraft/world/entity/ai/behavior/OneShot;
+		ARG 0 weightedTriggers

@@ -1,0 +1,13 @@
+CLASS net/minecraft/world/entity/animal/polarbear/PolarBear
+	METHOD checkPolarBearSpawnRules (Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/core/BlockPos;Lnet/minecraft/util/RandomSource;)Z
+		ARG 0 type
+		ARG 1 level
+		ARG 2 spawnReason
+		ARG 3 pos
+		ARG 4 random
+	METHOD getStandingAnimationScale (F)F
+		ARG 1 a
+	METHOD lambda$registerGoals$0 (Lnet/minecraft/world/entity/PathfinderMob;)Lnet/minecraft/tags/TagKey;
+		ARG 0 bear
+	METHOD setStanding (Z)V
+		ARG 1 value

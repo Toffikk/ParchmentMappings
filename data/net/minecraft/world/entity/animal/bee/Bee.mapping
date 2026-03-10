@@ -1,0 +1,72 @@
+CLASS net/minecraft/world/entity/animal/bee/Bee
+	METHOD attractsBees (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 0 state
+	METHOD closerThan (Lnet/minecraft/core/BlockPos;I)Z
+		ARG 1 targetPos
+		ARG 2 distance
+	METHOD doesHiveHaveSpace (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 hivePos
+	METHOD getFlag (I)Z
+		ARG 1 flag
+	METHOD getRollAmount (F)F
+		ARG 1 a
+	METHOD isTooFarAway (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 targetPos
+	METHOD lambda$registerGoals$0 (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 i
+	METHOD pathfindRandomlyTowards (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 targetPos
+	METHOD setFlag (IZ)V
+		ARG 1 flag
+		ARG 2 value
+	METHOD setHasNectar (Z)V
+		ARG 1 hasNectar
+	METHOD setHasStung (Z)V
+		ARG 1 hasStung
+	METHOD setHivePos (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 hivePos
+	METHOD setRolling (Z)V
+		ARG 1 rolling
+	METHOD setSavedFlowerPos (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 savedFlowerPos
+	METHOD setStayOutOfHiveCountdown (I)V
+		ARG 1 ticks
+	METHOD spawnFluidParticle (Lnet/minecraft/world/level/Level;DDDDDLnet/minecraft/core/particles/ParticleOptions;)V
+		ARG 1 level
+		ARG 2 x1
+		ARG 4 x2
+		ARG 6 z1
+		ARG 8 z2
+		ARG 10 y
+		ARG 12 dripParticle
+	CLASS BeeAttackGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/bee/Bee;Lnet/minecraft/world/entity/PathfinderMob;DZ)V
+			ARG 2 mob
+			ARG 3 speedModifier
+			ARG 5 trackTarget
+	CLASS BeeBecomeAngryTargetGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/bee/Bee;)V
+			ARG 1 bee
+	CLASS BeeGoToHiveGoal
+		METHOD blacklistTarget (Lnet/minecraft/core/BlockPos;)V
+			ARG 1 targetPos
+		METHOD hasReachedTarget (Lnet/minecraft/core/BlockPos;)Z
+			ARG 1 targetPos
+		METHOD isTargetBlacklisted (Lnet/minecraft/core/BlockPos;)Z
+			ARG 1 targetPos
+		METHOD pathfindDirectlyTowards (Lnet/minecraft/core/BlockPos;)Z
+			ARG 1 targetPos
+	CLASS BeeHurtByOtherGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/bee/Bee;Lnet/minecraft/world/entity/animal/bee/Bee;)V
+			ARG 2 bee
+	CLASS BeeLocateHiveGoal
+		METHOD lambda$findNearbyHivesWithSpace$0 (Lnet/minecraft/core/Holder;)Z
+			ARG 0 p
+		METHOD lambda$findNearbyHivesWithSpace$1 (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;)D
+			ARG 1 pos
+	CLASS BeeLookControl
+		METHOD <init> (Lnet/minecraft/world/entity/animal/bee/Bee;Lnet/minecraft/world/entity/Mob;)V
+			ARG 2 mob
+	CLASS ValidateFlowerGoal
+		METHOD isFlower (Lnet/minecraft/core/BlockPos;)Z
+			ARG 1 flowerPos

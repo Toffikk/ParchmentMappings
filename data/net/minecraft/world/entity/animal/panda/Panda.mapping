@@ -1,0 +1,96 @@
+CLASS net/minecraft/world/entity/animal/panda/Panda
+	METHOD canPickUpAndEat (Lnet/minecraft/world/entity/item/ItemEntity;)Z
+		ARG 0 entity
+	METHOD eat (Z)V
+		ARG 1 value
+	METHOD getFlag (I)Z
+		ARG 1 flag
+	METHOD getLieOnBackAmount (F)F
+		ARG 1 a
+	METHOD getRollAmount (F)F
+		ARG 1 a
+	METHOD getSitAmount (F)F
+		ARG 1 a
+	METHOD lambda$registerGoals$0 (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 i
+	METHOD roll (Z)V
+		ARG 1 value
+	METHOD setEatCounter (I)V
+		ARG 1 value
+	METHOD setFlag (IZ)V
+		ARG 1 flag
+		ARG 2 value
+	METHOD setGeneFromParents (Lnet/minecraft/world/entity/animal/panda/Panda;Lnet/minecraft/world/entity/animal/panda/Panda;)V
+		ARG 1 parent1
+		ARG 2 parent2
+	METHOD setHiddenGene (Lnet/minecraft/world/entity/animal/panda/Panda$Gene;)V
+		ARG 1 gene
+	METHOD setMainGene (Lnet/minecraft/world/entity/animal/panda/Panda$Gene;)V
+		ARG 1 gene
+	METHOD setOnBack (Z)V
+		ARG 1 value
+	METHOD setSneezeCounter (I)V
+		ARG 1 value
+	METHOD setUnhappyCounter (I)V
+		ARG 1 value
+	METHOD sit (Z)V
+		ARG 1 value
+	METHOD sneeze (Z)V
+		ARG 1 value
+	CLASS Gene
+		METHOD <init> (Ljava/lang/String;IILjava/lang/String;Z)V
+			ARG 3 id
+			ARG 4 name
+			ARG 5 isRecessive
+		METHOD byId (I)Lnet/minecraft/world/entity/animal/panda/Panda$Gene;
+			ARG 0 id
+		METHOD getRandom (Lnet/minecraft/util/RandomSource;)Lnet/minecraft/world/entity/animal/panda/Panda$Gene;
+			ARG 0 random
+		METHOD getVariantFromGenes (Lnet/minecraft/world/entity/animal/panda/Panda$Gene;Lnet/minecraft/world/entity/animal/panda/Panda$Gene;)Lnet/minecraft/world/entity/animal/panda/Panda$Gene;
+			ARG 0 mainGene
+			ARG 1 hiddenGene
+	CLASS PandaAttackGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/panda/Panda;DZ)V
+			ARG 1 mob
+			ARG 2 speedModifier
+			ARG 4 trackTarget
+	CLASS PandaAvoidGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/panda/Panda;Ljava/lang/Class;FDD)V
+			ARG 1 panda
+			ARG 2 avoidClass
+			ARG 3 maxDist
+			ARG 4 walkSpeedModifier
+			ARG 6 sprintSpeedModifier
+	CLASS PandaBreedGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/panda/Panda;D)V
+			ARG 1 panda
+			ARG 2 speedModifier
+	CLASS PandaHurtByTargetGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/panda/Panda;[Ljava/lang/Class;)V
+			ARG 1 mob
+			ARG 2 ignoreDamageFromTheseTypes
+	CLASS PandaLieOnBackGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/panda/Panda;)V
+			ARG 1 panda
+	CLASS PandaLookAtPlayerGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/panda/Panda;Ljava/lang/Class;F)V
+			ARG 1 mob
+			ARG 2 lookAtType
+			ARG 3 lookDistance
+		METHOD lambda$canUse$0 (Lnet/minecraft/world/entity/LivingEntity;)Z
+			ARG 0 entity
+		METHOD setTarget (Lnet/minecraft/world/entity/LivingEntity;)V
+			ARG 1 entity
+	CLASS PandaMoveControl
+		METHOD <init> (Lnet/minecraft/world/entity/animal/panda/Panda;)V
+			ARG 1 mob
+	CLASS PandaPanicGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/panda/Panda;D)V
+			ARG 1 mob
+			ARG 2 speedModifier
+	CLASS PandaRollGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/panda/Panda;)V
+			ARG 1 panda
+	CLASS PandaSneezeGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/panda/Panda;)V
+			ARG 1 panda

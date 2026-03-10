@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/entity/animal/equine/TraderLlama
+	METHOD lambda$registerGoals$0 (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/server/level/ServerLevel;)Z
+		ARG 0 target
+		ARG 1 level
+	METHOD setDespawnDelay (I)V
+		ARG 1 despawnDelay
+	CLASS TraderLlamaDefendWanderingTraderGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/equine/Llama;)V
+			ARG 1 tameAnimal

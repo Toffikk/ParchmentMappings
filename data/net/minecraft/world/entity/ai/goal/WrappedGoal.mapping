@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/entity/ai/goal/WrappedGoal
+	METHOD <init> (ILnet/minecraft/world/entity/ai/goal/Goal;)V
+		ARG 1 priority
+		ARG 2 goal
+	METHOD canBeReplacedBy (Lnet/minecraft/world/entity/ai/goal/WrappedGoal;)Z
+		ARG 1 goal
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 o

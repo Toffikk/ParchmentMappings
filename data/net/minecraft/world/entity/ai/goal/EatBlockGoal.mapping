@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/entity/ai/goal/EatBlockGoal
+	METHOD <init> (Lnet/minecraft/world/entity/Mob;)V
+		ARG 1 mob
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 0 state

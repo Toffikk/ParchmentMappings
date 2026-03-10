@@ -1,0 +1,8 @@
+CLASS net/minecraft/network/protocol/game/ClientboundSetChunkCacheCenterPacket
+	METHOD <init> (II)V
+		ARG 1 x
+		ARG 2 z
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 input
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 output

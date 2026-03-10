@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/pathfinder/NodeEvaluator
+	METHOD getPathType (Lnet/minecraft/world/level/pathfinder/PathfindingContext;III)Lnet/minecraft/world/level/pathfinder/PathType;
+		ARG 1 context
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

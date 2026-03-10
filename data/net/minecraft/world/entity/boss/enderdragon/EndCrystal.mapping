@@ -1,0 +1,13 @@
+CLASS net/minecraft/world/entity/boss/enderdragon/EndCrystal
+	METHOD <init> (Lnet/minecraft/world/level/Level;DDD)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+	METHOD onDestroyedBy (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/damagesource/DamageSource;)V
+		ARG 1 level
+		ARG 2 source
+	METHOD setBeamTarget (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 target
+	METHOD setShowBottom (Z)V
+		ARG 1 showBottom

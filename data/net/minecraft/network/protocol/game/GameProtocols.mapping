@@ -1,0 +1,8 @@
+CLASS net/minecraft/network/protocol/game/GameProtocols
+	METHOD lambda$static$0 (Lnet/minecraft/network/codec/StreamCodec;Lnet/minecraft/network/protocol/game/GameProtocols$Context;)Lnet/minecraft/network/codec/StreamCodec;
+		ARG 0 original
+		ARG 1 context
+	METHOD lambda$static$1 (Lnet/minecraft/network/protocol/ProtocolInfoBuilder;)V
+		ARG 0 builder
+	METHOD lambda$static$2 (Lnet/minecraft/network/protocol/ProtocolInfoBuilder;)V
+		ARG 0 builder

@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/entity/animal/equine/ZombieHorse
+	METHOD generateZombieHorseJumpStrength (Ljava/util/function/DoubleSupplier;)D
+		ARG 0 probabilityProvider
+	METHOD generateZombieHorseSpeed (Ljava/util/function/DoubleSupplier;)D
+		ARG 0 probabilityProvider
+	METHOD lambda$addBehaviourGoals$0 (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 i

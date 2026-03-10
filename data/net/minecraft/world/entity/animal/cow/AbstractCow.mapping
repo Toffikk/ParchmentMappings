@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/entity/animal/cow/AbstractCow
+	METHOD lambda$registerGoals$0 (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 i

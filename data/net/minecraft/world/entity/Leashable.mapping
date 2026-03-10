@@ -1,6 +1,8 @@
 CLASS net/minecraft/world/entity/Leashable
 	METHOD closeRangeLeashBehaviour (Lnet/minecraft/world/entity/Entity;)V
 		ARG 1 leashHolder
+	METHOD getLeashOffset (F)Lnet/minecraft/world/phys/Vec3;
+		ARG 1 partialTicks
 	METHOD setLeashData (Lnet/minecraft/world/entity/Leashable$LeashData;)V
 		ARG 1 leashData
 	METHOD whenLeashedTo (Lnet/minecraft/world/entity/Entity;)V

@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/entity/animal/golem/IronGolem
+	METHOD lambda$registerGoals$0 (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/server/level/ServerLevel;)Z
+		ARG 0 target
+		ARG 1 level
+	METHOD offerFlower (Z)V
+		ARG 1 offer
+	METHOD setPlayerCreated (Z)V
+		ARG 1 value

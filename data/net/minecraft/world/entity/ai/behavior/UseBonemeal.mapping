@@ -1,0 +1,11 @@
+CLASS net/minecraft/world/entity/ai/behavior/UseBonemeal
+	METHOD lambda$setCurrentCropAsTarget$0 (Lnet/minecraft/world/entity/npc/villager/Villager;Lnet/minecraft/core/BlockPos;)V
+		ARG 1 pos
+	METHOD pickNextTarget (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/npc/villager/Villager;)Ljava/util/Optional;
+		ARG 1 level
+		ARG 2 body
+	METHOD setCurrentCropAsTarget (Lnet/minecraft/world/entity/npc/villager/Villager;)V
+		ARG 1 body
+	METHOD validPos (Lnet/minecraft/core/BlockPos;Lnet/minecraft/server/level/ServerLevel;)Z
+		ARG 1 blockPos
+		ARG 2 level

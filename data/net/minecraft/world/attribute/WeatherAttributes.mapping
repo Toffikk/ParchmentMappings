@@ -1,0 +1,14 @@
+CLASS net/minecraft/world/attribute/WeatherAttributes
+	METHOD addBuiltinLayers (Lnet/minecraft/world/attribute/EnvironmentAttributeSystem$Builder;Lnet/minecraft/world/attribute/WeatherAttributes$WeatherAccess;)V
+		ARG 0 system
+		ARG 1 weatherAccess
+	METHOD addLayer (Lnet/minecraft/world/attribute/EnvironmentAttributeSystem$Builder;Lnet/minecraft/world/attribute/WeatherAttributes$WeatherAccess;Lnet/minecraft/world/attribute/EnvironmentAttribute;)V
+		ARG 0 system
+		ARG 1 weatherAccess
+		ARG 2 attribute
+	METHOD lambda$addLayer$0 (Lnet/minecraft/world/attribute/WeatherAttributes$WeatherAccess;Lnet/minecraft/world/attribute/EnvironmentAttributeMap$Entry;Lnet/minecraft/world/attribute/EnvironmentAttribute;Lnet/minecraft/world/attribute/EnvironmentAttributeMap$Entry;Ljava/lang/Object;I)Ljava/lang/Object;
+		ARG 4 result
+		ARG 5 cacheTickId
+	CLASS WeatherAccess
+		METHOD from (Lnet/minecraft/world/level/Level;)Lnet/minecraft/world/attribute/WeatherAttributes$WeatherAccess;
+			ARG 0 level

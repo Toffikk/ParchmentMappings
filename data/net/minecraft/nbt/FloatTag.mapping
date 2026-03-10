@@ -1,0 +1,9 @@
+CLASS net/minecraft/nbt/FloatTag
+	METHOD <init> (F)V
+		ARG 1 value
+	METHOD valueOf (F)Lnet/minecraft/nbt/FloatTag;
+		ARG 0 data
+	CLASS 1
+		METHOD readAccounted (Ljava/io/DataInput;Lnet/minecraft/nbt/NbtAccounter;)F
+			ARG 0 input
+			ARG 1 accounter

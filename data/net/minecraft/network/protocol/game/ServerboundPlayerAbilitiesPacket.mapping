@@ -1,0 +1,7 @@
+CLASS net/minecraft/network/protocol/game/ServerboundPlayerAbilitiesPacket
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 input
+	METHOD <init> (Lnet/minecraft/world/entity/player/Abilities;)V
+		ARG 1 abilities
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 output

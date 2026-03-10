@@ -1,0 +1,8 @@
+CLASS net/minecraft/commands/ExecutionCommandSource
+	METHOD handleError (Lcom/mojang/brigadier/exceptions/CommandExceptionType;Lcom/mojang/brigadier/Message;ZLnet/minecraft/commands/execution/TraceCallbacks;)V
+		ARG 1 type
+		ARG 2 message
+		ARG 3 forked
+		ARG 4 tracer
+	METHOD withCallback (Lnet/minecraft/commands/CommandResultCallback;)Lnet/minecraft/commands/ExecutionCommandSource;
+		ARG 1 resultCallback

@@ -1,0 +1,3 @@
+CLASS net/minecraft/network/protocol/handshake/HandshakeProtocols
+	METHOD lambda$static$0 (Lnet/minecraft/network/protocol/ProtocolInfoBuilder;)V
+		ARG 0 builder

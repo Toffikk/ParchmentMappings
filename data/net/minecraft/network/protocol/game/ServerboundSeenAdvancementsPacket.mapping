@@ -1,0 +1,10 @@
+CLASS net/minecraft/network/protocol/game/ServerboundSeenAdvancementsPacket
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 input
+	METHOD <init> (Lnet/minecraft/network/protocol/game/ServerboundSeenAdvancementsPacket$Action;Lnet/minecraft/resources/Identifier;)V
+		ARG 1 action
+		ARG 2 tab
+	METHOD openedTab (Lnet/minecraft/advancements/AdvancementHolder;)Lnet/minecraft/network/protocol/game/ServerboundSeenAdvancementsPacket;
+		ARG 0 tab
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 output

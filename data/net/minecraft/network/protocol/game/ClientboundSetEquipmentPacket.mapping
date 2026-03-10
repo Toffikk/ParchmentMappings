@@ -1,0 +1,8 @@
+CLASS net/minecraft/network/protocol/game/ClientboundSetEquipmentPacket
+	METHOD <init> (ILjava/util/List;)V
+		ARG 1 entity
+		ARG 2 slots
+	METHOD <init> (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+		ARG 1 input
+	METHOD write (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+		ARG 1 output

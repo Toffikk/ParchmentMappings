@@ -1,0 +1,10 @@
+CLASS net/minecraft/network/protocol/login/ClientboundHelloPacket
+	METHOD <init> (Ljava/lang/String;[B[BZ)V
+		ARG 1 serverId
+		ARG 2 publicKey
+		ARG 3 challenge
+		ARG 4 shouldAuthenticate
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 input
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 output

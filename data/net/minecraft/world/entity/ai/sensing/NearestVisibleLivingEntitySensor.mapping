@@ -1,0 +1,14 @@
+CLASS net/minecraft/world/entity/ai/sensing/NearestVisibleLivingEntitySensor
+	METHOD getNearestEntity (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;)Ljava/util/Optional;
+		ARG 1 level
+		ARG 2 body
+	METHOD getVisibleEntities (Lnet/minecraft/world/entity/LivingEntity;)Ljava/util/Optional;
+		ARG 1 body
+	METHOD isMatchingEntity (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/LivingEntity;)Z
+		ARG 1 level
+		ARG 2 body
+		ARG 3 mob
+	METHOD lambda$getNearestEntity$0 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/LivingEntity;)Z
+		ARG 3 mob
+	METHOD lambda$getNearestEntity$1 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/ai/memory/NearestVisibleLivingEntities;)Ljava/util/Optional;
+		ARG 3 livingEntities

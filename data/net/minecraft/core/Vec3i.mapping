@@ -7,10 +7,52 @@ CLASS net/minecraft/core/Vec3i
 		ARG 1 steps
 	METHOD below (I)Lnet/minecraft/core/Vec3i;
 		ARG 1 steps
+	METHOD closerThan (Lnet/minecraft/core/Vec3i;D)Z
+		ARG 1 pos
+		ARG 2 distance
+	METHOD closerToCenterThan (Lnet/minecraft/core/Position;D)Z
+		ARG 1 pos
+		ARG 2 distance
+	METHOD compareTo (Ljava/lang/Object;)I
+		ARG 1 pos
+	METHOD cross (Lnet/minecraft/core/Vec3i;)Lnet/minecraft/core/Vec3i;
+		ARG 1 upVector
+	METHOD distChessboard (Lnet/minecraft/core/Vec3i;)I
+		ARG 1 pos
+	METHOD distManhattan (Lnet/minecraft/core/Vec3i;)I
+		ARG 1 pos
+	METHOD distSqr (Lnet/minecraft/core/Vec3i;)D
+		ARG 1 pos
+	METHOD distToCenterSqr (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD distToCenterSqr (Lnet/minecraft/core/Position;)D
+		ARG 1 pos
+	METHOD distToLowCornerSqr (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
 	METHOD east (I)Lnet/minecraft/core/Vec3i;
 		ARG 1 steps
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 o
+	METHOD get (Lnet/minecraft/core/Direction$Axis;)I
+		ARG 1 axis
+	METHOD lambda$offsetCodec$4 (ILnet/minecraft/core/Vec3i;)Lcom/mojang/serialization/DataResult;
+		ARG 1 value
+	METHOD lambda$static$0 ([I)Lnet/minecraft/core/Vec3i;
+		ARG 0 ints
+	METHOD lambda$static$1 (Ljava/util/stream/IntStream;)Lcom/mojang/serialization/DataResult;
+		ARG 0 input
+	METHOD lambda$static$2 (Lnet/minecraft/core/Vec3i;)Ljava/util/stream/IntStream;
+		ARG 0 pos
 	METHOD multiply (I)Lnet/minecraft/core/Vec3i;
 		ARG 1 scale
+	METHOD multiply (III)Lnet/minecraft/core/Vec3i;
+		ARG 1 xScale
+		ARG 2 yScale
+		ARG 3 zScale
 	METHOD north (I)Lnet/minecraft/core/Vec3i;
 		ARG 1 steps
 	METHOD offset (III)Lnet/minecraft/core/Vec3i;
@@ -19,6 +61,10 @@ CLASS net/minecraft/core/Vec3i
 		ARG 3 z
 	METHOD offset (Lnet/minecraft/core/Vec3i;)Lnet/minecraft/core/Vec3i;
 		ARG 1 vec
+	METHOD offsetCodec (I)Lcom/mojang/serialization/Codec;
+		ARG 0 maxOffsetPerAxis
+	METHOD relative (Lnet/minecraft/core/Direction;)Lnet/minecraft/core/Vec3i;
+		ARG 1 direction
 	METHOD relative (Lnet/minecraft/core/Direction;I)Lnet/minecraft/core/Vec3i;
 		ARG 1 direction
 		ARG 2 steps
@@ -31,5 +77,9 @@ CLASS net/minecraft/core/Vec3i
 		ARG 1 y
 	METHOD setZ (I)Lnet/minecraft/core/Vec3i;
 		ARG 1 z
+	METHOD south (I)Lnet/minecraft/core/Vec3i;
+		ARG 1 steps
+	METHOD subtract (Lnet/minecraft/core/Vec3i;)Lnet/minecraft/core/Vec3i;
+		ARG 1 vec
 	METHOD west (I)Lnet/minecraft/core/Vec3i;
 		ARG 1 steps

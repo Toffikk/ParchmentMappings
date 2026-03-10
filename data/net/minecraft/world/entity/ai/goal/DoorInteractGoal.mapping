@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/entity/ai/goal/DoorInteractGoal
+	METHOD <init> (Lnet/minecraft/world/entity/Mob;)V
+		ARG 1 mob
+	METHOD setOpen (Z)V
+		ARG 1 open

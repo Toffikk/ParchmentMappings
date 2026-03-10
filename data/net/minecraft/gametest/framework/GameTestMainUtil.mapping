@@ -1,0 +1,14 @@
+CLASS net/minecraft/gametest/framework/GameTestMainUtil
+	METHOD copyPacks (Ljava/lang/String;Ljava/lang/String;)V
+		ARG 0 serverPath
+		ARG 1 packSourcePath
+	METHOD createOrResetDir (Ljava/lang/String;)V
+		ARG 0 universePath
+	METHOD lambda$runGameTestServer$0 (Lnet/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess;Lnet/minecraft/server/packs/repository/PackRepository;Ljoptsimple/OptionSet;Ljava/lang/Thread;)Lnet/minecraft/gametest/framework/GameTestServer;
+		ARG 3 thread
+	METHOD optionalFromOption (Ljoptsimple/OptionSet;Ljoptsimple/OptionSpec;)Ljava/util/Optional;
+		ARG 0 options
+		ARG 1 option
+	METHOD runGameTestServer ([Ljava/lang/String;Ljava/util/function/Consumer;)V
+		ARG 0 args
+		ARG 1 onUniverseCreated

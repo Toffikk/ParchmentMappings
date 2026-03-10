@@ -1,0 +1,7 @@
+CLASS net/minecraft/network/protocol/game/ClientboundRespawnPacket
+	METHOD <init> (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+		ARG 1 input
+	METHOD shouldKeep (B)Z
+		ARG 1 mask
+	METHOD write (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+		ARG 1 output

@@ -1,0 +1,10 @@
+CLASS net/minecraft/network/protocol/game/ClientboundSetEntityDataPacket
+	METHOD <init> (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+		ARG 1 input
+	METHOD pack (Ljava/util/List;Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+		ARG 0 items
+		ARG 1 output
+	METHOD unpack (Lnet/minecraft/network/RegistryFriendlyByteBuf;)Ljava/util/List;
+		ARG 0 input
+	METHOD write (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+		ARG 1 output

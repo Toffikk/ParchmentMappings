@@ -1,0 +1,9 @@
+CLASS net/minecraft/network/protocol/game/ClientboundUpdateMobEffectPacket
+	METHOD <init> (ILnet/minecraft/world/effect/MobEffectInstance;Z)V
+		ARG 1 entityId
+		ARG 2 effect
+		ARG 3 blend
+	METHOD <init> (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+		ARG 1 input
+	METHOD write (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+		ARG 1 output

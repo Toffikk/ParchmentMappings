@@ -1,0 +1,19 @@
+CLASS net/minecraft/world/entity/animal/dolphin/Dolphin
+	METHOD addParticlesAroundSelf (Lnet/minecraft/core/particles/ParticleOptions;)V
+		ARG 1 particle
+	METHOD lambda$static$0 (Lnet/minecraft/world/entity/item/ItemEntity;)Z
+		ARG 0 e
+	METHOD setGotFish (Z)V
+		ARG 1 gotFish
+	METHOD setMoisntessLevel (I)V
+		ARG 1 level
+	CLASS DolphinSwimToTreasureGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/dolphin/Dolphin;)V
+			ARG 1 dolphin
+	CLASS DolphinSwimWithPlayerGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/dolphin/Dolphin;D)V
+			ARG 1 dolphin
+			ARG 2 speedModifier
+	CLASS PlayWithItemsGoal
+		METHOD drop (Lnet/minecraft/world/item/ItemStack;)V
+			ARG 1 itemStack

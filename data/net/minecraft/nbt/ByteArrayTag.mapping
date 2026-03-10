@@ -1,0 +1,9 @@
+CLASS net/minecraft/nbt/ByteArrayTag
+	METHOD <init> ([B)V
+		ARG 1 data
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 obj
+	CLASS 1
+		METHOD readAccounted (Ljava/io/DataInput;Lnet/minecraft/nbt/NbtAccounter;)[B
+			ARG 0 input
+			ARG 1 accounter

@@ -1,0 +1,11 @@
+CLASS net/minecraft/nbt/ByteTag
+	METHOD <init> (B)V
+		ARG 1 value
+	METHOD valueOf (B)Lnet/minecraft/nbt/ByteTag;
+		ARG 0 data
+	METHOD valueOf (Z)Lnet/minecraft/nbt/ByteTag;
+		ARG 0 data
+	CLASS 1
+		METHOD readAccounted (Ljava/io/DataInput;Lnet/minecraft/nbt/NbtAccounter;)B
+			ARG 0 input
+			ARG 1 accounter

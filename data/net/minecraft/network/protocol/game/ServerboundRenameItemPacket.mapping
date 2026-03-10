@@ -1,0 +1,7 @@
+CLASS net/minecraft/network/protocol/game/ServerboundRenameItemPacket
+	METHOD <init> (Ljava/lang/String;)V
+		ARG 1 name
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 input
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 output

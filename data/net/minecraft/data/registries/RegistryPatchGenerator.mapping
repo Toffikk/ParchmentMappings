@@ -1,0 +1,8 @@
+CLASS net/minecraft/data/registries/RegistryPatchGenerator
+	METHOD createLookup (Ljava/util/concurrent/CompletableFuture;Lnet/minecraft/core/RegistrySetBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 vanilla
+		ARG 1 packBuilder
+	METHOD lambda$createLookup$0 (Lnet/minecraft/core/Cloner$Factory;Lnet/minecraft/resources/RegistryDataLoader$RegistryData;)V
+		ARG 1 registryData
+	METHOD lambda$createLookup$3 (Lnet/minecraft/core/RegistrySetBuilder;Lnet/minecraft/core/HolderLookup$Provider;)Lnet/minecraft/core/RegistrySetBuilder$PatchedRegistries;
+		ARG 1 parent

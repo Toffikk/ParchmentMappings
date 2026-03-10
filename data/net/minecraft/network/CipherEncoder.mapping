@@ -1,0 +1,7 @@
+CLASS net/minecraft/network/CipherEncoder
+	METHOD <init> (Ljavax/crypto/Cipher;)V
+		ARG 1 cipher
+	METHOD encode (Lio/netty/channel/ChannelHandlerContext;Ljava/lang/Object;Lio/netty/buffer/ByteBuf;)V
+		ARG 1 ctx
+		ARG 2 msg
+		ARG 3 out

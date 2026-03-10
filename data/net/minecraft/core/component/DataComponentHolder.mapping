@@ -1,0 +1,9 @@
+CLASS net/minecraft/core/component/DataComponentHolder
+	METHOD getAllOfType (Ljava/lang/Class;)Ljava/util/stream/Stream;
+		ARG 1 valueClass
+	METHOD has (Lnet/minecraft/core/component/DataComponentType;)Z
+		ARG 1 type
+	METHOD lambda$getAllOfType$0 (Ljava/lang/Class;Ljava/lang/Object;)Z
+		ARG 1 value
+	METHOD lambda$getAllOfType$1 (Ljava/lang/Object;)Ljava/lang/Object;
+		ARG 0 value

@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/entity/animal/parrot/ShoulderRidingEntity
+	METHOD setEntityOnShoulder (Lnet/minecraft/server/level/ServerPlayer;)Z
+		ARG 1 player

@@ -1,0 +1,13 @@
+CLASS net/minecraft/network/protocol/login/ServerboundCustomQueryAnswerPacket
+	METHOD lambda$write$0 (Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/network/protocol/login/custom/CustomQueryAnswerPayload;)V
+		ARG 0 buf
+		ARG 1 data
+	METHOD read (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/network/protocol/login/ServerboundCustomQueryAnswerPacket;
+		ARG 0 input
+	METHOD readPayload (ILnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/network/protocol/login/custom/CustomQueryAnswerPayload;
+		ARG 0 transactionId
+		ARG 1 input
+	METHOD readUnknownPayload (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/network/protocol/login/custom/CustomQueryAnswerPayload;
+		ARG 0 input
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 output

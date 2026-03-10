@@ -1,0 +1,12 @@
+CLASS net/minecraft/world/entity/ai/util/HoverRandomPos
+	METHOD getPos (Lnet/minecraft/world/entity/PathfinderMob;IIDDFII)Lnet/minecraft/world/phys/Vec3;
+		ARG 0 mob
+		ARG 1 horizontalDist
+		ARG 2 verticalDist
+		ARG 3 xDir
+		ARG 5 zDir
+		ARG 7 maxXzRadiansDifference
+		ARG 8 hoverMaxHeight
+		ARG 9 hoverMinHeight
+	METHOD lambda$getPos$0 (Lnet/minecraft/world/entity/PathfinderMob;Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 blockPos

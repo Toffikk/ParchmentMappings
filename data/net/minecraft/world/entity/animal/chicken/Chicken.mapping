@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/entity/animal/chicken/Chicken
+	METHOD lambda$readAdditionalSaveData$1 (Ljava/lang/Integer;)V
+		ARG 1 time
+	METHOD lambda$registerGoals$0 (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 i
+	METHOD setChickenJockey (Z)V
+		ARG 1 isChickenJockey
+	METHOD setVariant (Lnet/minecraft/core/Holder;)V
+		ARG 1 variant

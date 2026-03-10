@@ -1,0 +1,10 @@
+CLASS net/minecraft/network/protocol/common/ClientboundUpdateTagsPacket
+	METHOD <init> (Ljava/util/Map;)V
+		ARG 1 tags
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 input
+	METHOD lambda$write$0 (Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/tags/TagNetworkSerialization$NetworkPayload;)V
+		ARG 0 buffer
+		ARG 1 value
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 output

@@ -1,0 +1,12 @@
+CLASS net/minecraft/world/entity/ai/behavior/LongJumpUtil
+	METHOD calculateJumpVectorForAngle (Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/phys/Vec3;FIZ)Ljava/util/Optional;
+		ARG 0 body
+		ARG 1 targetPos
+		ARG 2 maxJumpVelocity
+		ARG 3 angle
+		ARG 4 checkCollision
+	METHOD isClearTransition (Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/entity/EntityDimensions;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;)Z
+		ARG 0 body
+		ARG 1 entityDimensions
+		ARG 2 position1
+		ARG 3 position2

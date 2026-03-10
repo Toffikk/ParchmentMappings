@@ -1,0 +1,11 @@
+CLASS net/minecraft/network/protocol/login/ClientboundCustomQueryPacket
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 input
+	METHOD readPayload (Lnet/minecraft/resources/Identifier;Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/network/protocol/login/custom/CustomQueryPayload;
+		ARG 0 identifier
+		ARG 1 input
+	METHOD readUnknownPayload (Lnet/minecraft/resources/Identifier;Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/network/protocol/login/custom/DiscardedQueryPayload;
+		ARG 0 identifier
+		ARG 1 input
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 output

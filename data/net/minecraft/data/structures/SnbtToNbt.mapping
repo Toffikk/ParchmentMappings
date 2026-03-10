@@ -1,0 +1,33 @@
+CLASS net/minecraft/data/structures/SnbtToNbt
+	METHOD <init> (Lnet/minecraft/data/PackOutput;Ljava/lang/Iterable;)V
+		ARG 1 output
+		ARG 2 inputFolders
+	METHOD addFilter (Lnet/minecraft/data/structures/SnbtToNbt$Filter;)Lnet/minecraft/data/structures/SnbtToNbt;
+		ARG 1 filter
+	METHOD applyFilters (Ljava/lang/String;Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/nbt/CompoundTag;
+		ARG 1 name
+		ARG 2 input
+	METHOD getName (Ljava/nio/file/Path;Ljava/nio/file/Path;)Ljava/lang/String;
+		ARG 1 root
+		ARG 2 path
+	METHOD lambda$run$0 (Ljava/nio/file/Path;)Z
+		ARG 0 path
+	METHOD lambda$run$2 (Ljava/nio/file/Path;Lnet/minecraft/data/CachedOutput;Ljava/nio/file/Path;Ljava/nio/file/Path;)Ljava/util/concurrent/CompletableFuture;
+		ARG 4 path
+	METHOD lambda$run$5 (Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletionStage;
+		ARG 0 v
+	METHOD readStructure (Ljava/nio/file/Path;Ljava/lang/String;)Lnet/minecraft/data/structures/SnbtToNbt$TaskResult;
+		ARG 1 path
+		ARG 2 name
+	METHOD storeStructureIfChanged (Lnet/minecraft/data/CachedOutput;Lnet/minecraft/data/structures/SnbtToNbt$TaskResult;Ljava/nio/file/Path;)V
+		ARG 1 cache
+		ARG 2 task
+		ARG 3 output
+	CLASS Filter
+		METHOD apply (Ljava/lang/String;Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/nbt/CompoundTag;
+			ARG 1 name
+			ARG 2 input
+	CLASS StructureConversionException
+		METHOD <init> (Ljava/nio/file/Path;Ljava/lang/Throwable;)V
+			ARG 1 path
+			ARG 2 t

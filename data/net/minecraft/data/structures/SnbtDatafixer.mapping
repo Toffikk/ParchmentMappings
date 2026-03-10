@@ -1,0 +1,9 @@
+CLASS net/minecraft/data/structures/SnbtDatafixer
+	METHOD lambda$updateInDirectory$0 (Ljava/nio/file/Path;)Z
+		ARG 0 path
+	METHOD lambda$updateInDirectory$1 (Ljava/nio/file/Path;)V
+		ARG 0 path
+	METHOD main ([Ljava/lang/String;)V
+		ARG 0 args
+	METHOD updateInDirectory (Ljava/lang/String;)V
+		ARG 0 structureDir

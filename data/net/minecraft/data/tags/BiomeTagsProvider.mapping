@@ -1,0 +1,6 @@
+CLASS net/minecraft/data/tags/BiomeTagsProvider
+	METHOD <init> (Lnet/minecraft/data/PackOutput;Ljava/util/concurrent/CompletableFuture;)V
+		ARG 1 output
+		ARG 2 lookupProvider
+	METHOD lambda$addTags$0 (Lnet/minecraft/resources/ResourceKey;)Z
+		ARG 0 biomeKey

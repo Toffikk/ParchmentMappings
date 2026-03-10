@@ -1,0 +1,8 @@
+CLASS net/minecraft/network/protocol/game/ClientboundSetEntityLinkPacket
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 input
+	METHOD <init> (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/entity/Entity;)V
+		ARG 1 sourceEntity
+		ARG 2 destEntity
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 output

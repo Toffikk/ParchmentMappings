@@ -1,0 +1,6 @@
+CLASS net/minecraft/network/protocol/Packet
+	METHOD codec (Lnet/minecraft/network/codec/StreamMemberEncoder;Lnet/minecraft/network/codec/StreamDecoder;)Lnet/minecraft/network/codec/StreamCodec;
+		ARG 0 writer
+		ARG 1 reader
+	METHOD handle (Lnet/minecraft/network/PacketListener;)V
+		ARG 1 listener

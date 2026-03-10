@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/entity/ai/behavior/TradeWithVillager
+	METHOD figureOutWhatIAmWillingToTrade (Lnet/minecraft/world/entity/npc/villager/Villager;Lnet/minecraft/world/entity/npc/villager/Villager;)Ljava/util/Set;
+		ARG 0 myBody
+		ARG 1 target
+	METHOD lambda$figureOutWhatIAmWillingToTrade$0 (Lcom/google/common/collect/ImmutableSet;Lnet/minecraft/world/item/Item;)Z
+		ARG 1 entry
+	METHOD throwHalfStack (Lnet/minecraft/world/entity/npc/villager/Villager;Ljava/util/Set;Lnet/minecraft/world/entity/LivingEntity;)V
+		ARG 0 villager
+		ARG 1 items
+		ARG 2 target

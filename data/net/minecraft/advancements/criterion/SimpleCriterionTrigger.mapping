@@ -1,0 +1,6 @@
+CLASS net/minecraft/advancements/criterion/SimpleCriterionTrigger
+	METHOD lambda$addPlayerListener$0 (Lnet/minecraft/server/PlayerAdvancements;)Ljava/util/Set;
+		ARG 0 k
+	METHOD trigger (Lnet/minecraft/server/level/ServerPlayer;Ljava/util/function/Predicate;)V
+		ARG 1 player
+		ARG 2 matcher

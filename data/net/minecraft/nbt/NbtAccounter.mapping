@@ -1,0 +1,11 @@
+CLASS net/minecraft/nbt/NbtAccounter
+	METHOD <init> (JI)V
+		ARG 1 quota
+		ARG 3 maxDepth
+	METHOD accountBytes (J)V
+		ARG 1 size
+	METHOD accountBytes (JJ)V
+		ARG 1 bytesPerEntry
+		ARG 3 count
+	METHOD create (J)Lnet/minecraft/nbt/NbtAccounter;
+		ARG 0 quota

@@ -1,0 +1,7 @@
+CLASS net/minecraft/network/protocol/game/ClientboundLoginPacket
+	METHOD <init> (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+		ARG 1 input
+	METHOD lambda$new$0 (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/resources/ResourceKey;
+		ARG 0 buf
+	METHOD write (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+		ARG 1 output

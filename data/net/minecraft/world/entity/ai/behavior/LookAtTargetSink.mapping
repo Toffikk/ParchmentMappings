@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/entity/ai/behavior/LookAtTargetSink
+	METHOD <init> (II)V
+		ARG 1 minDuration
+		ARG 2 maxDuration
+	METHOD lambda$canStillUse$0 (Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/entity/ai/behavior/PositionTracker;)Z
+		ARG 1 pos
+	METHOD lambda$tick$1 (Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/entity/ai/behavior/PositionTracker;)V
+		ARG 1 target

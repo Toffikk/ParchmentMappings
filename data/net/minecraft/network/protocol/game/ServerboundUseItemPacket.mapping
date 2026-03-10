@@ -1,0 +1,10 @@
+CLASS net/minecraft/network/protocol/game/ServerboundUseItemPacket
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 input
+	METHOD <init> (Lnet/minecraft/world/InteractionHand;IFF)V
+		ARG 1 hand
+		ARG 2 sequence
+		ARG 3 yRot
+		ARG 4 xRot
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 output

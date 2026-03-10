@@ -1,0 +1,6 @@
+CLASS net/minecraft/network/protocol/game/ClientboundTeleportEntityPacket
+	METHOD teleport (ILnet/minecraft/world/entity/PositionMoveRotation;Ljava/util/Set;Z)Lnet/minecraft/network/protocol/game/ClientboundTeleportEntityPacket;
+		ARG 0 id
+		ARG 1 values
+		ARG 2 relatives
+		ARG 3 onGround

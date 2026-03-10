@@ -1,0 +1,17 @@
+CLASS net/minecraft/world/entity/ai/goal/MoveThroughVillageGoal
+	METHOD <init> (Lnet/minecraft/world/entity/PathfinderMob;DZILjava/util/function/BooleanSupplier;)V
+		ARG 1 mob
+		ARG 2 speedModifier
+		ARG 4 onlyAtNight
+		ARG 5 distanceToPoi
+		ARG 6 canDealWithDoors
+	METHOD hasNotVisited (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 poi
+	METHOD lambda$canUse$0 (Lnet/minecraft/core/Holder;)Z
+		ARG 0 e
+	METHOD lambda$canUse$1 (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;)Ljava/lang/Double;
+		ARG 1 poiPos
+	METHOD lambda$canUse$2 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;)D
+		ARG 3 p
+	METHOD lambda$canUse$3 (Lnet/minecraft/core/Holder;)Z
+		ARG 0 e

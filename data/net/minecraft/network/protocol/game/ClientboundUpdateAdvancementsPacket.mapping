@@ -1,0 +1,14 @@
+CLASS net/minecraft/network/protocol/game/ClientboundUpdateAdvancementsPacket
+	METHOD <init> (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+		ARG 1 input
+	METHOD <init> (ZLjava/util/Collection;Ljava/util/Set;Ljava/util/Map;Z)V
+		ARG 1 reset
+		ARG 2 newAdvancements
+		ARG 3 removedAdvancements
+		ARG 4 progress
+		ARG 5 showAdvancements
+	METHOD lambda$write$0 (Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/advancements/AdvancementProgress;)V
+		ARG 0 buffer
+		ARG 1 value
+	METHOD write (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+		ARG 1 output

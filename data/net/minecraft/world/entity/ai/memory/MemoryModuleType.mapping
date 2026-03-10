@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/entity/ai/memory/MemoryModuleType
+	METHOD <init> (Ljava/util/Optional;)V
+		ARG 1 codec
+	METHOD register (Ljava/lang/String;)Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;
+		ARG 0 name
+	METHOD register (Ljava/lang/String;Lcom/mojang/serialization/Codec;)Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;
+		ARG 0 name
+		ARG 1 codec

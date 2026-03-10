@@ -1,0 +1,11 @@
+CLASS net/minecraft/network/protocol/game/ClientboundSectionBlocksUpdatePacket
+	METHOD <init> (Lnet/minecraft/core/SectionPos;Lit/unimi/dsi/fastutil/shorts/ShortSet;Lnet/minecraft/world/level/chunk/LevelChunkSection;)V
+		ARG 1 sectionPos
+		ARG 2 changes
+		ARG 3 section
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 input
+	METHOD runUpdates (Ljava/util/function/BiConsumer;)V
+		ARG 1 updateFunction
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 output

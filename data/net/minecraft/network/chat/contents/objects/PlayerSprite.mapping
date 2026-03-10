@@ -1,0 +1,5 @@
+CLASS net/minecraft/network/chat/contents/objects/PlayerSprite
+	METHOD lambda$description$1 (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 name
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

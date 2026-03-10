@@ -1,0 +1,8 @@
+CLASS net/minecraft/data/tags/VanillaBlockTagsProvider
+	METHOD <init> (Lnet/minecraft/data/PackOutput;Ljava/util/concurrent/CompletableFuture;)V
+		ARG 1 output
+		ARG 2 lookupProvider
+	METHOD lambda$addTags$1 (Lnet/minecraft/world/level/block/Block;)Z
+		ARG 0 b
+	METHOD lambda$new$0 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/resources/ResourceKey;
+		ARG 0 e

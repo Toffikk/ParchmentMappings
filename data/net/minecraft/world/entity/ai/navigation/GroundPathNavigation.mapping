@@ -1,0 +1,13 @@
+CLASS net/minecraft/world/entity/ai/navigation/GroundPathNavigation
+	METHOD findSurfacePosition (Lnet/minecraft/world/level/chunk/LevelChunk;Lnet/minecraft/core/BlockPos;I)Lnet/minecraft/core/BlockPos;
+		ARG 1 chunk
+		ARG 2 pos
+		ARG 3 reachRange
+	METHOD hasValidPathType (Lnet/minecraft/world/level/pathfinder/PathType;)Z
+		ARG 1 pathType
+	METHOD setAvoidSun (Z)V
+		ARG 1 avoidSun
+	METHOD setCanPathToTargetsBelowSurface (Z)V
+		ARG 1 canPathToTargetsBelowSurface
+	METHOD setCanWalkOverFences (Z)V
+		ARG 1 canWalkOverFences

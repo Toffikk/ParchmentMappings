@@ -1,0 +1,12 @@
+CLASS net/minecraft/world/entity/animal/equine/SkeletonTrapGoal
+	METHOD <init> (Lnet/minecraft/world/entity/animal/equine/SkeletonHorse;)V
+		ARG 1 horse
+	METHOD createHorse (Lnet/minecraft/world/DifficultyInstance;)Lnet/minecraft/world/entity/animal/equine/AbstractHorse;
+		ARG 1 difficulty
+	METHOD createSkeleton (Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/animal/equine/AbstractHorse;)Lnet/minecraft/world/entity/monster/skeleton/Skeleton;
+		ARG 1 difficulty
+		ARG 2 horse
+	METHOD enchant (Lnet/minecraft/world/entity/monster/skeleton/Skeleton;Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/DifficultyInstance;)V
+		ARG 1 skeleton
+		ARG 2 slot
+		ARG 3 difficulty

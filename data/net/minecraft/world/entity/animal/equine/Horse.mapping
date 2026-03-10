@@ -1,0 +1,11 @@
+CLASS net/minecraft/world/entity/animal/equine/Horse
+	METHOD setTypeVariant (I)V
+		ARG 1 i
+	METHOD setVariant (Lnet/minecraft/world/entity/animal/equine/Variant;)V
+		ARG 1 variant
+	METHOD setVariantAndMarkings (Lnet/minecraft/world/entity/animal/equine/Variant;Lnet/minecraft/world/entity/animal/equine/Markings;)V
+		ARG 1 variant
+		ARG 2 markings
+	CLASS HorseGroupData
+		METHOD <init> (Lnet/minecraft/world/entity/animal/equine/Variant;)V
+			ARG 1 variant

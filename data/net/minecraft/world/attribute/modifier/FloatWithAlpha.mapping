@@ -1,0 +1,11 @@
+CLASS net/minecraft/world/attribute/modifier/FloatWithAlpha
+	METHOD <init> (F)V
+		ARG 1 value
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD lambda$static$1 (Lnet/minecraft/world/attribute/modifier/FloatWithAlpha;)Lnet/minecraft/world/attribute/modifier/FloatWithAlpha;
+		ARG 0 p
+	METHOD lambda$static$2 (Lcom/mojang/datafixers/util/Either;)Lnet/minecraft/world/attribute/modifier/FloatWithAlpha;
+		ARG 0 either
+	METHOD lambda$static$3 (Lnet/minecraft/world/attribute/modifier/FloatWithAlpha;)Lcom/mojang/datafixers/util/Either;
+		ARG 0 parameter

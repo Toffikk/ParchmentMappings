@@ -1,0 +1,7 @@
+CLASS net/minecraft/network/syncher/EntityDataSerializer
+	METHOD copy (Ljava/lang/Object;)Ljava/lang/Object;
+		ARG 1 value
+	METHOD createAccessor (I)Lnet/minecraft/network/syncher/EntityDataAccessor;
+		ARG 1 id
+	METHOD forValueType (Lnet/minecraft/network/codec/StreamCodec;)Lnet/minecraft/network/syncher/EntityDataSerializer;
+		ARG 0 codec

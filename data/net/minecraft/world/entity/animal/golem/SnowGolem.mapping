@@ -1,0 +1,11 @@
+CLASS net/minecraft/world/entity/animal/golem/SnowGolem
+	METHOD lambda$performRangedAttack$1 (DDDDLnet/minecraft/world/entity/projectile/throwableitemprojectile/Snowball;)V
+		ARG 8 projectile
+	METHOD lambda$registerGoals$0 (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/server/level/ServerLevel;)Z
+		ARG 0 target
+		ARG 1 level
+	METHOD lambda$shear$2 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 l
+		ARG 2 drop
+	METHOD setPumpkin (Z)V
+		ARG 1 pumpkin

@@ -1,0 +1,5 @@
+CLASS net/minecraft/network/protocol/game/ClientboundPlayerPositionPacket
+	METHOD of (ILnet/minecraft/world/entity/PositionMoveRotation;Ljava/util/Set;)Lnet/minecraft/network/protocol/game/ClientboundPlayerPositionPacket;
+		ARG 0 id
+		ARG 1 values
+		ARG 2 relatives

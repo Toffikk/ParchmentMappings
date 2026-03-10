@@ -1,0 +1,16 @@
+CLASS net/minecraft/advancements/criterion/DistancePredicate
+	METHOD absolute (Lnet/minecraft/advancements/criterion/MinMaxBounds$Doubles;)Lnet/minecraft/advancements/criterion/DistancePredicate;
+		ARG 0 absolute
+	METHOD horizontal (Lnet/minecraft/advancements/criterion/MinMaxBounds$Doubles;)Lnet/minecraft/advancements/criterion/DistancePredicate;
+		ARG 0 horizontal
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD matches (DDDDDD)Z
+		ARG 1 x0
+		ARG 3 y0
+		ARG 5 z0
+		ARG 7 x1
+		ARG 9 y1
+		ARG 11 z1
+	METHOD vertical (Lnet/minecraft/advancements/criterion/MinMaxBounds$Doubles;)Lnet/minecraft/advancements/criterion/DistancePredicate;
+		ARG 0 y

@@ -1,0 +1,40 @@
+CLASS net/minecraft/network/UnconfiguredPipelineHandler
+	METHOD lambda$setupInboundHandler$0 (Lio/netty/channel/ChannelInboundHandler;Lio/netty/channel/ChannelHandlerContext;)V
+		ARG 1 ctx
+	METHOD lambda$setupOutboundHandler$1 (Lio/netty/channel/ChannelOutboundHandler;Lio/netty/channel/ChannelHandlerContext;)V
+		ARG 1 ctx
+	METHOD setupInboundHandler (Lio/netty/channel/ChannelInboundHandler;)Lnet/minecraft/network/UnconfiguredPipelineHandler$InboundConfigurationTask;
+		ARG 0 newHandler
+	METHOD setupInboundProtocol (Lnet/minecraft/network/ProtocolInfo;)Lnet/minecraft/network/UnconfiguredPipelineHandler$InboundConfigurationTask;
+		ARG 0 protocolInfo
+	METHOD setupOutboundHandler (Lio/netty/channel/ChannelOutboundHandler;)Lnet/minecraft/network/UnconfiguredPipelineHandler$OutboundConfigurationTask;
+		ARG 0 newHandler
+	METHOD setupOutboundProtocol (Lnet/minecraft/network/ProtocolInfo;)Lnet/minecraft/network/UnconfiguredPipelineHandler$OutboundConfigurationTask;
+		ARG 0 codecData
+	CLASS Inbound
+		METHOD channelRead (Lio/netty/channel/ChannelHandlerContext;Ljava/lang/Object;)V
+			ARG 1 ctx
+			ARG 2 msg
+		METHOD write (Lio/netty/channel/ChannelHandlerContext;Ljava/lang/Object;Lio/netty/channel/ChannelPromise;)V
+			ARG 1 ctx
+			ARG 2 msg
+			ARG 3 promise
+	CLASS InboundConfigurationTask
+		METHOD andThen (Lnet/minecraft/network/UnconfiguredPipelineHandler$InboundConfigurationTask;)Lnet/minecraft/network/UnconfiguredPipelineHandler$InboundConfigurationTask;
+			ARG 1 otherTask
+		METHOD lambda$andThen$0 (Lnet/minecraft/network/UnconfiguredPipelineHandler$InboundConfigurationTask;Lio/netty/channel/ChannelHandlerContext;)V
+			ARG 2 ctx
+		METHOD run (Lio/netty/channel/ChannelHandlerContext;)V
+			ARG 1 ctx
+	CLASS Outbound
+		METHOD write (Lio/netty/channel/ChannelHandlerContext;Ljava/lang/Object;Lio/netty/channel/ChannelPromise;)V
+			ARG 1 ctx
+			ARG 2 msg
+			ARG 3 promise
+	CLASS OutboundConfigurationTask
+		METHOD andThen (Lnet/minecraft/network/UnconfiguredPipelineHandler$OutboundConfigurationTask;)Lnet/minecraft/network/UnconfiguredPipelineHandler$OutboundConfigurationTask;
+			ARG 1 otherTask
+		METHOD lambda$andThen$0 (Lnet/minecraft/network/UnconfiguredPipelineHandler$OutboundConfigurationTask;Lio/netty/channel/ChannelHandlerContext;)V
+			ARG 2 ctx
+		METHOD run (Lio/netty/channel/ChannelHandlerContext;)V
+			ARG 1 ctx

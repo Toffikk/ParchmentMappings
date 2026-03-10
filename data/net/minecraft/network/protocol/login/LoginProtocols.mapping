@@ -1,0 +1,5 @@
+CLASS net/minecraft/network/protocol/login/LoginProtocols
+	METHOD lambda$static$0 (Lnet/minecraft/network/protocol/ProtocolInfoBuilder;)V
+		ARG 0 builder
+	METHOD lambda$static$1 (Lnet/minecraft/network/protocol/ProtocolInfoBuilder;)V
+		ARG 0 builder

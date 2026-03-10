@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/entity/ai/behavior/VillagerPanicTrigger
+	METHOD hasHostile (Lnet/minecraft/world/entity/LivingEntity;)Z
+		ARG 0 myBody
+	METHOD isHurt (Lnet/minecraft/world/entity/LivingEntity;)Z
+		ARG 0 myBody

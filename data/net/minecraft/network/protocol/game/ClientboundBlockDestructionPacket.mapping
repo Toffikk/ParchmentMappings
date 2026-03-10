@@ -1,0 +1,9 @@
+CLASS net/minecraft/network/protocol/game/ClientboundBlockDestructionPacket
+	METHOD <init> (ILnet/minecraft/core/BlockPos;I)V
+		ARG 1 id
+		ARG 2 pos
+		ARG 3 progress
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 input
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 output

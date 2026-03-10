@@ -1,3 +1,8 @@
 CLASS net/minecraft/core/component/DataComponentGetter
 	METHOD get (Lnet/minecraft/core/component/DataComponentType;)Ljava/lang/Object;
 		ARG 1 type
+	METHOD getOrDefault (Lnet/minecraft/core/component/DataComponentType;Ljava/lang/Object;)Ljava/lang/Object;
+		ARG 1 type
+		ARG 2 defaultValue
+	METHOD getTyped (Lnet/minecraft/core/component/DataComponentType;)Lnet/minecraft/core/component/TypedDataComponent;
+		ARG 1 type

@@ -1,0 +1,5 @@
+CLASS net/minecraft/network/protocol/game/ServerboundEditBookPacket
+	METHOD <init> (ILjava/util/List;Ljava/util/Optional;)V
+		ARG 1 slot
+		ARG 2 pages
+		ARG 3 title

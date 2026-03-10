@@ -1,0 +1,10 @@
+CLASS net/minecraft/network/protocol/handshake/ClientIntentionPacket
+	METHOD <init> (ILjava/lang/String;ILnet/minecraft/network/protocol/handshake/ClientIntent;)V
+		ARG 1 protocolVersion
+		ARG 2 hostName
+		ARG 3 port
+		ARG 4 intention
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 input
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 output

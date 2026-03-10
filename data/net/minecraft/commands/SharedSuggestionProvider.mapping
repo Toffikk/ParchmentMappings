@@ -1,0 +1,8 @@
+CLASS net/minecraft/commands/SharedSuggestionProvider
+	METHOD customSuggestion (Lcom/mojang/brigadier/context/CommandContext;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 context
+	METHOD suggestRegistryElements (Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/commands/SharedSuggestionProvider$ElementSuggestionType;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Lcom/mojang/brigadier/context/CommandContext;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 key
+		ARG 2 elements
+		ARG 3 builder
+		ARG 4 context

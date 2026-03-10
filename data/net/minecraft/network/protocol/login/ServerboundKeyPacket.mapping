@@ -1,0 +1,14 @@
+CLASS net/minecraft/network/protocol/login/ServerboundKeyPacket
+	METHOD <init> (Ljavax/crypto/SecretKey;Ljava/security/PublicKey;[B)V
+		ARG 1 secretKey
+		ARG 2 publicKey
+		ARG 3 challenge
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 input
+	METHOD getSecretKey (Ljava/security/PrivateKey;)Ljavax/crypto/SecretKey;
+		ARG 1 privateKey
+	METHOD isChallengeValid ([BLjava/security/PrivateKey;)Z
+		ARG 1 challenge
+		ARG 2 privateKey
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 output

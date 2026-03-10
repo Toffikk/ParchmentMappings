@@ -1,0 +1,11 @@
+CLASS net/minecraft/core/Rotations
+	METHOD <init> (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD lambda$static$0 (Ljava/util/List;)Lnet/minecraft/core/Rotations;
+		ARG 0 floats
+	METHOD lambda$static$1 (Ljava/util/List;)Lcom/mojang/serialization/DataResult;
+		ARG 0 input
+	METHOD lambda$static$2 (Lnet/minecraft/core/Rotations;)Ljava/util/List;
+		ARG 0 rotations

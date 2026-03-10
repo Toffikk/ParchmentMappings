@@ -1,0 +1,10 @@
+CLASS net/minecraft/core/particles/DustParticleOptions
+	METHOD <init> (IF)V
+		ARG 1 color
+		ARG 2 scale
+	METHOD lambda$static$0 (Lnet/minecraft/core/particles/DustParticleOptions;)Ljava/lang/Integer;
+		ARG 0 o
+	METHOD lambda$static$1 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD lambda$static$2 (Lnet/minecraft/core/particles/DustParticleOptions;)Ljava/lang/Integer;
+		ARG 0 o

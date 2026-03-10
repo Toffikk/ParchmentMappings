@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/entity/ai/sensing/WardenEntitySensor
+	METHOD getClosest (Lnet/minecraft/world/entity/monster/warden/Warden;Ljava/util/function/Predicate;)Ljava/util/Optional;
+		ARG 0 body
+		ARG 1 test
+	METHOD lambda$doTick$0 (Lnet/minecraft/world/entity/LivingEntity;)Z
+		ARG 0 e
+	METHOD lambda$doTick$1 (Lnet/minecraft/world/entity/LivingEntity;)Z
+		ARG 0 e
+	METHOD lambda$doTick$3 (Lnet/minecraft/world/entity/monster/warden/Warden;Lnet/minecraft/world/entity/LivingEntity;)V
+		ARG 1 entity

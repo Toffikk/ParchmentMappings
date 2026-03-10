@@ -1,0 +1,7 @@
+CLASS net/minecraft/network/protocol/status/StatusProtocols
+	METHOD lambda$static$0 (Lnet/minecraft/network/protocol/ProtocolInfoBuilder;)V
+		ARG 0 builder
+	METHOD lambda$static$1 (Lio/netty/buffer/ByteBuf;)Lio/netty/buffer/ByteBuf;
+		ARG 0 e
+	METHOD lambda$static$2 (Lnet/minecraft/network/protocol/ProtocolInfoBuilder;)V
+		ARG 0 builder

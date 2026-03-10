@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/entity/ai/goal/MeleeAttackGoal
+	METHOD <init> (Lnet/minecraft/world/entity/PathfinderMob;DZ)V
+		ARG 1 mob
+		ARG 2 speedModifier
+		ARG 4 followingTargetEvenIfNotSeen
+	METHOD canPerformAttack (Lnet/minecraft/world/entity/LivingEntity;)Z
+		ARG 1 target
+	METHOD checkAndPerformAttack (Lnet/minecraft/world/entity/LivingEntity;)V
+		ARG 1 target

@@ -1,0 +1,14 @@
+CLASS net/minecraft/world/entity/ai/goal/DolphinJumpGoal
+	METHOD <init> (Lnet/minecraft/world/entity/animal/dolphin/Dolphin;I)V
+		ARG 1 dolphin
+		ARG 2 interval
+	METHOD surfaceIsClear (Lnet/minecraft/core/BlockPos;III)Z
+		ARG 1 dolphinPos
+		ARG 2 stepX
+		ARG 3 stepZ
+		ARG 4 currentStep
+	METHOD waterIsClear (Lnet/minecraft/core/BlockPos;III)Z
+		ARG 1 dolphinPos
+		ARG 2 stepX
+		ARG 3 stepZ
+		ARG 4 currentStep

@@ -1,0 +1,15 @@
+CLASS net/minecraft/world/entity/ai/goal/MoveToBlockGoal
+	METHOD <init> (Lnet/minecraft/world/entity/PathfinderMob;DI)V
+		ARG 1 mob
+		ARG 2 speedModifier
+		ARG 4 searchRange
+	METHOD <init> (Lnet/minecraft/world/entity/PathfinderMob;DII)V
+		ARG 1 mob
+		ARG 2 speedModifier
+		ARG 4 searchRange
+		ARG 5 verticalSearchRange
+	METHOD isValidTarget (Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 level
+		ARG 2 pos
+	METHOD nextStartTick (Lnet/minecraft/world/entity/PathfinderMob;)I
+		ARG 1 mob

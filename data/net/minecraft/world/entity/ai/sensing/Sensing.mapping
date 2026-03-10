@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/entity/ai/sensing/Sensing
+	METHOD <init> (Lnet/minecraft/world/entity/Mob;)V
+		ARG 1 mob
+	METHOD hasLineOfSight (Lnet/minecraft/world/entity/Entity;)Z
+		ARG 1 target

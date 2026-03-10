@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/entity/ai/behavior/LookAndFollowTradingPlayerSink
+	METHOD <init> (F)V
+		ARG 1 speedModifier
+	METHOD followPlayer (Lnet/minecraft/world/entity/npc/villager/Villager;)V
+		ARG 1 body

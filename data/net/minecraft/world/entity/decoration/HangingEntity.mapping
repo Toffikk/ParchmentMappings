@@ -1,0 +1,16 @@
+CLASS net/minecraft/world/entity/decoration/HangingEntity
+	METHOD calculateBoundingBox (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;)Lnet/minecraft/world/phys/AABB;
+		ARG 1 pos
+		ARG 2 direction
+	METHOD canCoexist (Z)Z
+		ARG 1 allowIntersectingSameType
+	METHOD hasLevelCollision (Lnet/minecraft/world/phys/AABB;)Z
+		ARG 1 popBox
+	METHOD lambda$canCoexist$1 (ZLnet/minecraft/world/entity/decoration/HangingEntity;)Z
+		ARG 2 hangingEntity
+	METHOD lambda$survives$0 (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 pos
+	METHOD setDirection (Lnet/minecraft/core/Direction;)V
+		ARG 1 direction
+	METHOD setDirectionRaw (Lnet/minecraft/core/Direction;)V
+		ARG 1 direction

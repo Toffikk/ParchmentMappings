@@ -1,0 +1,10 @@
+CLASS net/minecraft/network/protocol/game/ClientboundBlockEntityDataPacket
+	METHOD <init> (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/entity/BlockEntityType;Lnet/minecraft/nbt/CompoundTag;)V
+		ARG 1 pos
+		ARG 2 type
+		ARG 3 tag
+	METHOD create (Lnet/minecraft/world/level/block/entity/BlockEntity;)Lnet/minecraft/network/protocol/game/ClientboundBlockEntityDataPacket;
+		ARG 0 blockEntity
+	METHOD create (Lnet/minecraft/world/level/block/entity/BlockEntity;Ljava/util/function/BiFunction;)Lnet/minecraft/network/protocol/game/ClientboundBlockEntityDataPacket;
+		ARG 0 blockEntity
+		ARG 1 updateTagSaver

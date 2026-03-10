@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/entity/animal/pig/Pig
+	METHOD lambda$registerGoals$0 (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 i
+	METHOD lambda$registerGoals$1 (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 i
+	METHOD lambda$thunderHit$2 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/monster/zombie/ZombifiedPiglin;)V
+		ARG 2 zp
+	METHOD setVariant (Lnet/minecraft/core/Holder;)V
+		ARG 1 variant

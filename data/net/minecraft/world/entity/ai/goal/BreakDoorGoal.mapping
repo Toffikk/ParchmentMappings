@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/entity/ai/goal/BreakDoorGoal
+	METHOD <init> (Lnet/minecraft/world/entity/Mob;ILjava/util/function/Predicate;)V
+		ARG 1 mob
+		ARG 2 seconds
+		ARG 3 validDifficulties
+	METHOD <init> (Lnet/minecraft/world/entity/Mob;Ljava/util/function/Predicate;)V
+		ARG 1 mob
+		ARG 2 validDifficulties
+	METHOD isValidDifficulty (Lnet/minecraft/world/Difficulty;)Z
+		ARG 1 difficulty

@@ -1,0 +1,8 @@
+CLASS net/minecraft/network/protocol/game/ClientboundOpenSignEditorPacket
+	METHOD <init> (Lnet/minecraft/core/BlockPos;Z)V
+		ARG 1 pos
+		ARG 2 isFrontText
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 input
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 output

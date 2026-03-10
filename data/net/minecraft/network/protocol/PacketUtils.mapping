@@ -1,0 +1,17 @@
+CLASS net/minecraft/network/protocol/PacketUtils
+	METHOD ensureRunningOnSameThread (Lnet/minecraft/network/protocol/Packet;Lnet/minecraft/network/PacketListener;Lnet/minecraft/network/PacketProcessor;)V
+		ARG 0 packet
+		ARG 1 listener
+		ARG 2 packetProcessor
+	METHOD ensureRunningOnSameThread (Lnet/minecraft/network/protocol/Packet;Lnet/minecraft/network/PacketListener;Lnet/minecraft/server/level/ServerLevel;)V
+		ARG 0 packet
+		ARG 1 listener
+		ARG 2 level
+	METHOD fillCrashReport (Lnet/minecraft/CrashReport;Lnet/minecraft/network/PacketListener;Lnet/minecraft/network/protocol/Packet;)V
+		ARG 0 report
+		ARG 1 listener
+		ARG 2 packet
+	METHOD makeReportedException (Ljava/lang/Exception;Lnet/minecraft/network/protocol/Packet;Lnet/minecraft/network/PacketListener;)Lnet/minecraft/ReportedException;
+		ARG 0 cause
+		ARG 1 packet
+		ARG 2 listener

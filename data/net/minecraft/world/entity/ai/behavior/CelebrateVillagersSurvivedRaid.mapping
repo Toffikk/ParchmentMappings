@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/entity/ai/behavior/CelebrateVillagersSurvivedRaid
+	METHOD <init> (II)V
+		ARG 1 minDuration
+		ARG 2 maxDuration
+	METHOD getFirework (Lnet/minecraft/world/item/DyeColor;I)Lnet/minecraft/world/item/ItemStack;
+		ARG 1 color
+		ARG 2 flightDuration

@@ -1,0 +1,25 @@
+CLASS net/minecraft/world/entity/animal/sniffer/Sniffer
+	METHOD canDig (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 position
+	METHOD emitDiggingParticles (Lnet/minecraft/world/entity/AnimationState;)Lnet/minecraft/world/entity/animal/sniffer/Sniffer;
+		ARG 1 state
+	METHOD lambda$calculateDigPosition$0 (I)Lnet/minecraft/world/phys/Vec3;
+		ARG 1 idx
+	METHOD lambda$calculateDigPosition$1 (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 position
+	METHOD lambda$canDig$2 (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/GlobalPos;)Z
+		ARG 2 explored
+	METHOD lambda$dropSeed$3 (Lnet/minecraft/core/BlockPos;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 2 l
+		ARG 3 itemStack
+	METHOD onDiggingComplete (Z)Lnet/minecraft/world/entity/animal/sniffer/Sniffer;
+		ARG 1 success
+	METHOD setState (Lnet/minecraft/world/entity/animal/sniffer/Sniffer$State;)Lnet/minecraft/world/entity/animal/sniffer/Sniffer;
+		ARG 1 state
+	METHOD storeExploredPosition (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/entity/animal/sniffer/Sniffer;
+		ARG 1 position
+	METHOD transitionTo (Lnet/minecraft/world/entity/animal/sniffer/Sniffer$State;)Lnet/minecraft/world/entity/animal/sniffer/Sniffer;
+		ARG 1 state
+	CLASS State
+		METHOD <init> (Ljava/lang/String;II)V
+			ARG 3 id

@@ -1,0 +1,15 @@
+CLASS net/minecraft/core/component/DataComponentType
+	METHOD lambda$static$1 (Lnet/minecraft/network/codec/StreamCodec;)Lnet/minecraft/network/codec/StreamCodec;
+		ARG 0 c
+	METHOD lambda$static$3 (Lnet/minecraft/core/component/DataComponentType;)Lcom/mojang/serialization/DataResult;
+		ARG 0 type
+	CLASS Builder
+		METHOD networkSynchronized (Lnet/minecraft/network/codec/StreamCodec;)Lnet/minecraft/core/component/DataComponentType$Builder;
+			ARG 1 streamCodec
+		METHOD persistent (Lcom/mojang/serialization/Codec;)Lnet/minecraft/core/component/DataComponentType$Builder;
+			ARG 1 codec
+		CLASS SimpleType
+			METHOD <init> (Lcom/mojang/serialization/Codec;Lnet/minecraft/network/codec/StreamCodec;Z)V
+				ARG 1 codec
+				ARG 2 streamCodec
+				ARG 3 ignoreSwapAnimation

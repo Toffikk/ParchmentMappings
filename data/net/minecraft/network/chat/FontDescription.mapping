@@ -1,0 +1,3 @@
+CLASS net/minecraft/network/chat/FontDescription
+	METHOD lambda$static$1 (Lnet/minecraft/network/chat/FontDescription;)Lcom/mojang/serialization/DataResult;
+		ARG 0 fontDescription

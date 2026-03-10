@@ -1,0 +1,14 @@
+CLASS net/minecraft/locale/DeprecatedTranslationsInfo
+	METHOD applyToMap (Ljava/util/Map;)V
+		ARG 1 translations
+	METHOD lambda$applyToMap$2 (Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 fromKey
+		ARG 2 toKey
+	METHOD lambda$loadFromJson$1 (Ljava/lang/String;)Ljava/lang/IllegalStateException;
+		ARG 0 msg
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD loadFromJson (Ljava/io/InputStream;)Lnet/minecraft/locale/DeprecatedTranslationsInfo;
+		ARG 0 stream
+	METHOD loadFromResource (Ljava/lang/String;)Lnet/minecraft/locale/DeprecatedTranslationsInfo;
+		ARG 0 path

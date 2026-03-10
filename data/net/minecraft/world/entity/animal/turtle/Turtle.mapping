@@ -1,0 +1,54 @@
+CLASS net/minecraft/world/entity/animal/turtle/Turtle
+	METHOD checkTurtleSpawnRules (Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/core/BlockPos;Lnet/minecraft/util/RandomSource;)Z
+		ARG 0 type
+		ARG 1 level
+		ARG 2 spawnReason
+		ARG 3 pos
+		ARG 4 random
+	METHOD lambda$registerGoals$1 (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 i
+	METHOD lambda$static$0 (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/server/level/ServerLevel;)Z
+		ARG 0 target
+		ARG 1 level
+	METHOD setHasEgg (Z)V
+		ARG 1 onOff
+	METHOD setHomePos (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 pos
+	METHOD setLayingEgg (Z)V
+		ARG 1 on
+	CLASS TurtleBreedGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/turtle/Turtle;D)V
+			ARG 1 turtle
+			ARG 2 speedModifier
+	CLASS TurtleGoHomeGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/turtle/Turtle;D)V
+			ARG 1 turtle
+			ARG 2 speedModifier
+	CLASS TurtleGoToWaterGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/turtle/Turtle;D)V
+			ARG 1 turtle
+			ARG 2 speedModifier
+	CLASS TurtleLayEggGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/turtle/Turtle;D)V
+			ARG 1 turtle
+			ARG 2 speedModifier
+	CLASS TurtleMoveControl
+		METHOD <init> (Lnet/minecraft/world/entity/animal/turtle/Turtle;)V
+			ARG 1 turtle
+	CLASS TurtlePanicGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/turtle/Turtle;D)V
+			ARG 1 turtle
+			ARG 2 speedModifier
+	CLASS TurtlePathNavigation
+		METHOD <init> (Lnet/minecraft/world/entity/animal/turtle/Turtle;Lnet/minecraft/world/level/Level;)V
+			ARG 1 mob
+			ARG 2 level
+	CLASS TurtleRandomStrollGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/turtle/Turtle;DI)V
+			ARG 1 turtle
+			ARG 2 speedModifier
+			ARG 4 interval
+	CLASS TurtleTravelGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/turtle/Turtle;D)V
+			ARG 1 turtle
+			ARG 2 speedModifier

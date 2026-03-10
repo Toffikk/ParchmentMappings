@@ -1,0 +1,4 @@
+CLASS net/minecraft/data/loot/packs/VanillaShearingLoot
+	METHOD lambda$generate$0 (Ljava/util/function/BiConsumer;Lnet/minecraft/world/item/DyeColor;Lnet/minecraft/world/level/ItemLike;)V
+		ARG 1 dye
+		ARG 2 wool

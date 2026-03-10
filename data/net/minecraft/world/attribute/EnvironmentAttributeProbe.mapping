@@ -1,0 +1,20 @@
+CLASS net/minecraft/world/attribute/EnvironmentAttributeProbe
+	METHOD getValue (Lnet/minecraft/world/attribute/EnvironmentAttribute;F)Ljava/lang/Object;
+		ARG 1 attribute
+		ARG 2 partialTicks
+	METHOD lambda$new$0 (Lnet/minecraft/world/attribute/EnvironmentAttribute;)Lnet/minecraft/world/attribute/EnvironmentAttributeProbe$ValueProbe;
+		ARG 1 x$0
+	METHOD lambda$tick$1 (DLnet/minecraft/core/Holder;)V
+		ARG 1 weight
+		ARG 3 biome
+	METHOD tick (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/phys/Vec3;)V
+		ARG 1 level
+		ARG 2 position
+	CLASS ValueProbe
+		METHOD <init> (Lnet/minecraft/world/attribute/EnvironmentAttributeProbe;Lnet/minecraft/world/attribute/EnvironmentAttribute;)V
+			ARG 2 attribute
+		METHOD get (Lnet/minecraft/world/attribute/EnvironmentAttribute;F)Ljava/lang/Object;
+			ARG 1 attribute
+			ARG 2 partialTicks
+		METHOD getValueFromLevel (Lnet/minecraft/world/attribute/EnvironmentAttribute;)Ljava/lang/Object;
+			ARG 1 attribute

@@ -1,0 +1,9 @@
+CLASS net/minecraft/data/tags/EnchantmentTagsProvider
+	METHOD <init> (Lnet/minecraft/data/PackOutput;Ljava/util/concurrent/CompletableFuture;)V
+		ARG 1 output
+		ARG 2 lookupProvider
+	METHOD lambda$tooltipOrder$0 (Ljava/util/Set;Lnet/minecraft/core/Holder$Reference;)Z
+		ARG 1 e
+	METHOD tooltipOrder (Lnet/minecraft/core/HolderLookup$Provider;[Lnet/minecraft/resources/ResourceKey;)V
+		ARG 1 registries
+		ARG 2 order

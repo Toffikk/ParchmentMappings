@@ -1,0 +1,14 @@
+CLASS net/minecraft/network/protocol/status/ServerStatus
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	CLASS Favicon
+		METHOD lambda$static$2 (Ljava/lang/String;)Lcom/mojang/serialization/DataResult;
+			ARG 0 string
+		METHOD lambda$static$3 (Lnet/minecraft/network/protocol/status/ServerStatus$Favicon;)Ljava/lang/String;
+			ARG 0 favicon
+	CLASS Players
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+	CLASS Version
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i

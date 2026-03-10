@@ -1,0 +1,17 @@
+CLASS net/minecraft/world/entity/ai/memory/WalkTarget
+	METHOD <init> (Lnet/minecraft/core/BlockPos;FI)V
+		ARG 1 target
+		ARG 2 speedModifier
+		ARG 3 closeEnoughDist
+	METHOD <init> (Lnet/minecraft/world/entity/ai/behavior/PositionTracker;FI)V
+		ARG 1 target
+		ARG 2 speedModifier
+		ARG 3 closeEnoughDist
+	METHOD <init> (Lnet/minecraft/world/entity/Entity;FI)V
+		ARG 1 target
+		ARG 2 speedModifier
+		ARG 3 closeEnoughDist
+	METHOD <init> (Lnet/minecraft/world/phys/Vec3;FI)V
+		ARG 1 target
+		ARG 2 speedModifier
+		ARG 3 closeEnoughDist

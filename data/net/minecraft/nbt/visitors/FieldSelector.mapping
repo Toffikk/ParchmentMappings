@@ -1,0 +1,13 @@
+CLASS net/minecraft/nbt/visitors/FieldSelector
+	METHOD <init> (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/nbt/TagType;Ljava/lang/String;)V
+		ARG 1 grandparent
+		ARG 2 parent
+		ARG 3 type
+		ARG 4 name
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/nbt/TagType;Ljava/lang/String;)V
+		ARG 1 parent
+		ARG 2 type
+		ARG 3 name
+	METHOD <init> (Lnet/minecraft/nbt/TagType;Ljava/lang/String;)V
+		ARG 1 type
+		ARG 2 name

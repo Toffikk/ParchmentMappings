@@ -1,0 +1,7 @@
+CLASS net/minecraft/network/protocol/game/ClientboundSetBorderWarningDelayPacket
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 input
+	METHOD <init> (Lnet/minecraft/world/level/border/WorldBorder;)V
+		ARG 1 border
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 output

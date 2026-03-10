@@ -1,0 +1,15 @@
+CLASS net/minecraft/world/entity/ai/behavior/AnimalMakeLove
+	METHOD <init> (Lnet/minecraft/world/entity/EntityType;)V
+		ARG 1 partnerType
+	METHOD <init> (Lnet/minecraft/world/entity/EntityType;FI)V
+		ARG 1 partnerType
+		ARG 2 speedModifier
+		ARG 3 closeEnoughDistance
+	METHOD findValidBreedPartner (Lnet/minecraft/world/entity/animal/Animal;)Ljava/util/Optional;
+		ARG 1 body
+	METHOD getBreedTarget (Lnet/minecraft/world/entity/animal/Animal;)Lnet/minecraft/world/entity/animal/Animal;
+		ARG 1 body
+	METHOD hasBreedTargetOfRightType (Lnet/minecraft/world/entity/animal/Animal;)Z
+		ARG 1 body
+	METHOD lambda$findValidBreedPartner$0 (Lnet/minecraft/world/entity/animal/Animal;Lnet/minecraft/world/entity/LivingEntity;)Z
+		ARG 2 entity

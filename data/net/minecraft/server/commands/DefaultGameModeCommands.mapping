@@ -1,0 +1,8 @@
+CLASS net/minecraft/server/commands/DefaultGameModeCommands
+	METHOD lambda$register$0 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD register (Lcom/mojang/brigadier/CommandDispatcher;)V
+		ARG 0 dispatcher
+	METHOD setMode (Lnet/minecraft/commands/CommandSourceStack;Lnet/minecraft/world/level/GameType;)I
+		ARG 0 source
+		ARG 1 type

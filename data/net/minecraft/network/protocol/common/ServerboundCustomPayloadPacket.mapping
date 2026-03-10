@@ -1,0 +1,5 @@
+CLASS net/minecraft/network/protocol/common/ServerboundCustomPayloadPacket
+	METHOD lambda$static$0 (Lnet/minecraft/resources/Identifier;)Lnet/minecraft/network/codec/StreamCodec;
+		ARG 0 id
+	METHOD lambda$static$1 (Ljava/util/ArrayList;)V
+		ARG 0 types

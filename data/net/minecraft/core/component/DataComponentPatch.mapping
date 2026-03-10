@@ -1,0 +1,41 @@
+CLASS net/minecraft/core/component/DataComponentPatch
+	METHOD <init> (Lit/unimi/dsi/fastutil/objects/Reference2ObjectMap;)V
+		ARG 1 map
+	METHOD createStreamCodec (Lnet/minecraft/core/component/DataComponentPatch$CodecGetter;)Lnet/minecraft/network/codec/StreamCodec;
+		ARG 0 codecGetter
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 obj
+	METHOD forget (Ljava/util/function/Predicate;)Lnet/minecraft/core/component/DataComponentPatch;
+		ARG 1 test
+	METHOD get (Lnet/minecraft/core/component/DataComponentType;)Ljava/util/Optional;
+		ARG 1 type
+	METHOD lambda$split$2 (Lnet/minecraft/core/component/DataComponentMap$Builder;Ljava/util/Set;Lnet/minecraft/core/component/DataComponentType;Ljava/util/Optional;)V
+		ARG 2 type
+		ARG 3 optionalValue
+	METHOD lambda$static$0 (Ljava/util/Map;)Lnet/minecraft/core/component/DataComponentPatch;
+		ARG 0 data
+	METHOD lambda$static$1 (Lnet/minecraft/core/component/DataComponentPatch;)Ljava/util/Map;
+		ARG 0 patch
+	METHOD toString (Lit/unimi/dsi/fastutil/objects/Reference2ObjectMap;)Ljava/lang/String;
+		ARG 0 map
+	CLASS 3
+		METHOD encodeComponent (Lnet/minecraft/network/RegistryFriendlyByteBuf;Lnet/minecraft/core/component/DataComponentType;Ljava/lang/Object;)V
+			ARG 1 output
+			ARG 2 type
+			ARG 3 value
+	CLASS Builder
+		METHOD remove (Lnet/minecraft/core/component/DataComponentType;)Lnet/minecraft/core/component/DataComponentPatch$Builder;
+			ARG 1 type
+		METHOD set (Lnet/minecraft/core/component/DataComponentType;Ljava/lang/Object;)Lnet/minecraft/core/component/DataComponentPatch$Builder;
+			ARG 1 type
+			ARG 2 value
+		METHOD set (Lnet/minecraft/core/component/TypedDataComponent;)Lnet/minecraft/core/component/DataComponentPatch$Builder;
+			ARG 1 component
+	CLASS CodecGetter
+		METHOD apply (Lnet/minecraft/core/component/DataComponentType;)Lnet/minecraft/network/codec/StreamCodec;
+			ARG 1 type
+	CLASS PatchKey
+		METHOD lambda$static$2 (Ljava/lang/String;)Lcom/mojang/serialization/DataResult;
+			ARG 0 string
+		METHOD lambda$static$4 (Lnet/minecraft/core/component/DataComponentPatch$PatchKey;)Lcom/mojang/serialization/DataResult;
+			ARG 0 key

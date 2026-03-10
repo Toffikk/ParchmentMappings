@@ -1,0 +1,12 @@
+CLASS net/minecraft/network/protocol/game/ClientboundMerchantOffersPacket
+	METHOD <init> (ILnet/minecraft/world/item/trading/MerchantOffers;IIZZ)V
+		ARG 1 containerId
+		ARG 2 offers
+		ARG 3 merchantLevel
+		ARG 4 merchantXp
+		ARG 5 showProgress
+		ARG 6 canRestock
+	METHOD <init> (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+		ARG 1 input
+	METHOD write (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+		ARG 1 output

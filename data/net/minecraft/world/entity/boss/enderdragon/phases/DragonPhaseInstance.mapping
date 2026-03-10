@@ -1,0 +1,11 @@
+CLASS net/minecraft/world/entity/boss/enderdragon/phases/DragonPhaseInstance
+	METHOD doServerTick (Lnet/minecraft/server/level/ServerLevel;)V
+		ARG 1 level
+	METHOD onCrystalDestroyed (Lnet/minecraft/world/entity/boss/enderdragon/EndCrystal;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/damagesource/DamageSource;Lnet/minecraft/world/entity/player/Player;)V
+		ARG 1 crystal
+		ARG 2 pos
+		ARG 3 source
+		ARG 4 player
+	METHOD onHurt (Lnet/minecraft/world/damagesource/DamageSource;F)F
+		ARG 1 source
+		ARG 2 damage

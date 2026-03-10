@@ -1,0 +1,3 @@
+CLASS net/minecraft/network/protocol/status/ClientStatusPacketListener
+	METHOD handleStatusResponse (Lnet/minecraft/network/protocol/status/ClientboundStatusResponsePacket;)V
+		ARG 1 packet

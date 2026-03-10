@@ -1,0 +1,13 @@
+CLASS net/minecraft/world/entity/ai/behavior/MoveToTargetSink
+	METHOD <init> (II)V
+		ARG 1 minTimeout
+		ARG 2 maxTimeout
+	METHOD isWalkTargetSpectator (Lnet/minecraft/world/entity/ai/memory/WalkTarget;)Z
+		ARG 0 walkTarget
+	METHOD reachedTarget (Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/entity/ai/memory/WalkTarget;)Z
+		ARG 1 body
+		ARG 2 walkTarget
+	METHOD tryComputePath (Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/entity/ai/memory/WalkTarget;J)Z
+		ARG 1 body
+		ARG 2 walkTarget
+		ARG 3 timestamp

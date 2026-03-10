@@ -1,0 +1,36 @@
+CLASS net/minecraft/core/component/predicates/DataComponentPredicate
+	METHOD lambda$static$0 (Ljava/util/List;)Ljava/util/Map;
+		ARG 0 singles
+	METHOD lambda$static$1 (Ljava/util/Map;)Ljava/util/List;
+		ARG 0 map
+	METHOD matches (Lnet/minecraft/core/component/DataComponentGetter;)Z
+		ARG 1 components
+	METHOD singleCodec (Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 name
+	CLASS AnyValueType
+		METHOD <init> (Lnet/minecraft/core/component/predicates/AnyValue;)V
+			ARG 1 predicate
+		METHOD create (Lnet/minecraft/core/component/DataComponentType;)Lnet/minecraft/core/component/predicates/DataComponentPredicate$AnyValueType;
+			ARG 0 componentType
+	CLASS Single
+		METHOD fromEntry (Ljava/util/Map$Entry;)Lnet/minecraft/core/component/predicates/DataComponentPredicate$Single;
+			ARG 0 e
+		METHOD lambda$wrapCodec$0 (Lnet/minecraft/core/component/predicates/DataComponentPredicate$Type;Lnet/minecraft/core/component/predicates/DataComponentPredicate;)Lnet/minecraft/core/component/predicates/DataComponentPredicate$Single;
+			ARG 1 predicate
+		METHOD lambda$wrapCodec$1 (Lcom/mojang/serialization/Codec;Lnet/minecraft/core/component/predicates/DataComponentPredicate$Type;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 2 i
+		METHOD wrapCodec (Lnet/minecraft/core/component/predicates/DataComponentPredicate$Type;Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/MapCodec;
+			ARG 0 type
+			ARG 1 codec
+	CLASS Type
+		METHOD copyOrCreateType (Lcom/mojang/datafixers/util/Either;)Lnet/minecraft/core/component/predicates/DataComponentPredicate$Type;
+			ARG 0 concreteTypeOrComponent
+		METHOD lambda$copyOrCreateType$0 (Lnet/minecraft/core/component/predicates/DataComponentPredicate$Type;)Lnet/minecraft/core/component/predicates/DataComponentPredicate$Type;
+			ARG 0 concrete
+		METHOD unpackType (Lnet/minecraft/core/component/predicates/DataComponentPredicate$Type;)Lcom/mojang/datafixers/util/Either;
+			ARG 0 type
+	CLASS TypeBase
+		METHOD <init> (Lcom/mojang/serialization/Codec;)V
+			ARG 1 codec
+		METHOD lambda$new$0 (Lnet/minecraft/core/component/predicates/DataComponentPredicate;)Lnet/minecraft/core/component/predicates/DataComponentPredicate$Single;
+			ARG 1 v

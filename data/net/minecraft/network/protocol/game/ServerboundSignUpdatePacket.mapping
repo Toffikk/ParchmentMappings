@@ -1,0 +1,12 @@
+CLASS net/minecraft/network/protocol/game/ServerboundSignUpdatePacket
+	METHOD <init> (Lnet/minecraft/core/BlockPos;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 pos
+		ARG 2 isFrontText
+		ARG 3 line0
+		ARG 4 line1
+		ARG 5 line2
+		ARG 6 line3
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 input
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 output

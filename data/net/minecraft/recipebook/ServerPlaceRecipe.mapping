@@ -1,4 +1,43 @@
 CLASS net/minecraft/recipebook/ServerPlaceRecipe
+	METHOD <init> (Lnet/minecraft/recipebook/ServerPlaceRecipe$CraftingMenuAccess;Lnet/minecraft/world/entity/player/Inventory;ZIILjava/util/List;Ljava/util/List;)V
+		ARG 1 menu
+		ARG 2 inventory
+		ARG 3 useMaxItems
+		ARG 4 gridWidth
+		ARG 5 gridHeight
+		ARG 6 inputGridSlots
+		ARG 7 slotsToClear
+	METHOD calculateAmountToCraft (IZ)I
+		ARG 1 biggestCraftableStack
+		ARG 2 recipeMatchesPlaced
+	METHOD clampToMaxStackSize (ILjava/util/List;)I
+		ARG 0 value
+		ARG 1 items
+	METHOD lambda$placeRecipe$0 (Ljava/util/List;ILjava/lang/Integer;III)V
+		ARG 3 ingredientIndex
+		ARG 4 gridIndex
+		ARG 5 gridXPos
+		ARG 6 gridYPos
+	METHOD moveItemToGrid (Lnet/minecraft/world/inventory/Slot;Lnet/minecraft/core/Holder;I)I
+		ARG 1 targetSlot
+		ARG 2 itemInInventory
+		ARG 3 count
+	METHOD placeRecipe (Lnet/minecraft/recipebook/ServerPlaceRecipe$CraftingMenuAccess;IILjava/util/List;Ljava/util/List;Lnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/item/crafting/RecipeHolder;ZZ)Lnet/minecraft/world/inventory/RecipeBookMenu$PostPlaceAction;
+		ARG 0 menu
+		ARG 1 gridWidth
+		ARG 2 gridHeight
+		ARG 3 inputGridSlots
+		ARG 4 slotsToClear
+		ARG 5 inventory
+		ARG 6 recipe
+		ARG 7 useMaxItems
+		ARG 8 allowDroppingItemsToClear
+	METHOD placeRecipe (Lnet/minecraft/world/item/crafting/RecipeHolder;Lnet/minecraft/world/entity/player/StackedItemContents;)V
+		ARG 1 recipe
+		ARG 2 availableItems
+	METHOD tryPlaceRecipe (Lnet/minecraft/world/item/crafting/RecipeHolder;Lnet/minecraft/world/entity/player/StackedItemContents;)Lnet/minecraft/world/inventory/RecipeBookMenu$PostPlaceAction;
+		ARG 1 recipe
+		ARG 2 availableItems
 	CLASS CraftingMenuAccess
 		METHOD fillCraftSlotsStackedContents (Lnet/minecraft/world/entity/player/StackedItemContents;)V
 			ARG 1 stackedContents
