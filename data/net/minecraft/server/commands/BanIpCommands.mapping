@@ -1,0 +1,15 @@
+CLASS net/minecraft/server/commands/BanIpCommands
+	METHOD banIp (Lnet/minecraft/commands/CommandSourceStack;Ljava/lang/String;Lnet/minecraft/network/chat/Component;)I
+		ARG 0 source
+		ARG 1 ip
+		ARG 2 reason
+	METHOD banIpOrName (Lnet/minecraft/commands/CommandSourceStack;Ljava/lang/String;Lnet/minecraft/network/chat/Component;)I
+		ARG 0 source
+		ARG 1 target
+		ARG 2 reason
+	METHOD lambda$register$0 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$1 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD register (Lcom/mojang/brigadier/CommandDispatcher;)V
+		ARG 0 dispatcher

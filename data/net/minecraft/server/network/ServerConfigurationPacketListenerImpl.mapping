@@ -1,0 +1,7 @@
+CLASS net/minecraft/server/network/ServerConfigurationPacketListenerImpl
+	METHOD finishCurrentTask (Lnet/minecraft/server/network/ConfigurationTask$Type;)V
+		ARG 1 taskTypeToFinish
+	METHOD lambda$addOptionalTasks$2 (Lnet/minecraft/server/MinecraftServer$ServerResourcePackInfo;)V
+		ARG 1 info
+	METHOD lambda$startConfiguration$0 (Lnet/minecraft/server/packs/PackResources;)Ljava/util/stream/Stream;
+		ARG 0 packResources

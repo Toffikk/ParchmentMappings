@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/phys/HitResult
+	METHOD <init> (Lnet/minecraft/world/phys/Vec3;)V
+		ARG 1 location
+	METHOD distanceTo (Lnet/minecraft/world/entity/Entity;)D
+		ARG 1 entity

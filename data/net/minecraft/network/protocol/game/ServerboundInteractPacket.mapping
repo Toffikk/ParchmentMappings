@@ -1,0 +1,7 @@
+CLASS net/minecraft/network/protocol/game/ServerboundInteractPacket
+	CLASS Handler
+		METHOD onInteraction (Lnet/minecraft/world/InteractionHand;)V
+			ARG 1 hand
+		METHOD onInteraction (Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/phys/Vec3;)V
+			ARG 1 hand
+			ARG 2 location

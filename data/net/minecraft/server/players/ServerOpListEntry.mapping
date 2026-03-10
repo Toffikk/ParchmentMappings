@@ -1,0 +1,7 @@
+CLASS net/minecraft/server/players/ServerOpListEntry
+	METHOD <init> (Lcom/google/gson/JsonObject;)V
+		ARG 1 object
+	METHOD <init> (Lnet/minecraft/server/players/NameAndId;Lnet/minecraft/server/permissions/LevelBasedPermissionSet;Z)V
+		ARG 1 user
+		ARG 2 permissions
+		ARG 3 bypassesPlayerLimit

@@ -1,0 +1,17 @@
+CLASS net/minecraft/server/commands/GameRuleCommand
+	METHOD buildRuleArguments (Lnet/minecraft/world/level/gamerules/GameRule;Lcom/mojang/brigadier/builder/LiteralArgumentBuilder;)Lcom/mojang/brigadier/builder/LiteralArgumentBuilder;
+		ARG 0 gameRule
+		ARG 1 ruleLiteral
+	METHOD lambda$buildRuleArguments$0 (Lnet/minecraft/world/level/gamerules/GameRule;Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 1 c
+	METHOD lambda$buildRuleArguments$1 (Lnet/minecraft/world/level/gamerules/GameRule;Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 1 c
+	METHOD queryRule (Lnet/minecraft/commands/CommandSourceStack;Lnet/minecraft/world/level/gamerules/GameRule;)I
+		ARG 0 source
+		ARG 1 gameRule
+	METHOD register (Lcom/mojang/brigadier/CommandDispatcher;Lnet/minecraft/commands/CommandBuildContext;)V
+		ARG 0 dispatcher
+		ARG 1 context
+	METHOD setRule (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/world/level/gamerules/GameRule;)I
+		ARG 0 context
+		ARG 1 gameRule

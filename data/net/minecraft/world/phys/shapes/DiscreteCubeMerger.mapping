@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/phys/shapes/DiscreteCubeMerger
+	METHOD <init> (II)V
+		ARG 1 firstSize
+		ARG 2 secondSize

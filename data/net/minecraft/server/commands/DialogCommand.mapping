@@ -1,0 +1,15 @@
+CLASS net/minecraft/server/commands/DialogCommand
+	METHOD clearDialog (Lnet/minecraft/commands/CommandSourceStack;Ljava/util/Collection;)I
+		ARG 0 sender
+		ARG 1 targets
+	METHOD lambda$register$0 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$1 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD register (Lcom/mojang/brigadier/CommandDispatcher;Lnet/minecraft/commands/CommandBuildContext;)V
+		ARG 0 dispatcher
+		ARG 1 context
+	METHOD showDialog (Lnet/minecraft/commands/CommandSourceStack;Ljava/util/Collection;Lnet/minecraft/core/Holder;)I
+		ARG 0 sender
+		ARG 1 targets
+		ARG 2 dialog

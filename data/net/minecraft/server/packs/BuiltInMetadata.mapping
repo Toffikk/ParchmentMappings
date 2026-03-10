@@ -1,0 +1,13 @@
+CLASS net/minecraft/server/packs/BuiltInMetadata
+	METHOD <init> (Ljava/util/Map;)V
+		ARG 1 values
+	METHOD get (Lnet/minecraft/server/packs/metadata/MetadataSectionType;)Ljava/lang/Object;
+		ARG 1 section
+	METHOD of (Lnet/minecraft/server/packs/metadata/MetadataSectionType;Ljava/lang/Object;)Lnet/minecraft/server/packs/BuiltInMetadata;
+		ARG 0 k
+		ARG 1 v
+	METHOD of (Lnet/minecraft/server/packs/metadata/MetadataSectionType;Ljava/lang/Object;Lnet/minecraft/server/packs/metadata/MetadataSectionType;Ljava/lang/Object;)Lnet/minecraft/server/packs/BuiltInMetadata;
+		ARG 0 k1
+		ARG 1 v1
+		ARG 2 k2
+		ARG 3 v2

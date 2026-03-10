@@ -1,0 +1,3 @@
+CLASS net/minecraft/core/component/DataComponentGetter
+	METHOD get (Lnet/minecraft/core/component/DataComponentType;)Ljava/lang/Object;
+		ARG 1 type

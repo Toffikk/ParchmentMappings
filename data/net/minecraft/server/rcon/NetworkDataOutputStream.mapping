@@ -1,0 +1,15 @@
+CLASS net/minecraft/server/rcon/NetworkDataOutputStream
+	METHOD <init> (I)V
+		ARG 1 size
+	METHOD write (I)V
+		ARG 1 data
+	METHOD writeBytes ([B)V
+		ARG 1 data
+	METHOD writeFloat (F)V
+		ARG 1 data
+	METHOD writeInt (I)V
+		ARG 1 data
+	METHOD writeShort (S)V
+		ARG 1 data
+	METHOD writeString (Ljava/lang/String;)V
+		ARG 1 data

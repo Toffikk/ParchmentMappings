@@ -1,0 +1,14 @@
+CLASS net/minecraft/stats/StatsCounter
+	METHOD getValue (Lnet/minecraft/stats/Stat;)I
+		ARG 1 stat
+	METHOD getValue (Lnet/minecraft/stats/StatType;Ljava/lang/Object;)I
+		ARG 1 type
+		ARG 2 key
+	METHOD increment (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/stats/Stat;I)V
+		ARG 1 player
+		ARG 2 stat
+		ARG 3 count
+	METHOD setValue (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/stats/Stat;I)V
+		ARG 1 player
+		ARG 2 stat
+		ARG 3 count

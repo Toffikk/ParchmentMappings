@@ -1,0 +1,10 @@
+CLASS net/minecraft/server/commands/KillCommand
+	METHOD kill (Lnet/minecraft/commands/CommandSourceStack;Ljava/util/Collection;)I
+		ARG 0 source
+		ARG 1 victims
+	METHOD lambda$register$0 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$1 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD register (Lcom/mojang/brigadier/CommandDispatcher;)V
+		ARG 0 dispatcher

@@ -1,0 +1,12 @@
+CLASS net/minecraft/server/rcon/thread/RconClient
+	METHOD <init> (Lnet/minecraft/server/ServerInterface;Ljava/lang/String;Ljava/net/Socket;)V
+		ARG 1 serverInterface
+		ARG 2 rconPassword
+		ARG 3 socket
+	METHOD send (IILjava/lang/String;)V
+		ARG 1 requestid
+		ARG 2 cmd
+		ARG 3 str
+	METHOD sendCmdResponse (ILjava/lang/String;)V
+		ARG 1 requestid
+		ARG 2 response

@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/entity/EquipmentUser
+	METHOD setDropChance (Lnet/minecraft/world/entity/EquipmentSlot;F)V
+		ARG 1 slot
+		ARG 2 dropChance

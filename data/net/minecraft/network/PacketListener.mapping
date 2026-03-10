@@ -1,0 +1,11 @@
+CLASS net/minecraft/network/PacketListener
+	METHOD fillListenerSpecificCrashDetails (Lnet/minecraft/CrashReport;Lnet/minecraft/CrashReportCategory;)V
+		ARG 1 report
+		ARG 2 connectionDetails
+	METHOD onDisconnect (Lnet/minecraft/network/DisconnectionDetails;)V
+		ARG 1 details
+	METHOD onPacketError (Lnet/minecraft/network/protocol/Packet;Ljava/lang/Exception;)V
+		ARG 1 packet
+		ARG 2 cause
+	METHOD shouldHandleMessage (Lnet/minecraft/network/protocol/Packet;)Z
+		ARG 1 packet

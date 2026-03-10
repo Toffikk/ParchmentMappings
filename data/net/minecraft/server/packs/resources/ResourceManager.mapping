@@ -1,0 +1,9 @@
+CLASS net/minecraft/server/packs/resources/ResourceManager
+	METHOD getResourceStack (Lnet/minecraft/resources/Identifier;)Ljava/util/List;
+		ARG 1 location
+	METHOD listResources (Ljava/lang/String;Ljava/util/function/Predicate;)Ljava/util/Map;
+		ARG 1 directory
+		ARG 2 filter
+	METHOD listResourceStacks (Ljava/lang/String;Ljava/util/function/Predicate;)Ljava/util/Map;
+		ARG 1 directory
+		ARG 2 filter

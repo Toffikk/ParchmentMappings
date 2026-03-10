@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/entity/Leashable
+	METHOD closeRangeLeashBehaviour (Lnet/minecraft/world/entity/Entity;)V
+		ARG 1 leashHolder
+	METHOD setLeashData (Lnet/minecraft/world/entity/Leashable$LeashData;)V
+		ARG 1 leashData
+	METHOD whenLeashedTo (Lnet/minecraft/world/entity/Entity;)V
+		ARG 1 leashHolder

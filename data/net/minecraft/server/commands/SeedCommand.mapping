@@ -1,0 +1,6 @@
+CLASS net/minecraft/server/commands/SeedCommand
+	METHOD lambda$register$1 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD register (Lcom/mojang/brigadier/CommandDispatcher;Z)V
+		ARG 0 dispatcher
+		ARG 1 checkPermissions

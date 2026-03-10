@@ -1,0 +1,14 @@
+CLASS net/minecraft/server/commands/TransferCommand
+	METHOD lambda$register$0 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$1 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$2 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD register (Lcom/mojang/brigadier/CommandDispatcher;)V
+		ARG 0 dispatcher
+	METHOD transfer (Lnet/minecraft/commands/CommandSourceStack;Ljava/lang/String;ILjava/util/Collection;)I
+		ARG 0 source
+		ARG 1 hostname
+		ARG 2 port
+		ARG 3 players

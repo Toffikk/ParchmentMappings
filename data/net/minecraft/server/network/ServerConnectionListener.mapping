@@ -1,0 +1,28 @@
+CLASS net/minecraft/server/network/ServerConnectionListener
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
+		ARG 1 server
+	METHOD startTcpServerListener (Ljava/net/InetAddress;I)V
+		ARG 1 address
+		ARG 2 port
+	CLASS 1
+		METHOD initChannel (Lio/netty/channel/Channel;)V
+			ARG 1 channel
+	CLASS 2
+		METHOD initChannel (Lio/netty/channel/Channel;)V
+			ARG 1 channel
+	CLASS LatencySimulator
+		METHOD <init> (II)V
+			ARG 1 delay
+			ARG 2 jitter
+		METHOD channelRead (Lio/netty/channel/ChannelHandlerContext;Ljava/lang/Object;)V
+			ARG 1 ctx
+			ARG 2 msg
+		METHOD delayDownstream (Lio/netty/channel/ChannelHandlerContext;Ljava/lang/Object;)V
+			ARG 1 ctx
+			ARG 2 msg
+		METHOD onTimeout (Lio/netty/util/Timeout;)V
+			ARG 1 timeout
+		CLASS DelayedMessage
+			METHOD <init> (Lio/netty/channel/ChannelHandlerContext;Ljava/lang/Object;)V
+				ARG 1 ctx
+				ARG 2 msg

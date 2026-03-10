@@ -1,0 +1,9 @@
+CLASS net/minecraft/server/commands/DebugMobSpawningCommand
+	METHOD lambda$register$0 (Lnet/minecraft/world/entity/MobCategory;Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 1 c
+	METHOD register (Lcom/mojang/brigadier/CommandDispatcher;)V
+		ARG 0 dispatcher
+	METHOD spawnMobs (Lnet/minecraft/commands/CommandSourceStack;Lnet/minecraft/world/entity/MobCategory;Lnet/minecraft/core/BlockPos;)I
+		ARG 0 source
+		ARG 1 mobCategory
+		ARG 2 at

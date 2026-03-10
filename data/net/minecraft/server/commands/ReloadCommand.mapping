@@ -1,0 +1,14 @@
+CLASS net/minecraft/server/commands/ReloadCommand
+	METHOD discoverNewPacks (Lnet/minecraft/server/packs/repository/PackRepository;Lnet/minecraft/world/level/storage/WorldData;Ljava/util/Collection;)Ljava/util/Collection;
+		ARG 0 packRepository
+		ARG 1 worldData
+		ARG 2 currentPacks
+	METHOD lambda$register$2 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 s
+	METHOD lambda$reloadPacks$0 (Lnet/minecraft/commands/CommandSourceStack;Ljava/lang/Throwable;)Ljava/lang/Void;
+		ARG 1 throwable
+	METHOD register (Lcom/mojang/brigadier/CommandDispatcher;)V
+		ARG 0 dispatcher
+	METHOD reloadPacks (Ljava/util/Collection;Lnet/minecraft/commands/CommandSourceStack;)V
+		ARG 0 selectedPacks
+		ARG 1 source

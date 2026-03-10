@@ -3,3 +3,8 @@ CLASS net/minecraft/server/packs/resources/SimplePreparableReloadListener
 		ARG 1 preparations
 		ARG 2 manager
 		ARG 3 profiler
+	METHOD lambda$reload$1 (Lnet/minecraft/server/packs/resources/ResourceManager;Ljava/lang/Object;)V
+		ARG 2 preparations
+	METHOD prepare (Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)Ljava/lang/Object;
+		ARG 1 manager
+		ARG 2 profiler

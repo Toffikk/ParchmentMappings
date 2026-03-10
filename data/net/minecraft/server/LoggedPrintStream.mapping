@@ -4,3 +4,7 @@ CLASS net/minecraft/server/LoggedPrintStream
 		ARG 2 out
 	METHOD logLine (Ljava/lang/String;)V
 		ARG 1 out
+	METHOD println (Ljava/lang/Object;)V
+		ARG 1 object
+	METHOD println (Ljava/lang/String;)V
+		ARG 1 string

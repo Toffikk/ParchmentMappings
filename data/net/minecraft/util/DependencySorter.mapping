@@ -1,0 +1,6 @@
+CLASS net/minecraft/util/DependencySorter
+	CLASS Entry
+		METHOD visitOptionalDependencies (Ljava/util/function/Consumer;)V
+			ARG 1 output
+		METHOD visitRequiredDependencies (Ljava/util/function/Consumer;)V
+			ARG 1 output

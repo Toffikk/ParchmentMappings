@@ -1,0 +1,6 @@
+CLASS net/minecraft/server/commands/data/BlockDataAccessor
+	METHOD <init> (Lnet/minecraft/world/level/block/entity/BlockEntity;Lnet/minecraft/core/BlockPos;)V
+		ARG 1 entity
+		ARG 2 pos
+	METHOD lambda$static$0 (Ljava/lang/String;)Lnet/minecraft/server/commands/data/DataCommands$DataProvider;
+		ARG 0 argPrefix

@@ -1,0 +1,15 @@
+CLASS net/minecraft/world/entity/ConversionType
+	METHOD <init> (Ljava/lang/String;IZ)V
+		ARG 3 discardAfterConversion
+	METHOD convert (Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/entity/ConversionParams;)V
+		ARG 1 from
+		ARG 2 to
+		ARG 3 params
+	METHOD convertCommon (Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/entity/ConversionParams;)V
+		ARG 1 from
+		ARG 2 to
+		ARG 3 params
+	METHOD copyComponent (Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/entity/Mob;Lnet/minecraft/core/component/DataComponentType;)V
+		ARG 0 from
+		ARG 1 to
+		ARG 2 componentType

@@ -1,0 +1,6 @@
+CLASS net/minecraft/server/packs/repository/PackCompatibility
+	METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+		ARG 3 key
+	METHOD forVersion (Lnet/minecraft/util/InclusiveRange;Lnet/minecraft/server/packs/metadata/pack/PackFormat;)Lnet/minecraft/server/packs/repository/PackCompatibility;
+		ARG 0 packDeclaredVersions
+		ARG 1 gameSupportedVersion

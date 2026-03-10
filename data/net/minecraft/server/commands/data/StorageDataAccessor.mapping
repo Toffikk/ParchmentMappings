@@ -1,0 +1,11 @@
+CLASS net/minecraft/server/commands/data/StorageDataAccessor
+	METHOD <init> (Lnet/minecraft/world/level/storage/CommandStorage;Lnet/minecraft/resources/Identifier;)V
+		ARG 1 storage
+		ARG 2 id
+	METHOD getGlobalTags (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/world/level/storage/CommandStorage;
+		ARG 0 context
+	METHOD lambda$static$0 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 c
+		ARG 1 p
+	METHOD lambda$static$1 (Ljava/lang/String;)Lnet/minecraft/server/commands/data/DataCommands$DataProvider;
+		ARG 0 arg

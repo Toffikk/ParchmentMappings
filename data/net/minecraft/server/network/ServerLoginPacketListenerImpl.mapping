@@ -1,0 +1,15 @@
+CLASS net/minecraft/server/network/ServerLoginPacketListenerImpl
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/network/Connection;Z)V
+		ARG 1 minecraftserver
+		ARG 2 connection
+		ARG 3 transferred
+	METHOD disconnect (Lnet/minecraft/network/chat/Component;)V
+		ARG 1 component
+	METHOD finishLoginAndWaitForClient (Lcom/mojang/authlib/GameProfile;)V
+		ARG 1 gameProfile
+	METHOD isPlayerAlreadyInWorld (Lcom/mojang/authlib/GameProfile;)Z
+		ARG 1 gameProfile
+	METHOD startClientVerification (Lcom/mojang/authlib/GameProfile;)V
+		ARG 1 profile
+	METHOD verifyLoginAndFinishConnectionSetup (Lcom/mojang/authlib/GameProfile;)V
+		ARG 1 profile

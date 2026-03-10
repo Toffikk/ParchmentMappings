@@ -1,0 +1,5 @@
+CLASS net/minecraft/server/commands/data/EntityDataAccessor
+	METHOD <init> (Lnet/minecraft/world/entity/Entity;)V
+		ARG 1 entity
+	METHOD lambda$static$0 (Ljava/lang/String;)Lnet/minecraft/server/commands/data/DataCommands$DataProvider;
+		ARG 0 arg
