@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/entity/ai/village/ReputationEventType
-	METHOD register (Ljava/lang/String;)Lnet/minecraft/world/entity/ai/village/ReputationEventType;
-		ARG 0 key

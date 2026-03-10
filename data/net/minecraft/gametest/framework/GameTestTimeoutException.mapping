@@ -1,3 +1,0 @@
-CLASS net/minecraft/gametest/framework/GameTestTimeoutException
-	METHOD <init> (Lnet/minecraft/network/chat/Component;)V
-		ARG 1 message

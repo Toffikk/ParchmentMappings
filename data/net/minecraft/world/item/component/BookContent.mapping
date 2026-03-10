@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/item/component/BookContent
-	METHOD withReplacedPages (Ljava/util/List;)Ljava/lang/Object;
-		ARG 1 newPages

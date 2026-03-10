@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/block/state/properties/DoubleBlockHalf
-	METHOD <init> (Ljava/lang/String;ILnet/minecraft/core/Direction;)V
-		ARG 3 directionToOther

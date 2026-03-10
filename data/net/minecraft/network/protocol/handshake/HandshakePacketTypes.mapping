@@ -1,3 +1,0 @@
-CLASS net/minecraft/network/protocol/handshake/HandshakePacketTypes
-	METHOD createServerbound (Ljava/lang/String;)Lnet/minecraft/network/protocol/PacketType;
-		ARG 0 name

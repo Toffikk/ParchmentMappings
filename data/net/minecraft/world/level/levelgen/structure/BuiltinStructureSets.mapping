@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/levelgen/structure/BuiltinStructureSets
-	METHOD register (Ljava/lang/String;)Lnet/minecraft/resources/ResourceKey;
-		ARG 0 name

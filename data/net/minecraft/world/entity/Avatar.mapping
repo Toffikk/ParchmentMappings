@@ -1,5 +1,0 @@
-CLASS net/minecraft/world/entity/Avatar
-	METHOD isModelPartShown (Lnet/minecraft/world/entity/player/PlayerModelPart;)Z
-		ARG 1 modelPart
-	METHOD setMainArm (Lnet/minecraft/world/entity/HumanoidArm;)V
-		ARG 1 arm

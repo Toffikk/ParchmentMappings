@@ -1,3 +1,0 @@
-CLASS net/minecraft/network/protocol/BundlePacket
-	METHOD <init> (Ljava/lang/Iterable;)V
-		ARG 1 packets

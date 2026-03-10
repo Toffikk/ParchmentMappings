@@ -1,5 +1,0 @@
-CLASS net/minecraft/server/network/TextFilter
-	METHOD processMessageBundle (Ljava/util/List;)Ljava/util/concurrent/CompletableFuture;
-		ARG 1 texts
-	METHOD processStreamMessage (Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture;
-		ARG 1 text

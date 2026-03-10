@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/item/crafting/display/SlotDisplays
-	METHOD bootstrap (Lnet/minecraft/core/Registry;)Lnet/minecraft/world/item/crafting/display/SlotDisplay$Type;
-		ARG 0 registry

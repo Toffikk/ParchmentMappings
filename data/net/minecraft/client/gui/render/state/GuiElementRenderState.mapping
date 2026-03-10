@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/gui/render/state/GuiElementRenderState
-	METHOD buildVertices (Lcom/mojang/blaze3d/vertex/VertexConsumer;)V
-		ARG 1 consumer

@@ -1,9 +1,0 @@
-CLASS net/minecraft/server/jsonrpc/internalapi/MinecraftGameRuleService
-	METHOD getRuleValue (Lnet/minecraft/world/level/gamerules/GameRule;)Ljava/lang/Object;
-		ARG 1 rule
-	METHOD getTypedRule (Lnet/minecraft/world/level/gamerules/GameRule;Ljava/lang/Object;)Lnet/minecraft/server/jsonrpc/methods/GameRulesService$GameRuleUpdate;
-		ARG 1 rule
-		ARG 2 value
-	METHOD updateGameRule (Lnet/minecraft/server/jsonrpc/methods/GameRulesService$GameRuleUpdate;Lnet/minecraft/server/jsonrpc/methods/ClientInfo;)Lnet/minecraft/server/jsonrpc/methods/GameRulesService$GameRuleUpdate;
-		ARG 1 update
-		ARG 2 client

@@ -1,3 +1,0 @@
-CLASS net/minecraft/util/valueproviders/MultipliedFloats
-	METHOD <init> ([Lnet/minecraft/util/valueproviders/SampledFloat;)V
-		ARG 1 values

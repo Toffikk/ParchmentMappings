@@ -1,4 +1,0 @@
-CLASS net/minecraft/world/entity/ai/sensing/FrogAttackablesSensor
-	METHOD isUnreachableAttackTarget (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/LivingEntity;)Z
-		ARG 1 attacker
-		ARG 2 target

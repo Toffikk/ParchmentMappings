@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/chunk/PalettedContainerFactory
-	METHOD create (Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/world/level/chunk/PalettedContainerFactory;
-		ARG 0 registryAccess

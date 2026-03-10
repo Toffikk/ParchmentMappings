@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/telemetry/TelemetryEventLogger
-	METHOD log (Lnet/minecraft/client/telemetry/TelemetryEventInstance;)V
-		ARG 1 instance

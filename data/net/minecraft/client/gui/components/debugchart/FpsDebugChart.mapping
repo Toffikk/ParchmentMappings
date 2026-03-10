@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/gui/components/debugchart/FpsDebugChart
-	METHOD toMilliseconds (D)D
-		ARG 0 value

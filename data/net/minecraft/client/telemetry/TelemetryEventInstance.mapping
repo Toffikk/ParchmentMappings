@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/telemetry/TelemetryEventInstance
-	METHOD export (Lcom/mojang/authlib/minecraft/TelemetrySession;)Lcom/mojang/authlib/minecraft/TelemetryEvent;
-		ARG 1 session

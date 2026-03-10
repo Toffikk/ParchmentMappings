@@ -1,3 +1,0 @@
-CLASS com/mojang/realmsclient/gui/task/RepeatedDelayStrategy
-	METHOD exponentialBackoff (I)Lcom/mojang/realmsclient/gui/task/RepeatedDelayStrategy;
-		ARG 0 maxFailureDelay

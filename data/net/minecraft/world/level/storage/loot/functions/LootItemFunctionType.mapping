@@ -1,2 +1,0 @@
-CLASS net/minecraft/world/level/storage/loot/functions/LootItemFunctionType
-	COMMENT The SerializerType for {@link LootItemFunction}.

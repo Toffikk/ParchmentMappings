@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/chunk/MissingPaletteEntryException
-	METHOD <init> (I)V
-		ARG 1 index

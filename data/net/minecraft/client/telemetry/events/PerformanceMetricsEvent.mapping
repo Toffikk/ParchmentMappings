@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/telemetry/events/PerformanceMetricsEvent
-	METHOD toKilobytes (J)J
-		ARG 0 bytes

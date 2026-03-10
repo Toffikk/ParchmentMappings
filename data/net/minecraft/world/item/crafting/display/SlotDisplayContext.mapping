@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/item/crafting/display/SlotDisplayContext
-	METHOD fromLevel (Lnet/minecraft/world/level/Level;)Lnet/minecraft/util/context/ContextMap;
-		ARG 0 level

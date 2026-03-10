@@ -1,3 +1,0 @@
-CLASS net/minecraft/network/protocol/ping/ClientPongPacketListener
-	METHOD handlePongResponse (Lnet/minecraft/network/protocol/ping/ClientboundPongResponsePacket;)V
-		ARG 1 packet

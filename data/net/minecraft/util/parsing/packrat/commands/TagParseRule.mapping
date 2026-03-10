@@ -1,3 +1,0 @@
-CLASS net/minecraft/util/parsing/packrat/commands/TagParseRule
-	METHOD <init> (Lcom/mojang/serialization/DynamicOps;)V
-		ARG 1 ops

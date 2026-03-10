@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/gui/screens/recipebook/RecipeUpdateListener
-	METHOD fillGhostRecipe (Lnet/minecraft/world/item/crafting/display/RecipeDisplay;)V
-		ARG 1 recipeDisplay

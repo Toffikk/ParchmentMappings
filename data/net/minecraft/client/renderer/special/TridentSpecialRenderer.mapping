@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/renderer/special/TridentSpecialRenderer
-	METHOD <init> (Lnet/minecraft/client/model/object/projectile/TridentModel;)V
-		ARG 1 model

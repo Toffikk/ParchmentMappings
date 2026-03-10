@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/levelgen/structure/templatesystem/rule/blockentity/AppendStatic
-	METHOD <init> (Lnet/minecraft/nbt/CompoundTag;)V
-		ARG 1 tag

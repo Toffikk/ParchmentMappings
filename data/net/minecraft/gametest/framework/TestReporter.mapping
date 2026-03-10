@@ -1,5 +1,0 @@
-CLASS net/minecraft/gametest/framework/TestReporter
-	METHOD onTestFailed (Lnet/minecraft/gametest/framework/GameTestInfo;)V
-		ARG 1 testInfo
-	METHOD onTestSuccess (Lnet/minecraft/gametest/framework/GameTestInfo;)V
-		ARG 1 testInfo

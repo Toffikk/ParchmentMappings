@@ -1,3 +1,0 @@
-CLASS net/minecraft/server/jsonrpc/api/ReferenceUtil
-	METHOD createLocalReference (Ljava/lang/String;)Ljava/net/URI;
-		ARG 0 reference

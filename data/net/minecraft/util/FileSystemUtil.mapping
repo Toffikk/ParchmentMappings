@@ -1,3 +1,0 @@
-CLASS net/minecraft/util/FileSystemUtil
-	METHOD safeGetPath (Ljava/net/URI;)Ljava/nio/file/Path;
-		ARG 0 uri

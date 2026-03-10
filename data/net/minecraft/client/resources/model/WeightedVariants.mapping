@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/resources/model/WeightedVariants
-	METHOD <init> (Lnet/minecraft/util/random/WeightedList;)V
-		ARG 1 list

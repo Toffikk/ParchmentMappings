@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/item/consume_effects/RemoveStatusEffectsConsumeEffect
-	METHOD <init> (Lnet/minecraft/core/Holder;)V
-		ARG 1 effects

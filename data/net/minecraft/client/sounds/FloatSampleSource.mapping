@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/sounds/FloatSampleSource
-	METHOD readChunk (Lit/unimi/dsi/fastutil/floats/FloatConsumer;)Z
-		ARG 1 output

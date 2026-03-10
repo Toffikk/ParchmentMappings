@@ -4,12 +4,14 @@ import cuchaz.enigma.api.service.JarIndexerService
 import cuchaz.enigma.api.service.NameProposalService
 import cuchaz.enigma.api.view.index.JarIndexView
 import cuchaz.enigma.classprovider.ClassProvider
+import cuchaz.enigma.translation.mapping.EntryMapping
 import cuchaz.enigma.translation.mapping.EntryRemapper
 import cuchaz.enigma.translation.representation.MethodDescriptor
 import cuchaz.enigma.translation.representation.entry.ClassEntry
 import cuchaz.enigma.translation.representation.entry.Entry
 import cuchaz.enigma.translation.representation.entry.LocalVariableEntry
 import cuchaz.enigma.translation.representation.entry.MethodEntry
+import cuchaz.enigma.utils.validation.ValidationContext
 import org.objectweb.asm.Opcodes
 import org.objectweb.asm.tree.ClassNode
 import org.parchmentmc.enigma.util.ClassNodeCache
@@ -103,6 +105,7 @@ class EnigmaNameProposalService(
     }
 
     override fun proposeName(obfEntry: Entry<*>, remapper: EntryRemapper): Optional<String> {
+        val vc = ValidationContext()
         if (obfEntry is LocalVariableEntry && obfEntry.isArgument) {
             val method = obfEntry.parent
             if (method != null) {
@@ -126,11 +129,6 @@ class EnigmaNameProposalService(
                 val paramDesc = method.desc.argumentDescs[paramIndex]
                 var paramDescStr = paramDesc.toString()
 
-                val standardName = KnownTypes.FIXED_NAMES[paramDescStr]
-                if (standardName != null) {
-                    return Optional.of(standardName)
-                }
-
                 val unobfuscatedNodes = getUnobfuscatedNodes()
                 val enclosingClass = method.parent
                 if (enclosingClass != null && unobfuscatedNodes != null) { // todo cleanup
@@ -139,7 +137,8 @@ class EnigmaNameProposalService(
                         obfEntry, paramIndex,
                         method,
                         node
-                    )?.let { name -> return Optional.of(name) }
+                    )?.let {
+                        name -> remapper.putMapping(vc, obfEntry, EntryMapping(name)) && return Optional.of(name) }
                 }
 
                 if (!paramDesc.containsType()) { // primitive / array of primitive
@@ -150,6 +149,12 @@ class EnigmaNameProposalService(
                     paramDescStr = paramDescStr.drop(paramDesc.arrayDimension) // for array, the element type is often more relevant than the array itself
                 }
 
+                val standardName = KnownTypes.FIXED_NAMES[paramDescStr]
+                if (standardName != null) {
+                    remapper.putMapping(vc, obfEntry, EntryMapping(standardName))
+                    return Optional.of(standardName)
+                }
+
                 var name = KnownTypes.getBestName(paramDescStr)
                 if (paramCanConflict(descStartIndex, method.desc, paramDesc.typeEntry)) { // not completely accurate for lambda/inner classes
                     name += (paramIndex + 1)
@@ -158,6 +163,7 @@ class EnigmaNameProposalService(
                     name += '_'
                 }
 
+                remapper.putMapping(vc, obfEntry, EntryMapping(name))
                 return Optional.of(name)
             }
         }

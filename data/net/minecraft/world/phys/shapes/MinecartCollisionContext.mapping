@@ -1,6 +1,0 @@
-CLASS net/minecraft/world/phys/shapes/MinecartCollisionContext
-	METHOD <init> (Lnet/minecraft/world/entity/vehicle/minecart/AbstractMinecart;Z)V
-		ARG 1 minecart
-		ARG 2 alwaysCollideWithFluid
-	METHOD setupContext (Lnet/minecraft/world/entity/vehicle/minecart/AbstractMinecart;)V
-		ARG 1 minecart

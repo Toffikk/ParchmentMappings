@@ -1,3 +1,0 @@
-CLASS net/minecraft/server/network/config/ServerCodeOfConductConfigurationTask
-	METHOD <init> (Ljava/util/function/Supplier;)V
-		ARG 1 codeOfConduct

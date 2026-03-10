@@ -1,3 +1,0 @@
-CLASS net/minecraft/core/dispenser/ProjectileDispenseBehavior
-	METHOD <init> (Lnet/minecraft/world/item/Item;)V
-		ARG 1 projectile

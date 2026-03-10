@@ -1,5 +1,0 @@
-CLASS net/minecraft/util/valueproviders/ConstantInt
-	METHOD <init> (I)V
-		ARG 1 value
-	METHOD of (I)Lnet/minecraft/util/valueproviders/ConstantInt;
-		ARG 0 value

@@ -1,4 +1,0 @@
-CLASS net/minecraft/client/resources/model/BlockStateDefinitions
-	METHOD getItemFrameFakeState (ZZ)Lnet/minecraft/world/level/block/state/BlockState;
-		ARG 0 isGlowing
-		ARG 1 map

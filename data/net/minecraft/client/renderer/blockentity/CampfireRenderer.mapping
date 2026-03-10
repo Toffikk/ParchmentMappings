@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/renderer/blockentity/CampfireRenderer
-	METHOD <init> (Lnet/minecraft/client/renderer/blockentity/BlockEntityRendererProvider$Context;)V
-		ARG 1 context

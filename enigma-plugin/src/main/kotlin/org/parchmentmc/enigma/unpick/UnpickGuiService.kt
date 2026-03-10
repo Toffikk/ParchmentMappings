@@ -5,11 +5,14 @@ import cuchaz.enigma.api.service.GuiService.MenuRegistrar
 import cuchaz.enigma.api.view.GuiView
 import cuchaz.enigma.api.view.ProjectView
 import cuchaz.enigma.api.view.entry.*
+import cuchaz.enigma.translation.mapping.EntryRemapper
+import cuchaz.enigma.translation.representation.entry.MethodEntry
 import org.objectweb.asm.Opcodes
 import org.objectweb.asm.Type
 import java.awt.Toolkit
 import java.awt.datatransfer.StringSelection
 import java.awt.event.KeyEvent
+import javax.swing.JOptionPane
 import javax.swing.KeyStroke
 
 class UnpickGuiService : GuiService {

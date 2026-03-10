@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/saveddata/SavedDataType
-	METHOD equals (Ljava/lang/Object;)Z
-		ARG 1 other

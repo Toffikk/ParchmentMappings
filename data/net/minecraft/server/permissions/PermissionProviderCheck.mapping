@@ -1,3 +1,0 @@
-CLASS net/minecraft/server/permissions/PermissionProviderCheck
-	METHOD test (Lnet/minecraft/server/permissions/PermissionSetSupplier;)Z
-		ARG 1 permissionsSupplier

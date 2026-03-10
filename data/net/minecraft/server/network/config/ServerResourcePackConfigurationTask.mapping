@@ -1,3 +1,0 @@
-CLASS net/minecraft/server/network/config/ServerResourcePackConfigurationTask
-	METHOD <init> (Lnet/minecraft/server/MinecraftServer$ServerResourcePackInfo;)V
-		ARG 1 info

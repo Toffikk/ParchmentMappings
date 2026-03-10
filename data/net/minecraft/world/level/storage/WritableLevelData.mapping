@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/storage/WritableLevelData
-	METHOD setSpawn (Lnet/minecraft/world/level/storage/LevelData$RespawnData;)V
-		ARG 1 respawnData

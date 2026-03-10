@@ -1,3 +1,0 @@
-CLASS net/minecraft/commands/FunctionInstantiationException
-	METHOD <init> (Lnet/minecraft/network/chat/Component;)V
-		ARG 1 messageComponent

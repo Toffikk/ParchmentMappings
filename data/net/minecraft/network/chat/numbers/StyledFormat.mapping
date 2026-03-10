@@ -1,3 +1,0 @@
-CLASS net/minecraft/network/chat/numbers/StyledFormat
-	METHOD <init> (Lnet/minecraft/network/chat/Style;)V
-		ARG 1 style

@@ -1,3 +1,0 @@
-CLASS net/minecraft/core/dispenser/OptionalDispenseItemBehavior
-	METHOD setSuccess (Z)V
-		ARG 1 success

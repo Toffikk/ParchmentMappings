@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/chunk/storage/RegionStorageInfo
-	METHOD withTypeSuffix (Ljava/lang/String;)Lnet/minecraft/world/level/chunk/storage/RegionStorageInfo;
-		ARG 1 suffix

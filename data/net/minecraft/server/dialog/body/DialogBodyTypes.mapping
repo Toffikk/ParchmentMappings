@@ -1,3 +1,0 @@
-CLASS net/minecraft/server/dialog/body/DialogBodyTypes
-	METHOD bootstrap (Lnet/minecraft/core/Registry;)Lcom/mojang/serialization/MapCodec;
-		ARG 0 registry

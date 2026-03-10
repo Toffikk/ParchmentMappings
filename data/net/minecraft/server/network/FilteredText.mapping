@@ -1,5 +1,0 @@
-CLASS net/minecraft/server/network/FilteredText
-	METHOD fullyFiltered (Ljava/lang/String;)Lnet/minecraft/server/network/FilteredText;
-		ARG 0 raw
-	METHOD passThrough (Ljava/lang/String;)Lnet/minecraft/server/network/FilteredText;
-		ARG 0 raw

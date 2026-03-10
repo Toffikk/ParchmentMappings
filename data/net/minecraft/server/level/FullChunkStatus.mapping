@@ -1,3 +1,0 @@
-CLASS net/minecraft/server/level/FullChunkStatus
-	METHOD isOrAfter (Lnet/minecraft/server/level/FullChunkStatus;)Z
-		ARG 1 status

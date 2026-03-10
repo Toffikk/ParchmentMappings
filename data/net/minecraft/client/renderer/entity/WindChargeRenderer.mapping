@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/renderer/entity/WindChargeRenderer
-	METHOD xOffset (F)F
-		ARG 1 tickCount

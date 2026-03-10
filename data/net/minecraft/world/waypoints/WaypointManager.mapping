@@ -1,7 +1,0 @@
-CLASS net/minecraft/world/waypoints/WaypointManager
-	METHOD trackWaypoint (Lnet/minecraft/world/waypoints/Waypoint;)V
-		ARG 1 waypoint
-	METHOD untrackWaypoint (Lnet/minecraft/world/waypoints/Waypoint;)V
-		ARG 1 waypoint
-	METHOD updateWaypoint (Lnet/minecraft/world/waypoints/Waypoint;)V
-		ARG 1 waypoint

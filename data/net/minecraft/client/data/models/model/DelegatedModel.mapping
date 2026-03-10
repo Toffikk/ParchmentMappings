@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/data/models/model/DelegatedModel
-	METHOD <init> (Lnet/minecraft/resources/Identifier;)V
-		ARG 1 parent

@@ -1,3 +1,0 @@
-CLASS net/minecraft/server/jsonrpc/internalapi/MinecraftExecutorServiceImpl
-	METHOD <init> (Lnet/minecraft/server/dedicated/DedicatedServer;)V
-		ARG 1 server

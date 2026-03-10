@@ -1,2 +1,0 @@
-CLASS net/minecraft/world/level/storage/loot/entries/LootPoolEntryType
-	COMMENT The SerializerType for {@link LootPoolEntryContainer}.

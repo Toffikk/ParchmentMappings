@@ -1,5 +1,0 @@
-CLASS net/minecraft/client/resources/model/ModelState
-	METHOD faceTransformation (Lnet/minecraft/core/Direction;)Lorg/joml/Matrix4fc;
-		ARG 1 facing
-	METHOD inverseFaceTransformation (Lnet/minecraft/core/Direction;)Lorg/joml/Matrix4fc;
-		ARG 1 facing

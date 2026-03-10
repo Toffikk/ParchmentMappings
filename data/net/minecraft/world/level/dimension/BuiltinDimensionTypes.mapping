@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/dimension/BuiltinDimensionTypes
-	METHOD register (Ljava/lang/String;)Lnet/minecraft/resources/ResourceKey;
-		ARG 0 name

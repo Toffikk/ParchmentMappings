@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/multiplayer/prediction/PredictiveAction
-	METHOD predict (I)Lnet/minecraft/network/protocol/Packet;
-		ARG 1 sequence

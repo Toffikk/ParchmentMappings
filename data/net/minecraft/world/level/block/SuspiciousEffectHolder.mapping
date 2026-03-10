@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/block/SuspiciousEffectHolder
-	METHOD tryGet (Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/block/SuspiciousEffectHolder;
-		ARG 0 item

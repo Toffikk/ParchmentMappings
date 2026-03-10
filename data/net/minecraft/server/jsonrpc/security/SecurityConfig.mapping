@@ -1,3 +1,0 @@
-CLASS net/minecraft/server/jsonrpc/security/SecurityConfig
-	METHOD isValid (Ljava/lang/String;)Z
-		ARG 0 key

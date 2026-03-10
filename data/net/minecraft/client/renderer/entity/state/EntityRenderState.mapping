@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/renderer/entity/state/EntityRenderState
-	METHOD fillCrashReportCategory (Lnet/minecraft/CrashReportCategory;)V
-		ARG 1 category

@@ -1,3 +1,0 @@
-CLASS net/minecraft/network/protocol/handshake/ClientIntent
-	METHOD byId (I)Lnet/minecraft/network/protocol/handshake/ClientIntent;
-		ARG 0 id

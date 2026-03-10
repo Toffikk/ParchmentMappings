@@ -1,4 +1,0 @@
-CLASS net/minecraft/world/entity/ReputationEventHandler
-	METHOD onReputationEventFrom (Lnet/minecraft/world/entity/ai/village/ReputationEventType;Lnet/minecraft/world/entity/Entity;)V
-		ARG 1 type
-		ARG 2 target

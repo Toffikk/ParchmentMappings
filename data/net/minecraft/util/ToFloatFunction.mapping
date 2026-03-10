@@ -1,3 +1,0 @@
-CLASS net/minecraft/util/ToFloatFunction
-	METHOD applyAsFloat (Ljava/lang/Object;)F
-		ARG 1 value

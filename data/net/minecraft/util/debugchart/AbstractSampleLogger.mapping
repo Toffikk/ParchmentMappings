@@ -1,4 +1,0 @@
-CLASS net/minecraft/util/debugchart/AbstractSampleLogger
-	METHOD <init> (I[J)V
-		ARG 1 size
-		ARG 2 defaults

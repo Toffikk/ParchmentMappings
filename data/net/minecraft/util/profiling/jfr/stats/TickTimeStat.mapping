@@ -1,3 +1,0 @@
-CLASS net/minecraft/util/profiling/jfr/stats/TickTimeStat
-	METHOD from (Ljdk/jfr/consumer/RecordedEvent;)Lnet/minecraft/util/profiling/jfr/stats/TickTimeStat;
-		ARG 0 event

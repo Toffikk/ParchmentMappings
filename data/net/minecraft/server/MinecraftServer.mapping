@@ -17,19 +17,17 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 3 safeMode
 	METHOD configureRepositoryWithSelection (Lnet/minecraft/server/packs/repository/PackRepository;Ljava/util/Collection;Lnet/minecraft/world/flag/FeatureFlagSet;Z)Lnet/minecraft/world/level/WorldDataConfiguration;
 		ARG 0 packRepository
-		ARG 1 selectedPacks
-		ARG 2 enabledFeatures
-		ARG 3 safeMode
+		ARG 1 selected
+		ARG 2 forcedFeatures
+		ARG 3 disableInactive
 	METHOD constructOrExtractCrashReport (Ljava/lang/Throwable;)Lnet/minecraft/CrashReport;
-		ARG 0 cause
+		ARG 0 t
 	METHOD createChunkLoadStatusView (I)Lnet/minecraft/server/level/progress/ChunkLoadStatusView;
 		ARG 1 radius
 	METHOD createGameModeForPlayer (Lnet/minecraft/server/level/ServerPlayer;)Lnet/minecraft/server/level/ServerPlayerGameMode;
 		ARG 1 player
 	METHOD createTextFilterForPlayer (Lnet/minecraft/server/level/ServerPlayer;)Lnet/minecraft/server/network/TextFilter;
 		ARG 1 player
-	METHOD doRunTask (Lnet/minecraft/server/TickTask;)V
-		ARG 1 task
 	METHOD dumpClasspath (Ljava/nio/file/Path;)V
 		ARG 1 path
 	METHOD dumpGameRules (Ljava/nio/file/Path;)V
@@ -44,155 +42,144 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 1 path
 	METHOD enableForcedFeaturePacks (Lnet/minecraft/server/packs/repository/PackRepository;Lnet/minecraft/world/flag/FeatureFlagSet;)V
 		ARG 0 packRepository
-		ARG 1 enabledFeatures
+		ARG 1 forcedFeatures
 	METHOD enforceGameTypeForPlayers (Lnet/minecraft/world/level/GameType;)I
-		ARG 1 gameMode
+		ARG 1 gameType
 	METHOD fillServerSystemReport (Lnet/minecraft/SystemReport;)Lnet/minecraft/SystemReport;
-		ARG 1 report
+		ARG 1 systemReport
 	METHOD fillSystemReport (Lnet/minecraft/SystemReport;)Lnet/minecraft/SystemReport;
 		ARG 1 systemReport
-	METHOD getCompressionThreshold ()I
-		COMMENT The compression threshold. If the packet is larger than the specified amount of bytes, it will be compressed
 	METHOD getFile (Ljava/lang/String;)Ljava/nio/file/Path;
-		ARG 1 path
-	METHOD getKeyPair ()Ljava/security/KeyPair;
-		COMMENT Gets KeyPair instanced in MinecraftServer.
+		ARG 1 name
 	METHOD getLevel (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/server/level/ServerLevel;
-		COMMENT Gets the ServerLevel by the given dimension.
 		ARG 1 dimension
-	METHOD getLocalIp ()Ljava/lang/String;
-		COMMENT "getServerIp" is already taken, but both return the hostname.
-	METHOD getPlayerCount ()I
-		COMMENT {@return the number of players currently on the server}
-	METHOD getPlayerNames ()[Ljava/lang/String;
-		COMMENT {@return an array of the usernames of all the connected players}
-	METHOD getPort ()I
-		COMMENT Gets port.
 	METHOD getProfilePermissions (Lnet/minecraft/server/players/NameAndId;)Lnet/minecraft/server/permissions/LevelBasedPermissionSet;
 		ARG 1 nameAndId
 	METHOD getScaledTrackingDistance (I)I
-		ARG 1 trackingDistance
+		ARG 1 baseRange
 	METHOD getSelectedPacks (Lnet/minecraft/server/packs/repository/PackRepository;Z)Lnet/minecraft/world/level/DataPackConfig;
 		ARG 0 packRepository
-		ARG 1 safeMode
-	METHOD getServerVersion ()Ljava/lang/String;
-		COMMENT {@return the server's Minecraft version as string}
+		ARG 1 disableInactive
 	METHOD getWorldPath (Lnet/minecraft/world/level/storage/LevelResource;)Ljava/nio/file/Path;
-		ARG 1 levelResource
+		ARG 1 resource
 	METHOD halt (Z)V
-		COMMENT Sets the running variable to {@code false}, in order to get the server to shut down.
-		ARG 1 waitForShutdown
+		ARG 1 wait
 	METHOD handleCustomClickAction (Lnet/minecraft/resources/Identifier;Ljava/util/Optional;)V
 		ARG 1 id
 		ARG 2 payload
-	METHOD initServer ()Z
-		COMMENT Initialises the server and starts it.
-	METHOD isDemo ()Z
-		COMMENT Gets whether this is a demo or not.
-	METHOD isHardcore ()Z
-		COMMENT Defaults to {@code false}.
-	METHOD isPublished ()Z
-		COMMENT @return {@code true} if this integrated server is open to LAN
 	METHOD isSingleplayerOwner (Lnet/minecraft/server/players/NameAndId;)Z
 		ARG 1 nameAndId
 	METHOD isUnderSpawnProtection (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/player/Player;)Z
 		ARG 1 level
 		ARG 2 pos
 		ARG 3 player
+	METHOD lambda$createProfiler$34 (Ljava/nio/file/Path;)V
+		ARG 1 reportPath
+	METHOD lambda$dumpNativeModules$32 (Lnet/minecraft/util/NativeModuleLister$NativeModuleInfo;)Ljava/lang/String;
+		ARG 0 module
 	METHOD lambda$getSelectedPacks$31 (Ljava/util/Collection;Ljava/lang/String;)Z
-		ARG 1 packId
+		ARG 1 id
 	METHOD lambda$loadStatusIcon$11 (Ljava/nio/file/Path;)Z
-		ARG 0 path
+		ARG 0 x$0
 	METHOD lambda$loadStatusIcon$12 (Ljava/nio/file/Path;)Z
-		ARG 0 path
+		ARG 0 x$0
 	METHOD lambda$loadStatusIcon$14 (Ljava/nio/file/Path;)Ljava/util/Optional;
 		ARG 0 path
 	METHOD lambda$new$0 (Lnet/minecraft/util/profiling/ProfileResults;)V
 		ARG 1 results
 	METHOD lambda$new$1 (Ljava/nio/file/Path;)V
-		ARG 0 path
+		ARG 0 ignored
+	METHOD lambda$onGameRuleChanged$36 (Lnet/minecraft/network/protocol/game/ClientboundGameEventPacket;Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 1 player
+	METHOD lambda$onGameRuleChanged$37 (Ljava/lang/Object;Lnet/minecraft/server/level/ServerLevel;)V
+		ARG 1 level
+	METHOD lambda$reloadResources$27 (Lnet/minecraft/server/packs/resources/CloseableResourceManager;Lnet/minecraft/server/ReloadableServerResources;Ljava/lang/Throwable;)V
+		ARG 1 unit
+		ARG 2 throwable
+	METHOD lambda$reloadResources$28 (Lnet/minecraft/server/packs/resources/CloseableResourceManager;Lnet/minecraft/server/ReloadableServerResources;)Lnet/minecraft/server/MinecraftServer$ReloadableResources;
+		ARG 1 managers
+	METHOD lambda$reloadResources$29 (Lcom/google/common/collect/ImmutableList;)Ljava/util/concurrent/CompletionStage;
+		ARG 1 packsToLoad
+	METHOD lambda$reloadResources$30 (Ljava/util/Collection;Lnet/minecraft/server/MinecraftServer$ReloadableResources;)V
+		ARG 2 newResources
 	METHOD lambda$setInitialSpawn$4 (Lnet/minecraft/core/Registry;)Ljava/util/Optional;
 		ARG 0 registry
 	METHOD lambda$setInitialSpawn$5 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerChunkCache;Lnet/minecraft/world/level/storage/ServerLevelData;Lnet/minecraft/core/Holder$Reference;)V
-		ARG 3 holder
+		ARG 3 feature
 	METHOD lambda$spin$3 (Ljava/lang/Thread;Ljava/lang/Throwable;)V
-		ARG 0 thread
-		ARG 1 exception
+		ARG 0 t
+		ARG 1 e
+	METHOD lambda$startRecordingMetrics$35 (Ljava/util/function/Consumer;Lnet/minecraft/util/profiling/ProfileResults;)V
+		ARG 2 report
 	METHOD lambda$stopServer$7 (Lnet/minecraft/server/level/ServerLevel;)Z
-		ARG 0 level
+		ARG 0 l
+	METHOD lambda$tickChildren$16 (Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 0 player
 	METHOD logChatMessage (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/ChatType$Bound;Ljava/lang/String;)V
-		ARG 1 content
-		ARG 2 boundChatType
-		ARG 3 header
+		ARG 1 message
+		ARG 2 chatType
+		ARG 3 tag
 	METHOD logTickMethodTime (J)V
 		ARG 1 startTime
 	METHOD onGameRuleChanged (Lnet/minecraft/world/level/gamerules/GameRule;Ljava/lang/Object;)V
 		ARG 1 rule
 		ARG 2 value
 	METHOD onServerCrash (Lnet/minecraft/CrashReport;)V
-		COMMENT Called on exit from the main run() loop.
 		ARG 1 report
-	METHOD onServerExit ()V
-		COMMENT Directly calls System.exit(0), instantly killing the program.
-	METHOD prepareLevels ()V
-		COMMENT Loads the forced chunks
 	METHOD processPacketsAndTick (Z)V
 		ARG 1 sprinting
 	METHOD publishServer (Lnet/minecraft/world/level/GameType;ZI)Z
 		ARG 1 gameMode
-		ARG 2 commands
+		ARG 2 allowCommands
 		ARG 3 port
 	METHOD reloadResources (Ljava/util/Collection;)Ljava/util/concurrent/CompletableFuture;
-		COMMENT Replaces currently selected list of datapacks, reloads them, and sends new data to players.
-		ARG 1 selectedIds
+		ARG 1 packsToEnable
 	METHOD reportPacketHandlingException (Ljava/lang/Throwable;Lnet/minecraft/network/protocol/PacketType;)V
 		ARG 1 throwable
 		ARG 2 packetType
 	METHOD saveAllChunks (ZZZ)Z
-		ARG 1 suppressLogs
+		ARG 1 silent
 		ARG 2 flush
 		ARG 3 force
 	METHOD saveDebugReport (Ljava/nio/file/Path;)V
-		ARG 1 path
+		ARG 1 output
 	METHOD saveEverything (ZZZ)Z
-		ARG 1 suppressLogs
+		ARG 1 silent
 		ARG 2 flush
 		ARG 3 force
 	METHOD sendDifficultyUpdate (Lnet/minecraft/server/level/ServerPlayer;)V
 		ARG 1 player
 	METHOD setAutoSave (Z)Z
-		ARG 1 autoSave
+		ARG 1 enable
 	METHOD setDefaultGameType (Lnet/minecraft/world/level/GameType;)V
-		COMMENT Sets the game type for all worlds.
-		ARG 1 gameMode
+		ARG 1 gameType
 	METHOD setDemo (Z)V
-		COMMENT Sets whether this is a demo or not.
 		ARG 1 demo
 	METHOD setDifficulty (Lnet/minecraft/world/Difficulty;Z)V
 		ARG 1 difficulty
-		ARG 2 forced
+		ARG 2 ignoreLock
 	METHOD setDifficultyLocked (Z)V
 		ARG 1 locked
 	METHOD setEnforceWhitelist (Z)V
 		ARG 1 enforceWhitelist
 	METHOD setFatalException (Ljava/lang/RuntimeException;)V
-		ARG 0 fatalException
+		ARG 0 exception
 	METHOD setId (Ljava/lang/String;)V
 		ARG 1 serverId
 	METHOD setInitialSpawn (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/storage/ServerLevelData;ZZLnet/minecraft/server/level/progress/LevelLoadListener;)V
 		ARG 0 level
 		ARG 1 levelData
-		ARG 2 generateBonusChest
-		ARG 3 debug
+		ARG 2 spawnBonusChest
+		ARG 3 isDebug
 		ARG 4 levelLoadListener
 	METHOD setLocalIp (Ljava/lang/String;)V
-		ARG 1 localIp
+		ARG 1 ip
 	METHOD setMotd (Ljava/lang/String;)V
 		ARG 1 motd
 	METHOD setPlayerIdleTimeout (I)V
-		ARG 1 idleTimeout
+		ARG 1 playerIdleTimeout
 	METHOD setPlayerList (Lnet/minecraft/server/players/PlayerList;)V
-		ARG 1 list
+		ARG 1 players
 	METHOD setPort (I)V
 		ARG 1 port
 	METHOD setPreventProxyConnections (Z)V
@@ -201,42 +188,31 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 1 respawnData
 	METHOD setSingleplayerProfile (Lcom/mojang/authlib/GameProfile;)V
 		ARG 1 singleplayerProfile
-	METHOD setUsesAuthentication (Z)V
-		ARG 1 online
-	METHOD setUsingWhitelist (Z)V
-		ARG 1 usingWhitelist
 	METHOD setupDebugLevel (Lnet/minecraft/world/level/storage/WorldData;)V
 		ARG 1 worldData
-	METHOD shouldRun (Lnet/minecraft/server/TickTask;)Z
-		ARG 1 runnable
+	METHOD setUsesAuthentication (Z)V
+		ARG 1 onlineMode
+	METHOD setUsingWhitelist (Z)V
+		ARG 1 usingWhitelist
 	METHOD spin (Ljava/util/function/Function;)Lnet/minecraft/server/MinecraftServer;
-		ARG 0 threadFunction
+		ARG 0 factory
 	METHOD startRecordingMetrics (Ljava/util/function/Consumer;Ljava/util/function/Consumer;)V
-		ARG 1 output
-		ARG 2 onMetricsRecordingFinished
-	METHOD stopServer ()V
-		COMMENT Saves all necessary data as preparation for stopping the server.
+		ARG 1 onStopped
+		ARG 2 onFinished
 	METHOD storeChunkIoError (Lnet/minecraft/CrashReport;Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/world/level/chunk/storage/RegionStorageInfo;)V
-		ARG 1 crashReport
-		ARG 2 chunkPos
-		ARG 3 regionStorageInfo
+		ARG 1 report
+		ARG 2 pos
+		ARG 3 storageInfo
 	METHOD synchronizeTime (Lnet/minecraft/server/level/ServerLevel;)V
 		ARG 1 level
 	METHOD tickChildren (Ljava/util/function/BooleanSupplier;)V
 		ARG 1 haveTime
 	METHOD tickServer (Ljava/util/function/BooleanSupplier;)V
-		COMMENT Main function called by runServer() every loop.
 		ARG 1 haveTime
-	METHOD useNativeTransport ()Z
-		COMMENT Get if native transport should be used. Native transport means linux server performance improvements and optimized packet sending/receiving on linux
-	METHOD waitUntilNextTick ()V
-		COMMENT Runs all pending tasks and waits for more tasks until haveTime is reached.
-	METHOD wrapRunnable (Ljava/lang/Runnable;)Lnet/minecraft/server/TickTask;
-		ARG 1 runnable
 	CLASS TimeProfiler
 		METHOD <init> (JI)V
 			ARG 1 startNanos
 			ARG 3 startTick
 		METHOD stop (JI)Lnet/minecraft/util/profiling/ProfileResults;
-			ARG 1 endTimeNano
-			ARG 3 endTimeTicks
+			ARG 1 stopNanos
+			ARG 3 stopTick

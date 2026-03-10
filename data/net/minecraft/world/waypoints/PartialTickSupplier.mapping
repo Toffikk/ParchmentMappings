@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/waypoints/PartialTickSupplier
-	METHOD apply (Lnet/minecraft/world/entity/Entity;)F
-		ARG 1 entity

@@ -1,3 +1,0 @@
-CLASS net/minecraft/commands/execution/CommandQueueEntry
-	METHOD execute (Lnet/minecraft/commands/execution/ExecutionContext;)V
-		ARG 1 context

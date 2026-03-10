@@ -1,4 +1,0 @@
-CLASS net/minecraft/commands/arguments/WaypointArgument
-	METHOD getWaypoint (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/world/waypoints/WaypointTransmitter;
-		ARG 0 context
-		ARG 1 argument

@@ -1,5 +1,0 @@
-CLASS net/minecraft/client/sounds/ChunkedSampleByteBuf
-	METHOD <init> (I)V
-		ARG 1 bufferSize
-	METHOD accept (F)V
-		ARG 1 value

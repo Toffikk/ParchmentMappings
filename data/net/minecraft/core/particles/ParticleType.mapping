@@ -1,3 +1,0 @@
-CLASS net/minecraft/core/particles/ParticleType
-	METHOD <init> (Z)V
-		ARG 1 overrideLimiter

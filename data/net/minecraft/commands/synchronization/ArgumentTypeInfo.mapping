@@ -1,12 +1,12 @@
 CLASS net/minecraft/commands/synchronization/ArgumentTypeInfo
 	METHOD deserializeFromNetwork (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/commands/synchronization/ArgumentTypeInfo$Template;
-		ARG 1 buffer
+		ARG 1 in
 	METHOD serializeToJson (Lnet/minecraft/commands/synchronization/ArgumentTypeInfo$Template;Lcom/google/gson/JsonObject;)V
 		ARG 1 template
-		ARG 2 json
+		ARG 2 out
 	METHOD serializeToNetwork (Lnet/minecraft/commands/synchronization/ArgumentTypeInfo$Template;Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 template
-		ARG 2 buffer
+		ARG 2 out
 	METHOD unpack (Lcom/mojang/brigadier/arguments/ArgumentType;)Lnet/minecraft/commands/synchronization/ArgumentTypeInfo$Template;
 		ARG 1 argument
 	CLASS Template

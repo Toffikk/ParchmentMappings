@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/ticks/WorldGenTickAccess
-	METHOD <init> (Ljava/util/function/Function;)V
-		ARG 1 containerGetter

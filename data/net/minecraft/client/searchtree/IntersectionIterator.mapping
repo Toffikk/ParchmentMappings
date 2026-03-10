@@ -1,5 +1,0 @@
-CLASS net/minecraft/client/searchtree/IntersectionIterator
-	METHOD <init> (Ljava/util/Iterator;Ljava/util/Iterator;Ljava/util/Comparator;)V
-		ARG 1 firstIterator
-		ARG 2 secondIterator
-		ARG 3 comparator

@@ -1,4 +1,0 @@
-CLASS com/mojang/realmsclient/util/task/CloseServerTask
-	METHOD <init> (Lcom/mojang/realmsclient/dto/RealmsServer;Lcom/mojang/realmsclient/gui/screens/configuration/RealmsConfigureWorldScreen;)V
-		ARG 1 serverData
-		ARG 2 configureScreen

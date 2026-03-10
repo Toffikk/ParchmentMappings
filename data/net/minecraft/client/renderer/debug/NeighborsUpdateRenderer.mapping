@@ -1,4 +1,0 @@
-CLASS net/minecraft/client/renderer/debug/NeighborsUpdateRenderer
-	CLASS LastUpdate
-		METHOD tryCount (I)Lnet/minecraft/client/renderer/debug/NeighborsUpdateRenderer$LastUpdate;
-			ARG 1 age

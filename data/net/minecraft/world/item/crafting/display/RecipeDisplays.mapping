@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/item/crafting/display/RecipeDisplays
-	METHOD bootstrap (Lnet/minecraft/core/Registry;)Lnet/minecraft/world/item/crafting/display/RecipeDisplay$Type;
-		ARG 0 registry

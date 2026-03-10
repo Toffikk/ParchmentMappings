@@ -1,3 +1,0 @@
-CLASS net/minecraft/server/commands/ReturnCommand
-	METHOD register (Lcom/mojang/brigadier/CommandDispatcher;)V
-		ARG 0 dispatcher

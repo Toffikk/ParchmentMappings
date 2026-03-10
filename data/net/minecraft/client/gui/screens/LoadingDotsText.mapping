@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/gui/screens/LoadingDotsText
-	METHOD get (J)Ljava/lang/String;
-		ARG 0 millis

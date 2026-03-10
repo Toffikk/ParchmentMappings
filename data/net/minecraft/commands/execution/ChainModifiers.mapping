@@ -1,3 +1,0 @@
-CLASS net/minecraft/commands/execution/ChainModifiers
-	METHOD setFlag (B)Lnet/minecraft/commands/execution/ChainModifiers;
-		ARG 1 flag

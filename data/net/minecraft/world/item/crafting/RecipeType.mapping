@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/item/crafting/RecipeType
-	METHOD register (Ljava/lang/String;)Lnet/minecraft/world/item/crafting/RecipeType;
-		ARG 0 identifier

@@ -1,3 +1,0 @@
-CLASS net/minecraft/network/protocol/cookie/ServerCookiePacketListener
-	METHOD handleCookieResponse (Lnet/minecraft/network/protocol/cookie/ServerboundCookieResponsePacket;)V
-		ARG 1 packet

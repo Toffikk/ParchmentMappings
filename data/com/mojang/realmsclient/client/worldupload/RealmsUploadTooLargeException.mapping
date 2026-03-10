@@ -1,3 +1,0 @@
-CLASS com/mojang/realmsclient/client/worldupload/RealmsUploadTooLargeException
-	METHOD <init> (J)V
-		ARG 1 sizeLimit

@@ -1,3 +1,0 @@
-CLASS net/minecraft/network/chat/numbers/FixedFormat
-	METHOD <init> (Lnet/minecraft/network/chat/Component;)V
-		ARG 1 value

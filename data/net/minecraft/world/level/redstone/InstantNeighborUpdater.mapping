@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/redstone/InstantNeighborUpdater
-	METHOD <init> (Lnet/minecraft/world/level/Level;)V
-		ARG 1 level

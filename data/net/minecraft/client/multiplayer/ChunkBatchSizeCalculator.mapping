@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/multiplayer/ChunkBatchSizeCalculator
-	METHOD onBatchFinished (I)V
-		ARG 1 batchSize

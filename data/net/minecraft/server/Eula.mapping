@@ -1,3 +1,0 @@
-CLASS net/minecraft/server/Eula
-	METHOD <init> (Ljava/nio/file/Path;)V
-		ARG 1 file

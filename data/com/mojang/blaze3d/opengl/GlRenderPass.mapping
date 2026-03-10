@@ -1,4 +1,0 @@
-CLASS com/mojang/blaze3d/opengl/GlRenderPass
-	METHOD <init> (Lcom/mojang/blaze3d/opengl/GlCommandEncoder;Z)V
-		ARG 1 encoder
-		ARG 2 hasDepthTexture

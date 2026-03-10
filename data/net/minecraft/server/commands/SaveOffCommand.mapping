@@ -1,3 +1,0 @@
-CLASS net/minecraft/server/commands/SaveOffCommand
-	METHOD register (Lcom/mojang/brigadier/CommandDispatcher;)V
-		ARG 0 dispatcher

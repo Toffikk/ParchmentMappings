@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/gui/font/glyphs/EmptyGlyph
-	METHOD <init> (F)V
-		ARG 1 advance

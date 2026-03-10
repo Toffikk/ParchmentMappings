@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/block/BlockTypes
-	METHOD bootstrap (Lnet/minecraft/core/Registry;)Lcom/mojang/serialization/MapCodec;
-		ARG 0 registry

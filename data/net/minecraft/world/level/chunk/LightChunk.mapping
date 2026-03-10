@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/chunk/LightChunk
-	METHOD findBlockLightSources (Ljava/util/function/BiConsumer;)V
-		ARG 1 output

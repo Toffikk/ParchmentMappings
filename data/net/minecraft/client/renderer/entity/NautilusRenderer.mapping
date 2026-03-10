@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/renderer/entity/NautilusRenderer
-	METHOD <init> (Lnet/minecraft/client/renderer/entity/EntityRendererProvider$Context;)V
-		ARG 1 context

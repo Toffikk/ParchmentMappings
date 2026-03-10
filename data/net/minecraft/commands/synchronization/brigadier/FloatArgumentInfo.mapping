@@ -1,5 +1,0 @@
-CLASS net/minecraft/commands/synchronization/brigadier/FloatArgumentInfo
-	CLASS Template
-		METHOD <init> (Lnet/minecraft/commands/synchronization/brigadier/FloatArgumentInfo;FF)V
-			ARG 2 min
-			ARG 3 max

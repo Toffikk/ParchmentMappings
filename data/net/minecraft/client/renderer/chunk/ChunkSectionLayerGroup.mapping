@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/renderer/chunk/ChunkSectionLayerGroup
-	METHOD <init> (Ljava/lang/String;I[Lnet/minecraft/client/renderer/chunk/ChunkSectionLayer;)V
-		ARG 3 layers

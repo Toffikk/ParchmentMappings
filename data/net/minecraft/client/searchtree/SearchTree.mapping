@@ -1,8 +1,0 @@
-CLASS net/minecraft/client/searchtree/SearchTree
-	METHOD plainText (Ljava/util/List;Ljava/util/function/Function;)Lnet/minecraft/client/searchtree/SearchTree;
-		ARG 0 elements
-		ARG 1 idGetter
-	METHOD search (Ljava/lang/String;)Ljava/util/List;
-		COMMENT Searches this search tree for the given text.
-		COMMENT @return a list of all matching items in this search tree
-		ARG 1 text

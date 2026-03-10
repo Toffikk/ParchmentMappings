@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/gui/spectator/SpectatorMenuListener
-	METHOD onSpectatorMenuClosed (Lnet/minecraft/client/gui/spectator/SpectatorMenu;)V
-		ARG 1 menu

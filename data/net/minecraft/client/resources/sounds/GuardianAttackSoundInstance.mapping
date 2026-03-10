@@ -1,3 +1,0 @@
-CLASS net/minecraft/client/resources/sounds/GuardianAttackSoundInstance
-	METHOD <init> (Lnet/minecraft/world/entity/monster/Guardian;)V
-		ARG 1 guardian

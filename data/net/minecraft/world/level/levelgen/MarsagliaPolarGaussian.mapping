@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/levelgen/MarsagliaPolarGaussian
-	METHOD <init> (Lnet/minecraft/util/RandomSource;)V
-		ARG 1 randomSource

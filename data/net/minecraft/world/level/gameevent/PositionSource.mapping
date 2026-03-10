@@ -1,3 +1,0 @@
-CLASS net/minecraft/world/level/gameevent/PositionSource
-	METHOD getPosition (Lnet/minecraft/world/level/Level;)Ljava/util/Optional;
-		ARG 1 level
