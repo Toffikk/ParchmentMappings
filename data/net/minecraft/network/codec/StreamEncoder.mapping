@@ -1,0 +1,4 @@
+CLASS net/minecraft/network/codec/StreamEncoder
+	METHOD encode (Ljava/lang/Object;Ljava/lang/Object;)V
+		ARG 1 output
+		ARG 2 value

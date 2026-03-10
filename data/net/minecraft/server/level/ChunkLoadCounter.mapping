@@ -1,0 +1,10 @@
+CLASS net/minecraft/server/level/ChunkLoadCounter
+	METHOD lambda$pendingChunks$2 (Lnet/minecraft/server/level/ChunkHolder;)Z
+		ARG 0 chunkHolder
+	METHOD lambda$track$0 (Lit/unimi/dsi/fastutil/longs/LongSet;Lnet/minecraft/server/level/ChunkHolder;)V
+		ARG 1 chunkHolder
+	METHOD lambda$track$1 (Lit/unimi/dsi/fastutil/longs/LongSet;Lnet/minecraft/server/level/ChunkHolder;)V
+		ARG 2 chunkHolder
+	METHOD track (Lnet/minecraft/server/level/ServerLevel;Ljava/lang/Runnable;)V
+		ARG 1 level
+		ARG 2 scheduler

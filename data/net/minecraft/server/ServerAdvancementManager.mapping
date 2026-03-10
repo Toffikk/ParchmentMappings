@@ -1,0 +1,11 @@
+CLASS net/minecraft/server/ServerAdvancementManager
+	METHOD <init> (Lnet/minecraft/core/HolderLookup$Provider;)V
+		ARG 1 registries
+	METHOD get (Lnet/minecraft/resources/Identifier;)Lnet/minecraft/advancements/AdvancementHolder;
+		ARG 1 id
+	METHOD lambda$apply$0 (Lcom/google/common/collect/ImmutableMap$Builder;Lnet/minecraft/resources/Identifier;Lnet/minecraft/advancements/Advancement;)V
+		ARG 2 id
+		ARG 3 advancement
+	METHOD validate (Lnet/minecraft/resources/Identifier;Lnet/minecraft/advancements/Advancement;)V
+		ARG 1 id
+		ARG 2 advancement

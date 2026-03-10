@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/chunk/BlockColumn
+	METHOD getBlock (I)Lnet/minecraft/world/level/block/state/BlockState;
+		ARG 1 blockY
+	METHOD setBlock (ILnet/minecraft/world/level/block/state/BlockState;)V
+		ARG 1 blockY
+		ARG 2 state

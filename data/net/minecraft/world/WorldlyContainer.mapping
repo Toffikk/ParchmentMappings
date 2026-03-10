@@ -1,0 +1,11 @@
+CLASS net/minecraft/world/WorldlyContainer
+	METHOD canPlaceItemThroughFace (ILnet/minecraft/world/item/ItemStack;Lnet/minecraft/core/Direction;)Z
+		ARG 1 slot
+		ARG 2 itemStack
+		ARG 3 direction
+	METHOD canTakeItemThroughFace (ILnet/minecraft/world/item/ItemStack;Lnet/minecraft/core/Direction;)Z
+		ARG 1 slot
+		ARG 2 itemStack
+		ARG 3 direction
+	METHOD getSlotsForFace (Lnet/minecraft/core/Direction;)[I
+		ARG 1 direction

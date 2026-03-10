@@ -1,0 +1,4 @@
+CLASS net/minecraft/resources/RegistryOps
+	CLASS RegistryInfoLookup
+		METHOD lookup (Lnet/minecraft/resources/ResourceKey;)Ljava/util/Optional;
+			ARG 1 registryKey

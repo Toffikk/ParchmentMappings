@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/level/ScheduledTickAccess
+	METHOD createTick (Lnet/minecraft/core/BlockPos;Ljava/lang/Object;I)Lnet/minecraft/world/ticks/ScheduledTick;
+		ARG 1 pos
+		ARG 2 type
+		ARG 3 tickDelay
+	METHOD createTick (Lnet/minecraft/core/BlockPos;Ljava/lang/Object;ILnet/minecraft/world/ticks/TickPriority;)Lnet/minecraft/world/ticks/ScheduledTick;
+		ARG 1 pos
+		ARG 2 type
+		ARG 3 tickDelay
+		ARG 4 priority

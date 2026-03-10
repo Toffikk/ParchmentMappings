@@ -1,0 +1,15 @@
+CLASS net/minecraft/server/level/WorldGenRegion
+	METHOD <init> (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/util/StaticCache2D;Lnet/minecraft/world/level/chunk/status/ChunkStep;Lnet/minecraft/world/level/chunk/ChunkAccess;)V
+		ARG 1 level
+		ARG 2 cache
+		ARG 3 generatingStep
+		ARG 4 center
+	METHOD isOldChunkAround (Lnet/minecraft/world/level/ChunkPos;I)Z
+		ARG 1 pos
+		ARG 2 range
+	METHOD lambda$new$0 (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/ticks/TickContainerAccess;
+		ARG 1 pos
+	METHOD lambda$new$1 (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/ticks/TickContainerAccess;
+		ARG 1 pos
+	METHOD markPosForPostprocessing (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 blockPos

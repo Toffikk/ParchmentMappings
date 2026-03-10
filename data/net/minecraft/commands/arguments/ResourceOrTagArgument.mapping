@@ -1,0 +1,40 @@
+CLASS net/minecraft/commands/arguments/ResourceOrTagArgument
+	METHOD <init> (Lnet/minecraft/commands/CommandBuildContext;Lnet/minecraft/resources/ResourceKey;)V
+		ARG 1 context
+		ARG 2 registryKey
+	METHOD getResourceOrTag (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/commands/arguments/ResourceOrTagArgument$Result;
+		ARG 0 context
+		ARG 1 name
+		ARG 2 registryKey
+	METHOD lambda$getResourceOrTag$2 (Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/core/Holder$Reference;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+		ARG 1 element
+	METHOD lambda$getResourceOrTag$3 (Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/core/HolderSet$Named;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+		ARG 1 tag
+	METHOD lambda$static$0 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+		ARG 0 id
+		ARG 1 registry
+	METHOD lambda$static$1 (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+		ARG 0 id
+		ARG 1 actualRegistry
+		ARG 2 expectedRegistry
+	METHOD listSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 context
+		ARG 2 builder
+	METHOD parse (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
+		ARG 1 reader
+	METHOD resourceOrTag (Lnet/minecraft/commands/CommandBuildContext;Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/commands/arguments/ResourceOrTagArgument;
+		ARG 0 context
+		ARG 1 key
+	CLASS Info
+		CLASS Template
+			METHOD <init> (Lnet/minecraft/commands/arguments/ResourceOrTagArgument$Info;Lnet/minecraft/resources/ResourceKey;)V
+				ARG 2 registryKey
+	CLASS ResourceResult
+		METHOD test (Ljava/lang/Object;)Z
+			ARG 1 holder
+	CLASS Result
+		METHOD cast (Lnet/minecraft/resources/ResourceKey;)Ljava/util/Optional;
+			ARG 1 registryKey
+	CLASS TagResult
+		METHOD test (Ljava/lang/Object;)Z
+			ARG 1 holder

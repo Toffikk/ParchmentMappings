@@ -1,0 +1,3 @@
+CLASS net/minecraft/server/ServerInterface
+	METHOD runCommand (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 command

@@ -1,0 +1,52 @@
+CLASS net/minecraft/commands/arguments/ScoreHolderArgument
+	METHOD <init> (Z)V
+		ARG 1 multiple
+	METHOD getName (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/world/scores/ScoreHolder;
+		ARG 0 context
+		ARG 1 name
+	METHOD getNames (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Ljava/util/Collection;
+		ARG 0 context
+		ARG 1 name
+	METHOD getNames (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;Ljava/util/function/Supplier;)Ljava/util/Collection;
+		ARG 0 context
+		ARG 1 name
+		ARG 2 wildcard
+	METHOD getNamesWithDefaultWildcard (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Ljava/util/Collection;
+		ARG 0 context
+		ARG 1 name
+	METHOD lambda$parse$2 (Lnet/minecraft/commands/CommandSourceStack;Ljava/util/function/Supplier;)Ljava/util/Collection;
+		ARG 0 sender
+		ARG 1 wildcard
+	METHOD lambda$parse$3 (Ljava/util/List;Lnet/minecraft/commands/CommandSourceStack;Ljava/util/function/Supplier;)Ljava/util/Collection;
+		ARG 1 sender
+		ARG 2 wildcard
+	METHOD lambda$parse$4 (Ljava/util/UUID;Ljava/util/List;Lnet/minecraft/commands/CommandSourceStack;Ljava/util/function/Supplier;)Ljava/util/Collection;
+		ARG 2 sender
+		ARG 3 wildcard
+	METHOD lambda$parse$5 (Ljava/lang/String;Ljava/util/List;Lnet/minecraft/commands/CommandSourceStack;Ljava/util/function/Supplier;)Ljava/util/Collection;
+		ARG 2 sender
+		ARG 3 wildcard
+	METHOD lambda$static$0 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)V
+		ARG 1 suggestions
+	METHOD lambda$static$1 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 context
+		ARG 1 builder
+	METHOD parse (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
+		ARG 1 reader
+	METHOD parse (Lcom/mojang/brigadier/StringReader;Ljava/lang/Object;)Ljava/lang/Object;
+		ARG 1 reader
+		ARG 2 source
+	METHOD parse (Lcom/mojang/brigadier/StringReader;Z)Lnet/minecraft/commands/arguments/ScoreHolderArgument$Result;
+		ARG 1 reader
+		ARG 2 allowSelectors
+	CLASS Info
+		CLASS Template
+			METHOD <init> (Lnet/minecraft/commands/arguments/ScoreHolderArgument$Info;Z)V
+				ARG 2 multiple
+	CLASS Result
+		METHOD getNames (Lnet/minecraft/commands/CommandSourceStack;Ljava/util/function/Supplier;)Ljava/util/Collection;
+			ARG 1 sender
+			ARG 2 wildcard
+	CLASS SelectorResult
+		METHOD <init> (Lnet/minecraft/commands/arguments/selector/EntitySelector;)V
+			ARG 1 selector

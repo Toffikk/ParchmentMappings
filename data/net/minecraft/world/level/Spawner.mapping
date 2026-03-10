@@ -1,0 +1,17 @@
+CLASS net/minecraft/world/level/Spawner
+	METHOD appendHoverText (Lnet/minecraft/world/item/component/TypedEntityData;Ljava/util/function/Consumer;Ljava/lang/String;)V
+		ARG 0 data
+		ARG 1 consumer
+		ARG 2 nextSpawnDataTagKey
+	METHOD getSpawnEntityDisplayName (Lnet/minecraft/world/item/component/TypedEntityData;Ljava/lang/String;)Lnet/minecraft/network/chat/Component;
+		ARG 0 data
+		ARG 1 nextSpawnDataTagKey
+	METHOD lambda$getSpawnEntityDisplayName$0 (Lnet/minecraft/nbt/CompoundTag;)Ljava/util/Optional;
+		ARG 0 nextSpawnData
+	METHOD lambda$getSpawnEntityDisplayName$1 (Lnet/minecraft/nbt/CompoundTag;)Ljava/util/Optional;
+		ARG 0 entityTag
+	METHOD lambda$getSpawnEntityDisplayName$2 (Lnet/minecraft/world/entity/EntityType;)Lnet/minecraft/network/chat/MutableComponent;
+		ARG 0 entityType
+	METHOD setEntityId (Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/util/RandomSource;)V
+		ARG 1 type
+		ARG 2 random

@@ -1,0 +1,11 @@
+CLASS net/minecraft/core/QuartPos
+	METHOD fromBlock (I)I
+		ARG 0 blockCoord
+	METHOD fromSection (I)I
+		ARG 0 section
+	METHOD quartLocal (I)I
+		ARG 0 blockCoord
+	METHOD toBlock (I)I
+		ARG 0 quart
+	METHOD toSection (I)I
+		ARG 0 quart

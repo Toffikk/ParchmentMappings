@@ -1,0 +1,5 @@
+CLASS net/minecraft/server/level/ChunkTaskDispatcher
+	METHOD onRelease (J)V
+		ARG 1 key
+	METHOD scheduleForExecution (Lnet/minecraft/server/level/ChunkTaskPriorityQueue$TasksForChunk;)V
+		ARG 1 tasksForChunk

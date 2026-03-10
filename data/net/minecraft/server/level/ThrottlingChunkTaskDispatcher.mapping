@@ -1,0 +1,7 @@
+CLASS net/minecraft/server/level/ThrottlingChunkTaskDispatcher
+	METHOD <init> (Lnet/minecraft/util/thread/TaskScheduler;Ljava/util/concurrent/Executor;I)V
+		ARG 1 executor
+		ARG 2 dispatcherExecutor
+		ARG 3 maxChunksInExecution
+	METHOD lambda$getDebugStatus$0 (J)Ljava/lang/String;
+		ARG 0 key

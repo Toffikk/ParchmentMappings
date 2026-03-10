@@ -1,0 +1,30 @@
+CLASS net/minecraft/server/ServerLinks
+	METHOD findKnownType (Lnet/minecraft/server/ServerLinks$KnownLinkType;)Ljava/util/Optional;
+		ARG 1 type
+	METHOD lambda$findKnownType$0 (Lnet/minecraft/server/ServerLinks$KnownLinkType;Lnet/minecraft/server/ServerLinks$KnownLinkType;)Ljava/lang/Boolean;
+		ARG 1 l
+	METHOD lambda$findKnownType$1 (Lnet/minecraft/network/chat/Component;)Ljava/lang/Boolean;
+		ARG 0 r
+	METHOD lambda$findKnownType$2 (Lnet/minecraft/server/ServerLinks$KnownLinkType;Lnet/minecraft/server/ServerLinks$Entry;)Z
+		ARG 1 e
+	METHOD lambda$untrust$3 (Lnet/minecraft/server/ServerLinks$Entry;)Lnet/minecraft/server/ServerLinks$UntrustedEntry;
+		ARG 0 e
+	CLASS Entry
+		METHOD custom (Lnet/minecraft/network/chat/Component;Ljava/net/URI;)Lnet/minecraft/server/ServerLinks$Entry;
+			ARG 0 displayName
+			ARG 1 link
+		METHOD knownType (Lnet/minecraft/server/ServerLinks$KnownLinkType;Ljava/net/URI;)Lnet/minecraft/server/ServerLinks$Entry;
+			ARG 0 type
+			ARG 1 link
+		METHOD lambda$displayName$0 (Lnet/minecraft/network/chat/Component;)Lnet/minecraft/network/chat/Component;
+			ARG 0 r
+	CLASS KnownLinkType
+		METHOD <init> (Ljava/lang/String;IILjava/lang/String;)V
+			ARG 3 id
+			ARG 4 name
+		METHOD create (Ljava/net/URI;)Lnet/minecraft/server/ServerLinks$Entry;
+			ARG 1 link
+		METHOD lambda$static$0 (Lnet/minecraft/server/ServerLinks$KnownLinkType;)I
+			ARG 0 e
+		METHOD lambda$static$1 (Lnet/minecraft/server/ServerLinks$KnownLinkType;)I
+			ARG 0 e

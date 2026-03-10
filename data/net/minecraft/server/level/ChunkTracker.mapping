@@ -1,0 +1,7 @@
+CLASS net/minecraft/server/level/ChunkTracker
+	METHOD getLevelFromSource (J)I
+		ARG 1 to
+	METHOD update (JIZ)V
+		ARG 1 node
+		ARG 3 newLevelFrom
+		ARG 4 onlyDecreased

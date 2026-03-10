@@ -1,0 +1,21 @@
+CLASS net/minecraft/server/WorldLoader
+	METHOD lambda$load$0 (Lnet/minecraft/server/packs/resources/CloseableResourceManager;Lnet/minecraft/server/ReloadableServerResources;Ljava/lang/Throwable;)V
+		ARG 1 managers
+		ARG 2 throwable
+	METHOD lambda$load$1 (Lnet/minecraft/server/WorldLoader$ResultFactory;Lnet/minecraft/server/packs/resources/CloseableResourceManager;Lnet/minecraft/core/LayeredRegistryAccess;Lnet/minecraft/server/WorldLoader$DataLoadOutput;Lnet/minecraft/server/ReloadableServerResources;)Ljava/lang/Object;
+		ARG 4 managers
+	METHOD load (Lnet/minecraft/server/WorldLoader$InitConfig;Lnet/minecraft/server/WorldLoader$WorldDataSupplier;Lnet/minecraft/server/WorldLoader$ResultFactory;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 config
+		ARG 1 worldDataSupplier
+		ARG 2 resultFactory
+		ARG 3 backgroundExecutor
+		ARG 4 mainThreadExecutor
+	CLASS ResultFactory
+		METHOD create (Lnet/minecraft/server/packs/resources/CloseableResourceManager;Lnet/minecraft/server/ReloadableServerResources;Lnet/minecraft/core/LayeredRegistryAccess;Ljava/lang/Object;)Ljava/lang/Object;
+			ARG 1 resources
+			ARG 2 managers
+			ARG 3 registries
+			ARG 4 cookie
+	CLASS WorldDataSupplier
+		METHOD get (Lnet/minecraft/server/WorldLoader$DataLoadContext;)Lnet/minecraft/server/WorldLoader$DataLoadOutput;
+			ARG 1 context

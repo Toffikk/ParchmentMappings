@@ -1,0 +1,26 @@
+CLASS net/minecraft/advancements/AdvancementRequirements
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 input
+	METHOD allOf (Ljava/util/Collection;)Lnet/minecraft/advancements/AdvancementRequirements;
+		ARG 0 criteria
+	METHOD anyMatch (Ljava/util/List;Ljava/util/function/Predicate;)Z
+		ARG 0 criteria
+		ARG 1 predicate
+	METHOD anyOf (Ljava/util/Collection;)Lnet/minecraft/advancements/AdvancementRequirements;
+		ARG 0 criteria
+	METHOD count (Ljava/util/function/Predicate;)I
+		ARG 1 predicate
+	METHOD lambda$new$0 (Lnet/minecraft/network/FriendlyByteBuf;)Ljava/util/List;
+		ARG 0 in
+	METHOD lambda$write$1 (Lnet/minecraft/network/FriendlyByteBuf;Ljava/util/List;)V
+		ARG 0 out
+		ARG 1 set
+	METHOD test (Ljava/util/function/Predicate;)Z
+		ARG 1 predicate
+	METHOD validate (Ljava/util/Set;)Lcom/mojang/serialization/DataResult;
+		ARG 1 expectedCriteria
+	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 output
+	CLASS Strategy
+		METHOD create (Ljava/util/Collection;)Lnet/minecraft/advancements/AdvancementRequirements;
+			ARG 1 criteria

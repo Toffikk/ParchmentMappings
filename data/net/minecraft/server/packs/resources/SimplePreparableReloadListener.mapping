@@ -1,0 +1,5 @@
+CLASS net/minecraft/server/packs/resources/SimplePreparableReloadListener
+	METHOD apply (Ljava/lang/Object;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)V
+		ARG 1 preparations
+		ARG 2 manager
+		ARG 3 profiler

@@ -1,0 +1,26 @@
+CLASS net/minecraft/advancements/AdvancementRewards
+	METHOD grant (Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 1 player
+	METHOD lambda$grant$1 (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/commands/CacheableFunction;)Ljava/util/Optional;
+		ARG 1 function
+	METHOD lambda$grant$2 (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/commands/functions/CommandFunction;)V
+		ARG 2 function
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	CLASS Builder
+		METHOD addExperience (I)Lnet/minecraft/advancements/AdvancementRewards$Builder;
+			ARG 1 amount
+		METHOD addLootTable (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/advancements/AdvancementRewards$Builder;
+			ARG 1 id
+		METHOD addRecipe (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/advancements/AdvancementRewards$Builder;
+			ARG 1 id
+		METHOD experience (I)Lnet/minecraft/advancements/AdvancementRewards$Builder;
+			ARG 0 amount
+		METHOD function (Lnet/minecraft/resources/Identifier;)Lnet/minecraft/advancements/AdvancementRewards$Builder;
+			ARG 0 id
+		METHOD loot (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/advancements/AdvancementRewards$Builder;
+			ARG 0 id
+		METHOD recipe (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/advancements/AdvancementRewards$Builder;
+			ARG 0 id
+		METHOD runs (Lnet/minecraft/resources/Identifier;)Lnet/minecraft/advancements/AdvancementRewards$Builder;
+			ARG 1 function
