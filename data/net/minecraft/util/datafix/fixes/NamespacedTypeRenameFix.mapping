@@ -1,0 +1,10 @@
+CLASS net/minecraft/util/datafix/fixes/NamespacedTypeRenameFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;Ljava/lang/String;Lcom/mojang/datafixers/DSL$TypeReference;Ljava/util/function/UnaryOperator;)V
+		ARG 1 outputSchema
+		ARG 2 name
+		ARG 3 type
+		ARG 4 renamer
+	METHOD lambda$makeRule$0 (Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/datafixers/util/Pair;
+		ARG 1 input
+	METHOD lambda$makeRule$1 (Lcom/mojang/serialization/DynamicOps;)Ljava/util/function/Function;
+		ARG 1 ops

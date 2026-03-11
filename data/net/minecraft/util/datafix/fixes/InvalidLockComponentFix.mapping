@@ -1,0 +1,15 @@
+CLASS net/minecraft/util/datafix/fixes/InvalidLockComponentFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD fixLock (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 input
+	METHOD isBrokenLock (Lcom/mojang/serialization/Dynamic;)Z
+		ARG 0 input
+	METHOD isMapWithOneField (Lcom/mojang/serialization/Dynamic;Ljava/lang/String;Ljava/util/function/Predicate;)Z
+		ARG 0 input
+		ARG 1 fieldName
+		ARG 2 predicate
+	METHOD lambda$isBrokenLock$0 (Lcom/mojang/serialization/Dynamic;)Z
+		ARG 0 customName
+	METHOD lambda$isBrokenLock$1 (Lcom/mojang/serialization/Dynamic;)Z
+		ARG 0 components

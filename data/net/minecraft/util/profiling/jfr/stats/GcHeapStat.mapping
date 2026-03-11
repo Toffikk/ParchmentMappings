@@ -1,0 +1,12 @@
+CLASS net/minecraft/util/profiling/jfr/stats/GcHeapStat
+	METHOD calculateAllocationRatePerSecond (Ljava/util/List;)D
+		ARG 0 heapStats
+	METHOD from (Ljdk/jfr/consumer/RecordedEvent;)Lnet/minecraft/util/profiling/jfr/stats/GcHeapStat;
+		ARG 0 event
+	METHOD lambda$calculateAllocationRatePerSecond$0 (Lnet/minecraft/util/profiling/jfr/stats/GcHeapStat;)Lnet/minecraft/util/profiling/jfr/stats/GcHeapStat$Timing;
+		ARG 0 it
+	METHOD summary (Ljava/time/Duration;Ljava/util/List;Ljava/time/Duration;I)Lnet/minecraft/util/profiling/jfr/stats/GcHeapStat$Summary;
+		ARG 0 recordingDuration
+		ARG 1 heapStats
+		ARG 2 gcTotalDuration
+		ARG 3 totalGCs

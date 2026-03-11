@@ -1,0 +1,15 @@
+CLASS net/minecraft/util/valueproviders/UniformInt
+	METHOD <init> (II)V
+		ARG 1 minInclusive
+		ARG 2 maxInclusive
+	METHOD lambda$static$0 (Lnet/minecraft/util/valueproviders/UniformInt;)Ljava/lang/Integer;
+		ARG 0 u
+	METHOD lambda$static$1 (Lnet/minecraft/util/valueproviders/UniformInt;)Ljava/lang/Integer;
+		ARG 0 u
+	METHOD lambda$static$2 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD lambda$static$4 (Lnet/minecraft/util/valueproviders/UniformInt;)Lcom/mojang/serialization/DataResult;
+		ARG 0 u
+	METHOD of (II)Lnet/minecraft/util/valueproviders/UniformInt;
+		ARG 0 minInclusive
+		ARG 1 maxInclusive

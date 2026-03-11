@@ -1,0 +1,9 @@
+CLASS net/minecraft/util/datafix/fixes/WrittenBookPagesStrictJsonFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD lambda$fixItemStackTag$1 (Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/datafixers/util/Pair;
+		ARG 0 page
+	METHOD lambda$fixItemStackTag$2 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 1 pages
+	METHOD lambda$new$0 (Ljava/lang/String;)Z
+		ARG 0 id

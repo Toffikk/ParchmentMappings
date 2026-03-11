@@ -1,0 +1,9 @@
+CLASS net/minecraft/util/datafix/fixes/EmptyItemInHotbarFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD lambda$makeRule$0 (Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/datafixers/util/Pair;
+		ARG 0 itemStack
+	METHOD lambda$makeRule$1 (Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/datafixers/util/Pair;
+		ARG 0 namedStack
+	METHOD lambda$makeRule$2 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 1 input

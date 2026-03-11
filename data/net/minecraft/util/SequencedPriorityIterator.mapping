@@ -1,0 +1,6 @@
+CLASS net/minecraft/util/SequencedPriorityIterator
+	METHOD add (Ljava/lang/Object;I)V
+		ARG 1 data
+		ARG 2 priority
+	METHOD lambda$add$0 (I)Ljava/util/Deque;
+		ARG 0 order

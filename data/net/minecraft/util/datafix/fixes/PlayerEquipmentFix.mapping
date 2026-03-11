@@ -1,0 +1,9 @@
+CLASS net/minecraft/util/datafix/fixes/PlayerEquipmentFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD lambda$makeRule$0 (Ljava/util/Map;Lcom/mojang/serialization/Dynamic;Lcom/mojang/serialization/Dynamic;)Z
+		ARG 2 item
+	METHOD lambda$makeRule$1 (Ljava/util/Map;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 inventory
+	METHOD lambda$makeRule$2 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 tag

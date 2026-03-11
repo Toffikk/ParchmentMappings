@@ -1,0 +1,16 @@
+CLASS net/minecraft/util/datafix/fixes/ItemIdFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;Z)V
+		ARG 1 outputSchema
+		ARG 2 changesType
+	METHOD getItem (I)Ljava/lang/String;
+		ARG 0 id
+	METHOD lambda$makeRule$1 (Ljava/lang/Integer;)Lcom/mojang/datafixers/util/Pair;
+		ARG 0 l
+	METHOD lambda$makeRule$2 (Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/datafixers/util/Pair;
+		ARG 0 r
+	METHOD lambda$makeRule$3 (Lcom/mojang/datafixers/util/Either;)Lcom/mojang/datafixers/util/Pair;
+		ARG 0 oldId
+	METHOD lambda$makeRule$4 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 2 itemStack
+	METHOD lambda$static$0 (Lit/unimi/dsi/fastutil/ints/Int2ObjectOpenHashMap;)V
+		ARG 0 map

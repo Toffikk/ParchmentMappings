@@ -20,3 +20,8 @@ CLASS net/minecraft/util/debug/DebugValueAccess
 	METHOD getEntityValue (Lnet/minecraft/util/debug/DebugSubscription;Lnet/minecraft/world/entity/Entity;)Ljava/lang/Object;
 		ARG 1 subscription
 		ARG 2 entity
+	CLASS EventVisitor
+		METHOD accept (Ljava/lang/Object;II)V
+			ARG 1 value
+			ARG 2 remainingTicks
+			ARG 3 totalLifetime

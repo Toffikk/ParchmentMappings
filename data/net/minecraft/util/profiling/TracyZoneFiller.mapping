@@ -1,0 +1,14 @@
+CLASS net/minecraft/util/profiling/TracyZoneFiller
+	METHOD lambda$incrementCounter$2 (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/util/profiling/TracyZoneFiller$PlotAndValue;
+		ARG 2 s
+	METHOD lambda$push$0 (Ljava/lang/StackWalker$StackFrame;)Z
+		ARG 0 frame
+	METHOD lambda$push$1 (Ljava/util/stream/Stream;)Ljava/util/Optional;
+		ARG 0 s
+	CLASS PlotAndValue
+		METHOD <init> (Ljava/lang/String;)V
+			ARG 1 name
+		METHOD add (I)V
+			ARG 1 amount
+		METHOD set (I)V
+			ARG 1 value

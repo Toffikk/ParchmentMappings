@@ -1,5 +1,33 @@
 CLASS net/minecraft/util/DelegateDataOutput
 	METHOD <init> (Ljava/io/DataOutput;)V
 		ARG 1 parent
+	METHOD write (I)V
+		ARG 1 b
+	METHOD write ([B)V
+		ARG 1 b
+	METHOD write ([BII)V
+		ARG 1 b
+		ARG 2 off
+		ARG 3 len
+	METHOD writeBoolean (Z)V
+		ARG 1 v
+	METHOD writeByte (I)V
+		ARG 1 v
+	METHOD writeBytes (Ljava/lang/String;)V
+		ARG 1 s
+	METHOD writeChar (I)V
+		ARG 1 v
+	METHOD writeChars (Ljava/lang/String;)V
+		ARG 1 s
+	METHOD writeDouble (D)V
+		ARG 1 v
+	METHOD writeFloat (F)V
+		ARG 1 v
+	METHOD writeInt (I)V
+		ARG 1 v
+	METHOD writeLong (J)V
+		ARG 1 v
+	METHOD writeShort (I)V
+		ARG 1 v
 	METHOD writeUTF (Ljava/lang/String;)V
 		ARG 1 s

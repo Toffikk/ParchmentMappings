@@ -1,0 +1,14 @@
+CLASS net/minecraft/util/datafix/fixes/OptionsKeyLwjgl3Fix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;Z)V
+		ARG 1 outputSchema
+		ARG 2 changesType
+	METHOD lambda$makeRule$1 (Ljava/util/Map$Entry;)Lcom/mojang/datafixers/util/Pair;
+		ARG 0 entry
+	METHOD lambda$makeRule$2 (Lcom/mojang/serialization/Dynamic;Ljava/util/Map;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 map1
+	METHOD lambda$makeRule$3 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 tag
+	METHOD lambda$makeRule$4 (Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 0 input
+	METHOD lambda$static$0 (Lit/unimi/dsi/fastutil/ints/Int2ObjectOpenHashMap;)V
+		ARG 0 map

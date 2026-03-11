@@ -1,0 +1,11 @@
+CLASS net/minecraft/util/profiling/jfr/Percentiles
+	METHOD evaluate ([D)Ljava/util/Map;
+		ARG 0 dataset
+	METHOD evaluate ([I)Ljava/util/Map;
+		ARG 0 dataset
+	METHOD evaluate ([J)Ljava/util/Map;
+		ARG 0 dataset
+	METHOD lambda$sorted$0 (Ljava/util/Map;Lit/unimi/dsi/fastutil/ints/Int2DoubleRBTreeMap;)V
+		ARG 1 it
+	METHOD sorted (Ljava/util/Map;)Ljava/util/Map;
+		ARG 0 percentiles

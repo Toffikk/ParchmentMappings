@@ -1,0 +1,25 @@
+CLASS net/minecraft/util/datafix/schemas/V1451_6
+	METHOD createCriterionTypes (Lcom/mojang/datafixers/schemas/Schema;)Ljava/util/Map;
+		ARG 0 schema
+	METHOD packNamespacedWithDot (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 location
+	METHOD registerTypes (Lcom/mojang/datafixers/schemas/Schema;Ljava/util/Map;Ljava/util/Map;)V
+		ARG 1 schema
+		ARG 2 entityTypes
+		ARG 3 blockEntityTypes
+	CLASS 1
+		METHOD apply (Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;)Ljava/lang/Object;
+			ARG 1 ops
+			ARG 2 value
+		METHOD lambda$apply$0 (Ljava/lang/String;)Lcom/mojang/datafixers/util/Pair;
+			ARG 0 name
+		METHOD lambda$apply$1 (Lcom/mojang/serialization/Dynamic;Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/serialization/Dynamic;
+			ARG 1 explodedId
+	CLASS 2
+		METHOD apply (Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;)Ljava/lang/Object;
+			ARG 1 ops
+			ARG 2 value
+		METHOD lambda$apply$0 (Lcom/mojang/serialization/Dynamic;Lcom/mojang/serialization/Dynamic;)Ljava/util/Optional;
+			ARG 1 type
+		METHOD lambda$apply$1 (Lcom/mojang/serialization/Dynamic;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+			ARG 1 id

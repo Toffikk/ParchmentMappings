@@ -1,0 +1,7 @@
+CLASS net/minecraft/util/datafix/fixes/FilteredBooksFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD lambda$fixItemStackTag$1 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 dynamic
+	METHOD lambda$new$0 (Ljava/lang/String;)Z
+		ARG 0 id

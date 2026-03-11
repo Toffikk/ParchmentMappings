@@ -1,0 +1,17 @@
+CLASS net/minecraft/util/EncoderCache
+	METHOD <init> (I)V
+		ARG 1 maximumSize
+	METHOD wrap (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
+		ARG 1 codec
+	CLASS 1
+		METHOD load (Lnet/minecraft/util/EncoderCache$Key;)Lcom/mojang/serialization/DataResult;
+			ARG 1 key
+	CLASS 2
+		METHOD decode (Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
+			ARG 1 ops
+			ARG 2 input
+		METHOD lambda$encode$0 (Ljava/lang/Object;)Ljava/lang/Object;
+			ARG 0 value
+	CLASS Key
+		METHOD equals (Ljava/lang/Object;)Z
+			ARG 1 obj

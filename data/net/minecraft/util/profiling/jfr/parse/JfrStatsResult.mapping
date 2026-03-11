@@ -1,0 +1,9 @@
+CLASS net/minecraft/util/profiling/jfr/parse/JfrStatsResult
+	METHOD lambda$chunkGenSummary$0 (Ljava/util/Map$Entry;)Lcom/mojang/datafixers/util/Pair;
+		ARG 0 e
+	METHOD lambda$chunkGenSummary$1 (Lcom/mojang/datafixers/util/Pair;)Z
+		ARG 0 pair
+	METHOD lambda$chunkGenSummary$2 (Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/datafixers/util/Pair;
+		ARG 0 e
+	METHOD lambda$chunkGenSummary$3 (Lcom/mojang/datafixers/util/Pair;)Ljava/time/Duration;
+		ARG 0 pair

@@ -1,0 +1,10 @@
+CLASS net/minecraft/util/FutureChain
+	METHOD <init> (Ljava/util/concurrent/Executor;)V
+		ARG 1 executor
+	METHOD lambda$append$0 (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+		ARG 0 ignored
+		ARG 1 value
+	METHOD lambda$append$1 (Ljava/util/function/Consumer;Ljava/lang/Object;)V
+		ARG 2 value
+	METHOD lambda$append$2 (Ljava/lang/Throwable;)Ljava/lang/Void;
+		ARG 0 t

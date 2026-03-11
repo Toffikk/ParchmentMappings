@@ -1,0 +1,15 @@
+CLASS net/minecraft/util/datafix/fixes/DropChancesFormatFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD addSlotChances (Lcom/mojang/serialization/Dynamic;Ljava/util/List;Ljava/util/List;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 output
+		ARG 1 chances
+		ARG 2 slotNames
+	METHOD lambda$makeRule$0 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 remainder
+	METHOD lambda$makeRule$1 (Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 0 input
+	METHOD lambda$parseDropChances$2 (Lcom/mojang/serialization/Dynamic;)Ljava/lang/Float;
+		ARG 0 dynamic
+	METHOD parseDropChances (Lcom/mojang/serialization/OptionalDynamic;)Ljava/util/List;
+		ARG 0 value

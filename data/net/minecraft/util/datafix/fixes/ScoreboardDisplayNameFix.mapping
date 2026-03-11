@@ -1,0 +1,11 @@
+CLASS net/minecraft/util/datafix/fixes/ScoreboardDisplayNameFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;Ljava/lang/String;Lcom/mojang/datafixers/DSL$TypeReference;)V
+		ARG 1 outputSchema
+		ARG 2 name
+		ARG 3 type
+	METHOD lambda$makeRule$0 (Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/datafixers/util/Pair;
+		ARG 0 textComponent
+	METHOD lambda$makeRule$1 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 1 displayName
+	METHOD lambda$makeRule$2 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 2 team

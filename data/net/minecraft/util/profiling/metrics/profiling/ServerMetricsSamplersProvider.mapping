@@ -1,0 +1,13 @@
+CLASS net/minecraft/util/profiling/metrics/profiling/ServerMetricsSamplersProvider
+	METHOD <init> (Ljava/util/function/LongSupplier;Z)V
+		ARG 1 wallTimeSource
+		ARG 2 isDedicatedServer
+	METHOD lambda$runtimeIndependentSamplers$1 (Lnet/minecraft/util/profiling/metrics/profiling/ServerMetricsSamplersProvider$CpuStats;I)Lnet/minecraft/util/profiling/metrics/MetricSampler;
+		ARG 1 i
+	METHOD lambda$tickTimeSampler$3 (Lcom/google/common/base/Stopwatch;)D
+		ARG 0 watch
+	METHOD tickTimeSampler (Ljava/util/function/LongSupplier;)Lnet/minecraft/util/profiling/metrics/MetricSampler;
+		ARG 0 timeSource
+	CLASS CpuStats
+		METHOD loadForCpu (I)D
+			ARG 1 i

@@ -1,0 +1,23 @@
+CLASS net/minecraft/util/profiling/jfr/JfrProfiler
+	METHOD addPeriodicEvent (Ljava/lang/Class;Ljava/lang/Runnable;)V
+		ARG 0 eventClass
+		ARG 1 runnable
+	METHOD lambda$onChunkGenerate$5 (Lnet/minecraft/util/profiling/jfr/event/ChunkGenerationEvent;Z)V
+		ARG 1 ignored
+	METHOD lambda$onStructureGenerate$6 (Lnet/minecraft/util/profiling/jfr/event/StructureGenerationEvent;Z)V
+		ARG 1 success
+	METHOD lambda$onWorldLoadedStarted$4 (Lnet/minecraft/util/profiling/jfr/event/WorldLoadFinishedEvent;Z)V
+		ARG 1 ignored
+	METHOD lambda$start$3 (Lnet/minecraft/util/profiling/jfr/Environment;Ljava/lang/String;Ljdk/jfr/Recording;)V
+		ARG 2 self
+	METHOD networkStatFor (Ljava/net/SocketAddress;)Lnet/minecraft/util/profiling/jfr/event/NetworkSummaryEvent$SumAggregation;
+		ARG 1 remoteAddress
+	METHOD start (Ljava/io/Reader;Lnet/minecraft/util/profiling/jfr/Environment;)Z
+		ARG 1 configurationFile
+		ARG 2 environment
+	CLASS 1
+		METHOD recordingStateChanged (Ljdk/jfr/Recording;)V
+			ARG 1 rec
+	CLASS 2
+		METHOD recordingStateChanged (Ljdk/jfr/Recording;)V
+			ARG 1 rec

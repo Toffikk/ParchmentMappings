@@ -1,0 +1,9 @@
+CLASS net/minecraft/util/parsing/packrat/commands/Grammar
+	METHOD <init> (Lnet/minecraft/util/parsing/packrat/Dictionary;Lnet/minecraft/util/parsing/packrat/NamedRule;)V
+		ARG 1 rules
+		ARG 2 top
+	METHOD lambda$parseForCommands$0 (Lcom/mojang/brigadier/StringReader;Lnet/minecraft/util/parsing/packrat/ErrorEntry;Ljava/util/function/Consumer;)V
+		ARG 1 entry
+		ARG 2 output
+	METHOD parse (Lnet/minecraft/util/parsing/packrat/ParseState;)Ljava/util/Optional;
+		ARG 1 state

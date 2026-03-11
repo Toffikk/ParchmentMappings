@@ -1,0 +1,14 @@
+CLASS net/minecraft/util/datafix/fixes/LevelFlatGeneratorInfoFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;Z)V
+		ARG 1 outputSchema
+		ARG 2 changesType
+	METHOD fix (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 input
+	METHOD fixString (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 generatorOptions
+	METHOD lambda$fix$1 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 options
+	METHOD lambda$fixString$2 (Lcom/google/common/base/Splitter;ILjava/lang/String;)Ljava/lang/String;
+		ARG 2 layerString
+	METHOD lambda$makeRule$0 (Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 1 input

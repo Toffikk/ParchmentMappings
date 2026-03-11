@@ -1,0 +1,5 @@
+CLASS net/minecraft/util/datafix/fixes/GoatHornIdFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD lambda$new$0 (Ljava/lang/String;)Z
+		ARG 0 id

@@ -1,0 +1,16 @@
+CLASS net/minecraft/util/datafix/fixes/ItemSpawnEggFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;Z)V
+		ARG 1 outputSchema
+		ARG 2 changesType
+	METHOD lambda$makeRule$1 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/Typed;)Ljava/util/Optional;
+		ARG 1 value
+	METHOD lambda$makeRule$2 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/Typed;)Ljava/util/Optional;
+		ARG 1 value
+	METHOD lambda$makeRule$3 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/Typed;)Ljava/util/Optional;
+		ARG 1 value
+	METHOD lambda$makeRule$4 (Lcom/mojang/datafixers/Typed;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 entityTree
+	METHOD lambda$makeRule$5 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 5 input
+	METHOD lambda$static$0 ([Ljava/lang/String;)V
+		ARG 0 map

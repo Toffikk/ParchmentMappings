@@ -1,0 +1,13 @@
+CLASS net/minecraft/util/datafix/fixes/ProjectileStoredWeaponFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD fixChoice (Ljava/lang/String;)Ljava/util/function/Function;
+		ARG 1 entityName
+	METHOD fixChoiceCap (Ljava/lang/String;Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/types/Type;)Ljava/util/function/Function;
+		ARG 0 entityName
+		ARG 1 inputEntityChoiceType
+		ARG 2 outputEntityChoiceType
+	METHOD lambda$fixChoiceCap$0 (Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 1 typed
+	METHOD lambda$fixChoiceCap$1 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 2 input

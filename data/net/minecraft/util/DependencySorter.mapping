@@ -1,4 +1,38 @@
 CLASS net/minecraft/util/DependencySorter
+	METHOD addDependencyIfNotCyclic (Lcom/google/common/collect/Multimap;Ljava/lang/Object;Ljava/lang/Object;)V
+		ARG 0 directDependencies
+		ARG 1 from
+		ARG 2 to
+	METHOD addEntry (Ljava/lang/Object;Lnet/minecraft/util/DependencySorter$Entry;)Lnet/minecraft/util/DependencySorter;
+		ARG 1 id
+		ARG 2 value
+	METHOD isCyclic (Lcom/google/common/collect/Multimap;Ljava/lang/Object;Ljava/lang/Object;)Z
+		ARG 0 directDependencies
+		ARG 1 from
+		ARG 2 to
+	METHOD lambda$isCyclic$1 (Lcom/google/common/collect/Multimap;Ljava/lang/Object;Ljava/lang/Object;)Z
+		ARG 2 dep
+	METHOD lambda$orderByDependencies$2 (Lcom/google/common/collect/Multimap;Ljava/lang/Object;Ljava/lang/Object;)V
+		ARG 2 dep
+	METHOD lambda$orderByDependencies$3 (Lcom/google/common/collect/Multimap;Ljava/lang/Object;Lnet/minecraft/util/DependencySorter$Entry;)V
+		ARG 1 id
+		ARG 2 value
+	METHOD lambda$orderByDependencies$4 (Lcom/google/common/collect/Multimap;Ljava/lang/Object;Ljava/lang/Object;)V
+		ARG 2 dep
+	METHOD lambda$orderByDependencies$5 (Lcom/google/common/collect/Multimap;Ljava/lang/Object;Lnet/minecraft/util/DependencySorter$Entry;)V
+		ARG 1 id
+		ARG 2 value
+	METHOD lambda$orderByDependencies$6 (Lcom/google/common/collect/Multimap;Ljava/util/Set;Ljava/util/function/BiConsumer;Ljava/lang/Object;)V
+		ARG 4 topId
+	METHOD lambda$visitDependenciesAndElement$0 (Lcom/google/common/collect/Multimap;Ljava/util/Set;Ljava/util/function/BiConsumer;Ljava/lang/Object;)V
+		ARG 4 dependency
+	METHOD orderByDependencies (Ljava/util/function/BiConsumer;)V
+		ARG 1 output
+	METHOD visitDependenciesAndElement (Lcom/google/common/collect/Multimap;Ljava/util/Set;Ljava/lang/Object;Ljava/util/function/BiConsumer;)V
+		ARG 1 dependencies
+		ARG 2 alreadyVisited
+		ARG 3 id
+		ARG 4 output
 	CLASS Entry
 		METHOD visitOptionalDependencies (Ljava/util/function/Consumer;)V
 			ARG 1 output

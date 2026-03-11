@@ -1,0 +1,13 @@
+CLASS net/minecraft/util/datafix/fixes/FixWolfHealth
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD lambda$fix$0 (Lorg/apache/commons/lang3/mutable/MutableBoolean;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 base
+	METHOD lambda$fix$1 (Lorg/apache/commons/lang3/mutable/MutableBoolean;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 attribute
+	METHOD lambda$fix$2 (Lorg/apache/commons/lang3/mutable/MutableBoolean;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 attributes
+	METHOD lambda$fix$3 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 health
+	METHOD lambda$fix$4 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 dynamic

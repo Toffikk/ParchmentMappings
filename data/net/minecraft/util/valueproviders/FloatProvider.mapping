@@ -1,0 +1,12 @@
+CLASS net/minecraft/util/valueproviders/FloatProvider
+	METHOD codec (FF)Lcom/mojang/serialization/Codec;
+		ARG 0 minValue
+		ARG 1 maxValue
+	METHOD lambda$codec$5 (FFLnet/minecraft/util/valueproviders/FloatProvider;)Lcom/mojang/serialization/DataResult;
+		ARG 2 value
+	METHOD lambda$static$0 (Lnet/minecraft/util/valueproviders/FloatProvider;)Lnet/minecraft/util/valueproviders/FloatProvider;
+		ARG 0 f
+	METHOD lambda$static$1 (Lcom/mojang/datafixers/util/Either;)Lnet/minecraft/util/valueproviders/FloatProvider;
+		ARG 0 either
+	METHOD lambda$static$2 (Lnet/minecraft/util/valueproviders/FloatProvider;)Lcom/mojang/datafixers/util/Either;
+		ARG 0 f

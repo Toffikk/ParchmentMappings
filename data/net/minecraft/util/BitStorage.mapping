@@ -1,0 +1,13 @@
+CLASS net/minecraft/util/BitStorage
+	METHOD get (I)I
+		ARG 1 index
+	METHOD getAll (Ljava/util/function/IntConsumer;)V
+		ARG 1 output
+	METHOD getAndSet (II)I
+		ARG 1 index
+		ARG 2 value
+	METHOD set (II)V
+		ARG 1 index
+		ARG 2 value
+	METHOD unpack ([I)V
+		ARG 1 output

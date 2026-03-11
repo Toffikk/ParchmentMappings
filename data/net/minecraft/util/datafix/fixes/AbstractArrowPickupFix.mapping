@@ -1,0 +1,13 @@
+CLASS net/minecraft/util/datafix/fixes/AbstractArrowPickupFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD lambda$updateEntity$0 (Ljava/util/function/Function;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 1 entity
+	METHOD updateEntity (Lcom/mojang/datafixers/Typed;Ljava/lang/String;Ljava/util/function/Function;)Lcom/mojang/datafixers/Typed;
+		ARG 1 input
+		ARG 2 name
+		ARG 3 function
+	METHOD updatePickup (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 tag
+	METHOD updateProjectiles (Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 1 input

@@ -1,3 +1,9 @@
 CLASS net/minecraft/util/BoundedFloatFunction
 	METHOD apply (Ljava/lang/Object;)F
 		ARG 1 c
+	METHOD comap (Ljava/util/function/Function;)Lnet/minecraft/util/BoundedFloatFunction;
+		ARG 1 function
+	METHOD createUnlimited (Lit/unimi/dsi/fastutil/floats/Float2FloatFunction;)Lnet/minecraft/util/BoundedFloatFunction;
+		ARG 0 function
+	METHOD lambda$static$0 (F)F
+		ARG 0 input

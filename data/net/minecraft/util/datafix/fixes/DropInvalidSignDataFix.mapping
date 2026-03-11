@@ -1,0 +1,17 @@
+CLASS net/minecraft/util/datafix/fixes/DropInvalidSignDataFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;Ljava/lang/String;)V
+		ARG 1 outputSchema
+		ARG 2 entityName
+	METHOD fix (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 tag
+	METHOD fixText (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 tag
+	METHOD lambda$fixText$0 (Ljava/util/List;Lcom/mojang/serialization/Dynamic;Lcom/mojang/serialization/Dynamic;J)Lcom/mojang/serialization/Dynamic;
+		ARG 2 line
+		ARG 3 index
+	METHOD lambda$makeRule$1 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 remainder
+	METHOD lambda$makeRule$2 (Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 2 entity
+	METHOD lambda$makeRule$3 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 3 input

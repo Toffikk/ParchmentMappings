@@ -1,0 +1,19 @@
+CLASS net/minecraft/util/datafix/fixes/TrappedChestBlockEntityFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;Z)V
+		ARG 1 outputSchema
+		ARG 2 changesType
+	METHOD lambda$makeRule$0 (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 s
+	METHOD lambda$makeRule$1 (Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/datafixers/util/Pair;
+		ARG 0 stringPair
+	METHOD lambda$makeRule$2 (IILit/unimi/dsi/fastutil/ints/IntSet;Lcom/mojang/datafixers/types/templates/TaggedChoice$TaggedChoiceType;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 4 tileEntity
+	METHOD lambda$makeRule$3 (Lcom/mojang/datafixers/types/templates/TaggedChoice$TaggedChoiceType;IILit/unimi/dsi/fastutil/ints/IntSet;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 4 tileEntities
+	METHOD lambda$makeRule$4 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 4 level
+	METHOD lambda$makeRule$5 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 5 chunk
+	CLASS TrappedChestSection
+		METHOD isTrappedChest (I)Z
+			ARG 1 block

@@ -1,0 +1,17 @@
+CLASS net/minecraft/util/datafix/fixes/SpawnerDataFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD lambda$makeRule$0 (Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 2 spawnData
+	METHOD lambda$makeRule$1 (Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 2 spawnPotentials
+	METHOD lambda$makeRule$2 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 5 spawner
+	METHOD lambda$wrapSpawnPotentialsToWeightedEntries$3 (Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;)Lcom/mojang/datafixers/util/Pair;
+		ARG 1 o
+	METHOD wrapEntityToSpawnData (Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 1 newType
+		ARG 2 spawnData
+	METHOD wrapSpawnPotentialsToWeightedEntries (Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 1 newType
+		ARG 2 spawnPotentials

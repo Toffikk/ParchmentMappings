@@ -1,3 +1,5 @@
 CLASS net/minecraft/util/parsing/packrat/SuggestionSupplier
+	METHOD lambda$empty$0 (Lnet/minecraft/util/parsing/packrat/ParseState;)Ljava/util/stream/Stream;
+		ARG 0 state
 	METHOD possibleValues (Lnet/minecraft/util/parsing/packrat/ParseState;)Ljava/util/stream/Stream;
 		ARG 1 state

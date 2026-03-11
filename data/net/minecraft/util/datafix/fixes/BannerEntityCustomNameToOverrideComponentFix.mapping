@@ -1,0 +1,15 @@
+CLASS net/minecraft/util/datafix/fixes/BannerEntityCustomNameToOverrideComponentFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD fix (Lcom/mojang/datafixers/Typed;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;)Lcom/mojang/datafixers/Typed;
+		ARG 1 input
+		ARG 2 textComponentFinder
+		ARG 3 customNameFinder
+	METHOD lambda$fix$1 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/Typed;)Ljava/util/Optional;
+		ARG 1 name
+	METHOD lambda$fix$2 (Ljava/lang/String;)Z
+		ARG 0 e
+	METHOD lambda$fix$3 (Ljava/util/Optional;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 dynamic
+	METHOD lambda$makeRule$0 (Lcom/mojang/datafixers/types/templates/TaggedChoice$TaggedChoiceType;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 4 input

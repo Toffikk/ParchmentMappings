@@ -1,0 +1,7 @@
+CLASS net/minecraft/util/Graph
+	METHOD depthFirstSearch (Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;Ljava/util/function/Consumer;Ljava/lang/Object;)Z
+		ARG 0 edges
+		ARG 1 discovered
+		ARG 2 currentlyVisiting
+		ARG 3 reverseTopologicalOrder
+		ARG 4 current

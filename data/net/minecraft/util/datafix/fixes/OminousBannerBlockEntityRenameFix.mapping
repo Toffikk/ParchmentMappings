@@ -1,0 +1,10 @@
+CLASS net/minecraft/util/datafix/fixes/OminousBannerBlockEntityRenameFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;Z)V
+		ARG 1 outputSchema
+		ARG 2 changesType
+	METHOD lambda$fix$0 (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 name
+	METHOD lambda$fix$1 (Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/datafixers/util/Pair;
+		ARG 0 pair
+	METHOD lambda$fix$2 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 1 customName

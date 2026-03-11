@@ -1,0 +1,12 @@
+CLASS net/minecraft/util/datafix/fixes/OptionsKeyTranslationFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;Z)V
+		ARG 1 outputSchema
+		ARG 2 changesType
+	METHOD lambda$makeRule$0 (Lcom/mojang/serialization/Dynamic;Ljava/util/Map$Entry;)Lcom/mojang/datafixers/util/Pair;
+		ARG 1 entry
+	METHOD lambda$makeRule$1 (Lcom/mojang/serialization/Dynamic;Ljava/util/Map;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 map1
+	METHOD lambda$makeRule$2 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 tag
+	METHOD lambda$makeRule$3 (Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 0 input

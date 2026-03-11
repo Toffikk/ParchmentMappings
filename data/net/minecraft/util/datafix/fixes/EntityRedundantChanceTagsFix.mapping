@@ -1,0 +1,15 @@
+CLASS net/minecraft/util/datafix/fixes/EntityRedundantChanceTagsFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;Z)V
+		ARG 1 outputSchema
+		ARG 2 changesType
+	METHOD isZeroList (Lcom/mojang/serialization/OptionalDynamic;I)Z
+		ARG 0 element
+		ARG 1 size
+	METHOD lambda$isZeroList$2 (Ljava/lang/Float;)Z
+		ARG 0 f
+	METHOD lambda$isZeroList$3 (ILjava/util/List;)Ljava/lang/Boolean;
+		ARG 1 floats
+	METHOD lambda$makeRule$0 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 tag
+	METHOD lambda$makeRule$1 (Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 0 input

@@ -1,0 +1,14 @@
+CLASS net/minecraft/util/datafix/fixes/VillagerTradeFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD lambda$makeRule$0 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 2 itemStack
+	METHOD lambda$makeRule$1 (Lcom/mojang/datafixers/OpticFinder;Ljava/util/function/Function;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 4 recipe
+	METHOD lambda$updateItemStack$2 (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 name
+	METHOD lambda$updateItemStack$3 (Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/datafixers/util/Pair;
+		ARG 0 pair
+	METHOD updateItemStack (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 1 idF
+		ARG 2 itemStack

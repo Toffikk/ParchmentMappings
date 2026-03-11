@@ -1,0 +1,13 @@
+CLASS net/minecraft/util/datafix/fixes/ItemStackTheFlatteningFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;Z)V
+		ARG 1 outputSchema
+		ARG 2 changesType
+	METHOD lambda$makeRule$2 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 2 input
+	METHOD lambda$static$0 (Ljava/util/HashMap;)V
+		ARG 0 map
+	METHOD lambda$static$1 (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 k
+	METHOD updateItem (Ljava/lang/String;I)Ljava/lang/String;
+		ARG 0 name
+		ARG 1 data

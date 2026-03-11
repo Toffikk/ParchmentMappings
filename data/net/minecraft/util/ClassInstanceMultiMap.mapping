@@ -1,0 +1,13 @@
+CLASS net/minecraft/util/ClassInstanceMultiMap
+	METHOD <init> (Ljava/lang/Class;)V
+		ARG 1 baseClass
+	METHOD add (Ljava/lang/Object;)Z
+		ARG 1 instance
+	METHOD contains (Ljava/lang/Object;)Z
+		ARG 1 o
+	METHOD find (Ljava/lang/Class;)Ljava/util/Collection;
+		ARG 1 index
+	METHOD lambda$find$0 (Ljava/lang/Class;)Ljava/util/List;
+		ARG 1 k
+	METHOD remove (Ljava/lang/Object;)Z
+		ARG 1 object

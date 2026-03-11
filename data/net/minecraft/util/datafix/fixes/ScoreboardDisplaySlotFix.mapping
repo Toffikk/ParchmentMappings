@@ -1,0 +1,17 @@
+CLASS net/minecraft/util/datafix/fixes/ScoreboardDisplaySlotFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD lambda$makeRule$0 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 key
+	METHOD lambda$makeRule$1 (Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/datafixers/util/Pair;
+		ARG 0 pair
+	METHOD lambda$makeRule$2 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 slots
+	METHOD lambda$makeRule$3 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 tag
+	METHOD lambda$makeRule$4 (Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 0 scoreboardInfo
+	METHOD lambda$makeRule$5 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 1 input
+	METHOD rename (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 key

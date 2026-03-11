@@ -1,0 +1,5 @@
+CLASS net/minecraft/util/profiling/jfr/stats/TimedStatSummary
+	METHOD lambda$summary$0 (Lnet/minecraft/util/profiling/jfr/stats/TimedStat;)J
+		ARG 0 it
+	METHOD summary (Ljava/util/List;)Ljava/util/Optional;
+		ARG 0 values

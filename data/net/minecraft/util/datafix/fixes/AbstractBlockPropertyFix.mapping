@@ -1,0 +1,15 @@
+CLASS net/minecraft/util/datafix/fixes/AbstractBlockPropertyFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;Ljava/lang/String;)V
+		ARG 1 outputSchema
+		ARG 2 name
+	METHOD fixBlockState (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 tag
+	METHOD fixProperties (Ljava/lang/String;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 blockId
+		ARG 2 properties
+	METHOD lambda$fixBlockState$1 (Ljava/util/Optional;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 2 properties
+	METHOD lambda$makeRule$0 (Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 1 input
+	METHOD shouldFix (Ljava/lang/String;)Z
+		ARG 1 blockId

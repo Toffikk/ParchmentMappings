@@ -1,0 +1,7 @@
+CLASS net/minecraft/util/datafix/schemas/V3325
+	METHOD lambda$registerEntities$0 (Lcom/mojang/datafixers/schemas/Schema;Ljava/lang/String;)Lcom/mojang/datafixers/types/templates/TypeTemplate;
+		ARG 1 name
+	METHOD lambda$registerEntities$1 (Lcom/mojang/datafixers/schemas/Schema;Ljava/lang/String;)Lcom/mojang/datafixers/types/templates/TypeTemplate;
+		ARG 1 name
+	METHOD registerEntities (Lcom/mojang/datafixers/schemas/Schema;)Ljava/util/Map;
+		ARG 1 schema

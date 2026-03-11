@@ -1,0 +1,17 @@
+CLASS net/minecraft/util/PlaceholderLookupProvider
+	METHOD <init> (Lnet/minecraft/core/HolderLookup$Provider;)V
+		ARG 1 context
+	METHOD createSerializationContext (Lcom/mojang/serialization/DynamicOps;)Lnet/minecraft/resources/RegistryOps;
+		ARG 1 parent
+	CLASS 2
+		METHOD lambda$swapTo$0 (Lcom/mojang/serialization/Codec;Lnet/minecraft/core/HolderLookup$Provider;Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
+			ARG 2 v
+	CLASS UniversalLookup
+		METHOD getOrCreate (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/core/Holder$Reference;
+			ARG 1 id
+		METHOD getOrCreate (Lnet/minecraft/tags/TagKey;)Lnet/minecraft/core/HolderSet$Named;
+			ARG 1 id
+		METHOD lambda$getOrCreate$0 (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/core/Holder$Reference;
+			ARG 1 k
+		METHOD lambda$getOrCreate$1 (Lnet/minecraft/tags/TagKey;)Lnet/minecraft/core/HolderSet$Named;
+			ARG 1 k

@@ -1,7 +1,21 @@
 CLASS net/minecraft/util/RandomSource
 	METHOD consumeCount (I)V
 		ARG 1 rounds
+	METHOD create (J)Lnet/minecraft/util/RandomSource;
+		ARG 0 seed
 	METHOD nextInt (I)I
 		ARG 1 bound
+	METHOD nextInt (II)I
+		ARG 1 origin
+		ARG 2 bound
+	METHOD nextIntBetweenInclusive (II)I
+		ARG 1 min
+		ARG 2 maxInclusive
 	METHOD setSeed (J)V
 		ARG 1 seed
+	METHOD triangle (DD)D
+		ARG 1 mean
+		ARG 3 spread
+	METHOD triangle (FF)F
+		ARG 1 mean
+		ARG 2 spread

@@ -1,0 +1,15 @@
+CLASS net/minecraft/util/parsing/packrat/CachedParseState
+	METHOD <init> (Lnet/minecraft/util/parsing/packrat/ErrorCollector;)V
+		ARG 1 errorCollector
+	METHOD getCacheForPosition (I)Lnet/minecraft/util/parsing/packrat/CachedParseState$PositionCache;
+		ARG 1 index
+	CLASS PositionCache
+		METHOD allocateNewEntry (Lnet/minecraft/util/parsing/packrat/Atom;)I
+			ARG 1 key
+		METHOD findKeyIndex (Lnet/minecraft/util/parsing/packrat/Atom;)I
+			ARG 1 key
+		METHOD getValue (I)Lnet/minecraft/util/parsing/packrat/CachedParseState$CacheEntry;
+			ARG 1 keyIndex
+		METHOD setValue (ILnet/minecraft/util/parsing/packrat/CachedParseState$CacheEntry;)V
+			ARG 1 keyIndex
+			ARG 2 entry

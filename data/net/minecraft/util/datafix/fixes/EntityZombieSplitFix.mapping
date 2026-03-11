@@ -1,0 +1,10 @@
+CLASS net/minecraft/util/datafix/fixes/EntityZombieSplitFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD changeSchemaToZombieVillager (Lcom/mojang/datafixers/Typed;I)Lcom/mojang/datafixers/Typed;
+		ARG 1 entity
+		ARG 2 profession
+	METHOD lambda$changeSchemaToZombieVillager$2 (ILcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 serializedEntity
+	METHOD lambda$fix$1 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 e

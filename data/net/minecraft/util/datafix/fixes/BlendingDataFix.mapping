@@ -1,0 +1,14 @@
+CLASS net/minecraft/util/datafix/fixes/BlendingDataFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD lambda$makeRule$0 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 chunkTag
+	METHOD lambda$makeRule$1 (Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 0 chunk
+	METHOD updateBlendingData (Lcom/mojang/serialization/Dynamic;II)Lcom/mojang/serialization/Dynamic;
+		ARG 0 chunkTag
+		ARG 1 height
+		ARG 2 minY
+	METHOD updateChunkTag (Lcom/mojang/serialization/Dynamic;Lcom/mojang/serialization/OptionalDynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 chunkTag
+		ARG 1 contextTag

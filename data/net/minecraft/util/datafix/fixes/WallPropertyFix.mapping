@@ -1,0 +1,17 @@
+CLASS net/minecraft/util/datafix/fixes/WallPropertyFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;Z)V
+		ARG 1 outputSchema
+		ARG 2 changesType
+	METHOD fixWallProperty (Lcom/mojang/serialization/Dynamic;Ljava/lang/String;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 state
+		ARG 1 property
+	METHOD lambda$fixWallProperty$1 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 value
+	METHOD lambda$makeRule$0 (Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 0 input
+	METHOD lambda$upgradeBlockStateTag$2 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 properties
+	METHOD mapProperty (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 value
+	METHOD upgradeBlockStateTag (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 state

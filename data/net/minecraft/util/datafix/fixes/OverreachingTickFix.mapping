@@ -1,0 +1,15 @@
+CLASS net/minecraft/util/datafix/fixes/OverreachingTickFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD extractOverreachingTicks (Lcom/mojang/serialization/Dynamic;IILjava/util/Optional;Ljava/lang/String;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 remainder
+		ARG 1 chunkX
+		ARG 2 chunkZ
+		ARG 3 ticks
+		ARG 4 nameInUpgradeData
+	METHOD lambda$extractOverreachingTicks$2 (IILcom/mojang/serialization/Dynamic;)Z
+		ARG 2 tick
+	METHOD lambda$makeRule$0 (Ljava/util/Optional;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 remainder
+	METHOD lambda$makeRule$1 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 1 chunk

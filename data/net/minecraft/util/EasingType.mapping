@@ -1,0 +1,42 @@
+CLASS net/minecraft/util/EasingType
+	METHOD apply (F)F
+		ARG 1 x
+	METHOD cubicBezier (FFFF)Lnet/minecraft/util/EasingType;
+		ARG 0 x1
+		ARG 1 y1
+		ARG 2 x2
+		ARG 3 y2
+	METHOD lambda$static$0 (Lnet/minecraft/util/EasingType;)Lcom/mojang/datafixers/util/Either;
+		ARG 0 easing
+	METHOD lambda$static$1 (F)F
+		ARG 0 x
+	METHOD lambda$static$2 (F)F
+		ARG 0 x
+	METHOD registerSimple (Ljava/lang/String;Lnet/minecraft/util/EasingType;)Lnet/minecraft/util/EasingType;
+		ARG 0 id
+		ARG 1 easing
+	METHOD symmetricCubicBezier (FF)Lnet/minecraft/util/EasingType;
+		ARG 0 x1
+		ARG 1 y1
+	CLASS CubicBezier
+		METHOD <init> (Lnet/minecraft/util/EasingType$CubicBezierControls;)V
+			ARG 1 controls
+		METHOD curveFromControls (FF)Lnet/minecraft/util/EasingType$CubicBezier$CubicCurve;
+			ARG 0 v1
+			ARG 1 v2
+		METHOD equals (Ljava/lang/Object;)Z
+			ARG 1 obj
+		METHOD lambda$static$0 (Lnet/minecraft/util/EasingType$CubicBezier;)Lnet/minecraft/util/EasingType$CubicBezierControls;
+			ARG 0 b
+		METHOD lambda$static$1 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+		CLASS CubicCurve
+			METHOD sample (F)F
+				ARG 1 t
+			METHOD sampleGradient (F)F
+				ARG 1 t
+	CLASS CubicBezierControls
+		METHOD lambda$static$0 (Ljava/util/List;)Lnet/minecraft/util/EasingType$CubicBezierControls;
+			ARG 0 floats
+		METHOD lambda$static$1 (Lnet/minecraft/util/EasingType$CubicBezierControls;)Ljava/util/List;
+			ARG 0 controls

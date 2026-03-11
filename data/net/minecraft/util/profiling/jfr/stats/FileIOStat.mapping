@@ -1,0 +1,14 @@
+CLASS net/minecraft/util/profiling/jfr/stats/FileIOStat
+	METHOD lambda$summary$0 (Lnet/minecraft/util/profiling/jfr/stats/FileIOStat;)J
+		ARG 0 it
+	METHOD lambda$summary$1 (Lnet/minecraft/util/profiling/jfr/stats/FileIOStat;)Z
+		ARG 0 it
+	METHOD lambda$summary$2 (Lnet/minecraft/util/profiling/jfr/stats/FileIOStat;)Ljava/lang/String;
+		ARG 0 stat
+	METHOD lambda$summary$3 (Lnet/minecraft/util/profiling/jfr/stats/FileIOStat;)J
+		ARG 0 it
+	METHOD lambda$summary$4 (Ljava/util/Map$Entry;)Lcom/mojang/datafixers/util/Pair;
+		ARG 0 e
+	METHOD summary (Ljava/time/Duration;Ljava/util/List;)Lnet/minecraft/util/profiling/jfr/stats/FileIOStat$Summary;
+		ARG 0 recordingDuration
+		ARG 1 ioStats

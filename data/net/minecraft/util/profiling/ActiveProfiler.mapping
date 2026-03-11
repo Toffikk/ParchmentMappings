@@ -1,0 +1,7 @@
+CLASS net/minecraft/util/profiling/ActiveProfiler
+	METHOD <init> (Ljava/util/function/LongSupplier;Ljava/util/function/IntSupplier;Ljava/util/function/BooleanSupplier;)V
+		ARG 1 getRealTime
+		ARG 2 getTickTime
+		ARG 3 suppressWarnings
+	METHOD lambda$getCurrentEntry$3 (Ljava/lang/String;)Lnet/minecraft/util/profiling/ActiveProfiler$PathEntry;
+		ARG 0 key

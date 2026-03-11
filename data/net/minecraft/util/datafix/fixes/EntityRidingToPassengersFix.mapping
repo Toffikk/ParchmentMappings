@@ -1,0 +1,16 @@
+CLASS net/minecraft/util/datafix/fixes/EntityRidingToPassengersFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;Z)V
+		ARG 1 outputSchema
+		ARG 2 changesType
+	METHOD cap (Lcom/mojang/datafixers/schemas/Schema;Lcom/mojang/datafixers/schemas/Schema;Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/types/Type;)Lcom/mojang/datafixers/TypeRewriteRule;
+		ARG 1 inputSchema
+		ARG 2 outputType
+		ARG 3 oldEntityTreeType
+		ARG 4 newEntityTreeType
+		ARG 5 entityType
+	METHOD lambda$cap$2 (Lcom/mojang/datafixers/types/Type;Lcom/mojang/serialization/DynamicOps;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/datafixers/util/Either;
+		ARG 4 p
+	METHOD lambda$cap$5 (Lcom/mojang/datafixers/types/Type;Lcom/mojang/serialization/DynamicOps;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/datafixers/util/Pair;
+		ARG 6 input
+	METHOD lambda$cap$6 (Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/serialization/DynamicOps;)Ljava/util/function/Function;
+		ARG 5 ops

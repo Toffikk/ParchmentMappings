@@ -1,0 +1,15 @@
+CLASS net/minecraft/util/valueproviders/UniformFloat
+	METHOD <init> (FF)V
+		ARG 1 minInclusive
+		ARG 2 maxExclusive
+	METHOD lambda$static$0 (Lnet/minecraft/util/valueproviders/UniformFloat;)Ljava/lang/Float;
+		ARG 0 u
+	METHOD lambda$static$1 (Lnet/minecraft/util/valueproviders/UniformFloat;)Ljava/lang/Float;
+		ARG 0 u
+	METHOD lambda$static$2 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD lambda$static$4 (Lnet/minecraft/util/valueproviders/UniformFloat;)Lcom/mojang/serialization/DataResult;
+		ARG 0 u
+	METHOD of (FF)Lnet/minecraft/util/valueproviders/UniformFloat;
+		ARG 0 minInclusive
+		ARG 1 maxExclusive

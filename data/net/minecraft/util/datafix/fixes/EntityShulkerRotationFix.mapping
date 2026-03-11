@@ -1,0 +1,7 @@
+CLASS net/minecraft/util/datafix/fixes/EntityShulkerRotationFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD fixTag (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 input
+	METHOD lambda$fixTag$0 (Lcom/mojang/serialization/Dynamic;)Ljava/lang/Double;
+		ARG 0 d

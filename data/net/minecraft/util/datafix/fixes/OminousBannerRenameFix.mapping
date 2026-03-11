@@ -1,0 +1,11 @@
+CLASS net/minecraft/util/datafix/fixes/OminousBannerRenameFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD fixItemStackTag (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 tag
+	METHOD lambda$fixItemStackTag$1 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 name
+	METHOD lambda$fixItemStackTag$2 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 display
+	METHOD lambda$new$0 (Ljava/lang/String;)Z
+		ARG 0 id

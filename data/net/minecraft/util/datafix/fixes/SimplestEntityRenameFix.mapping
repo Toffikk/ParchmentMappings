@@ -1,0 +1,17 @@
+CLASS net/minecraft/util/datafix/fixes/SimplestEntityRenameFix
+	METHOD <init> (Ljava/lang/String;Lcom/mojang/datafixers/schemas/Schema;Z)V
+		ARG 1 name
+		ARG 2 outputSchema
+		ARG 3 changesType
+	METHOD lambda$makeRule$0 (Lcom/mojang/datafixers/types/templates/TaggedChoice$TaggedChoiceType;Lcom/mojang/datafixers/types/templates/TaggedChoice$TaggedChoiceType;Ljava/lang/String;)Ljava/lang/String;
+		ARG 3 oldName
+	METHOD lambda$makeRule$1 (Lcom/mojang/datafixers/types/templates/TaggedChoice$TaggedChoiceType;Lcom/mojang/datafixers/types/templates/TaggedChoice$TaggedChoiceType;Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/datafixers/util/Pair;
+		ARG 3 input
+	METHOD lambda$makeRule$2 (Lcom/mojang/datafixers/types/templates/TaggedChoice$TaggedChoiceType;Lcom/mojang/datafixers/types/templates/TaggedChoice$TaggedChoiceType;Lcom/mojang/serialization/DynamicOps;)Ljava/util/function/Function;
+		ARG 3 ops
+	METHOD lambda$makeRule$3 (Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/datafixers/util/Pair;
+		ARG 1 input
+	METHOD lambda$makeRule$4 (Lcom/mojang/serialization/DynamicOps;)Ljava/util/function/Function;
+		ARG 1 ops
+	METHOD rename (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 name

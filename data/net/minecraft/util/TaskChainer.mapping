@@ -1,0 +1,13 @@
+CLASS net/minecraft/util/TaskChainer
+	METHOD append (Ljava/lang/Runnable;)V
+		ARG 1 task
+	METHOD append (Ljava/util/concurrent/CompletableFuture;Ljava/util/function/Consumer;)V
+		ARG 1 preparation
+		ARG 2 chainedTask
+	METHOD immediate (Ljava/util/concurrent/Executor;)Lnet/minecraft/util/TaskChainer;
+		ARG 0 executor
+	METHOD lambda$append$0 (Ljava/lang/Runnable;Ljava/lang/Object;)V
+		ARG 1 ignored
+	CLASS 1
+		METHOD lambda$append$0 (Ljava/lang/Throwable;)Ljava/lang/Void;
+			ARG 0 e

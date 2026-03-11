@@ -1,0 +1,32 @@
+CLASS net/minecraft/util/eventlog/EventLogDirectory
+	METHOD <init> (Ljava/nio/file/Path;Ljava/lang/String;)V
+		ARG 1 root
+		ARG 2 extension
+	METHOD createNewFile (Ljava/time/LocalDate;)Lnet/minecraft/util/eventlog/EventLogDirectory$RawFile;
+		ARG 1 date
+	METHOD lambda$listFiles$0 (Ljava/nio/file/Path;)Z
+		ARG 0 x$0
+	METHOD open (Ljava/nio/file/Path;Ljava/lang/String;)Lnet/minecraft/util/eventlog/EventLogDirectory;
+		ARG 0 root
+		ARG 1 extension
+	METHOD parseFile (Ljava/nio/file/Path;)Lnet/minecraft/util/eventlog/EventLogDirectory$File;
+		ARG 1 path
+	METHOD tryCompress (Ljava/nio/file/Path;Ljava/nio/file/Path;)V
+		ARG 0 raw
+		ARG 1 compressed
+	METHOD writeCompressed (Ljava/nio/channels/ReadableByteChannel;Ljava/nio/file/Path;)V
+		ARG 0 channel
+		ARG 1 target
+	CLASS FileId
+		METHOD parse (Ljava/lang/String;)Lnet/minecraft/util/eventlog/EventLogDirectory$FileId;
+			ARG 0 name
+		METHOD toFileName (Ljava/lang/String;)Ljava/lang/String;
+			ARG 1 extension
+	CLASS FileList
+		METHOD <init> (Ljava/util/List;)V
+			ARG 1 files
+		METHOD lambda$prune$0 (ILjava/time/LocalDate;Lnet/minecraft/util/eventlog/EventLogDirectory$File;)Z
+			ARG 2 file
+		METHOD prune (Ljava/time/LocalDate;I)Lnet/minecraft/util/eventlog/EventLogDirectory$FileList;
+			ARG 1 date
+			ARG 2 expiryDays

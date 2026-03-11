@@ -1,0 +1,5 @@
+CLASS net/minecraft/util/datafix/fixes/TippedArrowPotionToItemFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD lambda$fix$0 (Ljava/util/Optional;Ljava/util/Optional;Ljava/util/Optional;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 3 itemStack

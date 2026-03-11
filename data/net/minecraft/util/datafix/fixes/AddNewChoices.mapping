@@ -1,0 +1,12 @@
+CLASS net/minecraft/util/datafix/fixes/AddNewChoices
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;Ljava/lang/String;Lcom/mojang/datafixers/DSL$TypeReference;)V
+		ARG 1 outputSchema
+		ARG 2 name
+		ARG 3 type
+	METHOD cap (Lcom/mojang/datafixers/types/templates/TaggedChoice$TaggedChoiceType;Lcom/mojang/datafixers/types/templates/TaggedChoice$TaggedChoiceType;)Lcom/mojang/datafixers/TypeRewriteRule;
+		ARG 1 inputType
+		ARG 2 outputType
+	METHOD lambda$cap$0 (Lcom/mojang/datafixers/types/templates/TaggedChoice$TaggedChoiceType;Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/datafixers/util/Pair;
+		ARG 2 input
+	METHOD lambda$cap$1 (Lcom/mojang/datafixers/types/templates/TaggedChoice$TaggedChoiceType;Lcom/mojang/serialization/DynamicOps;)Ljava/util/function/Function;
+		ARG 2 ops
