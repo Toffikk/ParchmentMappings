@@ -1,0 +1,7 @@
+CLASS net/minecraft/advancements/criterion/LightningBoltPredicate
+	METHOD blockSetOnFire (Lnet/minecraft/advancements/criterion/MinMaxBounds$Ints;)Lnet/minecraft/advancements/criterion/LightningBoltPredicate;
+		ARG 0 count
+	METHOD lambda$matches$1 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/entity/Entity;)Z
+		ARG 3 e
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

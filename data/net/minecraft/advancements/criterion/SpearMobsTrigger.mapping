@@ -1,0 +1,13 @@
+CLASS net/minecraft/advancements/criterion/SpearMobsTrigger
+	METHOD lambda$trigger$0 (ILnet/minecraft/advancements/criterion/SpearMobsTrigger$TriggerInstance;)Z
+		ARG 1 t
+	METHOD trigger (Lnet/minecraft/server/level/ServerPlayer;I)V
+		ARG 1 player
+		ARG 2 number
+	CLASS TriggerInstance
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+		METHOD matches (I)Z
+			ARG 1 requiredCount
+		METHOD spearMobs (I)Lnet/minecraft/advancements/Criterion;
+			ARG 0 requiredCount

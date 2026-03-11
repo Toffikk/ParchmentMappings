@@ -1,0 +1,16 @@
+CLASS net/minecraft/advancements/criterion/LevitationTrigger
+	METHOD lambda$trigger$0 (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/phys/Vec3;ILnet/minecraft/advancements/criterion/LevitationTrigger$TriggerInstance;)Z
+		ARG 3 t
+	METHOD trigger (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/phys/Vec3;I)V
+		ARG 1 player
+		ARG 2 start
+		ARG 3 duration
+	CLASS TriggerInstance
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+		METHOD levitated (Lnet/minecraft/advancements/criterion/DistancePredicate;)Lnet/minecraft/advancements/Criterion;
+			ARG 0 distance
+		METHOD matches (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/phys/Vec3;I)Z
+			ARG 1 player
+			ARG 2 start
+			ARG 3 duration

@@ -1,0 +1,20 @@
+CLASS net/minecraft/advancements/criterion/KilledByArrowTrigger
+	METHOD lambda$trigger$0 (Ljava/util/List;Ljava/util/Set;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/advancements/criterion/KilledByArrowTrigger$TriggerInstance;)Z
+		ARG 3 t
+	METHOD trigger (Lnet/minecraft/server/level/ServerPlayer;Ljava/util/Collection;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 player
+		ARG 2 victims
+		ARG 3 firedByWeapon
+	CLASS TriggerInstance
+		METHOD crossbowKilled (Lnet/minecraft/core/HolderGetter;Lnet/minecraft/advancements/criterion/MinMaxBounds$Ints;)Lnet/minecraft/advancements/Criterion;
+			ARG 0 items
+			ARG 1 uniqueEntityTypes
+		METHOD crossbowKilled (Lnet/minecraft/core/HolderGetter;[Lnet/minecraft/advancements/criterion/EntityPredicate$Builder;)Lnet/minecraft/advancements/Criterion;
+			ARG 0 items
+			ARG 1 victims
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+		METHOD matches (Ljava/util/Collection;ILnet/minecraft/world/item/ItemStack;)Z
+			ARG 1 victims
+			ARG 2 uniqueEntityTypes
+			ARG 3 firedFromWeapon

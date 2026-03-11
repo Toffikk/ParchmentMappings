@@ -1,0 +1,10 @@
+CLASS net/minecraft/advancements/criterion/StartRidingTrigger
+	METHOD lambda$trigger$0 (Lnet/minecraft/advancements/criterion/StartRidingTrigger$TriggerInstance;)Z
+		ARG 0 t
+	METHOD trigger (Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 1 player
+	CLASS TriggerInstance
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+		METHOD playerStartsRiding (Lnet/minecraft/advancements/criterion/EntityPredicate$Builder;)Lnet/minecraft/advancements/Criterion;
+			ARG 0 player

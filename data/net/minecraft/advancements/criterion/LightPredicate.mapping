@@ -1,0 +1,9 @@
+CLASS net/minecraft/advancements/criterion/LightPredicate
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD matches (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 level
+		ARG 2 pos
+	CLASS Builder
+		METHOD setComposite (Lnet/minecraft/advancements/criterion/MinMaxBounds$Ints;)Lnet/minecraft/advancements/criterion/LightPredicate$Builder;
+			ARG 1 composite

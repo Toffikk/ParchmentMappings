@@ -1,0 +1,10 @@
+CLASS net/minecraft/advancements/criterion/InputPredicate
+	METHOD lambda$matches$1 (ZLjava/lang/Boolean;)Ljava/lang/Boolean;
+		ARG 1 b
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD matches (Ljava/util/Optional;Z)Z
+		ARG 1 match
+		ARG 2 value
+	METHOD matches (Lnet/minecraft/world/entity/player/Input;)Z
+		ARG 1 input

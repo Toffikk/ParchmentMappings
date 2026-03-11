@@ -1,0 +1,15 @@
+CLASS net/minecraft/advancements/criterion/TradeTrigger
+	METHOD lambda$trigger$0 (Lnet/minecraft/world/level/storage/loot/LootContext;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/advancements/criterion/TradeTrigger$TriggerInstance;)Z
+		ARG 2 t
+	METHOD trigger (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/entity/npc/villager/AbstractVillager;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 player
+		ARG 2 villager
+		ARG 3 itemStack
+	CLASS TriggerInstance
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+		METHOD matches (Lnet/minecraft/world/level/storage/loot/LootContext;Lnet/minecraft/world/item/ItemStack;)Z
+			ARG 1 villager
+			ARG 2 itemStack
+		METHOD tradedWithVillager (Lnet/minecraft/advancements/criterion/EntityPredicate$Builder;)Lnet/minecraft/advancements/Criterion;
+			ARG 0 player
