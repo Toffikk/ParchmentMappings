@@ -1,0 +1,8 @@
+CLASS net/minecraft/server/level/ParticleStatus
+	METHOD <init> (Ljava/lang/String;IILjava/lang/String;)V
+		ARG 3 id
+		ARG 4 key
+	METHOD lambda$static$0 (Lnet/minecraft/server/level/ParticleStatus;)I
+		ARG 0 s
+	METHOD lambda$static$1 (Lnet/minecraft/server/level/ParticleStatus;)Ljava/lang/Integer;
+		ARG 0 s

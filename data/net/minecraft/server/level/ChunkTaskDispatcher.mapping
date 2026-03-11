@@ -1,5 +1,22 @@
 CLASS net/minecraft/server/level/ChunkTaskDispatcher
+	METHOD <init> (Lnet/minecraft/util/thread/TaskScheduler;Ljava/util/concurrent/Executor;)V
+		ARG 1 executor
+		ARG 2 dispatcherExecutor
+	METHOD lambda$scheduleForExecution$4 (Ljava/lang/Runnable;Ljava/util/concurrent/CompletableFuture;)V
+		ARG 1 future
+	METHOD lambda$scheduleForExecution$5 (Ljava/lang/Runnable;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 message
+	METHOD lambda$scheduleForExecution$7 (Ljava/lang/Void;)V
+		ARG 1 r
 	METHOD onRelease (J)V
 		ARG 1 key
+	METHOD release (JLjava/lang/Runnable;Z)V
+		ARG 1 pos
+		ARG 3 whenReleased
+		ARG 4 clearQueue
 	METHOD scheduleForExecution (Lnet/minecraft/server/level/ChunkTaskPriorityQueue$TasksForChunk;)V
 		ARG 1 tasksForChunk
+	METHOD submit (Ljava/lang/Runnable;JLjava/util/function/IntSupplier;)V
+		ARG 1 task
+		ARG 2 pos
+		ARG 4 level
