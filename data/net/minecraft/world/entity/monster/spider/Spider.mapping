@@ -1,0 +1,15 @@
+CLASS net/minecraft/world/entity/monster/spider/Spider
+	METHOD lambda$registerGoals$0 (Lnet/minecraft/world/entity/LivingEntity;)Z
+		ARG 0 entity
+	METHOD setClimbing (Z)V
+		ARG 1 value
+	CLASS SpiderAttackGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/spider/Spider;)V
+			ARG 1 mob
+	CLASS SpiderEffectsGroupData
+		METHOD setRandomEffect (Lnet/minecraft/util/RandomSource;)V
+			ARG 1 random
+	CLASS SpiderTargetGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/spider/Spider;Ljava/lang/Class;)V
+			ARG 1 mob
+			ARG 2 targetType

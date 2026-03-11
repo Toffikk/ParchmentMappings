@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/entity/vehicle/minecart/AbstractMinecartContainer
+	METHOD createMenu (ILnet/minecraft/world/entity/player/Inventory;)Lnet/minecraft/world/inventory/AbstractContainerMenu;
+		ARG 1 containerId
+		ARG 2 inventory
+	METHOD setLootTable (Lnet/minecraft/resources/ResourceKey;J)V
+		ARG 1 lootTable
+		ARG 2 seed

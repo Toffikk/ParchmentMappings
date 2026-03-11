@@ -1,0 +1,14 @@
+CLASS net/minecraft/world/level/storage/loot/functions/SetCustomDataFunction
+	METHOD <init> (Ljava/util/List;Lnet/minecraft/nbt/CompoundTag;)V
+		ARG 1 predicates
+		ARG 2 tag
+	METHOD lambda$run$2 (Lnet/minecraft/nbt/CompoundTag;)V
+		ARG 1 tag
+	METHOD lambda$setCustomData$3 (Lnet/minecraft/nbt/CompoundTag;Ljava/util/List;)Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction;
+		ARG 1 conditions
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/storage/loot/functions/SetCustomDataFunction;)Lnet/minecraft/nbt/CompoundTag;
+		ARG 0 f
+	METHOD lambda$static$1 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD setCustomData (Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/world/level/storage/loot/functions/LootItemConditionalFunction$Builder;
+		ARG 0 value

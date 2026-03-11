@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/level/block/PressurePlateBlock
+	METHOD <init> (Lnet/minecraft/world/level/block/state/properties/BlockSetType;Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+		ARG 1 type
+		ARG 2 properties
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/block/PressurePlateBlock;)Lnet/minecraft/world/level/block/state/properties/BlockSetType;
+		ARG 0 b
+	METHOD lambda$static$1 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

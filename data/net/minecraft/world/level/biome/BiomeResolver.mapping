@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/biome/BiomeResolver
+	METHOD getNoiseBiome (IIILnet/minecraft/world/level/biome/Climate$Sampler;)Lnet/minecraft/core/Holder;
+		ARG 1 quartX
+		ARG 2 quartY
+		ARG 3 quartZ
+		ARG 4 sampler

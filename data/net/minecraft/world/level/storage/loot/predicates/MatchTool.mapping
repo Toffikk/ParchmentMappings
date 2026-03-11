@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/storage/loot/predicates/MatchTool
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD test (Ljava/lang/Object;)Z
+		ARG 1 context
+	METHOD toolMatches (Lnet/minecraft/advancements/criterion/ItemPredicate$Builder;)Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder;
+		ARG 0 predicate

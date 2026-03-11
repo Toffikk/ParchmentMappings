@@ -1,0 +1,48 @@
+CLASS net/minecraft/world/item/enchantment/LevelBasedValue
+	METHOD bootstrap (Lnet/minecraft/core/Registry;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 registry
+	METHOD calculate (I)F
+		ARG 1 level
+	METHOD constant (F)Lnet/minecraft/world/item/enchantment/LevelBasedValue$Constant;
+		ARG 0 value
+	METHOD lambda$static$0 (Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 c
+	METHOD lambda$static$1 (Lnet/minecraft/world/item/enchantment/LevelBasedValue$Constant;)Lnet/minecraft/world/item/enchantment/LevelBasedValue;
+		ARG 0 l
+	METHOD lambda$static$2 (Lnet/minecraft/world/item/enchantment/LevelBasedValue;)Lnet/minecraft/world/item/enchantment/LevelBasedValue;
+		ARG 0 r
+	METHOD lambda$static$3 (Lcom/mojang/datafixers/util/Either;)Lnet/minecraft/world/item/enchantment/LevelBasedValue;
+		ARG 0 either
+	METHOD lambda$static$4 (Lnet/minecraft/world/item/enchantment/LevelBasedValue;)Lcom/mojang/datafixers/util/Either;
+		ARG 0 levelBasedValue
+	METHOD lookup (Ljava/util/List;Lnet/minecraft/world/item/enchantment/LevelBasedValue;)Lnet/minecraft/world/item/enchantment/LevelBasedValue$Lookup;
+		ARG 0 values
+		ARG 1 fallback
+	METHOD perLevel (F)Lnet/minecraft/world/item/enchantment/LevelBasedValue$Linear;
+		ARG 0 perLevel
+	METHOD perLevel (FF)Lnet/minecraft/world/item/enchantment/LevelBasedValue$Linear;
+		ARG 0 base
+		ARG 1 perLevelAboveFirst
+	CLASS Clamped
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+		METHOD lambda$static$2 (Lnet/minecraft/world/item/enchantment/LevelBasedValue$Clamped;)Lcom/mojang/serialization/DataResult;
+			ARG 0 u
+	CLASS Constant
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+	CLASS Exponent
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+	CLASS Fraction
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+	CLASS LevelsSquared
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+	CLASS Linear
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+	CLASS Lookup
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i

@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/item/SignItem
+	METHOD <init> (Lnet/minecraft/world/item/Item$Properties;Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/level/block/Block;Lnet/minecraft/core/Direction;)V
+		ARG 1 properties
+		ARG 2 sign
+		ARG 3 wallSign
+		ARG 4 direction
+	METHOD <init> (Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/item/Item$Properties;)V
+		ARG 1 sign
+		ARG 2 wallSign
+		ARG 3 properties

@@ -1,0 +1,13 @@
+CLASS net/minecraft/world/level/levelgen/VerticalAnchor
+	METHOD aboveBottom (I)Lnet/minecraft/world/level/levelgen/VerticalAnchor;
+		ARG 0 offset
+	METHOD absolute (I)Lnet/minecraft/world/level/levelgen/VerticalAnchor;
+		ARG 0 value
+	METHOD belowTop (I)Lnet/minecraft/world/level/levelgen/VerticalAnchor;
+		ARG 0 offset
+	METHOD merge (Lcom/mojang/datafixers/util/Either;)Lnet/minecraft/world/level/levelgen/VerticalAnchor;
+		ARG 0 either
+	METHOD resolveY (Lnet/minecraft/world/level/levelgen/WorldGenerationContext;)I
+		ARG 1 heightAccessor
+	METHOD split (Lnet/minecraft/world/level/levelgen/VerticalAnchor;)Lcom/mojang/datafixers/util/Either;
+		ARG 0 anchor

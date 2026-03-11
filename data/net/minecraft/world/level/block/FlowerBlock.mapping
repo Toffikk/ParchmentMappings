@@ -1,0 +1,13 @@
+CLASS net/minecraft/world/level/block/FlowerBlock
+	METHOD <init> (Lnet/minecraft/core/Holder;FLnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+		ARG 1 suspiciousStewEffect
+		ARG 2 effectSeconds
+		ARG 3 properties
+	METHOD <init> (Lnet/minecraft/world/item/component/SuspiciousStewEffects;Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+		ARG 1 suspiciousStewEffects
+		ARG 2 properties
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD makeEffectList (Lnet/minecraft/core/Holder;F)Lnet/minecraft/world/item/component/SuspiciousStewEffects;
+		ARG 0 suspiciousStewEffect
+		ARG 1 effectSeconds

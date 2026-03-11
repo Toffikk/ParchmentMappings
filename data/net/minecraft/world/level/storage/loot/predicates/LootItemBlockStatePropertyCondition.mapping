@@ -1,0 +1,18 @@
+CLASS net/minecraft/world/level/storage/loot/predicates/LootItemBlockStatePropertyCondition
+	METHOD hasBlockStateProperties (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/predicates/LootItemBlockStatePropertyCondition$Builder;
+		ARG 0 block
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD lambda$validate$1 (Lnet/minecraft/world/level/storage/loot/predicates/LootItemBlockStatePropertyCondition;Lnet/minecraft/advancements/criterion/StatePropertiesPredicate;)Ljava/util/Optional;
+		ARG 1 properties
+	METHOD lambda$validate$3 (Lnet/minecraft/world/level/storage/loot/predicates/LootItemBlockStatePropertyCondition;Ljava/lang/String;)Lcom/mojang/serialization/DataResult;
+		ARG 1 name
+	METHOD test (Ljava/lang/Object;)Z
+		ARG 1 context
+	METHOD validate (Lnet/minecraft/world/level/storage/loot/predicates/LootItemBlockStatePropertyCondition;)Lcom/mojang/serialization/DataResult;
+		ARG 0 condition
+	CLASS Builder
+		METHOD <init> (Lnet/minecraft/world/level/block/Block;)V
+			ARG 1 block
+		METHOD setProperties (Lnet/minecraft/advancements/criterion/StatePropertiesPredicate$Builder;)Lnet/minecraft/world/level/storage/loot/predicates/LootItemBlockStatePropertyCondition$Builder;
+			ARG 1 properties

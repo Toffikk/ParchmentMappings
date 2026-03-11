@@ -1,0 +1,22 @@
+CLASS net/minecraft/world/level/block/RedstoneTorchBlock
+	METHOD hasNeighborSignal (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 level
+		ARG 2 pos
+		ARG 3 state
+	METHOD isToggledTooFrequently (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Z)Z
+		ARG 0 level
+		ARG 1 pos
+		ARG 2 add
+	METHOD lambda$isToggledTooFrequently$0 (Lnet/minecraft/world/level/BlockGetter;)Ljava/util/List;
+		ARG 0 k
+	METHOD notifyNeighbors (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V
+		ARG 1 level
+		ARG 2 pos
+		ARG 3 state
+	METHOD randomOrientation (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/redstone/Orientation;
+		ARG 1 level
+		ARG 2 state
+	CLASS Toggle
+		METHOD <init> (Lnet/minecraft/core/BlockPos;J)V
+			ARG 1 pos
+			ARG 2 when

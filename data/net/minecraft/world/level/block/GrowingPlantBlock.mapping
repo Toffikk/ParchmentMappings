@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/level/block/GrowingPlantBlock
+	METHOD <init> (Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;Lnet/minecraft/core/Direction;Lnet/minecraft/world/phys/shapes/VoxelShape;Z)V
+		ARG 1 properties
+		ARG 2 growthDirection
+		ARG 3 shape
+		ARG 4 scheduleFluidTicks
+	METHOD canAttachTo (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state
+	METHOD getStateForPlacement (Lnet/minecraft/util/RandomSource;)Lnet/minecraft/world/level/block/state/BlockState;
+		ARG 1 random

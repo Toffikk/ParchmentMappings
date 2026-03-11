@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/entity/player/ChatVisiblity
+	METHOD <init> (Ljava/lang/String;IILjava/lang/String;)V
+		ARG 3 id
+		ARG 4 key
+	METHOD lambda$static$0 (Lnet/minecraft/world/entity/player/ChatVisiblity;)I
+		ARG 0 v
+	METHOD lambda$static$1 (Lnet/minecraft/world/entity/player/ChatVisiblity;)Ljava/lang/Integer;
+		ARG 0 v

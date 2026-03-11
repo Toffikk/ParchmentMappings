@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/levelgen/feature/stateproviders/RotatedBlockProvider
+	METHOD <init> (Lnet/minecraft/world/level/block/Block;)V
+		ARG 1 block
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/levelgen/feature/stateproviders/RotatedBlockProvider;)Lnet/minecraft/world/level/block/Block;
+		ARG 0 p

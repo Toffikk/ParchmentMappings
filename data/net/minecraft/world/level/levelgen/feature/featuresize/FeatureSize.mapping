@@ -1,0 +1,12 @@
+CLASS net/minecraft/world/level/levelgen/feature/featuresize/FeatureSize
+	METHOD <init> (Ljava/util/OptionalInt;)V
+		ARG 1 minClippedHeight
+	METHOD getSizeAtHeight (II)I
+		ARG 1 treeHeight
+		ARG 2 yo
+	METHOD lambda$minClippedHeightCodec$0 (Ljava/util/Optional;)Ljava/util/OptionalInt;
+		ARG 0 o
+	METHOD lambda$minClippedHeightCodec$1 (Ljava/util/OptionalInt;)Ljava/util/Optional;
+		ARG 0 o
+	METHOD lambda$minClippedHeightCodec$2 (Lnet/minecraft/world/level/levelgen/feature/featuresize/FeatureSize;)Ljava/util/OptionalInt;
+		ARG 0 f

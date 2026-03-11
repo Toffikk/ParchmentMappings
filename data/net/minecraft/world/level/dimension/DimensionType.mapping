@@ -1,0 +1,35 @@
+CLASS net/minecraft/world/level/dimension/DimensionType
+	METHOD <init> (ZZZDIIILnet/minecraft/tags/TagKey;FLnet/minecraft/world/level/dimension/DimensionType$MonsterSettings;Lnet/minecraft/world/level/dimension/DimensionType$Skybox;Lnet/minecraft/world/level/dimension/DimensionType$CardinalLightType;Lnet/minecraft/world/attribute/EnvironmentAttributeMap;Lnet/minecraft/core/HolderSet;)V
+		ARG 1 hasFixedTime
+		ARG 2 hasSkyLight
+		ARG 3 hasCeiling
+		ARG 4 coordinateScale
+		ARG 6 minY
+		ARG 7 height
+		ARG 8 logicalHeight
+		ARG 9 infiniburn
+		ARG 10 ambientLight
+		ARG 11 monsterSettings
+		ARG 12 skybox
+		ARG 13 cardinalLightType
+		ARG 14 attributes
+		ARG 15 timelines
+	METHOD createDirectCodec (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
+		ARG 0 attributeMapCodec
+	METHOD getStorageFolder (Lnet/minecraft/resources/ResourceKey;Ljava/nio/file/Path;)Ljava/nio/file/Path;
+		ARG 0 name
+		ARG 1 baseFolder
+	METHOD getTeleportationScale (Lnet/minecraft/world/level/dimension/DimensionType;Lnet/minecraft/world/level/dimension/DimensionType;)D
+		ARG 0 lastDimensionType
+		ARG 1 newDimensionType
+	METHOD lambda$createDirectCodec$0 (Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 1 i
+	CLASS CardinalLightType
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+			ARG 3 name
+	CLASS MonsterSettings
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+	CLASS Skybox
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+			ARG 3 name

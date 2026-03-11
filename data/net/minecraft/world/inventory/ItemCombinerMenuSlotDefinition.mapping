@@ -1,0 +1,21 @@
+CLASS net/minecraft/world/inventory/ItemCombinerMenuSlotDefinition
+	METHOD <init> (Ljava/util/List;Lnet/minecraft/world/inventory/ItemCombinerMenuSlotDefinition$SlotDefinition;)V
+		ARG 1 inputSlots
+		ARG 2 resultSlot
+	METHOD getSlot (I)Lnet/minecraft/world/inventory/ItemCombinerMenuSlotDefinition$SlotDefinition;
+		ARG 1 index
+	CLASS Builder
+		METHOD lambda$withResultSlot$0 (Lnet/minecraft/world/item/ItemStack;)Z
+			ARG 0 itemStack
+		METHOD withResultSlot (III)Lnet/minecraft/world/inventory/ItemCombinerMenuSlotDefinition$Builder;
+			ARG 1 slotIndex
+			ARG 2 xPlacement
+			ARG 3 yPlacement
+		METHOD withSlot (IIILjava/util/function/Predicate;)Lnet/minecraft/world/inventory/ItemCombinerMenuSlotDefinition$Builder;
+			ARG 1 slotIndex
+			ARG 2 xPlacement
+			ARG 3 yPlacement
+			ARG 4 mayPlace
+	CLASS SlotDefinition
+		METHOD lambda$static$0 (Lnet/minecraft/world/item/ItemStack;)Z
+			ARG 0 itemStack

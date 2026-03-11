@@ -1,0 +1,15 @@
+CLASS net/minecraft/world/level/block/TargetBlock
+	METHOD getRedstoneStrength (Lnet/minecraft/world/phys/BlockHitResult;Lnet/minecraft/world/phys/Vec3;)I
+		ARG 0 hitResult
+		ARG 1 hitLocation
+	METHOD setOutputPower (Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/world/level/block/state/BlockState;ILnet/minecraft/core/BlockPos;I)V
+		ARG 0 level
+		ARG 1 state
+		ARG 2 outputStrength
+		ARG 3 pos
+		ARG 4 duration
+	METHOD updateRedstoneOutput (Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/phys/BlockHitResult;Lnet/minecraft/world/entity/Entity;)I
+		ARG 0 level
+		ARG 1 state
+		ARG 2 hitResult
+		ARG 3 entity

@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/item/FireworkRocketItem
+	METHOD getEntityJustOutsideOfBlockPos (Lnet/minecraft/core/dispenser/BlockSource;Lnet/minecraft/core/Direction;)Lnet/minecraft/world/phys/Vec3;
+		ARG 0 source
+		ARG 1 direction

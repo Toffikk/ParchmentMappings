@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/entity/monster/skeleton/Skeleton
+	METHOD lambda$doFreezeConversion$0 (Lnet/minecraft/world/entity/monster/skeleton/Stray;)V
+		ARG 1 stray
+	METHOD setFreezeConverting (Z)V
+		ARG 1 isConverting
+	METHOD startFreezeConversion (I)V
+		ARG 1 time

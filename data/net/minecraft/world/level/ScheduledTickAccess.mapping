@@ -8,3 +8,21 @@ CLASS net/minecraft/world/level/ScheduledTickAccess
 		ARG 2 type
 		ARG 3 tickDelay
 		ARG 4 priority
+	METHOD scheduleTick (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/Block;I)V
+		ARG 1 pos
+		ARG 2 type
+		ARG 3 tickDelay
+	METHOD scheduleTick (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/Block;ILnet/minecraft/world/ticks/TickPriority;)V
+		ARG 1 pos
+		ARG 2 type
+		ARG 3 tickDelay
+		ARG 4 priority
+	METHOD scheduleTick (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/material/Fluid;I)V
+		ARG 1 pos
+		ARG 2 type
+		ARG 3 tickDelay
+	METHOD scheduleTick (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/material/Fluid;ILnet/minecraft/world/ticks/TickPriority;)V
+		ARG 1 pos
+		ARG 2 type
+		ARG 3 tickDelay
+		ARG 4 priority

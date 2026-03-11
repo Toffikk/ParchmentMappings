@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/levelgen/structure/templatesystem/rule/blockentity/AppendLoot
+	METHOD <init> (Lnet/minecraft/resources/ResourceKey;)V
+		ARG 1 lootTable
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/levelgen/structure/templatesystem/rule/blockentity/AppendLoot;)Lnet/minecraft/resources/ResourceKey;
+		ARG 0 c
+	METHOD lambda$static$1 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

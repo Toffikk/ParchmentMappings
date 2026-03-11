@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/level/storage/loot/entries/SequentialEntry
+	METHOD lambda$compose$0 (Ljava/util/List;Lnet/minecraft/world/level/storage/loot/LootContext;Ljava/util/function/Consumer;)Z
+		ARG 1 context
+		ARG 2 output
+	METHOD sequential ([Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/entries/SequentialEntry$Builder;
+		ARG 0 entries
+	CLASS Builder
+		METHOD <init> ([Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)V
+			ARG 1 entries

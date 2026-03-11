@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/EntityBasedExplosionDamageCalculator
+	METHOD <init> (Lnet/minecraft/world/entity/Entity;)V
+		ARG 1 source
+	METHOD lambda$getBlockExplosionResistance$0 (Lnet/minecraft/world/level/Explosion;Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/material/FluidState;Ljava/lang/Float;)Ljava/lang/Float;
+		ARG 6 resistance

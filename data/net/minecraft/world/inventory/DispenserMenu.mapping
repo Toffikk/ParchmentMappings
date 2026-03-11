@@ -1,0 +1,12 @@
+CLASS net/minecraft/world/inventory/DispenserMenu
+	METHOD <init> (ILnet/minecraft/world/entity/player/Inventory;)V
+		ARG 1 containerId
+		ARG 2 inventory
+	METHOD <init> (ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/Container;)V
+		ARG 1 containerId
+		ARG 2 inventory
+		ARG 3 dispenser
+	METHOD add3x3GridSlots (Lnet/minecraft/world/Container;II)V
+		ARG 1 container
+		ARG 2 left
+		ARG 3 top

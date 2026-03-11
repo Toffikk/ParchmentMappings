@@ -1,0 +1,13 @@
+CLASS net/minecraft/world/level/storage/loot/providers/nbt/ContextNbtProvider
+	METHOD <init> (Lnet/minecraft/world/level/storage/loot/LootContextArg;)V
+		ARG 1 source
+	METHOD forContextEntity (Lnet/minecraft/world/level/storage/loot/LootContext$EntityTarget;)Lnet/minecraft/world/level/storage/loot/providers/nbt/NbtProvider;
+		ARG 0 source
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/storage/loot/LootContextArg$ArgCodecBuilder;)Lnet/minecraft/world/level/storage/loot/LootContextArg$ArgCodecBuilder;
+		ARG 0 builder
+	METHOD lambda$static$1 (Lnet/minecraft/world/level/storage/loot/providers/nbt/ContextNbtProvider;)Lnet/minecraft/world/level/storage/loot/LootContextArg;
+		ARG 0 p
+	METHOD lambda$static$2 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD lambda$static$3 (Lnet/minecraft/world/level/storage/loot/providers/nbt/ContextNbtProvider;)Lnet/minecraft/world/level/storage/loot/LootContextArg;
+		ARG 0 p

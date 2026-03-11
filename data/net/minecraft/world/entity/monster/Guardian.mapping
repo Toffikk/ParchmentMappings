@@ -1,0 +1,26 @@
+CLASS net/minecraft/world/entity/monster/Guardian
+	METHOD checkGuardianSpawnRules (Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/core/BlockPos;Lnet/minecraft/util/RandomSource;)Z
+		ARG 0 type
+		ARG 1 level
+		ARG 2 spawnReason
+		ARG 3 pos
+		ARG 4 random
+	METHOD getAttackAnimationScale (F)F
+		ARG 1 a
+	METHOD getSpikesAnimation (F)F
+		ARG 1 a
+	METHOD getTailAnimation (F)F
+		ARG 1 a
+	METHOD setActiveAttackTarget (I)V
+		ARG 1 entityId
+	METHOD setMoving (Z)V
+		ARG 1 value
+	CLASS GuardianAttackGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Guardian;)V
+			ARG 1 guardian
+	CLASS GuardianAttackSelector
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Guardian;)V
+			ARG 1 guardian
+	CLASS GuardianMoveControl
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Guardian;)V
+			ARG 1 guardian

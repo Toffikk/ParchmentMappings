@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/storage/loot/entries/LootPoolEntry
+	METHOD createItemStack (Ljava/util/function/Consumer;Lnet/minecraft/world/level/storage/loot/LootContext;)V
+		ARG 1 output
+		ARG 2 context
+	METHOD getWeight (F)I
+		ARG 1 luck

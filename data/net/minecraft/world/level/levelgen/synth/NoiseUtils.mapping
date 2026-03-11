@@ -1,0 +1,16 @@
+CLASS net/minecraft/world/level/levelgen/synth/NoiseUtils
+	METHOD biasTowardsExtreme (DD)D
+		ARG 0 noise
+		ARG 2 factor
+	METHOD parityNoiseOctaveConfigString (Ljava/lang/StringBuilder;DDD[B)V
+		ARG 0 sb
+		ARG 1 xo
+		ARG 3 yo
+		ARG 5 zo
+		ARG 7 p
+	METHOD parityNoiseOctaveConfigString (Ljava/lang/StringBuilder;DDD[I)V
+		ARG 0 sb
+		ARG 1 xo
+		ARG 3 yo
+		ARG 5 zo
+		ARG 7 p

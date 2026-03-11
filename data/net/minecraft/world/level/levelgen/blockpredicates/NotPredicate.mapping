@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/level/levelgen/blockpredicates/NotPredicate
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;)V
+		ARG 1 predicate
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/levelgen/blockpredicates/NotPredicate;)Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;
+		ARG 0 p
+	METHOD lambda$static$1 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD test (Ljava/lang/Object;Ljava/lang/Object;)Z
+		ARG 1 level
+		ARG 2 origin

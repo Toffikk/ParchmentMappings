@@ -1,0 +1,11 @@
+CLASS net/minecraft/world/level/levelgen/feature/treedecorators/LeaveVineDecorator
+	METHOD <init> (F)V
+		ARG 1 probability
+	METHOD addHangingVine (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/properties/BooleanProperty;Lnet/minecraft/world/level/levelgen/feature/treedecorators/TreeDecorator$Context;)V
+		ARG 0 pos
+		ARG 1 direction
+		ARG 2 context
+	METHOD lambda$place$1 (Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/levelgen/feature/treedecorators/TreeDecorator$Context;Lnet/minecraft/core/BlockPos;)V
+		ARG 3 pos
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/levelgen/feature/treedecorators/LeaveVineDecorator;)Ljava/lang/Float;
+		ARG 0 d

@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/inventory/PlayerEnderChestContainer
+	METHOD fromSlots (Lnet/minecraft/world/level/storage/ValueInput$TypedInputList;)V
+		ARG 1 list
+	METHOD isActiveChest (Lnet/minecraft/world/level/block/entity/EnderChestBlockEntity;)Z
+		ARG 1 chest
+	METHOD setActiveChest (Lnet/minecraft/world/level/block/entity/EnderChestBlockEntity;)V
+		ARG 1 activeChest
+	METHOD storeAsSlots (Lnet/minecraft/world/level/storage/ValueOutput$TypedOutputList;)V
+		ARG 1 output

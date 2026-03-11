@@ -1,0 +1,12 @@
+CLASS net/minecraft/world/level/storage/loot/functions/CopyNameFunction
+	METHOD <init> (Ljava/util/List;Lnet/minecraft/world/level/storage/loot/LootContextArg;)V
+		ARG 1 predicates
+		ARG 2 source
+	METHOD copyName (Lnet/minecraft/world/level/storage/loot/LootContextArg;)Lnet/minecraft/world/level/storage/loot/functions/LootItemConditionalFunction$Builder;
+		ARG 0 target
+	METHOD lambda$copyName$2 (Lnet/minecraft/world/level/storage/loot/LootContextArg;Ljava/util/List;)Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction;
+		ARG 1 conditions
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/storage/loot/functions/CopyNameFunction;)Lnet/minecraft/world/level/storage/loot/LootContextArg;
+		ARG 0 f
+	METHOD lambda$static$1 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

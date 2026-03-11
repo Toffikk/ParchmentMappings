@@ -1,4 +1,6 @@
 CLASS net/minecraft/world/entity/PlayerRideableJumping
+	METHOD getPlayerJumpPendingScale (I)F
+		ARG 1 jumpAmount
 	METHOD handleStartJump (I)V
 		ARG 1 jumpScale
 	METHOD onPlayerJump (I)V

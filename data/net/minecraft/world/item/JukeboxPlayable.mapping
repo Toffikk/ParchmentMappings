@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/item/JukeboxPlayable
+	METHOD lambda$addToTooltip$0 (Ljava/util/function/Consumer;Lnet/minecraft/core/Holder;)V
+		ARG 1 reference
+	METHOD tryInsertIntoJukebox (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/world/InteractionResult;
+		ARG 0 level
+		ARG 1 pos
+		ARG 2 toInsert
+		ARG 3 player

@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/inventory/MerchantContainer
+	METHOD <init> (Lnet/minecraft/world/item/trading/Merchant;)V
+		ARG 1 villager
+	METHOD isPaymentSlot (I)Z
+		ARG 1 slot
+	METHOD setSelectionHint (I)V
+		ARG 1 selectionHint

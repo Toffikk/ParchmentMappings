@@ -1,0 +1,12 @@
+CLASS net/minecraft/world/level/storage/loot/functions/FillPlayerHead
+	METHOD <init> (Ljava/util/List;Lnet/minecraft/world/level/storage/loot/LootContext$EntityTarget;)V
+		ARG 1 predicates
+		ARG 2 entityTarget
+	METHOD fillPlayerHead (Lnet/minecraft/world/level/storage/loot/LootContext$EntityTarget;)Lnet/minecraft/world/level/storage/loot/functions/LootItemConditionalFunction$Builder;
+		ARG 0 entityTarget
+	METHOD lambda$fillPlayerHead$2 (Lnet/minecraft/world/level/storage/loot/LootContext$EntityTarget;Ljava/util/List;)Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction;
+		ARG 1 conditions
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/storage/loot/functions/FillPlayerHead;)Lnet/minecraft/world/level/storage/loot/LootContext$EntityTarget;
+		ARG 0 f
+	METHOD lambda$static$1 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

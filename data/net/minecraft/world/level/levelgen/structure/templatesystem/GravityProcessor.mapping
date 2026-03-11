@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/level/levelgen/structure/templatesystem/GravityProcessor
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/Heightmap$Types;I)V
+		ARG 1 heightmap
+		ARG 2 offset
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/levelgen/structure/templatesystem/GravityProcessor;)Lnet/minecraft/world/level/levelgen/Heightmap$Types;
+		ARG 0 p
+	METHOD lambda$static$1 (Lnet/minecraft/world/level/levelgen/structure/templatesystem/GravityProcessor;)Ljava/lang/Integer;
+		ARG 0 p
+	METHOD lambda$static$2 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

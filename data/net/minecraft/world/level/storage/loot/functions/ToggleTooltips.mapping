@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/level/storage/loot/functions/ToggleTooltips
+	METHOD <init> (Ljava/util/List;Ljava/util/Map;)V
+		ARG 1 predicates
+		ARG 2 values
+	METHOD lambda$run$2 (Lnet/minecraft/world/item/component/TooltipDisplay;)Lnet/minecraft/world/item/component/TooltipDisplay;
+		ARG 1 display
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/storage/loot/functions/ToggleTooltips;)Ljava/util/Map;
+		ARG 0 e
+	METHOD lambda$static$1 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

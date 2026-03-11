@@ -1,0 +1,19 @@
+CLASS net/minecraft/world/level/lighting/SkyLightSectionStorage
+	METHOD <init> (Lnet/minecraft/world/level/chunk/LightChunkGetter;)V
+		ARG 1 chunkSource
+	METHOD getLightValue (JZ)I
+		ARG 1 blockNode
+		ARG 3 updating
+	METHOD getTopSectionY (J)I
+		ARG 1 zeroNode
+	METHOD hasLightDataAtOrBelow (I)Z
+		ARG 1 sectionY
+	METHOD isAboveData (J)Z
+		ARG 1 sectionNode
+	METHOD repeatFirstLayer (Lnet/minecraft/world/level/chunk/DataLayer;)Lnet/minecraft/world/level/chunk/DataLayer;
+		ARG 0 data
+	CLASS SkyDataLayerStorageMap
+		METHOD <init> (Lit/unimi/dsi/fastutil/longs/Long2ObjectOpenHashMap;Lit/unimi/dsi/fastutil/longs/Long2IntOpenHashMap;I)V
+			ARG 1 map
+			ARG 2 topSections
+			ARG 3 currentLowestY

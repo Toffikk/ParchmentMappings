@@ -1,0 +1,16 @@
+CLASS net/minecraft/world/level/storage/loot/functions/SetBookCoverFunction
+	METHOD <init> (Ljava/util/List;Ljava/util/Optional;Ljava/util/Optional;Ljava/util/Optional;)V
+		ARG 1 predicates
+		ARG 2 title
+		ARG 3 author
+		ARG 4 generation
+	METHOD apply (Lnet/minecraft/world/item/component/WrittenBookContent;)Lnet/minecraft/world/item/component/WrittenBookContent;
+		ARG 1 original
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/storage/loot/functions/SetBookCoverFunction;)Ljava/util/Optional;
+		ARG 0 f
+	METHOD lambda$static$1 (Lnet/minecraft/world/level/storage/loot/functions/SetBookCoverFunction;)Ljava/util/Optional;
+		ARG 0 f
+	METHOD lambda$static$2 (Lnet/minecraft/world/level/storage/loot/functions/SetBookCoverFunction;)Ljava/util/Optional;
+		ARG 0 f
+	METHOD lambda$static$3 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

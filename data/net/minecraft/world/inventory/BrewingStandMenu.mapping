@@ -1,0 +1,22 @@
+CLASS net/minecraft/world/inventory/BrewingStandMenu
+	METHOD <init> (ILnet/minecraft/world/entity/player/Inventory;)V
+		ARG 1 containerId
+		ARG 2 inventory
+	METHOD <init> (ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/Container;Lnet/minecraft/world/inventory/ContainerData;)V
+		ARG 1 containerId
+		ARG 2 inventory
+		ARG 3 brewingStand
+		ARG 4 brewingStandData
+	CLASS FuelSlot
+		METHOD mayPlaceItem (Lnet/minecraft/world/item/ItemStack;)Z
+			ARG 0 itemStack
+	CLASS IngredientsSlot
+		METHOD <init> (Lnet/minecraft/world/item/alchemy/PotionBrewing;Lnet/minecraft/world/Container;III)V
+			ARG 1 potionBrewing
+			ARG 2 container
+			ARG 3 slot
+			ARG 4 x
+			ARG 5 y
+	CLASS PotionSlot
+		METHOD mayPlaceItem (Lnet/minecraft/world/item/ItemStack;)Z
+			ARG 0 itemStack

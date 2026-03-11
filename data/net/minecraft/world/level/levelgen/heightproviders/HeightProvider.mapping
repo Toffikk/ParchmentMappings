@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/level/levelgen/heightproviders/HeightProvider
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/levelgen/heightproviders/HeightProvider;)Lnet/minecraft/world/level/levelgen/heightproviders/HeightProvider;
+		ARG 0 f
+	METHOD lambda$static$1 (Lcom/mojang/datafixers/util/Either;)Lnet/minecraft/world/level/levelgen/heightproviders/HeightProvider;
+		ARG 0 either
+	METHOD lambda$static$2 (Lnet/minecraft/world/level/levelgen/heightproviders/HeightProvider;)Lcom/mojang/datafixers/util/Either;
+		ARG 0 f
+	METHOD sample (Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/levelgen/WorldGenerationContext;)I
+		ARG 1 random
+		ARG 2 heightAccessor

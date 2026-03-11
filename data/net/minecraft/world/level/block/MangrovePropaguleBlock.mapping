@@ -1,0 +1,13 @@
+CLASS net/minecraft/world/level/block/MangrovePropaguleBlock
+	METHOD createNewHangingPropagule (I)Lnet/minecraft/world/level/block/state/BlockState;
+		ARG 0 age
+	METHOD isFullyGrown (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 0 state
+	METHOD isHanging (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 0 state
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/block/MangrovePropaguleBlock;)Lnet/minecraft/world/level/block/grower/TreeGrower;
+		ARG 0 b
+	METHOD lambda$static$1 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD lambda$static$2 (I)Lnet/minecraft/world/phys/shapes/VoxelShape;
+		ARG 0 age

@@ -1,0 +1,20 @@
+CLASS net/minecraft/world/entity/monster/Vex
+	METHOD getVexFlag (I)Z
+		ARG 1 flag
+	METHOD setBoundOrigin (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 boundOrigin
+	METHOD setIsCharging (Z)V
+		ARG 1 value
+	METHOD setLimitedLife (I)V
+		ARG 1 lifeTicks
+	METHOD setOwner (Lnet/minecraft/world/entity/Mob;)V
+		ARG 1 owner
+	METHOD setVexFlag (IZ)V
+		ARG 1 flag
+		ARG 2 value
+	CLASS VexCopyOwnerTargetGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Vex;Lnet/minecraft/world/entity/PathfinderMob;)V
+			ARG 2 mob
+	CLASS VexMoveControl
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Vex;Lnet/minecraft/world/entity/monster/Vex;)V
+			ARG 2 vex

@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/block/BaseEntityBlock
+	METHOD createTickerHelper (Lnet/minecraft/world/level/block/entity/BlockEntityType;Lnet/minecraft/world/level/block/entity/BlockEntityType;Lnet/minecraft/world/level/block/entity/BlockEntityTicker;)Lnet/minecraft/world/level/block/entity/BlockEntityTicker;
+		ARG 0 actual
+		ARG 1 expected
+		ARG 2 ticker

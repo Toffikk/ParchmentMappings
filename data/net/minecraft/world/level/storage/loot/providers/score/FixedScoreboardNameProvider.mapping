@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/storage/loot/providers/score/FixedScoreboardNameProvider
+	METHOD forName (Ljava/lang/String;)Lnet/minecraft/world/level/storage/loot/providers/score/ScoreboardNameProvider;
+		ARG 0 name
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

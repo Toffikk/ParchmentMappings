@@ -1,0 +1,20 @@
+CLASS net/minecraft/world/level/levelgen/XoroshiroRandomSource
+	METHOD <init> (J)V
+		ARG 1 seed
+	METHOD <init> (JJ)V
+		ARG 1 seedLo
+		ARG 3 seedHi
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/RandomSupport$Seed128bit;)V
+		ARG 1 seed
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/Xoroshiro128PlusPlus;)V
+		ARG 1 randomNumberGenerator
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/levelgen/Xoroshiro128PlusPlus;)Lnet/minecraft/world/level/levelgen/XoroshiroRandomSource;
+		ARG 0 generator
+	METHOD lambda$static$1 (Lnet/minecraft/world/level/levelgen/XoroshiroRandomSource;)Lnet/minecraft/world/level/levelgen/Xoroshiro128PlusPlus;
+		ARG 0 source
+	METHOD nextBits (I)J
+		ARG 1 bits
+	CLASS XoroshiroPositionalRandomFactory
+		METHOD <init> (JJ)V
+			ARG 1 seedLo
+			ARG 3 seedHi

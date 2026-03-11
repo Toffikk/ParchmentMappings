@@ -1,0 +1,16 @@
+CLASS net/minecraft/world/level/LevelHeightAccessor
+	METHOD create (II)Lnet/minecraft/world/level/LevelHeightAccessor;
+		ARG 0 minY
+		ARG 1 height
+	METHOD getSectionIndex (I)I
+		ARG 1 blockY
+	METHOD getSectionIndexFromSectionY (I)I
+		ARG 1 sectionY
+	METHOD getSectionYFromSectionIndex (I)I
+		ARG 1 sectionIndex
+	METHOD isInsideBuildHeight (I)Z
+		ARG 1 blockY
+	METHOD isOutsideBuildHeight (I)Z
+		ARG 1 blockY
+	METHOD isOutsideBuildHeight (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 pos

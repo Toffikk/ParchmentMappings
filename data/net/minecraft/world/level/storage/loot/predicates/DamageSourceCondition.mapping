@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/storage/loot/predicates/DamageSourceCondition
+	METHOD hasDamageSource (Lnet/minecraft/advancements/criterion/DamageSourcePredicate$Builder;)Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder;
+		ARG 0 builder
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD test (Ljava/lang/Object;)Z
+		ARG 1 context

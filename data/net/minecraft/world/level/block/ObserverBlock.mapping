@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/level/block/ObserverBlock
+	METHOD startSignal (Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/world/level/ScheduledTickAccess;Lnet/minecraft/core/BlockPos;)V
+		ARG 1 level
+		ARG 2 ticks
+		ARG 3 pos
+	METHOD updateNeighborsInFront (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V
+		ARG 1 level
+		ARG 2 pos
+		ARG 3 state

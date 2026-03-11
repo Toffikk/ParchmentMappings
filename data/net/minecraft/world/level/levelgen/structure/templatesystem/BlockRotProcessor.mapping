@@ -1,0 +1,15 @@
+CLASS net/minecraft/world/level/levelgen/structure/templatesystem/BlockRotProcessor
+	METHOD <init> (F)V
+		ARG 1 integrity
+	METHOD <init> (Ljava/util/Optional;F)V
+		ARG 1 blockTagKey
+		ARG 2 integrity
+	METHOD <init> (Lnet/minecraft/core/HolderSet;F)V
+		ARG 1 tag
+		ARG 2 integrity
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/levelgen/structure/templatesystem/BlockRotProcessor;)Ljava/util/Optional;
+		ARG 0 t
+	METHOD lambda$static$1 (Lnet/minecraft/world/level/levelgen/structure/templatesystem/BlockRotProcessor;)Ljava/lang/Float;
+		ARG 0 t
+	METHOD lambda$static$2 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

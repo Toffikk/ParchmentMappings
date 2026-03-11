@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/storage/loot/providers/number/NumberProvider
+	METHOD getFloat (Lnet/minecraft/world/level/storage/loot/LootContext;)F
+		ARG 1 context
+	METHOD getInt (Lnet/minecraft/world/level/storage/loot/LootContext;)I
+		ARG 1 context

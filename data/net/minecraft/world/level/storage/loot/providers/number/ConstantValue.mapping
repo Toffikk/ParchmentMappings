@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/storage/loot/providers/number/ConstantValue
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 o
+	METHOD exactly (F)Lnet/minecraft/world/level/storage/loot/providers/number/ConstantValue;
+		ARG 0 value
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/level/levelgen/feature/configurations/SimpleBlockConfiguration
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/feature/stateproviders/BlockStateProvider;)V
+		ARG 1 toPlace
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/levelgen/feature/configurations/SimpleBlockConfiguration;)Lnet/minecraft/world/level/levelgen/feature/stateproviders/BlockStateProvider;
+		ARG 0 c
+	METHOD lambda$static$1 (Lnet/minecraft/world/level/levelgen/feature/configurations/SimpleBlockConfiguration;)Ljava/lang/Boolean;
+		ARG 0 c
+	METHOD lambda$static$2 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/item/alchemy/Potion
+	METHOD <init> (Ljava/lang/String;[Lnet/minecraft/world/effect/MobEffectInstance;)V
+		ARG 1 name
+		ARG 2 effects
+	METHOD requiredFeatures ([Lnet/minecraft/world/flag/FeatureFlag;)Lnet/minecraft/world/item/alchemy/Potion;
+		ARG 1 flags

@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/levelgen/placement/RepeatingPlacement
+	METHOD count (Lnet/minecraft/util/RandomSource;Lnet/minecraft/core/BlockPos;)I
+		ARG 1 random
+		ARG 2 origin
+	METHOD lambda$getPositions$0 (Lnet/minecraft/core/BlockPos;I)Lnet/minecraft/core/BlockPos;
+		ARG 1 i

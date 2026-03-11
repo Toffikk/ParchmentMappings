@@ -1,0 +1,12 @@
+CLASS net/minecraft/world/level/storage/loot/predicates/TimeCheck
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD test (Ljava/lang/Object;)Z
+		ARG 1 context
+	METHOD time (Lnet/minecraft/world/level/storage/loot/IntRange;)Lnet/minecraft/world/level/storage/loot/predicates/TimeCheck$Builder;
+		ARG 0 period
+	CLASS Builder
+		METHOD <init> (Lnet/minecraft/world/level/storage/loot/IntRange;)V
+			ARG 1 value
+		METHOD setPeriod (J)Lnet/minecraft/world/level/storage/loot/predicates/TimeCheck$Builder;
+			ARG 1 period

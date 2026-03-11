@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/levelgen/feature/EndPlatformFeature
+	METHOD createEndPlatform (Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/core/BlockPos;Z)V
+		ARG 0 newLevel
+		ARG 1 origin
+		ARG 2 dropResources

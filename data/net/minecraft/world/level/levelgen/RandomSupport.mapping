@@ -1,0 +1,17 @@
+CLASS net/minecraft/world/level/levelgen/RandomSupport
+	METHOD lambda$generateUniqueSeed$0 (J)J
+		ARG 0 current
+	METHOD mixStafford13 (J)J
+		ARG 0 z
+	METHOD seedFromHashOf (Ljava/lang/String;)Lnet/minecraft/world/level/levelgen/RandomSupport$Seed128bit;
+		ARG 0 input
+	METHOD upgradeSeedTo128bit (J)Lnet/minecraft/world/level/levelgen/RandomSupport$Seed128bit;
+		ARG 0 legacySeed
+	METHOD upgradeSeedTo128bitUnmixed (J)Lnet/minecraft/world/level/levelgen/RandomSupport$Seed128bit;
+		ARG 0 legacySeed
+	CLASS Seed128bit
+		METHOD xor (JJ)Lnet/minecraft/world/level/levelgen/RandomSupport$Seed128bit;
+			ARG 1 lo
+			ARG 3 hi
+		METHOD xor (Lnet/minecraft/world/level/levelgen/RandomSupport$Seed128bit;)Lnet/minecraft/world/level/levelgen/RandomSupport$Seed128bit;
+			ARG 1 other

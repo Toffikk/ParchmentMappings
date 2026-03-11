@@ -1,0 +1,16 @@
+CLASS net/minecraft/world/level/lighting/LeveledPriorityQueue
+	METHOD <init> (II)V
+		ARG 1 levelCount
+		ARG 2 minSize
+	METHOD checkFirstQueuedLevel (I)V
+		ARG 1 upperBound
+	METHOD dequeue (JII)V
+		ARG 1 node
+		ARG 3 key
+		ARG 4 upperBound
+	METHOD enqueue (JI)V
+		ARG 1 node
+		ARG 3 key
+	CLASS 1
+		METHOD rehash (I)V
+			ARG 1 newN

@@ -1,0 +1,33 @@
+CLASS net/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer
+	METHOD <init> (IILjava/util/List;Ljava/util/List;)V
+		ARG 1 weight
+		ARG 2 quality
+		ARG 3 conditions
+		ARG 4 functions
+	METHOD createItemStack (Ljava/util/function/Consumer;Lnet/minecraft/world/level/storage/loot/LootContext;)V
+		ARG 1 output
+		ARG 2 context
+	METHOD lambda$singletonFields$0 (Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer;)Ljava/lang/Integer;
+		ARG 0 e
+	METHOD lambda$singletonFields$1 (Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer;)Ljava/lang/Integer;
+		ARG 0 e
+	METHOD lambda$singletonFields$2 (Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer;)Ljava/util/List;
+		ARG 0 e
+	METHOD simpleBuilder (Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$EntryConstructor;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+		ARG 0 constructor
+	METHOD singletonFields (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/Products$P4;
+		ARG 0 i
+	CLASS Builder
+		METHOD setQuality (I)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+			ARG 1 quality
+		METHOD setWeight (I)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+			ARG 1 weight
+	CLASS DummyBuilder
+		METHOD <init> (Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$EntryConstructor;)V
+			ARG 1 constructor
+	CLASS EntryConstructor
+		METHOD build (IILjava/util/List;Ljava/util/List;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer;
+			ARG 1 weight
+			ARG 2 quality
+			ARG 3 conditions
+			ARG 4 functions

@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/level/block/state/pattern/BlockPatternBuilder
+	METHOD aisle ([Ljava/lang/String;)Lnet/minecraft/world/level/block/state/pattern/BlockPatternBuilder;
+		ARG 1 aisle
+	METHOD lambda$new$0 (Lnet/minecraft/world/level/block/state/pattern/BlockInWorld;)Z
+		ARG 0 blockInWorld
+	METHOD where (CLjava/util/function/Predicate;)Lnet/minecraft/world/level/block/state/pattern/BlockPatternBuilder;
+		ARG 1 character
+		ARG 2 predicate

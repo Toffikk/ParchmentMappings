@@ -1,0 +1,15 @@
+CLASS net/minecraft/world/level/levelgen/feature/treedecorators/BeehiveDecorator
+	METHOD <init> (F)V
+		ARG 1 probability
+	METHOD lambda$place$3 (ILnet/minecraft/core/BlockPos;)Z
+		ARG 1 pos
+	METHOD lambda$place$4 (Lnet/minecraft/core/BlockPos;)Ljava/util/stream/Stream;
+		ARG 0 pos
+	METHOD lambda$place$5 (Lnet/minecraft/world/level/levelgen/feature/treedecorators/TreeDecorator$Context;Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 pos
+	METHOD lambda$place$6 (Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/block/entity/BeehiveBlockEntity;)V
+		ARG 1 beehive
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/levelgen/feature/treedecorators/BeehiveDecorator;)Ljava/lang/Float;
+		ARG 0 d
+	METHOD lambda$static$1 (Lnet/minecraft/core/Direction;)Z
+		ARG 0 dir

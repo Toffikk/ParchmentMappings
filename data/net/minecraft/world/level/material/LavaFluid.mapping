@@ -1,0 +1,12 @@
+CLASS net/minecraft/world/level/material/LavaFluid
+	METHOD fizz (Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/core/BlockPos;)V
+		ARG 1 level
+		ARG 2 pos
+	METHOD hasFlammableNeighbours (Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 level
+		ARG 2 pos
+	METHOD isFastLava (Lnet/minecraft/world/level/LevelReader;)Z
+		ARG 0 level
+	METHOD isFlammable (Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 level
+		ARG 2 pos

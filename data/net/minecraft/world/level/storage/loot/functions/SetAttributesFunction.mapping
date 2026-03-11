@@ -1,0 +1,39 @@
+CLASS net/minecraft/world/level/storage/loot/functions/SetAttributesFunction
+	METHOD <init> (Ljava/util/List;Ljava/util/List;Z)V
+		ARG 1 predicates
+		ARG 2 modifiers
+		ARG 3 replace
+	METHOD lambda$getReferencedContextParams$3 (Lnet/minecraft/world/level/storage/loot/functions/SetAttributesFunction$Modifier;)Ljava/util/stream/Stream;
+		ARG 0 m
+	METHOD lambda$run$4 (Lnet/minecraft/world/level/storage/loot/LootContext;Lnet/minecraft/world/item/component/ItemAttributeModifiers;)Lnet/minecraft/world/item/component/ItemAttributeModifiers;
+		ARG 2 itemModifiers
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/storage/loot/functions/SetAttributesFunction;)Ljava/util/List;
+		ARG 0 f
+	METHOD lambda$static$1 (Lnet/minecraft/world/level/storage/loot/functions/SetAttributesFunction;)Ljava/lang/Boolean;
+		ARG 0 f
+	METHOD lambda$static$2 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD modifier (Lnet/minecraft/resources/Identifier;Lnet/minecraft/core/Holder;Lnet/minecraft/world/entity/ai/attributes/AttributeModifier$Operation;Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;)Lnet/minecraft/world/level/storage/loot/functions/SetAttributesFunction$ModifierBuilder;
+		ARG 0 id
+		ARG 1 attribute
+		ARG 2 operation
+		ARG 3 amount
+	METHOD updateModifiers (Lnet/minecraft/world/level/storage/loot/LootContext;Lnet/minecraft/world/item/component/ItemAttributeModifiers;)Lnet/minecraft/world/item/component/ItemAttributeModifiers;
+		ARG 1 context
+		ARG 2 itemModifiers
+	CLASS Builder
+		METHOD <init> (Z)V
+			ARG 1 replace
+		METHOD withModifier (Lnet/minecraft/world/level/storage/loot/functions/SetAttributesFunction$ModifierBuilder;)Lnet/minecraft/world/level/storage/loot/functions/SetAttributesFunction$Builder;
+			ARG 1 modifier
+	CLASS Modifier
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+	CLASS ModifierBuilder
+		METHOD <init> (Lnet/minecraft/resources/Identifier;Lnet/minecraft/core/Holder;Lnet/minecraft/world/entity/ai/attributes/AttributeModifier$Operation;Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;)V
+			ARG 1 id
+			ARG 2 attribute
+			ARG 3 operation
+			ARG 4 amount
+		METHOD forSlot (Lnet/minecraft/world/entity/EquipmentSlotGroup;)Lnet/minecraft/world/level/storage/loot/functions/SetAttributesFunction$ModifierBuilder;
+			ARG 1 slot

@@ -1,0 +1,30 @@
+CLASS net/minecraft/world/item/ProjectileItem
+	METHOD asProjectile (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/Position;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/core/Direction;)Lnet/minecraft/world/entity/projectile/Projectile;
+		ARG 1 level
+		ARG 2 position
+		ARG 3 itemStack
+		ARG 4 direction
+	METHOD shoot (Lnet/minecraft/world/entity/projectile/Projectile;DDDFF)V
+		ARG 1 projectile
+		ARG 2 xd
+		ARG 4 yd
+		ARG 6 zd
+		ARG 8 pow
+		ARG 9 uncertainty
+	CLASS DispenseConfig
+		CLASS Builder
+			METHOD lambda$new$0 (Lnet/minecraft/core/dispenser/BlockSource;Lnet/minecraft/core/Direction;)Lnet/minecraft/core/Position;
+				ARG 0 source
+				ARG 1 direction
+			METHOD overrideDispenseEvent (I)Lnet/minecraft/world/item/ProjectileItem$DispenseConfig$Builder;
+				ARG 1 dispenseEvent
+			METHOD positionFunction (Lnet/minecraft/world/item/ProjectileItem$PositionFunction;)Lnet/minecraft/world/item/ProjectileItem$DispenseConfig$Builder;
+				ARG 1 positionFunction
+			METHOD power (F)Lnet/minecraft/world/item/ProjectileItem$DispenseConfig$Builder;
+				ARG 1 power
+			METHOD uncertainty (F)Lnet/minecraft/world/item/ProjectileItem$DispenseConfig$Builder;
+				ARG 1 uncertainty
+	CLASS PositionFunction
+		METHOD getDispensePosition (Lnet/minecraft/core/dispenser/BlockSource;Lnet/minecraft/core/Direction;)Lnet/minecraft/core/Position;
+			ARG 1 source
+			ARG 2 direction

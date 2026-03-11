@@ -1,0 +1,24 @@
+CLASS net/minecraft/world/ticks/SavedTick
+	METHOD codec (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
+		ARG 0 typeCodec
+	METHOD filterTickListForChunk (Ljava/util/List;Lnet/minecraft/world/level/ChunkPos;)Ljava/util/List;
+		ARG 0 savedTicks
+		ARG 1 chunkPos
+	METHOD lambda$codec$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD lambda$codec$1 (Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/MapCodec;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 2 i
+	METHOD lambda$filterTickListForChunk$2 (JLnet/minecraft/world/ticks/SavedTick;)Z
+		ARG 2 tick
+	METHOD probe (Ljava/lang/Object;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/ticks/SavedTick;
+		ARG 0 type
+		ARG 1 pos
+	METHOD unpack (JJ)Lnet/minecraft/world/ticks/ScheduledTick;
+		ARG 1 currentTick
+		ARG 3 currentSubTick
+	CLASS 1
+		METHOD equals (Ljava/lang/Object;Ljava/lang/Object;)Z
+			ARG 1 a
+			ARG 2 b
+		METHOD hashCode (Ljava/lang/Object;)I
+			ARG 1 o

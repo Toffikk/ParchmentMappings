@@ -1,0 +1,17 @@
+CLASS net/minecraft/world/entity/projectile/arrow/ThrownTrident
+	METHOD <init> (Lnet/minecraft/world/level/Level;DDDLnet/minecraft/world/item/ItemStack;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 tridentItem
+	METHOD <init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 level
+		ARG 2 owner
+		ARG 3 tridentItem
+	METHOD getLoyaltyFromItem (Lnet/minecraft/world/item/ItemStack;)B
+		ARG 1 tridentItem
+	METHOD lambda$hitBlockEnchantmentEffects$1 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/item/Item;)V
+		ARG 2 item
+	METHOD lambda$onHitEntity$0 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/item/Item;)V
+		ARG 2 weapon

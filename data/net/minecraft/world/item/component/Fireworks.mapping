@@ -1,0 +1,12 @@
+CLASS net/minecraft/world/item/component/Fireworks
+	METHOD <init> (ILjava/util/List;)V
+		ARG 1 flightDuration
+		ARG 2 explosions
+	METHOD addExplosionTooltip (Ljava/util/function/Consumer;Lnet/minecraft/world/item/component/FireworkExplosion;I)V
+		ARG 0 consumer
+		ARG 1 explosion
+		ARG 2 count
+	METHOD lambda$addExplosionTooltip$1 (Ljava/util/function/Consumer;Lnet/minecraft/network/chat/Component;)V
+		ARG 1 component
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

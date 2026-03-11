@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/entity/monster/Creeper
+	METHOD getSwelling (F)F
+		ARG 1 a
+	METHOD lambda$killedEntity$0 (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 3 itemStack
+	METHOD setSwellDir (I)V
+		ARG 1 dir

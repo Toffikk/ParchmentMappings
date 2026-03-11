@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/entity/monster/illager/Illusioner
+	METHOD getIllusionOffsets (F)[Lnet/minecraft/world/phys/Vec3;
+		ARG 1 a

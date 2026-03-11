@@ -1,0 +1,13 @@
+CLASS net/minecraft/world/level/block/PoweredRailBlock
+	METHOD findPoweredRailSignal (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;ZI)Z
+		ARG 1 level
+		ARG 2 pos
+		ARG 3 state
+		ARG 4 forward
+		ARG 5 searchDepth
+	METHOD isSameRailWithPower (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;ZILnet/minecraft/world/level/block/state/properties/RailShape;)Z
+		ARG 1 level
+		ARG 2 pos
+		ARG 3 forward
+		ARG 4 searchDepth
+		ARG 5 dir

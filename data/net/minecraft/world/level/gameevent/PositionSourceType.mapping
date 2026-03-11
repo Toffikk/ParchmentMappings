@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/gameevent/PositionSourceType
+	METHOD register (Ljava/lang/String;Lnet/minecraft/world/level/gameevent/PositionSourceType;)Lnet/minecraft/world/level/gameevent/PositionSourceType;
+		ARG 0 name
+		ARG 1 serializer

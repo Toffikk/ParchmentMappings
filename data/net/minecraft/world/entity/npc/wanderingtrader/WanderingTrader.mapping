@@ -1,0 +1,17 @@
+CLASS net/minecraft/world/entity/npc/wanderingtrader/WanderingTrader
+	METHOD lambda$registerGoals$0 (Lnet/minecraft/world/entity/npc/wanderingtrader/WanderingTrader;)Z
+		ARG 1 e
+	METHOD lambda$registerGoals$1 (Lnet/minecraft/world/entity/npc/wanderingtrader/WanderingTrader;)Z
+		ARG 1 e
+	METHOD setDespawnDelay (I)V
+		ARG 1 despawnDelay
+	METHOD setWanderTarget (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 pos
+	CLASS WanderToPositionGoal
+		METHOD <init> (Lnet/minecraft/world/entity/npc/wanderingtrader/WanderingTrader;Lnet/minecraft/world/entity/npc/wanderingtrader/WanderingTrader;DD)V
+			ARG 2 trader
+			ARG 3 stopDistance
+			ARG 5 speedModifier
+		METHOD isTooFarAway (Lnet/minecraft/core/BlockPos;D)Z
+			ARG 1 pos
+			ARG 2 distance

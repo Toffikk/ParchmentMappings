@@ -1,0 +1,21 @@
+CLASS net/minecraft/world/level/storage/loot/predicates/EntityHasScoreCondition
+	METHOD hasScore (Lnet/minecraft/world/level/storage/loot/LootContext;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/scores/Scoreboard;Ljava/lang/String;Lnet/minecraft/world/level/storage/loot/IntRange;)Z
+		ARG 1 context
+		ARG 2 entity
+		ARG 3 scoreboard
+		ARG 4 objectiveName
+		ARG 5 range
+	METHOD hasScores (Lnet/minecraft/world/level/storage/loot/LootContext$EntityTarget;)Lnet/minecraft/world/level/storage/loot/predicates/EntityHasScoreCondition$Builder;
+		ARG 0 target
+	METHOD lambda$getReferencedContextParams$1 (Lnet/minecraft/world/level/storage/loot/IntRange;)Ljava/util/stream/Stream;
+		ARG 0 r
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD test (Ljava/lang/Object;)Z
+		ARG 1 context
+	CLASS Builder
+		METHOD <init> (Lnet/minecraft/world/level/storage/loot/LootContext$EntityTarget;)V
+			ARG 1 entityTarget
+		METHOD withScore (Ljava/lang/String;Lnet/minecraft/world/level/storage/loot/IntRange;)Lnet/minecraft/world/level/storage/loot/predicates/EntityHasScoreCondition$Builder;
+			ARG 1 score
+			ARG 2 bounds

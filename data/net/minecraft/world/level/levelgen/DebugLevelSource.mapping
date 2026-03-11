@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/level/levelgen/DebugLevelSource
+	METHOD <init> (Lnet/minecraft/core/Holder$Reference;)V
+		ARG 1 plains
+	METHOD getBlockStateFor (II)Lnet/minecraft/world/level/block/state/BlockState;
+		ARG 0 worldX
+		ARG 1 worldZ
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD lambda$static$1 (Lnet/minecraft/world/level/block/Block;)Ljava/util/stream/Stream;
+		ARG 0 b

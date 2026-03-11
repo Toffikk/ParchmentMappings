@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/level/levelgen/structure/structures/NetherFossilStructure
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/structure/Structure$StructureSettings;Lnet/minecraft/world/level/levelgen/heightproviders/HeightProvider;)V
+		ARG 1 settings
+		ARG 2 height
+	METHOD lambda$findGenerationPoint$2 (Lnet/minecraft/world/level/levelgen/structure/Structure$GenerationContext;Lnet/minecraft/world/level/levelgen/WorldgenRandom;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/levelgen/structure/pieces/StructurePiecesBuilder;)V
+		ARG 3 builder
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/levelgen/structure/structures/NetherFossilStructure;)Lnet/minecraft/world/level/levelgen/heightproviders/HeightProvider;
+		ARG 0 c
+	METHOD lambda$static$1 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

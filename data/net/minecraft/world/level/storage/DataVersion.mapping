@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/storage/DataVersion
+	METHOD isCompatible (Lnet/minecraft/world/level/storage/DataVersion;)Z
+		ARG 1 other

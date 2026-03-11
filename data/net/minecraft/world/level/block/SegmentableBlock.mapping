@@ -1,0 +1,15 @@
+CLASS net/minecraft/world/level/block/SegmentableBlock
+	METHOD canBeReplaced (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/item/context/BlockPlaceContext;Lnet/minecraft/world/level/block/state/properties/IntegerProperty;)Z
+		ARG 1 state
+		ARG 2 context
+		ARG 3 segment
+	METHOD getShapeCalculator (Lnet/minecraft/world/level/block/state/properties/EnumProperty;Lnet/minecraft/world/level/block/state/properties/IntegerProperty;)Ljava/util/function/Function;
+		ARG 1 facing
+		ARG 2 amount
+	METHOD getStateForPlacement (Lnet/minecraft/world/item/context/BlockPlaceContext;Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/level/block/state/properties/IntegerProperty;Lnet/minecraft/world/level/block/state/properties/EnumProperty;)Lnet/minecraft/world/level/block/state/BlockState;
+		ARG 1 context
+		ARG 2 block
+		ARG 3 segment
+		ARG 4 facing
+	METHOD lambda$getShapeCalculator$0 (Lnet/minecraft/world/level/block/state/properties/EnumProperty;Lnet/minecraft/world/level/block/state/properties/IntegerProperty;Ljava/util/Map;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/phys/shapes/VoxelShape;
+		ARG 3 state

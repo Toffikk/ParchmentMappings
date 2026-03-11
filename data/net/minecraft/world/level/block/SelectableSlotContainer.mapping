@@ -1,0 +1,12 @@
+CLASS net/minecraft/world/level/block/SelectableSlotContainer
+	METHOD getHitSlot (Lnet/minecraft/world/phys/BlockHitResult;Lnet/minecraft/core/Direction;)Ljava/util/OptionalInt;
+		ARG 1 hitResult
+		ARG 2 blockFacing
+	METHOD getRelativeHitCoordinatesForBlockFace (Lnet/minecraft/world/phys/BlockHitResult;Lnet/minecraft/core/Direction;)Ljava/util/Optional;
+		ARG 0 hitResult
+		ARG 1 blockFacing
+	METHOD getSection (FI)I
+		ARG 0 relativeCoordinate
+		ARG 1 maxSections
+	METHOD lambda$getHitSlot$0 (Lnet/minecraft/world/phys/Vec2;)Ljava/util/OptionalInt;
+		ARG 1 hitCoords

@@ -1,0 +1,12 @@
+CLASS net/minecraft/world/level/storage/loot/functions/SetOminousBottleAmplifierFunction
+	METHOD <init> (Ljava/util/List;Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;)V
+		ARG 1 predicates
+		ARG 2 amplifierGenerator
+	METHOD lambda$setAmplifier$2 (Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;Ljava/util/List;)Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction;
+		ARG 1 conditions
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/storage/loot/functions/SetOminousBottleAmplifierFunction;)Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;
+		ARG 0 f
+	METHOD lambda$static$1 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD setAmplifier (Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;)Lnet/minecraft/world/level/storage/loot/functions/LootItemConditionalFunction$Builder;
+		ARG 0 generator

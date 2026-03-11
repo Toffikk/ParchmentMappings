@@ -1,0 +1,16 @@
+CLASS net/minecraft/world/level/block/entity/BrewingStandBlockEntity
+	METHOD <init> (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V
+		ARG 1 worldPosition
+		ARG 2 blockState
+	METHOD doBrew (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/NonNullList;)V
+		ARG 0 level
+		ARG 1 pos
+		ARG 2 items
+	METHOD isBrewable (Lnet/minecraft/world/item/alchemy/PotionBrewing;Lnet/minecraft/core/NonNullList;)Z
+		ARG 0 potionBrewing
+		ARG 1 items
+	METHOD serverTick (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BrewingStandBlockEntity;)V
+		ARG 0 level
+		ARG 1 pos
+		ARG 2 selfState
+		ARG 3 entity

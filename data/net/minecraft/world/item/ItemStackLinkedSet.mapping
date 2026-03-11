@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/item/ItemStackLinkedSet
+	CLASS 1
+		METHOD equals (Ljava/lang/Object;Ljava/lang/Object;)Z
+			ARG 1 a
+			ARG 2 b
+		METHOD hashCode (Ljava/lang/Object;)I
+			ARG 1 item

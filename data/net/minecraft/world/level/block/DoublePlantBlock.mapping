@@ -1,0 +1,15 @@
+CLASS net/minecraft/world/level/block/DoublePlantBlock
+	METHOD copyWaterloggedFrom (Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/state/BlockState;
+		ARG 0 level
+		ARG 1 pos
+		ARG 2 state
+	METHOD placeAt (Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/BlockPos;I)V
+		ARG 0 level
+		ARG 1 state
+		ARG 2 lowerPos
+		ARG 3 updateType
+	METHOD preventDropFromBottomPart (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/entity/player/Player;)V
+		ARG 0 level
+		ARG 1 pos
+		ARG 2 state
+		ARG 3 player

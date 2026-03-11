@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/entity/monster/piglin/AbstractPiglin
+	METHOD finishConversion (Lnet/minecraft/server/level/ServerLevel;)V
+		ARG 1 level
+	METHOD lambda$finishConversion$0 (Lnet/minecraft/world/entity/monster/zombie/ZombifiedPiglin;)V
+		ARG 0 zombified
+	METHOD setImmuneToZombification (Z)V
+		ARG 1 isImmuneToZombification
+	METHOD setTimeInOverworld (I)V
+		ARG 1 timeInOverworld

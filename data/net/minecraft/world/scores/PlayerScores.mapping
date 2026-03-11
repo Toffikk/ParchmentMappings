@@ -1,0 +1,16 @@
+CLASS net/minecraft/world/scores/PlayerScores
+	METHOD get (Lnet/minecraft/world/scores/Objective;)Lnet/minecraft/world/scores/Score;
+		ARG 1 objective
+	METHOD getOrCreate (Lnet/minecraft/world/scores/Objective;Ljava/util/function/Consumer;)Lnet/minecraft/world/scores/Score;
+		ARG 1 objective
+		ARG 2 newResultCallback
+	METHOD lambda$getOrCreate$0 (Ljava/util/function/Consumer;Ljava/lang/Object;)Lnet/minecraft/world/scores/Score;
+		ARG 1 obj
+	METHOD lambda$listScores$1 (Lit/unimi/dsi/fastutil/objects/Object2IntMap;Lnet/minecraft/world/scores/Objective;Lnet/minecraft/world/scores/Score;)V
+		ARG 1 objective
+		ARG 2 score
+	METHOD remove (Lnet/minecraft/world/scores/Objective;)Z
+		ARG 1 objective
+	METHOD setScore (Lnet/minecraft/world/scores/Objective;Lnet/minecraft/world/scores/Score;)V
+		ARG 1 objective
+		ARG 2 score

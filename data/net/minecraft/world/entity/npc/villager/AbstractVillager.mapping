@@ -1,0 +1,16 @@
+CLASS net/minecraft/world/entity/npc/villager/AbstractVillager
+	METHOD addOffersFromItemListings (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/item/trading/MerchantOffers;[Lnet/minecraft/world/entity/npc/villager/VillagerTrades$ItemListing;I)V
+		ARG 1 level
+		ARG 2 merchantOffers
+		ARG 3 itemListings
+		ARG 4 numberOfOffers
+	METHOD addParticlesAroundSelf (Lnet/minecraft/core/particles/ParticleOptions;)V
+		ARG 1 particle
+	METHOD getTradeUpdatedSound (Z)Lnet/minecraft/sounds/SoundEvent;
+		ARG 1 validTrade
+	METHOD rewardTradeXp (Lnet/minecraft/world/item/trading/MerchantOffer;)V
+		ARG 1 offer
+	METHOD setUnhappyCounter (I)V
+		ARG 1 value
+	METHOD updateTrades (Lnet/minecraft/server/level/ServerLevel;)V
+		ARG 1 level

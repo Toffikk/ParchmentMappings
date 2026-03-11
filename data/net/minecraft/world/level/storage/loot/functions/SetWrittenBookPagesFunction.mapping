@@ -1,0 +1,13 @@
+CLASS net/minecraft/world/level/storage/loot/functions/SetWrittenBookPagesFunction
+	METHOD <init> (Ljava/util/List;Ljava/util/List;Lnet/minecraft/world/level/storage/loot/functions/ListOperation;)V
+		ARG 1 predicates
+		ARG 2 pages
+		ARG 3 pageOperation
+	METHOD apply (Lnet/minecraft/world/item/component/WrittenBookContent;)Lnet/minecraft/world/item/component/WrittenBookContent;
+		ARG 1 original
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/storage/loot/functions/SetWrittenBookPagesFunction;)Ljava/util/List;
+		ARG 0 f
+	METHOD lambda$static$1 (Lnet/minecraft/world/level/storage/loot/functions/SetWrittenBookPagesFunction;)Lnet/minecraft/world/level/storage/loot/functions/ListOperation;
+		ARG 0 f
+	METHOD lambda$static$2 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

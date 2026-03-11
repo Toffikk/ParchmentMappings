@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/level/levelgen/flat/FlatLayerInfo
+	METHOD <init> (ILnet/minecraft/world/level/block/Block;)V
+		ARG 1 height
+		ARG 2 block
+	METHOD heightLimited (I)Lnet/minecraft/world/level/levelgen/flat/FlatLayerInfo;
+		ARG 1 maxHeight
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/levelgen/flat/FlatLayerInfo;)Lnet/minecraft/world/level/block/Block;
+		ARG 0 l
+	METHOD lambda$static$1 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

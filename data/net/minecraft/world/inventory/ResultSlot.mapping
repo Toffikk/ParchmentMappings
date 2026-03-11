@@ -1,0 +1,15 @@
+CLASS net/minecraft/world/inventory/ResultSlot
+	METHOD <init> (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/inventory/CraftingContainer;Lnet/minecraft/world/Container;III)V
+		ARG 1 player
+		ARG 2 craftSlots
+		ARG 3 container
+		ARG 4 id
+		ARG 5 x
+		ARG 6 y
+	METHOD copyAllInputItems (Lnet/minecraft/world/item/crafting/CraftingInput;)Lnet/minecraft/core/NonNullList;
+		ARG 0 input
+	METHOD getRemainingItems (Lnet/minecraft/world/item/crafting/CraftingInput;Lnet/minecraft/world/level/Level;)Lnet/minecraft/core/NonNullList;
+		ARG 1 input
+		ARG 2 level
+	METHOD lambda$getRemainingItems$0 (Lnet/minecraft/world/item/crafting/CraftingInput;Lnet/minecraft/world/item/crafting/RecipeHolder;)Lnet/minecraft/core/NonNullList;
+		ARG 1 recipe

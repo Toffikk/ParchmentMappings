@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/entity/monster/Blaze
+	METHOD setCharged (Z)V
+		ARG 1 value
+	CLASS BlazeAttackGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Blaze;)V
+			ARG 1 blaze

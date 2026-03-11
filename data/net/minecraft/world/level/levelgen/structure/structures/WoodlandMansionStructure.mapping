@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/level/levelgen/structure/structures/WoodlandMansionStructure
+	METHOD generatePieces (Lnet/minecraft/world/level/levelgen/structure/pieces/StructurePiecesBuilder;Lnet/minecraft/world/level/levelgen/structure/Structure$GenerationContext;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/Rotation;)V
+		ARG 1 builder
+		ARG 2 context
+		ARG 3 startPos
+		ARG 4 rotation
+	METHOD lambda$findGenerationPoint$0 (Lnet/minecraft/world/level/levelgen/structure/Structure$GenerationContext;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/Rotation;Lnet/minecraft/world/level/levelgen/structure/pieces/StructurePiecesBuilder;)V
+		ARG 4 builder

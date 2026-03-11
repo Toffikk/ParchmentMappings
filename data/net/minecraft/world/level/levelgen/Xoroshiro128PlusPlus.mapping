@@ -1,0 +1,12 @@
+CLASS net/minecraft/world/level/levelgen/Xoroshiro128PlusPlus
+	METHOD <init> (JJ)V
+		ARG 1 seedLo
+		ARG 3 seedHi
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/RandomSupport$Seed128bit;)V
+		ARG 1 seed
+	METHOD lambda$static$0 ([J)Lnet/minecraft/world/level/levelgen/Xoroshiro128PlusPlus;
+		ARG 0 longs
+	METHOD lambda$static$1 (Ljava/util/stream/LongStream;)Lcom/mojang/serialization/DataResult;
+		ARG 0 seed
+	METHOD lambda$static$2 (Lnet/minecraft/world/level/levelgen/Xoroshiro128PlusPlus;)Ljava/util/stream/LongStream;
+		ARG 0 r

@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/entity/vehicle/minecart/MinecartTNT
+	METHOD damageSourceIgnitesTnt (Lnet/minecraft/world/damagesource/DamageSource;)Z
+		ARG 0 source
+	METHOD explode (Lnet/minecraft/world/damagesource/DamageSource;D)V
+		ARG 1 damageSource
+		ARG 2 speedSqr
+	METHOD primeFuse (Lnet/minecraft/world/damagesource/DamageSource;)V
+		ARG 1 source

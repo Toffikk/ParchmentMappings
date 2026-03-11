@@ -1,0 +1,13 @@
+CLASS net/minecraft/world/level/levelgen/feature/trunkplacers/GiantTrunkPlacer
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD placeLogIfFreeWithOffset (Lnet/minecraft/world/level/LevelSimulatedReader;Ljava/util/function/BiConsumer;Lnet/minecraft/util/RandomSource;Lnet/minecraft/core/BlockPos$MutableBlockPos;Lnet/minecraft/world/level/levelgen/feature/configurations/TreeConfiguration;Lnet/minecraft/core/BlockPos;III)V
+		ARG 1 level
+		ARG 2 trunkSetter
+		ARG 3 random
+		ARG 4 trunkPos
+		ARG 5 config
+		ARG 6 treePos
+		ARG 7 x
+		ARG 8 y
+		ARG 9 z

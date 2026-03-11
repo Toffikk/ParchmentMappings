@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/level/levelgen/blockpredicates/MatchingFluidsPredicate
+	METHOD <init> (Lnet/minecraft/core/Vec3i;Lnet/minecraft/core/HolderSet;)V
+		ARG 1 offset
+		ARG 2 fluids
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/levelgen/blockpredicates/MatchingFluidsPredicate;)Lnet/minecraft/core/HolderSet;
+		ARG 0 c
+	METHOD lambda$static$1 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

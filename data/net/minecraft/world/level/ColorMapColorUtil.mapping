@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/ColorMapColorUtil
+	METHOD get (DD[II)I
+		ARG 0 temp
+		ARG 2 rain
+		ARG 4 pixels
+		ARG 5 defaultMapColor

@@ -1,0 +1,26 @@
+CLASS net/minecraft/world/item/component/ItemContainerContents
+	METHOD <init> (I)V
+		ARG 1 size
+	METHOD <init> (Ljava/util/List;)V
+		ARG 1 items
+	METHOD <init> (Lnet/minecraft/core/NonNullList;)V
+		ARG 1 items
+	METHOD copyInto (Lnet/minecraft/core/NonNullList;)V
+		ARG 1 destination
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 obj
+	METHOD findLastNonEmptySlot (Ljava/util/List;)I
+		ARG 0 itemStacks
+	METHOD fromItems (Ljava/util/List;)Lnet/minecraft/world/item/component/ItemContainerContents;
+		ARG 0 itemStacks
+	METHOD fromSlots (Ljava/util/List;)Lnet/minecraft/world/item/component/ItemContainerContents;
+		ARG 0 slots
+	METHOD lambda$nonEmptyItems$2 (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 itemStack
+	METHOD lambda$nonEmptyStream$1 (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 itemStack
+	METHOD lambda$static$0 (Lnet/minecraft/world/item/component/ItemContainerContents;)Ljava/util/List;
+		ARG 0 c
+	CLASS Slot
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i

@@ -1,0 +1,16 @@
+CLASS net/minecraft/world/level/block/StemBlock
+	METHOD <init> (Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+		ARG 1 fruit
+		ARG 2 attachedStem
+		ARG 3 seed
+		ARG 4 properties
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/block/StemBlock;)Lnet/minecraft/resources/ResourceKey;
+		ARG 0 b
+	METHOD lambda$static$1 (Lnet/minecraft/world/level/block/StemBlock;)Lnet/minecraft/resources/ResourceKey;
+		ARG 0 b
+	METHOD lambda$static$2 (Lnet/minecraft/world/level/block/StemBlock;)Lnet/minecraft/resources/ResourceKey;
+		ARG 0 b
+	METHOD lambda$static$3 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD lambda$static$4 (I)Lnet/minecraft/world/phys/shapes/VoxelShape;
+		ARG 0 age

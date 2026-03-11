@@ -1,0 +1,24 @@
+CLASS net/minecraft/world/entity/monster/Strider
+	METHOD checkStriderSpawnRules (Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/core/BlockPos;Lnet/minecraft/util/RandomSource;)Z
+		ARG 0 ignoredType
+		ARG 1 level
+		ARG 2 ignoredSpawnType
+		ARG 3 pos
+		ARG 4 ignoredRandom
+	METHOD lambda$registerGoals$0 (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 i
+	METHOD setSuffocating (Z)V
+		ARG 1 flag
+	METHOD spawnJockey (Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData;
+		ARG 1 level
+		ARG 2 difficulty
+		ARG 3 jockey
+		ARG 4 jockeyGroupData
+	CLASS StriderGoToLavaGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Strider;D)V
+			ARG 1 strider
+			ARG 2 speedModifier
+	CLASS StriderPathNavigation
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Strider;Lnet/minecraft/world/level/Level;)V
+			ARG 1 mob
+			ARG 2 level

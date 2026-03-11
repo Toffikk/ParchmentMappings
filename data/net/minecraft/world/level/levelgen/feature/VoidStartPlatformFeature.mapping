@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/levelgen/feature/VoidStartPlatformFeature
+	METHOD checkerboardDistance (IIII)I
+		ARG 0 xa
+		ARG 1 za
+		ARG 2 xb
+		ARG 3 zb

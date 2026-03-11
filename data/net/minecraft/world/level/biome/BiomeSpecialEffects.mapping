@@ -1,0 +1,21 @@
+CLASS net/minecraft/world/level/biome/BiomeSpecialEffects
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	CLASS Builder
+		METHOD dryFoliageColorOverride (I)Lnet/minecraft/world/level/biome/BiomeSpecialEffects$Builder;
+			ARG 1 dryFoliageColor
+		METHOD foliageColorOverride (I)Lnet/minecraft/world/level/biome/BiomeSpecialEffects$Builder;
+			ARG 1 foliageColor
+		METHOD grassColorModifier (Lnet/minecraft/world/level/biome/BiomeSpecialEffects$GrassColorModifier;)Lnet/minecraft/world/level/biome/BiomeSpecialEffects$Builder;
+			ARG 1 grassModifier
+		METHOD grassColorOverride (I)Lnet/minecraft/world/level/biome/BiomeSpecialEffects$Builder;
+			ARG 1 grassColor
+		METHOD waterColor (I)Lnet/minecraft/world/level/biome/BiomeSpecialEffects$Builder;
+			ARG 1 waterColor
+	CLASS GrassColorModifier
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+			ARG 3 name
+		METHOD modifyColor (DDI)I
+			ARG 1 x
+			ARG 3 z
+			ARG 5 baseColor

@@ -1,0 +1,12 @@
+CLASS net/minecraft/world/level/storage/loot/entries/EntryGroup
+	METHOD lambda$compose$0 (Lnet/minecraft/world/level/storage/loot/entries/ComposableEntryContainer;Lnet/minecraft/world/level/storage/loot/entries/ComposableEntryContainer;Lnet/minecraft/world/level/storage/loot/LootContext;Ljava/util/function/Consumer;)Z
+		ARG 2 context
+		ARG 3 output
+	METHOD lambda$compose$1 (Ljava/util/List;Lnet/minecraft/world/level/storage/loot/LootContext;Ljava/util/function/Consumer;)Z
+		ARG 1 context
+		ARG 2 output
+	METHOD list ([Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/entries/EntryGroup$Builder;
+		ARG 0 entries
+	CLASS Builder
+		METHOD <init> ([Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)V
+			ARG 1 entries

@@ -1,0 +1,12 @@
+CLASS net/minecraft/world/level/levelgen/feature/foliageplacers/RandomSpreadFoliagePlacer
+	METHOD <init> (Lnet/minecraft/util/valueproviders/IntProvider;Lnet/minecraft/util/valueproviders/IntProvider;Lnet/minecraft/util/valueproviders/IntProvider;I)V
+		ARG 1 radius
+		ARG 2 offset
+		ARG 3 foliageHeight
+		ARG 4 leafPlacementAttempts
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/levelgen/feature/foliageplacers/RandomSpreadFoliagePlacer;)Lnet/minecraft/util/valueproviders/IntProvider;
+		ARG 0 c
+	METHOD lambda$static$1 (Lnet/minecraft/world/level/levelgen/feature/foliageplacers/RandomSpreadFoliagePlacer;)Ljava/lang/Integer;
+		ARG 0 c
+	METHOD lambda$static$2 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

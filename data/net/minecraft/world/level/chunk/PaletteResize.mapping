@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/chunk/PaletteResize
+	METHOD lambda$noResizeExpected$0 (ILjava/lang/Object;)I
+		ARG 0 bits
+		ARG 1 lastAddedValue
+	METHOD onResize (ILjava/lang/Object;)I
+		ARG 1 bits
+		ARG 2 lastAddedValue

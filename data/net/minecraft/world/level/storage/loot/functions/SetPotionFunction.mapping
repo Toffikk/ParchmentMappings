@@ -1,0 +1,12 @@
+CLASS net/minecraft/world/level/storage/loot/functions/SetPotionFunction
+	METHOD <init> (Ljava/util/List;Lnet/minecraft/core/Holder;)V
+		ARG 1 predicates
+		ARG 2 potion
+	METHOD lambda$setPotion$2 (Lnet/minecraft/core/Holder;Ljava/util/List;)Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction;
+		ARG 1 conditions
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/storage/loot/functions/SetPotionFunction;)Lnet/minecraft/core/Holder;
+		ARG 0 f
+	METHOD lambda$static$1 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD setPotion (Lnet/minecraft/core/Holder;)Lnet/minecraft/world/level/storage/loot/functions/LootItemConditionalFunction$Builder;
+		ARG 0 value

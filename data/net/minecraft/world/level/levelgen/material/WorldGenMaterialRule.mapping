@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/levelgen/material/WorldGenMaterialRule
+	METHOD apply (Lnet/minecraft/world/level/levelgen/NoiseChunk;III)Lnet/minecraft/world/level/block/state/BlockState;
+		ARG 1 noiseChunk
+		ARG 2 posX
+		ARG 3 posY
+		ARG 4 posZ

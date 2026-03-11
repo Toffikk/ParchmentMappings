@@ -1,0 +1,13 @@
+CLASS net/minecraft/world/level/storage/loot/functions/SetComponentsFunction
+	METHOD <init> (Ljava/util/List;Lnet/minecraft/core/component/DataComponentPatch;)V
+		ARG 1 predicates
+		ARG 2 components
+	METHOD lambda$setComponent$2 (Lnet/minecraft/core/component/DataComponentType;Ljava/lang/Object;Ljava/util/List;)Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction;
+		ARG 2 conditions
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/storage/loot/functions/SetComponentsFunction;)Lnet/minecraft/core/component/DataComponentPatch;
+		ARG 0 f
+	METHOD lambda$static$1 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD setComponent (Lnet/minecraft/core/component/DataComponentType;Ljava/lang/Object;)Lnet/minecraft/world/level/storage/loot/functions/LootItemConditionalFunction$Builder;
+		ARG 0 type
+		ARG 1 value

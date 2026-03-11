@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/level/levelgen/feature/ScatteredOreFeature
+	METHOD getRandomPlacementInOneAxisRelativeToOrigin (Lnet/minecraft/util/RandomSource;I)I
+		ARG 1 random
+		ARG 2 maxDistanceFromOrigin
+	METHOD offsetTargetPos (Lnet/minecraft/core/BlockPos$MutableBlockPos;Lnet/minecraft/util/RandomSource;Lnet/minecraft/core/BlockPos;I)V
+		ARG 1 targetPos
+		ARG 2 random
+		ARG 3 origin
+		ARG 4 maxDistFromOriginForThisTry

@@ -1,0 +1,13 @@
+CLASS net/minecraft/world/entity/monster/breeze/Breeze
+	METHOD emitGroundParticles (I)V
+		ARG 1 amount
+	METHOD lambda$getHurtBy$1 (Lnet/minecraft/world/entity/Entity;)Z
+		ARG 0 entity
+	METHOD lambda$getHurtBy$2 (Lnet/minecraft/world/entity/Entity;)Lnet/minecraft/world/entity/LivingEntity;
+		ARG 0 entity
+	METHOD lambda$static$0 (Lnet/minecraft/world/entity/projectile/Projectile;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/util/RandomSource;)V
+		ARG 0 projectile
+		ARG 1 entity
+		ARG 2 random
+	METHOD withinInnerCircleRange (Lnet/minecraft/world/phys/Vec3;)Z
+		ARG 1 target

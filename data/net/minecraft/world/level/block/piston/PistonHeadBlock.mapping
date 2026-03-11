@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/block/piston/PistonHeadBlock
+	METHOD isFittingBase (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 armState
+		ARG 2 potentialBase

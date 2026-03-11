@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/inventory/SimpleContainerData
+	METHOD <init> (I)V
+		ARG 1 count

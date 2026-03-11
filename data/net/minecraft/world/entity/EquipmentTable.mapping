@@ -1,0 +1,15 @@
+CLASS net/minecraft/world/entity/EquipmentTable
+	METHOD <init> (Lnet/minecraft/resources/ResourceKey;F)V
+		ARG 1 lootTable
+		ARG 2 dropChance
+	METHOD createForAllSlots (F)Ljava/util/Map;
+		ARG 0 dropChance
+	METHOD createForAllSlots (Ljava/util/List;F)Ljava/util/Map;
+		ARG 0 slots
+		ARG 1 dropChance
+	METHOD lambda$static$0 (Lcom/mojang/datafixers/util/Either;)Ljava/util/Map;
+		ARG 0 either
+	METHOD lambda$static$1 (Ljava/util/Map;)Lcom/mojang/datafixers/util/Either;
+		ARG 0 provider
+	METHOD lambda$static$2 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

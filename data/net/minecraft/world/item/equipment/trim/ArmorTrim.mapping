@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/item/equipment/trim/ArmorTrim
+	METHOD lambda$layerAssetId$1 (Ljava/lang/String;Lnet/minecraft/world/item/equipment/trim/MaterialAssetGroup$AssetInfo;Ljava/lang/String;)Ljava/lang/String;
+		ARG 2 patternPath
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD layerAssetId (Ljava/lang/String;Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/resources/Identifier;
+		ARG 1 layerAssetPrefix
+		ARG 2 equipmentAsset

@@ -4,19 +4,48 @@ CLASS net/minecraft/world/inventory/Slot
 		ARG 2 slot
 		ARG 3 x
 		ARG 4 y
+	METHOD allowModification (Lnet/minecraft/world/entity/player/Player;)Z
+		ARG 1 player
+	METHOD checkTakeAchievements (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 carried
 	METHOD getMaxStackSize (Lnet/minecraft/world/item/ItemStack;)I
 		ARG 1 itemStack
+	METHOD lambda$safeTake$0 (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 2 item
 	METHOD mayPickup (Lnet/minecraft/world/entity/player/Player;)Z
 		ARG 1 player
 	METHOD mayPlace (Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 1 itemStack
+	METHOD onQuickCraft (Lnet/minecraft/world/item/ItemStack;I)V
+		ARG 1 picked
+		ARG 2 count
+	METHOD onQuickCraft (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 picked
+		ARG 2 original
+	METHOD onSwapCraft (I)V
+		ARG 1 count
 	METHOD onTake (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/ItemStack;)V
 		ARG 1 player
 		ARG 2 carried
 	METHOD remove (I)Lnet/minecraft/world/item/ItemStack;
 		ARG 1 amount
+	METHOD safeInsert (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/ItemStack;
+		ARG 1 stack
+	METHOD safeInsert (Lnet/minecraft/world/item/ItemStack;I)Lnet/minecraft/world/item/ItemStack;
+		ARG 1 inputStack
+		ARG 2 inputAmount
+	METHOD safeTake (IILnet/minecraft/world/entity/player/Player;)Lnet/minecraft/world/item/ItemStack;
+		ARG 1 amount
+		ARG 2 maxAmount
+		ARG 3 player
 	METHOD set (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 itemStack
+	METHOD setByPlayer (Lnet/minecraft/world/item/ItemStack;)V
 		ARG 1 itemStack
 	METHOD setByPlayer (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)V
 		ARG 1 itemStack
 		ARG 2 previous
+	METHOD tryRemove (IILnet/minecraft/world/entity/player/Player;)Ljava/util/Optional;
+		ARG 1 amount
+		ARG 2 maxAmount
+		ARG 3 player

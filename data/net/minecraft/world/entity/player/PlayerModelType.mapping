@@ -1,0 +1,12 @@
+CLASS net/minecraft/world/entity/player/PlayerModelType
+	METHOD <init> (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+		ARG 3 id
+		ARG 4 legacyServicesId
+	METHOD byLegacyServicesName (Ljava/lang/String;)Lnet/minecraft/world/entity/player/PlayerModelType;
+		ARG 0 name
+	METHOD lambda$static$0 (Lnet/minecraft/world/entity/player/PlayerModelType;)Ljava/lang/String;
+		ARG 0 e
+	METHOD lambda$static$1 (Ljava/lang/Boolean;)Lnet/minecraft/world/entity/player/PlayerModelType;
+		ARG 0 slim
+	METHOD lambda$static$2 (Lnet/minecraft/world/entity/player/PlayerModelType;)Ljava/lang/Boolean;
+		ARG 0 type

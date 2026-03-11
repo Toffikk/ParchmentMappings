@@ -1,0 +1,25 @@
+CLASS net/minecraft/world/waypoints/Waypoint
+	METHOD addHideAttribute (Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item$Properties;
+		ARG 0 properties
+	CLASS Icon
+		METHOD <init> (Lnet/minecraft/resources/ResourceKey;Ljava/util/Optional;)V
+			ARG 1 style
+			ARG 2 color
+		METHOD cloneAndAssignStyle (Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/waypoints/Waypoint$Icon;
+			ARG 1 livingEntity
+		METHOD copyFrom (Lnet/minecraft/world/waypoints/Waypoint$Icon;)V
+			ARG 1 other
+		METHOD lambda$cloneAndAssignStyle$5 (Lnet/minecraft/world/scores/PlayerTeam;)Ljava/lang/Integer;
+			ARG 0 t
+		METHOD lambda$cloneAndAssignStyle$6 (Ljava/lang/Integer;)Ljava/lang/Integer;
+			ARG 0 teamColor
+		METHOD lambda$static$0 (Lnet/minecraft/world/waypoints/Waypoint$Icon;)Lnet/minecraft/resources/ResourceKey;
+			ARG 0 icon
+		METHOD lambda$static$1 (Lnet/minecraft/world/waypoints/Waypoint$Icon;)Ljava/util/Optional;
+			ARG 0 icon
+		METHOD lambda$static$2 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+		METHOD lambda$static$3 (Lnet/minecraft/world/waypoints/Waypoint$Icon;)Lnet/minecraft/resources/ResourceKey;
+			ARG 0 icon
+		METHOD lambda$static$4 (Lnet/minecraft/world/waypoints/Waypoint$Icon;)Ljava/util/Optional;
+			ARG 0 icon

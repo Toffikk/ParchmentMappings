@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/entity/monster/illager/Vindicator
+	METHOD lambda$static$0 (Lnet/minecraft/world/Difficulty;)Z
+		ARG 0 d
+	CLASS VindicatorJohnnyAttackGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/illager/Vindicator;)V
+			ARG 1 mob
+		METHOD lambda$new$0 (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/server/level/ServerLevel;)Z
+			ARG 0 target
+			ARG 1 level

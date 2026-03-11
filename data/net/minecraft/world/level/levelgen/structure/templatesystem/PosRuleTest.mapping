@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/levelgen/structure/templatesystem/PosRuleTest
+	METHOD test (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;Lnet/minecraft/util/RandomSource;)Z
+		ARG 1 inTemplatePos
+		ARG 2 worldPos
+		ARG 3 worldReference
+		ARG 4 random

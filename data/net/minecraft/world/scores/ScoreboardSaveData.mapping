@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/scores/ScoreboardSaveData
+	METHOD <init> (Lnet/minecraft/world/scores/ScoreboardSaveData$Packed;)V
+		ARG 1 data
+	METHOD setData (Lnet/minecraft/world/scores/ScoreboardSaveData$Packed;)V
+		ARG 1 data
+	CLASS Packed
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i

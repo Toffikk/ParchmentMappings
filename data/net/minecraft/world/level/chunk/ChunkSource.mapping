@@ -4,11 +4,26 @@ CLASS net/minecraft/world/level/chunk/ChunkSource
 		ARG 2 z
 		ARG 3 targetStatus
 		ARG 4 loadOrGenerate
+	METHOD getChunk (IIZ)Lnet/minecraft/world/level/chunk/LevelChunk;
+		ARG 1 x
+		ARG 2 z
+		ARG 3 loadOrGenerate
+	METHOD getChunkNow (II)Lnet/minecraft/world/level/chunk/LevelChunk;
+		ARG 1 x
+		ARG 2 z
+	METHOD hasChunk (II)Z
+		ARG 1 x
+		ARG 2 z
 	METHOD onSectionEmptinessChanged (IIIZ)V
 		ARG 1 sectionX
 		ARG 2 sectionY
 		ARG 3 sectionZ
 		ARG 4 empty
+	METHOD setSpawnSettings (Z)V
+		ARG 1 spawnEnemies
 	METHOD tick (Ljava/util/function/BooleanSupplier;Z)V
 		ARG 1 haveTime
 		ARG 2 tickChunks
+	METHOD updateChunkForced (Lnet/minecraft/world/level/ChunkPos;Z)Z
+		ARG 1 pos
+		ARG 2 forced

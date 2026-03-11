@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/storage/loot/providers/score/ScoreboardNameProviders
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/storage/loot/providers/score/ScoreboardNameProvider;)Lcom/mojang/datafixers/util/Either;
+		ARG 0 provider
+	METHOD register (Ljava/lang/String;Lcom/mojang/serialization/MapCodec;)Lnet/minecraft/world/level/storage/loot/providers/score/LootScoreProviderType;
+		ARG 0 name
+		ARG 1 codec

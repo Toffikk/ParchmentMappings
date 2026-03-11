@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/entity/monster/illager/AbstractIllager
+	CLASS RaiderOpenDoorGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/illager/AbstractIllager;Lnet/minecraft/world/entity/raid/Raider;)V
+			ARG 2 raider

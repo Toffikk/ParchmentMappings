@@ -1,0 +1,24 @@
+CLASS net/minecraft/world/level/storage/loot/functions/EnchantRandomlyFunction
+	METHOD <init> (Ljava/util/List;Ljava/util/Optional;Z)V
+		ARG 1 predicates
+		ARG 2 options
+		ARG 3 onlyCompatible
+	METHOD enchantItem (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/core/Holder;Lnet/minecraft/util/RandomSource;)Lnet/minecraft/world/item/ItemStack;
+		ARG 0 itemStack
+		ARG 1 enchantment
+		ARG 2 random
+	METHOD lambda$run$4 (ZLnet/minecraft/world/item/ItemStack;Lnet/minecraft/core/Holder;)Z
+		ARG 2 candidate
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/storage/loot/functions/EnchantRandomlyFunction;)Ljava/util/Optional;
+		ARG 0 f
+	METHOD lambda$static$1 (Lnet/minecraft/world/level/storage/loot/functions/EnchantRandomlyFunction;)Ljava/lang/Boolean;
+		ARG 0 f
+	METHOD lambda$static$2 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD randomApplicableEnchantment (Lnet/minecraft/core/HolderLookup$Provider;)Lnet/minecraft/world/level/storage/loot/functions/EnchantRandomlyFunction$Builder;
+		ARG 0 registries
+	CLASS Builder
+		METHOD withEnchantment (Lnet/minecraft/core/Holder;)Lnet/minecraft/world/level/storage/loot/functions/EnchantRandomlyFunction$Builder;
+			ARG 1 enchantment
+		METHOD withOneOf (Lnet/minecraft/core/HolderSet;)Lnet/minecraft/world/level/storage/loot/functions/EnchantRandomlyFunction$Builder;
+			ARG 1 enchantments

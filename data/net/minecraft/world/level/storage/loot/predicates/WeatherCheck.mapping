@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/level/storage/loot/predicates/WeatherCheck
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD test (Ljava/lang/Object;)Z
+		ARG 1 context
+	CLASS Builder
+		METHOD setRaining (Z)Lnet/minecraft/world/level/storage/loot/predicates/WeatherCheck$Builder;
+			ARG 1 raining
+		METHOD setThundering (Z)Lnet/minecraft/world/level/storage/loot/predicates/WeatherCheck$Builder;
+			ARG 1 thundering

@@ -1,0 +1,15 @@
+CLASS net/minecraft/world/level/block/NoteBlock
+	METHOD getCustomSoundId (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/resources/Identifier;
+		ARG 1 level
+		ARG 2 pos
+	METHOD getPitchFromNote (I)F
+		ARG 0 twoOctaveRangeNote
+	METHOD playNote (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)V
+		ARG 1 source
+		ARG 2 state
+		ARG 3 level
+		ARG 4 pos
+	METHOD setInstrument (Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/state/BlockState;
+		ARG 1 level
+		ARG 2 position
+		ARG 3 state

@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/level/levelgen/structure/templatesystem/RandomBlockMatchTest
+	METHOD <init> (Lnet/minecraft/world/level/block/Block;F)V
+		ARG 1 block
+		ARG 2 probability
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/levelgen/structure/templatesystem/RandomBlockMatchTest;)Lnet/minecraft/world/level/block/Block;
+		ARG 0 t
+	METHOD lambda$static$1 (Lnet/minecraft/world/level/levelgen/structure/templatesystem/RandomBlockMatchTest;)Ljava/lang/Float;
+		ARG 0 t
+	METHOD lambda$static$2 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/entity/MobCategory
+	METHOD <init> (Ljava/lang/String;ILjava/lang/String;IZZI)V
+		ARG 3 name
+		ARG 4 max
+		ARG 5 isFriendly
+		ARG 6 isPersistent
+		ARG 7 despawnDistance

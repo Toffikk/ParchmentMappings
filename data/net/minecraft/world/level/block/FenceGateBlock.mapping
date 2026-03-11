@@ -1,0 +1,17 @@
+CLASS net/minecraft/world/level/block/FenceGateBlock
+	METHOD <init> (Lnet/minecraft/world/level/block/state/properties/WoodType;Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+		ARG 1 type
+		ARG 2 properties
+	METHOD connectsToDirection (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/Direction;)Z
+		ARG 0 state
+		ARG 1 direction
+	METHOD isWall (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 state
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/block/FenceGateBlock;)Lnet/minecraft/world/level/block/state/properties/WoodType;
+		ARG 0 b
+	METHOD lambda$static$1 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD lambda$static$2 (Lnet/minecraft/world/phys/shapes/VoxelShape;)Lnet/minecraft/world/phys/shapes/VoxelShape;
+		ARG 0 v
+	METHOD lambda$static$3 (Lnet/minecraft/world/phys/shapes/VoxelShape;)Lnet/minecraft/world/phys/shapes/VoxelShape;
+		ARG 0 v

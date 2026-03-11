@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/level/block/state/properties/TestBlockMode
+	METHOD <init> (Ljava/lang/String;IILjava/lang/String;)V
+		ARG 3 id
+		ARG 4 name
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/block/state/properties/TestBlockMode;)I
+		ARG 0 mode
+	METHOD lambda$static$1 (Lnet/minecraft/world/level/block/state/properties/TestBlockMode;)I
+		ARG 0 mode

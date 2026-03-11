@@ -1,0 +1,11 @@
+CLASS net/minecraft/world/level/block/TrialSpawnerBlock
+	METHOD lambda$getTicker$0 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/TrialSpawnerBlockEntity;)V
+		ARG 1 innerLevel
+		ARG 2 pos
+		ARG 3 state
+		ARG 4 entity
+	METHOD lambda$getTicker$1 (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/TrialSpawnerBlockEntity;)V
+		ARG 0 innerLevel
+		ARG 1 pos
+		ARG 2 state
+		ARG 3 entity

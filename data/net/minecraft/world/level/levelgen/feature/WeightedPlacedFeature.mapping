@@ -1,0 +1,15 @@
+CLASS net/minecraft/world/level/levelgen/feature/WeightedPlacedFeature
+	METHOD <init> (Lnet/minecraft/core/Holder;F)V
+		ARG 1 feature
+		ARG 2 chance
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/levelgen/feature/WeightedPlacedFeature;)Lnet/minecraft/core/Holder;
+		ARG 0 f
+	METHOD lambda$static$1 (Lnet/minecraft/world/level/levelgen/feature/WeightedPlacedFeature;)Ljava/lang/Float;
+		ARG 0 f
+	METHOD lambda$static$2 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD place (Lnet/minecraft/world/level/WorldGenLevel;Lnet/minecraft/world/level/chunk/ChunkGenerator;Lnet/minecraft/util/RandomSource;Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 level
+		ARG 2 chunkGenerator
+		ARG 3 random
+		ARG 4 origin

@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/level/storage/loot/BuiltInLootTables
+	METHOD lambda$makeDyeKeyMap$0 (Ljava/lang/String;Lnet/minecraft/world/item/DyeColor;)Lnet/minecraft/resources/ResourceKey;
+		ARG 1 dye
+	METHOD makeDyeKeyMap (Ljava/lang/String;)Ljava/util/Map;
+		ARG 0 prefix
+	METHOD register (Ljava/lang/String;)Lnet/minecraft/resources/ResourceKey;
+		ARG 0 location
+	METHOD register (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/resources/ResourceKey;
+		ARG 0 location

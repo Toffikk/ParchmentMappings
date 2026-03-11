@@ -1,0 +1,15 @@
+CLASS net/minecraft/world/entity/projectile/EvokerFangs
+	METHOD <init> (Lnet/minecraft/world/level/Level;DDDFILnet/minecraft/world/entity/LivingEntity;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 rotaionRadians
+		ARG 9 warmupDelayTicks
+		ARG 10 owner
+	METHOD dealDamageTo (Lnet/minecraft/world/entity/LivingEntity;)V
+		ARG 1 entity
+	METHOD getAnimationProgress (F)F
+		ARG 1 a
+	METHOD setOwner (Lnet/minecraft/world/entity/LivingEntity;)V
+		ARG 1 owner

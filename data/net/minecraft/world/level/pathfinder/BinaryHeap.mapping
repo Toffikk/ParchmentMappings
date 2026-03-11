@@ -1,0 +1,12 @@
+CLASS net/minecraft/world/level/pathfinder/BinaryHeap
+	METHOD changeCost (Lnet/minecraft/world/level/pathfinder/Node;F)V
+		ARG 1 node
+		ARG 2 newCost
+	METHOD downHeap (I)V
+		ARG 1 idx
+	METHOD insert (Lnet/minecraft/world/level/pathfinder/Node;)Lnet/minecraft/world/level/pathfinder/Node;
+		ARG 1 node
+	METHOD remove (Lnet/minecraft/world/level/pathfinder/Node;)V
+		ARG 1 node
+	METHOD upHeap (I)V
+		ARG 1 idx

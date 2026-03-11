@@ -1,0 +1,12 @@
+CLASS net/minecraft/world/entity/npc/InventoryCarrier
+	METHOD lambda$readInventoryFromTag$0 (Lnet/minecraft/world/level/storage/ValueInput$TypedInputList;)V
+		ARG 1 list
+	METHOD pickUpItem (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/entity/npc/InventoryCarrier;Lnet/minecraft/world/entity/item/ItemEntity;)V
+		ARG 0 level
+		ARG 1 mob
+		ARG 2 inventoryCarrier
+		ARG 3 itemEntity
+	METHOD readInventoryFromTag (Lnet/minecraft/world/level/storage/ValueInput;)V
+		ARG 1 input
+	METHOD writeInventoryToTag (Lnet/minecraft/world/level/storage/ValueOutput;)V
+		ARG 1 output

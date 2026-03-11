@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/storage/loot/functions/LootItemFunction
+	METHOD decorate (Ljava/util/function/BiFunction;Ljava/util/function/Consumer;Lnet/minecraft/world/level/storage/loot/LootContext;)Ljava/util/function/Consumer;
+		ARG 0 function
+		ARG 1 output
+		ARG 2 context
+	METHOD lambda$decorate$0 (Ljava/util/function/Consumer;Ljava/util/function/BiFunction;Lnet/minecraft/world/level/storage/loot/LootContext;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 3 drop

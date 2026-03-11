@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/block/SkullBlock
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	CLASS Types
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+			ARG 3 name

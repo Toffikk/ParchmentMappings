@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/item/FireChargeItem
+	METHOD lambda$createDispenseConfig$0 (Lnet/minecraft/core/dispenser/BlockSource;Lnet/minecraft/core/Direction;)Lnet/minecraft/core/Position;
+		ARG 0 source
+		ARG 1 direction
+	METHOD playSound (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)V
+		ARG 1 level
+		ARG 2 pos

@@ -1,4 +1,21 @@
 CLASS net/minecraft/world/level/lighting/LevelLightEngine
+	METHOD <init> (Lnet/minecraft/world/level/chunk/LightChunkGetter;ZZ)V
+		ARG 1 chunkSource
+		ARG 2 hasBlockLight
+		ARG 3 hasSkyLight
+	METHOD getDebugData (Lnet/minecraft/world/level/LightLayer;Lnet/minecraft/core/SectionPos;)Ljava/lang/String;
+		ARG 1 layer
+		ARG 2 pos
+	METHOD getDebugSectionType (Lnet/minecraft/world/level/LightLayer;Lnet/minecraft/core/SectionPos;)Lnet/minecraft/world/level/lighting/LayerLightSectionStorage$SectionType;
+		ARG 1 layer
+		ARG 2 pos
+	METHOD getLayerListener (Lnet/minecraft/world/level/LightLayer;)Lnet/minecraft/world/level/lighting/LayerLightEventListener;
+		ARG 1 layer
+	METHOD getRawBrightness (Lnet/minecraft/core/BlockPos;I)I
+		ARG 1 pos
+		ARG 2 skyDampen
+	METHOD lightOnInColumn (J)Z
+		ARG 1 sectionZeroNode
 	METHOD queueSectionData (Lnet/minecraft/world/level/LightLayer;Lnet/minecraft/core/SectionPos;Lnet/minecraft/world/level/chunk/DataLayer;)V
 		ARG 1 layer
 		ARG 2 pos

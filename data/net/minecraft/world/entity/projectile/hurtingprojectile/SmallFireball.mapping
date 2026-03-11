@@ -1,0 +1,11 @@
+CLASS net/minecraft/world/entity/projectile/hurtingprojectile/SmallFireball
+	METHOD <init> (Lnet/minecraft/world/level/Level;DDDLnet/minecraft/world/phys/Vec3;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 direction
+	METHOD <init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/phys/Vec3;)V
+		ARG 1 level
+		ARG 2 mob
+		ARG 3 direction

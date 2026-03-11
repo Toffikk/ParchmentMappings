@@ -1,0 +1,11 @@
+CLASS net/minecraft/world/entity/WalkAnimationState
+	METHOD position (F)F
+		ARG 1 partialTicks
+	METHOD setSpeed (F)V
+		ARG 1 speed
+	METHOD speed (F)F
+		ARG 1 partialTicks
+	METHOD update (FFF)V
+		ARG 1 targetSpeed
+		ARG 2 factor
+		ARG 3 positionScale

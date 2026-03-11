@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/entity/projectile/hurtingprojectile/DragonFireball
+	METHOD <init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/phys/Vec3;)V
+		ARG 1 level
+		ARG 2 mob
+		ARG 3 direction

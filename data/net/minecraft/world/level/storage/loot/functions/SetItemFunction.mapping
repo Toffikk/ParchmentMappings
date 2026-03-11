@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/level/storage/loot/functions/SetItemFunction
+	METHOD <init> (Ljava/util/List;Lnet/minecraft/core/Holder;)V
+		ARG 1 predicates
+		ARG 2 item
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/storage/loot/functions/SetItemFunction;)Lnet/minecraft/core/Holder;
+		ARG 0 f
+	METHOD lambda$static$1 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

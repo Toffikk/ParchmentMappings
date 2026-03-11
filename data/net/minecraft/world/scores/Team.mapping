@@ -1,0 +1,21 @@
+CLASS net/minecraft/world/scores/Team
+	METHOD getFormattedName (Lnet/minecraft/network/chat/Component;)Lnet/minecraft/network/chat/MutableComponent;
+		ARG 1 teamMemberName
+	METHOD isAlliedTo (Lnet/minecraft/world/scores/Team;)Z
+		ARG 1 other
+	CLASS CollisionRule
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;I)V
+			ARG 3 name
+			ARG 4 id
+		METHOD lambda$static$0 (Lnet/minecraft/world/scores/Team$CollisionRule;)I
+			ARG 0 r
+		METHOD lambda$static$1 (Lnet/minecraft/world/scores/Team$CollisionRule;)I
+			ARG 0 r
+	CLASS Visibility
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;I)V
+			ARG 3 name
+			ARG 4 id
+		METHOD lambda$static$0 (Lnet/minecraft/world/scores/Team$Visibility;)I
+			ARG 0 v
+		METHOD lambda$static$1 (Lnet/minecraft/world/scores/Team$Visibility;)I
+			ARG 0 v

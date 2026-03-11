@@ -1,0 +1,16 @@
+CLASS net/minecraft/world/inventory/BeaconMenu
+	METHOD <init> (ILnet/minecraft/world/Container;)V
+		ARG 1 containerId
+		ARG 2 inventory
+	METHOD <init> (ILnet/minecraft/world/Container;Lnet/minecraft/world/inventory/ContainerData;Lnet/minecraft/world/inventory/ContainerLevelAccess;)V
+		ARG 1 containerId
+		ARG 2 inventory
+		ARG 3 beaconData
+		ARG 4 access
+	METHOD decodeEffect (I)Lnet/minecraft/core/Holder;
+		ARG 0 id
+	METHOD encodeEffect (Lnet/minecraft/core/Holder;)I
+		ARG 0 mobEffect
+	METHOD updateEffects (Ljava/util/Optional;Ljava/util/Optional;)V
+		ARG 1 primary
+		ARG 2 secondary

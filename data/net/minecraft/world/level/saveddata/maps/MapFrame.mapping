@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/saveddata/maps/MapFrame
+	METHOD frameId (Lnet/minecraft/core/BlockPos;)Ljava/lang/String;
+		ARG 0 pos
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

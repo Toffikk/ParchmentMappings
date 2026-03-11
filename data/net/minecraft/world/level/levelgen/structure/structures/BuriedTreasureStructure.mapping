@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/levelgen/structure/structures/BuriedTreasureStructure
+	METHOD generatePieces (Lnet/minecraft/world/level/levelgen/structure/pieces/StructurePiecesBuilder;Lnet/minecraft/world/level/levelgen/structure/Structure$GenerationContext;)V
+		ARG 0 builder
+		ARG 1 context
+	METHOD lambda$findGenerationPoint$0 (Lnet/minecraft/world/level/levelgen/structure/Structure$GenerationContext;Lnet/minecraft/world/level/levelgen/structure/pieces/StructurePiecesBuilder;)V
+		ARG 1 builder

@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/entity/monster/skeleton/Bogged
+	METHOD lambda$spawnShearedMushrooms$0 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 l
+		ARG 2 drop
+	METHOD setSheared (Z)V
+		ARG 1 sheared
+	METHOD spawnShearedMushrooms (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 level
+		ARG 2 tool

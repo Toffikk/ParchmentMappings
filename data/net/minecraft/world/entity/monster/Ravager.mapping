@@ -1,0 +1,12 @@
+CLASS net/minecraft/world/entity/monster/Ravager
+	METHOD lambda$registerGoals$3 (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/server/level/ServerLevel;)Z
+		ARG 0 target
+		ARG 1 level
+	METHOD lambda$static$0 (Lnet/minecraft/world/entity/Entity;)Z
+		ARG 0 entity
+	METHOD lambda$static$1 (Lnet/minecraft/world/entity/Entity;)Z
+		ARG 0 entity
+	METHOD lambda$static$2 (Lnet/minecraft/world/entity/LivingEntity;)Z
+		ARG 0 e
+	METHOD strongKnockback (Lnet/minecraft/world/entity/Entity;)V
+		ARG 1 entity

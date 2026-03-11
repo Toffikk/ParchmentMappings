@@ -1,7 +1,72 @@
 CLASS net/minecraft/world/level/chunk/storage/SectionStorage
+	METHOD <init> (Lnet/minecraft/world/level/chunk/storage/SimpleRegionStorage;Lcom/mojang/serialization/Codec;Ljava/util/function/Function;Ljava/util/function/BiFunction;Ljava/util/function/Function;Lnet/minecraft/core/RegistryAccess;Lnet/minecraft/world/level/chunk/storage/ChunkIOErrorReporter;Lnet/minecraft/world/level/LevelHeightAccessor;)V
+		ARG 1 simpleRegionStorage
+		ARG 2 codec
+		ARG 3 packer
+		ARG 4 unpacker
+		ARG 5 factory
+		ARG 6 registryAccess
+		ARG 7 errorReporter
+		ARG 8 levelHeightAccessor
+	METHOD flush (Lnet/minecraft/world/level/ChunkPos;)V
+		ARG 1 chunkPos
+	METHOD get (J)Ljava/util/Optional;
+		ARG 1 sectionPos
+	METHOD getKey (Lnet/minecraft/world/level/ChunkPos;I)J
+		ARG 0 chunkPos
+		ARG 1 sectionY
+	METHOD getOrCreate (J)Ljava/lang/Object;
+		ARG 1 sectionPos
+	METHOD getOrLoad (J)Ljava/util/Optional;
+		ARG 1 sectionPos
+	METHOD lambda$flushAll$0 (J)V
+		ARG 1 pos
+	METHOD lambda$prefetch$2 (Lnet/minecraft/world/level/ChunkPos;J)Ljava/util/concurrent/CompletableFuture;
+		ARG 2 k
+	METHOD lambda$tryRead$4 (Lnet/minecraft/resources/RegistryOps;Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/world/level/chunk/storage/SectionStorage$PackedChunk;
+		ARG 2 tag
+	METHOD lambda$tryRead$5 (Lnet/minecraft/resources/RegistryOps;Ljava/util/Optional;)Ljava/util/Optional;
+		ARG 2 result
+	METHOD lambda$tryRead$6 (Lnet/minecraft/world/level/ChunkPos;Ljava/lang/Throwable;)Ljava/util/Optional;
+		ARG 2 throwable
+	METHOD lambda$unpackChunk$3 (Lnet/minecraft/world/level/ChunkPos;J)Ljava/util/concurrent/CompletableFuture;
+		ARG 2 k
+	METHOD lambda$unpackChunk$8 (JLjava/lang/Object;)Ljava/lang/Object;
+		ARG 3 packed
+	METHOD lambda$unpackChunk$9 (JZLjava/lang/Object;)V
+		ARG 4 s
+	METHOD lambda$writeChunk$10 (Lnet/minecraft/world/level/ChunkPos;Ljava/lang/Throwable;)Ljava/lang/Void;
+		ARG 2 throwable
+	METHOD lambda$writeChunk$11 (Ljava/util/Map;Lcom/mojang/serialization/DynamicOps;Ljava/lang/String;Ljava/lang/Object;)V
+		ARG 3 s
 	METHOD onSectionLoad (J)V
 		ARG 1 sectionPos
+	METHOD outsideStoredRange (J)Z
+		ARG 1 sectionPos
+	METHOD prefetch (Lnet/minecraft/world/level/ChunkPos;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 chunkPos
 	METHOD setDirty (J)V
 		ARG 1 sectionPos
 	METHOD tick (Ljava/util/function/BooleanSupplier;)V
 		ARG 1 haveTime
+	METHOD tryRead (Lnet/minecraft/world/level/ChunkPos;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 chunkPos
+	METHOD unpackChunk (Lnet/minecraft/world/level/ChunkPos;)V
+		ARG 1 chunkPos
+	METHOD unpackChunk (Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/world/level/chunk/storage/SectionStorage$PackedChunk;)V
+		ARG 1 pos
+		ARG 2 packedChunk
+	METHOD writeChunk (Lnet/minecraft/world/level/ChunkPos;)V
+		ARG 1 chunkPos
+	METHOD writeChunk (Lnet/minecraft/world/level/ChunkPos;Lcom/mojang/serialization/DynamicOps;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 chunkPos
+		ARG 2 ops
+	CLASS PackedChunk
+		METHOD lambda$parse$0 (Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/Dynamic;)Ljava/util/Optional;
+			ARG 1 sectionData
+		METHOD parse (Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/DynamicOps;Lnet/minecraft/nbt/Tag;Lnet/minecraft/world/level/chunk/storage/SimpleRegionStorage;Lnet/minecraft/world/level/LevelHeightAccessor;)Lnet/minecraft/world/level/chunk/storage/SectionStorage$PackedChunk;
+			ARG 0 codec
+			ARG 1 ops
+			ARG 2 tag
+			ARG 3 simpleRegionStorage
+			ARG 4 levelHeightAccessor

@@ -1,0 +1,13 @@
+CLASS net/minecraft/world/item/slot/SlotSources
+	METHOD bootstrap (Lnet/minecraft/core/Registry;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 registry
+	METHOD group (Ljava/util/Collection;)Ljava/util/function/Function;
+		ARG 0 list
+	METHOD lambda$group$2 (Lnet/minecraft/world/level/storage/loot/LootContext;)Lnet/minecraft/world/item/slot/SlotCollection;
+		ARG 0 context
+	METHOD lambda$group$3 (Lnet/minecraft/world/item/slot/SlotSource;Lnet/minecraft/world/item/slot/SlotSource;Lnet/minecraft/world/level/storage/loot/LootContext;)Lnet/minecraft/world/item/slot/SlotCollection;
+		ARG 2 context
+	METHOD lambda$group$4 (Ljava/util/List;Lnet/minecraft/world/level/storage/loot/LootContext;)Lnet/minecraft/world/item/slot/SlotCollection;
+		ARG 1 context
+	METHOD lambda$static$0 (Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 c

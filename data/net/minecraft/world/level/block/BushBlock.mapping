@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/block/BushBlock
+	METHOD lambda$performBonemeal$0 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;)V
+		ARG 2 blockPos

@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/inventory/ContainerData
+	METHOD get (I)I
+		ARG 1 dataId
+	METHOD set (II)V
+		ARG 1 dataId
+		ARG 2 value

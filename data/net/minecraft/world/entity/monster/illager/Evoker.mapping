@@ -1,0 +1,15 @@
+CLASS net/minecraft/world/entity/monster/illager/Evoker
+	METHOD setWololoTarget (Lnet/minecraft/world/entity/animal/sheep/Sheep;)V
+		ARG 1 wololoTarget
+	CLASS EvokerAttackSpellGoal
+		METHOD createSpellEntity (DDDDFI)V
+			ARG 1 x
+			ARG 3 z
+			ARG 5 minY
+			ARG 7 maxY
+			ARG 9 angle
+			ARG 10 delayTicks
+	CLASS EvokerWololoSpellGoal
+		METHOD lambda$new$0 (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/server/level/ServerLevel;)Z
+			ARG 0 target
+			ARG 1 level

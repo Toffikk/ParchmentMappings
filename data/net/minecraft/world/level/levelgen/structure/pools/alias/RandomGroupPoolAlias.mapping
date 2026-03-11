@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/level/levelgen/structure/pools/alias/RandomGroupPoolAlias
+	METHOD lambda$allTargets$3 (Lnet/minecraft/util/random/Weighted;)Ljava/util/stream/Stream;
+		ARG 0 weightedEntry
+	METHOD lambda$forEachResolved$1 (Lnet/minecraft/util/RandomSource;Ljava/util/function/BiConsumer;Lnet/minecraft/world/level/levelgen/structure/pools/alias/PoolAliasBinding;)V
+		ARG 2 binding
+	METHOD lambda$forEachResolved$2 (Lnet/minecraft/util/RandomSource;Ljava/util/function/BiConsumer;Ljava/util/List;)V
+		ARG 2 combination
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

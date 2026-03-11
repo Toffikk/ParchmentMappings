@@ -1,0 +1,13 @@
+CLASS net/minecraft/world/entity/npc/CatSpawner
+	METHOD lambda$spawnInVillage$0 (Lnet/minecraft/core/Holder;)Z
+		ARG 0 p
+	METHOD spawnCat (Lnet/minecraft/core/BlockPos;Lnet/minecraft/server/level/ServerLevel;Z)V
+		ARG 1 spawnPos
+		ARG 2 level
+		ARG 3 makePersistent
+	METHOD spawnInHut (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;)V
+		ARG 1 level
+		ARG 2 spawnPos
+	METHOD spawnInVillage (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;)V
+		ARG 1 serverLevel
+		ARG 2 spawnPos

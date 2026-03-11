@@ -1,0 +1,14 @@
+CLASS net/minecraft/TracingExecutor
+	METHOD execute (Ljava/lang/Runnable;)V
+		ARG 1 command
+	METHOD forName (Ljava/lang/String;)Ljava/util/concurrent/Executor;
+		ARG 1 name
+	METHOD lambda$forName$1 (Ljava/lang/String;Ljava/lang/Runnable;)V
+		ARG 2 command
+	METHOD lambda$forName$3 (Ljava/lang/String;Ljava/lang/Runnable;)V
+		ARG 2 command
+	METHOD shutdownAndAwait (JLjava/util/concurrent/TimeUnit;)V
+		ARG 1 timeout
+		ARG 3 unit
+	METHOD wrapUnnamed (Ljava/lang/Runnable;)Ljava/lang/Runnable;
+		ARG 0 command

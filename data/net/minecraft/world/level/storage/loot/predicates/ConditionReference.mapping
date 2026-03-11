@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/level/storage/loot/predicates/ConditionReference
+	METHOD conditionReference (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder;
+		ARG 0 name
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD lambda$validate$1 (Lnet/minecraft/world/level/storage/loot/ValidationContext;Lnet/minecraft/core/Holder$Reference;)V
+		ARG 2 condition
+	METHOD test (Ljava/lang/Object;)Z
+		ARG 1 lootContext

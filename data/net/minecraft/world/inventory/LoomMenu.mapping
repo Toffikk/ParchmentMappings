@@ -1,0 +1,25 @@
+CLASS net/minecraft/world/inventory/LoomMenu
+	METHOD <init> (ILnet/minecraft/world/entity/player/Inventory;)V
+		ARG 1 containerId
+		ARG 2 inventory
+	METHOD <init> (ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/inventory/ContainerLevelAccess;)V
+		ARG 1 containerId
+		ARG 2 inventory
+		ARG 3 access
+	METHOD getSelectablePatterns (Lnet/minecraft/world/item/ItemStack;)Ljava/util/List;
+		ARG 1 patternStack
+	METHOD isValidPatternIndex (I)Z
+		ARG 1 selectedPattern
+	METHOD lambda$removed$1 (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)V
+		ARG 2 level
+		ARG 3 pos
+	METHOD lambda$setupResultSlot$2 (Lnet/minecraft/core/Holder;Lnet/minecraft/world/item/DyeColor;Lnet/minecraft/world/level/block/entity/BannerPatternLayers;)Lnet/minecraft/world/level/block/entity/BannerPatternLayers;
+		ARG 2 layers
+	METHOD registerUpdateListener (Ljava/lang/Runnable;)V
+		ARG 1 slotUpdateListener
+	METHOD setupResultSlot (Lnet/minecraft/core/Holder;)V
+		ARG 1 pattern
+	CLASS 6
+		METHOD lambda$onTake$0 (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)V
+			ARG 1 level
+			ARG 2 pos

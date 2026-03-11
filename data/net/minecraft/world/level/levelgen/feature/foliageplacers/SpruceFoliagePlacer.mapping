@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/level/levelgen/feature/foliageplacers/SpruceFoliagePlacer
+	METHOD <init> (Lnet/minecraft/util/valueproviders/IntProvider;Lnet/minecraft/util/valueproviders/IntProvider;Lnet/minecraft/util/valueproviders/IntProvider;)V
+		ARG 1 radius
+		ARG 2 offset
+		ARG 3 trunkHeight
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/levelgen/feature/foliageplacers/SpruceFoliagePlacer;)Lnet/minecraft/util/valueproviders/IntProvider;
+		ARG 0 p
+	METHOD lambda$static$1 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

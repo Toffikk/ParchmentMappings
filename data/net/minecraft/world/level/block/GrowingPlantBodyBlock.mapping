@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/level/block/GrowingPlantBodyBlock
+	METHOD getHeadPos (Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/Block;)Ljava/util/Optional;
+		ARG 1 level
+		ARG 2 pos
+		ARG 3 bodyBlock
+	METHOD updateHeadAfterConvertedFromBody (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/state/BlockState;
+		ARG 1 bodyState
+		ARG 2 headState

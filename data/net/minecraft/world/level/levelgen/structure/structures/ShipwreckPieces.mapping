@@ -1,0 +1,27 @@
+CLASS net/minecraft/world/level/levelgen/structure/structures/ShipwreckPieces
+	METHOD addRandomPiece (Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplateManager;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/Rotation;Lnet/minecraft/world/level/levelgen/structure/StructurePieceAccessor;Lnet/minecraft/util/RandomSource;Z)Lnet/minecraft/world/level/levelgen/structure/structures/ShipwreckPieces$ShipwreckPiece;
+		ARG 0 structureTemplateManager
+		ARG 1 position
+		ARG 2 rotation
+		ARG 3 structurePieceAccessor
+		ARG 4 random
+		ARG 5 isBeached
+	CLASS ShipwreckPiece
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplateManager;Lnet/minecraft/nbt/CompoundTag;)V
+			ARG 1 structureTemplateManager
+			ARG 2 tag
+		METHOD <init> (Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplateManager;Lnet/minecraft/resources/Identifier;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/Rotation;Z)V
+			ARG 1 structureTemplateManager
+			ARG 2 templateLocation
+			ARG 3 position
+			ARG 4 rotation
+			ARG 5 isBeached
+		METHOD adjustPositionHeight (I)V
+			ARG 1 newHeight
+		METHOD calculateBeachedPosition (ILnet/minecraft/util/RandomSource;)I
+			ARG 1 minY
+			ARG 2 random
+		METHOD lambda$new$0 (Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/resources/Identifier;)Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings;
+			ARG 1 location
+		METHOD makeSettings (Lnet/minecraft/world/level/block/Rotation;)Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings;
+			ARG 0 rotation

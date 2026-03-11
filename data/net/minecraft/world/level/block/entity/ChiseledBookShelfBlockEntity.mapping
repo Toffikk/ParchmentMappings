@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/level/block/entity/ChiseledBookShelfBlockEntity
+	METHOD <init> (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V
+		ARG 1 worldPosition
+		ARG 2 blockState
+	METHOD lambda$canTakeItem$0 (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/Container;Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 2 toItem
+	METHOD updateState (I)V
+		ARG 1 interactedSlot

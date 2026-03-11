@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/entity/monster/CrossbowAttackMob
+	METHOD performCrossbowAttack (Lnet/minecraft/world/entity/LivingEntity;F)V
+		ARG 1 body
+		ARG 2 crossbowPower
+	METHOD setChargingCrossbow (Z)V
+		ARG 1 isCharging

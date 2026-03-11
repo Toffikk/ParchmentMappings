@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/item/GlowInkSacItem
+	METHOD lambda$tryApplyToSign$0 (Lnet/minecraft/world/level/block/entity/SignText;)Lnet/minecraft/world/level/block/entity/SignText;
+		ARG 0 text

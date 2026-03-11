@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/block/PumpkinBlock
+	METHOD lambda$useItemOn$0 (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 3 ignored
+		ARG 4 pumpkinSeeds

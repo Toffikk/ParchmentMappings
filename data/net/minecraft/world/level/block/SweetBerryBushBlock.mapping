@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/block/SweetBerryBushBlock
+	METHOD lambda$useWithoutItem$0 (Lnet/minecraft/core/BlockPos;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 serverlvl
+		ARG 2 itemStack

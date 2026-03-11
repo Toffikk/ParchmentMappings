@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/inventory/LecternMenu
+	METHOD <init> (I)V
+		ARG 1 containerId
+	METHOD <init> (ILnet/minecraft/world/Container;Lnet/minecraft/world/inventory/ContainerData;)V
+		ARG 1 containerId
+		ARG 2 lectern
+		ARG 3 lecternData

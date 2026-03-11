@@ -1,0 +1,13 @@
+CLASS net/minecraft/world/level/levelgen/blockpredicates/HasSturdyFacePredicate
+	METHOD <init> (Lnet/minecraft/core/Vec3i;Lnet/minecraft/core/Direction;)V
+		ARG 1 offset
+		ARG 2 direction
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/levelgen/blockpredicates/HasSturdyFacePredicate;)Lnet/minecraft/core/Vec3i;
+		ARG 0 c
+	METHOD lambda$static$1 (Lnet/minecraft/world/level/levelgen/blockpredicates/HasSturdyFacePredicate;)Lnet/minecraft/core/Direction;
+		ARG 0 c
+	METHOD lambda$static$2 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD test (Ljava/lang/Object;Ljava/lang/Object;)Z
+		ARG 1 level
+		ARG 2 origin

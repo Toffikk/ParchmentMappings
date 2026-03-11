@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/level/block/JigsawBlock
+	METHOD canAttach (Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplate$JigsawBlockInfo;Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplate$JigsawBlockInfo;)Z
+		ARG 0 source
+		ARG 1 target
+	METHOD getFrontFacing (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/core/Direction;
+		ARG 0 state
+	METHOD getTopFacing (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/core/Direction;
+		ARG 0 state

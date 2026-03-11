@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/item/enchantment/effects/ExplodeEffect
+	METHOD getDamageSource (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/phys/Vec3;)Lnet/minecraft/world/damagesource/DamageSource;
+		ARG 1 entity
+		ARG 2 position
+	METHOD lambda$apply$1 (ILnet/minecraft/world/item/enchantment/LevelBasedValue;)Ljava/lang/Float;
+		ARG 1 value
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

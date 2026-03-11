@@ -6,6 +6,9 @@ CLASS net/minecraft/world/level/lighting/LightEventListener
 	METHOD setLightEnabled (Lnet/minecraft/world/level/ChunkPos;Z)V
 		ARG 1 pos
 		ARG 2 enable
+	METHOD updateSectionStatus (Lnet/minecraft/core/BlockPos;Z)V
+		ARG 1 pos
+		ARG 2 sectionEmpty
 	METHOD updateSectionStatus (Lnet/minecraft/core/SectionPos;Z)V
 		ARG 1 pos
 		ARG 2 sectionEmpty

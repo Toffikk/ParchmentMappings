@@ -1,0 +1,47 @@
+CLASS net/minecraft/world/entity/monster/Shulker
+	METHOD canStayAt (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;)Z
+		ARG 1 target
+		ARG 2 face
+	METHOD findAttachableSurface (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/Direction;
+		ARG 1 target
+	METHOD getClientPeekAmount (F)F
+		ARG 1 a
+	METHOD getPhysicalPeek (F)F
+		ARG 0 amount
+	METHOD getProgressAabb (FLnet/minecraft/core/Direction;FLnet/minecraft/world/phys/Vec3;)Lnet/minecraft/world/phys/AABB;
+		ARG 0 size
+		ARG 1 direction
+		ARG 2 progressTo
+		ARG 3 position
+	METHOD getProgressDeltaAabb (FLnet/minecraft/core/Direction;FFLnet/minecraft/world/phys/Vec3;)Lnet/minecraft/world/phys/AABB;
+		ARG 0 size
+		ARG 1 direction
+		ARG 2 progressFrom
+		ARG 3 progressTo
+		ARG 4 position
+	METHOD getRenderPosition (F)Lnet/minecraft/world/phys/Vec3;
+		ARG 1 a
+	METHOD isPositionBlocked (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 target
+	METHOD lambda$onPeekAmountChange$1 (Lnet/minecraft/world/entity/Entity;)Z
+		ARG 1 e
+	METHOD lambda$setVariant$2 (Lnet/minecraft/world/item/DyeColor;)Ljava/lang/Byte;
+		ARG 0 dyeColor
+	METHOD setAttachFace (Lnet/minecraft/core/Direction;)V
+		ARG 1 attachmentDirection
+	METHOD setRawPeekAmount (I)V
+		ARG 1 amount
+	METHOD setVariant (Ljava/util/Optional;)V
+		ARG 1 color
+	CLASS ShulkerDefenseAttackGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Shulker;)V
+			ARG 1 mob
+		METHOD lambda$new$0 (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/server/level/ServerLevel;)Z
+			ARG 0 input
+			ARG 1 level
+	CLASS ShulkerLookControl
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Shulker;Lnet/minecraft/world/entity/Mob;)V
+			ARG 2 mob
+	CLASS ShulkerNearestAttackGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Shulker;Lnet/minecraft/world/entity/monster/Shulker;)V
+			ARG 2 mob

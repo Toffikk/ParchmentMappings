@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/block/BannerBlock
+	METHOD byColor (Lnet/minecraft/world/item/DyeColor;)Lnet/minecraft/world/level/block/Block;
+		ARG 0 color
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

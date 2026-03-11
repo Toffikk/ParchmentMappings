@@ -1,0 +1,9 @@
+CLASS net/minecraft/world/level/storage/loot/functions/FunctionUserBuilder
+	METHOD apply ([Ljava/lang/Object;Ljava/util/function/Function;)Lnet/minecraft/world/level/storage/loot/functions/FunctionUserBuilder;
+		ARG 1 collection
+		ARG 2 functionProvider
+	METHOD apply (Ljava/lang/Iterable;Ljava/util/function/Function;)Lnet/minecraft/world/level/storage/loot/functions/FunctionUserBuilder;
+		ARG 1 collection
+		ARG 2 functionProvider
+	METHOD apply (Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction$Builder;)Lnet/minecraft/world/level/storage/loot/functions/FunctionUserBuilder;
+		ARG 1 builder

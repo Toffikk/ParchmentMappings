@@ -1,4 +1,13 @@
 CLASS net/minecraft/world/level/Level
+	METHOD <init> (Lnet/minecraft/world/level/storage/WritableLevelData;Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/core/RegistryAccess;Lnet/minecraft/core/Holder;ZZJI)V
+		ARG 1 levelData
+		ARG 2 dimension
+		ARG 3 registryAccess
+		ARG 4 dimensionTypeRegistration
+		ARG 5 isClientSide
+		ARG 6 isDebug
+		ARG 7 biomeZoomSeed
+		ARG 9 maxChainedNeighborUpdates
 	METHOD addAlwaysVisibleParticle (Lnet/minecraft/core/particles/ParticleOptions;DDDDDD)V
 		ARG 1 particle
 		ARG 2 x
@@ -16,6 +25,8 @@ CLASS net/minecraft/world/level/Level
 		ARG 9 xd
 		ARG 11 yd
 		ARG 13 zd
+	METHOD addBlockEntityTicker (Lnet/minecraft/world/level/block/entity/TickingBlockEntity;)V
+		ARG 1 ticker
 	METHOD addDestroyBlockEffect (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V
 		ARG 1 pos
 		ARG 2 blockState
@@ -29,6 +40,8 @@ CLASS net/minecraft/world/level/Level
 		ARG 10 xd
 		ARG 12 yd
 		ARG 14 zd
+	METHOD blockEntityChanged (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 pos
 	METHOD blockEvent (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/Block;II)V
 		ARG 1 pos
 		ARG 2 block
@@ -52,6 +65,31 @@ CLASS net/minecraft/world/level/Level
 		ARG 1 id
 		ARG 2 blockPos
 		ARG 3 progress
+	METHOD explode (Lnet/minecraft/world/entity/Entity;DDDFLnet/minecraft/world/level/Level$ExplosionInteraction;)V
+		ARG 1 source
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 r
+		ARG 9 blockInteraction
+	METHOD explode (Lnet/minecraft/world/entity/Entity;DDDFZLnet/minecraft/world/level/Level$ExplosionInteraction;)V
+		ARG 1 source
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 r
+		ARG 9 fire
+		ARG 10 blockInteraction
+	METHOD explode (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/damagesource/DamageSource;Lnet/minecraft/world/level/ExplosionDamageCalculator;DDDFZLnet/minecraft/world/level/Level$ExplosionInteraction;)V
+		ARG 1 source
+		ARG 2 damageSource
+		ARG 3 damageCalculator
+		ARG 4 x
+		ARG 6 y
+		ARG 8 z
+		ARG 10 r
+		ARG 11 fire
+		ARG 12 interactionType
 	METHOD explode (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/damagesource/DamageSource;Lnet/minecraft/world/level/ExplosionDamageCalculator;DDDFZLnet/minecraft/world/level/Level$ExplosionInteraction;Lnet/minecraft/core/particles/ParticleOptions;Lnet/minecraft/core/particles/ParticleOptions;Lnet/minecraft/util/random/WeightedList;Lnet/minecraft/core/Holder;)V
 		ARG 1 source
 		ARG 2 damageSource
@@ -66,12 +104,40 @@ CLASS net/minecraft/world/level/Level
 		ARG 14 largeExplosionParticles
 		ARG 15 blockParticles
 		ARG 16 explosionSound
+	METHOD explode (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/damagesource/DamageSource;Lnet/minecraft/world/level/ExplosionDamageCalculator;Lnet/minecraft/world/phys/Vec3;FZLnet/minecraft/world/level/Level$ExplosionInteraction;)V
+		ARG 1 source
+		ARG 2 damageSource
+		ARG 3 damageCalculator
+		ARG 4 boomPos
+		ARG 5 r
+		ARG 6 fire
+		ARG 7 blockInteraction
 	METHOD fillReportDetails (Lnet/minecraft/CrashReport;)Lnet/minecraft/CrashReportCategory;
 		ARG 1 report
+	METHOD getBlockRandomPos (IIII)Lnet/minecraft/core/BlockPos;
+		ARG 1 xo
+		ARG 2 yo
+		ARG 3 zo
+		ARG 4 yMask
+	METHOD getChunkAt (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/chunk/LevelChunk;
+		ARG 1 pos
 	METHOD getClientLeafTintColor (Lnet/minecraft/core/BlockPos;)I
 		ARG 1 pos
+	METHOD getEntities (Lnet/minecraft/world/level/entity/EntityTypeTest;Lnet/minecraft/world/phys/AABB;Ljava/util/function/Predicate;Ljava/util/List;)V
+		ARG 1 type
+		ARG 2 bb
+		ARG 3 selector
+		ARG 4 output
+	METHOD getEntities (Lnet/minecraft/world/level/entity/EntityTypeTest;Lnet/minecraft/world/phys/AABB;Ljava/util/function/Predicate;Ljava/util/List;I)V
+		ARG 1 type
+		ARG 2 bb
+		ARG 3 selector
+		ARG 4 output
+		ARG 5 maxResults
 	METHOD getEntity (I)Lnet/minecraft/world/entity/Entity;
 		ARG 1 id
+	METHOD getEntity (Ljava/util/UUID;)Lnet/minecraft/world/entity/Entity;
+		ARG 1 uuid
 	METHOD getEntityInAnyDimension (Ljava/util/UUID;)Lnet/minecraft/world/entity/Entity;
 		ARG 1 uuid
 	METHOD getMapData (Lnet/minecraft/world/level/saveddata/maps/MapId;)Lnet/minecraft/world/level/saveddata/maps/MapItemSavedData;
@@ -81,10 +147,52 @@ CLASS net/minecraft/world/level/Level
 	METHOD getPushableEntities (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/phys/AABB;)Ljava/util/List;
 		ARG 1 pusher
 		ARG 2 boundingBox
+	METHOD getRainLevel (F)F
+		ARG 1 a
+	METHOD getThunderLevel (F)F
+		ARG 1 a
+	METHOD getWorldBorderAdjustedRespawnData (Lnet/minecraft/world/level/storage/LevelData$RespawnData;)Lnet/minecraft/world/level/storage/LevelData$RespawnData;
+		ARG 1 respawnData
 	METHOD globalLevelEvent (ILnet/minecraft/core/BlockPos;I)V
 		ARG 1 type
 		ARG 2 pos
 		ARG 3 data
+	METHOD guardEntityTick (Ljava/util/function/Consumer;Lnet/minecraft/world/entity/Entity;)V
+		ARG 1 tick
+		ARG 2 entity
+	METHOD hasEntities (Lnet/minecraft/world/level/entity/EntityTypeTest;Lnet/minecraft/world/phys/AABB;Ljava/util/function/Predicate;)Z
+		ARG 1 type
+		ARG 2 bb
+		ARG 3 selector
+	METHOD isInSpawnableBounds (Lnet/minecraft/core/BlockPos;)Z
+		ARG 0 pos
+	METHOD isInValidBounds (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 pos
+	METHOD isInValidBoundsHorizontal (Lnet/minecraft/core/BlockPos;)Z
+		ARG 0 pos
+	METHOD isInWorldBounds (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 pos
+	METHOD isInWorldBoundsHorizontal (Lnet/minecraft/core/BlockPos;)Z
+		ARG 0 pos
+	METHOD isLoaded (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 pos
+	METHOD isOutsideSpawnableHeight (I)Z
+		ARG 0 y
+	METHOD isRainingAt (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 pos
+	METHOD lambda$getEntities$0 (Lnet/minecraft/world/entity/Entity;Ljava/util/function/Predicate;Ljava/util/List;Lnet/minecraft/world/entity/Entity;)V
+		ARG 3 entity
+	METHOD lambda$getEntities$1 (Ljava/util/function/Predicate;Ljava/util/List;ILnet/minecraft/world/level/entity/EntityTypeTest;Lnet/minecraft/world/entity/Entity;)Lnet/minecraft/util/AbortableIterationConsumer$Continuation;
+		ARG 4 e
+	METHOD lambda$hasEntities$2 (Ljava/util/function/Predicate;Lorg/apache/commons/lang3/mutable/MutableBoolean;Lnet/minecraft/world/level/entity/EntityTypeTest;Lnet/minecraft/world/entity/Entity;)Lnet/minecraft/util/AbortableIterationConsumer$Continuation;
+		ARG 3 e
+	METHOD loadedAndEntityCanStandOn (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/Entity;)Z
+		ARG 1 pos
+		ARG 2 entity
+	METHOD loadedAndEntityCanStandOnFace (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/core/Direction;)Z
+		ARG 1 pos
+		ARG 2 entity
+		ARG 3 faceDirection
 	METHOD mayInteract (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 entity
 		ARG 2 pos
@@ -109,6 +217,13 @@ CLASS net/minecraft/world/level/Level
 		ARG 9 volume
 		ARG 10 pitch
 		ARG 11 distanceDelay
+	METHOD playLocalSound (Lnet/minecraft/core/BlockPos;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FFZ)V
+		ARG 1 pos
+		ARG 2 sound
+		ARG 3 source
+		ARG 4 volume
+		ARG 5 pitch
+		ARG 6 distanceDelay
 	METHOD playLocalSound (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V
 		ARG 1 sourceEntity
 		ARG 2 sound
@@ -130,6 +245,16 @@ CLASS net/minecraft/world/level/Level
 		ARG 10 volume
 		ARG 11 pitch
 		ARG 12 seed
+	METHOD playSeededSound (Lnet/minecraft/world/entity/Entity;DDDLnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FFJ)V
+		ARG 1 except
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 sound
+		ARG 9 source
+		ARG 10 volume
+		ARG 11 pitch
+		ARG 12 seed
 	METHOD playSeededSound (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/core/Holder;Lnet/minecraft/sounds/SoundSource;FFJ)V
 		ARG 1 except
 		ARG 2 sourceEntity
@@ -138,6 +263,42 @@ CLASS net/minecraft/world/level/Level
 		ARG 5 volume
 		ARG 6 pitch
 		ARG 7 seed
+	METHOD playSound (Lnet/minecraft/world/entity/Entity;DDDLnet/minecraft/core/Holder;Lnet/minecraft/sounds/SoundSource;FF)V
+		ARG 1 except
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 sound
+		ARG 9 source
+		ARG 10 volume
+		ARG 11 pitch
+	METHOD playSound (Lnet/minecraft/world/entity/Entity;DDDLnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;)V
+		ARG 1 except
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 sound
+		ARG 9 source
+	METHOD playSound (Lnet/minecraft/world/entity/Entity;DDDLnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V
+		ARG 1 except
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 sound
+		ARG 9 source
+		ARG 10 volume
+		ARG 11 pitch
+	METHOD playSound (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V
+		ARG 1 except
+		ARG 2 sourceEntity
+		ARG 3 sound
+		ARG 4 source
+		ARG 5 volume
+		ARG 6 pitch
+	METHOD precipitationAt (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/biome/Biome$Precipitation;
+		ARG 1 pos
+	METHOD removeBlockEntity (Lnet/minecraft/core/BlockPos;)V
+		ARG 1 pos
 	METHOD sendBlockUpdated (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockState;I)V
 		ARG 1 pos
 		ARG 2 old
@@ -145,16 +306,29 @@ CLASS net/minecraft/world/level/Level
 		ARG 4 updateFlags
 	METHOD sendPacketToServer (Lnet/minecraft/network/protocol/Packet;)V
 		ARG 1 packet
+	METHOD setBlockAndUpdate (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 1 pos
+		ARG 2 blockState
+	METHOD setBlockEntity (Lnet/minecraft/world/level/block/entity/BlockEntity;)V
+		ARG 1 blockEntity
 	METHOD setBlocksDirty (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockState;)V
 		ARG 1 pos
 		ARG 2 oldState
 		ARG 3 newState
+	METHOD setRainLevel (F)V
+		ARG 1 rainLevel
 	METHOD setRespawnData (Lnet/minecraft/world/level/storage/LevelData$RespawnData;)V
 		ARG 1 respawnData
 	METHOD setSkyFlashTime (I)V
 		ARG 1 skyFlashTime
+	METHOD setSpawnSettings (Z)V
+		ARG 1 spawnEnemies
+	METHOD setThunderLevel (F)V
+		ARG 1 thunderLevel
 	METHOD shouldTickBlocksAt (J)Z
 		ARG 1 chunkPos
+	METHOD shouldTickBlocksAt (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 pos
 	METHOD shouldTickDeath (Lnet/minecraft/world/entity/Entity;)Z
 		ARG 1 entity
 	METHOD updateNeighborsAt (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/level/redstone/Orientation;)V
@@ -166,7 +340,13 @@ CLASS net/minecraft/world/level/Level
 		ARG 2 blockObject
 		ARG 3 skipDirection
 		ARG 4 orientation
+	METHOD updateNeighbourForOutputSignal (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/Block;)V
+		ARG 1 pos
+		ARG 2 changedBlock
 	METHOD updatePOIOnBlockStateChange (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockState;)V
 		ARG 1 pos
 		ARG 2 oldState
 		ARG 3 newState
+	CLASS ExplosionInteraction
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+			ARG 3 id

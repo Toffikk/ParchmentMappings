@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/inventory/InventoryMenu
+	METHOD <init> (Lnet/minecraft/world/entity/player/Inventory;ZLnet/minecraft/world/entity/player/Player;)V
+		ARG 1 inventory
+		ARG 2 active
+		ARG 3 owner
+	METHOD isHotbarSlot (I)Z
+		ARG 0 slot

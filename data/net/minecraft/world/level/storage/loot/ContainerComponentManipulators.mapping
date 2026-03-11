@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/storage/loot/ContainerComponentManipulators
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/storage/loot/ContainerComponentManipulator;)Lnet/minecraft/world/level/storage/loot/ContainerComponentManipulator;
+		ARG 0 e
+	METHOD lambda$static$2 (Lnet/minecraft/core/component/DataComponentType;)Lcom/mojang/serialization/DataResult;
+		ARG 0 type

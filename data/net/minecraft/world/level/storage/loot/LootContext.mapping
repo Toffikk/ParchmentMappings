@@ -1,0 +1,49 @@
+CLASS net/minecraft/world/level/storage/loot/LootContext
+	METHOD <init> (Lnet/minecraft/world/level/storage/loot/LootParams;Lnet/minecraft/util/RandomSource;Lnet/minecraft/core/HolderGetter$Provider;)V
+		ARG 1 params
+		ARG 2 random
+		ARG 3 lootDataResolver
+	METHOD addDynamicDrops (Lnet/minecraft/resources/Identifier;Ljava/util/function/Consumer;)V
+		ARG 1 location
+		ARG 2 output
+	METHOD createVisitedEntry (Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction;)Lnet/minecraft/world/level/storage/loot/LootContext$VisitedEntry;
+		ARG 0 table
+	METHOD createVisitedEntry (Lnet/minecraft/world/level/storage/loot/LootTable;)Lnet/minecraft/world/level/storage/loot/LootContext$VisitedEntry;
+		ARG 0 table
+	METHOD createVisitedEntry (Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition;)Lnet/minecraft/world/level/storage/loot/LootContext$VisitedEntry;
+		ARG 0 table
+	METHOD getOptionalParameter (Lnet/minecraft/util/context/ContextKey;)Ljava/lang/Object;
+		ARG 1 key
+	METHOD getParameter (Lnet/minecraft/util/context/ContextKey;)Ljava/lang/Object;
+		ARG 1 key
+	METHOD hasParameter (Lnet/minecraft/util/context/ContextKey;)Z
+		ARG 1 key
+	METHOD hasVisitedElement (Lnet/minecraft/world/level/storage/loot/LootContext$VisitedEntry;)Z
+		ARG 1 element
+	METHOD popVisitedElement (Lnet/minecraft/world/level/storage/loot/LootContext$VisitedEntry;)V
+		ARG 1 element
+	METHOD pushVisitedElement (Lnet/minecraft/world/level/storage/loot/LootContext$VisitedEntry;)Z
+		ARG 1 element
+	CLASS BlockEntityTarget
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Lnet/minecraft/util/context/ContextKey;)V
+			ARG 3 name
+			ARG 4 param
+	CLASS Builder
+		METHOD <init> (Lnet/minecraft/world/level/storage/loot/LootParams;)V
+			ARG 1 params
+		METHOD create (Ljava/util/Optional;)Lnet/minecraft/world/level/storage/loot/LootContext;
+			ARG 1 randomSequenceKey
+		METHOD withOptionalRandomSeed (J)Lnet/minecraft/world/level/storage/loot/LootContext$Builder;
+			ARG 1 seed
+		METHOD withOptionalRandomSource (Lnet/minecraft/util/RandomSource;)Lnet/minecraft/world/level/storage/loot/LootContext$Builder;
+			ARG 1 randomSource
+	CLASS EntityTarget
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Lnet/minecraft/util/context/ContextKey;)V
+			ARG 3 name
+			ARG 4 param
+		METHOD getByName (Ljava/lang/String;)Lnet/minecraft/world/level/storage/loot/LootContext$EntityTarget;
+			ARG 0 name
+	CLASS ItemStackTarget
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Lnet/minecraft/util/context/ContextKey;)V
+			ARG 3 name
+			ARG 4 param

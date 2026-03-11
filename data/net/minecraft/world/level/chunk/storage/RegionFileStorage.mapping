@@ -1,0 +1,15 @@
+CLASS net/minecraft/world/level/chunk/storage/RegionFileStorage
+	METHOD <init> (Lnet/minecraft/world/level/chunk/storage/RegionStorageInfo;Ljava/nio/file/Path;Z)V
+		ARG 1 info
+		ARG 2 folder
+		ARG 3 sync
+	METHOD getRegionFile (Lnet/minecraft/world/level/ChunkPos;)Lnet/minecraft/world/level/chunk/storage/RegionFile;
+		ARG 1 pos
+	METHOD read (Lnet/minecraft/world/level/ChunkPos;)Lnet/minecraft/nbt/CompoundTag;
+		ARG 1 pos
+	METHOD scanChunk (Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/nbt/StreamTagVisitor;)V
+		ARG 1 pos
+		ARG 2 scanner
+	METHOD write (Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/nbt/CompoundTag;)V
+		ARG 1 pos
+		ARG 2 value

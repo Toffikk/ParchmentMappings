@@ -1,0 +1,29 @@
+CLASS net/minecraft/world/level/levelgen/RandomState
+	METHOD <init> (Lnet/minecraft/world/level/levelgen/NoiseGeneratorSettings;Lnet/minecraft/core/HolderGetter;J)V
+		ARG 1 settings
+		ARG 2 noises
+		ARG 3 seed
+	METHOD create (Lnet/minecraft/core/HolderGetter$Provider;Lnet/minecraft/resources/ResourceKey;J)Lnet/minecraft/world/level/levelgen/RandomState;
+		ARG 0 holders
+		ARG 1 noiseSettings
+		ARG 2 seed
+	METHOD create (Lnet/minecraft/world/level/levelgen/NoiseGeneratorSettings;Lnet/minecraft/core/HolderGetter;J)Lnet/minecraft/world/level/levelgen/RandomState;
+		ARG 0 settings
+		ARG 1 noises
+		ARG 2 seed
+	METHOD getOrCreateNoise (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/world/level/levelgen/synth/NormalNoise;
+		ARG 1 noise
+	METHOD getOrCreateRandomFactory (Lnet/minecraft/resources/Identifier;)Lnet/minecraft/world/level/levelgen/PositionalRandomFactory;
+		ARG 1 name
+	METHOD lambda$getOrCreateNoise$0 (Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/world/level/levelgen/synth/NormalNoise;
+		ARG 2 key
+	METHOD lambda$getOrCreateRandomFactory$1 (Lnet/minecraft/resources/Identifier;Lnet/minecraft/resources/Identifier;)Lnet/minecraft/world/level/levelgen/PositionalRandomFactory;
+		ARG 2 key
+	CLASS 1
+		METHOD wrapNew (Lnet/minecraft/world/level/levelgen/DensityFunction;)Lnet/minecraft/world/level/levelgen/DensityFunction;
+			ARG 1 function
+	CLASS 1NoiseWiringHelper
+		METHOD newLegacyInstance (J)Lnet/minecraft/util/RandomSource;
+			ARG 1 seedOffset
+		METHOD wrapNew (Lnet/minecraft/world/level/levelgen/DensityFunction;)Lnet/minecraft/world/level/levelgen/DensityFunction;
+			ARG 1 function

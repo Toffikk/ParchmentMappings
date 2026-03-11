@@ -1,0 +1,43 @@
+CLASS net/minecraft/world/level/storage/loot/functions/ApplyBonusCount
+	METHOD <init> (Ljava/util/List;Lnet/minecraft/core/Holder;Lnet/minecraft/world/level/storage/loot/functions/ApplyBonusCount$Formula;)V
+		ARG 1 predicates
+		ARG 2 enchantment
+		ARG 3 formula
+	METHOD addBonusBinomialDistributionCount (Lnet/minecraft/core/Holder;FI)Lnet/minecraft/world/level/storage/loot/functions/LootItemConditionalFunction$Builder;
+		ARG 0 enchantment
+		ARG 1 probability
+		ARG 2 extraRounds
+	METHOD addOreBonusCount (Lnet/minecraft/core/Holder;)Lnet/minecraft/world/level/storage/loot/functions/LootItemConditionalFunction$Builder;
+		ARG 0 enchantment
+	METHOD addUniformBonusCount (Lnet/minecraft/core/Holder;)Lnet/minecraft/world/level/storage/loot/functions/LootItemConditionalFunction$Builder;
+		ARG 0 enchantment
+	METHOD addUniformBonusCount (Lnet/minecraft/core/Holder;I)Lnet/minecraft/world/level/storage/loot/functions/LootItemConditionalFunction$Builder;
+		ARG 0 enchantment
+		ARG 1 bonusMultiplier
+	METHOD lambda$addBonusBinomialDistributionCount$5 (Lnet/minecraft/core/Holder;IFLjava/util/List;)Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction;
+		ARG 3 conditions
+	METHOD lambda$addOreBonusCount$6 (Lnet/minecraft/core/Holder;Ljava/util/List;)Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction;
+		ARG 1 conditions
+	METHOD lambda$addUniformBonusCount$7 (Lnet/minecraft/core/Holder;Ljava/util/List;)Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction;
+		ARG 1 conditions
+	METHOD lambda$addUniformBonusCount$8 (Lnet/minecraft/core/Holder;ILjava/util/List;)Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction;
+		ARG 2 conditions
+	METHOD lambda$static$1 (Lnet/minecraft/resources/Identifier;)Lcom/mojang/serialization/DataResult;
+		ARG 0 location
+	METHOD lambda$static$2 (Lnet/minecraft/world/level/storage/loot/functions/ApplyBonusCount;)Lnet/minecraft/core/Holder;
+		ARG 0 f
+	METHOD lambda$static$3 (Lnet/minecraft/world/level/storage/loot/functions/ApplyBonusCount;)Lnet/minecraft/world/level/storage/loot/functions/ApplyBonusCount$Formula;
+		ARG 0 f
+	METHOD lambda$static$4 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	CLASS BinomialWithBonusCount
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+	CLASS Formula
+		METHOD calculateNewCount (Lnet/minecraft/util/RandomSource;II)I
+			ARG 1 random
+			ARG 2 count
+			ARG 3 level
+	CLASS UniformBonusCount
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i

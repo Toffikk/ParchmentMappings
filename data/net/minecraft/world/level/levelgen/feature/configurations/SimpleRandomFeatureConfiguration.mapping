@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/levelgen/feature/configurations/SimpleRandomFeatureConfiguration
+	METHOD <init> (Lnet/minecraft/core/HolderSet;)V
+		ARG 1 features
+	METHOD lambda$getFeatures$1 (Lnet/minecraft/core/Holder;)Ljava/util/stream/Stream;
+		ARG 0 f
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/levelgen/feature/configurations/SimpleRandomFeatureConfiguration;)Lnet/minecraft/core/HolderSet;
+		ARG 0 c

@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/levelgen/feature/DesertWellFeature
+	METHOD lambda$placeSusSand$0 (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/entity/BrushableBlockEntity;)V
+		ARG 1 e
+	METHOD placeSusSand (Lnet/minecraft/world/level/WorldGenLevel;Lnet/minecraft/core/BlockPos;)V
+		ARG 0 level
+		ARG 1 pos

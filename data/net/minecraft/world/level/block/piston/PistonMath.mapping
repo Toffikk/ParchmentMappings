@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/block/piston/PistonMath
+	METHOD getMovementArea (Lnet/minecraft/world/phys/AABB;Lnet/minecraft/core/Direction;D)Lnet/minecraft/world/phys/AABB;
+		ARG 0 aabb
+		ARG 1 direction
+		ARG 2 amount

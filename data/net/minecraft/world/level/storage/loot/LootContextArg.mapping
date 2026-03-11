@@ -1,0 +1,36 @@
+CLASS net/minecraft/world/level/storage/loot/LootContextArg
+	METHOD cast (Lnet/minecraft/world/level/storage/loot/LootContextArg;)Lnet/minecraft/world/level/storage/loot/LootContextArg;
+		ARG 0 original
+	METHOD createArgCodec (Ljava/util/function/UnaryOperator;)Lcom/mojang/serialization/Codec;
+		ARG 0 consumer
+	METHOD get (Lnet/minecraft/world/level/storage/loot/LootContext;)Ljava/lang/Object;
+		ARG 1 context
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/storage/loot/LootContextArg$ArgCodecBuilder;)Lnet/minecraft/world/level/storage/loot/LootContextArg$ArgCodecBuilder;
+		ARG 0 builder
+	CLASS ArgCodecBuilder
+		METHOD anyBlockEntity (Ljava/util/function/Function;)Lnet/minecraft/world/level/storage/loot/LootContextArg$ArgCodecBuilder;
+			ARG 1 function
+		METHOD anyEntity (Ljava/util/function/Function;)Lnet/minecraft/world/level/storage/loot/LootContextArg$ArgCodecBuilder;
+			ARG 1 function
+		METHOD anyItemStack (Ljava/util/function/Function;)Lnet/minecraft/world/level/storage/loot/LootContextArg$ArgCodecBuilder;
+			ARG 1 function
+		METHOD anyOf ([Ljava/lang/Object;Ljava/util/function/Function;Ljava/util/function/Function;)Lnet/minecraft/world/level/storage/loot/LootContextArg$ArgCodecBuilder;
+			ARG 1 targets
+			ARG 2 nameGetter
+			ARG 3 argFactory
+		METHOD anyOf ([Lnet/minecraft/util/StringRepresentable;)Lnet/minecraft/world/level/storage/loot/LootContextArg$ArgCodecBuilder;
+			ARG 1 targets
+		METHOD anyOf ([Lnet/minecraft/util/StringRepresentable;Ljava/util/function/Function;)Lnet/minecraft/world/level/storage/loot/LootContextArg$ArgCodecBuilder;
+			ARG 1 targets
+			ARG 2 argFactory
+		METHOD lambda$anyBlockEntity$2 (Ljava/util/function/Function;Lnet/minecraft/world/level/storage/loot/LootContext$BlockEntityTarget;)Lnet/minecraft/world/level/storage/loot/LootContextArg;
+			ARG 1 target
+		METHOD lambda$anyEntity$1 (Ljava/util/function/Function;Lnet/minecraft/world/level/storage/loot/LootContext$EntityTarget;)Lnet/minecraft/world/level/storage/loot/LootContextArg;
+			ARG 1 target
+		METHOD lambda$anyItemStack$3 (Ljava/util/function/Function;Lnet/minecraft/world/level/storage/loot/LootContext$ItemStackTarget;)Lnet/minecraft/world/level/storage/loot/LootContextArg;
+			ARG 1 target
+		METHOD lambda$anyOf$0 (Ljava/lang/Object;)Lnet/minecraft/world/level/storage/loot/LootContextArg;
+			ARG 0 x$0
+	CLASS Getter
+		METHOD get (Ljava/lang/Object;)Ljava/lang/Object;
+			ARG 1 value

@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/item/equipment/ArmorMaterials
+	METHOD makeDefense (IIIII)Ljava/util/Map;
+		ARG 0 boots
+		ARG 1 legs
+		ARG 2 chest
+		ARG 3 helm
+		ARG 4 body

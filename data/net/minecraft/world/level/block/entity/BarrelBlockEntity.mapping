@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/level/block/entity/BarrelBlockEntity
+	METHOD <init> (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V
+		ARG 1 worldPosition
+		ARG 2 blockState
+	METHOD playSound (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/sounds/SoundEvent;)V
+		ARG 1 state
+		ARG 2 event
+	METHOD updateBlockState (Lnet/minecraft/world/level/block/state/BlockState;Z)V
+		ARG 1 state
+		ARG 2 isOpen

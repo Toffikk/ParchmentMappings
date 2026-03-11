@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/storage/loot/predicates/LootItemCondition
+	CLASS Builder
+		METHOD and (Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder;)Lnet/minecraft/world/level/storage/loot/predicates/AllOfCondition$Builder;
+			ARG 1 other
+		METHOD or (Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder;)Lnet/minecraft/world/level/storage/loot/predicates/AnyOfCondition$Builder;
+			ARG 1 other

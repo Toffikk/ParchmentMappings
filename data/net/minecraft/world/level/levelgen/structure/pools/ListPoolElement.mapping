@@ -1,0 +1,16 @@
+CLASS net/minecraft/world/level/levelgen/structure/pools/ListPoolElement
+	METHOD <init> (Ljava/util/List;Lnet/minecraft/world/level/levelgen/structure/pools/StructureTemplatePool$Projection;)V
+		ARG 1 elements
+		ARG 2 projection
+	METHOD lambda$getBoundingBox$2 (Lnet/minecraft/world/level/levelgen/structure/pools/StructurePoolElement;)Z
+		ARG 0 e
+	METHOD lambda$getBoundingBox$3 (Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplateManager;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/Rotation;Lnet/minecraft/world/level/levelgen/structure/pools/StructurePoolElement;)Lnet/minecraft/world/level/levelgen/structure/BoundingBox;
+		ARG 3 e
+	METHOD lambda$setProjectionOnEachElement$5 (Lnet/minecraft/world/level/levelgen/structure/pools/StructureTemplatePool$Projection;Lnet/minecraft/world/level/levelgen/structure/pools/StructurePoolElement;)V
+		ARG 1 k
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/levelgen/structure/pools/ListPoolElement;)Ljava/util/List;
+		ARG 0 e
+	METHOD lambda$static$1 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD setProjectionOnEachElement (Lnet/minecraft/world/level/levelgen/structure/pools/StructureTemplatePool$Projection;)V
+		ARG 1 projection

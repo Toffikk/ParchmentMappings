@@ -1,0 +1,14 @@
+CLASS net/minecraft/world/entity/projectile/throwableitemprojectile/ThrownEnderpearl
+	METHOD <init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 level
+		ARG 2 mob
+		ARG 3 itemStack
+	METHOD findOwnerIncludingDeadPlayer (Lnet/minecraft/server/level/ServerLevel;Ljava/util/UUID;)Lnet/minecraft/world/entity/Entity;
+		ARG 0 serverLevel
+		ARG 1 uuid
+	METHOD isAllowedToTeleportOwner (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/level/Level;)Z
+		ARG 0 owner
+		ARG 1 newLevel
+	METHOD playSound (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/phys/Vec3;)V
+		ARG 1 level
+		ARG 2 position

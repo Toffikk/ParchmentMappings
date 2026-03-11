@@ -1,0 +1,11 @@
+CLASS net/minecraft/world/level/block/EnchantingTableBlock
+	METHOD isValidBookShelf (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;)Z
+		ARG 0 level
+		ARG 1 pos
+		ARG 2 offset
+	METHOD lambda$getMenuProvider$1 (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/world/inventory/AbstractContainerMenu;
+		ARG 2 containerId
+		ARG 3 inventory
+		ARG 4 player
+	METHOD lambda$static$0 (Lnet/minecraft/core/BlockPos;)Z
+		ARG 0 pos

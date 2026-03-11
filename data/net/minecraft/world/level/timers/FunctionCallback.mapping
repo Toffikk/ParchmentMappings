@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/timers/FunctionCallback
+	METHOD lambda$handle$1 (Lnet/minecraft/server/ServerFunctionManager;Lnet/minecraft/commands/functions/CommandFunction;)V
+		ARG 1 function
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

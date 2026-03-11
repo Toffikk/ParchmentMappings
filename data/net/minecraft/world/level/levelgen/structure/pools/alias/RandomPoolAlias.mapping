@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/levelgen/structure/pools/alias/RandomPoolAlias
+	METHOD lambda$forEachResolved$1 (Ljava/util/function/BiConsumer;Lnet/minecraft/resources/ResourceKey;)V
+		ARG 2 target
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

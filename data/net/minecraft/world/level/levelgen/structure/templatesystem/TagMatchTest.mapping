@@ -1,0 +1,5 @@
+CLASS net/minecraft/world/level/levelgen/structure/templatesystem/TagMatchTest
+	METHOD <init> (Lnet/minecraft/tags/TagKey;)V
+		ARG 1 tag
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/levelgen/structure/templatesystem/TagMatchTest;)Lnet/minecraft/tags/TagKey;
+		ARG 0 t

@@ -1,0 +1,8 @@
+CLASS net/minecraft/world/level/block/entity/BannerBlockEntity
+	METHOD <init> (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V
+		ARG 1 worldPosition
+		ARG 2 blockState
+	METHOD <init> (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/item/DyeColor;)V
+		ARG 1 worldPosition
+		ARG 2 blockState
+		ARG 3 color

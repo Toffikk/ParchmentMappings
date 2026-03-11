@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/scores/ScoreHolder
+	METHOD forNameOnly (Ljava/lang/String;)Lnet/minecraft/world/scores/ScoreHolder;
+		ARG 0 name
+	METHOD fromGameProfile (Lcom/mojang/authlib/GameProfile;)Lnet/minecraft/world/scores/ScoreHolder;
+		ARG 0 profile
+	METHOD lambda$getFeedbackDisplayName$0 (Lnet/minecraft/network/chat/Style;)Lnet/minecraft/network/chat/Style;
+		ARG 1 style

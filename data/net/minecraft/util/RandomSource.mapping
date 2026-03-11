@@ -1,4 +1,6 @@
 CLASS net/minecraft/util/RandomSource
+	METHOD consumeCount (I)V
+		ARG 1 rounds
 	METHOD nextInt (I)I
 		ARG 1 bound
 	METHOD setSeed (J)V

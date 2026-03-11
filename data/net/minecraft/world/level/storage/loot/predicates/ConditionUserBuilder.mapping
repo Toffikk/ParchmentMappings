@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/level/storage/loot/predicates/ConditionUserBuilder
+	METHOD when (Ljava/lang/Iterable;Ljava/util/function/Function;)Lnet/minecraft/world/level/storage/loot/predicates/ConditionUserBuilder;
+		ARG 1 collection
+		ARG 2 conditionProvider
+	METHOD when (Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder;)Lnet/minecraft/world/level/storage/loot/predicates/ConditionUserBuilder;
+		ARG 1 builder

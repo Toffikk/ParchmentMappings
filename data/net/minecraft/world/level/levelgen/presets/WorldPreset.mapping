@@ -1,0 +1,11 @@
+CLASS net/minecraft/world/level/levelgen/presets/WorldPreset
+	METHOD <init> (Ljava/util/Map;)V
+		ARG 1 dimensions
+	METHOD lambda$dimensionsInOrder$2 (Lcom/google/common/collect/ImmutableMap$Builder;Lnet/minecraft/resources/ResourceKey;)V
+		ARG 2 key
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/levelgen/presets/WorldPreset;)Ljava/util/Map;
+		ARG 0 e
+	METHOD lambda$static$1 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD requireOverworld (Lnet/minecraft/world/level/levelgen/presets/WorldPreset;)Lcom/mojang/serialization/DataResult;
+		ARG 0 preset

@@ -1,0 +1,3 @@
+CLASS net/minecraft/world/level/levelgen/feature/treedecorators/TrunkVineDecorator
+	METHOD lambda$place$1 (Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/levelgen/feature/treedecorators/TreeDecorator$Context;Lnet/minecraft/core/BlockPos;)V
+		ARG 2 pos

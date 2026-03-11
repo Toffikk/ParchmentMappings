@@ -1,0 +1,10 @@
+CLASS net/minecraft/world/level/chunk/storage/RecreatingSimpleRegionStorage
+	METHOD <init> (Lnet/minecraft/world/level/chunk/storage/RegionStorageInfo;Ljava/nio/file/Path;Lnet/minecraft/world/level/chunk/storage/RegionStorageInfo;Ljava/nio/file/Path;Lcom/mojang/datafixers/DataFixer;ZLnet/minecraft/util/datafix/DataFixTypes;Ljava/util/function/Supplier;)V
+		ARG 1 readInfo
+		ARG 2 readFolder
+		ARG 3 writeInfo
+		ARG 4 writeFolder
+		ARG 5 fixerUpper
+		ARG 6 syncWrites
+		ARG 7 dataFixType
+		ARG 8 legacyFixer

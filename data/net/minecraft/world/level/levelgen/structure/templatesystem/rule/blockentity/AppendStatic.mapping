@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/levelgen/structure/templatesystem/rule/blockentity/AppendStatic
+	METHOD <init> (Lnet/minecraft/nbt/CompoundTag;)V
+		ARG 1 tag
+	METHOD lambda$static$0 (Lnet/minecraft/world/level/levelgen/structure/templatesystem/rule/blockentity/AppendStatic;)Lnet/minecraft/nbt/CompoundTag;
+		ARG 0 r
+	METHOD lambda$static$1 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

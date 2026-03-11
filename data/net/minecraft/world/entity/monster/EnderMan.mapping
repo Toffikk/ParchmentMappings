@@ -1,0 +1,41 @@
+CLASS net/minecraft/world/entity/monster/EnderMan
+	METHOD hurtWithCleanWater (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/damagesource/DamageSource;Lnet/minecraft/world/entity/projectile/throwableitemprojectile/AbstractThrownPotion;F)Z
+		ARG 1 level
+		ARG 2 source
+		ARG 3 thrownPotion
+		ARG 4 damage
+	METHOD isBeingStaredBy (Lnet/minecraft/world/entity/player/Player;)Z
+		ARG 1 player
+	METHOD lambda$readAdditionalSaveData$0 (Lnet/minecraft/world/level/block/state/BlockState;)Z
+		ARG 0 blockState
+	METHOD setCarriedBlock (Lnet/minecraft/world/level/block/state/BlockState;)V
+		ARG 1 carryingBlock
+	METHOD teleport (DDD)Z
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD teleportTowards (Lnet/minecraft/world/entity/Entity;)Z
+		ARG 1 entity
+	CLASS EndermanFreezeWhenLookedAt
+		METHOD <init> (Lnet/minecraft/world/entity/monster/EnderMan;)V
+			ARG 1 enderman
+	CLASS EndermanLeaveBlockGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/EnderMan;)V
+			ARG 1 enderman
+		METHOD canPlaceBlock (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/BlockPos;)Z
+			ARG 1 level
+			ARG 2 pos
+			ARG 3 carried
+			ARG 4 targetState
+			ARG 5 belowState
+			ARG 6 below
+	CLASS EndermanLookForPlayerGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/EnderMan;Lnet/minecraft/world/entity/ai/targeting/TargetingConditions$Selector;)V
+			ARG 1 enderman
+			ARG 2 isAngryAt
+		METHOD lambda$new$0 (Lnet/minecraft/world/entity/monster/EnderMan;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/server/level/ServerLevel;)Z
+			ARG 1 target
+			ARG 2 level
+	CLASS EndermanTakeBlockGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/EnderMan;)V
+			ARG 1 enderman

@@ -1,0 +1,6 @@
+CLASS net/minecraft/world/entity/projectile/hurtingprojectile/LargeFireball
+	METHOD <init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/phys/Vec3;I)V
+		ARG 1 level
+		ARG 2 mob
+		ARG 3 direction
+		ARG 4 explosionPower
