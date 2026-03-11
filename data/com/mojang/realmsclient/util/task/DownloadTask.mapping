@@ -1,0 +1,8 @@
+CLASS com/mojang/realmsclient/util/task/DownloadTask
+	METHOD <init> (JILjava/lang/String;Lnet/minecraft/client/gui/screens/Screen;)V
+		ARG 1 realmId
+		ARG 3 slot
+		ARG 4 downloadName
+		ARG 5 lastScreen
+	METHOD lambda$run$0 (Z)V
+		ARG 0 result

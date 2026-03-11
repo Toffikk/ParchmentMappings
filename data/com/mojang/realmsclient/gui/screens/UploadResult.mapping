@@ -1,0 +1,6 @@
+CLASS com/mojang/realmsclient/gui/screens/UploadResult
+	CLASS Builder
+		METHOD withErrorMessage (Ljava/lang/String;)Lcom/mojang/realmsclient/gui/screens/UploadResult$Builder;
+			ARG 1 errorMessage
+		METHOD withStatusCode (I)Lcom/mojang/realmsclient/gui/screens/UploadResult$Builder;
+			ARG 1 statusCode

@@ -1,0 +1,21 @@
+CLASS com/mojang/blaze3d/audio/Library
+	METHOD acquireChannel (Lcom/mojang/blaze3d/audio/Library$Pool;)Lcom/mojang/blaze3d/audio/Channel;
+		ARG 1 pool
+	METHOD createAttributes (Lorg/lwjgl/system/MemoryStack;Z)Ljava/nio/IntBuffer;
+		ARG 1 stack
+		ARG 2 enableHrtf
+	METHOD init (Ljava/lang/String;Z)V
+		ARG 1 preferredDevice
+		ARG 2 useHrtf
+	METHOD openDeviceOrFallback (Ljava/lang/String;)J
+		ARG 0 preferredDevice
+	METHOD releaseChannel (Lcom/mojang/blaze3d/audio/Channel;)V
+		ARG 1 channel
+	METHOD tryOpenDevice (Ljava/lang/String;)Ljava/util/OptionalLong;
+		ARG 0 name
+	CLASS ChannelPool
+		METHOD release (Lcom/mojang/blaze3d/audio/Channel;)Z
+			ARG 1 channel
+	CLASS CountingChannelPool
+		METHOD <init> (I)V
+			ARG 1 limit

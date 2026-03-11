@@ -1,0 +1,6 @@
+CLASS com/mojang/blaze3d/platform/DisplayData
+	METHOD withFullscreen (Z)Lcom/mojang/blaze3d/platform/DisplayData;
+		ARG 1 isFullscreen
+	METHOD withSize (II)Lcom/mojang/blaze3d/platform/DisplayData;
+		ARG 1 width
+		ARG 2 height

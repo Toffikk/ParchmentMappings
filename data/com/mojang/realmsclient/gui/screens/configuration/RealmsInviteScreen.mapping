@@ -1,0 +1,16 @@
+CLASS com/mojang/realmsclient/gui/screens/configuration/RealmsInviteScreen
+	METHOD <init> (Lcom/mojang/realmsclient/gui/screens/configuration/RealmsConfigureWorldScreen;Lcom/mojang/realmsclient/dto/RealmsServer;)V
+		ARG 1 configureScreen
+		ARG 2 serverData
+	METHOD lambda$init$0 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$init$1 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$init$2 (Lcom/mojang/realmsclient/gui/screens/configuration/RealmsInviteScreen;Lnet/minecraft/client/gui/components/events/GuiEventListener;)V
+		ARG 1 x$0
+	METHOD lambda$onInvite$3 (Lcom/mojang/realmsclient/dto/PlayerInfo;)Z
+		ARG 1 player
+	METHOD lambda$onInvite$5 (Ljava/lang/Boolean;)V
+		ARG 1 success
+	METHOD showMessage (Lnet/minecraft/network/chat/Component;)V
+		ARG 1 message

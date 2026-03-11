@@ -1,0 +1,3 @@
+CLASS com/mojang/blaze3d/audio/Listener
+	METHOD setTransform (Lcom/mojang/blaze3d/audio/ListenerTransform;)V
+		ARG 1 transform

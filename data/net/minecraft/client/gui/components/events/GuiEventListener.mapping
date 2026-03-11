@@ -1,0 +1,6 @@
+CLASS net/minecraft/client/gui/components/events/GuiEventListener
+	METHOD keyPressed (Lnet/minecraft/client/input/KeyEvent;)Z
+		ARG 1 event
+	METHOD mouseClicked (Lnet/minecraft/client/input/MouseButtonEvent;Z)Z
+		ARG 1 event
+		ARG 2 doubleClick

@@ -1,0 +1,32 @@
+CLASS com/mojang/realmsclient/util/RealmsUtil
+	METHOD convertToAgePresentation (J)Lnet/minecraft/network/chat/Component;
+		ARG 0 timeDiff
+	METHOD convertToAgePresentationFromInstant (Ljava/time/Instant;)Lnet/minecraft/network/chat/Component;
+		ARG 0 date
+	METHOD lambda$openScreenAndLogOnFailure$3 (Ljava/lang/String;Lcom/mojang/realmsclient/exception/RealmsServiceException;)V
+		ARG 1 e
+	METHOD lambda$openScreenOnFailure$2 (Lnet/minecraft/client/Minecraft;Ljava/util/function/Function;Lcom/mojang/realmsclient/exception/RealmsServiceException;)V
+		ARG 2 e
+	METHOD openScreenAndLogOnFailure (Ljava/util/function/Function;Ljava/lang/String;)Ljava/util/function/Consumer;
+		ARG 0 errorScreen
+		ARG 1 errorMessage
+	METHOD openScreenOnFailure (Ljava/util/function/Function;)Ljava/util/function/Consumer;
+		ARG 0 errorScreen
+	METHOD renderPlayerFace (Lnet/minecraft/client/gui/GuiGraphics;IIILjava/util/UUID;)V
+		ARG 0 graphics
+		ARG 1 x
+		ARG 2 y
+		ARG 3 size
+		ARG 4 playerId
+	METHOD runAsync (Lcom/mojang/realmsclient/util/RealmsUtil$RealmsIoConsumer;Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 function
+		ARG 1 onFailure
+	METHOD supplyAsync (Lcom/mojang/realmsclient/util/RealmsUtil$RealmsIoFunction;Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 function
+		ARG 1 onFailure
+	CLASS RealmsIoConsumer
+		METHOD accept (Lcom/mojang/realmsclient/client/RealmsClient;)V
+			ARG 1 client
+	CLASS RealmsIoFunction
+		METHOD apply (Lcom/mojang/realmsclient/client/RealmsClient;)Ljava/lang/Object;
+			ARG 1 client

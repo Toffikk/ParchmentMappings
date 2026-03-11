@@ -1,0 +1,17 @@
+CLASS com/mojang/blaze3d/ProjectionType
+	METHOD <init> (Ljava/lang/String;ILcom/mojang/blaze3d/vertex/VertexSorting;Lcom/mojang/blaze3d/ProjectionType$LayeringTransform;)V
+		ARG 3 vertexSorting
+		ARG 4 layeringTransform
+	METHOD applyLayeringTransform (Lorg/joml/Matrix4f;F)V
+		ARG 1 matrix
+		ARG 2 bias
+	METHOD lambda$static$0 (Lorg/joml/Matrix4f;F)V
+		ARG 0 matrix
+		ARG 1 bias
+	METHOD lambda$static$1 (Lorg/joml/Matrix4f;F)V
+		ARG 0 matrix
+		ARG 1 bias
+	CLASS LayeringTransform
+		METHOD apply (Lorg/joml/Matrix4f;F)V
+			ARG 1 matrix
+			ARG 2 bias

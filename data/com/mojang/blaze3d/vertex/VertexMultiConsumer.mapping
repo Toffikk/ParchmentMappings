@@ -1,0 +1,35 @@
+CLASS com/mojang/blaze3d/vertex/VertexMultiConsumer
+	METHOD create ([Lcom/mojang/blaze3d/vertex/VertexConsumer;)Lcom/mojang/blaze3d/vertex/VertexConsumer;
+		ARG 0 consumers
+	METHOD create (Lcom/mojang/blaze3d/vertex/VertexConsumer;)Lcom/mojang/blaze3d/vertex/VertexConsumer;
+		ARG 0 consumer
+	METHOD create (Lcom/mojang/blaze3d/vertex/VertexConsumer;Lcom/mojang/blaze3d/vertex/VertexConsumer;)Lcom/mojang/blaze3d/vertex/VertexConsumer;
+		ARG 0 first
+		ARG 1 second
+	CLASS Double
+		METHOD <init> (Lcom/mojang/blaze3d/vertex/VertexConsumer;Lcom/mojang/blaze3d/vertex/VertexConsumer;)V
+			ARG 1 first
+			ARG 2 second
+	CLASS Multiple
+		METHOD <init> ([Lcom/mojang/blaze3d/vertex/VertexConsumer;)V
+			ARG 1 delegates
+		METHOD forEach (Ljava/util/function/Consumer;)V
+			ARG 1 out
+		METHOD lambda$addVertex$0 (FFFLcom/mojang/blaze3d/vertex/VertexConsumer;)V
+			ARG 3 d
+		METHOD lambda$addVertex$8 (FFFIFFIIFFFLcom/mojang/blaze3d/vertex/VertexConsumer;)V
+			ARG 11 d
+		METHOD lambda$setColor$1 (IIIILcom/mojang/blaze3d/vertex/VertexConsumer;)V
+			ARG 4 d
+		METHOD lambda$setColor$2 (ILcom/mojang/blaze3d/vertex/VertexConsumer;)V
+			ARG 1 d
+		METHOD lambda$setLineWidth$7 (FLcom/mojang/blaze3d/vertex/VertexConsumer;)V
+			ARG 1 d
+		METHOD lambda$setNormal$6 (FFFLcom/mojang/blaze3d/vertex/VertexConsumer;)V
+			ARG 3 d
+		METHOD lambda$setUv1$4 (IILcom/mojang/blaze3d/vertex/VertexConsumer;)V
+			ARG 2 d
+		METHOD lambda$setUv2$5 (IILcom/mojang/blaze3d/vertex/VertexConsumer;)V
+			ARG 2 d
+		METHOD lambda$setUv$3 (FFLcom/mojang/blaze3d/vertex/VertexConsumer;)V
+			ARG 2 d

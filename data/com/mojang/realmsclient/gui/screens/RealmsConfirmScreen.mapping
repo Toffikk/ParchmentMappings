@@ -1,0 +1,9 @@
+CLASS com/mojang/realmsclient/gui/screens/RealmsConfirmScreen
+	METHOD <init> (Lit/unimi/dsi/fastutil/booleans/BooleanConsumer;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
+		ARG 1 callback
+		ARG 2 title1
+		ARG 3 title2
+	METHOD lambda$init$0 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$init$1 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button

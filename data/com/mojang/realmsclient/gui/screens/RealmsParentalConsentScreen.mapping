@@ -1,0 +1,7 @@
+CLASS com/mojang/realmsclient/gui/screens/RealmsParentalConsentScreen
+	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;)V
+		ARG 1 lastScreen
+	METHOD lambda$init$0 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$init$1 (Lcom/mojang/realmsclient/gui/screens/RealmsParentalConsentScreen;Lnet/minecraft/client/gui/components/events/GuiEventListener;)V
+		ARG 1 x$0

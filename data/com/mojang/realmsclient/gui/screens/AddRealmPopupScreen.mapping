@@ -1,0 +1,15 @@
+CLASS com/mojang/realmsclient/gui/screens/AddRealmPopupScreen
+	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;Z)V
+		ARG 1 backgroundScreen
+		ARG 2 trialAvailable
+	METHOD lambda$init$2 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$updateCarouselImages$0 (Lnet/minecraft/resources/Identifier;)Z
+		ARG 0 s
+	METHOD lambda$updateCarouselImages$1 (Lnet/minecraft/resources/Identifier;)Z
+		ARG 0 id
+	METHOD renderDiamond (Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/components/Button;)V
+		ARG 0 graphics
+		ARG 1 button
+	METHOD updateCarouselImages (Lnet/minecraft/server/packs/resources/ResourceManager;)V
+		ARG 0 resourceManager

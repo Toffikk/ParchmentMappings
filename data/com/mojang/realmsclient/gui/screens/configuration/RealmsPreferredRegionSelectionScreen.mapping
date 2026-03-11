@@ -1,0 +1,25 @@
+CLASS com/mojang/realmsclient/gui/screens/configuration/RealmsPreferredRegionSelectionScreen
+	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;Ljava/util/function/BiConsumer;Ljava/util/Map;Lcom/mojang/realmsclient/gui/screens/configuration/RealmsSettingsTab$RegionSelection;)V
+		ARG 1 parent
+		ARG 2 applySettings
+		ARG 3 regionServiceQuality
+		ARG 4 currentSelection
+	METHOD lambda$init$0 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$init$1 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$init$2 (Lcom/mojang/realmsclient/gui/screens/configuration/RealmsPreferredRegionSelectionScreen$RegionSelectionList$Entry;)Z
+		ARG 1 e
+	METHOD lambda$init$3 (Lcom/mojang/realmsclient/gui/screens/configuration/RealmsPreferredRegionSelectionScreen;Lnet/minecraft/client/gui/components/events/GuiEventListener;)V
+		ARG 1 x$0
+	CLASS RegionSelectionList
+		METHOD lambda$new$0 (Lcom/mojang/realmsclient/dto/RealmsRegion;)Lcom/mojang/realmsclient/gui/screens/configuration/RealmsPreferredRegionSelectionScreen$RegionSelectionList$Entry;
+			ARG 1 region
+		METHOD lambda$new$1 (Lcom/mojang/realmsclient/gui/screens/configuration/RealmsPreferredRegionSelectionScreen$RegionSelectionList;Lnet/minecraft/client/gui/components/AbstractSelectionList$Entry;)V
+			ARG 1 x$0
+		CLASS Entry
+			METHOD <init> (Lcom/mojang/realmsclient/gui/screens/configuration/RealmsPreferredRegionSelectionScreen$RegionSelectionList;Lcom/mojang/realmsclient/dto/RegionSelectionPreference;Lcom/mojang/realmsclient/dto/RealmsRegion;)V
+				ARG 2 preference
+				ARG 3 region
+			METHOD <init> (Lcom/mojang/realmsclient/gui/screens/configuration/RealmsPreferredRegionSelectionScreen$RegionSelectionList;Lcom/mojang/realmsclient/gui/screens/configuration/RealmsSettingsTab$RegionSelection;)V
+				ARG 2 regionSelection

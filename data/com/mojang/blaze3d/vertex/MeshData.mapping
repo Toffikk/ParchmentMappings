@@ -1,0 +1,22 @@
+CLASS com/mojang/blaze3d/vertex/MeshData
+	METHOD <init> (Lcom/mojang/blaze3d/vertex/ByteBufferBuilder$Result;Lcom/mojang/blaze3d/vertex/MeshData$DrawState;)V
+		ARG 1 vertexBuffer
+		ARG 2 drawState
+	METHOD sortQuads (Lcom/mojang/blaze3d/vertex/ByteBufferBuilder;Lcom/mojang/blaze3d/vertex/VertexSorting;)Lcom/mojang/blaze3d/vertex/MeshData$SortState;
+		ARG 1 indexBufferTarget
+		ARG 2 sorting
+	METHOD unpackQuadCentroids (Ljava/nio/ByteBuffer;ILcom/mojang/blaze3d/vertex/VertexFormat;)Lcom/mojang/blaze3d/vertex/CompactVectorArray;
+		ARG 0 vertexBuffer
+		ARG 1 vertices
+		ARG 2 format
+	CLASS SortState
+		METHOD buildSortedIndexBuffer (Lcom/mojang/blaze3d/vertex/ByteBufferBuilder;Lcom/mojang/blaze3d/vertex/VertexSorting;)Lcom/mojang/blaze3d/vertex/ByteBufferBuilder$Result;
+			ARG 1 target
+			ARG 2 sorting
+		METHOD indexWriter (JLcom/mojang/blaze3d/vertex/VertexFormat$IndexType;)Lit/unimi/dsi/fastutil/ints/IntConsumer;
+			ARG 1 pointer
+			ARG 3 indexType
+		METHOD lambda$indexWriter$0 (Lorg/apache/commons/lang3/mutable/MutableLong;I)V
+			ARG 1 value
+		METHOD lambda$indexWriter$1 (Lorg/apache/commons/lang3/mutable/MutableLong;I)V
+			ARG 1 value
