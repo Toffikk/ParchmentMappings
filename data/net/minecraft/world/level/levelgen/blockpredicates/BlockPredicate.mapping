@@ -1,18 +1,18 @@
 CLASS net/minecraft/world/level/levelgen/blockpredicates/BlockPredicate
-	METHOD allOf ([Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;)Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;
-		ARG 0 predicates
 	METHOD allOf (Ljava/util/List;)Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;
 		ARG 0 predicates
 	METHOD allOf (Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;)Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;
 		ARG 0 a
 		ARG 1 b
-	METHOD anyOf ([Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;)Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;
+	METHOD allOf ([Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;)Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;
 		ARG 0 predicates
 	METHOD anyOf (Ljava/util/List;)Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;
 		ARG 0 predicates
 	METHOD anyOf (Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;)Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;
 		ARG 0 a
 		ARG 1 b
+	METHOD anyOf ([Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;)Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;
+		ARG 0 predicates
 	METHOD hasSturdyFace (Lnet/minecraft/core/Direction;)Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;
 		ARG 0 direction
 	METHOD hasSturdyFace (Lnet/minecraft/core/Vec3i;Lnet/minecraft/core/Direction;)Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;
@@ -20,24 +20,24 @@ CLASS net/minecraft/world/level/levelgen/blockpredicates/BlockPredicate
 		ARG 1 direction
 	METHOD insideWorld (Lnet/minecraft/core/Vec3i;)Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;
 		ARG 0 offset
-	METHOD matchesBlocks ([Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;
-		ARG 0 blocks
 	METHOD matchesBlocks (Ljava/util/List;)Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;
 		ARG 0 blocks
-	METHOD matchesBlocks (Lnet/minecraft/core/Vec3i;[Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;
-		ARG 0 offset
-		ARG 1 blocks
 	METHOD matchesBlocks (Lnet/minecraft/core/Vec3i;Ljava/util/List;)Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;
 		ARG 0 offset
 		ARG 1 blocks
-	METHOD matchesFluids ([Lnet/minecraft/world/level/material/Fluid;)Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;
-		ARG 0 fluids
-	METHOD matchesFluids (Lnet/minecraft/core/Vec3i;[Lnet/minecraft/world/level/material/Fluid;)Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;
+	METHOD matchesBlocks (Lnet/minecraft/core/Vec3i;[Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;
 		ARG 0 offset
-		ARG 1 fluids
+		ARG 1 blocks
+	METHOD matchesBlocks ([Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;
+		ARG 0 blocks
 	METHOD matchesFluids (Lnet/minecraft/core/Vec3i;Ljava/util/List;)Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;
 		ARG 0 offset
 		ARG 1 fluids
+	METHOD matchesFluids (Lnet/minecraft/core/Vec3i;[Lnet/minecraft/world/level/material/Fluid;)Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;
+		ARG 0 offset
+		ARG 1 fluids
+	METHOD matchesFluids ([Lnet/minecraft/world/level/material/Fluid;)Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;
+		ARG 0 fluids
 	METHOD matchesTag (Lnet/minecraft/core/Vec3i;Lnet/minecraft/tags/TagKey;)Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;
 		ARG 0 offset
 		ARG 1 tag

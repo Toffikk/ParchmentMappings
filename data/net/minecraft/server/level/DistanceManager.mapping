@@ -41,15 +41,6 @@ CLASS net/minecraft/server/level/DistanceManager
 		ARG 1 viewDistance
 	METHOD updateSimulationDistance (I)V
 		ARG 1 newDistance
-	CLASS FixedPlayerDistanceChunkTracker
-		METHOD <init> (Lnet/minecraft/server/level/DistanceManager;I)V
-			ARG 2 maxDistance
-		METHOD havePlayer (J)Z
-			ARG 1 chunkPos
-		METHOD onLevelChange (JII)V
-			ARG 1 node
-			ARG 3 oldLevel
-			ARG 4 level
 	CLASS PlayerTicketTracker
 		METHOD haveTicketFor (I)Z
 			ARG 1 level
@@ -62,3 +53,12 @@ CLASS net/minecraft/server/level/DistanceManager
 			ARG 5 sees
 		METHOD updateViewDistance (I)V
 			ARG 1 viewDistance
+	CLASS FixedPlayerDistanceChunkTracker
+		METHOD <init> (Lnet/minecraft/server/level/DistanceManager;I)V
+			ARG 2 maxDistance
+		METHOD havePlayer (J)Z
+			ARG 1 chunkPos
+		METHOD onLevelChange (JII)V
+			ARG 1 node
+			ARG 3 oldLevel
+			ARG 4 level

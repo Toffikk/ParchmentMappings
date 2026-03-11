@@ -184,13 +184,16 @@ CLASS net/minecraft/server/level/ServerPlayer
 		CLASS 1
 			METHOD lambda$load$0 (Lnet/minecraft/core/component/TypedDataComponent;Ljava/lang/String;)Ljava/lang/IllegalArgumentException;
 				ARG 1 msg
-			METHOD load (Ljava/lang/Object;)Ljava/lang/Object;
+			METHOD load (Lnet/minecraft/core/component/TypedDataComponent;)Ljava/lang/Integer;
 				ARG 1 component
 	CLASS RespawnConfig
 		METHOD getDimensionOrDefault (Lnet/minecraft/server/level/ServerPlayer$RespawnConfig;)Lnet/minecraft/resources/ResourceKey;
 			ARG 0 respawnConfig
 		METHOD isSamePosition (Lnet/minecraft/server/level/ServerPlayer$RespawnConfig;)Z
 			ARG 1 other
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+	CLASS SavedPosition
 		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 i
 	CLASS RespawnPosAngle
@@ -201,6 +204,3 @@ CLASS net/minecraft/server/level/ServerPlayer
 			ARG 0 position
 			ARG 1 lookAtBlockPos
 			ARG 2 pitch
-	CLASS SavedPosition
-		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-			ARG 0 i

@@ -28,7 +28,7 @@ CLASS net/minecraft/world/entity/AreaEffectCloud
 		ARG 1 radiusOnUse
 	METHOD setRadiusPerTick (F)V
 		ARG 1 radiusPerTick
-	METHOD setWaiting (Z)V
-		ARG 1 waiting
 	METHOD setWaitTime (I)V
 		ARG 1 waitTime
+	METHOD setWaiting (Z)V
+		ARG 1 waiting

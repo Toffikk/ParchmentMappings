@@ -11,201 +11,7 @@ CLASS net/minecraft/data/loot/packs/VanillaBlockLoot
 		ARG 1 x$0
 	METHOD lambda$generate$1 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)V
 		ARG 1 x$0
-	METHOD lambda$generate$2 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 block
-	METHOD lambda$generate$3 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$4 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$5 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$6 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$7 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$8 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$9 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
 	METHOD lambda$generate$10 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$11 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$12 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$13 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$14 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$15 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$16 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 block
-	METHOD lambda$generate$17 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 block
-	METHOD lambda$generate$18 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 block
-	METHOD lambda$generate$19 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 block
-	METHOD lambda$generate$20 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 block
-	METHOD lambda$generate$21 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 block
-	METHOD lambda$generate$22 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 block
-	METHOD lambda$generate$23 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 block
-	METHOD lambda$generate$24 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 block
-	METHOD lambda$generate$25 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 block
-	METHOD lambda$generate$26 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 block
-	METHOD lambda$generate$27 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 block
-	METHOD lambda$generate$28 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 block
-	METHOD lambda$generate$29 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 block
-	METHOD lambda$generate$30 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 block
-	METHOD lambda$generate$31 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 block
-	METHOD lambda$generate$32 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$33 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$34 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$35 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$36 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$37 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$38 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$39 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$40 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$41 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$42 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$43 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$44 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$45 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$46 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$47 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$48 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$49 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$50 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$51 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$52 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$53 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$54 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$55 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$56 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$57 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$58 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$59 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$60 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$61 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$62 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$63 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$64 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$65 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$66 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$67 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$68 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$69 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$70 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$71 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$72 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$73 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$74 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$75 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$76 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$77 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$78 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$79 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$80 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$81 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$82 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$83 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$84 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$85 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$86 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$87 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$88 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$89 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$90 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$91 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$92 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$93 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$94 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$95 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$96 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$97 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$98 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
-		ARG 1 x$0
-	METHOD lambda$generate$99 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 x$0
 	METHOD lambda$generate$100 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 x$0
@@ -227,6 +33,8 @@ CLASS net/minecraft/data/loot/packs/VanillaBlockLoot
 		ARG 1 x$0
 	METHOD lambda$generate$109 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 x$0
+	METHOD lambda$generate$11 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
 	METHOD lambda$generate$110 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 x$0
 	METHOD lambda$generate$111 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
@@ -247,6 +55,8 @@ CLASS net/minecraft/data/loot/packs/VanillaBlockLoot
 		ARG 1 block
 	METHOD lambda$generate$119 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 block
+	METHOD lambda$generate$12 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
 	METHOD lambda$generate$120 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 block
 	METHOD lambda$generate$121 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
@@ -267,6 +77,8 @@ CLASS net/minecraft/data/loot/packs/VanillaBlockLoot
 		ARG 1 block
 	METHOD lambda$generate$129 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 block
+	METHOD lambda$generate$13 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
 	METHOD lambda$generate$130 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 block
 	METHOD lambda$generate$131 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
@@ -286,6 +98,8 @@ CLASS net/minecraft/data/loot/packs/VanillaBlockLoot
 	METHOD lambda$generate$138 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 x$0
 	METHOD lambda$generate$139 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$14 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 x$0
 	METHOD lambda$generate$140 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 x$0
@@ -307,6 +121,8 @@ CLASS net/minecraft/data/loot/packs/VanillaBlockLoot
 		ARG 1 x$0
 	METHOD lambda$generate$149 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 x$0
+	METHOD lambda$generate$15 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
 	METHOD lambda$generate$150 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 x$0
 	METHOD lambda$generate$151 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
@@ -327,6 +143,8 @@ CLASS net/minecraft/data/loot/packs/VanillaBlockLoot
 		ARG 1 x$0
 	METHOD lambda$generate$159 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 x$0
+	METHOD lambda$generate$16 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 block
 	METHOD lambda$generate$160 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 x$0
 	METHOD lambda$generate$161 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
@@ -347,6 +165,8 @@ CLASS net/minecraft/data/loot/packs/VanillaBlockLoot
 		ARG 1 x$0
 	METHOD lambda$generate$169 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 x$0
+	METHOD lambda$generate$17 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 block
 	METHOD lambda$generate$170 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 x$0
 	METHOD lambda$generate$171 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
@@ -367,6 +187,8 @@ CLASS net/minecraft/data/loot/packs/VanillaBlockLoot
 		ARG 1 x$0
 	METHOD lambda$generate$179 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 x$0
+	METHOD lambda$generate$18 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 block
 	METHOD lambda$generate$180 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 x$0
 	METHOD lambda$generate$181 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
@@ -387,6 +209,8 @@ CLASS net/minecraft/data/loot/packs/VanillaBlockLoot
 		ARG 1 x$0
 	METHOD lambda$generate$189 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 x$0
+	METHOD lambda$generate$19 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 block
 	METHOD lambda$generate$190 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 x$0
 	METHOD lambda$generate$191 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
@@ -407,6 +231,10 @@ CLASS net/minecraft/data/loot/packs/VanillaBlockLoot
 		ARG 1 x$0
 	METHOD lambda$generate$199 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 x$0
+	METHOD lambda$generate$2 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 block
+	METHOD lambda$generate$20 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 block
 	METHOD lambda$generate$200 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 x$0
 	METHOD lambda$generate$201 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
@@ -426,6 +254,8 @@ CLASS net/minecraft/data/loot/packs/VanillaBlockLoot
 	METHOD lambda$generate$208 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 x$0
 	METHOD lambda$generate$209 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 block
+	METHOD lambda$generate$21 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 block
 	METHOD lambda$generate$210 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 x$0
@@ -447,6 +277,8 @@ CLASS net/minecraft/data/loot/packs/VanillaBlockLoot
 		ARG 1 block
 	METHOD lambda$generate$219 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 block
+	METHOD lambda$generate$22 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 block
 	METHOD lambda$generate$220 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 block
 	METHOD lambda$generate$221 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
@@ -466,6 +298,8 @@ CLASS net/minecraft/data/loot/packs/VanillaBlockLoot
 	METHOD lambda$generate$228 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 block
 	METHOD lambda$generate$229 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 block
+	METHOD lambda$generate$23 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 block
 	METHOD lambda$generate$230 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 block
@@ -487,6 +321,8 @@ CLASS net/minecraft/data/loot/packs/VanillaBlockLoot
 		ARG 1 block
 	METHOD lambda$generate$239 (Lnet/minecraft/core/HolderLookup$RegistryLookup;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 2 block
+	METHOD lambda$generate$24 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 block
 	METHOD lambda$generate$240 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 x$0
 	METHOD lambda$generate$241 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
@@ -507,6 +343,8 @@ CLASS net/minecraft/data/loot/packs/VanillaBlockLoot
 		ARG 1 x$0
 	METHOD lambda$generate$249 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 x$0
+	METHOD lambda$generate$25 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 block
 	METHOD lambda$generate$250 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 block
 	METHOD lambda$generate$251 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
@@ -526,6 +364,8 @@ CLASS net/minecraft/data/loot/packs/VanillaBlockLoot
 	METHOD lambda$generate$258 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 block
 	METHOD lambda$generate$259 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 block
+	METHOD lambda$generate$26 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 block
 	METHOD lambda$generate$260 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 1 block
@@ -547,6 +387,8 @@ CLASS net/minecraft/data/loot/packs/VanillaBlockLoot
 		ARG 2 block
 	METHOD lambda$generate$269 (Lnet/minecraft/core/HolderLookup$RegistryLookup;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 2 block
+	METHOD lambda$generate$27 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 block
 	METHOD lambda$generate$270 (Lnet/minecraft/core/HolderLookup$RegistryLookup;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 2 block
 	METHOD lambda$generate$271 (Lnet/minecraft/world/level/block/Block;Ljava/lang/Integer;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;
@@ -565,3 +407,161 @@ CLASS net/minecraft/data/loot/packs/VanillaBlockLoot
 		ARG 1 block
 	METHOD lambda$generate$278 (Lnet/minecraft/core/HolderLookup$RegistryLookup;Lnet/minecraft/core/HolderLookup$RegistryLookup;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
 		ARG 3 block
+	METHOD lambda$generate$28 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 block
+	METHOD lambda$generate$29 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 block
+	METHOD lambda$generate$3 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$30 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 block
+	METHOD lambda$generate$31 (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 block
+	METHOD lambda$generate$32 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$33 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$34 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$35 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$36 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$37 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$38 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$39 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$4 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$40 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$41 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$42 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$43 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$44 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$45 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$46 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$47 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$48 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$49 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$5 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$50 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$51 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$52 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$53 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$54 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$55 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$56 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$57 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$58 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$59 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$6 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$60 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$61 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$62 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$63 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$64 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$65 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$66 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$67 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$68 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$69 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$7 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$70 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$71 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$72 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$73 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$74 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$75 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$76 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$77 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$78 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$79 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$8 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$80 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$81 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$82 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$83 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$84 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$85 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$86 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$87 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$88 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$89 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$9 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$90 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$91 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$92 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$93 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$94 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$95 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$96 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$97 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$98 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0
+	METHOD lambda$generate$99 (Lnet/minecraft/data/loot/packs/VanillaBlockLoot;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder;
+		ARG 1 x$0

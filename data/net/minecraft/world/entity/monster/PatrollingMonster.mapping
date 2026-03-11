@@ -7,10 +7,10 @@ CLASS net/minecraft/world/entity/monster/PatrollingMonster
 		ARG 4 random
 	METHOD setPatrolLeader (Z)V
 		ARG 1 isLeader
-	METHOD setPatrolling (Z)V
-		ARG 1 value
 	METHOD setPatrolTarget (Lnet/minecraft/core/BlockPos;)V
 		ARG 1 target
+	METHOD setPatrolling (Z)V
+		ARG 1 value
 	CLASS LongDistancePatrolGoal
 		METHOD <init> (Lnet/minecraft/world/entity/monster/PatrollingMonster;DD)V
 			ARG 1 mob

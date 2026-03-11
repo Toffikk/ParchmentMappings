@@ -21,10 +21,6 @@ CLASS net/minecraft/commands/arguments/item/ComponentPredicateParser
 		ARG 2 scope
 	METHOD lambda$createGrammar$9 (Lnet/minecraft/util/parsing/packrat/Atom;Lnet/minecraft/util/parsing/packrat/Atom;Lnet/minecraft/commands/arguments/item/ComponentPredicateParser$Context;Lnet/minecraft/util/parsing/packrat/Atom;Lnet/minecraft/util/parsing/packrat/ParseState;)Ljava/lang/Object;
 		ARG 4 state
-	CLASS ComponentLookupRule
-		METHOD <init> (Lnet/minecraft/util/parsing/packrat/NamedRule;Lnet/minecraft/commands/arguments/item/ComponentPredicateParser$Context;)V
-			ARG 1 idParser
-			ARG 2 context
 	CLASS Context
 		METHOD anyOf (Ljava/util/List;)Ljava/lang/Object;
 			ARG 1 alternatives
@@ -53,15 +49,19 @@ CLASS net/minecraft/commands/arguments/item/ComponentPredicateParser
 			ARG 2 id
 		METHOD negate (Ljava/lang/Object;)Ljava/lang/Object;
 			ARG 1 value
+	CLASS TagLookupRule
+		METHOD <init> (Lnet/minecraft/util/parsing/packrat/NamedRule;Lnet/minecraft/commands/arguments/item/ComponentPredicateParser$Context;)V
+			ARG 1 idParser
+			ARG 2 context
 	CLASS ElementLookupRule
 		METHOD <init> (Lnet/minecraft/util/parsing/packrat/NamedRule;Lnet/minecraft/commands/arguments/item/ComponentPredicateParser$Context;)V
 			ARG 1 idParser
 			ARG 2 context
-	CLASS PredicateLookupRule
+	CLASS ComponentLookupRule
 		METHOD <init> (Lnet/minecraft/util/parsing/packrat/NamedRule;Lnet/minecraft/commands/arguments/item/ComponentPredicateParser$Context;)V
 			ARG 1 idParser
 			ARG 2 context
-	CLASS TagLookupRule
+	CLASS PredicateLookupRule
 		METHOD <init> (Lnet/minecraft/util/parsing/packrat/NamedRule;Lnet/minecraft/commands/arguments/item/ComponentPredicateParser$Context;)V
 			ARG 1 idParser
 			ARG 2 context

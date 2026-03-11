@@ -56,12 +56,12 @@ CLASS net/minecraft/client/data/models/BlockModelGenerators
 		ARG 1 clusterBlock
 	METHOD createAnvil (Lnet/minecraft/world/level/block/Block;)V
 		ARG 1 block
-	METHOD createAxisAlignedPillarBlock (Lnet/minecraft/world/level/block/Block;Lnet/minecraft/client/data/models/model/TexturedModel$Provider;)V
-		ARG 1 block
-		ARG 2 modelProvider
 	METHOD createAxisAlignedPillarBlock (Lnet/minecraft/world/level/block/Block;Lnet/minecraft/client/data/models/MultiVariant;)Lnet/minecraft/client/data/models/blockstates/BlockModelDefinitionGenerator;
 		ARG 0 block
 		ARG 1 model
+	METHOD createAxisAlignedPillarBlock (Lnet/minecraft/world/level/block/Block;Lnet/minecraft/client/data/models/model/TexturedModel$Provider;)V
+		ARG 1 block
+		ARG 2 modelProvider
 	METHOD createAxisAlignedPillarBlockCustomModel (Lnet/minecraft/world/level/block/Block;Lnet/minecraft/client/data/models/MultiVariant;)V
 		ARG 1 block
 		ARG 2 model
@@ -383,14 +383,14 @@ CLASS net/minecraft/client/data/models/BlockModelGenerators
 		ARG 1 block
 	METHOD createRotatedMirroredVariantBlock (Lnet/minecraft/world/level/block/Block;)V
 		ARG 1 block
-	METHOD createRotatedPillarWithHorizontalVariant (Lnet/minecraft/world/level/block/Block;Lnet/minecraft/client/data/models/model/TexturedModel$Provider;Lnet/minecraft/client/data/models/model/TexturedModel$Provider;)V
-		ARG 1 block
-		ARG 2 verticalProvider
-		ARG 3 horizontalProvider
 	METHOD createRotatedPillarWithHorizontalVariant (Lnet/minecraft/world/level/block/Block;Lnet/minecraft/client/data/models/MultiVariant;Lnet/minecraft/client/data/models/MultiVariant;)Lnet/minecraft/client/data/models/blockstates/BlockModelDefinitionGenerator;
 		ARG 0 block
 		ARG 1 model
 		ARG 2 horizontalModel
+	METHOD createRotatedPillarWithHorizontalVariant (Lnet/minecraft/world/level/block/Block;Lnet/minecraft/client/data/models/model/TexturedModel$Provider;Lnet/minecraft/client/data/models/model/TexturedModel$Provider;)V
+		ARG 1 block
+		ARG 2 verticalProvider
+		ARG 3 horizontalProvider
 	METHOD createRotatedVariantBlock (Lnet/minecraft/world/level/block/Block;)V
 		ARG 1 block
 	METHOD createRotatedVariants (Lnet/minecraft/client/renderer/block/model/Variant;)Lnet/minecraft/client/data/models/MultiVariant;
@@ -596,6 +596,16 @@ CLASS net/minecraft/client/data/models/BlockModelGenerators
 		ARG 0 v
 	METHOD lambda$static$1 (Lnet/minecraft/client/data/models/blockstates/ConditionBuilder;)Lnet/minecraft/client/data/models/blockstates/ConditionBuilder;
 		ARG 0 condition
+	METHOD lambda$static$10 (Lnet/minecraft/client/data/models/model/TextureMapping;)V
+		ARG 0 m
+	METHOD lambda$static$11 (Lnet/minecraft/client/data/models/model/TextureMapping;)V
+		ARG 0 m
+	METHOD lambda$static$12 (Lnet/minecraft/client/data/models/model/TextureMapping;)V
+		ARG 0 m
+	METHOD lambda$static$13 (Lnet/minecraft/client/data/models/model/TextureMapping;)V
+		ARG 0 m
+	METHOD lambda$static$14 (Lnet/minecraft/client/data/models/model/TextureMapping;)V
+		ARG 0 m
 	METHOD lambda$static$2 (Lnet/minecraft/client/data/models/blockstates/ConditionBuilder;)Lnet/minecraft/client/data/models/blockstates/ConditionBuilder;
 		ARG 0 condition
 	METHOD lambda$static$3 (Lnet/minecraft/client/data/models/blockstates/ConditionBuilder;)Lnet/minecraft/client/data/models/blockstates/ConditionBuilder;
@@ -610,16 +620,6 @@ CLASS net/minecraft/client/data/models/BlockModelGenerators
 		ARG 0 condition
 	METHOD lambda$static$8 (Lnet/minecraft/client/data/models/blockstates/ConditionBuilder;)Lnet/minecraft/client/data/models/blockstates/ConditionBuilder;
 		ARG 0 condition
-	METHOD lambda$static$10 (Lnet/minecraft/client/data/models/model/TextureMapping;)V
-		ARG 0 m
-	METHOD lambda$static$11 (Lnet/minecraft/client/data/models/model/TextureMapping;)V
-		ARG 0 m
-	METHOD lambda$static$12 (Lnet/minecraft/client/data/models/model/TextureMapping;)V
-		ARG 0 m
-	METHOD lambda$static$13 (Lnet/minecraft/client/data/models/model/TextureMapping;)V
-		ARG 0 m
-	METHOD lambda$static$14 (Lnet/minecraft/client/data/models/model/TextureMapping;)V
-		ARG 0 m
 	METHOD lambda$variants$9 (Lnet/minecraft/client/renderer/block/model/Variant;)Lnet/minecraft/util/random/Weighted;
 		ARG 0 v
 	METHOD or ([Lnet/minecraft/client/data/models/blockstates/ConditionBuilder;)Lnet/minecraft/client/renderer/block/model/multipart/Condition;
@@ -661,6 +661,29 @@ CLASS net/minecraft/client/data/models/BlockModelGenerators
 		ARG 0 variant
 	METHOD woodProvider (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/client/data/models/BlockModelGenerators$WoodProvider;
 		ARG 1 log
+	CLASS PlantType
+		METHOD <init> (Ljava/lang/String;ILnet/minecraft/client/data/models/model/ModelTemplate;Lnet/minecraft/client/data/models/model/ModelTemplate;Z)V
+			ARG 3 blockTemplate
+			ARG 4 flowerPotTemplate
+			ARG 5 isEmissive
+		METHOD createItemModel (Lnet/minecraft/client/data/models/BlockModelGenerators;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/resources/Identifier;
+			ARG 1 generator
+			ARG 2 block
+		METHOD getPlantTextureMapping (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/client/data/models/model/TextureMapping;
+			ARG 1 standAlone
+		METHOD getTextureMapping (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/client/data/models/model/TextureMapping;
+			ARG 1 block
+	CLASS WoodProvider
+		METHOD <init> (Lnet/minecraft/client/data/models/BlockModelGenerators;Lnet/minecraft/client/data/models/model/TextureMapping;)V
+			ARG 2 logMapping
+		METHOD log (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/client/data/models/BlockModelGenerators$WoodProvider;
+			ARG 1 block
+		METHOD logUVLocked (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/client/data/models/BlockModelGenerators$WoodProvider;
+			ARG 1 block
+		METHOD logWithHorizontal (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/client/data/models/BlockModelGenerators$WoodProvider;
+			ARG 1 block
+		METHOD wood (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/client/data/models/BlockModelGenerators$WoodProvider;
+			ARG 1 block
 	CLASS BlockFamilyProvider
 		METHOD <init> (Lnet/minecraft/client/data/models/BlockModelGenerators;Lnet/minecraft/client/data/models/model/TextureMapping;)V
 			ARG 2 mapping
@@ -712,26 +735,3 @@ CLASS net/minecraft/client/data/models/BlockModelGenerators
 			ARG 2 normal
 			ARG 3 mapping
 			ARG 4 modelOutput
-	CLASS PlantType
-		METHOD <init> (Ljava/lang/String;ILnet/minecraft/client/data/models/model/ModelTemplate;Lnet/minecraft/client/data/models/model/ModelTemplate;Z)V
-			ARG 3 blockTemplate
-			ARG 4 flowerPotTemplate
-			ARG 5 isEmissive
-		METHOD createItemModel (Lnet/minecraft/client/data/models/BlockModelGenerators;Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/resources/Identifier;
-			ARG 1 generator
-			ARG 2 block
-		METHOD getPlantTextureMapping (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/client/data/models/model/TextureMapping;
-			ARG 1 standAlone
-		METHOD getTextureMapping (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/client/data/models/model/TextureMapping;
-			ARG 1 block
-	CLASS WoodProvider
-		METHOD <init> (Lnet/minecraft/client/data/models/BlockModelGenerators;Lnet/minecraft/client/data/models/model/TextureMapping;)V
-			ARG 2 logMapping
-		METHOD log (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/client/data/models/BlockModelGenerators$WoodProvider;
-			ARG 1 block
-		METHOD logUVLocked (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/client/data/models/BlockModelGenerators$WoodProvider;
-			ARG 1 block
-		METHOD logWithHorizontal (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/client/data/models/BlockModelGenerators$WoodProvider;
-			ARG 1 block
-		METHOD wood (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/client/data/models/BlockModelGenerators$WoodProvider;
-			ARG 1 block

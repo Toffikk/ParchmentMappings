@@ -72,15 +72,6 @@ CLASS net/minecraft/client/gui/GuiGraphics
 		ARG 7 u1
 		ARG 8 v0
 		ARG 9 v1
-	METHOD blitNineSlicedSprite (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;Lnet/minecraft/client/resources/metadata/gui/GuiSpriteScaling$NineSlice;IIIII)V
-		ARG 1 renderPipeline
-		ARG 2 sprite
-		ARG 3 nineSlice
-		ARG 4 x
-		ARG 5 y
-		ARG 6 width
-		ARG 7 height
-		ARG 8 color
 	METHOD blitNineSliceInnerSegment (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/client/resources/metadata/gui/GuiSpriteScaling$NineSlice;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;IIIIIIIIIII)V
 		ARG 1 renderPipeline
 		ARG 2 nineSlice
@@ -96,6 +87,15 @@ CLASS net/minecraft/client/gui/GuiGraphics
 		ARG 12 spriteWidth
 		ARG 13 spriteHeight
 		ARG 14 color
+	METHOD blitNineSlicedSprite (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;Lnet/minecraft/client/resources/metadata/gui/GuiSpriteScaling$NineSlice;IIIII)V
+		ARG 1 renderPipeline
+		ARG 2 sprite
+		ARG 3 nineSlice
+		ARG 4 x
+		ARG 5 y
+		ARG 6 width
+		ARG 7 height
+		ARG 8 color
 	METHOD blitSprite (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;IIII)V
 		ARG 1 renderPipeline
 		ARG 2 sprite
@@ -583,6 +583,12 @@ CLASS net/minecraft/client/gui/GuiGraphics
 		ARG 2 y0
 		ARG 3 y1
 		ARG 4 col
+	CLASS ScissorStack
+		METHOD containsPoint (II)Z
+			ARG 1 x
+			ARG 2 y
+		METHOD push (Lnet/minecraft/client/gui/navigation/ScreenRectangle;)Lnet/minecraft/client/gui/navigation/ScreenRectangle;
+			ARG 1 rectangle
 	CLASS HoveredTextEffects
 		METHOD <init> (Ljava/lang/String;IZZ)V
 			ARG 3 allowTooltip
@@ -594,11 +600,5 @@ CLASS net/minecraft/client/gui/GuiGraphics
 			ARG 2 initialParameters
 			ARG 3 hoveredTextEffects
 			ARG 4 additonalConsumer
-		METHOD accept (Ljava/lang/Object;)V
+		METHOD accept (Lnet/minecraft/network/chat/Style;)V
 			ARG 1 style
-	CLASS ScissorStack
-		METHOD containsPoint (II)Z
-			ARG 1 x
-			ARG 2 y
-		METHOD push (Lnet/minecraft/client/gui/navigation/ScreenRectangle;)Lnet/minecraft/client/gui/navigation/ScreenRectangle;
-			ARG 1 rectangle

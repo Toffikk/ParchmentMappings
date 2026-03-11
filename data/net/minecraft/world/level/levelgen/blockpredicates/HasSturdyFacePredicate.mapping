@@ -8,6 +8,6 @@ CLASS net/minecraft/world/level/levelgen/blockpredicates/HasSturdyFacePredicate
 		ARG 0 c
 	METHOD lambda$static$2 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 i
-	METHOD test (Ljava/lang/Object;Ljava/lang/Object;)Z
+	METHOD test (Lnet/minecraft/world/level/WorldGenLevel;Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 level
 		ARG 2 origin

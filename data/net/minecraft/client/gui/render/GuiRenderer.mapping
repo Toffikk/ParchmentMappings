@@ -5,10 +5,10 @@ CLASS net/minecraft/client/gui/render/GuiRenderer
 		ARG 3 submitNodeCollector
 		ARG 4 featureRenderDispatcher
 		ARG 5 pictureInPictureRenderers
-	METHOD addElementsToMeshes (Lnet/minecraft/client/gui/render/state/GuiRenderState$TraverseRange;)V
-		ARG 1 range
 	METHOD addElementToMesh (Lnet/minecraft/client/gui/render/state/GuiElementRenderState;)V
 		ARG 1 elementState
+	METHOD addElementsToMeshes (Lnet/minecraft/client/gui/render/state/GuiRenderState$TraverseRange;)V
+		ARG 1 range
 	METHOD calculateAtlasSizeInPixels (I)I
 		ARG 1 singleItemTextureSize
 	METHOD createAtlasTextures (I)V

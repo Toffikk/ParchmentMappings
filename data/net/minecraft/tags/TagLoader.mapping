@@ -53,6 +53,11 @@ CLASS net/minecraft/tags/TagLoader
 	METHOD wrapTags (Lnet/minecraft/resources/ResourceKey;Ljava/util/Map;)Ljava/util/Map;
 		ARG 0 registryKey
 		ARG 1 tags
+	CLASS SortingEntry
+		METHOD lambda$visitOptionalDependencies$1 (Ljava/util/function/Consumer;Lnet/minecraft/tags/TagLoader$EntryWithSource;)V
+			ARG 1 e
+		METHOD lambda$visitRequiredDependencies$0 (Ljava/util/function/Consumer;Lnet/minecraft/tags/TagLoader$EntryWithSource;)V
+			ARG 1 e
 	CLASS ElementLookup
 		METHOD fromFrozenRegistry (Lnet/minecraft/core/Registry;)Lnet/minecraft/tags/TagLoader$ElementLookup;
 			ARG 0 registry
@@ -67,8 +72,3 @@ CLASS net/minecraft/tags/TagLoader
 		METHOD lambda$fromWritableRegistry$1 (Lnet/minecraft/core/HolderGetter;Lnet/minecraft/core/WritableRegistry;Lnet/minecraft/resources/Identifier;Z)Ljava/util/Optional;
 			ARG 2 id
 			ARG 3 required
-	CLASS SortingEntry
-		METHOD lambda$visitOptionalDependencies$1 (Ljava/util/function/Consumer;Lnet/minecraft/tags/TagLoader$EntryWithSource;)V
-			ARG 1 e
-		METHOD lambda$visitRequiredDependencies$0 (Ljava/util/function/Consumer;Lnet/minecraft/tags/TagLoader$EntryWithSource;)V
-			ARG 1 e

@@ -274,6 +274,11 @@ CLASS net/minecraft/world/item/enchantment/Enchantment
 		ARG 2 enchantmentLevel
 		ARG 3 item
 		ARG 4 entity
+	CLASS Cost
+		METHOD calculate (I)I
+			ARG 1 level
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
 	CLASS Builder
 		METHOD <init> (Lnet/minecraft/world/item/enchantment/Enchantment$EnchantmentDefinition;)V
 			ARG 1 definition
@@ -294,9 +299,6 @@ CLASS net/minecraft/world/item/enchantment/Enchantment
 			ARG 1 type
 			ARG 2 effect
 			ARG 3 condition
-		METHOD withEffect (Lnet/minecraft/core/component/DataComponentType;Lnet/minecraft/world/item/enchantment/effects/EnchantmentAttributeEffect;)Lnet/minecraft/world/item/enchantment/Enchantment$Builder;
-			ARG 1 type
-			ARG 2 effect
 		METHOD withEffect (Lnet/minecraft/core/component/DataComponentType;Lnet/minecraft/world/item/enchantment/EnchantmentTarget;Lnet/minecraft/world/item/enchantment/EnchantmentTarget;Ljava/lang/Object;)Lnet/minecraft/world/item/enchantment/Enchantment$Builder;
 			ARG 1 type
 			ARG 2 enchanted
@@ -308,14 +310,12 @@ CLASS net/minecraft/world/item/enchantment/Enchantment
 			ARG 3 affected
 			ARG 4 effect
 			ARG 5 condition
+		METHOD withEffect (Lnet/minecraft/core/component/DataComponentType;Lnet/minecraft/world/item/enchantment/effects/EnchantmentAttributeEffect;)Lnet/minecraft/world/item/enchantment/Enchantment$Builder;
+			ARG 1 type
+			ARG 2 effect
 		METHOD withSpecialEffect (Lnet/minecraft/core/component/DataComponentType;Ljava/lang/Object;)Lnet/minecraft/world/item/enchantment/Enchantment$Builder;
 			ARG 1 type
 			ARG 2 effect
-	CLASS Cost
-		METHOD calculate (I)I
-			ARG 1 level
-		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-			ARG 0 i
 	CLASS EnchantmentDefinition
 		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 i

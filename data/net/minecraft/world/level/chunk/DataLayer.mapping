@@ -1,8 +1,8 @@
 CLASS net/minecraft/world/level/chunk/DataLayer
-	METHOD <init> ([B)V
-		ARG 1 data
 	METHOD <init> (I)V
 		ARG 1 defaultValue
+	METHOD <init> ([B)V
+		ARG 1 data
 	METHOD fill (I)V
 		ARG 1 value
 	METHOD get (I)I

@@ -1,8 +1,8 @@
 CLASS net/minecraft/world/level/block/HoneyBlock
-	METHOD doesEntityDoHoneyBlockSlideEffects (Lnet/minecraft/world/entity/Entity;)Z
-		ARG 0 entity
 	METHOD doSlideMovement (Lnet/minecraft/world/entity/Entity;)V
 		ARG 1 entity
+	METHOD doesEntityDoHoneyBlockSlideEffects (Lnet/minecraft/world/entity/Entity;)Z
+		ARG 0 entity
 	METHOD getNewDeltaY (D)D
 		ARG 0 deltaY
 	METHOD getOldDeltaY (D)D

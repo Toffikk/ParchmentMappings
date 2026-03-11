@@ -54,14 +54,14 @@ CLASS net/minecraft/client/Minecraft
 		ARG 4 newWorld
 	METHOD emergencySaveAndCrash (Lnet/minecraft/CrashReport;)V
 		ARG 1 partialReport
+	METHOD fillReport (Lnet/minecraft/CrashReport;)Lnet/minecraft/CrashReport;
+		ARG 1 report
 	METHOD fillReport (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/resources/language/LanguageManager;Ljava/lang/String;Lnet/minecraft/client/Options;Lnet/minecraft/CrashReport;)V
 		ARG 0 minecraft
 		ARG 1 languageManager
 		ARG 2 launchedVersion
 		ARG 3 options
 		ARG 4 report
-	METHOD fillReport (Lnet/minecraft/CrashReport;)Lnet/minecraft/CrashReport;
-		ARG 1 report
 	METHOD fillSystemReport (Lnet/minecraft/SystemReport;Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/resources/language/LanguageManager;Ljava/lang/String;Lnet/minecraft/client/Options;)Lnet/minecraft/SystemReport;
 		ARG 0 systemReport
 		ARG 1 minecraft

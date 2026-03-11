@@ -12,9 +12,9 @@ CLASS net/minecraft/world/entity/monster/Vex
 	METHOD setVexFlag (IZ)V
 		ARG 1 flag
 		ARG 2 value
-	CLASS VexCopyOwnerTargetGoal
-		METHOD <init> (Lnet/minecraft/world/entity/monster/Vex;Lnet/minecraft/world/entity/PathfinderMob;)V
-			ARG 2 mob
 	CLASS VexMoveControl
 		METHOD <init> (Lnet/minecraft/world/entity/monster/Vex;Lnet/minecraft/world/entity/monster/Vex;)V
 			ARG 2 vex
+	CLASS VexCopyOwnerTargetGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Vex;Lnet/minecraft/world/entity/PathfinderMob;)V
+			ARG 2 mob

@@ -6,13 +6,13 @@ CLASS net/minecraft/network/chat/ComponentUtils
 		ARG 1 formatter
 	METHOD formatList (Ljava/util/Collection;)Lnet/minecraft/network/chat/Component;
 		ARG 0 values
-	METHOD formatList (Ljava/util/Collection;Ljava/util/function/Function;)Lnet/minecraft/network/chat/Component;
-		ARG 0 values
-		ARG 1 formatter
 	METHOD formatList (Ljava/util/Collection;Ljava/util/Optional;Ljava/util/function/Function;)Lnet/minecraft/network/chat/MutableComponent;
 		ARG 0 values
 		ARG 1 separator
 		ARG 2 formatter
+	METHOD formatList (Ljava/util/Collection;Ljava/util/function/Function;)Lnet/minecraft/network/chat/Component;
+		ARG 0 values
+		ARG 1 formatter
 	METHOD formatList (Ljava/util/Collection;Lnet/minecraft/network/chat/Component;)Lnet/minecraft/network/chat/Component;
 		ARG 0 values
 		ARG 1 separator

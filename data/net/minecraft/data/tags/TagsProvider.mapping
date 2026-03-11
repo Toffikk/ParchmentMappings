@@ -12,10 +12,10 @@ CLASS net/minecraft/data/tags/TagsProvider
 		ARG 1 registries
 	METHOD getOrCreateRawBuilder (Lnet/minecraft/tags/TagKey;)Lnet/minecraft/tags/TagBuilder;
 		ARG 1 tag
-	METHOD lambda$contentsGetter$9 (Lnet/minecraft/tags/TagKey;)Ljava/util/Optional;
-		ARG 1 id
 	METHOD lambda$contentsGetter$10 (Ljava/lang/Void;)Lnet/minecraft/data/tags/TagsProvider$TagLookup;
 		ARG 1 ignore
+	METHOD lambda$contentsGetter$9 (Lnet/minecraft/tags/TagKey;)Ljava/util/Optional;
+		ARG 1 id
 	METHOD lambda$createContentsProvider$11 (Lnet/minecraft/core/HolderLookup$Provider;)Lnet/minecraft/core/HolderLookup$Provider;
 		ARG 1 registries
 	METHOD lambda$getOrCreateRawBuilder$8 (Lnet/minecraft/resources/Identifier;)Lnet/minecraft/tags/TagBuilder;

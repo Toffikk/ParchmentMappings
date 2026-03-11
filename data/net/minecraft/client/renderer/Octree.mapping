@@ -18,15 +18,17 @@ CLASS net/minecraft/client/renderer/Octree
 		ARG 1 visitor
 		ARG 2 frustum
 		ARG 3 closeDistance
-	CLASS AxisSorting
-		METHOD <init> (Ljava/lang/String;IIII)V
-			ARG 3 xShift
-			ARG 4 yShift
-			ARG 5 zShift
-		METHOD getAxisSorting (III)Lnet/minecraft/client/renderer/Octree$AxisSorting;
-			ARG 0 absXDiff
-			ARG 1 absYDiff
-			ARG 2 absZDiff
+	CLASS Leaf
+		METHOD <init> (Lnet/minecraft/client/renderer/Octree;Lnet/minecraft/client/renderer/chunk/SectionRenderDispatcher$RenderSection;)V
+			ARG 2 section
+	CLASS Node
+		METHOD visitNodes (Lnet/minecraft/client/renderer/Octree$OctreeVisitor;ZLnet/minecraft/client/renderer/culling/Frustum;IIZ)V
+			ARG 1 visitor
+			ARG 2 skipFrustumCheck
+			ARG 3 frustum
+			ARG 4 depth
+			ARG 5 closeDistance
+			ARG 6 isClose
 	CLASS Branch
 		METHOD <init> (Lnet/minecraft/client/renderer/Octree;Lnet/minecraft/world/level/levelgen/structure/BoundingBox;)V
 			ARG 2 boundingBox
@@ -41,17 +43,15 @@ CLASS net/minecraft/client/renderer/Octree
 			ARG 1 xDiffsOppositeSides
 			ARG 2 yDiffsOppositeSides
 			ARG 3 zDiffsOppositeSides
-	CLASS Leaf
-		METHOD <init> (Lnet/minecraft/client/renderer/Octree;Lnet/minecraft/client/renderer/chunk/SectionRenderDispatcher$RenderSection;)V
-			ARG 2 section
-	CLASS Node
-		METHOD visitNodes (Lnet/minecraft/client/renderer/Octree$OctreeVisitor;ZLnet/minecraft/client/renderer/culling/Frustum;IIZ)V
-			ARG 1 visitor
-			ARG 2 skipFrustumCheck
-			ARG 3 frustum
-			ARG 4 depth
-			ARG 5 closeDistance
-			ARG 6 isClose
+	CLASS AxisSorting
+		METHOD <init> (Ljava/lang/String;IIII)V
+			ARG 3 xShift
+			ARG 4 yShift
+			ARG 5 zShift
+		METHOD getAxisSorting (III)Lnet/minecraft/client/renderer/Octree$AxisSorting;
+			ARG 0 absXDiff
+			ARG 1 absYDiff
+			ARG 2 absZDiff
 	CLASS OctreeVisitor
 		METHOD visit (Lnet/minecraft/client/renderer/Octree$Node;ZIZ)V
 			ARG 1 node

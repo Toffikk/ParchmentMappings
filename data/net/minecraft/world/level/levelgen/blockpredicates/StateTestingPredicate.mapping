@@ -5,7 +5,7 @@ CLASS net/minecraft/world/level/levelgen/blockpredicates/StateTestingPredicate
 		ARG 0 c
 	METHOD stateTestingCodec (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/Products$P1;
 		ARG 0 instance
-	METHOD test (Ljava/lang/Object;Ljava/lang/Object;)Z
+	METHOD test (Lnet/minecraft/world/level/WorldGenLevel;Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 level
 		ARG 2 origin
 	METHOD test (Lnet/minecraft/world/level/block/state/BlockState;)Z

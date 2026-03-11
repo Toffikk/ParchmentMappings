@@ -12,11 +12,11 @@ CLASS net/minecraft/world/entity/EntityReference
 	METHOD getEntity (Lnet/minecraft/world/entity/EntityReference;Lnet/minecraft/world/level/Level;)Lnet/minecraft/world/entity/Entity;
 		ARG 0 reference
 		ARG 1 level
-	METHOD getEntity (Lnet/minecraft/world/level/entity/UUIDLookup;Ljava/lang/Class;)Lnet/minecraft/world/level/entity/UniquelyIdentifyable;
-		ARG 1 lookup
-		ARG 2 clazz
 	METHOD getEntity (Lnet/minecraft/world/level/Level;Ljava/lang/Class;)Lnet/minecraft/world/level/entity/UniquelyIdentifyable;
 		ARG 1 level
+		ARG 2 clazz
+	METHOD getEntity (Lnet/minecraft/world/level/entity/UUIDLookup;Ljava/lang/Class;)Lnet/minecraft/world/level/entity/UniquelyIdentifyable;
+		ARG 1 lookup
 		ARG 2 clazz
 	METHOD getLivingEntity (Lnet/minecraft/world/entity/EntityReference;Lnet/minecraft/world/level/Level;)Lnet/minecraft/world/entity/LivingEntity;
 		ARG 0 reference

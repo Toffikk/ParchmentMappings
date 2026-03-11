@@ -17,20 +17,6 @@ CLASS net/minecraft/server/commands/BossBarCommands
 	METHOD getVisible (Lnet/minecraft/commands/CommandSourceStack;Lnet/minecraft/server/bossevents/CustomBossEvent;)I
 		ARG 0 source
 		ARG 1 bossBar
-	METHOD lambda$register$3 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
-	METHOD lambda$register$4 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
-	METHOD lambda$register$5 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
-	METHOD lambda$register$6 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
-	METHOD lambda$register$7 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
-	METHOD lambda$register$8 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
-	METHOD lambda$register$9 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
 	METHOD lambda$register$10 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 c
 	METHOD lambda$register$11 (Lcom/mojang/brigadier/context/CommandContext;)I
@@ -66,6 +52,20 @@ CLASS net/minecraft/server/commands/BossBarCommands
 	METHOD lambda$register$26 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 c
 	METHOD lambda$register$27 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$3 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$4 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$5 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$6 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$7 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$8 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$9 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 c
 	METHOD lambda$static$0 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 id

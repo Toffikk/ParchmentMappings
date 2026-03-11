@@ -10,9 +10,9 @@ CLASS net/minecraft/commands/arguments/MessageArgument
 	METHOD lambda$static$0 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 length
 		ARG 1 maxLength
-	METHOD parse (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
+	METHOD parse (Lcom/mojang/brigadier/StringReader;)Lnet/minecraft/commands/arguments/MessageArgument$Message;
 		ARG 1 reader
-	METHOD parse (Lcom/mojang/brigadier/StringReader;Ljava/lang/Object;)Ljava/lang/Object;
+	METHOD parse (Lcom/mojang/brigadier/StringReader;Ljava/lang/Object;)Lnet/minecraft/commands/arguments/MessageArgument$Message;
 		ARG 1 reader
 		ARG 2 source
 	METHOD resolveChatMessage (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;Ljava/util/function/Consumer;)V
@@ -27,6 +27,9 @@ CLASS net/minecraft/commands/arguments/MessageArgument
 		ARG 0 task
 		ARG 1 sender
 		ARG 2 signedArgument
+	CLASS Part
+		METHOD toComponent (Lnet/minecraft/commands/CommandSourceStack;)Lnet/minecraft/network/chat/Component;
+			ARG 1 sender
 	CLASS Message
 		METHOD parseText (Lcom/mojang/brigadier/StringReader;Z)Lnet/minecraft/commands/arguments/MessageArgument$Message;
 			ARG 0 reader
@@ -36,6 +39,3 @@ CLASS net/minecraft/commands/arguments/MessageArgument
 		METHOD toComponent (Lnet/minecraft/commands/CommandSourceStack;Z)Lnet/minecraft/network/chat/Component;
 			ARG 1 sender
 			ARG 2 allowSelectors
-	CLASS Part
-		METHOD toComponent (Lnet/minecraft/commands/CommandSourceStack;)Lnet/minecraft/network/chat/Component;
-			ARG 1 sender

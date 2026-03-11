@@ -3,16 +3,6 @@ CLASS net/minecraft/commands/arguments/selector/options/EntitySelectorOptions
 		ARG 0 parser
 		ARG 1 key
 		ARG 2 start
-	METHOD lambda$bootStrap$5 (Ljava/lang/String;ZLnet/minecraft/world/entity/Entity;)Z
-		ARG 2 e
-	METHOD lambda$bootStrap$6 (Lnet/minecraft/commands/arguments/selector/EntitySelectorParser;)V
-		ARG 0 parser
-	METHOD lambda$bootStrap$7 (Lnet/minecraft/commands/arguments/selector/EntitySelectorParser;)Z
-		ARG 0 s
-	METHOD lambda$bootStrap$8 (Lnet/minecraft/commands/arguments/selector/EntitySelectorParser;)V
-		ARG 0 parser
-	METHOD lambda$bootStrap$9 (Lnet/minecraft/commands/arguments/selector/EntitySelectorParser;)Z
-		ARG 0 s
 	METHOD lambda$bootStrap$10 (Lnet/minecraft/commands/arguments/selector/EntitySelectorParser;)V
 		ARG 0 parser
 	METHOD lambda$bootStrap$11 (Lnet/minecraft/commands/arguments/selector/EntitySelectorParser;)Z
@@ -94,6 +84,8 @@ CLASS net/minecraft/commands/arguments/selector/options/EntitySelectorOptions
 		ARG 2 e
 	METHOD lambda$bootStrap$49 (Lnet/minecraft/commands/arguments/selector/EntitySelectorParser;)V
 		ARG 0 parser
+	METHOD lambda$bootStrap$5 (Ljava/lang/String;ZLnet/minecraft/world/entity/Entity;)Z
+		ARG 2 e
 	METHOD lambda$bootStrap$50 (Lnet/minecraft/commands/arguments/selector/EntitySelectorParser;)Z
 		ARG 0 s
 	METHOD lambda$bootStrap$51 (Lnet/minecraft/nbt/CompoundTag;ZLnet/minecraft/world/entity/Entity;)Z
@@ -114,6 +106,8 @@ CLASS net/minecraft/commands/arguments/selector/options/EntitySelectorOptions
 		ARG 1 p
 	METHOD lambda$bootStrap$59 (ZLnet/minecraft/advancements/AdvancementProgress;)Z
 		ARG 1 p
+	METHOD lambda$bootStrap$6 (Lnet/minecraft/commands/arguments/selector/EntitySelectorParser;)V
+		ARG 0 parser
 	METHOD lambda$bootStrap$60 (Ljava/util/Map;Lnet/minecraft/world/entity/Entity;)Z
 		ARG 1 e
 	METHOD lambda$bootStrap$61 (Lnet/minecraft/commands/arguments/selector/EntitySelectorParser;)V
@@ -125,6 +119,12 @@ CLASS net/minecraft/commands/arguments/selector/options/EntitySelectorOptions
 	METHOD lambda$bootStrap$64 (Lnet/minecraft/commands/arguments/selector/EntitySelectorParser;)V
 		ARG 0 parser
 	METHOD lambda$bootStrap$65 (Lnet/minecraft/commands/arguments/selector/EntitySelectorParser;)Z
+		ARG 0 s
+	METHOD lambda$bootStrap$7 (Lnet/minecraft/commands/arguments/selector/EntitySelectorParser;)Z
+		ARG 0 s
+	METHOD lambda$bootStrap$8 (Lnet/minecraft/commands/arguments/selector/EntitySelectorParser;)V
+		ARG 0 parser
+	METHOD lambda$bootStrap$9 (Lnet/minecraft/commands/arguments/selector/EntitySelectorParser;)Z
 		ARG 0 s
 	METHOD lambda$static$0 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 name

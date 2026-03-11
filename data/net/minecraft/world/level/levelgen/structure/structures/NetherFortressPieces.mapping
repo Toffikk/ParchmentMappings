@@ -8,6 +8,65 @@ CLASS net/minecraft/world/level/levelgen/structure/structures/NetherFortressPiec
 		ARG 5 footZ
 		ARG 6 direction
 		ARG 7 depth
+	CLASS StairsRoom
+		METHOD <init> (ILnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/core/Direction;)V
+			ARG 1 genDepth
+			ARG 2 boundingBox
+			ARG 3 direction
+		METHOD <init> (Lnet/minecraft/nbt/CompoundTag;)V
+			ARG 1 tag
+		METHOD createPiece (Lnet/minecraft/world/level/levelgen/structure/StructurePieceAccessor;IIIILnet/minecraft/core/Direction;)Lnet/minecraft/world/level/levelgen/structure/structures/NetherFortressPieces$StairsRoom;
+			ARG 0 structurePieceAccessor
+			ARG 1 footX
+			ARG 2 footY
+			ARG 3 footZ
+			ARG 4 genDepth
+			ARG 5 direction
+	CLASS StartPiece
+		METHOD <init> (Lnet/minecraft/util/RandomSource;II)V
+			ARG 1 random
+			ARG 2 west
+			ARG 3 north
+	CLASS PieceWeight
+		METHOD <init> (Ljava/lang/Class;II)V
+			ARG 1 pieceClass
+			ARG 2 weight
+			ARG 3 maxPlaceCount
+		METHOD <init> (Ljava/lang/Class;IIZ)V
+			ARG 1 pieceClass
+			ARG 2 weight
+			ARG 3 maxPlaceCount
+			ARG 4 allowInRow
+		METHOD doPlace (I)Z
+			ARG 1 depth
+	CLASS RoomCrossing
+		METHOD <init> (ILnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/core/Direction;)V
+			ARG 1 genDepth
+			ARG 2 boundingBox
+			ARG 3 direction
+		METHOD <init> (Lnet/minecraft/nbt/CompoundTag;)V
+			ARG 1 tag
+		METHOD createPiece (Lnet/minecraft/world/level/levelgen/structure/StructurePieceAccessor;IIILnet/minecraft/core/Direction;I)Lnet/minecraft/world/level/levelgen/structure/structures/NetherFortressPieces$RoomCrossing;
+			ARG 0 structurePieceAccessor
+			ARG 1 footX
+			ARG 2 footY
+			ARG 3 footZ
+			ARG 4 direction
+			ARG 5 genDepth
+	CLASS MonsterThrone
+		METHOD <init> (ILnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/core/Direction;)V
+			ARG 1 genDepth
+			ARG 2 boundingBox
+			ARG 3 direction
+		METHOD <init> (Lnet/minecraft/nbt/CompoundTag;)V
+			ARG 1 tag
+		METHOD createPiece (Lnet/minecraft/world/level/levelgen/structure/StructurePieceAccessor;IIIILnet/minecraft/core/Direction;)Lnet/minecraft/world/level/levelgen/structure/structures/NetherFortressPieces$MonsterThrone;
+			ARG 0 structurePieceAccessor
+			ARG 1 footX
+			ARG 2 footY
+			ARG 3 footZ
+			ARG 4 genDepth
+			ARG 5 direction
 	CLASS BridgeCrossing
 		METHOD <init> (IILnet/minecraft/core/Direction;)V
 			ARG 1 west
@@ -26,22 +85,6 @@ CLASS net/minecraft/world/level/levelgen/structure/structures/NetherFortressPiec
 			ARG 3 footZ
 			ARG 4 direction
 			ARG 5 genDepth
-	CLASS BridgeEndFiller
-		METHOD <init> (ILnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/core/Direction;)V
-			ARG 1 genDepth
-			ARG 2 random
-			ARG 3 boundingBox
-			ARG 4 direction
-		METHOD <init> (Lnet/minecraft/nbt/CompoundTag;)V
-			ARG 1 tag
-		METHOD createPiece (Lnet/minecraft/world/level/levelgen/structure/StructurePieceAccessor;Lnet/minecraft/util/RandomSource;IIILnet/minecraft/core/Direction;I)Lnet/minecraft/world/level/levelgen/structure/structures/NetherFortressPieces$BridgeEndFiller;
-			ARG 0 structurePieceAccessor
-			ARG 1 random
-			ARG 2 footX
-			ARG 3 footY
-			ARG 4 footZ
-			ARG 5 direction
-			ARG 6 genDepth
 	CLASS BridgeStraight
 		METHOD <init> (ILnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/core/Direction;)V
 			ARG 1 genDepth
@@ -58,34 +101,6 @@ CLASS net/minecraft/world/level/levelgen/structure/structures/NetherFortressPiec
 			ARG 4 footZ
 			ARG 5 direction
 			ARG 6 genDepth
-	CLASS CastleCorridorStairsPiece
-		METHOD <init> (ILnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/core/Direction;)V
-			ARG 1 genDepth
-			ARG 2 boundingBox
-			ARG 3 direction
-		METHOD <init> (Lnet/minecraft/nbt/CompoundTag;)V
-			ARG 1 tag
-		METHOD createPiece (Lnet/minecraft/world/level/levelgen/structure/StructurePieceAccessor;IIILnet/minecraft/core/Direction;I)Lnet/minecraft/world/level/levelgen/structure/structures/NetherFortressPieces$CastleCorridorStairsPiece;
-			ARG 0 structurePieceAccessor
-			ARG 1 footX
-			ARG 2 footY
-			ARG 3 footZ
-			ARG 4 direction
-			ARG 5 genDepth
-	CLASS CastleCorridorTBalconyPiece
-		METHOD <init> (ILnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/core/Direction;)V
-			ARG 1 genDepth
-			ARG 2 boundingBox
-			ARG 3 direction
-		METHOD <init> (Lnet/minecraft/nbt/CompoundTag;)V
-			ARG 1 tag
-		METHOD createPiece (Lnet/minecraft/world/level/levelgen/structure/StructurePieceAccessor;IIILnet/minecraft/core/Direction;I)Lnet/minecraft/world/level/levelgen/structure/structures/NetherFortressPieces$CastleCorridorTBalconyPiece;
-			ARG 0 structurePieceAccessor
-			ARG 1 footX
-			ARG 2 footY
-			ARG 3 footZ
-			ARG 4 direction
-			ARG 5 genDepth
 	CLASS CastleEntrance
 		METHOD <init> (ILnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/core/Direction;)V
 			ARG 1 genDepth
@@ -102,21 +117,7 @@ CLASS net/minecraft/world/level/levelgen/structure/structures/NetherFortressPiec
 			ARG 4 footZ
 			ARG 5 direction
 			ARG 6 genDepth
-	CLASS CastleSmallCorridorCrossingPiece
-		METHOD <init> (ILnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/core/Direction;)V
-			ARG 1 genDepth
-			ARG 2 boundingBox
-			ARG 3 direction
-		METHOD <init> (Lnet/minecraft/nbt/CompoundTag;)V
-			ARG 1 tag
-		METHOD createPiece (Lnet/minecraft/world/level/levelgen/structure/StructurePieceAccessor;IIILnet/minecraft/core/Direction;I)Lnet/minecraft/world/level/levelgen/structure/structures/NetherFortressPieces$CastleSmallCorridorCrossingPiece;
-			ARG 0 structurePieceAccessor
-			ARG 1 footX
-			ARG 2 footY
-			ARG 3 footZ
-			ARG 4 direction
-			ARG 5 genDepth
-	CLASS CastleSmallCorridorLeftTurnPiece
+	CLASS BridgeEndFiller
 		METHOD <init> (ILnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/core/Direction;)V
 			ARG 1 genDepth
 			ARG 2 random
@@ -124,37 +125,7 @@ CLASS net/minecraft/world/level/levelgen/structure/structures/NetherFortressPiec
 			ARG 4 direction
 		METHOD <init> (Lnet/minecraft/nbt/CompoundTag;)V
 			ARG 1 tag
-		METHOD createPiece (Lnet/minecraft/world/level/levelgen/structure/StructurePieceAccessor;Lnet/minecraft/util/RandomSource;IIILnet/minecraft/core/Direction;I)Lnet/minecraft/world/level/levelgen/structure/structures/NetherFortressPieces$CastleSmallCorridorLeftTurnPiece;
-			ARG 0 structurePieceAccessor
-			ARG 1 random
-			ARG 2 footX
-			ARG 3 footY
-			ARG 4 footZ
-			ARG 5 direction
-			ARG 6 genDepth
-	CLASS CastleSmallCorridorPiece
-		METHOD <init> (ILnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/core/Direction;)V
-			ARG 1 genDepth
-			ARG 2 boundingBox
-			ARG 3 direction
-		METHOD <init> (Lnet/minecraft/nbt/CompoundTag;)V
-			ARG 1 tag
-		METHOD createPiece (Lnet/minecraft/world/level/levelgen/structure/StructurePieceAccessor;IIILnet/minecraft/core/Direction;I)Lnet/minecraft/world/level/levelgen/structure/structures/NetherFortressPieces$CastleSmallCorridorPiece;
-			ARG 0 structurePieceAccessor
-			ARG 1 footX
-			ARG 2 footY
-			ARG 3 footZ
-			ARG 4 direction
-			ARG 5 genDepth
-	CLASS CastleSmallCorridorRightTurnPiece
-		METHOD <init> (ILnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/core/Direction;)V
-			ARG 1 genDepth
-			ARG 2 random
-			ARG 3 boundingBox
-			ARG 4 direction
-		METHOD <init> (Lnet/minecraft/nbt/CompoundTag;)V
-			ARG 1 tag
-		METHOD createPiece (Lnet/minecraft/world/level/levelgen/structure/StructurePieceAccessor;Lnet/minecraft/util/RandomSource;IIILnet/minecraft/core/Direction;I)Lnet/minecraft/world/level/levelgen/structure/structures/NetherFortressPieces$CastleSmallCorridorRightTurnPiece;
+		METHOD createPiece (Lnet/minecraft/world/level/levelgen/structure/StructurePieceAccessor;Lnet/minecraft/util/RandomSource;IIILnet/minecraft/core/Direction;I)Lnet/minecraft/world/level/levelgen/structure/structures/NetherFortressPieces$BridgeEndFiller;
 			ARG 0 structurePieceAccessor
 			ARG 1 random
 			ARG 2 footX
@@ -176,20 +147,6 @@ CLASS net/minecraft/world/level/levelgen/structure/structures/NetherFortressPiec
 			ARG 3 footZ
 			ARG 4 direction
 			ARG 5 genDepth
-	CLASS MonsterThrone
-		METHOD <init> (ILnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/core/Direction;)V
-			ARG 1 genDepth
-			ARG 2 boundingBox
-			ARG 3 direction
-		METHOD <init> (Lnet/minecraft/nbt/CompoundTag;)V
-			ARG 1 tag
-		METHOD createPiece (Lnet/minecraft/world/level/levelgen/structure/StructurePieceAccessor;IIIILnet/minecraft/core/Direction;)Lnet/minecraft/world/level/levelgen/structure/structures/NetherFortressPieces$MonsterThrone;
-			ARG 0 structurePieceAccessor
-			ARG 1 footX
-			ARG 2 footY
-			ARG 3 footZ
-			ARG 4 genDepth
-			ARG 5 direction
 	CLASS NetherBridgePiece
 		METHOD generateAndAddPiece (Lnet/minecraft/world/level/levelgen/structure/structures/NetherFortressPieces$StartPiece;Lnet/minecraft/world/level/levelgen/structure/StructurePieceAccessor;Lnet/minecraft/util/RandomSource;IIILnet/minecraft/core/Direction;IZ)Lnet/minecraft/world/level/levelgen/structure/StructurePiece;
 			ARG 1 startPiece
@@ -236,48 +193,91 @@ CLASS net/minecraft/world/level/levelgen/structure/structures/NetherFortressPiec
 			ARG 0 box
 		METHOD updatePieceWeight (Ljava/util/List;)I
 			ARG 1 currentPieces
-	CLASS PieceWeight
-		METHOD <init> (Ljava/lang/Class;II)V
-			ARG 1 pieceClass
-			ARG 2 weight
-			ARG 3 maxPlaceCount
-		METHOD <init> (Ljava/lang/Class;IIZ)V
-			ARG 1 pieceClass
-			ARG 2 weight
-			ARG 3 maxPlaceCount
-			ARG 4 allowInRow
-		METHOD doPlace (I)Z
-			ARG 1 depth
-	CLASS RoomCrossing
+	CLASS CastleSmallCorridorPiece
 		METHOD <init> (ILnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/core/Direction;)V
 			ARG 1 genDepth
 			ARG 2 boundingBox
 			ARG 3 direction
 		METHOD <init> (Lnet/minecraft/nbt/CompoundTag;)V
 			ARG 1 tag
-		METHOD createPiece (Lnet/minecraft/world/level/levelgen/structure/StructurePieceAccessor;IIILnet/minecraft/core/Direction;I)Lnet/minecraft/world/level/levelgen/structure/structures/NetherFortressPieces$RoomCrossing;
+		METHOD createPiece (Lnet/minecraft/world/level/levelgen/structure/StructurePieceAccessor;IIILnet/minecraft/core/Direction;I)Lnet/minecraft/world/level/levelgen/structure/structures/NetherFortressPieces$CastleSmallCorridorPiece;
 			ARG 0 structurePieceAccessor
 			ARG 1 footX
 			ARG 2 footY
 			ARG 3 footZ
 			ARG 4 direction
 			ARG 5 genDepth
-	CLASS StairsRoom
+	CLASS CastleCorridorStairsPiece
 		METHOD <init> (ILnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/core/Direction;)V
 			ARG 1 genDepth
 			ARG 2 boundingBox
 			ARG 3 direction
 		METHOD <init> (Lnet/minecraft/nbt/CompoundTag;)V
 			ARG 1 tag
-		METHOD createPiece (Lnet/minecraft/world/level/levelgen/structure/StructurePieceAccessor;IIIILnet/minecraft/core/Direction;)Lnet/minecraft/world/level/levelgen/structure/structures/NetherFortressPieces$StairsRoom;
+		METHOD createPiece (Lnet/minecraft/world/level/levelgen/structure/StructurePieceAccessor;IIILnet/minecraft/core/Direction;I)Lnet/minecraft/world/level/levelgen/structure/structures/NetherFortressPieces$CastleCorridorStairsPiece;
 			ARG 0 structurePieceAccessor
 			ARG 1 footX
 			ARG 2 footY
 			ARG 3 footZ
-			ARG 4 genDepth
-			ARG 5 direction
-	CLASS StartPiece
-		METHOD <init> (Lnet/minecraft/util/RandomSource;II)V
+			ARG 4 direction
+			ARG 5 genDepth
+	CLASS CastleCorridorTBalconyPiece
+		METHOD <init> (ILnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/core/Direction;)V
+			ARG 1 genDepth
+			ARG 2 boundingBox
+			ARG 3 direction
+		METHOD <init> (Lnet/minecraft/nbt/CompoundTag;)V
+			ARG 1 tag
+		METHOD createPiece (Lnet/minecraft/world/level/levelgen/structure/StructurePieceAccessor;IIILnet/minecraft/core/Direction;I)Lnet/minecraft/world/level/levelgen/structure/structures/NetherFortressPieces$CastleCorridorTBalconyPiece;
+			ARG 0 structurePieceAccessor
+			ARG 1 footX
+			ARG 2 footY
+			ARG 3 footZ
+			ARG 4 direction
+			ARG 5 genDepth
+	CLASS CastleSmallCorridorCrossingPiece
+		METHOD <init> (ILnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/core/Direction;)V
+			ARG 1 genDepth
+			ARG 2 boundingBox
+			ARG 3 direction
+		METHOD <init> (Lnet/minecraft/nbt/CompoundTag;)V
+			ARG 1 tag
+		METHOD createPiece (Lnet/minecraft/world/level/levelgen/structure/StructurePieceAccessor;IIILnet/minecraft/core/Direction;I)Lnet/minecraft/world/level/levelgen/structure/structures/NetherFortressPieces$CastleSmallCorridorCrossingPiece;
+			ARG 0 structurePieceAccessor
+			ARG 1 footX
+			ARG 2 footY
+			ARG 3 footZ
+			ARG 4 direction
+			ARG 5 genDepth
+	CLASS CastleSmallCorridorLeftTurnPiece
+		METHOD <init> (ILnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/core/Direction;)V
+			ARG 1 genDepth
+			ARG 2 random
+			ARG 3 boundingBox
+			ARG 4 direction
+		METHOD <init> (Lnet/minecraft/nbt/CompoundTag;)V
+			ARG 1 tag
+		METHOD createPiece (Lnet/minecraft/world/level/levelgen/structure/StructurePieceAccessor;Lnet/minecraft/util/RandomSource;IIILnet/minecraft/core/Direction;I)Lnet/minecraft/world/level/levelgen/structure/structures/NetherFortressPieces$CastleSmallCorridorLeftTurnPiece;
+			ARG 0 structurePieceAccessor
 			ARG 1 random
-			ARG 2 west
-			ARG 3 north
+			ARG 2 footX
+			ARG 3 footY
+			ARG 4 footZ
+			ARG 5 direction
+			ARG 6 genDepth
+	CLASS CastleSmallCorridorRightTurnPiece
+		METHOD <init> (ILnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/core/Direction;)V
+			ARG 1 genDepth
+			ARG 2 random
+			ARG 3 boundingBox
+			ARG 4 direction
+		METHOD <init> (Lnet/minecraft/nbt/CompoundTag;)V
+			ARG 1 tag
+		METHOD createPiece (Lnet/minecraft/world/level/levelgen/structure/StructurePieceAccessor;Lnet/minecraft/util/RandomSource;IIILnet/minecraft/core/Direction;I)Lnet/minecraft/world/level/levelgen/structure/structures/NetherFortressPieces$CastleSmallCorridorRightTurnPiece;
+			ARG 0 structurePieceAccessor
+			ARG 1 random
+			ARG 2 footX
+			ARG 3 footY
+			ARG 4 footZ
+			ARG 5 direction
+			ARG 6 genDepth

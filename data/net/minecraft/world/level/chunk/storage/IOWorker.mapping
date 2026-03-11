@@ -22,12 +22,12 @@ CLASS net/minecraft/world/level/chunk/storage/IOWorker
 		ARG 2 future
 	METHOD lambda$submitThrowingTask$15 (Lnet/minecraft/world/level/chunk/storage/IOWorker$ThrowingSupplier;Ljava/util/concurrent/CompletableFuture;)V
 		ARG 2 future
-	METHOD lambda$synchronize$7 (Lnet/minecraft/world/level/chunk/storage/IOWorker$PendingStore;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 store
 	METHOD lambda$synchronize$11 (Ljava/lang/Void;)Ljava/util/concurrent/CompletionStage;
 		ARG 1 ignore
 	METHOD lambda$synchronize$13 (Ljava/lang/Void;)Ljava/util/concurrent/CompletionStage;
 		ARG 1 ignore
+	METHOD lambda$synchronize$7 (Lnet/minecraft/world/level/chunk/storage/IOWorker$PendingStore;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 store
 	METHOD lambda$waitForShutdown$17 (Ljava/util/concurrent/CompletableFuture;)V
 		ARG 0 future
 	METHOD loadAsync (Lnet/minecraft/world/level/ChunkPos;)Ljava/util/concurrent/CompletableFuture;

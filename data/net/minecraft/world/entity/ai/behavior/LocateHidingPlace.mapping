@@ -7,6 +7,8 @@ CLASS net/minecraft/world/entity/ai/behavior/LocateHidingPlace
 		ARG 0 p
 	METHOD lambda$create$1 (Lnet/minecraft/core/BlockPos;)Z
 		ARG 0 blockPos
+	METHOD lambda$create$10 (IIFLnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 3 i
 	METHOD lambda$create$2 (Lnet/minecraft/world/entity/LivingEntity;ILnet/minecraft/core/BlockPos;)Z
 		ARG 2 p
 	METHOD lambda$create$3 (Lnet/minecraft/core/Holder;)Z
@@ -27,5 +29,3 @@ CLASS net/minecraft/world/entity/ai/behavior/LocateHidingPlace
 		ARG 8 lookTarget
 		ARG 9 breedTarget
 		ARG 10 interactionTarget
-	METHOD lambda$create$10 (IIFLnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 3 i

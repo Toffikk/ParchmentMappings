@@ -4,7 +4,7 @@ CLASS net/minecraft/client/renderer/block/model/BlockElement
 		ARG 2 to
 		ARG 3 faces
 	CLASS Deserializer
-		METHOD deserialize (Lcom/google/gson/JsonElement;Ljava/lang/reflect/Type;Lcom/google/gson/JsonDeserializationContext;)Ljava/lang/Object;
+		METHOD deserialize (Lcom/google/gson/JsonElement;Ljava/lang/reflect/Type;Lcom/google/gson/JsonDeserializationContext;)Lnet/minecraft/client/renderer/block/model/BlockElement;
 			ARG 1 json
 			ARG 2 typeOfT
 			ARG 3 context

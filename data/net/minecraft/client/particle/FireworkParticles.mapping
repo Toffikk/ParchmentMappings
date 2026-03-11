@@ -1,25 +1,4 @@
 CLASS net/minecraft/client/particle/FireworkParticles
-	CLASS FlashProvider
-		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
-			ARG 1 sprite
-	CLASS SparkParticle
-		METHOD <init> (Lnet/minecraft/client/multiplayer/ClientLevel;DDDDDDLnet/minecraft/client/particle/ParticleEngine;Lnet/minecraft/client/particle/SpriteSet;)V
-			ARG 1 level
-			ARG 2 x
-			ARG 4 y
-			ARG 6 z
-			ARG 8 xa
-			ARG 10 ya
-			ARG 12 za
-			ARG 14 engine
-			ARG 15 sprites
-		METHOD setTrail (Z)V
-			ARG 1 trail
-		METHOD setTwinkle (Z)V
-			ARG 1 twinkle
-	CLASS SparkProvider
-		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
-			ARG 1 sprites
 	CLASS Starter
 		METHOD <init> (Lnet/minecraft/client/multiplayer/ClientLevel;DDDDDDLnet/minecraft/client/particle/ParticleEngine;Ljava/util/List;)V
 			ARG 1 level
@@ -62,3 +41,24 @@ CLASS net/minecraft/client/particle/FireworkParticles
 			ARG 6 trail
 			ARG 7 twinkle
 			ARG 8 flat
+	CLASS FlashProvider
+		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
+			ARG 1 sprite
+	CLASS SparkParticle
+		METHOD <init> (Lnet/minecraft/client/multiplayer/ClientLevel;DDDDDDLnet/minecraft/client/particle/ParticleEngine;Lnet/minecraft/client/particle/SpriteSet;)V
+			ARG 1 level
+			ARG 2 x
+			ARG 4 y
+			ARG 6 z
+			ARG 8 xa
+			ARG 10 ya
+			ARG 12 za
+			ARG 14 engine
+			ARG 15 sprites
+		METHOD setTrail (Z)V
+			ARG 1 trail
+		METHOD setTwinkle (Z)V
+			ARG 1 twinkle
+	CLASS SparkProvider
+		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
+			ARG 1 sprites

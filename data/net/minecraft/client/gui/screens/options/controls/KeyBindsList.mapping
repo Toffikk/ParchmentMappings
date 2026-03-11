@@ -2,9 +2,6 @@ CLASS net/minecraft/client/gui/screens/options/controls/KeyBindsList
 	METHOD <init> (Lnet/minecraft/client/gui/screens/options/controls/KeyBindsScreen;Lnet/minecraft/client/Minecraft;)V
 		ARG 1 keyBindsScreen
 		ARG 2 minecraft
-	CLASS CategoryEntry
-		METHOD <init> (Lnet/minecraft/client/gui/screens/options/controls/KeyBindsList;Lnet/minecraft/client/KeyMapping$Category;)V
-			ARG 2 category
 	CLASS KeyEntry
 		METHOD <init> (Lnet/minecraft/client/gui/screens/options/controls/KeyBindsList;Lnet/minecraft/client/KeyMapping;Lnet/minecraft/network/chat/Component;)V
 			ARG 2 key
@@ -17,3 +14,6 @@ CLASS net/minecraft/client/gui/screens/options/controls/KeyBindsList
 			ARG 2 button
 		METHOD lambda$new$3 (Lnet/minecraft/network/chat/Component;Ljava/util/function/Supplier;)Lnet/minecraft/network/chat/MutableComponent;
 			ARG 1 defaultNarrationSupplier
+	CLASS CategoryEntry
+		METHOD <init> (Lnet/minecraft/client/gui/screens/options/controls/KeyBindsList;Lnet/minecraft/client/KeyMapping$Category;)V
+			ARG 2 category

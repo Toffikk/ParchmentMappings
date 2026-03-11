@@ -5,23 +5,15 @@ CLASS net/minecraft/core/component/DataComponents
 		ARG 0 b
 	METHOD lambda$static$1 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
-	METHOD lambda$static$2 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
-		ARG 0 b
-	METHOD lambda$static$3 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
-		ARG 0 b
-	METHOD lambda$static$4 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
-		ARG 0 b
-	METHOD lambda$static$5 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
-		ARG 0 b
-	METHOD lambda$static$6 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
-		ARG 0 b
-	METHOD lambda$static$7 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
-		ARG 0 b
-	METHOD lambda$static$8 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
-		ARG 0 b
-	METHOD lambda$static$9 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
-		ARG 0 b
 	METHOD lambda$static$10 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
+		ARG 0 b
+	METHOD lambda$static$100 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
+		ARG 0 b
+	METHOD lambda$static$101 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
+		ARG 0 b
+	METHOD lambda$static$102 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
+		ARG 0 b
+	METHOD lambda$static$103 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
 	METHOD lambda$static$11 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
@@ -40,6 +32,8 @@ CLASS net/minecraft/core/component/DataComponents
 	METHOD lambda$static$18 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
 	METHOD lambda$static$19 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
+		ARG 0 b
+	METHOD lambda$static$2 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
 	METHOD lambda$static$20 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
@@ -61,6 +55,8 @@ CLASS net/minecraft/core/component/DataComponents
 		ARG 0 b
 	METHOD lambda$static$29 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
+	METHOD lambda$static$3 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
+		ARG 0 b
 	METHOD lambda$static$30 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
 	METHOD lambda$static$31 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
@@ -80,6 +76,8 @@ CLASS net/minecraft/core/component/DataComponents
 	METHOD lambda$static$38 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
 	METHOD lambda$static$39 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
+		ARG 0 b
+	METHOD lambda$static$4 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
 	METHOD lambda$static$40 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
@@ -101,6 +99,8 @@ CLASS net/minecraft/core/component/DataComponents
 		ARG 0 b
 	METHOD lambda$static$49 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
+	METHOD lambda$static$5 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
+		ARG 0 b
 	METHOD lambda$static$50 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
 	METHOD lambda$static$51 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
@@ -120,6 +120,8 @@ CLASS net/minecraft/core/component/DataComponents
 	METHOD lambda$static$58 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
 	METHOD lambda$static$59 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
+		ARG 0 b
+	METHOD lambda$static$6 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
 	METHOD lambda$static$60 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
@@ -141,6 +143,8 @@ CLASS net/minecraft/core/component/DataComponents
 		ARG 0 b
 	METHOD lambda$static$69 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
+	METHOD lambda$static$7 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
+		ARG 0 b
 	METHOD lambda$static$70 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
 	METHOD lambda$static$71 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
@@ -160,6 +164,8 @@ CLASS net/minecraft/core/component/DataComponents
 	METHOD lambda$static$78 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
 	METHOD lambda$static$79 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
+		ARG 0 b
+	METHOD lambda$static$8 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
 	METHOD lambda$static$80 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
@@ -181,6 +187,8 @@ CLASS net/minecraft/core/component/DataComponents
 		ARG 0 b
 	METHOD lambda$static$89 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
+	METHOD lambda$static$9 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
+		ARG 0 b
 	METHOD lambda$static$90 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
 	METHOD lambda$static$91 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
@@ -200,14 +208,6 @@ CLASS net/minecraft/core/component/DataComponents
 	METHOD lambda$static$98 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
 	METHOD lambda$static$99 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
-		ARG 0 b
-	METHOD lambda$static$100 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
-		ARG 0 b
-	METHOD lambda$static$101 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
-		ARG 0 b
-	METHOD lambda$static$102 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
-		ARG 0 b
-	METHOD lambda$static$103 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
 	METHOD register (Ljava/lang/String;Ljava/util/function/UnaryOperator;)Lnet/minecraft/core/component/DataComponentType;
 		ARG 0 id

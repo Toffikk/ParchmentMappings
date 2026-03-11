@@ -39,6 +39,8 @@ CLASS net/minecraft/world/entity/Leashable
 		ARG 1 e
 	METHOD lambda$leashableLeashedTo$0 (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/entity/Leashable;)Z
 		ARG 1 l
+	METHOD leashDistanceTo (Lnet/minecraft/world/entity/Entity;)D
+		ARG 1 entity
 	METHOD leashableInArea (Lnet/minecraft/world/entity/Entity;Ljava/util/function/Predicate;)Ljava/util/List;
 		ARG 0 entity
 		ARG 1 test
@@ -48,8 +50,6 @@ CLASS net/minecraft/world/entity/Leashable
 		ARG 2 test
 	METHOD leashableLeashedTo (Lnet/minecraft/world/entity/Entity;)Ljava/util/List;
 		ARG 0 entity
-	METHOD leashDistanceTo (Lnet/minecraft/world/entity/Entity;)D
-		ARG 1 entity
 	METHOD readLeashData (Lnet/minecraft/world/level/storage/ValueInput;)V
 		ARG 1 input
 	METHOD restoreLeashFromSave (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/entity/Leashable$LeashData;)V
@@ -74,6 +74,14 @@ CLASS net/minecraft/world/entity/Leashable
 	METHOD writeLeashData (Lnet/minecraft/world/level/storage/ValueOutput;Lnet/minecraft/world/entity/Leashable$LeashData;)V
 		ARG 1 output
 		ARG 2 leashData
+	CLASS Wrench
+		METHOD accumulate (Ljava/util/List;)Lnet/minecraft/world/entity/Leashable$Wrench;
+			ARG 0 wrenches
+		METHOD scale (D)Lnet/minecraft/world/entity/Leashable$Wrench;
+			ARG 1 scale
+		METHOD torqueFromForce (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;)D
+			ARG 0 leverArm
+			ARG 1 force
 	CLASS LeashData
 		METHOD <init> (I)V
 			ARG 1 entityId
@@ -85,11 +93,3 @@ CLASS net/minecraft/world/entity/Leashable
 			ARG 0 data
 		METHOD setLeashHolder (Lnet/minecraft/world/entity/Entity;)V
 			ARG 1 leashHolder
-	CLASS Wrench
-		METHOD accumulate (Ljava/util/List;)Lnet/minecraft/world/entity/Leashable$Wrench;
-			ARG 0 wrenches
-		METHOD scale (D)Lnet/minecraft/world/entity/Leashable$Wrench;
-			ARG 1 scale
-		METHOD torqueFromForce (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;)D
-			ARG 0 leverArm
-			ARG 1 force

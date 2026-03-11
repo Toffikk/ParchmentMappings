@@ -40,23 +40,6 @@ CLASS net/minecraft/server/commands/ScoreboardCommand
 		ARG 1 entry
 	METHOD lambda$register$1 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 c
-	METHOD lambda$register$2 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
-	METHOD lambda$register$3 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
-	METHOD lambda$register$4 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
-	METHOD lambda$register$5 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
-	METHOD lambda$register$6 (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/network/chat/numbers/NumberFormat;)I
-		ARG 0 c
-		ARG 1 numberFormat
-	METHOD lambda$register$7 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
-	METHOD lambda$register$8 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
-	METHOD lambda$register$9 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
 	METHOD lambda$register$10 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 c
 	METHOD lambda$register$11 (Lcom/mojang/brigadier/context/CommandContext;)I
@@ -78,6 +61,8 @@ CLASS net/minecraft/server/commands/ScoreboardCommand
 		ARG 1 p
 	METHOD lambda$register$19 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 c
+	METHOD lambda$register$2 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
 	METHOD lambda$register$20 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 c
 	METHOD lambda$register$21 (Lcom/mojang/brigadier/context/CommandContext;)I
@@ -87,16 +72,31 @@ CLASS net/minecraft/server/commands/ScoreboardCommand
 		ARG 1 format
 	METHOD lambda$register$23 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 c
+	METHOD lambda$register$3 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$4 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$5 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$6 (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/network/chat/numbers/NumberFormat;)I
+		ARG 0 c
+		ARG 1 numberFormat
+	METHOD lambda$register$7 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$8 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$9 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
 	METHOD lambda$static$0 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 objective
 		ARG 1 target
 	METHOD listObjectives (Lnet/minecraft/commands/CommandSourceStack;)I
 		ARG 0 source
-	METHOD listTrackedPlayers (Lnet/minecraft/commands/CommandSourceStack;)I
-		ARG 0 source
 	METHOD listTrackedPlayerScores (Lnet/minecraft/commands/CommandSourceStack;Lnet/minecraft/world/scores/ScoreHolder;)I
 		ARG 0 source
 		ARG 1 entity
+	METHOD listTrackedPlayers (Lnet/minecraft/commands/CommandSourceStack;)I
+		ARG 0 source
 	METHOD performOperation (Lnet/minecraft/commands/CommandSourceStack;Ljava/util/Collection;Lnet/minecraft/world/scores/Objective;Lnet/minecraft/commands/arguments/OperationArgument$Operation;Ljava/util/Collection;Lnet/minecraft/world/scores/Objective;)I
 		ARG 0 source
 		ARG 1 targets

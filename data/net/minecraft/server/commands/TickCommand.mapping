@@ -4,6 +4,10 @@ CLASS net/minecraft/server/commands/TickCommand
 	METHOD lambda$register$1 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 0 c
 		ARG 1 b
+	METHOD lambda$register$10 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$11 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
 	METHOD lambda$register$2 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 c
 	METHOD lambda$register$3 (Lcom/mojang/brigadier/context/CommandContext;)I
@@ -21,10 +25,6 @@ CLASS net/minecraft/server/commands/TickCommand
 		ARG 0 c
 		ARG 1 b
 	METHOD lambda$register$9 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
-	METHOD lambda$register$10 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
-	METHOD lambda$register$11 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 c
 	METHOD nanosToMilisString (J)Ljava/lang/String;
 		ARG 0 nanos

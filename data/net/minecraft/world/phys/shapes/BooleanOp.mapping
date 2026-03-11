@@ -8,6 +8,24 @@ CLASS net/minecraft/world/phys/shapes/BooleanOp
 	METHOD lambda$static$1 (ZZ)Z
 		ARG 0 first
 		ARG 1 second
+	METHOD lambda$static$10 (ZZ)Z
+		ARG 0 first
+		ARG 1 second
+	METHOD lambda$static$11 (ZZ)Z
+		ARG 0 first
+		ARG 1 second
+	METHOD lambda$static$12 (ZZ)Z
+		ARG 0 first
+		ARG 1 second
+	METHOD lambda$static$13 (ZZ)Z
+		ARG 0 first
+		ARG 1 second
+	METHOD lambda$static$14 (ZZ)Z
+		ARG 0 first
+		ARG 1 second
+	METHOD lambda$static$15 (ZZ)Z
+		ARG 0 first
+		ARG 1 second
 	METHOD lambda$static$2 (ZZ)Z
 		ARG 0 first
 		ARG 1 second
@@ -30,23 +48,5 @@ CLASS net/minecraft/world/phys/shapes/BooleanOp
 		ARG 0 first
 		ARG 1 second
 	METHOD lambda$static$9 (ZZ)Z
-		ARG 0 first
-		ARG 1 second
-	METHOD lambda$static$10 (ZZ)Z
-		ARG 0 first
-		ARG 1 second
-	METHOD lambda$static$11 (ZZ)Z
-		ARG 0 first
-		ARG 1 second
-	METHOD lambda$static$12 (ZZ)Z
-		ARG 0 first
-		ARG 1 second
-	METHOD lambda$static$13 (ZZ)Z
-		ARG 0 first
-		ARG 1 second
-	METHOD lambda$static$14 (ZZ)Z
-		ARG 0 first
-		ARG 1 second
-	METHOD lambda$static$15 (ZZ)Z
 		ARG 0 first
 		ARG 1 second

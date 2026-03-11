@@ -1,10 +1,13 @@
 CLASS net/minecraft/advancements/criterion/CollectionCountsPredicate
 	METHOD codec (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
 		ARG 0 elementCodec
-	METHOD of ([Lnet/minecraft/advancements/criterion/CollectionCountsPredicate$Entry;)Lnet/minecraft/advancements/criterion/CollectionCountsPredicate;
-		ARG 0 predicates
 	METHOD of (Ljava/util/List;)Lnet/minecraft/advancements/criterion/CollectionCountsPredicate;
 		ARG 0 predicates
+	METHOD of ([Lnet/minecraft/advancements/criterion/CollectionCountsPredicate$Entry;)Lnet/minecraft/advancements/criterion/CollectionCountsPredicate;
+		ARG 0 predicates
+	CLASS Zero
+		METHOD test (Ljava/lang/Iterable;)Z
+			ARG 1 values
 	CLASS Entry
 		METHOD codec (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
 			ARG 0 elementCodec
@@ -12,12 +15,9 @@ CLASS net/minecraft/advancements/criterion/CollectionCountsPredicate
 			ARG 1 i
 		METHOD test (Ljava/lang/Iterable;)Z
 			ARG 1 values
-	CLASS Multiple
-		METHOD test (Ljava/lang/Object;)Z
-			ARG 1 values
 	CLASS Single
-		METHOD test (Ljava/lang/Object;)Z
+		METHOD test (Ljava/lang/Iterable;)Z
 			ARG 1 values
-	CLASS Zero
-		METHOD test (Ljava/lang/Object;)Z
+	CLASS Multiple
+		METHOD test (Ljava/lang/Iterable;)Z
 			ARG 1 values

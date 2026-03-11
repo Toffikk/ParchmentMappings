@@ -61,8 +61,6 @@ CLASS com/mojang/blaze3d/platform/NativeImage
 	METHOD putAndRead (Ljava/nio/ByteBuffer;[B)Lcom/mojang/blaze3d/platform/NativeImage;
 		ARG 0 nativeBuffer
 		ARG 1 bytes
-	METHOD read ([B)Lcom/mojang/blaze3d/platform/NativeImage;
-		ARG 0 bytes
 	METHOD read (Lcom/mojang/blaze3d/platform/NativeImage$Format;Ljava/io/InputStream;)Lcom/mojang/blaze3d/platform/NativeImage;
 		ARG 0 format
 		ARG 1 inputStream
@@ -72,6 +70,8 @@ CLASS com/mojang/blaze3d/platform/NativeImage
 	METHOD read (Ljava/io/InputStream;)Lcom/mojang/blaze3d/platform/NativeImage;
 		ARG 0 inputStream
 	METHOD read (Ljava/nio/ByteBuffer;)Lcom/mojang/blaze3d/platform/NativeImage;
+		ARG 0 bytes
+	METHOD read ([B)Lcom/mojang/blaze3d/platform/NativeImage;
 		ARG 0 bytes
 	METHOD resizeSubRectTo (IIIILcom/mojang/blaze3d/platform/NativeImage;)V
 		ARG 1 sourceX

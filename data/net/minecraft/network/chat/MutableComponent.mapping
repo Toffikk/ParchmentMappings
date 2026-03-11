@@ -15,11 +15,11 @@ CLASS net/minecraft/network/chat/MutableComponent
 		ARG 1 style
 	METHOD withColor (I)Lnet/minecraft/network/chat/MutableComponent;
 		ARG 1 color
-	METHOD withStyle ([Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
-		ARG 1 formats
 	METHOD withStyle (Ljava/util/function/UnaryOperator;)Lnet/minecraft/network/chat/MutableComponent;
 		ARG 1 updater
 	METHOD withStyle (Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
 		ARG 1 format
 	METHOD withStyle (Lnet/minecraft/network/chat/Style;)Lnet/minecraft/network/chat/MutableComponent;
 		ARG 1 patch
+	METHOD withStyle ([Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+		ARG 1 formats

@@ -17,6 +17,12 @@ CLASS net/minecraft/world/entity/animal/feline/Cat
 		ARG 1 variant
 	METHOD tryToTame (Lnet/minecraft/world/entity/player/Player;)V
 		ARG 1 player
+	CLASS CatTemptGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/feline/Cat;DLjava/util/function/Predicate;Z)V
+			ARG 1 mob
+			ARG 2 speedModifier
+			ARG 4 items
+			ARG 5 canScare
 	CLASS CatAvoidEntityGoal
 		METHOD <init> (Lnet/minecraft/world/entity/animal/feline/Cat;Ljava/lang/Class;FDD)V
 			ARG 1 cat
@@ -32,9 +38,3 @@ CLASS net/minecraft/world/entity/animal/feline/Cat
 		METHOD lambda$giveMorningGift$2 (Lnet/minecraft/core/BlockPos$MutableBlockPos;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/item/ItemStack;)V
 			ARG 2 level
 			ARG 3 itemStack
-	CLASS CatTemptGoal
-		METHOD <init> (Lnet/minecraft/world/entity/animal/feline/Cat;DLjava/util/function/Predicate;Z)V
-			ARG 1 mob
-			ARG 2 speedModifier
-			ARG 4 items
-			ARG 5 canScare

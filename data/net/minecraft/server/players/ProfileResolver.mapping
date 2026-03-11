@@ -10,10 +10,10 @@ CLASS net/minecraft/server/players/ProfileResolver
 			ARG 1 sessionService
 			ARG 2 nameToIdCache
 		CLASS 1
-			METHOD load (Ljava/lang/Object;)Ljava/lang/Object;
+			METHOD load (Ljava/util/UUID;)Ljava/util/Optional;
 				ARG 1 profileId
 		CLASS 2
 			METHOD lambda$load$0 (Lnet/minecraft/server/players/NameAndId;)Ljava/util/Optional;
 				ARG 1 nameAndId
-			METHOD load (Ljava/lang/Object;)Ljava/lang/Object;
+			METHOD load (Ljava/lang/String;)Ljava/util/Optional;
 				ARG 1 name

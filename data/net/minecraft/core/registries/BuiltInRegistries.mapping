@@ -14,22 +14,6 @@ CLASS net/minecraft/core/registries/BuiltInRegistries
 		ARG 0 registry
 	METHOD lambda$static$1 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
 		ARG 0 registry
-	METHOD lambda$static$2 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
-		ARG 0 registry
-	METHOD lambda$static$3 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
-		ARG 0 registry
-	METHOD lambda$static$4 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
-		ARG 0 registry
-	METHOD lambda$static$5 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
-		ARG 0 registry
-	METHOD lambda$static$6 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
-		ARG 0 registry
-	METHOD lambda$static$7 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
-		ARG 0 registry
-	METHOD lambda$static$8 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
-		ARG 0 registry
-	METHOD lambda$static$9 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
-		ARG 0 registry
 	METHOD lambda$static$10 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
 		ARG 0 registry
 	METHOD lambda$static$11 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
@@ -49,6 +33,8 @@ CLASS net/minecraft/core/registries/BuiltInRegistries
 	METHOD lambda$static$18 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
 		ARG 0 registry
 	METHOD lambda$static$19 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
+		ARG 0 registry
+	METHOD lambda$static$2 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
 		ARG 0 registry
 	METHOD lambda$static$20 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
 		ARG 0 registry
@@ -70,6 +56,8 @@ CLASS net/minecraft/core/registries/BuiltInRegistries
 		ARG 0 registry
 	METHOD lambda$static$29 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
 		ARG 0 registry
+	METHOD lambda$static$3 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
+		ARG 0 registry
 	METHOD lambda$static$30 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
 		ARG 0 registry
 	METHOD lambda$static$31 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
@@ -90,6 +78,8 @@ CLASS net/minecraft/core/registries/BuiltInRegistries
 		ARG 0 registry
 	METHOD lambda$static$39 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
 		ARG 0 registry
+	METHOD lambda$static$4 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
+		ARG 0 registry
 	METHOD lambda$static$40 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
 		ARG 0 registry
 	METHOD lambda$static$41 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
@@ -103,6 +93,16 @@ CLASS net/minecraft/core/registries/BuiltInRegistries
 	METHOD lambda$static$45 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
 		ARG 0 registry
 	METHOD lambda$static$46 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
+		ARG 0 registry
+	METHOD lambda$static$5 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
+		ARG 0 registry
+	METHOD lambda$static$6 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
+		ARG 0 registry
+	METHOD lambda$static$7 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
+		ARG 0 registry
+	METHOD lambda$static$8 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
+		ARG 0 registry
+	METHOD lambda$static$9 (Lnet/minecraft/core/Registry;)Ljava/lang/Object;
 		ARG 0 registry
 	METHOD lambda$validate$50 (Lnet/minecraft/core/Registry;Lnet/minecraft/core/Registry;)V
 		ARG 1 r

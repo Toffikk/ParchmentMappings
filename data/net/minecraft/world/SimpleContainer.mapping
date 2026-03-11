@@ -1,8 +1,8 @@
 CLASS net/minecraft/world/SimpleContainer
-	METHOD <init> ([Lnet/minecraft/world/item/ItemStack;)V
-		ARG 1 itemstacks
 	METHOD <init> (I)V
 		ARG 1 size
+	METHOD <init> ([Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 itemstacks
 	METHOD addItem (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/ItemStack;
 		ARG 1 itemStack
 	METHOD addListener (Lnet/minecraft/world/ContainerListener;)V
@@ -15,13 +15,13 @@ CLASS net/minecraft/world/SimpleContainer
 		ARG 0 item
 	METHOD lambda$toString$1 (Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 0 item
-	METHOD moveItemsBetweenStacks (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)V
-		ARG 1 sourceStack
-		ARG 2 targetStack
 	METHOD moveItemToEmptySlots (Lnet/minecraft/world/item/ItemStack;)V
 		ARG 1 sourceStack
 	METHOD moveItemToOccupiedSlotsWithSameType (Lnet/minecraft/world/item/ItemStack;)V
 		ARG 1 sourceStack
+	METHOD moveItemsBetweenStacks (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 sourceStack
+		ARG 2 targetStack
 	METHOD removeItemType (Lnet/minecraft/world/item/Item;I)Lnet/minecraft/world/item/ItemStack;
 		ARG 1 itemType
 		ARG 2 count

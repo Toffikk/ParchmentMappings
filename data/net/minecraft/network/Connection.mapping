@@ -5,7 +5,7 @@ CLASS net/minecraft/network/Connection
 		ARG 1 ctx
 	METHOD channelInactive (Lio/netty/channel/ChannelHandlerContext;)V
 		ARG 1 ctx
-	METHOD channelRead0 (Lio/netty/channel/ChannelHandlerContext;Ljava/lang/Object;)V
+	METHOD channelRead0 (Lio/netty/channel/ChannelHandlerContext;Lnet/minecraft/network/protocol/Packet;)V
 		ARG 1 ctx
 		ARG 2 packet
 	METHOD configureInMemoryPipeline (Lio/netty/channel/ChannelPipeline;Lnet/minecraft/network/protocol/PacketFlow;)V
@@ -33,10 +33,10 @@ CLASS net/minecraft/network/Connection
 		ARG 1 local
 	METHOD createFrameEncoder (Z)Lio/netty/channel/ChannelOutboundHandler;
 		ARG 0 local
-	METHOD disconnect (Lnet/minecraft/network/chat/Component;)V
-		ARG 1 reason
 	METHOD disconnect (Lnet/minecraft/network/DisconnectionDetails;)V
 		ARG 1 details
+	METHOD disconnect (Lnet/minecraft/network/chat/Component;)V
+		ARG 1 reason
 	METHOD doSendPacket (Lnet/minecraft/network/protocol/Packet;Lio/netty/channel/ChannelFutureListener;Z)V
 		ARG 1 packet
 		ARG 2 listener
@@ -58,10 +58,6 @@ CLASS net/minecraft/network/Connection
 		ARG 4 inbound
 		ARG 5 listener
 		ARG 6 intent
-	METHOD initiateServerboundPlayConnection (Ljava/lang/String;ILnet/minecraft/network/protocol/login/ClientLoginPacketListener;)V
-		ARG 1 hostName
-		ARG 2 port
-		ARG 3 listener
 	METHOD initiateServerboundPlayConnection (Ljava/lang/String;ILnet/minecraft/network/ProtocolInfo;Lnet/minecraft/network/ProtocolInfo;Lnet/minecraft/network/ClientboundPacketListener;Z)V
 		ARG 1 hostName
 		ARG 2 port
@@ -69,6 +65,10 @@ CLASS net/minecraft/network/Connection
 		ARG 4 inbound
 		ARG 5 listener
 		ARG 6 transfer
+	METHOD initiateServerboundPlayConnection (Ljava/lang/String;ILnet/minecraft/network/protocol/login/ClientLoginPacketListener;)V
+		ARG 1 hostName
+		ARG 2 port
+		ARG 3 listener
 	METHOD initiateServerboundStatusConnection (Ljava/lang/String;ILnet/minecraft/network/protocol/status/ClientStatusPacketListener;)V
 		ARG 1 hostName
 		ARG 2 port

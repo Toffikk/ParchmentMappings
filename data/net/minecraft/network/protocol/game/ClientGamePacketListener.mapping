@@ -31,9 +31,9 @@ CLASS net/minecraft/network/protocol/game/ClientGamePacketListener
 		ARG 1 packet
 	METHOD handleChunksBiomes (Lnet/minecraft/network/protocol/game/ClientboundChunksBiomesPacket;)V
 		ARG 1 packet
-	METHOD handleCommands (Lnet/minecraft/network/protocol/game/ClientboundCommandsPacket;)V
-		ARG 1 packet
 	METHOD handleCommandSuggestions (Lnet/minecraft/network/protocol/game/ClientboundCommandSuggestionsPacket;)V
+		ARG 1 packet
+	METHOD handleCommands (Lnet/minecraft/network/protocol/game/ClientboundCommandsPacket;)V
 		ARG 1 packet
 	METHOD handleConfigurationStart (Lnet/minecraft/network/protocol/game/ClientboundStartConfigurationPacket;)V
 		ARG 1 packet
@@ -239,7 +239,7 @@ CLASS net/minecraft/network/protocol/game/ClientGamePacketListener
 		ARG 1 packet
 	METHOD setSubtitleText (Lnet/minecraft/network/protocol/game/ClientboundSetSubtitleTextPacket;)V
 		ARG 1 packet
-	METHOD setTitlesAnimation (Lnet/minecraft/network/protocol/game/ClientboundSetTitlesAnimationPacket;)V
-		ARG 1 packet
 	METHOD setTitleText (Lnet/minecraft/network/protocol/game/ClientboundSetTitleTextPacket;)V
+		ARG 1 packet
+	METHOD setTitlesAnimation (Lnet/minecraft/network/protocol/game/ClientboundSetTitlesAnimationPacket;)V
 		ARG 1 packet

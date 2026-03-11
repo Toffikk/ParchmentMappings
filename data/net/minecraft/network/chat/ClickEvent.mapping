@@ -8,13 +8,10 @@ CLASS net/minecraft/network/chat/ClickEvent
 			ARG 5 codec
 		METHOD filterForSerialization (Lnet/minecraft/network/chat/ClickEvent$Action;)Lcom/mojang/serialization/DataResult;
 			ARG 0 action
-	CLASS ChangePage
-		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-			ARG 0 i
-	CLASS CopyToClipboard
-		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-			ARG 0 i
 	CLASS Custom
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+	CLASS OpenUrl
 		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 i
 	CLASS OpenFile
@@ -24,7 +21,7 @@ CLASS net/minecraft/network/chat/ClickEvent
 			ARG 1 path
 		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 i
-	CLASS OpenUrl
+	CLASS ChangePage
 		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 i
 	CLASS RunCommand
@@ -34,5 +31,8 @@ CLASS net/minecraft/network/chat/ClickEvent
 		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 i
 	CLASS SuggestCommand
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+	CLASS CopyToClipboard
 		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 i

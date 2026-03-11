@@ -5,6 +5,20 @@ CLASS net/minecraft/commands/BrigadierExceptions
 	METHOD lambda$static$1 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 found
 		ARG 1 max
+	METHOD lambda$static$10 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+		ARG 0 value
+	METHOD lambda$static$11 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+		ARG 0 value
+	METHOD lambda$static$12 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+		ARG 0 value
+	METHOD lambda$static$13 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+		ARG 0 value
+	METHOD lambda$static$14 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+		ARG 0 value
+	METHOD lambda$static$15 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+		ARG 0 symbol
+	METHOD lambda$static$16 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+		ARG 0 message
 	METHOD lambda$static$2 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 found
 		ARG 1 min
@@ -27,17 +41,3 @@ CLASS net/minecraft/commands/BrigadierExceptions
 		ARG 0 expected
 	METHOD lambda$static$9 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 character
-	METHOD lambda$static$10 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
-		ARG 0 value
-	METHOD lambda$static$11 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
-		ARG 0 value
-	METHOD lambda$static$12 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
-		ARG 0 value
-	METHOD lambda$static$13 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
-		ARG 0 value
-	METHOD lambda$static$14 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
-		ARG 0 value
-	METHOD lambda$static$15 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
-		ARG 0 symbol
-	METHOD lambda$static$16 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
-		ARG 0 message

@@ -26,9 +26,6 @@ CLASS net/minecraft/world/entity/player/StackedContents
 		ARG 1 ingredients
 		ARG 2 maxSize
 		ARG 3 output
-	CLASS IngredientInfo
-		METHOD acceptsItem (Ljava/lang/Object;)Z
-			ARG 1 item
 	CLASS Output
 		METHOD accept (Ljava/lang/Object;)V
 			ARG 1 item
@@ -88,4 +85,7 @@ CLASS net/minecraft/world/entity/player/StackedContents
 		METHOD visitIngredient (I)V
 			ARG 1 item
 		METHOD visitItem (I)V
+			ARG 1 item
+	CLASS IngredientInfo
+		METHOD acceptsItem (Ljava/lang/Object;)Z
 			ARG 1 item

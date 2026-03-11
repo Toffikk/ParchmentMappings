@@ -45,21 +45,6 @@ CLASS net/minecraft/commands/arguments/ResourceOrIdArgument
 		ARG 1 reader
 		ARG 2 grammar
 		ARG 3 ops
-	CLASS DialogArgument
-		METHOD <init> (Lnet/minecraft/commands/CommandBuildContext;)V
-			ARG 1 context
-	CLASS InlineResult
-		METHOD lambda$parse$0 (Lcom/mojang/brigadier/ImmutableStringReader;Ljava/lang/String;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
-			ARG 1 msg
-	CLASS LootModifierArgument
-		METHOD <init> (Lnet/minecraft/commands/CommandBuildContext;)V
-			ARG 1 context
-	CLASS LootPredicateArgument
-		METHOD <init> (Lnet/minecraft/commands/CommandBuildContext;)V
-			ARG 1 context
-	CLASS LootTableArgument
-		METHOD <init> (Lnet/minecraft/commands/CommandBuildContext;)V
-			ARG 1 context
 	CLASS Result
 		METHOD parse (Lcom/mojang/brigadier/ImmutableStringReader;Lnet/minecraft/core/HolderLookup$Provider;Lcom/mojang/serialization/DynamicOps;Lcom/mojang/serialization/Codec;Lnet/minecraft/core/HolderLookup$RegistryLookup;)Lnet/minecraft/core/Holder;
 			ARG 1 reader
@@ -67,3 +52,18 @@ CLASS net/minecraft/commands/arguments/ResourceOrIdArgument
 			ARG 3 ops
 			ARG 4 codec
 			ARG 5 elementLookup
+	CLASS InlineResult
+		METHOD lambda$parse$0 (Lcom/mojang/brigadier/ImmutableStringReader;Ljava/lang/String;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+			ARG 1 msg
+	CLASS DialogArgument
+		METHOD <init> (Lnet/minecraft/commands/CommandBuildContext;)V
+			ARG 1 context
+	CLASS LootTableArgument
+		METHOD <init> (Lnet/minecraft/commands/CommandBuildContext;)V
+			ARG 1 context
+	CLASS LootModifierArgument
+		METHOD <init> (Lnet/minecraft/commands/CommandBuildContext;)V
+			ARG 1 context
+	CLASS LootPredicateArgument
+		METHOD <init> (Lnet/minecraft/commands/CommandBuildContext;)V
+			ARG 1 context

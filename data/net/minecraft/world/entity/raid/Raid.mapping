@@ -63,6 +63,12 @@ CLASS net/minecraft/world/entity/raid/Raid
 		ARG 0 r
 	METHOD lambda$static$1 (Lnet/minecraft/world/entity/raid/Raid;)Ljava/lang/Boolean;
 		ARG 0 r
+	METHOD lambda$static$10 (Lnet/minecraft/world/entity/raid/Raid;)Lnet/minecraft/core/BlockPos;
+		ARG 0 r
+	METHOD lambda$static$11 (Lnet/minecraft/world/entity/raid/Raid;)Ljava/util/Set;
+		ARG 0 r
+	METHOD lambda$static$12 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
 	METHOD lambda$static$2 (Lnet/minecraft/world/entity/raid/Raid;)Ljava/lang/Long;
 		ARG 0 r
 	METHOD lambda$static$3 (Lnet/minecraft/world/entity/raid/Raid;)Ljava/lang/Integer;
@@ -79,12 +85,6 @@ CLASS net/minecraft/world/entity/raid/Raid
 		ARG 0 r
 	METHOD lambda$static$9 (Lnet/minecraft/world/entity/raid/Raid;)Lnet/minecraft/world/entity/raid/Raid$RaidStatus;
 		ARG 0 r
-	METHOD lambda$static$10 (Lnet/minecraft/world/entity/raid/Raid;)Lnet/minecraft/core/BlockPos;
-		ARG 0 r
-	METHOD lambda$static$11 (Lnet/minecraft/world/entity/raid/Raid;)Ljava/util/Set;
-		ARG 0 r
-	METHOD lambda$static$12 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 i
 	METHOD lambda$validPlayer$13 (Lnet/minecraft/server/level/ServerPlayer;)Z
 		ARG 1 player
 	METHOD moveRaidCenterToNearbyVillageSection (Lnet/minecraft/server/level/ServerLevel;)V
@@ -116,10 +116,10 @@ CLASS net/minecraft/world/entity/raid/Raid
 		ARG 1 level
 	METHOD updateRaiders (Lnet/minecraft/server/level/ServerLevel;)V
 		ARG 1 level
+	CLASS RaidStatus
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+			ARG 3 name
 	CLASS RaiderType
 		METHOD <init> (Ljava/lang/String;ILnet/minecraft/world/entity/EntityType;[I)V
 			ARG 3 entityType
 			ARG 4 spawnsPerWaveBeforeBonus
-	CLASS RaidStatus
-		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
-			ARG 3 name

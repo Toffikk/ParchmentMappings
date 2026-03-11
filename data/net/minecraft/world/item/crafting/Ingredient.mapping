@@ -23,17 +23,17 @@ CLASS net/minecraft/world/item/crafting/Ingredient
 		ARG 0 i
 	METHOD lambda$testOptionalIngredient$6 (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/crafting/Ingredient;)Ljava/lang/Boolean;
 		ARG 1 value
-	METHOD of ([Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/item/crafting/Ingredient;
-		ARG 0 items
 	METHOD of (Ljava/util/stream/Stream;)Lnet/minecraft/world/item/crafting/Ingredient;
 		ARG 0 stream
 	METHOD of (Lnet/minecraft/core/HolderSet;)Lnet/minecraft/world/item/crafting/Ingredient;
 		ARG 0 tag
 	METHOD of (Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/item/crafting/Ingredient;
 		ARG 0 itemLike
+	METHOD of ([Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/item/crafting/Ingredient;
+		ARG 0 items
 	METHOD optionalIngredientToDisplay (Ljava/util/Optional;)Lnet/minecraft/world/item/crafting/display/SlotDisplay;
 		ARG 0 ingredient
-	METHOD test (Ljava/lang/Object;)Z
+	METHOD test (Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 1 input
 	METHOD testOptionalIngredient (Ljava/util/Optional;Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 0 ingredient

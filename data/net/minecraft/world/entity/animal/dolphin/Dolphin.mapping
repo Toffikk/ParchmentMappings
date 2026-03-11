@@ -7,6 +7,9 @@ CLASS net/minecraft/world/entity/animal/dolphin/Dolphin
 		ARG 1 gotFish
 	METHOD setMoisntessLevel (I)V
 		ARG 1 level
+	CLASS PlayWithItemsGoal
+		METHOD drop (Lnet/minecraft/world/item/ItemStack;)V
+			ARG 1 itemStack
 	CLASS DolphinSwimToTreasureGoal
 		METHOD <init> (Lnet/minecraft/world/entity/animal/dolphin/Dolphin;)V
 			ARG 1 dolphin
@@ -14,6 +17,3 @@ CLASS net/minecraft/world/entity/animal/dolphin/Dolphin
 		METHOD <init> (Lnet/minecraft/world/entity/animal/dolphin/Dolphin;D)V
 			ARG 1 dolphin
 			ARG 2 speedModifier
-	CLASS PlayWithItemsGoal
-		METHOD drop (Lnet/minecraft/world/item/ItemStack;)V
-			ARG 1 itemStack

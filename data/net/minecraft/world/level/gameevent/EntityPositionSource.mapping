@@ -11,10 +11,10 @@ CLASS net/minecraft/world/level/gameevent/EntityPositionSource
 		ARG 0 uuidOrId
 	METHOD lambda$getPosition$5 (Lnet/minecraft/world/entity/Entity;)Lnet/minecraft/world/phys/Vec3;
 		ARG 1 entity
-	METHOD lambda$getUuid$9 (Ljava/lang/Integer;)Ljava/util/UUID;
-		ARG 0 id
 	METHOD lambda$getUuid$10 (Lcom/mojang/datafixers/util/Either;)Ljava/util/UUID;
 		ARG 0 uuidOrId
+	METHOD lambda$getUuid$9 (Ljava/lang/Integer;)Ljava/util/UUID;
+		ARG 0 id
 	METHOD lambda$resolveEntity$6 (Lnet/minecraft/world/level/Level;Ljava/util/UUID;)Lnet/minecraft/world/entity/Entity;
 		ARG 1 uuid
 	METHOD lambda$resolveEntity$7 (Lnet/minecraft/world/level/Level;Lcom/mojang/datafixers/util/Either;)Ljava/util/Optional;

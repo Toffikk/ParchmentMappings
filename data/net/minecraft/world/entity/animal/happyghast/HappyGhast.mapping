@@ -15,10 +15,10 @@ CLASS net/minecraft/world/entity/animal/happyghast/HappyGhast
 		ARG 1 isLeashHolder
 	METHOD setServerStillTimeout (I)V
 		ARG 1 serverStillTimeout
+	CLASS HappyGhastLookControl
+		METHOD wrapDegrees90 (F)F
+			ARG 0 angle
 	CLASS BabyFlyingPathNavigation
 		METHOD <init> (Lnet/minecraft/world/entity/animal/happyghast/HappyGhast;Lnet/minecraft/world/level/Level;)V
 			ARG 1 mob
 			ARG 2 level
-	CLASS HappyGhastLookControl
-		METHOD wrapDegrees90 (F)F
-			ARG 0 angle

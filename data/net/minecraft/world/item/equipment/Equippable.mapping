@@ -19,9 +19,9 @@ CLASS net/minecraft/world/item/equipment/Equippable
 	CLASS Builder
 		METHOD <init> (Lnet/minecraft/world/entity/EquipmentSlot;)V
 			ARG 1 slot
-		METHOD setAllowedEntities ([Lnet/minecraft/world/entity/EntityType;)Lnet/minecraft/world/item/equipment/Equippable$Builder;
-			ARG 1 allowedEntities
 		METHOD setAllowedEntities (Lnet/minecraft/core/HolderSet;)Lnet/minecraft/world/item/equipment/Equippable$Builder;
+			ARG 1 allowedEntities
+		METHOD setAllowedEntities ([Lnet/minecraft/world/entity/EntityType;)Lnet/minecraft/world/item/equipment/Equippable$Builder;
 			ARG 1 allowedEntities
 		METHOD setAsset (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/world/item/equipment/Equippable$Builder;
 			ARG 1 assetId

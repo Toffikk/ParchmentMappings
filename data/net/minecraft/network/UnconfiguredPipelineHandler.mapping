@@ -19,6 +19,11 @@ CLASS net/minecraft/network/UnconfiguredPipelineHandler
 			ARG 1 ctx
 			ARG 2 msg
 			ARG 3 promise
+	CLASS Outbound
+		METHOD write (Lio/netty/channel/ChannelHandlerContext;Ljava/lang/Object;Lio/netty/channel/ChannelPromise;)V
+			ARG 1 ctx
+			ARG 2 msg
+			ARG 3 promise
 	CLASS InboundConfigurationTask
 		METHOD andThen (Lnet/minecraft/network/UnconfiguredPipelineHandler$InboundConfigurationTask;)Lnet/minecraft/network/UnconfiguredPipelineHandler$InboundConfigurationTask;
 			ARG 1 otherTask
@@ -26,11 +31,6 @@ CLASS net/minecraft/network/UnconfiguredPipelineHandler
 			ARG 2 ctx
 		METHOD run (Lio/netty/channel/ChannelHandlerContext;)V
 			ARG 1 ctx
-	CLASS Outbound
-		METHOD write (Lio/netty/channel/ChannelHandlerContext;Ljava/lang/Object;Lio/netty/channel/ChannelPromise;)V
-			ARG 1 ctx
-			ARG 2 msg
-			ARG 3 promise
 	CLASS OutboundConfigurationTask
 		METHOD andThen (Lnet/minecraft/network/UnconfiguredPipelineHandler$OutboundConfigurationTask;)Lnet/minecraft/network/UnconfiguredPipelineHandler$OutboundConfigurationTask;
 			ARG 1 otherTask

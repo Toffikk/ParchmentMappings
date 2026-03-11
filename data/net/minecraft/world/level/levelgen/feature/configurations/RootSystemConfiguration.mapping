@@ -17,6 +17,14 @@ CLASS net/minecraft/world/level/levelgen/feature/configurations/RootSystemConfig
 		ARG 0 c
 	METHOD lambda$static$1 (Lnet/minecraft/world/level/levelgen/feature/configurations/RootSystemConfiguration;)Ljava/lang/Integer;
 		ARG 0 c
+	METHOD lambda$static$10 (Lnet/minecraft/world/level/levelgen/feature/configurations/RootSystemConfiguration;)Ljava/lang/Integer;
+		ARG 0 c
+	METHOD lambda$static$11 (Lnet/minecraft/world/level/levelgen/feature/configurations/RootSystemConfiguration;)Ljava/lang/Integer;
+		ARG 0 c
+	METHOD lambda$static$12 (Lnet/minecraft/world/level/levelgen/feature/configurations/RootSystemConfiguration;)Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;
+		ARG 0 c
+	METHOD lambda$static$13 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
 	METHOD lambda$static$2 (Lnet/minecraft/world/level/levelgen/feature/configurations/RootSystemConfiguration;)Ljava/lang/Integer;
 		ARG 0 c
 	METHOD lambda$static$3 (Lnet/minecraft/world/level/levelgen/feature/configurations/RootSystemConfiguration;)Lnet/minecraft/tags/TagKey;
@@ -33,11 +41,3 @@ CLASS net/minecraft/world/level/levelgen/feature/configurations/RootSystemConfig
 		ARG 0 c
 	METHOD lambda$static$9 (Lnet/minecraft/world/level/levelgen/feature/configurations/RootSystemConfiguration;)Lnet/minecraft/world/level/levelgen/feature/stateproviders/BlockStateProvider;
 		ARG 0 c
-	METHOD lambda$static$10 (Lnet/minecraft/world/level/levelgen/feature/configurations/RootSystemConfiguration;)Ljava/lang/Integer;
-		ARG 0 c
-	METHOD lambda$static$11 (Lnet/minecraft/world/level/levelgen/feature/configurations/RootSystemConfiguration;)Ljava/lang/Integer;
-		ARG 0 c
-	METHOD lambda$static$12 (Lnet/minecraft/world/level/levelgen/feature/configurations/RootSystemConfiguration;)Lnet/minecraft/world/level/levelgen/blockpredicates/BlockPredicate;
-		ARG 0 c
-	METHOD lambda$static$13 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 i

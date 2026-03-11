@@ -2,11 +2,11 @@ CLASS net/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket
 	METHOD <init> (Ljava/util/EnumSet;Ljava/util/Collection;)V
 		ARG 1 actions
 		ARG 2 players
+	METHOD <init> (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+		ARG 1 input
 	METHOD <init> (Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$Action;Lnet/minecraft/server/level/ServerPlayer;)V
 		ARG 1 action
 		ARG 2 player
-	METHOD <init> (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
-		ARG 1 input
 	METHOD createPlayerInitializing (Ljava/util/Collection;)Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket;
 		ARG 0 players
 	METHOD lambda$new$0 (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$Entry;
@@ -16,6 +16,9 @@ CLASS net/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket
 		ARG 2 entry
 	METHOD write (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
 		ARG 1 output
+	CLASS Entry
+		METHOD <init> (Lnet/minecraft/server/level/ServerPlayer;)V
+			ARG 1 player
 	CLASS Action
 		METHOD <init> (Ljava/lang/String;ILnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$Action$Reader;Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$Action$Writer;)V
 			ARG 3 reader
@@ -24,6 +27,24 @@ CLASS net/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket
 			ARG 0 entry
 			ARG 1 input
 		METHOD lambda$static$1 (Lnet/minecraft/network/RegistryFriendlyByteBuf;Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$Entry;)V
+			ARG 0 output
+			ARG 1 entry
+		METHOD lambda$static$10 (Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$EntryBuilder;Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+			ARG 0 entry
+			ARG 1 input
+		METHOD lambda$static$11 (Lnet/minecraft/network/RegistryFriendlyByteBuf;Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$Entry;)V
+			ARG 0 output
+			ARG 1 entry
+		METHOD lambda$static$12 (Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$EntryBuilder;Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+			ARG 0 entry
+			ARG 1 input
+		METHOD lambda$static$13 (Lnet/minecraft/network/RegistryFriendlyByteBuf;Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$Entry;)V
+			ARG 0 output
+			ARG 1 entry
+		METHOD lambda$static$14 (Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$EntryBuilder;Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+			ARG 0 entry
+			ARG 1 input
+		METHOD lambda$static$15 (Lnet/minecraft/network/RegistryFriendlyByteBuf;Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$Entry;)V
 			ARG 0 output
 			ARG 1 entry
 		METHOD lambda$static$2 (Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$EntryBuilder;Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
@@ -50,24 +71,6 @@ CLASS net/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket
 		METHOD lambda$static$9 (Lnet/minecraft/network/RegistryFriendlyByteBuf;Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$Entry;)V
 			ARG 0 output
 			ARG 1 entry
-		METHOD lambda$static$10 (Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$EntryBuilder;Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
-			ARG 0 entry
-			ARG 1 input
-		METHOD lambda$static$11 (Lnet/minecraft/network/RegistryFriendlyByteBuf;Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$Entry;)V
-			ARG 0 output
-			ARG 1 entry
-		METHOD lambda$static$12 (Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$EntryBuilder;Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
-			ARG 0 entry
-			ARG 1 input
-		METHOD lambda$static$13 (Lnet/minecraft/network/RegistryFriendlyByteBuf;Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$Entry;)V
-			ARG 0 output
-			ARG 1 entry
-		METHOD lambda$static$14 (Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$EntryBuilder;Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
-			ARG 0 entry
-			ARG 1 input
-		METHOD lambda$static$15 (Lnet/minecraft/network/RegistryFriendlyByteBuf;Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$Entry;)V
-			ARG 0 output
-			ARG 1 entry
 		CLASS Reader
 			METHOD read (Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$EntryBuilder;Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
 				ARG 1 entry
@@ -76,9 +79,6 @@ CLASS net/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket
 			METHOD write (Lnet/minecraft/network/RegistryFriendlyByteBuf;Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$Entry;)V
 				ARG 1 output
 				ARG 2 entry
-	CLASS Entry
-		METHOD <init> (Lnet/minecraft/server/level/ServerPlayer;)V
-			ARG 1 player
 	CLASS EntryBuilder
 		METHOD <init> (Ljava/util/UUID;)V
 			ARG 1 profileId

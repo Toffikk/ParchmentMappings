@@ -3,22 +3,6 @@ CLASS net/minecraft/world/item/enchantment/EnchantmentEffectComponents
 		ARG 0 registry
 	METHOD lambda$static$1 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
-	METHOD lambda$static$2 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
-		ARG 0 b
-	METHOD lambda$static$3 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
-		ARG 0 b
-	METHOD lambda$static$4 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
-		ARG 0 b
-	METHOD lambda$static$5 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
-		ARG 0 b
-	METHOD lambda$static$6 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
-		ARG 0 b
-	METHOD lambda$static$7 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
-		ARG 0 b
-	METHOD lambda$static$8 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
-		ARG 0 b
-	METHOD lambda$static$9 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
-		ARG 0 b
 	METHOD lambda$static$10 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
 	METHOD lambda$static$11 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
@@ -38,6 +22,8 @@ CLASS net/minecraft/world/item/enchantment/EnchantmentEffectComponents
 	METHOD lambda$static$18 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
 	METHOD lambda$static$19 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
+		ARG 0 b
+	METHOD lambda$static$2 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
 	METHOD lambda$static$20 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
@@ -59,9 +45,23 @@ CLASS net/minecraft/world/item/enchantment/EnchantmentEffectComponents
 		ARG 0 b
 	METHOD lambda$static$29 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
+	METHOD lambda$static$3 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
+		ARG 0 b
 	METHOD lambda$static$30 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
 	METHOD lambda$static$31 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
+		ARG 0 b
+	METHOD lambda$static$4 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
+		ARG 0 b
+	METHOD lambda$static$5 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
+		ARG 0 b
+	METHOD lambda$static$6 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
+		ARG 0 b
+	METHOD lambda$static$7 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
+		ARG 0 b
+	METHOD lambda$static$8 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
+		ARG 0 b
+	METHOD lambda$static$9 (Lnet/minecraft/core/component/DataComponentType$Builder;)Lnet/minecraft/core/component/DataComponentType$Builder;
 		ARG 0 b
 	METHOD register (Ljava/lang/String;Ljava/util/function/UnaryOperator;)Lnet/minecraft/core/component/DataComponentType;
 		ARG 0 id

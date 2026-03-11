@@ -1,9 +1,9 @@
 CLASS net/minecraft/world/level/storage/loot/entries/AlternativesEntry
-	METHOD alternatives ([Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/entries/AlternativesEntry$Builder;
-		ARG 0 entries
 	METHOD alternatives (Ljava/util/Collection;Ljava/util/function/Function;)Lnet/minecraft/world/level/storage/loot/entries/AlternativesEntry$Builder;
 		ARG 0 items
 		ARG 1 provider
+	METHOD alternatives ([Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/entries/AlternativesEntry$Builder;
+		ARG 0 entries
 	METHOD lambda$compose$0 (Ljava/util/List;Lnet/minecraft/world/level/storage/loot/LootContext;Ljava/util/function/Consumer;)Z
 		ARG 1 context
 		ARG 2 output

@@ -22,22 +22,6 @@ CLASS net/minecraft/server/commands/TeamCommand
 		ARG 0 c
 	METHOD lambda$register$1 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 c
-	METHOD lambda$register$2 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
-	METHOD lambda$register$3 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
-	METHOD lambda$register$4 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
-	METHOD lambda$register$5 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
-	METHOD lambda$register$6 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
-	METHOD lambda$register$7 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
-	METHOD lambda$register$8 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
-	METHOD lambda$register$9 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
 	METHOD lambda$register$10 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 c
 	METHOD lambda$register$11 (Lcom/mojang/brigadier/context/CommandContext;)I
@@ -58,6 +42,8 @@ CLASS net/minecraft/server/commands/TeamCommand
 		ARG 0 c
 	METHOD lambda$register$19 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 c
+	METHOD lambda$register$2 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
 	METHOD lambda$register$20 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 c
 	METHOD lambda$register$21 (Lcom/mojang/brigadier/context/CommandContext;)I
@@ -71,6 +57,20 @@ CLASS net/minecraft/server/commands/TeamCommand
 	METHOD lambda$register$25 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 c
 	METHOD lambda$register$26 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$3 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$4 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$5 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$6 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$7 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$8 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$9 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 c
 	METHOD leaveTeam (Lnet/minecraft/commands/CommandSourceStack;Ljava/util/Collection;)I
 		ARG 0 source

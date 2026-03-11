@@ -61,12 +61,12 @@ CLASS net/minecraft/client/gui/screens/worldselection/WorldCreationUiState
 		ARG 1 newConfig
 	METHOD updateDimensions (Lnet/minecraft/client/gui/screens/worldselection/WorldCreationContext$DimensionsUpdater;)V
 		ARG 1 modifier
-	CLASS SelectedGameMode
-		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Lnet/minecraft/world/level/GameType;)V
-			ARG 3 name
-			ARG 4 gameType
 	CLASS WorldTypeEntry
 		METHOD lambda$describePreset$0 (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/network/chat/Component;
 			ARG 0 key
 		METHOD lambda$isAmplified$1 (Lnet/minecraft/resources/ResourceKey;)Z
 			ARG 0 k
+	CLASS SelectedGameMode
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Lnet/minecraft/world/level/GameType;)V
+			ARG 3 name
+			ARG 4 gameType

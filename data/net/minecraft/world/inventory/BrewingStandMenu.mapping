@@ -10,6 +10,9 @@ CLASS net/minecraft/world/inventory/BrewingStandMenu
 	CLASS FuelSlot
 		METHOD mayPlaceItem (Lnet/minecraft/world/item/ItemStack;)Z
 			ARG 0 itemStack
+	CLASS PotionSlot
+		METHOD mayPlaceItem (Lnet/minecraft/world/item/ItemStack;)Z
+			ARG 0 itemStack
 	CLASS IngredientsSlot
 		METHOD <init> (Lnet/minecraft/world/item/alchemy/PotionBrewing;Lnet/minecraft/world/Container;III)V
 			ARG 1 potionBrewing
@@ -17,6 +20,3 @@ CLASS net/minecraft/world/inventory/BrewingStandMenu
 			ARG 3 slot
 			ARG 4 x
 			ARG 5 y
-	CLASS PotionSlot
-		METHOD mayPlaceItem (Lnet/minecraft/world/item/ItemStack;)Z
-			ARG 0 itemStack

@@ -21,9 +21,9 @@ CLASS net/minecraft/world/entity/animal/armadillo/ArmadilloAi
 		ARG 0 brain
 	METHOD updateActivity (Lnet/minecraft/world/entity/animal/armadillo/Armadillo;)V
 		ARG 0 body
-	CLASS ArmadilloBallUp
-		METHOD pickNextPeekTimer (Lnet/minecraft/world/entity/animal/armadillo/Armadillo;)I
-			ARG 1 body
 	CLASS ArmadilloPanic
 		METHOD lambda$new$0 (Lnet/minecraft/world/entity/PathfinderMob;)Lnet/minecraft/tags/TagKey;
 			ARG 0 mob
+	CLASS ArmadilloBallUp
+		METHOD pickNextPeekTimer (Lnet/minecraft/world/entity/animal/armadillo/Armadillo;)I
+			ARG 1 body

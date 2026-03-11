@@ -13,10 +13,6 @@ CLASS net/minecraft/client/gui/screens/multiplayer/ServerSelectionList
 	CLASS Entry
 		METHOD matches (Lnet/minecraft/client/gui/screens/multiplayer/ServerSelectionList$Entry;)Z
 			ARG 1 other
-	CLASS NetworkServerEntry
-		METHOD <init> (Lnet/minecraft/client/gui/screens/multiplayer/JoinMultiplayerScreen;Lnet/minecraft/client/server/LanServer;)V
-			ARG 1 screen
-			ARG 2 serverData
 	CLASS OnlineServerEntry
 		METHOD <init> (Lnet/minecraft/client/gui/screens/multiplayer/ServerSelectionList;Lnet/minecraft/client/gui/screens/multiplayer/JoinMultiplayerScreen;Lnet/minecraft/client/multiplayer/ServerData;)V
 			ARG 2 screen
@@ -31,3 +27,7 @@ CLASS net/minecraft/client/gui/screens/multiplayer/ServerSelectionList
 			ARG 2 newIndex
 		METHOD uploadServerIcon ([B)Z
 			ARG 1 serverIconBytes
+	CLASS NetworkServerEntry
+		METHOD <init> (Lnet/minecraft/client/gui/screens/multiplayer/JoinMultiplayerScreen;Lnet/minecraft/client/server/LanServer;)V
+			ARG 1 screen
+			ARG 2 serverData

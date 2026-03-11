@@ -36,10 +36,10 @@ CLASS net/minecraft/stats/ServerRecipeBook
 		ARG 2 player
 	METHOD sendInitialRecipeBook (Lnet/minecraft/server/level/ServerPlayer;)V
 		ARG 1 player
+	CLASS Packed
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
 	CLASS DisplayResolver
 		METHOD displaysForRecipe (Lnet/minecraft/resources/ResourceKey;Ljava/util/function/Consumer;)V
 			ARG 1 id
 			ARG 2 output
-	CLASS Packed
-		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-			ARG 0 i

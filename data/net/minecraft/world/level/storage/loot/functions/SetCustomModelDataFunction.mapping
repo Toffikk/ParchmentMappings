@@ -20,9 +20,9 @@ CLASS net/minecraft/world/level/storage/loot/functions/SetCustomModelDataFunctio
 		ARG 0 l
 	METHOD lambda$getReferencedContextParams$6 (Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;)Ljava/util/stream/Stream;
 		ARG 0 e
-	METHOD lambda$run$9 (Lnet/minecraft/world/level/storage/loot/LootContext;Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;)Ljava/lang/Float;
-		ARG 1 provider
 	METHOD lambda$run$10 (Lnet/minecraft/world/level/storage/loot/LootContext;Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;)Ljava/lang/Integer;
+		ARG 1 provider
+	METHOD lambda$run$9 (Lnet/minecraft/world/level/storage/loot/LootContext;Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;)Ljava/lang/Float;
 		ARG 1 provider
 	METHOD lambda$static$0 (Lnet/minecraft/world/level/storage/loot/functions/SetCustomModelDataFunction;)Ljava/util/Optional;
 		ARG 0 o

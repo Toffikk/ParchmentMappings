@@ -10,6 +10,15 @@ CLASS net/minecraft/world/level/storage/loot/IntRange
 		ARG 2 value
 	METHOD exact (I)Lnet/minecraft/world/level/storage/loot/IntRange;
 		ARG 0 value
+	METHOD lambda$new$10 (Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;Lnet/minecraft/world/level/storage/loot/LootContext;I)Z
+		ARG 1 context
+		ARG 2 value
+	METHOD lambda$new$11 (Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;Lnet/minecraft/world/level/storage/loot/LootContext;I)I
+		ARG 2 context
+		ARG 3 value
+	METHOD lambda$new$12 (Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;Lnet/minecraft/world/level/storage/loot/LootContext;I)Z
+		ARG 2 context
+		ARG 3 value
 	METHOD lambda$new$5 (Lnet/minecraft/world/level/storage/loot/LootContext;I)I
 		ARG 0 context
 		ARG 1 value
@@ -25,15 +34,6 @@ CLASS net/minecraft/world/level/storage/loot/IntRange
 	METHOD lambda$new$9 (Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;Lnet/minecraft/world/level/storage/loot/LootContext;I)I
 		ARG 1 context
 		ARG 2 value
-	METHOD lambda$new$10 (Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;Lnet/minecraft/world/level/storage/loot/LootContext;I)Z
-		ARG 1 context
-		ARG 2 value
-	METHOD lambda$new$11 (Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;Lnet/minecraft/world/level/storage/loot/LootContext;I)I
-		ARG 2 context
-		ARG 3 value
-	METHOD lambda$new$12 (Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;Lnet/minecraft/world/level/storage/loot/LootContext;I)Z
-		ARG 2 context
-		ARG 3 value
 	METHOD lambda$static$0 (Lnet/minecraft/world/level/storage/loot/IntRange;)Ljava/util/Optional;
 		ARG 0 r
 	METHOD lambda$static$1 (Lnet/minecraft/world/level/storage/loot/IntRange;)Ljava/util/Optional;

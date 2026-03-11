@@ -9,11 +9,11 @@ CLASS net/minecraft/world/level/block/FireBlock
 		ARG 1 state
 	METHOD getFireTickDelay (Lnet/minecraft/util/RandomSource;)I
 		ARG 0 random
-	METHOD getIgniteOdds (Lnet/minecraft/world/level/block/state/BlockState;)I
-		ARG 1 state
 	METHOD getIgniteOdds (Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;)I
 		ARG 1 level
 		ARG 2 pos
+	METHOD getIgniteOdds (Lnet/minecraft/world/level/block/state/BlockState;)I
+		ARG 1 state
 	METHOD getStateForPlacement (Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
 		ARG 1 level
 		ARG 2 pos

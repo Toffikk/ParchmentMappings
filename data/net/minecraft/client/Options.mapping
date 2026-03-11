@@ -49,33 +49,83 @@ CLASS net/minecraft/client/Options
 		ARG 1 value
 	METHOD lambda$new$1 (Ljava/lang/Double;)V
 		ARG 0 value
-	METHOD lambda$new$2 (I)Ljava/lang/Double;
-		ARG 0 value
-	METHOD lambda$new$3 (Ljava/lang/Double;)I
-		ARG 0 value
-	METHOD lambda$new$4 (Ljava/lang/Double;)V
-		ARG 1 value
-	METHOD lambda$new$5 (Lnet/minecraft/network/chat/Component;Ljava/lang/Integer;)Lnet/minecraft/network/chat/Component;
-		ARG 0 caption
-		ARG 1 value
-	METHOD lambda$new$6 (I)Ljava/lang/Integer;
-		ARG 0 value
-	METHOD lambda$new$7 (Ljava/lang/Integer;)I
-		ARG 0 value
-	METHOD lambda$new$8 (Ljava/lang/Integer;)V
-		ARG 0 value
-	METHOD lambda$new$9 (Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/GraphicsPreset;)Lnet/minecraft/network/chat/Component;
-		ARG 0 caption
-		ARG 1 value
 	METHOD lambda$new$10 (Lnet/minecraft/client/InactivityFpsLimit;)Lnet/minecraft/client/gui/components/Tooltip;
 		ARG 0 value
+	METHOD lambda$new$100 (Ljava/lang/Integer;)V
+		ARG 0 value
+	METHOD lambda$new$101 (Lnet/minecraft/network/chat/Component;Ljava/lang/Boolean;)Lnet/minecraft/network/chat/Component;
+		ARG 0 caption
+		ARG 1 value
+	METHOD lambda$new$102 (Ljava/lang/Boolean;)V
+		ARG 0 value
+	METHOD lambda$new$103 (Ljava/lang/Double;)V
+		ARG 0 value
+	METHOD lambda$new$104 (Ljava/lang/Double;)V
+		ARG 0 value
+	METHOD lambda$new$105 (Ljava/lang/Double;)V
+		ARG 0 value
+	METHOD lambda$new$106 (Ljava/lang/Double;)V
+		ARG 0 value
+	METHOD lambda$new$107 (Ljava/lang/Double;)V
+		ARG 0 value
+	METHOD lambda$new$108 (Ljava/lang/Double;)V
+		ARG 0 value
+	METHOD lambda$new$109 (Lnet/minecraft/network/chat/Component;Ljava/lang/Double;)Lnet/minecraft/network/chat/Component;
+		ARG 0 caption
+		ARG 1 value
 	METHOD lambda$new$11 (Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/InactivityFpsLimit;)Lnet/minecraft/network/chat/Component;
+		ARG 0 caption
+		ARG 1 value
+	METHOD lambda$new$110 (Ljava/lang/Double;)V
+		ARG 0 value
+	METHOD lambda$new$111 (Lnet/minecraft/network/chat/Component;Ljava/lang/Integer;)Lnet/minecraft/network/chat/Component;
+		ARG 0 caption
+		ARG 1 value
+	METHOD lambda$new$113 (Ljava/lang/Integer;)V
+		ARG 1 value
+	METHOD lambda$new$114 (Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/level/ParticleStatus;)Lnet/minecraft/network/chat/Component;
+		ARG 0 caption
+		ARG 1 value
+	METHOD lambda$new$115 (Lnet/minecraft/server/level/ParticleStatus;)V
+		ARG 1 value
+	METHOD lambda$new$116 (Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/NarratorStatus;)Lnet/minecraft/network/chat/Component;
+		ARG 1 caption
+		ARG 2 value
+	METHOD lambda$new$117 (Lnet/minecraft/client/NarratorStatus;)V
+		ARG 1 value
+	METHOD lambda$new$118 (Lnet/minecraft/network/chat/Component;Ljava/lang/String;)Lnet/minecraft/network/chat/Component;
 		ARG 0 caption
 		ARG 1 value
 	METHOD lambda$new$12 (Lnet/minecraft/client/InactivityFpsLimit;)V
 		ARG 0 value
+	METHOD lambda$new$120 (Ljava/lang/String;)Ljava/util/Optional;
+		ARG 0 device
+	METHOD lambda$new$121 (Ljava/lang/String;)V
+		ARG 0 value
+	METHOD lambda$new$122 (Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/sounds/MusicManager$MusicFrequency;)Lnet/minecraft/network/chat/Component;
+		ARG 0 caption
+		ARG 1 value
+	METHOD lambda$new$123 (Lnet/minecraft/client/sounds/MusicManager$MusicFrequency;)V
+		ARG 0 value
+	METHOD lambda$new$124 (Lnet/minecraft/client/MusicToastDisplayState;)Lnet/minecraft/client/gui/components/Tooltip;
+		ARG 0 value
+	METHOD lambda$new$125 (Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/MusicToastDisplayState;)Lnet/minecraft/network/chat/Component;
+		ARG 0 caption
+		ARG 1 value
+	METHOD lambda$new$126 (Lnet/minecraft/client/MusicToastDisplayState;)V
+		ARG 1 value
+	METHOD lambda$new$127 (Lnet/minecraft/network/chat/Component;Ljava/lang/Integer;)Lnet/minecraft/network/chat/Component;
+		ARG 0 caption
+		ARG 1 value
+	METHOD lambda$new$128 (Ljava/lang/Integer;)V
+		ARG 1 value
+	METHOD lambda$new$129 (Lnet/minecraft/network/chat/Component;Ljava/lang/Integer;)Lnet/minecraft/network/chat/Component;
+		ARG 0 caption
+		ARG 1 value
 	METHOD lambda$new$13 (Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/CloudStatus;)Lnet/minecraft/network/chat/Component;
 		ARG 0 caption
+		ARG 1 value
+	METHOD lambda$new$130 (Ljava/lang/Integer;)V
 		ARG 1 value
 	METHOD lambda$new$14 (Ljava/lang/Boolean;)Lnet/minecraft/client/CloudStatus;
 		ARG 0 b
@@ -91,6 +141,8 @@ CLASS net/minecraft/client/Options
 	METHOD lambda$new$19 (Lnet/minecraft/network/chat/Component;Ljava/lang/Integer;)Lnet/minecraft/network/chat/Component;
 		ARG 0 caption
 		ARG 1 value
+	METHOD lambda$new$2 (I)Ljava/lang/Double;
+		ARG 0 value
 	METHOD lambda$new$20 (Ljava/lang/Integer;)V
 		ARG 1 ignored
 	METHOD lambda$new$21 (Ljava/lang/Boolean;)V
@@ -113,6 +165,8 @@ CLASS net/minecraft/client/Options
 	METHOD lambda$new$29 (Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/PrioritizeChunkUpdates;)Lnet/minecraft/network/chat/Component;
 		ARG 0 caption
 		ARG 1 value
+	METHOD lambda$new$3 (Ljava/lang/Double;)I
+		ARG 0 value
 	METHOD lambda$new$30 (Lnet/minecraft/client/PrioritizeChunkUpdates;)V
 		ARG 1 value
 	METHOD lambda$new$31 (Lnet/minecraft/network/chat/Component;Lnet/minecraft/world/entity/player/ChatVisiblity;)Lnet/minecraft/network/chat/Component;
@@ -134,6 +188,8 @@ CLASS net/minecraft/client/Options
 	METHOD lambda$new$38 (Ljava/lang/Double;)V
 		ARG 0 v
 	METHOD lambda$new$39 (Ljava/lang/Boolean;)V
+		ARG 1 value
+	METHOD lambda$new$4 (Ljava/lang/Double;)V
 		ARG 1 value
 	METHOD lambda$new$40 (Lnet/minecraft/network/chat/Component;Lnet/minecraft/world/entity/HumanoidArm;)Lnet/minecraft/network/chat/Component;
 		ARG 0 caption
@@ -160,6 +216,9 @@ CLASS net/minecraft/client/Options
 		ARG 1 value
 	METHOD lambda$new$49 (Ljava/lang/Double;)V
 		ARG 0 value
+	METHOD lambda$new$5 (Lnet/minecraft/network/chat/Component;Ljava/lang/Integer;)Lnet/minecraft/network/chat/Component;
+		ARG 0 caption
+		ARG 1 value
 	METHOD lambda$new$50 (Lnet/minecraft/network/chat/Component;Ljava/lang/Double;)Lnet/minecraft/network/chat/Component;
 		ARG 0 caption
 		ARG 1 value
@@ -183,6 +242,8 @@ CLASS net/minecraft/client/Options
 		ARG 1 value
 	METHOD lambda$new$59 (Ljava/lang/Integer;)V
 		ARG 1 value
+	METHOD lambda$new$6 (I)Ljava/lang/Integer;
+		ARG 0 value
 	METHOD lambda$new$60 (Lnet/minecraft/network/chat/Component;Ljava/lang/Integer;)Lnet/minecraft/network/chat/Component;
 		ARG 0 caption
 		ARG 1 value
@@ -208,6 +269,8 @@ CLASS net/minecraft/client/Options
 	METHOD lambda$new$69 (Lnet/minecraft/network/chat/Component;Ljava/lang/Double;)Lnet/minecraft/network/chat/Component;
 		ARG 0 caption
 		ARG 1 value
+	METHOD lambda$new$7 (Ljava/lang/Integer;)I
+		ARG 0 value
 	METHOD lambda$new$70 (Ljava/lang/Double;)V
 		ARG 0 value
 	METHOD lambda$new$71 (Ljava/lang/Boolean;)V
@@ -228,6 +291,8 @@ CLASS net/minecraft/client/Options
 		ARG 0 ignored
 	METHOD lambda$new$79 (Lnet/minecraft/sounds/SoundSource;)Lnet/minecraft/client/OptionInstance;
 		ARG 1 source
+	METHOD lambda$new$8 (Ljava/lang/Integer;)V
+		ARG 0 value
 	METHOD lambda$new$81 (Ljava/lang/Boolean;)Lnet/minecraft/client/gui/components/Tooltip;
 		ARG 0 value
 	METHOD lambda$new$82 (Ljava/lang/Boolean;)V
@@ -249,6 +314,9 @@ CLASS net/minecraft/client/Options
 		ARG 1 value
 	METHOD lambda$new$89 (Ljava/lang/Boolean;)V
 		ARG 0 value
+	METHOD lambda$new$9 (Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/GraphicsPreset;)Lnet/minecraft/network/chat/Component;
+		ARG 0 caption
+		ARG 1 value
 	METHOD lambda$new$90 (Lnet/minecraft/network/chat/Component;Ljava/lang/Boolean;)Lnet/minecraft/network/chat/Component;
 		ARG 0 caption
 		ARG 1 value
@@ -271,74 +339,6 @@ CLASS net/minecraft/client/Options
 		ARG 0 value
 	METHOD lambda$new$99 (Ljava/lang/Integer;)Ljava/lang/Double;
 		ARG 0 value
-	METHOD lambda$new$100 (Ljava/lang/Integer;)V
-		ARG 0 value
-	METHOD lambda$new$101 (Lnet/minecraft/network/chat/Component;Ljava/lang/Boolean;)Lnet/minecraft/network/chat/Component;
-		ARG 0 caption
-		ARG 1 value
-	METHOD lambda$new$102 (Ljava/lang/Boolean;)V
-		ARG 0 value
-	METHOD lambda$new$103 (Ljava/lang/Double;)V
-		ARG 0 value
-	METHOD lambda$new$104 (Ljava/lang/Double;)V
-		ARG 0 value
-	METHOD lambda$new$105 (Ljava/lang/Double;)V
-		ARG 0 value
-	METHOD lambda$new$106 (Ljava/lang/Double;)V
-		ARG 0 value
-	METHOD lambda$new$107 (Ljava/lang/Double;)V
-		ARG 0 value
-	METHOD lambda$new$108 (Ljava/lang/Double;)V
-		ARG 0 value
-	METHOD lambda$new$109 (Lnet/minecraft/network/chat/Component;Ljava/lang/Double;)Lnet/minecraft/network/chat/Component;
-		ARG 0 caption
-		ARG 1 value
-	METHOD lambda$new$110 (Ljava/lang/Double;)V
-		ARG 0 value
-	METHOD lambda$new$111 (Lnet/minecraft/network/chat/Component;Ljava/lang/Integer;)Lnet/minecraft/network/chat/Component;
-		ARG 0 caption
-		ARG 1 value
-	METHOD lambda$new$113 (Ljava/lang/Integer;)V
-		ARG 1 value
-	METHOD lambda$new$114 (Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/level/ParticleStatus;)Lnet/minecraft/network/chat/Component;
-		ARG 0 caption
-		ARG 1 value
-	METHOD lambda$new$115 (Lnet/minecraft/server/level/ParticleStatus;)V
-		ARG 1 value
-	METHOD lambda$new$116 (Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/NarratorStatus;)Lnet/minecraft/network/chat/Component;
-		ARG 1 caption
-		ARG 2 value
-	METHOD lambda$new$117 (Lnet/minecraft/client/NarratorStatus;)V
-		ARG 1 value
-	METHOD lambda$new$118 (Lnet/minecraft/network/chat/Component;Ljava/lang/String;)Lnet/minecraft/network/chat/Component;
-		ARG 0 caption
-		ARG 1 value
-	METHOD lambda$new$120 (Ljava/lang/String;)Ljava/util/Optional;
-		ARG 0 device
-	METHOD lambda$new$121 (Ljava/lang/String;)V
-		ARG 0 value
-	METHOD lambda$new$122 (Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/sounds/MusicManager$MusicFrequency;)Lnet/minecraft/network/chat/Component;
-		ARG 0 caption
-		ARG 1 value
-	METHOD lambda$new$123 (Lnet/minecraft/client/sounds/MusicManager$MusicFrequency;)V
-		ARG 0 value
-	METHOD lambda$new$124 (Lnet/minecraft/client/MusicToastDisplayState;)Lnet/minecraft/client/gui/components/Tooltip;
-		ARG 0 value
-	METHOD lambda$new$125 (Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/MusicToastDisplayState;)Lnet/minecraft/network/chat/Component;
-		ARG 0 caption
-		ARG 1 value
-	METHOD lambda$new$126 (Lnet/minecraft/client/MusicToastDisplayState;)V
-		ARG 1 value
-	METHOD lambda$new$127 (Lnet/minecraft/network/chat/Component;Ljava/lang/Integer;)Lnet/minecraft/network/chat/Component;
-		ARG 0 caption
-		ARG 1 value
-	METHOD lambda$new$128 (Ljava/lang/Integer;)V
-		ARG 1 value
-	METHOD lambda$new$129 (Lnet/minecraft/network/chat/Component;Ljava/lang/Integer;)Lnet/minecraft/network/chat/Component;
-		ARG 0 caption
-		ARG 1 value
-	METHOD lambda$new$130 (Ljava/lang/Integer;)V
-		ARG 1 value
 	METHOD loadSelectedResourcePacks (Lnet/minecraft/server/packs/repository/PackRepository;)V
 		ARG 1 repository
 	METHOD logMouse (I)D

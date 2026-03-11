@@ -8,13 +8,13 @@ CLASS net/minecraft/resources/FileToIdConverter
 		ARG 1 id
 	METHOD json (Ljava/lang/String;)Lnet/minecraft/resources/FileToIdConverter;
 		ARG 0 prefix
-	METHOD lambda$listMatchingResources$0 (Lnet/minecraft/resources/Identifier;)Z
-		ARG 1 id
 	METHOD lambda$listMatchingResourceStacks$1 (Lnet/minecraft/resources/Identifier;)Z
 		ARG 1 id
-	METHOD listMatchingResources (Lnet/minecraft/server/packs/resources/ResourceManager;)Ljava/util/Map;
-		ARG 1 manager
+	METHOD lambda$listMatchingResources$0 (Lnet/minecraft/resources/Identifier;)Z
+		ARG 1 id
 	METHOD listMatchingResourceStacks (Lnet/minecraft/server/packs/resources/ResourceManager;)Ljava/util/Map;
+		ARG 1 manager
+	METHOD listMatchingResources (Lnet/minecraft/server/packs/resources/ResourceManager;)Ljava/util/Map;
 		ARG 1 manager
 	METHOD registry (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/resources/FileToIdConverter;
 		ARG 0 registry

@@ -28,6 +28,8 @@ CLASS net/minecraft/world/level/levelgen/structure/structures/JigsawStructure
 		ARG 0 j
 	METHOD lambda$static$1 (Lnet/minecraft/world/level/levelgen/structure/structures/JigsawStructure;)Ljava/util/Optional;
 		ARG 0 j
+	METHOD lambda$static$10 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
 	METHOD lambda$static$2 (Lnet/minecraft/world/level/levelgen/structure/structures/JigsawStructure;)Ljava/lang/Integer;
 		ARG 0 j
 	METHOD lambda$static$3 (Lnet/minecraft/world/level/levelgen/structure/structures/JigsawStructure;)Lnet/minecraft/world/level/levelgen/heightproviders/HeightProvider;
@@ -44,8 +46,6 @@ CLASS net/minecraft/world/level/levelgen/structure/structures/JigsawStructure
 		ARG 0 j
 	METHOD lambda$static$9 (Lnet/minecraft/world/level/levelgen/structure/structures/JigsawStructure;)Lnet/minecraft/world/level/levelgen/structure/templatesystem/LiquidSettings;
 		ARG 0 j
-	METHOD lambda$static$10 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 i
 	METHOD verifyRange (Lnet/minecraft/world/level/levelgen/structure/structures/JigsawStructure;)Lcom/mojang/serialization/DataResult;
 		ARG 0 structure
 	CLASS MaxDistance

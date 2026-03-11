@@ -16,7 +16,7 @@ CLASS net/minecraft/advancements/criterion/DamagePredicate
 			ARG 1 sourceEntity
 		METHOD takenDamage (Lnet/minecraft/advancements/criterion/MinMaxBounds$Doubles;)Lnet/minecraft/advancements/criterion/DamagePredicate$Builder;
 			ARG 1 takenDamage
-		METHOD type (Lnet/minecraft/advancements/criterion/DamageSourcePredicate;)Lnet/minecraft/advancements/criterion/DamagePredicate$Builder;
-			ARG 1 type
 		METHOD type (Lnet/minecraft/advancements/criterion/DamageSourcePredicate$Builder;)Lnet/minecraft/advancements/criterion/DamagePredicate$Builder;
+			ARG 1 type
+		METHOD type (Lnet/minecraft/advancements/criterion/DamageSourcePredicate;)Lnet/minecraft/advancements/criterion/DamagePredicate$Builder;
 			ARG 1 type

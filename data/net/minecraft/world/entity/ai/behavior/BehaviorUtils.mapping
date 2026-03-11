@@ -60,14 +60,14 @@ CLASS net/minecraft/world/entity/ai/behavior/BehaviorUtils
 		ARG 1 targetPos
 		ARG 2 speedModifier
 		ARG 3 closeEnoughDistance
-	METHOD setWalkAndLookTargetMemories (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/ai/behavior/PositionTracker;FI)V
-		ARG 0 walker
-		ARG 1 target
-		ARG 2 speedModifier
-		ARG 3 closeEnoughDistance
 	METHOD setWalkAndLookTargetMemories (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/Entity;FI)V
 		ARG 0 walker
 		ARG 1 targetEntity
+		ARG 2 speedModifier
+		ARG 3 closeEnoughDistance
+	METHOD setWalkAndLookTargetMemories (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/ai/behavior/PositionTracker;FI)V
+		ARG 0 walker
+		ARG 1 target
 		ARG 2 speedModifier
 		ARG 3 closeEnoughDistance
 	METHOD setWalkAndLookTargetMemoriesToEachOther (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/LivingEntity;FI)V

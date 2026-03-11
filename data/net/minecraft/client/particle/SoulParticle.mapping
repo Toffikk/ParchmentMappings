@@ -8,9 +8,9 @@ CLASS net/minecraft/client/particle/SoulParticle
 		ARG 10 yd
 		ARG 12 zd
 		ARG 14 sprites
-	CLASS EmissiveProvider
+	CLASS Provider
 		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
 			ARG 1 sprite
-	CLASS Provider
+	CLASS EmissiveProvider
 		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
 			ARG 1 sprite

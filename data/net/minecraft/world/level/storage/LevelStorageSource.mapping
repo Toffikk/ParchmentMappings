@@ -108,13 +108,13 @@ CLASS net/minecraft/world/level/storage/LevelStorageSource
 		METHOD saveLevelData (Lnet/minecraft/nbt/CompoundTag;)V
 			ARG 1 root
 		CLASS 1
-			METHOD postVisitDirectory (Ljava/lang/Object;Ljava/io/IOException;)Ljava/nio/file/FileVisitResult;
+			METHOD postVisitDirectory (Ljava/nio/file/Path;Ljava/io/IOException;)Ljava/nio/file/FileVisitResult;
 				ARG 1 dir
 				ARG 2 exc
-			METHOD visitFile (Ljava/lang/Object;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;
+			METHOD visitFile (Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;
 				ARG 1 file
 				ARG 2 attrs
 		CLASS 2
-			METHOD visitFile (Ljava/lang/Object;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;
+			METHOD visitFile (Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;
 				ARG 1 path
 				ARG 2 attrs

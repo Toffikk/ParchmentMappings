@@ -75,6 +75,10 @@ CLASS net/minecraft/network/chat/Style
 			ARG 0 o
 		METHOD lambda$static$1 (Lnet/minecraft/network/chat/Style;)Ljava/util/Optional;
 			ARG 0 o
+		METHOD lambda$static$10 (Lnet/minecraft/network/chat/Style;)Ljava/util/Optional;
+			ARG 0 o
+		METHOD lambda$static$11 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
 		METHOD lambda$static$2 (Lnet/minecraft/network/chat/Style;)Ljava/util/Optional;
 			ARG 0 o
 		METHOD lambda$static$3 (Lnet/minecraft/network/chat/Style;)Ljava/util/Optional;
@@ -91,7 +95,3 @@ CLASS net/minecraft/network/chat/Style
 			ARG 0 o
 		METHOD lambda$static$9 (Lnet/minecraft/network/chat/Style;)Ljava/util/Optional;
 			ARG 0 o
-		METHOD lambda$static$10 (Lnet/minecraft/network/chat/Style;)Ljava/util/Optional;
-			ARG 0 o
-		METHOD lambda$static$11 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-			ARG 0 i

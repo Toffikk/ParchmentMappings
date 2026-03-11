@@ -3,5 +3,5 @@ CLASS net/minecraft/world/level/storage/loot/predicates/InvertedLootItemConditio
 		ARG 0 term
 	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 i
-	METHOD test (Ljava/lang/Object;)Z
+	METHOD test (Lnet/minecraft/world/level/storage/loot/LootContext;)Z
 		ARG 1 context

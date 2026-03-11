@@ -15,12 +15,12 @@ CLASS net/minecraft/resources/RegistryOps
 	METHOD injectRegistryContext (Lcom/mojang/serialization/Dynamic;Lnet/minecraft/core/HolderLookup$Provider;)Lcom/mojang/serialization/Dynamic;
 		ARG 0 dynamic
 		ARG 1 lookupProvider
-	METHOD lambda$retrieveElement$6 (Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/resources/RegistryOps$RegistryInfo;)Ljava/util/Optional;
-		ARG 1 r
 	METHOD lambda$retrieveElement$10 (Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/DynamicOps;)Lcom/mojang/serialization/DataResult;
 		ARG 2 ops
 	METHOD lambda$retrieveElement$11 (Ljava/lang/Object;)Lnet/minecraft/core/Holder$Reference;
 		ARG 0 e
+	METHOD lambda$retrieveElement$6 (Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/resources/RegistryOps$RegistryInfo;)Ljava/util/Optional;
+		ARG 1 r
 	METHOD lambda$retrieveGetter$0 (Lnet/minecraft/resources/RegistryOps$RegistryInfo;)Lcom/mojang/serialization/DataResult;
 		ARG 0 r
 	METHOD lambda$retrieveGetter$4 (Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/DynamicOps;)Lcom/mojang/serialization/DataResult;
@@ -35,6 +35,12 @@ CLASS net/minecraft/resources/RegistryOps
 		ARG 0 registryKey
 	METHOD withParent (Lcom/mojang/serialization/DynamicOps;)Lnet/minecraft/resources/RegistryOps;
 		ARG 1 parent
+	CLASS RegistryInfo
+		METHOD fromRegistryLookup (Lnet/minecraft/core/HolderLookup$RegistryLookup;)Lnet/minecraft/resources/RegistryOps$RegistryInfo;
+			ARG 0 registry
+	CLASS RegistryInfoLookup
+		METHOD lookup (Lnet/minecraft/resources/ResourceKey;)Ljava/util/Optional;
+			ARG 1 registryKey
 	CLASS HolderLookupAdapter
 		METHOD <init> (Lnet/minecraft/core/HolderLookup$Provider;)V
 			ARG 1 lookupProvider
@@ -42,9 +48,3 @@ CLASS net/minecraft/resources/RegistryOps
 			ARG 1 key
 		METHOD equals (Ljava/lang/Object;)Z
 			ARG 1 obj
-	CLASS RegistryInfo
-		METHOD fromRegistryLookup (Lnet/minecraft/core/HolderLookup$RegistryLookup;)Lnet/minecraft/resources/RegistryOps$RegistryInfo;
-			ARG 0 registry
-	CLASS RegistryInfoLookup
-		METHOD lookup (Lnet/minecraft/resources/ResourceKey;)Ljava/util/Optional;
-			ARG 1 registryKey

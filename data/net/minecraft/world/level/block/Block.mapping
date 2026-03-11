@@ -11,9 +11,6 @@ CLASS net/minecraft/world/level/block/Block
 		ARG 6 maxX
 		ARG 8 maxY
 		ARG 10 maxZ
-	METHOD boxes (ILjava/util/function/IntFunction;)[Lnet/minecraft/world/phys/shapes/VoxelShape;
-		ARG 0 endInclusive
-		ARG 1 voxelShapeFactory
 	METHOD boxZ (DDD)Lnet/minecraft/world/phys/shapes/VoxelShape;
 		ARG 0 sizeXY
 		ARG 2 minZ
@@ -29,6 +26,9 @@ CLASS net/minecraft/world/level/block/Block
 		ARG 4 maxY
 		ARG 6 minZ
 		ARG 8 maxZ
+	METHOD boxes (ILjava/util/function/IntFunction;)[Lnet/minecraft/world/phys/shapes/VoxelShape;
+		ARG 0 endInclusive
+		ARG 1 voxelShapeFactory
 	METHOD byItem (Lnet/minecraft/world/item/Item;)Lnet/minecraft/world/level/block/Block;
 		ARG 0 item
 	METHOD canSupportCenter (Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;)Z
@@ -145,8 +145,6 @@ CLASS net/minecraft/world/level/block/Block
 		ARG 2 stack
 	METHOD lambda$dropResources$6 (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/item/ItemStack;)V
 		ARG 2 stack
-	METHOD lambda$getShapeForEachState$9 (Lnet/minecraft/world/level/block/state/properties/Property;)Lnet/minecraft/world/level/block/state/properties/Property;
-		ARG 0 k
 	METHOD lambda$getShapeForEachState$10 (Lnet/minecraft/world/level/block/state/properties/Property;)Ljava/lang/Object;
 		ARG 0 k
 	METHOD lambda$getShapeForEachState$11 (Lnet/minecraft/world/level/block/state/BlockState;Ljava/util/Map$Entry;)Z
@@ -155,6 +153,8 @@ CLASS net/minecraft/world/level/block/Block
 		ARG 1 state
 	METHOD lambda$getShapeForEachState$13 (Ljava/util/Map;Lcom/google/common/collect/ImmutableMap;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/phys/shapes/VoxelShape;
 		ARG 2 blockState
+	METHOD lambda$getShapeForEachState$9 (Lnet/minecraft/world/level/block/state/properties/Property;)Lnet/minecraft/world/level/block/state/properties/Property;
+		ARG 0 k
 	METHOD playerDestroy (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntity;Lnet/minecraft/world/item/ItemStack;)V
 		ARG 1 level
 		ARG 2 player
@@ -249,7 +249,7 @@ CLASS net/minecraft/world/level/block/Block
 	METHOD withPropertiesOf (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/state/BlockState;
 		ARG 1 source
 	CLASS 1
-		METHOD load (Ljava/lang/Object;)Ljava/lang/Object;
+		METHOD load (Lnet/minecraft/world/phys/shapes/VoxelShape;)Ljava/lang/Boolean;
 			ARG 1 shape
 	CLASS 2
 		METHOD rehash (I)V

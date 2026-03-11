@@ -9,9 +9,9 @@ CLASS net/minecraft/client/particle/SquidInkParticle
 		ARG 12 za
 		ARG 14 color
 		ARG 15 sprites
-	CLASS GlowInkProvider
+	CLASS Provider
 		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
 			ARG 1 sprites
-	CLASS Provider
+	CLASS GlowInkProvider
 		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
 			ARG 1 sprites

@@ -1,20 +1,6 @@
 CLASS net/minecraft/client/data/models/ModelProvider
 	METHOD <init> (Lnet/minecraft/data/PackOutput;)V
 		ARG 1 output
-	CLASS BlockStateGeneratorCollector
-		METHOD accept (Ljava/lang/Object;)V
-			ARG 1 generator
-		METHOD lambda$save$3 (Lnet/minecraft/data/PackOutput$PathProvider;Lnet/minecraft/world/level/block/Block;)Ljava/nio/file/Path;
-			ARG 1 block
-		METHOD lambda$validate$0 (Lnet/minecraft/core/Holder$Reference;)Z
-			ARG 0 entry
-		METHOD lambda$validate$1 (Lnet/minecraft/core/Holder$Reference;)Z
-			ARG 1 e
-		METHOD lambda$validate$2 (Lnet/minecraft/core/Holder$Reference;)Lnet/minecraft/resources/Identifier;
-			ARG 0 e
-		METHOD save (Lnet/minecraft/data/CachedOutput;Lnet/minecraft/data/PackOutput$PathProvider;)Ljava/util/concurrent/CompletableFuture;
-			ARG 1 cache
-			ARG 2 pathProvider
 	CLASS ItemInfoCollector
 		METHOD lambda$finalizeAndValidate$0 (Lnet/minecraft/world/item/Item;)V
 			ARG 1 item
@@ -34,9 +20,23 @@ CLASS net/minecraft/client/data/models/ModelProvider
 			ARG 1 cache
 			ARG 2 pathProvider
 	CLASS SimpleModelCollector
-		METHOD accept (Ljava/lang/Object;Ljava/lang/Object;)V
+		METHOD accept (Lnet/minecraft/resources/Identifier;Lnet/minecraft/client/data/models/model/ModelInstance;)V
 			ARG 1 id
 			ARG 2 contents
+		METHOD save (Lnet/minecraft/data/CachedOutput;Lnet/minecraft/data/PackOutput$PathProvider;)Ljava/util/concurrent/CompletableFuture;
+			ARG 1 cache
+			ARG 2 pathProvider
+	CLASS BlockStateGeneratorCollector
+		METHOD accept (Lnet/minecraft/client/data/models/blockstates/BlockModelDefinitionGenerator;)V
+			ARG 1 generator
+		METHOD lambda$save$3 (Lnet/minecraft/data/PackOutput$PathProvider;Lnet/minecraft/world/level/block/Block;)Ljava/nio/file/Path;
+			ARG 1 block
+		METHOD lambda$validate$0 (Lnet/minecraft/core/Holder$Reference;)Z
+			ARG 0 entry
+		METHOD lambda$validate$1 (Lnet/minecraft/core/Holder$Reference;)Z
+			ARG 1 e
+		METHOD lambda$validate$2 (Lnet/minecraft/core/Holder$Reference;)Lnet/minecraft/resources/Identifier;
+			ARG 0 e
 		METHOD save (Lnet/minecraft/data/CachedOutput;Lnet/minecraft/data/PackOutput$PathProvider;)Ljava/util/concurrent/CompletableFuture;
 			ARG 1 cache
 			ARG 2 pathProvider

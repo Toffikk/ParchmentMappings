@@ -78,10 +78,10 @@ CLASS net/minecraft/client/gui/screens/recipebook/RecipeBookComponent
 	CLASS TabInfo
 		METHOD <init> (Lnet/minecraft/client/gui/screens/recipebook/SearchRecipeBookCategory;)V
 			ARG 1 category
-		METHOD <init> (Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/crafting/RecipeBookCategory;)V
-			ARG 1 icon
-			ARG 2 category
 		METHOD <init> (Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/crafting/RecipeBookCategory;)V
 			ARG 1 primaryIcon
 			ARG 2 secondaryIcon
 			ARG 3 category
+		METHOD <init> (Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/crafting/RecipeBookCategory;)V
+			ARG 1 icon
+			ARG 2 category

@@ -51,10 +51,10 @@ CLASS net/minecraft/world/level/chunk/PalettedContainer
 	METHOD lambda$codecRO$1 (Lnet/minecraft/world/level/chunk/Strategy;Lnet/minecraft/world/level/chunk/PalettedContainerRO$PackedData;)Lcom/mojang/serialization/DataResult;
 		ARG 0 s
 		ARG 1 data
-	METHOD lambda$count$9 (Lit/unimi/dsi/fastutil/ints/Int2IntOpenHashMap;I)V
-		ARG 1 state
 	METHOD lambda$count$10 (Lnet/minecraft/world/level/chunk/PalettedContainer$CountConsumer;Lit/unimi/dsi/fastutil/ints/Int2IntMap$Entry;)V
 		ARG 2 entry
+	METHOD lambda$count$9 (Lit/unimi/dsi/fastutil/ints/Int2IntOpenHashMap;I)V
+		ARG 1 state
 	METHOD lambda$getAll$5 (Ljava/util/function/Consumer;Lnet/minecraft/world/level/chunk/Palette;I)V
 		ARG 2 state
 	METHOD read (Lnet/minecraft/network/FriendlyByteBuf;)V
@@ -74,10 +74,6 @@ CLASS net/minecraft/world/level/chunk/PalettedContainer
 	METHOD unpack (Lnet/minecraft/world/level/chunk/Strategy;Lnet/minecraft/world/level/chunk/PalettedContainerRO$PackedData;)Lcom/mojang/serialization/DataResult;
 		ARG 0 strategy
 		ARG 1 discData
-	CLASS CountConsumer
-		METHOD accept (Ljava/lang/Object;I)V
-			ARG 1 entry
-			ARG 2 count
 	CLASS Data
 		METHOD copyFrom (Lnet/minecraft/world/level/chunk/Palette;Lnet/minecraft/util/BitStorage;)V
 			ARG 1 oldPalette
@@ -87,3 +83,7 @@ CLASS net/minecraft/world/level/chunk/PalettedContainer
 		METHOD write (Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/core/IdMap;)V
 			ARG 1 buffer
 			ARG 2 globalMap
+	CLASS CountConsumer
+		METHOD accept (Ljava/lang/Object;I)V
+			ARG 1 entry
+			ARG 2 count

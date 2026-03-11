@@ -5,22 +5,6 @@ CLASS net/minecraft/world/level/chunk/status/ChunkPyramid
 		ARG 0 s
 	METHOD lambda$static$1 (Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;)Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;
 		ARG 0 s
-	METHOD lambda$static$2 (Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;)Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;
-		ARG 0 s
-	METHOD lambda$static$3 (Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;)Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;
-		ARG 0 s
-	METHOD lambda$static$4 (Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;)Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;
-		ARG 0 s
-	METHOD lambda$static$5 (Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;)Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;
-		ARG 0 s
-	METHOD lambda$static$6 (Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;)Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;
-		ARG 0 s
-	METHOD lambda$static$7 (Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;)Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;
-		ARG 0 s
-	METHOD lambda$static$8 (Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;)Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;
-		ARG 0 s
-	METHOD lambda$static$9 (Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;)Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;
-		ARG 0 s
 	METHOD lambda$static$10 (Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;)Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;
 		ARG 0 s
 	METHOD lambda$static$11 (Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;)Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;
@@ -41,6 +25,8 @@ CLASS net/minecraft/world/level/chunk/status/ChunkPyramid
 		ARG 0 s
 	METHOD lambda$static$19 (Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;)Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;
 		ARG 0 s
+	METHOD lambda$static$2 (Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;)Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;
+		ARG 0 s
 	METHOD lambda$static$20 (Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;)Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;
 		ARG 0 s
 	METHOD lambda$static$21 (Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;)Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;
@@ -48,6 +34,20 @@ CLASS net/minecraft/world/level/chunk/status/ChunkPyramid
 	METHOD lambda$static$22 (Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;)Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;
 		ARG 0 s
 	METHOD lambda$static$23 (Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;)Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;
+		ARG 0 s
+	METHOD lambda$static$3 (Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;)Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;
+		ARG 0 s
+	METHOD lambda$static$4 (Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;)Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;
+		ARG 0 s
+	METHOD lambda$static$5 (Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;)Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;
+		ARG 0 s
+	METHOD lambda$static$6 (Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;)Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;
+		ARG 0 s
+	METHOD lambda$static$7 (Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;)Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;
+		ARG 0 s
+	METHOD lambda$static$8 (Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;)Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;
+		ARG 0 s
+	METHOD lambda$static$9 (Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;)Lnet/minecraft/world/level/chunk/status/ChunkStep$Builder;
 		ARG 0 s
 	CLASS Builder
 		METHOD step (Lnet/minecraft/world/level/chunk/status/ChunkStatus;Ljava/util/function/UnaryOperator;)Lnet/minecraft/world/level/chunk/status/ChunkPyramid$Builder;

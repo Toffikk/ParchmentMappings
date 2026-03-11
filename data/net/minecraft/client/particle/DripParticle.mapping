@@ -15,16 +15,31 @@ CLASS net/minecraft/client/particle/DripParticle
 			ARG 8 type
 			ARG 9 fallingParticle
 			ARG 10 sprite
-	CLASS DripstoneLavaFallProvider
+	CLASS LavaFallProvider
 		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
 			ARG 1 sprite
-	CLASS DripstoneLavaHangProvider
+	CLASS LavaHangProvider
 		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
 			ARG 1 sprite
-	CLASS DripstoneWaterFallProvider
+	CLASS LavaLandProvider
 		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
 			ARG 1 sprite
-	CLASS DripstoneWaterHangProvider
+	CLASS HoneyFallProvider
+		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
+			ARG 1 sprite
+	CLASS HoneyHangProvider
+		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
+			ARG 1 sprite
+	CLASS HoneyLandProvider
+		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
+			ARG 1 sprite
+	CLASS WaterFallProvider
+		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
+			ARG 1 sprite
+	CLASS WaterHangProvider
+		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
+			ARG 1 sprite
+	CLASS NectarFallProvider
 		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
 			ARG 1 sprite
 	CLASS FallAndLandParticle
@@ -36,27 +51,6 @@ CLASS net/minecraft/client/particle/DripParticle
 			ARG 8 type
 			ARG 9 landParticle
 			ARG 10 sprite
-	CLASS HoneyFallProvider
-		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
-			ARG 1 sprite
-	CLASS HoneyHangProvider
-		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
-			ARG 1 sprite
-	CLASS HoneyLandProvider
-		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
-			ARG 1 sprite
-	CLASS LavaFallProvider
-		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
-			ARG 1 sprite
-	CLASS LavaHangProvider
-		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
-			ARG 1 sprite
-	CLASS LavaLandProvider
-		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
-			ARG 1 sprite
-	CLASS NectarFallProvider
-		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
-			ARG 1 sprite
 	CLASS ObsidianTearFallProvider
 		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
 			ARG 1 sprite
@@ -69,9 +63,15 @@ CLASS net/minecraft/client/particle/DripParticle
 	CLASS SporeBlossomFallProvider
 		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
 			ARG 1 sprite
-	CLASS WaterFallProvider
+	CLASS DripstoneLavaFallProvider
 		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
 			ARG 1 sprite
-	CLASS WaterHangProvider
+	CLASS DripstoneLavaHangProvider
+		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
+			ARG 1 sprite
+	CLASS DripstoneWaterFallProvider
+		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
+			ARG 1 sprite
+	CLASS DripstoneWaterHangProvider
 		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
 			ARG 1 sprite

@@ -25,6 +25,12 @@ CLASS net/minecraft/world/entity/ai/behavior/AcquirePoi
 		ARG 1 p
 	METHOD lambda$create$1 (JLit/unimi/dsi/fastutil/longs/Long2ObjectMap$Entry;)Z
 		ARG 2 entry
+	METHOD lambda$create$10 (Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;ZLorg/apache/commons/lang3/mutable/MutableLong;Lit/unimi/dsi/fastutil/longs/Long2ObjectMap;Ljava/util/function/Predicate;Ljava/util/function/BiPredicate;Ljava/util/Optional;Lnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 7 i
+	METHOD lambda$create$11 (Lnet/minecraft/world/entity/ai/behavior/OneShot;Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;)Lnet/minecraft/world/entity/ai/behavior/declarative/Trigger;
+		ARG 1 toValidate
+	METHOD lambda$create$12 (Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;Lnet/minecraft/world/entity/ai/behavior/OneShot;Lnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 2 i
 	METHOD lambda$create$2 (Lit/unimi/dsi/fastutil/longs/Long2ObjectMap;JLnet/minecraft/core/BlockPos;)Z
 		ARG 3 pos
 	METHOD lambda$create$3 (Ljava/util/function/BiPredicate;Lnet/minecraft/server/level/ServerLevel;Lcom/mojang/datafixers/util/Pair;)Z
@@ -44,12 +50,6 @@ CLASS net/minecraft/world/entity/ai/behavior/AcquirePoi
 		ARG 9 timestamp
 	METHOD lambda$create$9 (ZLorg/apache/commons/lang3/mutable/MutableLong;Lit/unimi/dsi/fastutil/longs/Long2ObjectMap;Ljava/util/function/Predicate;Ljava/util/function/BiPredicate;Ljava/util/Optional;Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;)Lnet/minecraft/world/entity/ai/behavior/declarative/Trigger;
 		ARG 6 toAcquire
-	METHOD lambda$create$10 (Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;ZLorg/apache/commons/lang3/mutable/MutableLong;Lit/unimi/dsi/fastutil/longs/Long2ObjectMap;Ljava/util/function/Predicate;Ljava/util/function/BiPredicate;Ljava/util/Optional;Lnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 7 i
-	METHOD lambda$create$11 (Lnet/minecraft/world/entity/ai/behavior/OneShot;Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;)Lnet/minecraft/world/entity/ai/behavior/declarative/Trigger;
-		ARG 1 toValidate
-	METHOD lambda$create$12 (Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;Lnet/minecraft/world/entity/ai/behavior/OneShot;Lnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 2 i
 	CLASS JitteredLinearRetry
 		METHOD <init> (Lnet/minecraft/util/RandomSource;J)V
 			ARG 1 random

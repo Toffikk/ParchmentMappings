@@ -56,6 +56,12 @@ CLASS net/minecraft/client/gui/screens/inventory/CreativeModeInventoryScreen
 		ARG 3 holders
 	METHOD updateVisibleTags (Ljava/lang/String;)V
 		ARG 1 searchTerm
+	CLASS SlotWrapper
+		METHOD <init> (Lnet/minecraft/world/inventory/Slot;III)V
+			ARG 1 target
+			ARG 2 index
+			ARG 3 x
+			ARG 4 y
 	CLASS ItemPickerMenu
 		METHOD <init> (Lnet/minecraft/world/entity/player/Player;)V
 			ARG 1 player
@@ -68,9 +74,3 @@ CLASS net/minecraft/client/gui/screens/inventory/CreativeModeInventoryScreen
 		METHOD subtractInputFromScroll (FD)F
 			ARG 1 scrollOffs
 			ARG 2 input
-	CLASS SlotWrapper
-		METHOD <init> (Lnet/minecraft/world/inventory/Slot;III)V
-			ARG 1 target
-			ARG 2 index
-			ARG 3 x
-			ARG 4 y

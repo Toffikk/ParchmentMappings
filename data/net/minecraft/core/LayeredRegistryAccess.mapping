@@ -21,9 +21,9 @@ CLASS net/minecraft/core/LayeredRegistryAccess
 		ARG 1 e
 	METHOD lambda$collectRegistries$2 (Ljava/util/Map;Lnet/minecraft/core/RegistryAccess;)V
 		ARG 1 access
-	METHOD replaceFrom (Ljava/lang/Object;[Lnet/minecraft/core/RegistryAccess$Frozen;)Lnet/minecraft/core/LayeredRegistryAccess;
+	METHOD replaceFrom (Ljava/lang/Object;Ljava/util/List;)Lnet/minecraft/core/LayeredRegistryAccess;
 		ARG 1 fromLayer
 		ARG 2 layers
-	METHOD replaceFrom (Ljava/lang/Object;Ljava/util/List;)Lnet/minecraft/core/LayeredRegistryAccess;
+	METHOD replaceFrom (Ljava/lang/Object;[Lnet/minecraft/core/RegistryAccess$Frozen;)Lnet/minecraft/core/LayeredRegistryAccess;
 		ARG 1 fromLayer
 		ARG 2 layers

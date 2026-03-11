@@ -1,7 +1,7 @@
 CLASS net/minecraft/world/entity/animal/fish/AbstractFish
-	CLASS FishMoveControl
+	CLASS FishSwimGoal
 		METHOD <init> (Lnet/minecraft/world/entity/animal/fish/AbstractFish;)V
 			ARG 1 fish
-	CLASS FishSwimGoal
+	CLASS FishMoveControl
 		METHOD <init> (Lnet/minecraft/world/entity/animal/fish/AbstractFish;)V
 			ARG 1 fish

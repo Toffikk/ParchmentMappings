@@ -72,13 +72,24 @@ CLASS net/minecraft/world/entity/animal/fox/Fox
 		ARG 1 itemStack
 	METHOD trusts (Lnet/minecraft/world/entity/LivingEntity;)Z
 		ARG 1 entity
-	CLASS DefendTrustedTargetGoal
-		METHOD <init> (Lnet/minecraft/world/entity/animal/fox/Fox;Ljava/lang/Class;ZZLnet/minecraft/world/entity/ai/targeting/TargetingConditions$Selector;)V
-			ARG 2 targetType
-			ARG 3 mustSee
-			ARG 4 mustReach
-			ARG 5 subselector
+	CLASS Variant
+		METHOD <init> (Ljava/lang/String;IILjava/lang/String;)V
+			ARG 3 id
+			ARG 4 name
+		METHOD byBiome (Lnet/minecraft/core/Holder;)Lnet/minecraft/world/entity/animal/fox/Fox$Variant;
+			ARG 0 biome
+		METHOD byId (I)Lnet/minecraft/world/entity/animal/fox/Fox$Variant;
+			ARG 0 id
 	CLASS FoxBreedGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/fox/Fox;D)V
+			ARG 2 speedModifier
+	CLASS FoxGroupData
+		METHOD <init> (Lnet/minecraft/world/entity/animal/fox/Fox$Variant;)V
+			ARG 1 variant
+	CLASS FoxPanicGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/fox/Fox;D)V
+			ARG 2 speedModifier
+	CLASS SeekShelterGoal
 		METHOD <init> (Lnet/minecraft/world/entity/animal/fox/Fox;D)V
 			ARG 2 speedModifier
 	CLASS FoxEatBerriesGoal
@@ -90,37 +101,26 @@ CLASS net/minecraft/world/entity/animal/fox/Fox
 			ARG 1 state
 		METHOD pickSweetBerries (Lnet/minecraft/world/level/block/state/BlockState;)V
 			ARG 1 state
+	CLASS FoxMeleeAttackGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/fox/Fox;DZ)V
+			ARG 2 speedModifier
+			ARG 4 trackTarget
 	CLASS FoxFollowParentGoal
 		METHOD <init> (Lnet/minecraft/world/entity/animal/fox/Fox;D)V
 			ARG 1 fox
 			ARG 2 speedModifier
-	CLASS FoxGroupData
-		METHOD <init> (Lnet/minecraft/world/entity/animal/fox/Fox$Variant;)V
-			ARG 1 variant
 	CLASS FoxLookAtPlayerGoal
 		METHOD <init> (Lnet/minecraft/world/entity/animal/fox/Fox;Lnet/minecraft/world/entity/Mob;Ljava/lang/Class;F)V
 			ARG 2 mob
 			ARG 3 lookAtType
 			ARG 4 lookDistance
-	CLASS FoxMeleeAttackGoal
-		METHOD <init> (Lnet/minecraft/world/entity/animal/fox/Fox;DZ)V
-			ARG 2 speedModifier
-			ARG 4 trackTarget
-	CLASS FoxPanicGoal
-		METHOD <init> (Lnet/minecraft/world/entity/animal/fox/Fox;D)V
-			ARG 2 speedModifier
+	CLASS DefendTrustedTargetGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/fox/Fox;Ljava/lang/Class;ZZLnet/minecraft/world/entity/ai/targeting/TargetingConditions$Selector;)V
+			ARG 2 targetType
+			ARG 3 mustSee
+			ARG 4 mustReach
+			ARG 5 subselector
 	CLASS FoxStrollThroughVillageGoal
 		METHOD <init> (Lnet/minecraft/world/entity/animal/fox/Fox;II)V
 			ARG 2 searchRadius
 			ARG 3 interval
-	CLASS SeekShelterGoal
-		METHOD <init> (Lnet/minecraft/world/entity/animal/fox/Fox;D)V
-			ARG 2 speedModifier
-	CLASS Variant
-		METHOD <init> (Ljava/lang/String;IILjava/lang/String;)V
-			ARG 3 id
-			ARG 4 name
-		METHOD byBiome (Lnet/minecraft/core/Holder;)Lnet/minecraft/world/entity/animal/fox/Fox$Variant;
-			ARG 0 biome
-		METHOD byId (I)Lnet/minecraft/world/entity/animal/fox/Fox$Variant;
-			ARG 0 id

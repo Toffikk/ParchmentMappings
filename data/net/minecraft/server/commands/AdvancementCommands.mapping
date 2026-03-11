@@ -6,6 +6,19 @@ CLASS net/minecraft/server/commands/AdvancementCommands
 		ARG 0 context
 		ARG 1 target
 		ARG 2 mode
+	METHOD lambda$register$10 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 c
+		ARG 1 p
+	METHOD lambda$register$11 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$12 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$13 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$14 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
+	METHOD lambda$register$15 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
 	METHOD lambda$register$2 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 c
 	METHOD lambda$register$3 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
@@ -22,19 +35,6 @@ CLASS net/minecraft/server/commands/AdvancementCommands
 	METHOD lambda$register$8 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 c
 	METHOD lambda$register$9 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
-	METHOD lambda$register$10 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 c
-		ARG 1 p
-	METHOD lambda$register$11 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
-	METHOD lambda$register$12 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
-	METHOD lambda$register$13 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
-	METHOD lambda$register$14 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 c
-	METHOD lambda$register$15 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 c
 	METHOD lambda$static$0 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 msg
@@ -60,6 +60,10 @@ CLASS net/minecraft/server/commands/AdvancementCommands
 		ARG 4 criterion
 	METHOD register (Lcom/mojang/brigadier/CommandDispatcher;)V
 		ARG 0 dispatcher
+	CLASS Mode
+		METHOD <init> (Ljava/lang/String;IZZ)V
+			ARG 3 parents
+			ARG 4 children
 	CLASS Action
 		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
 			ARG 3 key
@@ -74,7 +78,3 @@ CLASS net/minecraft/server/commands/AdvancementCommands
 			ARG 1 player
 			ARG 2 advancement
 			ARG 3 criterion
-	CLASS Mode
-		METHOD <init> (Ljava/lang/String;IZZ)V
-			ARG 3 parents
-			ARG 4 children

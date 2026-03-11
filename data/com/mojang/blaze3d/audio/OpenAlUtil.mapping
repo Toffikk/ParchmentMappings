@@ -1,7 +1,7 @@
 CLASS com/mojang/blaze3d/audio/OpenAlUtil
-	METHOD alcErrorToString (I)Ljava/lang/String;
-		ARG 0 error
 	METHOD alErrorToString (I)Ljava/lang/String;
+		ARG 0 error
+	METHOD alcErrorToString (I)Ljava/lang/String;
 		ARG 0 error
 	METHOD audioFormatToOpenAl (Ljavax/sound/sampled/AudioFormat;)I
 		ARG 0 audioFormat

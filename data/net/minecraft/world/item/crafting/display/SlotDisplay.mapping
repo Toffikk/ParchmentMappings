@@ -15,6 +15,18 @@ CLASS net/minecraft/world/item/crafting/display/SlotDisplay
 			ARG 2 d
 		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 i
+	CLASS WithRemainder
+		METHOD lambda$resolve$1 (Lnet/minecraft/world/item/crafting/display/DisplayContentsFactory$ForRemainders;Ljava/util/List;Ljava/lang/Object;)Ljava/lang/Object;
+			ARG 2 input
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+	CLASS TagSlotDisplay
+		METHOD lambda$resolve$1 (Lnet/minecraft/world/item/crafting/display/DisplayContentsFactory$ForStacks;Lnet/minecraft/core/HolderSet$Named;)Ljava/util/stream/Stream;
+			ARG 1 t
+		METHOD lambda$resolve$2 (Ljava/util/stream/Stream;)Ljava/util/stream/Stream;
+			ARG 0 s
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
 	CLASS ItemSlotDisplay
 		METHOD <init> (Lnet/minecraft/world/item/Item;)V
 			ARG 1 item
@@ -28,17 +40,5 @@ CLASS net/minecraft/world/item/crafting/display/SlotDisplay
 	CLASS SmithingTrimDemoSlotDisplay
 		METHOD lambda$resolve$2 (Lnet/minecraft/world/item/ItemStack;)Z
 			ARG 0 s
-		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-			ARG 0 i
-	CLASS TagSlotDisplay
-		METHOD lambda$resolve$1 (Lnet/minecraft/world/item/crafting/display/DisplayContentsFactory$ForStacks;Lnet/minecraft/core/HolderSet$Named;)Ljava/util/stream/Stream;
-			ARG 1 t
-		METHOD lambda$resolve$2 (Ljava/util/stream/Stream;)Ljava/util/stream/Stream;
-			ARG 0 s
-		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-			ARG 0 i
-	CLASS WithRemainder
-		METHOD lambda$resolve$1 (Lnet/minecraft/world/item/crafting/display/DisplayContentsFactory$ForRemainders;Ljava/util/List;Ljava/lang/Object;)Ljava/lang/Object;
-			ARG 2 input
 		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 i

@@ -83,7 +83,7 @@ CLASS net/minecraft/world/item/crafting/RecipeManager
 		METHOD <init> (Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/world/item/crafting/RecipeManager$IngredientExtractor;)V
 			ARG 1 key
 			ARG 2 extractor
-		METHOD accept (Ljava/lang/Object;)V
+		METHOD accept (Lnet/minecraft/world/item/crafting/Recipe;)V
 			ARG 1 recipe
 		METHOD asPropertySet (Lnet/minecraft/world/flag/FeatureFlagSet;)Lnet/minecraft/world/item/crafting/RecipePropertySet;
 			ARG 1 enabledFeatures

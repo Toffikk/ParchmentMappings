@@ -5,5 +5,5 @@ CLASS net/minecraft/world/level/storage/loot/predicates/LootItemRandomChanceWith
 		ARG 0 registries
 		ARG 1 chance
 		ARG 2 perEnchantmentLevel
-	METHOD test (Ljava/lang/Object;)Z
+	METHOD test (Lnet/minecraft/world/level/storage/loot/LootContext;)Z
 		ARG 1 context

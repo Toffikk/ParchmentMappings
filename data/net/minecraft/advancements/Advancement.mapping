@@ -69,13 +69,13 @@ CLASS net/minecraft/advancements/Advancement
 			ARG 1 parent
 		METHOD parent (Lnet/minecraft/resources/Identifier;)Lnet/minecraft/advancements/Advancement$Builder;
 			ARG 1 parent
-		METHOD requirements (Lnet/minecraft/advancements/AdvancementRequirements;)Lnet/minecraft/advancements/Advancement$Builder;
-			ARG 1 requirements
 		METHOD requirements (Lnet/minecraft/advancements/AdvancementRequirements$Strategy;)Lnet/minecraft/advancements/Advancement$Builder;
 			ARG 1 strategy
-		METHOD rewards (Lnet/minecraft/advancements/AdvancementRewards;)Lnet/minecraft/advancements/Advancement$Builder;
-			ARG 1 rewards
+		METHOD requirements (Lnet/minecraft/advancements/AdvancementRequirements;)Lnet/minecraft/advancements/Advancement$Builder;
+			ARG 1 requirements
 		METHOD rewards (Lnet/minecraft/advancements/AdvancementRewards$Builder;)Lnet/minecraft/advancements/Advancement$Builder;
+			ARG 1 rewards
+		METHOD rewards (Lnet/minecraft/advancements/AdvancementRewards;)Lnet/minecraft/advancements/Advancement$Builder;
 			ARG 1 rewards
 		METHOD save (Ljava/util/function/Consumer;Ljava/lang/String;)Lnet/minecraft/advancements/AdvancementHolder;
 			ARG 1 output

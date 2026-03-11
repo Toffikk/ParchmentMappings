@@ -71,24 +71,6 @@ CLASS net/minecraft/client/renderer/rendertype/RenderTypes
 	METHOD lambda$static$0 (Lnet/minecraft/resources/Identifier;Ljava/lang/Boolean;)Lnet/minecraft/client/renderer/rendertype/RenderType;
 		ARG 0 texture
 		ARG 1 cullState
-	METHOD lambda$static$2 (Lnet/minecraft/resources/Identifier;)Lnet/minecraft/client/renderer/rendertype/RenderType;
-		ARG 0 texture
-	METHOD lambda$static$3 (Lnet/minecraft/resources/Identifier;)Lnet/minecraft/client/renderer/rendertype/RenderType;
-		ARG 0 texture
-	METHOD lambda$static$4 (Lnet/minecraft/resources/Identifier;)Lnet/minecraft/client/renderer/rendertype/RenderType;
-		ARG 0 texture
-	METHOD lambda$static$5 (Lnet/minecraft/resources/Identifier;)Lnet/minecraft/client/renderer/rendertype/RenderType;
-		ARG 0 texture
-	METHOD lambda$static$6 (Lnet/minecraft/resources/Identifier;)Lnet/minecraft/client/renderer/rendertype/RenderType;
-		ARG 0 texture
-	METHOD lambda$static$7 (Lnet/minecraft/resources/Identifier;Ljava/lang/Boolean;)Lnet/minecraft/client/renderer/rendertype/RenderType;
-		ARG 0 texture
-		ARG 1 affectsOutline
-	METHOD lambda$static$8 (Lnet/minecraft/resources/Identifier;Ljava/lang/Boolean;)Lnet/minecraft/client/renderer/rendertype/RenderType;
-		ARG 0 texture
-		ARG 1 affectsOutline
-	METHOD lambda$static$9 (Lnet/minecraft/resources/Identifier;)Lnet/minecraft/client/renderer/rendertype/RenderType;
-		ARG 0 texture
 	METHOD lambda$static$10 (Lnet/minecraft/resources/Identifier;Ljava/lang/Boolean;)Lnet/minecraft/client/renderer/rendertype/RenderType;
 		ARG 0 texture
 		ARG 1 affectsOutline
@@ -112,6 +94,8 @@ CLASS net/minecraft/client/renderer/rendertype/RenderTypes
 		ARG 0 texture
 	METHOD lambda$static$19 (Lnet/minecraft/resources/Identifier;)Lnet/minecraft/client/renderer/rendertype/RenderType;
 		ARG 0 texture
+	METHOD lambda$static$2 (Lnet/minecraft/resources/Identifier;)Lnet/minecraft/client/renderer/rendertype/RenderType;
+		ARG 0 texture
 	METHOD lambda$static$20 (Lnet/minecraft/resources/Identifier;)Lnet/minecraft/client/renderer/rendertype/RenderType;
 		ARG 0 texture
 	METHOD lambda$static$21 (Lnet/minecraft/resources/Identifier;)Lnet/minecraft/client/renderer/rendertype/RenderType;
@@ -127,6 +111,22 @@ CLASS net/minecraft/client/renderer/rendertype/RenderTypes
 	METHOD lambda$static$27 (Lnet/minecraft/resources/Identifier;)Lnet/minecraft/client/renderer/rendertype/RenderType;
 		ARG 0 texture
 	METHOD lambda$static$28 (Lnet/minecraft/resources/Identifier;)Lnet/minecraft/client/renderer/rendertype/RenderType;
+		ARG 0 texture
+	METHOD lambda$static$3 (Lnet/minecraft/resources/Identifier;)Lnet/minecraft/client/renderer/rendertype/RenderType;
+		ARG 0 texture
+	METHOD lambda$static$4 (Lnet/minecraft/resources/Identifier;)Lnet/minecraft/client/renderer/rendertype/RenderType;
+		ARG 0 texture
+	METHOD lambda$static$5 (Lnet/minecraft/resources/Identifier;)Lnet/minecraft/client/renderer/rendertype/RenderType;
+		ARG 0 texture
+	METHOD lambda$static$6 (Lnet/minecraft/resources/Identifier;)Lnet/minecraft/client/renderer/rendertype/RenderType;
+		ARG 0 texture
+	METHOD lambda$static$7 (Lnet/minecraft/resources/Identifier;Ljava/lang/Boolean;)Lnet/minecraft/client/renderer/rendertype/RenderType;
+		ARG 0 texture
+		ARG 1 affectsOutline
+	METHOD lambda$static$8 (Lnet/minecraft/resources/Identifier;Ljava/lang/Boolean;)Lnet/minecraft/client/renderer/rendertype/RenderType;
+		ARG 0 texture
+		ARG 1 affectsOutline
+	METHOD lambda$static$9 (Lnet/minecraft/resources/Identifier;)Lnet/minecraft/client/renderer/rendertype/RenderType;
 		ARG 0 texture
 	METHOD outline (Lnet/minecraft/resources/Identifier;)Lnet/minecraft/client/renderer/rendertype/RenderType;
 		ARG 0 texture

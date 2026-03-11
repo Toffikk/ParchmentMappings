@@ -26,6 +26,10 @@ CLASS net/minecraft/client/renderer/block/model/multipart/KeyValueCondition
 			ARG 1 owner
 			ARG 2 property
 			ARG 3 term
+		METHOD lambda$instantiate$10 (Ljava/lang/Comparable;Ljava/lang/Comparable;)Z
+			ARG 1 value
+		METHOD lambda$instantiate$11 (Ljava/lang/Comparable;Ljava/lang/Comparable;)Z
+			ARG 1 value
 		METHOD lambda$instantiate$5 (Ljava/lang/Object;Lnet/minecraft/world/level/block/state/properties/Property;Lnet/minecraft/client/renderer/block/model/multipart/KeyValueCondition$Term;)Ljava/util/function/Predicate;
 			ARG 3 t
 		METHOD lambda$instantiate$6 (Lnet/minecraft/world/level/block/state/StateHolder;)Z
@@ -36,10 +40,6 @@ CLASS net/minecraft/client/renderer/block/model/multipart/KeyValueCondition
 			ARG 3 state
 		METHOD lambda$instantiate$9 (Lnet/minecraft/world/level/block/state/properties/Property;Ljava/util/List;ZLnet/minecraft/world/level/block/state/StateHolder;)Z
 			ARG 3 state
-		METHOD lambda$instantiate$10 (Ljava/lang/Comparable;Ljava/lang/Comparable;)Z
-			ARG 1 value
-		METHOD lambda$instantiate$11 (Ljava/lang/Comparable;Ljava/lang/Comparable;)Z
-			ARG 1 value
 		METHOD lambda$static$0 (Lcom/mojang/datafixers/util/Either;)Ljava/lang/String;
 			ARG 0 either
 		METHOD lambda$static$2 (Ljava/lang/String;)Lcom/mojang/serialization/DataResult;

@@ -114,9 +114,6 @@ CLASS net/minecraft/world/level/material/FlowingFluid
 	CLASS 1
 		METHOD rehash (I)V
 			ARG 1 newN
-	CLASS BlockStatePairKey
-		METHOD equals (Ljava/lang/Object;)Z
-			ARG 1 o
 	CLASS SpreadContext
 		METHOD <init> (Lnet/minecraft/world/level/material/FlowingFluid;Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)V
 			ARG 2 level
@@ -134,3 +131,6 @@ CLASS net/minecraft/world/level/material/FlowingFluid
 			ARG 2 k
 		METHOD lambda$isHole$1 (Lnet/minecraft/core/BlockPos;S)Z
 			ARG 2 key
+	CLASS BlockStatePairKey
+		METHOD equals (Ljava/lang/Object;)Z
+			ARG 1 o

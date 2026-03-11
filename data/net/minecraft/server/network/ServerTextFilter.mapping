@@ -46,6 +46,13 @@ CLASS net/minecraft/server/network/ServerTextFilter
 		ARG 4 executor
 	METHOD setAuthorizationProperty (Ljava/net/HttpURLConnection;)V
 		ARG 1 connection
+	CLASS PlayerContext
+		METHOD <init> (Lnet/minecraft/server/network/ServerTextFilter;Lcom/mojang/authlib/GameProfile;)V
+			ARG 2 profile
+		METHOD lambda$processMessageBundle$0 (Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture;
+			ARG 1 message
+		METHOD lambda$processMessageBundle$1 (Ljava/lang/Throwable;)Ljava/util/List;
+			ARG 0 e
 	CLASS IgnoreStrategy
 		METHOD ignoreOverThreshold (I)Lnet/minecraft/server/network/ServerTextFilter$IgnoreStrategy;
 			ARG 0 threshold
@@ -67,13 +74,6 @@ CLASS net/minecraft/server/network/ServerTextFilter
 		METHOD encode (Lcom/mojang/authlib/GameProfile;Ljava/lang/String;)Lcom/google/gson/JsonObject;
 			ARG 1 profile
 			ARG 2 message
-	CLASS PlayerContext
-		METHOD <init> (Lnet/minecraft/server/network/ServerTextFilter;Lcom/mojang/authlib/GameProfile;)V
-			ARG 2 profile
-		METHOD lambda$processMessageBundle$0 (Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture;
-			ARG 1 message
-		METHOD lambda$processMessageBundle$1 (Ljava/lang/Throwable;)Ljava/util/List;
-			ARG 0 e
 	CLASS RequestFailedException
 		METHOD <init> (Ljava/lang/String;)V
 			ARG 1 message

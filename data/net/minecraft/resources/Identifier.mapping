@@ -11,7 +11,7 @@ CLASS net/minecraft/resources/Identifier
 	METHOD bySeparator (Ljava/lang/String;C)Lnet/minecraft/resources/Identifier;
 		ARG 0 identifier
 		ARG 1 separator
-	METHOD compareTo (Ljava/lang/Object;)I
+	METHOD compareTo (Lnet/minecraft/resources/Identifier;)I
 		ARG 1 o
 	METHOD createUntrusted (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/Identifier;
 		ARG 0 namespace

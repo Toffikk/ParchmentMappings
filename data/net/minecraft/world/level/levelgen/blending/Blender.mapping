@@ -94,14 +94,14 @@ CLASS net/minecraft/world/level/levelgen/blending/Blender
 		ARG 1 oldSidesBlendingData
 	METHOD of (Lnet/minecraft/server/level/WorldGenRegion;)Lnet/minecraft/world/level/levelgen/blending/Blender;
 		ARG 0 region
+	CLASS DistanceGetter
+		METHOD getDistance (DDD)D
+			ARG 1 x
+			ARG 3 y
+			ARG 5 z
 	CLASS CellValueGetter
 		METHOD get (Lnet/minecraft/world/level/levelgen/blending/BlendingData;III)D
 			ARG 1 data
 			ARG 2 cellX
 			ARG 3 cellY
 			ARG 4 cellZ
-	CLASS DistanceGetter
-		METHOD getDistance (DDD)D
-			ARG 1 x
-			ARG 3 y
-			ARG 5 z

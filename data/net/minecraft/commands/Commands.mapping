@@ -64,10 +64,10 @@ CLASS net/minecraft/commands/Commands
 	CLASS 2
 		METHOD createLookup (Lnet/minecraft/core/HolderLookup$RegistryLookup;)Lnet/minecraft/core/HolderLookup$RegistryLookup$Delegate;
 			ARG 1 original
+	CLASS ParseFunction
+		METHOD parse (Lcom/mojang/brigadier/StringReader;)V
+			ARG 1 value
 	CLASS CommandSelection
 		METHOD <init> (Ljava/lang/String;IZZ)V
 			ARG 3 includeIntegrated
 			ARG 4 includeDedicated
-	CLASS ParseFunction
-		METHOD parse (Lcom/mojang/brigadier/StringReader;)V
-			ARG 1 value

@@ -16,7 +16,7 @@ CLASS net/minecraft/client/KeyMapping
 		ARG 5 order
 	METHOD click (Lcom/mojang/blaze3d/platform/InputConstants$Key;)V
 		ARG 0 key
-	METHOD compareTo (Ljava/lang/Object;)I
+	METHOD compareTo (Lnet/minecraft/client/KeyMapping;)I
 		ARG 1 o
 	METHOD createNameSupplier (Ljava/lang/String;)Ljava/util/function/Supplier;
 		ARG 0 key

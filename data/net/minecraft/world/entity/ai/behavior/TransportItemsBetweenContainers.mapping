@@ -142,11 +142,11 @@ CLASS net/minecraft/world/entity/ai/behavior/TransportItemsBetweenContainers
 		ARG 1 target
 		ARG 2 level
 		ARG 3 body
-	METHOD pickupItemFromContainer (Lnet/minecraft/world/Container;)Lnet/minecraft/world/item/ItemStack;
-		ARG 0 container
 	METHOD pickUpItems (Lnet/minecraft/world/entity/PathfinderMob;Lnet/minecraft/world/Container;)V
 		ARG 1 body
 		ARG 2 container
+	METHOD pickupItemFromContainer (Lnet/minecraft/world/Container;)Lnet/minecraft/world/item/ItemStack;
+		ARG 0 container
 	METHOD putDownItem (Lnet/minecraft/world/entity/PathfinderMob;Lnet/minecraft/world/Container;)V
 		ARG 1 body
 		ARG 2 container

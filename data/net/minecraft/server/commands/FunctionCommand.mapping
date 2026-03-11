@@ -63,14 +63,14 @@ CLASS net/minecraft/server/commands/FunctionCommand
 		ARG 5 callbacks
 	METHOD register (Lcom/mojang/brigadier/CommandDispatcher;)V
 		ARG 0 dispatcher
-	CLASS 1Accumulator
-		METHOD add (I)V
-			ARG 1 result
 	CLASS Callbacks
 		METHOD signalResult (Ljava/lang/Object;Lnet/minecraft/resources/Identifier;I)V
 			ARG 1 originalSource
 			ARG 2 functionId
 			ARG 3 newValue
+	CLASS 1Accumulator
+		METHOD add (I)V
+			ARG 1 result
 	CLASS FunctionCustomExecutor
 		METHOD arguments (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/nbt/CompoundTag;
 			ARG 1 context

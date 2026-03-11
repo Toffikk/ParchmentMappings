@@ -1,7 +1,7 @@
 CLASS net/minecraft/world/level/storage/loot/functions/LootItemConditionalFunction
 	METHOD <init> (Ljava/util/List;)V
 		ARG 1 predicates
-	METHOD apply (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+	METHOD apply (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/storage/loot/LootContext;)Lnet/minecraft/world/item/ItemStack;
 		ARG 1 itemStack
 		ARG 2 context
 	METHOD commonFields (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/Products$P1;

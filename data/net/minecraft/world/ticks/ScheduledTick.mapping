@@ -22,8 +22,8 @@ CLASS net/minecraft/world/ticks/ScheduledTick
 	METHOD toSavedTick (J)Lnet/minecraft/world/ticks/SavedTick;
 		ARG 1 currentTick
 	CLASS 1
-		METHOD equals (Ljava/lang/Object;Ljava/lang/Object;)Z
+		METHOD equals (Lnet/minecraft/world/ticks/ScheduledTick;Lnet/minecraft/world/ticks/ScheduledTick;)Z
 			ARG 1 a
 			ARG 2 b
-		METHOD hashCode (Ljava/lang/Object;)I
+		METHOD hashCode (Lnet/minecraft/world/ticks/ScheduledTick;)I
 			ARG 1 o

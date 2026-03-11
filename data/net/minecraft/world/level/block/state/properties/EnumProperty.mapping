@@ -6,7 +6,7 @@ CLASS net/minecraft/world/level/block/state/properties/EnumProperty
 	METHOD create (Ljava/lang/String;Ljava/lang/Class;)Lnet/minecraft/world/level/block/state/properties/EnumProperty;
 		ARG 0 name
 		ARG 1 clazz
-	METHOD create (Ljava/lang/String;Ljava/lang/Class;[Ljava/lang/Enum;)Lnet/minecraft/world/level/block/state/properties/EnumProperty;
+	METHOD create (Ljava/lang/String;Ljava/lang/Class;Ljava/util/List;)Lnet/minecraft/world/level/block/state/properties/EnumProperty;
 		ARG 0 name
 		ARG 1 clazz
 		ARG 2 values
@@ -14,7 +14,7 @@ CLASS net/minecraft/world/level/block/state/properties/EnumProperty
 		ARG 0 name
 		ARG 1 clazz
 		ARG 2 filter
-	METHOD create (Ljava/lang/String;Ljava/lang/Class;Ljava/util/List;)Lnet/minecraft/world/level/block/state/properties/EnumProperty;
+	METHOD create (Ljava/lang/String;Ljava/lang/Class;[Ljava/lang/Enum;)Lnet/minecraft/world/level/block/state/properties/EnumProperty;
 		ARG 0 name
 		ARG 1 clazz
 		ARG 2 values

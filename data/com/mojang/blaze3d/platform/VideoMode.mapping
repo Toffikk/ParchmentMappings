@@ -6,10 +6,10 @@ CLASS com/mojang/blaze3d/platform/VideoMode
 		ARG 4 greenBits
 		ARG 5 blueBits
 		ARG 6 refreshRate
-	METHOD <init> (Lorg/lwjgl/glfw/GLFWVidMode;)V
-		ARG 1 mode
 	METHOD <init> (Lorg/lwjgl/glfw/GLFWVidMode$Buffer;)V
 		ARG 1 buffer
+	METHOD <init> (Lorg/lwjgl/glfw/GLFWVidMode;)V
+		ARG 1 mode
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
 	METHOD read (Ljava/lang/String;)Ljava/util/Optional;

@@ -5,9 +5,9 @@ CLASS net/minecraft/world/entity/monster/Phantom
 		ARG 3 targetConditions
 	METHOD setPhantomSize (I)V
 		ARG 1 size
-	CLASS PhantomBodyRotationControl
+	CLASS PhantomMoveControl
 		METHOD <init> (Lnet/minecraft/world/entity/monster/Phantom;Lnet/minecraft/world/entity/Mob;)V
 			ARG 2 mob
-	CLASS PhantomMoveControl
+	CLASS PhantomBodyRotationControl
 		METHOD <init> (Lnet/minecraft/world/entity/monster/Phantom;Lnet/minecraft/world/entity/Mob;)V
 			ARG 2 mob

@@ -23,12 +23,12 @@ CLASS net/minecraft/data/worldgen/placement/PlacementUtils
 	METHOD onlyWhenEmpty (Lnet/minecraft/world/level/levelgen/feature/Feature;Lnet/minecraft/world/level/levelgen/feature/configurations/FeatureConfiguration;)Lnet/minecraft/core/Holder;
 		ARG 0 feature
 		ARG 1 config
-	METHOD register (Lnet/minecraft/data/worldgen/BootstrapContext;Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/core/Holder;[Lnet/minecraft/world/level/levelgen/placement/PlacementModifier;)V
+	METHOD register (Lnet/minecraft/data/worldgen/BootstrapContext;Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/core/Holder;Ljava/util/List;)V
 		ARG 0 context
 		ARG 1 id
 		ARG 2 feature
 		ARG 3 placementModifiers
-	METHOD register (Lnet/minecraft/data/worldgen/BootstrapContext;Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/core/Holder;Ljava/util/List;)V
+	METHOD register (Lnet/minecraft/data/worldgen/BootstrapContext;Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/core/Holder;[Lnet/minecraft/world/level/levelgen/placement/PlacementModifier;)V
 		ARG 0 context
 		ARG 1 id
 		ARG 2 feature

@@ -40,14 +40,14 @@ CLASS net/minecraft/world/inventory/AbstractContainerMenu
 	METHOD clearContainer (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/Container;)V
 		ARG 1 player
 		ARG 2 container
+	METHOD clickMenuButton (Lnet/minecraft/world/entity/player/Player;I)Z
+		ARG 1 player
+		ARG 2 buttonId
 	METHOD clicked (IILnet/minecraft/world/inventory/ClickType;Lnet/minecraft/world/entity/player/Player;)V
 		ARG 1 slotIndex
 		ARG 2 buttonNum
 		ARG 3 clickType
 		ARG 4 player
-	METHOD clickMenuButton (Lnet/minecraft/world/entity/player/Player;I)Z
-		ARG 1 player
-		ARG 2 buttonId
 	METHOD doClick (IILnet/minecraft/world/inventory/ClickType;Lnet/minecraft/world/entity/player/Player;)V
 		ARG 1 slotIndex
 		ARG 2 buttonNum
@@ -59,15 +59,15 @@ CLASS net/minecraft/world/inventory/AbstractContainerMenu
 	METHOD findSlot (Lnet/minecraft/world/Container;I)Ljava/util/OptionalInt;
 		ARG 1 inventory
 		ARG 2 slotIndex
+	METHOD getQuickCraftPlaceCount (Ljava/util/Set;ILnet/minecraft/world/item/ItemStack;)I
+		ARG 0 quickCraftSlots
+		ARG 1 quickCraftingType
+		ARG 2 itemStack
 	METHOD getQuickcraftHeader (I)I
 		ARG 0 mask
 	METHOD getQuickcraftMask (II)I
 		ARG 0 header
 		ARG 1 type
-	METHOD getQuickCraftPlaceCount (Ljava/util/Set;ILnet/minecraft/world/item/ItemStack;)I
-		ARG 0 quickCraftSlots
-		ARG 1 quickCraftingType
-		ARG 2 itemStack
 	METHOD getQuickcraftType (I)I
 		ARG 0 mask
 	METHOD getRedstoneSignalFromBlockEntity (Lnet/minecraft/world/level/block/entity/BlockEntity;)I
@@ -102,10 +102,10 @@ CLASS net/minecraft/world/inventory/AbstractContainerMenu
 	METHOD quickMoveStack (Lnet/minecraft/world/entity/player/Player;I)Lnet/minecraft/world/item/ItemStack;
 		ARG 1 player
 		ARG 2 slotIndex
-	METHOD removed (Lnet/minecraft/world/entity/player/Player;)V
-		ARG 1 player
 	METHOD removeSlotListener (Lnet/minecraft/world/inventory/ContainerListener;)V
 		ARG 1 listener
+	METHOD removed (Lnet/minecraft/world/entity/player/Player;)V
+		ARG 1 player
 	METHOD setCarried (Lnet/minecraft/world/item/ItemStack;)V
 		ARG 1 carried
 	METHOD setData (II)V

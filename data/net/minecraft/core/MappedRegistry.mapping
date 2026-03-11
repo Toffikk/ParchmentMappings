@@ -36,11 +36,11 @@ CLASS net/minecraft/core/MappedRegistry
 	METHOD lambda$prepareTagReload$12 (Lcom/google/common/collect/ImmutableMap$Builder;Ljava/util/Map;Lnet/minecraft/tags/TagKey;Ljava/util/List;)V
 		ARG 3 id
 		ARG 4 contents
-	METHOD lambda$refreshTagsInHolders$9 (Ljava/util/Map;Lnet/minecraft/core/Holder$Reference;)V
-		ARG 1 h
 	METHOD lambda$refreshTagsInHolders$10 (Ljava/util/Map;Lnet/minecraft/tags/TagKey;Lnet/minecraft/core/HolderSet$Named;)V
 		ARG 2 id
 		ARG 3 values
+	METHOD lambda$refreshTagsInHolders$9 (Ljava/util/Map;Lnet/minecraft/core/Holder$Reference;)V
+		ARG 1 h
 	METHOD lambda$register$1 (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/core/Holder$Reference;
 		ARG 1 k
 	METHOD validateAndUnwrapTagElement (Lnet/minecraft/tags/TagKey;Lnet/minecraft/core/Holder;)Lnet/minecraft/core/Holder$Reference;

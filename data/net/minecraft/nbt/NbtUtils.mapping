@@ -36,6 +36,8 @@ CLASS net/minecraft/nbt/NbtUtils
 		ARG 0 entry
 	METHOD lambda$packBlockState$15 (Ljava/lang/StringBuilder;Lnet/minecraft/nbt/CompoundTag;)V
 		ARG 1 properties
+	METHOD lambda$packStructureTemplate$10 (Lnet/minecraft/nbt/ListTag;Lnet/minecraft/nbt/CompoundTag;)V
+		ARG 1 block
 	METHOD lambda$packStructureTemplate$6 (Lnet/minecraft/nbt/Tag;)Ljava/util/stream/Stream;
 		ARG 0 tag
 	METHOD lambda$packStructureTemplate$7 (Lnet/minecraft/nbt/ListTag;Lnet/minecraft/nbt/ListTag;Lnet/minecraft/nbt/ListTag;)V
@@ -44,8 +46,6 @@ CLASS net/minecraft/nbt/NbtUtils
 		ARG 0 tag
 	METHOD lambda$packStructureTemplate$9 (Lnet/minecraft/nbt/CompoundTag;)Ljava/util/Optional;
 		ARG 0 tag
-	METHOD lambda$packStructureTemplate$10 (Lnet/minecraft/nbt/ListTag;Lnet/minecraft/nbt/CompoundTag;)V
-		ARG 1 block
 	METHOD lambda$static$0 (Lnet/minecraft/nbt/ListTag;)I
 		ARG 0 list
 	METHOD lambda$static$1 (Lnet/minecraft/nbt/ListTag;)I

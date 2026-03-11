@@ -21,13 +21,6 @@ CLASS net/minecraft/world/entity/animal/sniffer/SnifferAi
 		METHOD <init> (II)V
 			ARG 1 min
 			ARG 2 max
-	CLASS FeelingHappy
-		METHOD <init> (II)V
-			ARG 1 min
-			ARG 2 max
-	CLASS FinishedDigging
-		METHOD <init> (I)V
-			ARG 1 duration
 	CLASS Scenting
 		METHOD <init> (II)V
 			ARG 1 min
@@ -38,3 +31,10 @@ CLASS net/minecraft/world/entity/animal/sniffer/SnifferAi
 			ARG 2 max
 		METHOD lambda$stop$0 (Lnet/minecraft/world/entity/animal/sniffer/Sniffer;Lnet/minecraft/core/BlockPos;)V
 			ARG 1 position
+	CLASS FeelingHappy
+		METHOD <init> (II)V
+			ARG 1 min
+			ARG 2 max
+	CLASS FinishedDigging
+		METHOD <init> (I)V
+			ARG 1 duration

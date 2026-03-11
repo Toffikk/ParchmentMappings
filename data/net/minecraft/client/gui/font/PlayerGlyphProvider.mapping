@@ -4,7 +4,7 @@ CLASS net/minecraft/client/gui/font/PlayerGlyphProvider
 	METHOD sourceForPlayer (Lnet/minecraft/network/chat/FontDescription$PlayerSprite;)Lnet/minecraft/client/gui/GlyphSource;
 		ARG 1 playerInfo
 	CLASS 1
-		METHOD load (Ljava/lang/Object;)Ljava/lang/Object;
+		METHOD load (Lnet/minecraft/network/chat/FontDescription$PlayerSprite;)Lnet/minecraft/client/gui/GlyphSource;
 			ARG 1 playerInfo
 	CLASS Instance
 		METHOD renderQuad (Lorg/joml/Matrix4f;Lcom/mojang/blaze3d/vertex/VertexConsumer;IFFFFFIFFIIII)V

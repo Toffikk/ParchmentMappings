@@ -1,9 +1,9 @@
 CLASS net/minecraft/world/level/chunk/CarvingMask
-	METHOD <init> ([JI)V
-		ARG 1 array
-		ARG 2 minY
 	METHOD <init> (II)V
 		ARG 1 height
+		ARG 2 minY
+	METHOD <init> ([JI)V
+		ARG 1 array
 		ARG 2 minY
 	METHOD get (III)Z
 		ARG 1 x

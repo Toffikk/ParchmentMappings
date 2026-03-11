@@ -9,13 +9,13 @@ CLASS net/minecraft/client/gui/screens/BanNoticeScreens
 		ARG 0 onClose
 	METHOD getBanDurationText (Lcom/mojang/authlib/minecraft/BanDetails;)Lnet/minecraft/network/chat/Component;
 		ARG 0 multiplayerBanned
-	METHOD getBannedScreenText (Lcom/mojang/authlib/minecraft/BanDetails;)Lnet/minecraft/network/chat/Component;
-		ARG 0 multiplayerBanned
-	METHOD getBannedTitle (Lcom/mojang/authlib/minecraft/BanDetails;)Lnet/minecraft/network/chat/Component;
-		ARG 0 multiplayerBanned
 	METHOD getBanReasonText (Lcom/mojang/authlib/minecraft/BanDetails;)Lnet/minecraft/network/chat/Component;
 		ARG 0 multiplayerBanned
 	METHOD getBanStatusText (Lcom/mojang/authlib/minecraft/BanDetails;)Lnet/minecraft/network/chat/Component;
+		ARG 0 multiplayerBanned
+	METHOD getBannedScreenText (Lcom/mojang/authlib/minecraft/BanDetails;)Lnet/minecraft/network/chat/Component;
+		ARG 0 multiplayerBanned
+	METHOD getBannedTitle (Lcom/mojang/authlib/minecraft/BanDetails;)Lnet/minecraft/network/chat/Component;
 		ARG 0 multiplayerBanned
 	METHOD isTemporaryBan (Lcom/mojang/authlib/minecraft/BanDetails;)Z
 		ARG 0 multiplayerBanned

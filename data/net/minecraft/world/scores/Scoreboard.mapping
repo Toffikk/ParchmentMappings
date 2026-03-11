@@ -33,9 +33,9 @@ CLASS net/minecraft/world/scores/Scoreboard
 	METHOD getPlayerScoreInfo (Lnet/minecraft/world/scores/ScoreHolder;Lnet/minecraft/world/scores/Objective;)Lnet/minecraft/world/scores/ReadOnlyScoreInfo;
 		ARG 1 name
 		ARG 2 objective
-	METHOD getPlayersTeam (Ljava/lang/String;)Lnet/minecraft/world/scores/PlayerTeam;
-		ARG 1 name
 	METHOD getPlayerTeam (Ljava/lang/String;)Lnet/minecraft/world/scores/PlayerTeam;
+		ARG 1 name
+	METHOD getPlayersTeam (Ljava/lang/String;)Lnet/minecraft/world/scores/PlayerTeam;
 		ARG 1 name
 	METHOD lambda$addObjective$0 (Ljava/lang/Object;)Ljava/util/List;
 		ARG 0 k

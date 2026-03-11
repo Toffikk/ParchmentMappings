@@ -1,8 +1,4 @@
 CLASS net/minecraft/world/item/crafting/display/DisplayContentsFactory
-	CLASS ForRemainders
-		METHOD addRemainder (Ljava/lang/Object;Ljava/util/List;)Ljava/lang/Object;
-			ARG 1 entry
-			ARG 2 remainders
 	CLASS ForStacks
 		METHOD forStack (Lnet/minecraft/core/Holder;)Ljava/lang/Object;
 			ARG 1 item
@@ -10,3 +6,7 @@ CLASS net/minecraft/world/item/crafting/display/DisplayContentsFactory
 			ARG 1 item
 		METHOD forStack (Lnet/minecraft/world/item/ItemStack;)Ljava/lang/Object;
 			ARG 1 stack
+	CLASS ForRemainders
+		METHOD addRemainder (Ljava/lang/Object;Ljava/util/List;)Ljava/lang/Object;
+			ARG 1 entry
+			ARG 2 remainders

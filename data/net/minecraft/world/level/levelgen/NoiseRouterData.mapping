@@ -24,13 +24,13 @@ CLASS net/minecraft/world/level/levelgen/NoiseRouterData
 	METHOD nether (Lnet/minecraft/core/HolderGetter;Lnet/minecraft/core/HolderGetter;)Lnet/minecraft/world/level/levelgen/NoiseRouter;
 		ARG 0 functions
 		ARG 1 noises
-	METHOD noiseGradientDensity (Lnet/minecraft/world/level/levelgen/DensityFunction;Lnet/minecraft/world/level/levelgen/DensityFunction;)Lnet/minecraft/world/level/levelgen/DensityFunction;
-		ARG 0 factor
-		ARG 1 depthWithJaggedness
 	METHOD noNewCaves (Lnet/minecraft/core/HolderGetter;Lnet/minecraft/core/HolderGetter;Lnet/minecraft/world/level/levelgen/DensityFunction;)Lnet/minecraft/world/level/levelgen/NoiseRouter;
 		ARG 0 functions
 		ARG 1 noises
 		ARG 2 slide
+	METHOD noiseGradientDensity (Lnet/minecraft/world/level/levelgen/DensityFunction;Lnet/minecraft/world/level/levelgen/DensityFunction;)Lnet/minecraft/world/level/levelgen/DensityFunction;
+		ARG 0 factor
+		ARG 1 depthWithJaggedness
 	METHOD noodle (Lnet/minecraft/core/HolderGetter;Lnet/minecraft/core/HolderGetter;)Lnet/minecraft/world/level/levelgen/DensityFunction;
 		ARG 0 functions
 		ARG 1 noises

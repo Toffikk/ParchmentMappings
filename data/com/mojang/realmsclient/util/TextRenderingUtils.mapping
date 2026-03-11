@@ -1,8 +1,8 @@
 CLASS com/mojang/realmsclient/util/TextRenderingUtils
-	METHOD decompose (Ljava/lang/String;[Lcom/mojang/realmsclient/util/TextRenderingUtils$LineSegment;)Ljava/util/List;
+	METHOD decompose (Ljava/lang/String;Ljava/util/List;)Ljava/util/List;
 		ARG 0 text
 		ARG 1 links
-	METHOD decompose (Ljava/lang/String;Ljava/util/List;)Ljava/util/List;
+	METHOD decompose (Ljava/lang/String;[Lcom/mojang/realmsclient/util/TextRenderingUtils$LineSegment;)Ljava/util/List;
 		ARG 0 text
 		ARG 1 links
 	METHOD insertLinks (Ljava/util/List;Ljava/util/List;)Ljava/util/List;
@@ -14,9 +14,9 @@ CLASS com/mojang/realmsclient/util/TextRenderingUtils
 		ARG 0 line
 		ARG 1 delimiter
 	CLASS Line
-		METHOD <init> ([Lcom/mojang/realmsclient/util/TextRenderingUtils$LineSegment;)V
-			ARG 1 segments
 		METHOD <init> (Ljava/util/List;)V
+			ARG 1 segments
+		METHOD <init> ([Lcom/mojang/realmsclient/util/TextRenderingUtils$LineSegment;)V
 			ARG 1 segments
 		METHOD equals (Ljava/lang/Object;)Z
 			ARG 1 o

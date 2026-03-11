@@ -34,6 +34,15 @@ CLASS com/mojang/blaze3d/vertex/VertexConsumer
 		ARG 1 pose
 		ARG 2 x
 		ARG 3 y
+	METHOD putBulkData (Lcom/mojang/blaze3d/vertex/PoseStack$Pose;Lnet/minecraft/client/renderer/block/model/BakedQuad;FFFFII)V
+		ARG 1 pose
+		ARG 2 quad
+		ARG 3 r
+		ARG 4 g
+		ARG 5 b
+		ARG 6 a
+		ARG 7 lightCoords
+		ARG 8 overlayCoords
 	METHOD putBulkData (Lcom/mojang/blaze3d/vertex/PoseStack$Pose;Lnet/minecraft/client/renderer/block/model/BakedQuad;[FFFFF[II)V
 		ARG 1 pose
 		ARG 2 quad
@@ -44,15 +53,6 @@ CLASS com/mojang/blaze3d/vertex/VertexConsumer
 		ARG 7 a
 		ARG 8 lightmapCoord
 		ARG 9 overlayCoords
-	METHOD putBulkData (Lcom/mojang/blaze3d/vertex/PoseStack$Pose;Lnet/minecraft/client/renderer/block/model/BakedQuad;FFFFII)V
-		ARG 1 pose
-		ARG 2 quad
-		ARG 3 r
-		ARG 4 g
-		ARG 5 b
-		ARG 6 a
-		ARG 7 lightCoords
-		ARG 8 overlayCoords
 	METHOD setColor (FFFF)Lcom/mojang/blaze3d/vertex/VertexConsumer;
 		ARG 1 r
 		ARG 2 g

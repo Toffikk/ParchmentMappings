@@ -14,7 +14,7 @@ CLASS net/minecraft/client/telemetry/TelemetryPropertyMap
 			ARG 2 ops
 			ARG 3 input
 			ARG 4 property
-		METHOD encode (Ljava/lang/Object;Lcom/mojang/serialization/DynamicOps;Lcom/mojang/serialization/RecordBuilder;)Lcom/mojang/serialization/RecordBuilder;
+		METHOD encode (Lnet/minecraft/client/telemetry/TelemetryPropertyMap;Lcom/mojang/serialization/DynamicOps;Lcom/mojang/serialization/RecordBuilder;)Lcom/mojang/serialization/RecordBuilder;
 			ARG 1 input
 			ARG 2 ops
 			ARG 3 prefix

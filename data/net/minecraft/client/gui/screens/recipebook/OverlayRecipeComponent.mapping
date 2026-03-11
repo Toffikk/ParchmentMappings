@@ -13,22 +13,6 @@ CLASS net/minecraft/client/gui/screens/recipebook/OverlayRecipeComponent
 		ARG 8 buttonWidth
 	METHOD setVisible (Z)V
 		ARG 1 visible
-	CLASS OverlayCraftingRecipeButton
-		METHOD <init> (Lnet/minecraft/client/gui/screens/recipebook/OverlayRecipeComponent;IILnet/minecraft/world/item/crafting/display/RecipeDisplayId;Lnet/minecraft/world/item/crafting/display/RecipeDisplay;Lnet/minecraft/util/context/ContextMap;Z)V
-			ARG 2 x
-			ARG 3 y
-			ARG 4 id
-			ARG 5 recipe
-			ARG 6 context
-			ARG 7 isCraftable
-		METHOD calculateIngredientsPositions (Lnet/minecraft/world/item/crafting/display/RecipeDisplay;Lnet/minecraft/util/context/ContextMap;)Ljava/util/List;
-			ARG 0 recipe
-			ARG 1 context
-		METHOD lambda$calculateIngredientsPositions$0 (Lnet/minecraft/util/context/ContextMap;Ljava/util/List;Lnet/minecraft/world/item/crafting/display/SlotDisplay;III)V
-			ARG 2 ingredient
-			ARG 3 gridIndex
-			ARG 4 gridXPos
-			ARG 5 gridYPos
 	CLASS OverlayRecipeButton
 		METHOD <init> (Lnet/minecraft/client/gui/screens/recipebook/OverlayRecipeComponent;IILnet/minecraft/world/item/crafting/display/RecipeDisplayId;ZLjava/util/List;)V
 			ARG 2 x
@@ -49,6 +33,22 @@ CLASS net/minecraft/client/gui/screens/recipebook/OverlayRecipeComponent
 				ARG 3 ingredients
 			METHOD selectIngredient (I)Lnet/minecraft/world/item/ItemStack;
 				ARG 1 currentIndex
+	CLASS OverlayCraftingRecipeButton
+		METHOD <init> (Lnet/minecraft/client/gui/screens/recipebook/OverlayRecipeComponent;IILnet/minecraft/world/item/crafting/display/RecipeDisplayId;Lnet/minecraft/world/item/crafting/display/RecipeDisplay;Lnet/minecraft/util/context/ContextMap;Z)V
+			ARG 2 x
+			ARG 3 y
+			ARG 4 id
+			ARG 5 recipe
+			ARG 6 context
+			ARG 7 isCraftable
+		METHOD calculateIngredientsPositions (Lnet/minecraft/world/item/crafting/display/RecipeDisplay;Lnet/minecraft/util/context/ContextMap;)Ljava/util/List;
+			ARG 0 recipe
+			ARG 1 context
+		METHOD lambda$calculateIngredientsPositions$0 (Lnet/minecraft/util/context/ContextMap;Ljava/util/List;Lnet/minecraft/world/item/crafting/display/SlotDisplay;III)V
+			ARG 2 ingredient
+			ARG 3 gridIndex
+			ARG 4 gridXPos
+			ARG 5 gridYPos
 	CLASS OverlaySmeltingRecipeButton
 		METHOD <init> (Lnet/minecraft/client/gui/screens/recipebook/OverlayRecipeComponent;IILnet/minecraft/world/item/crafting/display/RecipeDisplayId;Lnet/minecraft/world/item/crafting/display/RecipeDisplay;Lnet/minecraft/util/context/ContextMap;Z)V
 			ARG 2 x

@@ -1,7 +1,7 @@
 CLASS net/minecraft/network/CompressionEncoder
 	METHOD <init> (I)V
 		ARG 1 threshold
-	METHOD encode (Lio/netty/channel/ChannelHandlerContext;Ljava/lang/Object;Lio/netty/buffer/ByteBuf;)V
+	METHOD encode (Lio/netty/channel/ChannelHandlerContext;Lio/netty/buffer/ByteBuf;Lio/netty/buffer/ByteBuf;)V
 		ARG 1 ctx
 		ARG 2 uncompressed
 		ARG 3 out

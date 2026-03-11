@@ -5,12 +5,6 @@ CLASS net/minecraft/client/main/GameConfig
 		ARG 3 folderData
 		ARG 4 gameData
 		ARG 5 quickPlayData
-	CLASS FolderData
-		METHOD <init> (Ljava/io/File;Ljava/io/File;Ljava/io/File;Ljava/lang/String;)V
-			ARG 1 gameDirectory
-			ARG 2 resourcePackDirectory
-			ARG 3 assetDirectory
-			ARG 4 assetIndex
 	CLASS GameData
 		METHOD <init> (ZLjava/lang/String;Ljava/lang/String;ZZZZZ)V
 			ARG 1 demo
@@ -25,3 +19,9 @@ CLASS net/minecraft/client/main/GameConfig
 		METHOD <init> (Lnet/minecraft/client/User;Ljava/net/Proxy;)V
 			ARG 1 user
 			ARG 2 proxy
+	CLASS FolderData
+		METHOD <init> (Ljava/io/File;Ljava/io/File;Ljava/io/File;Ljava/lang/String;)V
+			ARG 1 gameDirectory
+			ARG 2 resourcePackDirectory
+			ARG 3 assetDirectory
+			ARG 4 assetIndex

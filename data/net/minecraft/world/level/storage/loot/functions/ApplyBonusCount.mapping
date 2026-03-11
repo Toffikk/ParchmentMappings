@@ -30,14 +30,14 @@ CLASS net/minecraft/world/level/storage/loot/functions/ApplyBonusCount
 		ARG 0 f
 	METHOD lambda$static$4 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 i
-	CLASS BinomialWithBonusCount
-		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-			ARG 0 i
 	CLASS Formula
 		METHOD calculateNewCount (Lnet/minecraft/util/RandomSource;II)I
 			ARG 1 random
 			ARG 2 count
 			ARG 3 level
 	CLASS UniformBonusCount
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+	CLASS BinomialWithBonusCount
 		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 i

@@ -34,9 +34,6 @@ CLASS net/minecraft/world/entity/monster/Ghast
 		METHOD lambda$canReach$0 (Lnet/minecraft/world/phys/AABB;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;ZZLnet/minecraft/core/BlockPos;I)Z
 			ARG 6 blockPos
 			ARG 7 i
-	CLASS GhastShootFireballGoal
-		METHOD <init> (Lnet/minecraft/world/entity/monster/Ghast;)V
-			ARG 1 ghast
 	CLASS RandomFloatAroundGoal
 		METHOD <init> (Lnet/minecraft/world/entity/Mob;)V
 			ARG 1 ghast
@@ -57,3 +54,6 @@ CLASS net/minecraft/world/entity/monster/Ghast
 			ARG 0 level
 			ARG 1 target
 			ARG 2 distanceToBlocks
+	CLASS GhastShootFireballGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Ghast;)V
+			ARG 1 ghast

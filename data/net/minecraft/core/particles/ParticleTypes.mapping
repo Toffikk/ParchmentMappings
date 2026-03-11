@@ -3,6 +3,10 @@ CLASS net/minecraft/core/particles/ParticleTypes
 		ARG 0 t
 	METHOD lambda$static$1 (Lnet/minecraft/core/particles/ParticleType;)Lnet/minecraft/network/codec/StreamCodec;
 		ARG 0 t
+	METHOD lambda$static$10 (Lnet/minecraft/core/particles/ParticleType;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 t
+	METHOD lambda$static$11 (Lnet/minecraft/core/particles/ParticleType;)Lnet/minecraft/network/codec/StreamCodec;
+		ARG 0 t
 	METHOD lambda$static$2 (Lnet/minecraft/core/particles/ParticleType;)Lcom/mojang/serialization/MapCodec;
 		ARG 0 t
 	METHOD lambda$static$3 (Lnet/minecraft/core/particles/ParticleType;)Lnet/minecraft/network/codec/StreamCodec;
@@ -18,10 +22,6 @@ CLASS net/minecraft/core/particles/ParticleTypes
 	METHOD lambda$static$8 (Lnet/minecraft/core/particles/ParticleType;)Lcom/mojang/serialization/MapCodec;
 		ARG 0 t
 	METHOD lambda$static$9 (Lnet/minecraft/core/particles/ParticleType;)Lnet/minecraft/network/codec/StreamCodec;
-		ARG 0 t
-	METHOD lambda$static$10 (Lnet/minecraft/core/particles/ParticleType;)Lcom/mojang/serialization/MapCodec;
-		ARG 0 t
-	METHOD lambda$static$11 (Lnet/minecraft/core/particles/ParticleType;)Lnet/minecraft/network/codec/StreamCodec;
 		ARG 0 t
 	METHOD register (Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
 		ARG 0 name

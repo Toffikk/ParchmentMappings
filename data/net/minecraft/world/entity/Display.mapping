@@ -33,34 +33,6 @@ CLASS net/minecraft/world/entity/Display
 	METHOD updateRenderSubState (ZF)V
 		ARG 1 shouldInterpolate
 		ARG 2 progress
-	CLASS BillboardConstraints
-		METHOD <init> (Ljava/lang/String;IBLjava/lang/String;)V
-			ARG 3 id
-			ARG 4 name
-	CLASS BlockDisplay
-		METHOD setBlockState (Lnet/minecraft/world/level/block/state/BlockState;)V
-			ARG 1 blockState
-	CLASS FloatInterpolator
-		METHOD constant (F)Lnet/minecraft/world/entity/Display$FloatInterpolator;
-			ARG 0 value
-		METHOD get (F)F
-			ARG 1 progress
-		METHOD lambda$constant$0 (FF)F
-			ARG 1 progress
-	CLASS GenericInterpolator
-		METHOD constant (Ljava/lang/Object;)Lnet/minecraft/world/entity/Display$GenericInterpolator;
-			ARG 0 value
-		METHOD get (F)Ljava/lang/Object;
-			ARG 1 progress
-		METHOD lambda$constant$0 (Ljava/lang/Object;F)Ljava/lang/Object;
-			ARG 1 progress
-	CLASS IntInterpolator
-		METHOD constant (I)Lnet/minecraft/world/entity/Display$IntInterpolator;
-			ARG 0 value
-		METHOD get (F)I
-			ARG 1 progress
-		METHOD lambda$constant$0 (IF)I
-			ARG 1 progress
 	CLASS ItemDisplay
 		METHOD setItemStack (Lnet/minecraft/world/item/ItemStack;)V
 			ARG 1 item
@@ -101,3 +73,31 @@ CLASS net/minecraft/world/entity/Display
 			METHOD split (Lnet/minecraft/network/chat/Component;I)Lnet/minecraft/world/entity/Display$TextDisplay$CachedInfo;
 				ARG 1 input
 				ARG 2 width
+	CLASS BlockDisplay
+		METHOD setBlockState (Lnet/minecraft/world/level/block/state/BlockState;)V
+			ARG 1 blockState
+	CLASS IntInterpolator
+		METHOD constant (I)Lnet/minecraft/world/entity/Display$IntInterpolator;
+			ARG 0 value
+		METHOD get (F)I
+			ARG 1 progress
+		METHOD lambda$constant$0 (IF)I
+			ARG 1 progress
+	CLASS FloatInterpolator
+		METHOD constant (F)Lnet/minecraft/world/entity/Display$FloatInterpolator;
+			ARG 0 value
+		METHOD get (F)F
+			ARG 1 progress
+		METHOD lambda$constant$0 (FF)F
+			ARG 1 progress
+	CLASS GenericInterpolator
+		METHOD constant (Ljava/lang/Object;)Lnet/minecraft/world/entity/Display$GenericInterpolator;
+			ARG 0 value
+		METHOD get (F)Ljava/lang/Object;
+			ARG 1 progress
+		METHOD lambda$constant$0 (Ljava/lang/Object;F)Ljava/lang/Object;
+			ARG 1 progress
+	CLASS BillboardConstraints
+		METHOD <init> (Ljava/lang/String;IBLjava/lang/String;)V
+			ARG 3 id
+			ARG 4 name

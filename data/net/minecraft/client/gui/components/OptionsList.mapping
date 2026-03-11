@@ -7,17 +7,17 @@ CLASS net/minecraft/client/gui/components/OptionsList
 		ARG 1 option
 	METHOD addHeader (Lnet/minecraft/network/chat/Component;)V
 		ARG 1 text
-	METHOD addSmall ([Lnet/minecraft/client/OptionInstance;)V
-		ARG 1 options
 	METHOD addSmall (Ljava/util/List;)V
 		ARG 1 widgets
-	METHOD addSmall (Lnet/minecraft/client/gui/components/AbstractWidget;Lnet/minecraft/client/gui/components/AbstractWidget;)V
-		ARG 1 firstOption
-		ARG 2 secondOption
 	METHOD addSmall (Lnet/minecraft/client/gui/components/AbstractWidget;Lnet/minecraft/client/OptionInstance;Lnet/minecraft/client/gui/components/AbstractWidget;)V
 		ARG 1 firstOption
 		ARG 2 firstOptionInstance
 		ARG 3 secondOption
+	METHOD addSmall (Lnet/minecraft/client/gui/components/AbstractWidget;Lnet/minecraft/client/gui/components/AbstractWidget;)V
+		ARG 1 firstOption
+		ARG 2 secondOption
+	METHOD addSmall ([Lnet/minecraft/client/OptionInstance;)V
+		ARG 1 options
 	METHOD findOption (Lnet/minecraft/client/OptionInstance;)Lnet/minecraft/client/gui/components/AbstractWidget;
 		ARG 1 option
 	METHOD resetOption (Lnet/minecraft/client/OptionInstance;)V
@@ -32,20 +32,20 @@ CLASS net/minecraft/client/gui/components/OptionsList
 			ARG 2 screen
 		METHOD findOption (Lnet/minecraft/client/OptionInstance;)Lnet/minecraft/client/gui/components/AbstractWidget;
 			ARG 1 option
-		METHOD small (Lnet/minecraft/client/gui/components/AbstractWidget;Lnet/minecraft/client/gui/components/AbstractWidget;Lnet/minecraft/client/gui/screens/Screen;)Lnet/minecraft/client/gui/components/OptionsList$Entry;
-			ARG 0 leftWidget
-			ARG 1 rightWidget
-			ARG 2 screen
-		METHOD small (Lnet/minecraft/client/gui/components/AbstractWidget;Lnet/minecraft/client/OptionInstance;Lnet/minecraft/client/gui/components/AbstractWidget;Lnet/minecraft/client/gui/screens/Screen;)Lnet/minecraft/client/gui/components/OptionsList$Entry;
-			ARG 0 leftWidget
-			ARG 1 leftWidgetOptionInstance
-			ARG 2 rightWidget
-			ARG 3 screen
 		METHOD small (Lnet/minecraft/client/Options;Lnet/minecraft/client/OptionInstance;Lnet/minecraft/client/OptionInstance;Lnet/minecraft/client/gui/screens/options/OptionsSubScreen;)Lnet/minecraft/client/gui/components/OptionsList$Entry;
 			ARG 0 options
 			ARG 1 optionA
 			ARG 2 optionB
 			ARG 3 screen
+		METHOD small (Lnet/minecraft/client/gui/components/AbstractWidget;Lnet/minecraft/client/OptionInstance;Lnet/minecraft/client/gui/components/AbstractWidget;Lnet/minecraft/client/gui/screens/Screen;)Lnet/minecraft/client/gui/components/OptionsList$Entry;
+			ARG 0 leftWidget
+			ARG 1 leftWidgetOptionInstance
+			ARG 2 rightWidget
+			ARG 3 screen
+		METHOD small (Lnet/minecraft/client/gui/components/AbstractWidget;Lnet/minecraft/client/gui/components/AbstractWidget;Lnet/minecraft/client/gui/screens/Screen;)Lnet/minecraft/client/gui/components/OptionsList$Entry;
+			ARG 0 leftWidget
+			ARG 1 rightWidget
+			ARG 2 screen
 	CLASS HeaderEntry
 		METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;Lnet/minecraft/network/chat/Component;I)V
 			ARG 1 screen

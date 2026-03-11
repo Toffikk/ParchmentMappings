@@ -104,6 +104,15 @@ CLASS net/minecraft/server/commands/LootCommand
 		ARG 2 drop
 	METHOD lambda$dropKillLoot$27 (Lnet/minecraft/commands/CommandSourceStack;Ljava/util/Optional;Ljava/util/List;)V
 		ARG 2 usedItems
+	METHOD lambda$register$10 (Lnet/minecraft/server/commands/LootCommand$DropConsumer;Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 1 c
+	METHOD lambda$register$11 (Lnet/minecraft/server/commands/LootCommand$DropConsumer;Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 1 c
+	METHOD lambda$register$12 (Lnet/minecraft/server/commands/LootCommand$DropConsumer;Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 1 c
+	METHOD lambda$register$13 (Lnet/minecraft/commands/CommandBuildContext;Lcom/mojang/brigadier/builder/ArgumentBuilder;Lnet/minecraft/server/commands/LootCommand$DropConsumer;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+		ARG 1 target
+		ARG 2 output
 	METHOD lambda$register$3 (Lnet/minecraft/server/commands/LootCommand$DropConsumer;Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 1 c
 	METHOD lambda$register$4 (Lnet/minecraft/server/commands/LootCommand$DropConsumer;Lcom/mojang/brigadier/context/CommandContext;)I
@@ -118,15 +127,6 @@ CLASS net/minecraft/server/commands/LootCommand
 		ARG 1 c
 	METHOD lambda$register$9 (Lnet/minecraft/server/commands/LootCommand$DropConsumer;Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 1 c
-	METHOD lambda$register$10 (Lnet/minecraft/server/commands/LootCommand$DropConsumer;Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 1 c
-	METHOD lambda$register$11 (Lnet/minecraft/server/commands/LootCommand$DropConsumer;Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 1 c
-	METHOD lambda$register$12 (Lnet/minecraft/server/commands/LootCommand$DropConsumer;Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 1 c
-	METHOD lambda$register$13 (Lnet/minecraft/commands/CommandBuildContext;Lcom/mojang/brigadier/builder/ArgumentBuilder;Lnet/minecraft/server/commands/LootCommand$DropConsumer;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
-		ARG 1 target
-		ARG 2 output
 	METHOD lambda$static$0 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 entity
 	METHOD lambda$static$1 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;

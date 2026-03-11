@@ -24,7 +24,7 @@ CLASS net/minecraft/client/resources/SkinManager
 		METHOD lambda$load$2 (Lnet/minecraft/client/resources/SkinManager$CacheKey;Lnet/minecraft/world/entity/player/PlayerSkin;Ljava/lang/Throwable;)Ljava/util/Optional;
 			ARG 1 playerSkin
 			ARG 2 throwable
-		METHOD load (Ljava/lang/Object;)Ljava/lang/Object;
+		METHOD load (Lnet/minecraft/client/resources/SkinManager$CacheKey;)Ljava/util/concurrent/CompletableFuture;
 			ARG 1 key
 	CLASS TextureCache
 		METHOD <init> (Lnet/minecraft/client/resources/SkinManager;Ljava/nio/file/Path;Lcom/mojang/authlib/minecraft/MinecraftProfileTexture$Type;)V

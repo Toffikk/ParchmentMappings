@@ -4,9 +4,9 @@ CLASS net/minecraft/world/attribute/modifier/ColorModifier
 			ARG 0 alpha
 			ARG 1 from
 			ARG 2 to
-	CLASS ArgbModifier
-		METHOD lambda$argumentCodec$0 (Ljava/lang/Integer;)Lcom/mojang/datafixers/util/Either;
-			ARG 0 color
 	CLASS BlendToGray
 		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 i
+	CLASS ArgbModifier
+		METHOD lambda$argumentCodec$0 (Ljava/lang/Integer;)Lcom/mojang/datafixers/util/Either;
+			ARG 0 color

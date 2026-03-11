@@ -64,10 +64,10 @@ CLASS net/minecraft/server/level/ChunkMap
 		ARG 1 key
 	METHOD getLatestStatus (J)Lnet/minecraft/world/level/chunk/status/ChunkStatus;
 		ARG 1 key
-	METHOD getPlayersCloseForSpawning (Lnet/minecraft/world/level/ChunkPos;)Ljava/util/List;
-		ARG 1 pos
 	METHOD getPlayerViewDistance (Lnet/minecraft/server/level/ServerPlayer;)I
 		ARG 1 player
+	METHOD getPlayersCloseForSpawning (Lnet/minecraft/world/level/ChunkPos;)Ljava/util/List;
+		ARG 1 pos
 	METHOD getUpdatingChunkIfPresent (J)Lnet/minecraft/server/level/ChunkHolder;
 		ARG 1 key
 	METHOD getVisibleChunkIfPresent (J)Lnet/minecraft/server/level/ChunkHolder;
@@ -141,12 +141,12 @@ CLASS net/minecraft/server/level/ChunkMap
 	METHOD lambda$save$30 (Lnet/minecraft/world/level/ChunkPos;Ljava/lang/Void;Ljava/lang/Throwable;)Ljava/lang/Object;
 		ARG 2 ignored
 		ARG 3 throwable
+	METHOD lambda$saveAllChunks$10 (Lorg/apache/commons/lang3/mutable/MutableBoolean;Lnet/minecraft/world/level/chunk/ChunkAccess;)V
+		ARG 1 c
 	METHOD lambda$saveAllChunks$8 (Lnet/minecraft/server/level/ChunkHolder;)Lnet/minecraft/world/level/chunk/ChunkAccess;
 		ARG 1 chunk
 	METHOD lambda$saveAllChunks$9 (Lnet/minecraft/world/level/chunk/ChunkAccess;)Z
 		ARG 0 chunkAccess
-	METHOD lambda$saveAllChunks$10 (Lorg/apache/commons/lang3/mutable/MutableBoolean;Lnet/minecraft/world/level/chunk/ChunkAccess;)V
-		ARG 1 c
 	METHOD lambda$scheduleChunkLoad$14 (Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/world/level/chunk/storage/SerializableChunkData;
 		ARG 2 tag
 	METHOD lambda$scheduleChunkLoad$15 (Lnet/minecraft/world/level/ChunkPos;Ljava/util/Optional;)Ljava/util/Optional;
@@ -163,12 +163,12 @@ CLASS net/minecraft/server/level/ChunkMap
 		ARG 2 throwable
 	METHOD lambda$waitForLightBeforeSending$42 (Lnet/minecraft/world/level/ChunkPos;)V
 		ARG 1 chunkPos
-	METHOD markChunkPendingToSend (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/level/chunk/LevelChunk;)V
-		ARG 0 player
-		ARG 1 chunk
 	METHOD markChunkPendingToSend (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/level/ChunkPos;)V
 		ARG 1 player
 		ARG 2 pos
+	METHOD markChunkPendingToSend (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/level/chunk/LevelChunk;)V
+		ARG 0 player
+		ARG 1 chunk
 	METHOD markPosition (Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/world/level/chunk/status/ChunkType;)B
 		ARG 1 pos
 		ARG 2 type
@@ -261,11 +261,6 @@ CLASS net/minecraft/server/level/ChunkMap
 	METHOD waitForLightBeforeSending (Lnet/minecraft/world/level/ChunkPos;I)V
 		ARG 1 centerChunk
 		ARG 2 chunkRadius
-	CLASS DistanceManager
-		METHOD <init> (Lnet/minecraft/server/level/ChunkMap;Lnet/minecraft/world/level/TicketStorage;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;)V
-			ARG 2 ticketStorage
-			ARG 3 executor
-			ARG 4 mainThreadExecutor
 	CLASS TrackedEntity
 		METHOD <init> (Lnet/minecraft/server/level/ChunkMap;Lnet/minecraft/world/entity/Entity;IIZ)V
 			ARG 2 entity
@@ -282,3 +277,8 @@ CLASS net/minecraft/server/level/ChunkMap
 			ARG 1 player
 		METHOD updatePlayers (Ljava/util/List;)V
 			ARG 1 players
+	CLASS DistanceManager
+		METHOD <init> (Lnet/minecraft/server/level/ChunkMap;Lnet/minecraft/world/level/TicketStorage;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;)V
+			ARG 2 ticketStorage
+			ARG 3 executor
+			ARG 4 mainThreadExecutor

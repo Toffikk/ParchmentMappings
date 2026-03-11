@@ -16,11 +16,11 @@ CLASS net/minecraft/world/entity/ai/behavior/StartAttacking
 		ARG 3 cantReachSince
 	METHOD lambda$create$3 (Lnet/minecraft/world/entity/ai/behavior/StartAttacking$StartAttackingCondition;Lnet/minecraft/world/entity/ai/behavior/StartAttacking$TargetFinder;Lnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 2 i
-	CLASS StartAttackingCondition
-		METHOD test (Lnet/minecraft/server/level/ServerLevel;Ljava/lang/Object;)Z
-			ARG 1 level
-			ARG 2 body
 	CLASS TargetFinder
 		METHOD get (Lnet/minecraft/server/level/ServerLevel;Ljava/lang/Object;)Ljava/util/Optional;
+			ARG 1 level
+			ARG 2 body
+	CLASS StartAttackingCondition
+		METHOD test (Lnet/minecraft/server/level/ServerLevel;Ljava/lang/Object;)Z
 			ARG 1 level
 			ARG 2 body

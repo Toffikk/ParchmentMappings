@@ -43,19 +43,6 @@ CLASS net/minecraft/world/item/CreativeModeTabs
 	METHOD lambda$bootstrap$1 (Lnet/minecraft/world/item/CreativeModeTab$ItemDisplayParameters;Lnet/minecraft/world/item/CreativeModeTab$Output;)V
 		ARG 0 parameters
 		ARG 1 buildingBlocks
-	METHOD lambda$bootstrap$3 (Lnet/minecraft/world/item/CreativeModeTab$ItemDisplayParameters;Lnet/minecraft/world/item/CreativeModeTab$Output;)V
-		ARG 0 parameters
-		ARG 1 coloredBlocks
-	METHOD lambda$bootstrap$5 (Lnet/minecraft/world/item/CreativeModeTab$ItemDisplayParameters;Lnet/minecraft/world/item/CreativeModeTab$Output;)V
-		ARG 0 parameters
-		ARG 1 naturalBlocks
-	METHOD lambda$bootstrap$7 (Lnet/minecraft/core/Holder;)Z
-		ARG 0 variant
-	METHOD lambda$bootstrap$8 (Lnet/minecraft/world/item/CreativeModeTab$Output;Lnet/minecraft/world/item/CreativeModeTab$ItemDisplayParameters;Lnet/minecraft/core/HolderLookup$RegistryLookup;)V
-		ARG 2 paintings
-	METHOD lambda$bootstrap$9 (Lnet/minecraft/world/item/CreativeModeTab$ItemDisplayParameters;Lnet/minecraft/world/item/CreativeModeTab$Output;)V
-		ARG 0 parameters
-		ARG 1 functionalBlocks
 	METHOD lambda$bootstrap$11 (Lnet/minecraft/world/item/CreativeModeTab$ItemDisplayParameters;Lnet/minecraft/world/item/CreativeModeTab$Output;)V
 		ARG 0 parameters
 		ARG 1 redstoneBlocks
@@ -85,6 +72,9 @@ CLASS net/minecraft/world/item/CreativeModeTabs
 	METHOD lambda$bootstrap$28 (Lnet/minecraft/world/item/CreativeModeTab$ItemDisplayParameters;Lnet/minecraft/world/item/CreativeModeTab$Output;)V
 		ARG 0 parameters
 		ARG 1 spawnEggs
+	METHOD lambda$bootstrap$3 (Lnet/minecraft/world/item/CreativeModeTab$ItemDisplayParameters;Lnet/minecraft/world/item/CreativeModeTab$Output;)V
+		ARG 0 parameters
+		ARG 1 coloredBlocks
 	METHOD lambda$bootstrap$30 (Lnet/minecraft/core/Holder;)Z
 		ARG 0 variant
 	METHOD lambda$bootstrap$31 (Lnet/minecraft/world/item/CreativeModeTab$Output;Lnet/minecraft/world/item/CreativeModeTab$ItemDisplayParameters;Lnet/minecraft/core/HolderLookup$RegistryLookup;)V
@@ -92,6 +82,16 @@ CLASS net/minecraft/world/item/CreativeModeTabs
 	METHOD lambda$bootstrap$32 (Lnet/minecraft/world/item/CreativeModeTab$ItemDisplayParameters;Lnet/minecraft/world/item/CreativeModeTab$Output;)V
 		ARG 0 parameters
 		ARG 1 opBlocks
+	METHOD lambda$bootstrap$5 (Lnet/minecraft/world/item/CreativeModeTab$ItemDisplayParameters;Lnet/minecraft/world/item/CreativeModeTab$Output;)V
+		ARG 0 parameters
+		ARG 1 naturalBlocks
+	METHOD lambda$bootstrap$7 (Lnet/minecraft/core/Holder;)Z
+		ARG 0 variant
+	METHOD lambda$bootstrap$8 (Lnet/minecraft/world/item/CreativeModeTab$Output;Lnet/minecraft/world/item/CreativeModeTab$ItemDisplayParameters;Lnet/minecraft/core/HolderLookup$RegistryLookup;)V
+		ARG 2 paintings
+	METHOD lambda$bootstrap$9 (Lnet/minecraft/world/item/CreativeModeTab$ItemDisplayParameters;Lnet/minecraft/world/item/CreativeModeTab$Output;)V
+		ARG 0 parameters
+		ARG 1 functionalBlocks
 	METHOD lambda$buildAllTabContents$46 (Lnet/minecraft/world/item/CreativeModeTab;)Z
 		ARG 0 tab
 	METHOD lambda$buildAllTabContents$47 (Lnet/minecraft/world/item/CreativeModeTab$ItemDisplayParameters;Lnet/minecraft/world/item/CreativeModeTab;)V

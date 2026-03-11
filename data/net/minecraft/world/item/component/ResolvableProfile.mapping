@@ -25,15 +25,6 @@ CLASS net/minecraft/world/item/component/ResolvableProfile
 		ARG 0 i
 	METHOD resolveProfile (Lnet/minecraft/server/players/ProfileResolver;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 profileResolver
-	CLASS Dynamic
-		METHOD <init> (Lcom/mojang/datafixers/util/Either;Lnet/minecraft/world/entity/player/PlayerSkin$Patch;)V
-			ARG 1 nameOrId
-			ARG 2 skinPatch
-		METHOD equals (Ljava/lang/Object;)Z
-			ARG 1 o
-	CLASS Partial
-		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-			ARG 0 i
 	CLASS Static
 		METHOD <init> (Lcom/mojang/datafixers/util/Either;Lnet/minecraft/world/entity/player/PlayerSkin$Patch;)V
 			ARG 1 contents
@@ -46,3 +37,12 @@ CLASS net/minecraft/world/item/component/ResolvableProfile
 			ARG 0 partial
 		METHOD lambda$new$0 (Lcom/mojang/authlib/GameProfile;)Lcom/mojang/authlib/GameProfile;
 			ARG 0 gameProfile
+	CLASS Dynamic
+		METHOD <init> (Lcom/mojang/datafixers/util/Either;Lnet/minecraft/world/entity/player/PlayerSkin$Patch;)V
+			ARG 1 nameOrId
+			ARG 2 skinPatch
+		METHOD equals (Ljava/lang/Object;)Z
+			ARG 1 o
+	CLASS Partial
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i

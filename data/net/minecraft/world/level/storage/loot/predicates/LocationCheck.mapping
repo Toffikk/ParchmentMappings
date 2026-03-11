@@ -8,5 +8,5 @@ CLASS net/minecraft/world/level/storage/loot/predicates/LocationCheck
 		ARG 0 i
 	METHOD lambda$static$1 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 i
-	METHOD test (Ljava/lang/Object;)Z
+	METHOD test (Lnet/minecraft/world/level/storage/loot/LootContext;)Z
 		ARG 1 context

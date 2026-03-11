@@ -22,10 +22,10 @@ CLASS net/minecraft/gametest/framework/TestCommand
 		ARG 1 pos
 	METHOD lambda$createNewStructure$46 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;)V
 		ARG 1 blockPos
-	METHOD lambda$locate$9 (Ljava/lang/String;Lnet/minecraft/network/chat/Style;)Lnet/minecraft/network/chat/Style;
-		ARG 1 s
 	METHOD lambda$locate$11 (Lnet/minecraft/gametest/framework/TestFinder;Lnet/minecraft/core/BlockPos;Lorg/apache/commons/lang3/mutable/MutableInt;Lnet/minecraft/core/BlockPos;)V
 		ARG 3 structurePos
+	METHOD lambda$locate$9 (Ljava/lang/String;Lnet/minecraft/network/chat/Style;)Lnet/minecraft/network/chat/Style;
+		ARG 1 s
 	METHOD lambda$register$20 (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/gametest/framework/TestFinder;
 		ARG 0 c
 	METHOD lambda$register$21 (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/gametest/framework/TestFinder;

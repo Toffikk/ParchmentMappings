@@ -19,11 +19,11 @@ CLASS net/minecraft/client/gui/screens/TitleScreen
 		ARG 2 button
 	METHOD lambda$createDemoMenuOptions$13 (Lnet/minecraft/client/gui/components/Button;)V
 		ARG 1 button
+	METHOD lambda$createNormalMenuOptions$10 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
 	METHOD lambda$createNormalMenuOptions$8 (Lnet/minecraft/client/gui/components/Button;)V
 		ARG 1 button
 	METHOD lambda$createNormalMenuOptions$9 (Lnet/minecraft/client/gui/components/Button;)V
-		ARG 1 button
-	METHOD lambda$createNormalMenuOptions$10 (Lnet/minecraft/client/gui/components/Button;)V
 		ARG 1 button
 	METHOD lambda$createTestWorldButton$7 (Lnet/minecraft/client/gui/components/Button;)V
 		ARG 1 button

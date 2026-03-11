@@ -6,10 +6,10 @@ CLASS net/minecraft/world/entity/monster/spider/Spider
 	CLASS SpiderAttackGoal
 		METHOD <init> (Lnet/minecraft/world/entity/monster/spider/Spider;)V
 			ARG 1 mob
-	CLASS SpiderEffectsGroupData
-		METHOD setRandomEffect (Lnet/minecraft/util/RandomSource;)V
-			ARG 1 random
 	CLASS SpiderTargetGoal
 		METHOD <init> (Lnet/minecraft/world/entity/monster/spider/Spider;Ljava/lang/Class;)V
 			ARG 1 mob
 			ARG 2 targetType
+	CLASS SpiderEffectsGroupData
+		METHOD setRandomEffect (Lnet/minecraft/util/RandomSource;)V
+			ARG 1 random

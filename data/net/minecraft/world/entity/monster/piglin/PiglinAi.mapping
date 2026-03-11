@@ -95,14 +95,14 @@ CLASS net/minecraft/world/entity/monster/piglin/PiglinAi
 		ARG 0 itemStack
 	METHOD isNearAvoidTarget (Lnet/minecraft/world/entity/monster/piglin/Piglin;)Z
 		ARG 0 body
-	METHOD isNearestValidAttackTarget (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/monster/piglin/Piglin;Lnet/minecraft/world/entity/LivingEntity;)Z
-		ARG 0 level
-		ARG 1 body
-		ARG 2 target
 	METHOD isNearRepellent (Lnet/minecraft/world/entity/monster/piglin/Piglin;)Z
 		ARG 0 body
 	METHOD isNearZombified (Lnet/minecraft/world/entity/monster/piglin/Piglin;)Z
 		ARG 0 body
+	METHOD isNearestValidAttackTarget (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/monster/piglin/Piglin;Lnet/minecraft/world/entity/LivingEntity;)Z
+		ARG 0 level
+		ARG 1 body
+		ARG 2 target
 	METHOD isNotHoldingLovedItemInOffHand (Lnet/minecraft/world/entity/monster/piglin/Piglin;)Z
 		ARG 0 body
 	METHOD isPlayerHoldingLovedItem (Lnet/minecraft/world/entity/LivingEntity;)Z

@@ -63,9 +63,6 @@ CLASS net/minecraft/world/level/block/entity/TestInstanceBlockEntity
 			ARG 1 size
 		METHOD withStatus (Lnet/minecraft/world/level/block/entity/TestInstanceBlockEntity$Status;)Lnet/minecraft/world/level/block/entity/TestInstanceBlockEntity$Data;
 			ARG 1 status
-	CLASS ErrorMarker
-		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-			ARG 0 i
 	CLASS Status
 		METHOD <init> (Ljava/lang/String;ILjava/lang/String;I)V
 			ARG 3 id
@@ -76,3 +73,6 @@ CLASS net/minecraft/world/level/block/entity/TestInstanceBlockEntity
 			ARG 0 s
 		METHOD lambda$static$1 (Lnet/minecraft/world/level/block/entity/TestInstanceBlockEntity$Status;)I
 			ARG 0 s
+	CLASS ErrorMarker
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i

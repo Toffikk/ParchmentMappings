@@ -52,6 +52,8 @@ CLASS net/minecraft/world/item/trading/MerchantOffer
 		ARG 0 o
 	METHOD lambda$static$1 (Lnet/minecraft/world/item/trading/MerchantOffer;)Ljava/util/Optional;
 		ARG 0 o
+	METHOD lambda$static$10 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
 	METHOD lambda$static$2 (Lnet/minecraft/world/item/trading/MerchantOffer;)Lnet/minecraft/world/item/ItemStack;
 		ARG 0 o
 	METHOD lambda$static$3 (Lnet/minecraft/world/item/trading/MerchantOffer;)Ljava/lang/Integer;
@@ -68,8 +70,6 @@ CLASS net/minecraft/world/item/trading/MerchantOffer
 		ARG 0 o
 	METHOD lambda$static$9 (Lnet/minecraft/world/item/trading/MerchantOffer;)Ljava/lang/Integer;
 		ARG 0 o
-	METHOD lambda$static$10 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 i
 	METHOD satisfiedBy (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 1 buyA
 		ARG 2 buyB

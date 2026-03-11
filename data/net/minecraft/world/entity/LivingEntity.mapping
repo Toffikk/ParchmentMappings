@@ -16,11 +16,11 @@ CLASS net/minecraft/world/entity/LivingEntity
 		ARG 3 damage
 	METHOD areAllEffectsAmbient (Ljava/util/Collection;)Z
 		ARG 0 effects
-	METHOD blockedByItem (Lnet/minecraft/world/entity/LivingEntity;)V
-		ARG 1 defender
 	METHOD blockUsingItem (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;)V
 		ARG 1 level
 		ARG 2 attacker
+	METHOD blockedByItem (Lnet/minecraft/world/entity/LivingEntity;)V
+		ARG 1 defender
 	METHOD breakItem (Lnet/minecraft/world/item/ItemStack;)V
 		ARG 1 itemStack
 	METHOD calculateEntityAnimation (Z)V
@@ -73,8 +73,6 @@ CLASS net/minecraft/world/entity/LivingEntity
 		ARG 1 vehicle
 	METHOD doAutoAttackOnTouch (Lnet/minecraft/world/entity/LivingEntity;)V
 		ARG 1 entity
-	METHOD doesEmitEquipEvent (Lnet/minecraft/world/entity/EquipmentSlot;)Z
-		ARG 1 slot
 	METHOD doHurtEquipment (Lnet/minecraft/world/damagesource/DamageSource;F[Lnet/minecraft/world/entity/EquipmentSlot;)V
 		ARG 1 damageSource
 		ARG 2 damage
@@ -84,6 +82,8 @@ CLASS net/minecraft/world/entity/LivingEntity
 		ARG 2 target
 	METHOD doPush (Lnet/minecraft/world/entity/Entity;)V
 		ARG 1 entity
+	METHOD doesEmitEquipEvent (Lnet/minecraft/world/entity/EquipmentSlot;)Z
+		ARG 1 slot
 	METHOD drop (Lnet/minecraft/world/item/ItemStack;ZZ)Lnet/minecraft/world/entity/item/ItemEntity;
 		ARG 1 itemStack
 		ARG 2 randomly
@@ -168,14 +168,14 @@ CLASS net/minecraft/world/entity/LivingEntity
 	METHOD getEffectBlendFactor (Lnet/minecraft/core/Holder;F)F
 		ARG 1 effect
 		ARG 2 partialTicks
-	METHOD getEquipmentSlot (I)Lnet/minecraft/world/entity/EquipmentSlot;
-		ARG 0 slot
-	METHOD getEquipmentSlotForItem (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/entity/EquipmentSlot;
-		ARG 1 itemStack
 	METHOD getEquipSound (Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/equipment/Equippable;)Lnet/minecraft/core/Holder;
 		ARG 1 slot
 		ARG 2 stack
 		ARG 3 equippable
+	METHOD getEquipmentSlot (I)Lnet/minecraft/world/entity/EquipmentSlot;
+		ARG 0 slot
+	METHOD getEquipmentSlotForItem (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/entity/EquipmentSlot;
+		ARG 1 itemStack
 	METHOD getExperienceReward (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/Entity;)I
 		ARG 1 level
 		ARG 2 killer
@@ -302,10 +302,10 @@ CLASS net/minecraft/world/entity/LivingEntity
 		ARG 3 params
 	METHOD lambda$dropFromGiftLootTable$11 (Lnet/minecraft/world/level/storage/loot/LootParams$Builder;)Lnet/minecraft/world/level/storage/loot/LootParams;
 		ARG 1 params
-	METHOD lambda$dropFromLootTable$9 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/item/ItemStack;)V
-		ARG 2 itemStack
 	METHOD lambda$dropFromLootTable$13 (Ljava/util/function/BiConsumer;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/item/ItemStack;)V
 		ARG 2 stack
+	METHOD lambda$dropFromLootTable$9 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 2 itemStack
 	METHOD lambda$dropFromShearingLootTable$12 (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/storage/loot/LootParams$Builder;)Lnet/minecraft/world/level/storage/loot/LootParams;
 		ARG 2 params
 	METHOD lambda$handleEquipmentChanges$19 (Ljava/util/List;Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;)V
@@ -345,12 +345,12 @@ CLASS net/minecraft/world/entity/LivingEntity
 	METHOD onEffectAdded (Lnet/minecraft/world/effect/MobEffectInstance;Lnet/minecraft/world/entity/Entity;)V
 		ARG 1 effect
 		ARG 2 source
-	METHOD onEffectsRemoved (Ljava/util/Collection;)V
-		ARG 1 effects
 	METHOD onEffectUpdated (Lnet/minecraft/world/effect/MobEffectInstance;ZLnet/minecraft/world/entity/Entity;)V
 		ARG 1 effect
 		ARG 2 doRefreshAttributes
 		ARG 3 source
+	METHOD onEffectsRemoved (Ljava/util/Collection;)V
+		ARG 1 effects
 	METHOD onEquipItem (Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)V
 		ARG 1 slot
 		ARG 2 oldStack

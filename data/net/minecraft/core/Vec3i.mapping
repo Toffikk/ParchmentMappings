@@ -13,7 +13,7 @@ CLASS net/minecraft/core/Vec3i
 	METHOD closerToCenterThan (Lnet/minecraft/core/Position;D)Z
 		ARG 1 pos
 		ARG 2 distance
-	METHOD compareTo (Ljava/lang/Object;)I
+	METHOD compareTo (Lnet/minecraft/core/Vec3i;)I
 		ARG 1 pos
 	METHOD cross (Lnet/minecraft/core/Vec3i;)Lnet/minecraft/core/Vec3i;
 		ARG 1 upVector
@@ -63,13 +63,13 @@ CLASS net/minecraft/core/Vec3i
 		ARG 1 vec
 	METHOD offsetCodec (I)Lcom/mojang/serialization/Codec;
 		ARG 0 maxOffsetPerAxis
+	METHOD relative (Lnet/minecraft/core/Direction$Axis;I)Lnet/minecraft/core/Vec3i;
+		ARG 1 axis
+		ARG 2 steps
 	METHOD relative (Lnet/minecraft/core/Direction;)Lnet/minecraft/core/Vec3i;
 		ARG 1 direction
 	METHOD relative (Lnet/minecraft/core/Direction;I)Lnet/minecraft/core/Vec3i;
 		ARG 1 direction
-		ARG 2 steps
-	METHOD relative (Lnet/minecraft/core/Direction$Axis;I)Lnet/minecraft/core/Vec3i;
-		ARG 1 axis
 		ARG 2 steps
 	METHOD setX (I)Lnet/minecraft/core/Vec3i;
 		ARG 1 x

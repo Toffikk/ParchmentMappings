@@ -9,12 +9,12 @@ CLASS net/minecraft/client/multiplayer/chat/report/ChatReportContextBuilder
 		ARG 3 handler
 	METHOD trackContext (Lnet/minecraft/network/chat/PlayerChatMessage;)V
 		ARG 1 message
+	CLASS Handler
+		METHOD accept (ILnet/minecraft/client/multiplayer/chat/LoggedChatMessage$Player;)V
+			ARG 1 id
+			ARG 2 event
 	CLASS Collector
 		METHOD <init> (Lnet/minecraft/client/multiplayer/chat/report/ChatReportContextBuilder;Lnet/minecraft/network/chat/PlayerChatMessage;)V
 			ARG 2 fromMessage
 		METHOD accept (Lnet/minecraft/network/chat/PlayerChatMessage;)Z
 			ARG 1 message
-	CLASS Handler
-		METHOD accept (ILnet/minecraft/client/multiplayer/chat/LoggedChatMessage$Player;)V
-			ARG 1 id
-			ARG 2 event

@@ -4,14 +4,14 @@ CLASS net/minecraft/client/gui/screens/reporting/SkinReportScreen
 		ARG 2 reportingContext
 		ARG 3 playerId
 		ARG 4 skinGetter
-	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;Lnet/minecraft/client/multiplayer/chat/report/ReportingContext;Lnet/minecraft/client/multiplayer/chat/report/SkinReport;)V
-		ARG 1 lastScreen
-		ARG 2 reportingContext
-		ARG 3 draft
 	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;Lnet/minecraft/client/multiplayer/chat/report/ReportingContext;Lnet/minecraft/client/multiplayer/chat/report/SkinReport$Builder;)V
 		ARG 1 lastScreen
 		ARG 2 reportingContext
 		ARG 3 reportBuilder
+	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;Lnet/minecraft/client/multiplayer/chat/report/ReportingContext;Lnet/minecraft/client/multiplayer/chat/report/SkinReport;)V
+		ARG 1 lastScreen
+		ARG 2 reportingContext
+		ARG 3 draft
 	METHOD lambda$addContent$0 (Lnet/minecraft/client/multiplayer/chat/report/ReportReason;)V
 		ARG 1 reason
 	METHOD lambda$addContent$1 (Lnet/minecraft/client/gui/components/Button;)V

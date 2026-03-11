@@ -28,8 +28,6 @@ CLASS net/minecraft/server/commands/CloneCommands
 		ARG 1 c
 	METHOD lambda$destinationAndStrictSuffix$8 (Lnet/minecraft/server/commands/InCommandFunction;Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/server/commands/CloneCommands$DimensionAndPosition;
 		ARG 1 c
-	METHOD lambda$modeSuffix$9 (Lnet/minecraft/world/level/block/state/pattern/BlockInWorld;)Z
-		ARG 0 b
 	METHOD lambda$modeSuffix$10 (Lnet/minecraft/server/commands/InCommandFunction;Lnet/minecraft/server/commands/InCommandFunction;Lnet/minecraft/server/commands/InCommandFunction;ZLcom/mojang/brigadier/context/CommandContext;)I
 		ARG 4 c
 	METHOD lambda$modeSuffix$11 (Lnet/minecraft/world/level/block/state/pattern/BlockInWorld;)Z
@@ -40,6 +38,8 @@ CLASS net/minecraft/server/commands/CloneCommands
 		ARG 0 c
 	METHOD lambda$modeSuffix$14 (Lcom/mojang/brigadier/context/CommandContext;)Ljava/util/function/Predicate;
 		ARG 0 c
+	METHOD lambda$modeSuffix$9 (Lnet/minecraft/world/level/block/state/pattern/BlockInWorld;)Z
+		ARG 0 b
 	METHOD lambda$register$2 (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/server/level/ServerLevel;
 		ARG 0 c
 	METHOD lambda$register$3 (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/server/level/ServerLevel;

@@ -16,27 +16,6 @@ CLASS net/minecraft/gametest/framework/TestEnvironmentDefinition
 			ARG 0 i
 		METHOD lambda$teardown$2 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/Holder;)V
 			ARG 1 b
-	CLASS Functions
-		METHOD lambda$setup$1 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/resources/Identifier;)V
-			ARG 1 p
-		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-			ARG 0 i
-		METHOD lambda$teardown$2 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/resources/Identifier;)V
-			ARG 1 p
-		METHOD run (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/resources/Identifier;)V
-			ARG 0 level
-			ARG 1 functionId
-	CLASS SetGameRules
-		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-			ARG 0 i
-		METHOD lambda$teardown$1 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/gamerules/GameRule;)V
-			ARG 2 gameRule
-		METHOD resetRule (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/gamerules/GameRule;)V
-			ARG 1 level
-			ARG 2 gameRule
-	CLASS TimeOfDay
-		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-			ARG 0 i
 	CLASS Weather
 		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 i
@@ -49,3 +28,24 @@ CLASS net/minecraft/gametest/framework/TestEnvironmentDefinition
 				ARG 7 thundering
 			METHOD apply (Lnet/minecraft/server/level/ServerLevel;)V
 				ARG 1 level
+	CLASS Functions
+		METHOD lambda$setup$1 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/resources/Identifier;)V
+			ARG 1 p
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+		METHOD lambda$teardown$2 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/resources/Identifier;)V
+			ARG 1 p
+		METHOD run (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/resources/Identifier;)V
+			ARG 0 level
+			ARG 1 functionId
+	CLASS TimeOfDay
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+	CLASS SetGameRules
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+		METHOD lambda$teardown$1 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/gamerules/GameRule;)V
+			ARG 2 gameRule
+		METHOD resetRule (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/gamerules/GameRule;)V
+			ARG 1 level
+			ARG 2 gameRule

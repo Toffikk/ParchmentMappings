@@ -20,6 +20,14 @@ CLASS net/minecraft/world/entity/monster/zombie/Drowned
 			ARG 1 drowned
 			ARG 2 speedModifier
 			ARG 4 trackTarget
+	CLASS DrownedSwimUpGoal
+		METHOD <init> (Lnet/minecraft/world/entity/monster/zombie/Drowned;DI)V
+			ARG 1 drowned
+			ARG 2 speedModifier
+			ARG 4 seaLevel
+	CLASS DrownedMoveControl
+		METHOD <init> (Lnet/minecraft/world/entity/monster/zombie/Drowned;)V
+			ARG 1 drowned
 	CLASS DrownedGoToBeachGoal
 		METHOD <init> (Lnet/minecraft/world/entity/monster/zombie/Drowned;D)V
 			ARG 1 drowned
@@ -28,11 +36,3 @@ CLASS net/minecraft/world/entity/monster/zombie/Drowned
 		METHOD <init> (Lnet/minecraft/world/entity/PathfinderMob;D)V
 			ARG 1 mob
 			ARG 2 speedModifier
-	CLASS DrownedMoveControl
-		METHOD <init> (Lnet/minecraft/world/entity/monster/zombie/Drowned;)V
-			ARG 1 drowned
-	CLASS DrownedSwimUpGoal
-		METHOD <init> (Lnet/minecraft/world/entity/monster/zombie/Drowned;DI)V
-			ARG 1 drowned
-			ARG 2 speedModifier
-			ARG 4 seaLevel

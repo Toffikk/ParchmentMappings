@@ -3,6 +3,23 @@ CLASS net/minecraft/client/gui/screens/inventory/StructureBlockEditScreen
 		ARG 1 structure
 	METHOD lambda$init$1 (Lnet/minecraft/client/gui/components/Button;)V
 		ARG 1 button
+	METHOD lambda$init$10 (Lnet/minecraft/client/gui/components/CycleButton;Lnet/minecraft/world/level/block/Mirror;)V
+		ARG 1 button
+		ARG 2 value
+	METHOD lambda$init$11 (Lnet/minecraft/client/gui/components/CycleButton;Ljava/lang/Boolean;)V
+		ARG 1 button
+		ARG 2 value
+	METHOD lambda$init$12 (Lnet/minecraft/client/gui/components/CycleButton;Ljava/lang/Boolean;)V
+		ARG 1 button
+		ARG 2 value
+	METHOD lambda$init$13 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$init$14 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$init$15 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$init$16 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
 	METHOD lambda$init$2 (Lnet/minecraft/client/gui/components/Button;)V
 		ARG 1 button
 	METHOD lambda$init$3 (Lnet/minecraft/client/gui/components/Button;)V
@@ -22,23 +39,6 @@ CLASS net/minecraft/client/gui/screens/inventory/StructureBlockEditScreen
 	METHOD lambda$init$9 (Lnet/minecraft/client/gui/components/CycleButton;Ljava/lang/Boolean;)V
 		ARG 1 button
 		ARG 2 value
-	METHOD lambda$init$10 (Lnet/minecraft/client/gui/components/CycleButton;Lnet/minecraft/world/level/block/Mirror;)V
-		ARG 1 button
-		ARG 2 value
-	METHOD lambda$init$11 (Lnet/minecraft/client/gui/components/CycleButton;Ljava/lang/Boolean;)V
-		ARG 1 button
-		ARG 2 value
-	METHOD lambda$init$12 (Lnet/minecraft/client/gui/components/CycleButton;Ljava/lang/Boolean;)V
-		ARG 1 button
-		ARG 2 value
-	METHOD lambda$init$13 (Lnet/minecraft/client/gui/components/Button;)V
-		ARG 1 button
-	METHOD lambda$init$14 (Lnet/minecraft/client/gui/components/Button;)V
-		ARG 1 button
-	METHOD lambda$init$15 (Lnet/minecraft/client/gui/components/Button;)V
-		ARG 1 button
-	METHOD lambda$init$16 (Lnet/minecraft/client/gui/components/Button;)V
-		ARG 1 button
 	METHOD lambda$static$0 (Lnet/minecraft/world/level/block/state/properties/StructureMode;)Z
 		ARG 0 m
 	METHOD parseCoordinate (Ljava/lang/String;)I

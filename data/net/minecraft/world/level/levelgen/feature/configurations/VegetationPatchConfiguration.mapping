@@ -14,6 +14,8 @@ CLASS net/minecraft/world/level/levelgen/feature/configurations/VegetationPatchC
 		ARG 0 c
 	METHOD lambda$static$1 (Lnet/minecraft/world/level/levelgen/feature/configurations/VegetationPatchConfiguration;)Lnet/minecraft/world/level/levelgen/feature/stateproviders/BlockStateProvider;
 		ARG 0 c
+	METHOD lambda$static$10 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
 	METHOD lambda$static$2 (Lnet/minecraft/world/level/levelgen/feature/configurations/VegetationPatchConfiguration;)Lnet/minecraft/core/Holder;
 		ARG 0 c
 	METHOD lambda$static$3 (Lnet/minecraft/world/level/levelgen/feature/configurations/VegetationPatchConfiguration;)Lnet/minecraft/world/level/levelgen/placement/CaveSurface;
@@ -30,5 +32,3 @@ CLASS net/minecraft/world/level/levelgen/feature/configurations/VegetationPatchC
 		ARG 0 c
 	METHOD lambda$static$9 (Lnet/minecraft/world/level/levelgen/feature/configurations/VegetationPatchConfiguration;)Ljava/lang/Float;
 		ARG 0 c
-	METHOD lambda$static$10 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 i

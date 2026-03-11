@@ -57,13 +57,13 @@ CLASS net/minecraft/server/level/ChunkHolder
 	METHOD updateFutures (Lnet/minecraft/server/level/ChunkMap;Ljava/util/concurrent/Executor;)V
 		ARG 1 scheduler
 		ARG 2 mainThreadExecutor
+	CLASS PlayerProvider
+		METHOD getPlayers (Lnet/minecraft/world/level/ChunkPos;Z)Ljava/util/List;
+			ARG 1 pos
+			ARG 2 borderOnly
 	CLASS LevelChangeListener
 		METHOD onLevelChange (Lnet/minecraft/world/level/ChunkPos;Ljava/util/function/IntSupplier;ILjava/util/function/IntConsumer;)V
 			ARG 1 pos
 			ARG 2 oldLevel
 			ARG 3 newLevel
 			ARG 4 setQueueLevel
-	CLASS PlayerProvider
-		METHOD getPlayers (Lnet/minecraft/world/level/ChunkPos;Z)Ljava/util/List;
-			ARG 1 pos
-			ARG 2 borderOnly

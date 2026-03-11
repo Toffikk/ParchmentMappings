@@ -20,11 +20,11 @@ CLASS net/minecraft/world/entity/animal/turtle/Turtle
 		METHOD <init> (Lnet/minecraft/world/entity/animal/turtle/Turtle;D)V
 			ARG 1 turtle
 			ARG 2 speedModifier
-	CLASS TurtleGoHomeGoal
+	CLASS TurtlePanicGoal
 		METHOD <init> (Lnet/minecraft/world/entity/animal/turtle/Turtle;D)V
 			ARG 1 turtle
 			ARG 2 speedModifier
-	CLASS TurtleGoToWaterGoal
+	CLASS TurtleGoHomeGoal
 		METHOD <init> (Lnet/minecraft/world/entity/animal/turtle/Turtle;D)V
 			ARG 1 turtle
 			ARG 2 speedModifier
@@ -32,10 +32,14 @@ CLASS net/minecraft/world/entity/animal/turtle/Turtle
 		METHOD <init> (Lnet/minecraft/world/entity/animal/turtle/Turtle;D)V
 			ARG 1 turtle
 			ARG 2 speedModifier
+	CLASS TurtleTravelGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/turtle/Turtle;D)V
+			ARG 1 turtle
+			ARG 2 speedModifier
 	CLASS TurtleMoveControl
 		METHOD <init> (Lnet/minecraft/world/entity/animal/turtle/Turtle;)V
 			ARG 1 turtle
-	CLASS TurtlePanicGoal
+	CLASS TurtleGoToWaterGoal
 		METHOD <init> (Lnet/minecraft/world/entity/animal/turtle/Turtle;D)V
 			ARG 1 turtle
 			ARG 2 speedModifier
@@ -48,7 +52,3 @@ CLASS net/minecraft/world/entity/animal/turtle/Turtle
 			ARG 1 turtle
 			ARG 2 speedModifier
 			ARG 4 interval
-	CLASS TurtleTravelGoal
-		METHOD <init> (Lnet/minecraft/world/entity/animal/turtle/Turtle;D)V
-			ARG 1 turtle
-			ARG 2 speedModifier

@@ -13,11 +13,11 @@ CLASS net/minecraft/world/level/chunk/PalettedContainerRO
 		ARG 1 strategy
 	METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buffer
-	CLASS PackedData
-		METHOD <init> (Ljava/util/List;Ljava/util/Optional;)V
-			ARG 1 paletteEntries
-			ARG 2 storage
 	CLASS Unpacker
 		METHOD read (Lnet/minecraft/world/level/chunk/Strategy;Lnet/minecraft/world/level/chunk/PalettedContainerRO$PackedData;)Lcom/mojang/serialization/DataResult;
 			ARG 1 strategy
 			ARG 2 discData
+	CLASS PackedData
+		METHOD <init> (Ljava/util/List;Ljava/util/Optional;)V
+			ARG 1 paletteEntries
+			ARG 2 storage

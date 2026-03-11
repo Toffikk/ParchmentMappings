@@ -44,16 +44,16 @@ CLASS net/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder
 	CLASS Instance
 		METHOD absent (Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;)Lnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder;
 			ARG 1 memory
-		METHOD ap2 (Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;)Lcom/mojang/datafixers/kinds/App;
+		METHOD ap2 (Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;)Lnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder;
 			ARG 1 func
 			ARG 2 a
 			ARG 3 b
-		METHOD ap3 (Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;)Lcom/mojang/datafixers/kinds/App;
+		METHOD ap3 (Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;)Lnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder;
 			ARG 1 func
 			ARG 2 t1
 			ARG 3 t2
 			ARG 4 t3
-		METHOD ap4 (Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;)Lcom/mojang/datafixers/kinds/App;
+		METHOD ap4 (Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;)Lnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder;
 			ARG 1 func
 			ARG 2 t1
 			ARG 3 t2
@@ -67,10 +67,10 @@ CLASS net/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder
 			ARG 2 a
 		METHOD lift1 (Lcom/mojang/datafixers/kinds/App;)Ljava/util/function/Function;
 			ARG 1 function
-		METHOD map (Ljava/util/function/Function;Lcom/mojang/datafixers/kinds/App;)Lcom/mojang/datafixers/kinds/App;
+		METHOD map (Ljava/util/function/Function;Lcom/mojang/datafixers/kinds/App;)Lnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder;
 			ARG 1 func
 			ARG 2 ts
-		METHOD point (Ljava/lang/Object;)Lcom/mojang/datafixers/kinds/App;
+		METHOD point (Ljava/lang/Object;)Lnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder;
 			ARG 1 a
 		METHOD point (Ljava/util/function/Supplier;Ljava/lang/Object;)Lnet/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder;
 			ARG 1 debugString
@@ -84,11 +84,11 @@ CLASS net/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder
 	CLASS PureMemory
 		METHOD <init> (Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryCondition;)V
 			ARG 1 condition
+	CLASS TriggerWrapper
+		METHOD <init> (Lnet/minecraft/world/entity/ai/behavior/declarative/Trigger;)V
+			ARG 1 dependentTrigger
 	CLASS TriggerWithResult
 		METHOD tryTrigger (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;J)Ljava/lang/Object;
 			ARG 1 level
 			ARG 2 body
 			ARG 3 timestamp
-	CLASS TriggerWrapper
-		METHOD <init> (Lnet/minecraft/world/entity/ai/behavior/declarative/Trigger;)V
-			ARG 1 dependentTrigger

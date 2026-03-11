@@ -8,27 +8,17 @@ CLASS com/mojang/realmsclient/gui/screens/configuration/RealmsPlayersTab
 	CLASS HeaderEntry
 		METHOD height (I)I
 			ARG 1 lineHeight
-	CLASS InvitedObjectSelectionList
-		METHOD <init> (Lcom/mojang/realmsclient/gui/screens/configuration/RealmsPlayersTab;II)V
-			ARG 2 width
-			ARG 3 height
-		METHOD lambda$populateList$0 (Lcom/mojang/realmsclient/dto/PlayerInfo;)Lcom/mojang/realmsclient/gui/screens/configuration/RealmsPlayersTab$PlayerEntry;
-			ARG 1 x$0
-		METHOD populateList (Lcom/mojang/realmsclient/dto/RealmsServer;)V
-			ARG 1 serverData
-		METHOD updateList (Lcom/mojang/realmsclient/dto/RealmsServer;)V
-			ARG 1 serverData
 	CLASS PlayerEntry
 		METHOD <init> (Lcom/mojang/realmsclient/gui/screens/configuration/RealmsPlayersTab;Lcom/mojang/realmsclient/dto/PlayerInfo;)V
 			ARG 2 playerInfo
 		METHOD deop (I)V
 			ARG 1 index
-		METHOD lambda$deop$9 (Ljava/util/UUID;Lcom/mojang/realmsclient/client/RealmsClient;)Lcom/mojang/realmsclient/dto/Ops;
-			ARG 2 client
 		METHOD lambda$deop$10 (Lcom/mojang/realmsclient/exception/RealmsServiceException;)V
 			ARG 0 e
 		METHOD lambda$deop$11 (Lcom/mojang/realmsclient/dto/Ops;)V
 			ARG 1 ops
+		METHOD lambda$deop$9 (Ljava/util/UUID;Lcom/mojang/realmsclient/client/RealmsClient;)Lcom/mojang/realmsclient/dto/Ops;
+			ARG 2 client
 		METHOD lambda$new$0 (ILnet/minecraft/client/gui/components/Button;)V
 			ARG 2 button
 		METHOD lambda$new$1 (Lcom/mojang/realmsclient/dto/PlayerInfo;Ljava/util/function/Supplier;)Lnet/minecraft/network/chat/MutableComponent;
@@ -59,3 +49,13 @@ CLASS com/mojang/realmsclient/gui/screens/configuration/RealmsPlayersTab
 			ARG 1 index
 		METHOD updateOps (Lcom/mojang/realmsclient/dto/Ops;)V
 			ARG 1 ops
+	CLASS InvitedObjectSelectionList
+		METHOD <init> (Lcom/mojang/realmsclient/gui/screens/configuration/RealmsPlayersTab;II)V
+			ARG 2 width
+			ARG 3 height
+		METHOD lambda$populateList$0 (Lcom/mojang/realmsclient/dto/PlayerInfo;)Lcom/mojang/realmsclient/gui/screens/configuration/RealmsPlayersTab$PlayerEntry;
+			ARG 1 x$0
+		METHOD populateList (Lcom/mojang/realmsclient/dto/RealmsServer;)V
+			ARG 1 serverData
+		METHOD updateList (Lcom/mojang/realmsclient/dto/RealmsServer;)V
+			ARG 1 serverData

@@ -29,11 +29,18 @@ CLASS com/mojang/blaze3d/framegraph/FrameGraphBuilder
 		ARG 2 passesToFind
 		ARG 3 visiting
 		ARG 4 output
-	CLASS ExternalResource
-		METHOD <init> (Ljava/lang/String;Lcom/mojang/blaze3d/framegraph/FrameGraphBuilder$Pass;Ljava/lang/Object;)V
-			ARG 1 name
-			ARG 2 createdBy
-			ARG 3 resource
+	CLASS Pass
+		METHOD <init> (Lcom/mojang/blaze3d/framegraph/FrameGraphBuilder;ILjava/lang/String;)V
+			ARG 2 id
+			ARG 3 name
+		METHOD _reads (Lcom/mojang/blaze3d/framegraph/FrameGraphBuilder$Handle;)V
+			ARG 1 handle
+		METHOD _readsAndWrites (Lcom/mojang/blaze3d/framegraph/FrameGraphBuilder$Handle;)Lcom/mojang/blaze3d/framegraph/FrameGraphBuilder$Handle;
+			ARG 1 handle
+		METHOD markPassRequired (Lcom/mojang/blaze3d/framegraph/FrameGraphBuilder$Pass;)V
+			ARG 1 pass
+		METHOD markResourceRequired (Lcom/mojang/blaze3d/framegraph/FrameGraphBuilder$Handle;)V
+			ARG 1 handle
 	CLASS Handle
 		METHOD <init> (Lcom/mojang/blaze3d/framegraph/FrameGraphBuilder$VirtualResource;ILcom/mojang/blaze3d/framegraph/FrameGraphBuilder$Pass;)V
 			ARG 1 holder
@@ -50,6 +57,15 @@ CLASS com/mojang/blaze3d/framegraph/FrameGraphBuilder
 			ARG 1 name
 		METHOD releaseResource (Ljava/lang/String;)V
 			ARG 1 name
+	CLASS VirtualResource
+		METHOD <init> (Ljava/lang/String;Lcom/mojang/blaze3d/framegraph/FrameGraphBuilder$Pass;)V
+			ARG 1 name
+			ARG 2 createdBy
+	CLASS ExternalResource
+		METHOD <init> (Ljava/lang/String;Lcom/mojang/blaze3d/framegraph/FrameGraphBuilder$Pass;Ljava/lang/Object;)V
+			ARG 1 name
+			ARG 2 createdBy
+			ARG 3 resource
 	CLASS InternalVirtualResource
 		METHOD <init> (ILjava/lang/String;Lcom/mojang/blaze3d/framegraph/FrameGraphBuilder$Pass;Lcom/mojang/blaze3d/resource/ResourceDescriptor;)V
 			ARG 1 id
@@ -60,19 +76,3 @@ CLASS com/mojang/blaze3d/framegraph/FrameGraphBuilder
 			ARG 1 allocator
 		METHOD release (Lcom/mojang/blaze3d/resource/GraphicsResourceAllocator;)V
 			ARG 1 allocator
-	CLASS Pass
-		METHOD _reads (Lcom/mojang/blaze3d/framegraph/FrameGraphBuilder$Handle;)V
-			ARG 1 handle
-		METHOD _readsAndWrites (Lcom/mojang/blaze3d/framegraph/FrameGraphBuilder$Handle;)Lcom/mojang/blaze3d/framegraph/FrameGraphBuilder$Handle;
-			ARG 1 handle
-		METHOD <init> (Lcom/mojang/blaze3d/framegraph/FrameGraphBuilder;ILjava/lang/String;)V
-			ARG 2 id
-			ARG 3 name
-		METHOD markPassRequired (Lcom/mojang/blaze3d/framegraph/FrameGraphBuilder$Pass;)V
-			ARG 1 pass
-		METHOD markResourceRequired (Lcom/mojang/blaze3d/framegraph/FrameGraphBuilder$Handle;)V
-			ARG 1 handle
-	CLASS VirtualResource
-		METHOD <init> (Ljava/lang/String;Lcom/mojang/blaze3d/framegraph/FrameGraphBuilder$Pass;)V
-			ARG 1 name
-			ARG 2 createdBy

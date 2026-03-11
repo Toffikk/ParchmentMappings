@@ -22,7 +22,7 @@ CLASS net/minecraft/commands/arguments/ResourceSelectorArgument
 	METHOD matches (Ljava/lang/String;Lnet/minecraft/resources/Identifier;)Z
 		ARG 0 pattern
 		ARG 1 key
-	METHOD parse (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
+	METHOD parse (Lcom/mojang/brigadier/StringReader;)Ljava/util/Collection;
 		ARG 1 reader
 	METHOD parse (Lcom/mojang/brigadier/StringReader;Lnet/minecraft/core/HolderLookup;)Ljava/util/Collection;
 		ARG 0 reader

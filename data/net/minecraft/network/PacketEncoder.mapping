@@ -1,7 +1,7 @@
 CLASS net/minecraft/network/PacketEncoder
 	METHOD <init> (Lnet/minecraft/network/ProtocolInfo;)V
 		ARG 1 protocolInfo
-	METHOD encode (Lio/netty/channel/ChannelHandlerContext;Ljava/lang/Object;Lio/netty/buffer/ByteBuf;)V
+	METHOD encode (Lio/netty/channel/ChannelHandlerContext;Lnet/minecraft/network/protocol/Packet;Lio/netty/buffer/ByteBuf;)V
 		ARG 1 ctx
 		ARG 2 packet
 		ARG 3 output

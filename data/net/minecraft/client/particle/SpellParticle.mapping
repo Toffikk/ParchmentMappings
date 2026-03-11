@@ -8,15 +8,15 @@ CLASS net/minecraft/client/particle/SpellParticle
 		ARG 10 ya
 		ARG 12 za
 		ARG 14 sprites
-	CLASS InstantProvider
-		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
-			ARG 1 sprite
-	CLASS MobEffectProvider
-		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
-			ARG 1 sprite
 	CLASS Provider
 		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
 			ARG 1 sprite
 	CLASS WitchProvider
+		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
+			ARG 1 sprite
+	CLASS InstantProvider
+		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
+			ARG 1 sprite
+	CLASS MobEffectProvider
 		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
 			ARG 1 sprite

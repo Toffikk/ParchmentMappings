@@ -43,13 +43,13 @@ CLASS net/minecraft/world/entity/player/Player
 		ARG 5 minHeight
 	METHOD canHarmPlayer (Lnet/minecraft/world/entity/player/Player;)Z
 		ARG 1 target
+	METHOD canPlayerFitWithinBlocksAndEntitiesWhen (Lnet/minecraft/world/entity/Pose;)Z
+		ARG 1 newPose
 	METHOD cannotAttack (Lnet/minecraft/world/entity/Entity;)Z
 		ARG 1 entity
 	METHOD cannotAttackWithItem (Lnet/minecraft/world/item/ItemStack;I)Z
 		ARG 1 itemStack
 		ARG 2 tolerance
-	METHOD canPlayerFitWithinBlocksAndEntitiesWhen (Lnet/minecraft/world/entity/Pose;)Z
-		ARG 1 newPose
 	METHOD causeFoodExhaustion (F)V
 		ARG 1 amount
 	METHOD convertParrotVariant (Ljava/util/Optional;)Ljava/util/OptionalInt;

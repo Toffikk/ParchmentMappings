@@ -33,15 +33,15 @@ CLASS net/minecraft/world/entity/monster/Shulker
 		ARG 1 amount
 	METHOD setVariant (Ljava/util/Optional;)V
 		ARG 1 color
+	CLASS ShulkerLookControl
+		METHOD <init> (Lnet/minecraft/world/entity/monster/Shulker;Lnet/minecraft/world/entity/Mob;)V
+			ARG 2 mob
 	CLASS ShulkerDefenseAttackGoal
 		METHOD <init> (Lnet/minecraft/world/entity/monster/Shulker;)V
 			ARG 1 mob
 		METHOD lambda$new$0 (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/server/level/ServerLevel;)Z
 			ARG 0 input
 			ARG 1 level
-	CLASS ShulkerLookControl
-		METHOD <init> (Lnet/minecraft/world/entity/monster/Shulker;Lnet/minecraft/world/entity/Mob;)V
-			ARG 2 mob
 	CLASS ShulkerNearestAttackGoal
 		METHOD <init> (Lnet/minecraft/world/entity/monster/Shulker;Lnet/minecraft/world/entity/monster/Shulker;)V
 			ARG 2 mob

@@ -127,7 +127,7 @@ CLASS net/minecraft/world/entity/ai/Brain
 		METHOD decode (Lcom/mojang/serialization/DynamicOps;Lcom/mojang/serialization/MapLike;)Lcom/mojang/serialization/DataResult;
 			ARG 1 ops
 			ARG 2 input
-		METHOD encode (Ljava/lang/Object;Lcom/mojang/serialization/DynamicOps;Lcom/mojang/serialization/RecordBuilder;)Lcom/mojang/serialization/RecordBuilder;
+		METHOD encode (Lnet/minecraft/world/entity/ai/Brain;Lcom/mojang/serialization/DynamicOps;Lcom/mojang/serialization/RecordBuilder;)Lcom/mojang/serialization/RecordBuilder;
 			ARG 1 input
 			ARG 2 ops
 			ARG 3 prefix
@@ -149,6 +149,12 @@ CLASS net/minecraft/world/entity/ai/Brain
 			ARG 0 t
 		METHOD lambda$keys$2 (Lcom/mojang/serialization/DynamicOps;Lnet/minecraft/resources/Identifier;)Ljava/lang/Object;
 			ARG 1 l
+	CLASS Provider
+		METHOD <init> (Ljava/util/Collection;Ljava/util/Collection;)V
+			ARG 1 memoryTypes
+			ARG 2 sensorTypes
+		METHOD makeBrain (Lcom/mojang/serialization/Dynamic;)Lnet/minecraft/world/entity/ai/Brain;
+			ARG 1 input
 	CLASS MemoryValue
 		METHOD <init> (Lnet/minecraft/world/entity/ai/memory/MemoryModuleType;Ljava/util/Optional;)V
 			ARG 1 type
@@ -165,9 +171,3 @@ CLASS net/minecraft/world/entity/ai/Brain
 			ARG 2 builder
 		METHOD setMemoryInternal (Lnet/minecraft/world/entity/ai/Brain;)V
 			ARG 1 brain
-	CLASS Provider
-		METHOD <init> (Ljava/util/Collection;Ljava/util/Collection;)V
-			ARG 1 memoryTypes
-			ARG 2 sensorTypes
-		METHOD makeBrain (Lcom/mojang/serialization/Dynamic;)Lnet/minecraft/world/entity/ai/Brain;
-			ARG 1 input

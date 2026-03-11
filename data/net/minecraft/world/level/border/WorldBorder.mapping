@@ -77,6 +77,11 @@ CLASS net/minecraft/world/level/border/WorldBorder
 		ARG 1 warningBlocks
 	METHOD setWarningTime (I)V
 		ARG 1 warningTime
+	CLASS Settings
+		METHOD <init> (Lnet/minecraft/world/level/border/WorldBorder;)V
+			ARG 1 worldBorder
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
 	CLASS BorderExtent
 		METHOD getMaxX (F)D
 			ARG 1 deltaPartialTick
@@ -92,11 +97,6 @@ CLASS net/minecraft/world/level/border/WorldBorder
 			ARG 4 to
 			ARG 6 duration
 			ARG 8 gameTime
-	CLASS Settings
-		METHOD <init> (Lnet/minecraft/world/level/border/WorldBorder;)V
-			ARG 1 worldBorder
-		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-			ARG 0 i
 	CLASS StaticBorderExtent
 		METHOD <init> (Lnet/minecraft/world/level/border/WorldBorder;D)V
 			ARG 2 size

@@ -8,17 +8,17 @@ CLASS net/minecraft/commands/arguments/item/FunctionArgument
 	METHOD getFunctionOrTag (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lcom/mojang/datafixers/util/Pair;
 		ARG 0 context
 		ARG 1 name
-	METHOD getFunctions (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Ljava/util/Collection;
-		ARG 0 context
-		ARG 1 name
 	METHOD getFunctionTag (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/resources/Identifier;)Ljava/util/Collection;
 		ARG 0 c
 		ARG 1 id
+	METHOD getFunctions (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Ljava/util/Collection;
+		ARG 0 context
+		ARG 1 name
 	METHOD lambda$static$0 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 tag
 	METHOD lambda$static$1 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 value
-	METHOD parse (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
+	METHOD parse (Lcom/mojang/brigadier/StringReader;)Lnet/minecraft/commands/arguments/item/FunctionArgument$Result;
 		ARG 1 reader
 	CLASS Result
 		METHOD create (Lcom/mojang/brigadier/context/CommandContext;)Ljava/util/Collection;

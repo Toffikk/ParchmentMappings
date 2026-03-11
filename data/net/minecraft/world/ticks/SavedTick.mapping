@@ -17,8 +17,8 @@ CLASS net/minecraft/world/ticks/SavedTick
 		ARG 1 currentTick
 		ARG 3 currentSubTick
 	CLASS 1
-		METHOD equals (Ljava/lang/Object;Ljava/lang/Object;)Z
+		METHOD equals (Lnet/minecraft/world/ticks/SavedTick;Lnet/minecraft/world/ticks/SavedTick;)Z
 			ARG 1 a
 			ARG 2 b
-		METHOD hashCode (Ljava/lang/Object;)I
+		METHOD hashCode (Lnet/minecraft/world/ticks/SavedTick;)I
 			ARG 1 o

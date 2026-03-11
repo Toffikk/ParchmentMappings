@@ -13,8 +13,8 @@ CLASS net/minecraft/commands/arguments/blocks/BlockInput
 		ARG 1 level
 		ARG 2 pos
 		ARG 3 update
-	METHOD test (Ljava/lang/Object;)Z
-		ARG 1 blockInWorld
 	METHOD test (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 level
 		ARG 2 pos
+	METHOD test (Lnet/minecraft/world/level/block/state/pattern/BlockInWorld;)Z
+		ARG 1 blockInWorld

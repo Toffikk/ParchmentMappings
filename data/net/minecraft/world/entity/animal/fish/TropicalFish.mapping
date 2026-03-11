@@ -35,10 +35,10 @@ CLASS net/minecraft/world/entity/animal/fish/TropicalFish
 			ARG 5 index
 		METHOD byId (I)Lnet/minecraft/world/entity/animal/fish/TropicalFish$Pattern;
 			ARG 0 packedId
+	CLASS Variant
+		METHOD <init> (I)V
+			ARG 1 packedId
 	CLASS TropicalFishGroupData
 		METHOD <init> (Lnet/minecraft/world/entity/animal/fish/TropicalFish;Lnet/minecraft/world/entity/animal/fish/TropicalFish$Variant;)V
 			ARG 1 leader
 			ARG 2 variant
-	CLASS Variant
-		METHOD <init> (I)V
-			ARG 1 packedId

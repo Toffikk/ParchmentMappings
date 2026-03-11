@@ -188,12 +188,12 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 1 respawnData
 	METHOD setSingleplayerProfile (Lcom/mojang/authlib/GameProfile;)V
 		ARG 1 singleplayerProfile
-	METHOD setupDebugLevel (Lnet/minecraft/world/level/storage/WorldData;)V
-		ARG 1 worldData
 	METHOD setUsesAuthentication (Z)V
 		ARG 1 onlineMode
 	METHOD setUsingWhitelist (Z)V
 		ARG 1 usingWhitelist
+	METHOD setupDebugLevel (Lnet/minecraft/world/level/storage/WorldData;)V
+		ARG 1 worldData
 	METHOD spin (Ljava/util/function/Function;)Lnet/minecraft/server/MinecraftServer;
 		ARG 0 factory
 	METHOD startRecordingMetrics (Ljava/util/function/Consumer;Ljava/util/function/Consumer;)V

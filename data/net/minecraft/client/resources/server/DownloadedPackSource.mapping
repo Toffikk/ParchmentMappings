@@ -8,13 +8,13 @@ CLASS net/minecraft/client/resources/server/DownloadedPackSource
 		ARG 2 packPromptStatus
 	METHOD configureSource (Ljava/util/List;)Lnet/minecraft/server/packs/repository/RepositorySource;
 		ARG 0 packs
+	METHOD createDownloadNotifier (I)Lnet/minecraft/util/HttpUtil$DownloadProgressListener;
+		ARG 1 totalCount
 	METHOD createDownloader (Lnet/minecraft/server/packs/DownloadQueue;Ljava/util/concurrent/Executor;Lnet/minecraft/client/User;Ljava/net/Proxy;)Lnet/minecraft/client/resources/server/PackDownloader;
 		ARG 1 downloadQueue
 		ARG 2 mainThreadExecutor
 		ARG 3 user
 		ARG 4 proxy
-	METHOD createDownloadNotifier (I)Lnet/minecraft/util/HttpUtil$DownloadProgressListener;
-		ARG 1 totalCount
 	METHOD createPackResponseSender (Lnet/minecraft/network/Connection;)Lnet/minecraft/client/resources/server/PackLoadFeedback;
 		ARG 0 connection
 	METHOD createUpdateScheduler (Ljava/util/concurrent/Executor;)Ljava/lang/Runnable;

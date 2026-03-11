@@ -83,15 +83,6 @@ CLASS net/minecraft/world/entity/projectile/Projectile
 		ARG 4 yOffset
 		ARG 5 pow
 		ARG 6 uncertainty
-	METHOD spawnProjectileUsingShoot (Lnet/minecraft/world/entity/projectile/Projectile;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/item/ItemStack;DDDFF)Lnet/minecraft/world/entity/projectile/Projectile;
-		ARG 0 projectile
-		ARG 1 serverLevel
-		ARG 2 itemStack
-		ARG 3 targetX
-		ARG 5 targetY
-		ARG 7 targetZ
-		ARG 9 pow
-		ARG 10 uncertainty
 	METHOD spawnProjectileUsingShoot (Lnet/minecraft/world/entity/projectile/Projectile$ProjectileFactory;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/LivingEntity;DDDFF)Lnet/minecraft/world/entity/projectile/Projectile;
 		ARG 0 creator
 		ARG 1 serverLevel
@@ -102,6 +93,15 @@ CLASS net/minecraft/world/entity/projectile/Projectile
 		ARG 8 targetZ
 		ARG 10 pow
 		ARG 11 uncertainty
+	METHOD spawnProjectileUsingShoot (Lnet/minecraft/world/entity/projectile/Projectile;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/item/ItemStack;DDDFF)Lnet/minecraft/world/entity/projectile/Projectile;
+		ARG 0 projectile
+		ARG 1 serverLevel
+		ARG 2 itemStack
+		ARG 3 targetX
+		ARG 5 targetY
+		ARG 7 targetZ
+		ARG 9 pow
+		ARG 10 uncertainty
 	CLASS ProjectileFactory
 		METHOD create (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/entity/projectile/Projectile;
 			ARG 1 level

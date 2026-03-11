@@ -18,11 +18,11 @@ CLASS net/minecraft/client/renderer/entity/layers/HumanoidArmorLayer
 		ARG 4 slot
 		ARG 5 lightCoords
 		ARG 6 state
-	METHOD shouldRender (Lnet/minecraft/world/item/equipment/Equippable;Lnet/minecraft/world/entity/EquipmentSlot;)Z
-		ARG 0 equippable
-		ARG 1 slot
 	METHOD shouldRender (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/EquipmentSlot;)Z
 		ARG 0 itemStack
+		ARG 1 slot
+	METHOD shouldRender (Lnet/minecraft/world/item/equipment/Equippable;Lnet/minecraft/world/entity/EquipmentSlot;)Z
+		ARG 0 equippable
 		ARG 1 slot
 	METHOD usesInnerModel (Lnet/minecraft/world/entity/EquipmentSlot;)Z
 		ARG 1 slot

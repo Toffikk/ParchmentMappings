@@ -3,6 +3,10 @@ CLASS net/minecraft/server/commands/FetchProfileCommand
 		ARG 0 c
 	METHOD lambda$register$1 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 c
+	METHOD lambda$reportResolvedProfile$10 (Lnet/minecraft/world/item/component/ResolvableProfile;Lnet/minecraft/commands/CommandSourceStack;Ljava/lang/String;Lnet/minecraft/network/chat/Component;Lnet/minecraft/nbt/Tag;)V
+		ARG 4 encodedProfile
+	METHOD lambda$reportResolvedProfile$11 (Lnet/minecraft/commands/CommandSourceStack;Lcom/mojang/serialization/DataResult$Error;)V
+		ARG 1 error
 	METHOD lambda$reportResolvedProfile$2 (Ljava/lang/String;Lnet/minecraft/network/chat/Style;)Lnet/minecraft/network/chat/Style;
 		ARG 1 s
 	METHOD lambda$reportResolvedProfile$3 (Ljava/lang/String;Lnet/minecraft/network/chat/Style;)Lnet/minecraft/network/chat/Style;
@@ -17,10 +21,6 @@ CLASS net/minecraft/server/commands/FetchProfileCommand
 		ARG 5 encodedComponent
 	METHOD lambda$reportResolvedProfile$9 (Lnet/minecraft/commands/CommandSourceStack;Lcom/mojang/serialization/DataResult$Error;)V
 		ARG 1 componentEncodingError
-	METHOD lambda$reportResolvedProfile$10 (Lnet/minecraft/world/item/component/ResolvableProfile;Lnet/minecraft/commands/CommandSourceStack;Ljava/lang/String;Lnet/minecraft/network/chat/Component;Lnet/minecraft/nbt/Tag;)V
-		ARG 4 encodedProfile
-	METHOD lambda$reportResolvedProfile$11 (Lnet/minecraft/commands/CommandSourceStack;Lcom/mojang/serialization/DataResult$Error;)V
-		ARG 1 error
 	METHOD lambda$resolveId$16 (Lnet/minecraft/commands/CommandSourceStack;Lnet/minecraft/network/chat/Component;Lcom/mojang/authlib/GameProfile;)V
 		ARG 2 profile
 	METHOD lambda$resolveName$12 (Lnet/minecraft/commands/CommandSourceStack;Lnet/minecraft/network/chat/Component;Lcom/mojang/authlib/GameProfile;)V

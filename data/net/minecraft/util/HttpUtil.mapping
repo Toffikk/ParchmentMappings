@@ -1,8 +1,8 @@
 CLASS net/minecraft/util/HttpUtil
 	CLASS DownloadProgressListener
-		METHOD downloadedBytes (J)V
-			ARG 1 bytesSoFar
 		METHOD downloadStart (Ljava/util/OptionalLong;)V
 			ARG 1 sizeBytes
+		METHOD downloadedBytes (J)V
+			ARG 1 bytesSoFar
 		METHOD requestFinished (Z)V
 			ARG 1 success

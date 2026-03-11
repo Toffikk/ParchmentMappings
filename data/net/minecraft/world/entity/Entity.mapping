@@ -138,6 +138,10 @@ CLASS net/minecraft/world/entity/Entity
 		ARG 2 boundingBox
 		ARG 3 level
 		ARG 4 entityColliders
+	METHOD collideWithShapes (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/AABB;Ljava/util/List;)Lnet/minecraft/world/phys/Vec3;
+		ARG 0 movement
+		ARG 1 boundingBox
+		ARG 2 shapes
 	METHOD collidedWithFluid (Lnet/minecraft/world/level/material/FluidState;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;)Z
 		ARG 1 fluidState
 		ARG 2 blockPos
@@ -147,10 +151,6 @@ CLASS net/minecraft/world/entity/Entity
 		ARG 1 from
 		ARG 2 to
 		ARG 3 aabbs
-	METHOD collideWithShapes (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/AABB;Ljava/util/List;)Lnet/minecraft/world/phys/Vec3;
-		ARG 0 movement
-		ARG 1 boundingBox
-		ARG 2 shapes
 	METHOD considersEntityAsAlly (Lnet/minecraft/world/entity/Entity;)Z
 		ARG 1 other
 	METHOD copyPosition (Lnet/minecraft/world/entity/Entity;)V
@@ -415,12 +415,12 @@ CLASS net/minecraft/world/entity/Entity
 	METHOD makeStuckInBlock (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/phys/Vec3;)V
 		ARG 1 blockState
 		ARG 2 speedMultiplier
-	METHOD maybeBackOffFromEdge (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/entity/MoverType;)Lnet/minecraft/world/phys/Vec3;
-		ARG 1 delta
-		ARG 2 moverType
 	METHOD mayInteract (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 level
 		ARG 2 pos
+	METHOD maybeBackOffFromEdge (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/entity/MoverType;)Lnet/minecraft/world/phys/Vec3;
+		ARG 1 delta
+		ARG 2 moverType
 	METHOD mirror (Lnet/minecraft/world/level/block/Mirror;)F
 		ARG 1 mirror
 	METHOD move (Lnet/minecraft/world/entity/MoverType;Lnet/minecraft/world/phys/Vec3;)V
@@ -446,9 +446,9 @@ CLASS net/minecraft/world/entity/Entity
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-	METHOD notifyLeasheeRemoved (Lnet/minecraft/world/entity/Leashable;)V
-		ARG 1 entity
 	METHOD notifyLeashHolder (Lnet/minecraft/world/entity/Leashable;)V
+		ARG 1 entity
+	METHOD notifyLeasheeRemoved (Lnet/minecraft/world/entity/Leashable;)V
 		ARG 1 entity
 	METHOD onAboveBubbleColumn (ZLnet/minecraft/core/BlockPos;)V
 		ARG 1 dragDown
@@ -472,8 +472,6 @@ CLASS net/minecraft/world/entity/Entity
 	METHOD playCombinationStepSounds (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockState;)V
 		ARG 1 primaryStepSound
 		ARG 2 secondaryStepSound
-	METHOD playerTouch (Lnet/minecraft/world/entity/player/Player;)V
-		ARG 1 player
 	METHOD playMuffledStepSound (Lnet/minecraft/world/level/block/state/BlockState;)V
 		ARG 1 blockState
 	METHOD playSound (Lnet/minecraft/sounds/SoundEvent;)V
@@ -487,6 +485,8 @@ CLASS net/minecraft/world/entity/Entity
 		ARG 2 blockState
 	METHOD playSwimSound (F)V
 		ARG 1 volume
+	METHOD playerTouch (Lnet/minecraft/world/entity/player/Player;)V
+		ARG 1 player
 	METHOD positionRider (Lnet/minecraft/world/entity/Entity;)V
 		ARG 1 passenger
 	METHOD positionRider (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/entity/Entity$MoveFunction;)V
@@ -591,12 +591,12 @@ CLASS net/minecraft/world/entity/Entity
 		ARG 5 z
 	METHOD setPos (Lnet/minecraft/world/phys/Vec3;)V
 		ARG 1 pos
-	METHOD setPose (Lnet/minecraft/world/entity/Pose;)V
-		ARG 1 pose
 	METHOD setPosRaw (DDD)V
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
+	METHOD setPose (Lnet/minecraft/world/entity/Pose;)V
+		ARG 1 pose
 	METHOD setRemainingFireTicks (I)V
 		ARG 1 remainingTicks
 	METHOD setRequiresPrecisePosition (Z)V
@@ -753,12 +753,6 @@ CLASS net/minecraft/world/entity/Entity
 	METHOD walkingStepSound (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V
 		ARG 1 onPos
 		ARG 2 onState
-	CLASS MoveFunction
-		METHOD accept (Lnet/minecraft/world/entity/Entity;DDD)V
-			ARG 1 target
-			ARG 2 x
-			ARG 4 y
-			ARG 6 z
 	CLASS Movement
 		METHOD <init> (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;)V
 			ARG 1 from
@@ -767,11 +761,17 @@ CLASS net/minecraft/world/entity/Entity
 			ARG 1 from
 			ARG 2 to
 			ARG 3 axisDependentOriginalMovement
-	CLASS MovementEmission
-		METHOD <init> (Ljava/lang/String;IZZ)V
-			ARG 3 sounds
-			ARG 4 events
+	CLASS MoveFunction
+		METHOD accept (Lnet/minecraft/world/entity/Entity;DDD)V
+			ARG 1 target
+			ARG 2 x
+			ARG 4 y
+			ARG 6 z
 	CLASS RemovalReason
 		METHOD <init> (Ljava/lang/String;IZZ)V
 			ARG 3 destroy
 			ARG 4 save
+	CLASS MovementEmission
+		METHOD <init> (Ljava/lang/String;IZZ)V
+			ARG 3 sounds
+			ARG 4 events

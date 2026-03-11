@@ -82,12 +82,12 @@ CLASS net/minecraft/world/phys/shapes/Shapes
 		ARG 0 shape
 		ARG 1 occluder
 		ARG 2 direction
-	METHOD or (Lnet/minecraft/world/phys/shapes/VoxelShape;[Lnet/minecraft/world/phys/shapes/VoxelShape;)Lnet/minecraft/world/phys/shapes/VoxelShape;
-		ARG 0 first
-		ARG 1 tail
 	METHOD or (Lnet/minecraft/world/phys/shapes/VoxelShape;Lnet/minecraft/world/phys/shapes/VoxelShape;)Lnet/minecraft/world/phys/shapes/VoxelShape;
 		ARG 0 first
 		ARG 1 second
+	METHOD or (Lnet/minecraft/world/phys/shapes/VoxelShape;[Lnet/minecraft/world/phys/shapes/VoxelShape;)Lnet/minecraft/world/phys/shapes/VoxelShape;
+		ARG 0 first
+		ARG 1 tail
 	METHOD rotate (Lnet/minecraft/world/phys/shapes/VoxelShape;Lcom/mojang/math/OctahedralGroup;)Lnet/minecraft/world/phys/shapes/VoxelShape;
 		ARG 0 shape
 		ARG 1 rotation

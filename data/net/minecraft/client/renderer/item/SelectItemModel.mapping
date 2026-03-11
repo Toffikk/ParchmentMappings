@@ -2,15 +2,6 @@ CLASS net/minecraft/client/renderer/item/SelectItemModel
 	METHOD <init> (Lnet/minecraft/client/renderer/item/properties/select/SelectItemModelProperty;Lnet/minecraft/client/renderer/item/SelectItemModel$ModelSelector;)V
 		ARG 1 property
 		ARG 2 models
-	CLASS ModelSelector
-		METHOD get (Ljava/lang/Object;Lnet/minecraft/client/multiplayer/ClientLevel;)Lnet/minecraft/client/renderer/item/ItemModel;
-			ARG 1 value
-			ARG 2 context
-	CLASS SwitchCase
-		METHOD codec (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
-			ARG 0 valueCodec
-		METHOD lambda$codec$0 (Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-			ARG 1 i
 	CLASS Unbaked
 		METHOD lambda$bake$1 (Lnet/minecraft/client/renderer/item/ItemModel$BakingContext;Lnet/minecraft/client/renderer/item/ItemModel$Unbaked;)Lnet/minecraft/client/renderer/item/ItemModel;
 			ARG 1 m
@@ -18,6 +9,15 @@ CLASS net/minecraft/client/renderer/item/SelectItemModel
 			ARG 1 m
 		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 i
+	CLASS SwitchCase
+		METHOD codec (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
+			ARG 0 valueCodec
+		METHOD lambda$codec$0 (Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 1 i
+	CLASS ModelSelector
+		METHOD get (Ljava/lang/Object;Lnet/minecraft/client/multiplayer/ClientLevel;)Lnet/minecraft/client/renderer/item/ItemModel;
+			ARG 1 value
+			ARG 2 context
 	CLASS UnbakedSwitch
 		METHOD bake (Lnet/minecraft/client/renderer/item/ItemModel$BakingContext;Lnet/minecraft/client/renderer/item/ItemModel;)Lnet/minecraft/client/renderer/item/ItemModel;
 			ARG 1 context

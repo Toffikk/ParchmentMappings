@@ -19,14 +19,14 @@ CLASS net/minecraft/world/entity/raid/Raider
 		ARG 1 ticksOutsideRaid
 	METHOD setWave (I)V
 		ARG 1 wave
+	CLASS RaiderCelebration
+		METHOD <init> (Lnet/minecraft/world/entity/raid/Raider;Lnet/minecraft/world/entity/raid/Raider;)V
+			ARG 2 mob
 	CLASS HoldGroundAttackGoal
 		METHOD <init> (Lnet/minecraft/world/entity/monster/illager/AbstractIllager;F)V
 			ARG 1 mob
 			ARG 2 hostileRadius
 	CLASS ObtainRaidLeaderBannerGoal
-		METHOD <init> (Lnet/minecraft/world/entity/raid/Raider;Lnet/minecraft/world/entity/raid/Raider;)V
-			ARG 2 mob
-	CLASS RaiderCelebration
 		METHOD <init> (Lnet/minecraft/world/entity/raid/Raider;Lnet/minecraft/world/entity/raid/Raider;)V
 			ARG 2 mob
 	CLASS RaiderMoveThroughVillageGoal

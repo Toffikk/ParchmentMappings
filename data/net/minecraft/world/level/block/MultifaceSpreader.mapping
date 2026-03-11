@@ -65,15 +65,11 @@ CLASS net/minecraft/world/level/block/MultifaceSpreader
 		ARG 1 level
 		ARG 2 spreadPos
 		ARG 3 postProcess
-	CLASS DefaultSpreaderConfig
-		METHOD <init> (Lnet/minecraft/world/level/block/MultifaceBlock;)V
-			ARG 1 block
-		METHOD stateCanBeReplaced (Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;Lnet/minecraft/world/level/block/state/BlockState;)Z
-			ARG 1 level
-			ARG 2 sourcePos
-			ARG 3 placementPos
-			ARG 4 placementDirection
-			ARG 5 existingState
+	CLASS SpreadType
+		METHOD getSpreadPos (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;Lnet/minecraft/core/Direction;)Lnet/minecraft/world/level/block/MultifaceSpreader$SpreadPos;
+			ARG 1 pos
+			ARG 2 spreadDirection
+			ARG 3 fromFace
 	CLASS SpreadConfig
 		METHOD canSpreadFrom (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/Direction;)Z
 			ARG 1 state
@@ -102,8 +98,12 @@ CLASS net/minecraft/world/level/block/MultifaceSpreader
 			ARG 1 level
 			ARG 2 sourcePos
 			ARG 3 spreadPos
-	CLASS SpreadType
-		METHOD getSpreadPos (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;Lnet/minecraft/core/Direction;)Lnet/minecraft/world/level/block/MultifaceSpreader$SpreadPos;
-			ARG 1 pos
-			ARG 2 spreadDirection
-			ARG 3 fromFace
+	CLASS DefaultSpreaderConfig
+		METHOD <init> (Lnet/minecraft/world/level/block/MultifaceBlock;)V
+			ARG 1 block
+		METHOD stateCanBeReplaced (Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;Lnet/minecraft/world/level/block/state/BlockState;)Z
+			ARG 1 level
+			ARG 2 sourcePos
+			ARG 3 placementPos
+			ARG 4 placementDirection
+			ARG 5 existingState

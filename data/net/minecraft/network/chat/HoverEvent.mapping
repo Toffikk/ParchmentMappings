@@ -8,6 +8,17 @@ CLASS net/minecraft/network/chat/HoverEvent
 			ARG 5 codec
 		METHOD filterForSerialization (Lnet/minecraft/network/chat/HoverEvent$Action;)Lcom/mojang/serialization/DataResult;
 			ARG 0 action
+	CLASS ShowItem
+		METHOD <init> (Lnet/minecraft/world/item/ItemStack;)V
+			ARG 1 item
+		METHOD equals (Ljava/lang/Object;)Z
+			ARG 1 obj
+	CLASS ShowText
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+	CLASS ShowEntity
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
 	CLASS EntityTooltipInfo
 		METHOD <init> (Lnet/minecraft/world/entity/EntityType;Ljava/util/UUID;Ljava/util/Optional;)V
 			ARG 1 type
@@ -26,15 +37,4 @@ CLASS net/minecraft/network/chat/HoverEvent
 		METHOD lambda$static$2 (Lnet/minecraft/network/chat/HoverEvent$EntityTooltipInfo;)Ljava/util/Optional;
 			ARG 0 o
 		METHOD lambda$static$3 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-			ARG 0 i
-	CLASS ShowEntity
-		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-			ARG 0 i
-	CLASS ShowItem
-		METHOD <init> (Lnet/minecraft/world/item/ItemStack;)V
-			ARG 1 item
-		METHOD equals (Ljava/lang/Object;)Z
-			ARG 1 obj
-	CLASS ShowText
-		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 i

@@ -10,10 +10,6 @@ CLASS net/minecraft/client/gui/screens/packs/TransferableSelectionList
 	METHOD updateList (Ljava/util/stream/Stream;Lnet/minecraft/client/gui/screens/packs/PackSelectionModel$EntryBase;)V
 		ARG 1 entries
 		ARG 2 transferredEntry
-	CLASS HeaderEntry
-		METHOD <init> (Lnet/minecraft/client/gui/screens/packs/TransferableSelectionList;Lnet/minecraft/client/gui/Font;Lnet/minecraft/network/chat/Component;)V
-			ARG 2 font
-			ARG 3 text
 	CLASS PackEntry
 		METHOD <init> (Lnet/minecraft/client/gui/screens/packs/TransferableSelectionList;Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/screens/packs/TransferableSelectionList;Lnet/minecraft/client/gui/screens/packs/PackSelectionModel$Entry;)V
 			ARG 2 minecraft
@@ -23,3 +19,7 @@ CLASS net/minecraft/client/gui/screens/packs/TransferableSelectionList
 			ARG 1 result
 		METHOD lambda$shouldTakeFocusAfterInteraction$1 (Lnet/minecraft/client/gui/screens/packs/TransferableSelectionList$Entry;)Z
 			ARG 1 entry
+	CLASS HeaderEntry
+		METHOD <init> (Lnet/minecraft/client/gui/screens/packs/TransferableSelectionList;Lnet/minecraft/client/gui/Font;Lnet/minecraft/network/chat/Component;)V
+			ARG 2 font
+			ARG 3 text

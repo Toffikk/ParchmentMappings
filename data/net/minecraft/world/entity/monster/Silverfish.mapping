@@ -5,9 +5,9 @@ CLASS net/minecraft/world/entity/monster/Silverfish
 		ARG 2 spawnReason
 		ARG 3 pos
 		ARG 4 random
-	CLASS SilverfishMergeWithStoneGoal
+	CLASS SilverfishWakeUpFriendsGoal
 		METHOD <init> (Lnet/minecraft/world/entity/monster/Silverfish;)V
 			ARG 1 silverfish
-	CLASS SilverfishWakeUpFriendsGoal
+	CLASS SilverfishMergeWithStoneGoal
 		METHOD <init> (Lnet/minecraft/world/entity/monster/Silverfish;)V
 			ARG 1 silverfish

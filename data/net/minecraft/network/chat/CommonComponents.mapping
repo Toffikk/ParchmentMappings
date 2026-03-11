@@ -7,9 +7,9 @@ CLASS net/minecraft/network/chat/CommonComponents
 		ARG 0 value
 	METHOD joinForNarration ([Lnet/minecraft/network/chat/Component;)Lnet/minecraft/network/chat/MutableComponent;
 		ARG 0 components
-	METHOD joinLines ([Lnet/minecraft/network/chat/Component;)Lnet/minecraft/network/chat/Component;
-		ARG 0 lines
 	METHOD joinLines (Ljava/util/Collection;)Lnet/minecraft/network/chat/Component;
+		ARG 0 lines
+	METHOD joinLines ([Lnet/minecraft/network/chat/Component;)Lnet/minecraft/network/chat/Component;
 		ARG 0 lines
 	METHOD minutes (J)Lnet/minecraft/network/chat/MutableComponent;
 		ARG 0 value

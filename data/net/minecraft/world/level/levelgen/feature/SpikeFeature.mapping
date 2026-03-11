@@ -28,5 +28,5 @@ CLASS net/minecraft/world/level/levelgen/feature/SpikeFeature
 		METHOD lambda$static$5 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 i
 	CLASS SpikeCacheLoader
-		METHOD load (Ljava/lang/Object;)Ljava/lang/Object;
+		METHOD load (Ljava/lang/Long;)Ljava/util/List;
 			ARG 1 seed

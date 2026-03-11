@@ -7,22 +7,6 @@ CLASS net/minecraft/world/timeline/Timelines
 		ARG 1 track
 	METHOD lambda$bootstrap$1 (Lnet/minecraft/util/EasingType;Lnet/minecraft/util/KeyframeTrack$Builder;)V
 		ARG 1 track
-	METHOD lambda$bootstrap$2 (Lnet/minecraft/util/EasingType;Lnet/minecraft/util/KeyframeTrack$Builder;)V
-		ARG 1 track
-	METHOD lambda$bootstrap$3 (Lnet/minecraft/util/KeyframeTrack$Builder;)V
-		ARG 0 track
-	METHOD lambda$bootstrap$4 (Lnet/minecraft/util/KeyframeTrack$Builder;)V
-		ARG 0 track
-	METHOD lambda$bootstrap$5 (Lnet/minecraft/util/KeyframeTrack$Builder;)V
-		ARG 0 track
-	METHOD lambda$bootstrap$6 (Lnet/minecraft/util/KeyframeTrack$Builder;)V
-		ARG 0 track
-	METHOD lambda$bootstrap$7 (Lnet/minecraft/util/KeyframeTrack$Builder;)V
-		ARG 0 track
-	METHOD lambda$bootstrap$8 (Lnet/minecraft/util/KeyframeTrack$Builder;)V
-		ARG 0 track
-	METHOD lambda$bootstrap$9 (Lnet/minecraft/util/KeyframeTrack$Builder;)V
-		ARG 0 track
 	METHOD lambda$bootstrap$10 (Lnet/minecraft/util/KeyframeTrack$Builder;)V
 		ARG 0 track
 	METHOD lambda$bootstrap$11 (Lnet/minecraft/util/KeyframeTrack$Builder;)V
@@ -43,9 +27,25 @@ CLASS net/minecraft/world/timeline/Timelines
 		ARG 0 track
 	METHOD lambda$bootstrap$19 (Lnet/minecraft/util/KeyframeTrack$Builder;)V
 		ARG 0 track
+	METHOD lambda$bootstrap$2 (Lnet/minecraft/util/EasingType;Lnet/minecraft/util/KeyframeTrack$Builder;)V
+		ARG 1 track
 	METHOD lambda$bootstrap$20 (Lnet/minecraft/util/KeyframeTrack$Builder;)V
 		ARG 0 track
 	METHOD lambda$bootstrap$21 (Lnet/minecraft/util/KeyframeTrack$Builder;)V
 		ARG 0 track
 	METHOD lambda$bootstrap$22 (Lnet/minecraft/util/KeyframeTrack$Builder;)V
+		ARG 0 track
+	METHOD lambda$bootstrap$3 (Lnet/minecraft/util/KeyframeTrack$Builder;)V
+		ARG 0 track
+	METHOD lambda$bootstrap$4 (Lnet/minecraft/util/KeyframeTrack$Builder;)V
+		ARG 0 track
+	METHOD lambda$bootstrap$5 (Lnet/minecraft/util/KeyframeTrack$Builder;)V
+		ARG 0 track
+	METHOD lambda$bootstrap$6 (Lnet/minecraft/util/KeyframeTrack$Builder;)V
+		ARG 0 track
+	METHOD lambda$bootstrap$7 (Lnet/minecraft/util/KeyframeTrack$Builder;)V
+		ARG 0 track
+	METHOD lambda$bootstrap$8 (Lnet/minecraft/util/KeyframeTrack$Builder;)V
+		ARG 0 track
+	METHOD lambda$bootstrap$9 (Lnet/minecraft/util/KeyframeTrack$Builder;)V
 		ARG 0 track

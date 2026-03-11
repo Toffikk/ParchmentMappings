@@ -17,9 +17,9 @@ CLASS net/minecraft/server/commands/WaypointCommand
 		ARG 0 c
 	METHOD lambda$resetWaypointColor$12 (Lnet/minecraft/world/waypoints/Waypoint$Icon;)V
 		ARG 0 icon
-	METHOD lambda$setWaypointColor$8 (Lnet/minecraft/ChatFormatting;Lnet/minecraft/world/waypoints/Waypoint$Icon;)V
-		ARG 1 icon
 	METHOD lambda$setWaypointColor$10 (Ljava/lang/Integer;Lnet/minecraft/world/waypoints/Waypoint$Icon;)V
+		ARG 1 icon
+	METHOD lambda$setWaypointColor$8 (Lnet/minecraft/ChatFormatting;Lnet/minecraft/world/waypoints/Waypoint$Icon;)V
 		ARG 1 icon
 	METHOD lambda$setWaypointStyle$6 (Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/world/waypoints/Waypoint$Icon;)V
 		ARG 1 icon

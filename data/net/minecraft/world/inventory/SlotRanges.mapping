@@ -12,13 +12,13 @@ CLASS net/minecraft/world/inventory/SlotRanges
 		ARG 0 output
 		ARG 1 name
 		ARG 2 values
-	METHOD create (Ljava/lang/String;[I)Lnet/minecraft/world/inventory/SlotRange;
-		ARG 0 name
-		ARG 1 ids
 	METHOD create (Ljava/lang/String;I)Lnet/minecraft/world/inventory/SlotRange;
 		ARG 0 name
 		ARG 1 id
 	METHOD create (Ljava/lang/String;Lit/unimi/dsi/fastutil/ints/IntList;)Lnet/minecraft/world/inventory/SlotRange;
+		ARG 0 name
+		ARG 1 ids
+	METHOD create (Ljava/lang/String;[I)Lnet/minecraft/world/inventory/SlotRange;
 		ARG 0 name
 		ARG 1 ids
 	METHOD lambda$singleSlotNames$4 (Lnet/minecraft/world/inventory/SlotRange;)Z

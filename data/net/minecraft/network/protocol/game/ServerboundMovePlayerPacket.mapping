@@ -43,6 +43,16 @@ CLASS net/minecraft/network/protocol/game/ServerboundMovePlayerPacket
 			ARG 0 input
 		METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
 			ARG 1 output
+	CLASS Rot
+		METHOD <init> (FFZZ)V
+			ARG 1 yRot
+			ARG 2 xRot
+			ARG 3 onGround
+			ARG 4 horizontalCollision
+		METHOD read (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/network/protocol/game/ServerboundMovePlayerPacket$Rot;
+			ARG 0 input
+		METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 1 output
 	CLASS PosRot
 		METHOD <init> (DDDFFZZ)V
 			ARG 1 x
@@ -59,16 +69,6 @@ CLASS net/minecraft/network/protocol/game/ServerboundMovePlayerPacket
 			ARG 4 onGround
 			ARG 5 horizontalCollision
 		METHOD read (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/network/protocol/game/ServerboundMovePlayerPacket$PosRot;
-			ARG 0 input
-		METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
-			ARG 1 output
-	CLASS Rot
-		METHOD <init> (FFZZ)V
-			ARG 1 yRot
-			ARG 2 xRot
-			ARG 3 onGround
-			ARG 4 horizontalCollision
-		METHOD read (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/network/protocol/game/ServerboundMovePlayerPacket$Rot;
 			ARG 0 input
 		METHOD write (Lnet/minecraft/network/FriendlyByteBuf;)V
 			ARG 1 output

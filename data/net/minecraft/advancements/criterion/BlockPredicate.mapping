@@ -20,14 +20,14 @@ CLASS net/minecraft/advancements/criterion/BlockPredicate
 			ARG 1 components
 		METHOD hasNbt (Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/advancements/criterion/BlockPredicate$Builder;
 			ARG 1 nbt
-		METHOD of (Lnet/minecraft/core/HolderGetter;[Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/advancements/criterion/BlockPredicate$Builder;
-			ARG 1 lookup
-			ARG 2 blocks
 		METHOD of (Lnet/minecraft/core/HolderGetter;Ljava/util/Collection;)Lnet/minecraft/advancements/criterion/BlockPredicate$Builder;
 			ARG 1 lookup
 			ARG 2 blocks
 		METHOD of (Lnet/minecraft/core/HolderGetter;Lnet/minecraft/tags/TagKey;)Lnet/minecraft/advancements/criterion/BlockPredicate$Builder;
 			ARG 1 lookup
 			ARG 2 tag
+		METHOD of (Lnet/minecraft/core/HolderGetter;[Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/advancements/criterion/BlockPredicate$Builder;
+			ARG 1 lookup
+			ARG 2 blocks
 		METHOD setProperties (Lnet/minecraft/advancements/criterion/StatePropertiesPredicate$Builder;)Lnet/minecraft/advancements/criterion/BlockPredicate$Builder;
 			ARG 1 properties

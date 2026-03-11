@@ -44,15 +44,15 @@ CLASS net/minecraft/client/multiplayer/RegistryDataCollector
 		ARG 0 context
 		ARG 1 registryKey
 		ARG 2 tags
-	CLASS ContentsCollector
-		METHOD append (Lnet/minecraft/resources/ResourceKey;Ljava/util/List;)V
-			ARG 1 registry
-			ARG 2 elementData
-		METHOD lambda$append$0 (Lnet/minecraft/resources/ResourceKey;)Ljava/util/List;
-			ARG 0 ignore
 	CLASS TagCollector
 		METHOD append (Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/tags/TagNetworkSerialization$NetworkPayload;)V
 			ARG 1 registry
 			ARG 2 tagData
 		METHOD forEach (Ljava/util/function/BiConsumer;)V
 			ARG 1 action
+	CLASS ContentsCollector
+		METHOD append (Lnet/minecraft/resources/ResourceKey;Ljava/util/List;)V
+			ARG 1 registry
+			ARG 2 elementData
+		METHOD lambda$append$0 (Lnet/minecraft/resources/ResourceKey;)Ljava/util/List;
+			ARG 0 ignore

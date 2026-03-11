@@ -26,14 +26,14 @@ CLASS net/minecraft/resources/RegistryDataLoader
 		ARG 2 loader
 	METHOD lambda$load$6 (Ljava/util/Map;Lnet/minecraft/resources/RegistryDataLoader$Loader;)V
 		ARG 1 p
-	METHOD lambda$printFullDetailsToLog$9 (Ljava/util/Map$Entry;)Lnet/minecraft/resources/Identifier;
-		ARG 0 e
 	METHOD lambda$printFullDetailsToLog$10 (Ljava/util/Map$Entry;)Lnet/minecraft/resources/Identifier;
 		ARG 0 e
 	METHOD lambda$printFullDetailsToLog$11 (Ljava/io/PrintWriter;Ljava/util/Map$Entry;)V
 		ARG 1 elementError
 	METHOD lambda$printFullDetailsToLog$12 (Ljava/io/PrintWriter;Ljava/util/Map$Entry;)V
 		ARG 1 registryEntry
+	METHOD lambda$printFullDetailsToLog$9 (Ljava/util/Map$Entry;)Lnet/minecraft/resources/Identifier;
+		ARG 0 e
 	METHOD lambda$static$0 (Ljava/lang/Boolean;)Lcom/mojang/serialization/Lifecycle;
 		ARG 0 info
 	METHOD lambda$static$1 (Ljava/util/Optional;)Lnet/minecraft/core/RegistrationInfo;
@@ -83,10 +83,6 @@ CLASS net/minecraft/resources/RegistryDataLoader
 		METHOD loadFromResources (Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/resources/RegistryOps$RegistryInfoLookup;)V
 			ARG 1 resourceManager
 			ARG 2 context
-	CLASS LoadingFunction
-		METHOD apply (Lnet/minecraft/resources/RegistryDataLoader$Loader;Lnet/minecraft/resources/RegistryOps$RegistryInfoLookup;)V
-			ARG 1 loader
-			ARG 2 context
 	CLASS RegistryData
 		METHOD <init> (Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Codec;)V
 			ARG 1 key
@@ -96,3 +92,7 @@ CLASS net/minecraft/resources/RegistryDataLoader
 			ARG 2 loadingErrors
 		METHOD runWithArguments (Ljava/util/function/BiConsumer;)V
 			ARG 1 output
+	CLASS LoadingFunction
+		METHOD apply (Lnet/minecraft/resources/RegistryDataLoader$Loader;Lnet/minecraft/resources/RegistryOps$RegistryInfoLookup;)V
+			ARG 1 loader
+			ARG 2 context

@@ -1,10 +1,4 @@
 CLASS net/minecraft/nbt/StreamTagVisitor
-	METHOD visit ([B)Lnet/minecraft/nbt/StreamTagVisitor$ValueResult;
-		ARG 1 value
-	METHOD visit ([I)Lnet/minecraft/nbt/StreamTagVisitor$ValueResult;
-		ARG 1 value
-	METHOD visit ([J)Lnet/minecraft/nbt/StreamTagVisitor$ValueResult;
-		ARG 1 value
 	METHOD visit (B)Lnet/minecraft/nbt/StreamTagVisitor$ValueResult;
 		ARG 1 value
 	METHOD visit (D)Lnet/minecraft/nbt/StreamTagVisitor$ValueResult;
@@ -18,6 +12,12 @@ CLASS net/minecraft/nbt/StreamTagVisitor
 	METHOD visit (Ljava/lang/String;)Lnet/minecraft/nbt/StreamTagVisitor$ValueResult;
 		ARG 1 value
 	METHOD visit (S)Lnet/minecraft/nbt/StreamTagVisitor$ValueResult;
+		ARG 1 value
+	METHOD visit ([B)Lnet/minecraft/nbt/StreamTagVisitor$ValueResult;
+		ARG 1 value
+	METHOD visit ([I)Lnet/minecraft/nbt/StreamTagVisitor$ValueResult;
+		ARG 1 value
+	METHOD visit ([J)Lnet/minecraft/nbt/StreamTagVisitor$ValueResult;
 		ARG 1 value
 	METHOD visitElement (Lnet/minecraft/nbt/TagType;I)Lnet/minecraft/nbt/StreamTagVisitor$EntryResult;
 		ARG 1 type

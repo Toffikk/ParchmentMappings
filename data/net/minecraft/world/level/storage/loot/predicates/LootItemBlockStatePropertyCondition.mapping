@@ -7,7 +7,7 @@ CLASS net/minecraft/world/level/storage/loot/predicates/LootItemBlockStateProper
 		ARG 1 properties
 	METHOD lambda$validate$3 (Lnet/minecraft/world/level/storage/loot/predicates/LootItemBlockStatePropertyCondition;Ljava/lang/String;)Lcom/mojang/serialization/DataResult;
 		ARG 1 name
-	METHOD test (Ljava/lang/Object;)Z
+	METHOD test (Lnet/minecraft/world/level/storage/loot/LootContext;)Z
 		ARG 1 context
 	METHOD validate (Lnet/minecraft/world/level/storage/loot/predicates/LootItemBlockStatePropertyCondition;)Lcom/mojang/serialization/DataResult;
 		ARG 0 condition

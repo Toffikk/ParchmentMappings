@@ -1,16 +1,16 @@
 CLASS net/minecraft/client/particle/SuspendedTownParticle
-	CLASS ComposterFillProvider
-		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
-			ARG 1 sprite
-	CLASS DolphinSpeedProvider
+	CLASS Provider
 		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
 			ARG 1 sprite
 	CLASS EggCrackProvider
 		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
 			ARG 1 sprite
-	CLASS HappyVillagerProvider
+	CLASS DolphinSpeedProvider
 		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
 			ARG 1 sprite
-	CLASS Provider
+	CLASS ComposterFillProvider
+		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
+			ARG 1 sprite
+	CLASS HappyVillagerProvider
 		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
 			ARG 1 sprite

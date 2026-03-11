@@ -2,10 +2,10 @@ CLASS net/minecraft/world/level/chunk/UpgradeData
 	METHOD <init> (Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/world/level/LevelHeightAccessor;)V
 		ARG 1 tag
 		ARG 2 levelHeightAccessor
-	METHOD <init> (Lnet/minecraft/world/level/chunk/UpgradeData;)V
-		ARG 1 source
 	METHOD <init> (Lnet/minecraft/world/level/LevelHeightAccessor;)V
 		ARG 1 levelHeightAccessor
+	METHOD <init> (Lnet/minecraft/world/level/chunk/UpgradeData;)V
+		ARG 1 source
 	METHOD lambda$new$0 (Lnet/minecraft/nbt/CompoundTag;)V
 		ARG 1 indicesTag
 	METHOD lambda$upgrade$1 (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/ticks/SavedTick;)V
@@ -38,8 +38,8 @@ CLASS net/minecraft/world/level/chunk/UpgradeData
 			ARG 5 pos
 			ARG 6 neighbourPos
 	CLASS BlockFixers
-		METHOD <init> (Ljava/lang/String;I[Lnet/minecraft/world/level/block/Block;)V
-			ARG 3 blocks
 		METHOD <init> (Ljava/lang/String;IZ[Lnet/minecraft/world/level/block/Block;)V
 			ARG 3 chunky
 			ARG 4 blocks
+		METHOD <init> (Ljava/lang/String;I[Lnet/minecraft/world/level/block/Block;)V
+			ARG 3 blocks

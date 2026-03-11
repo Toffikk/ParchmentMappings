@@ -26,6 +26,21 @@ CLASS net/minecraft/client/color/block/BlockColors
 		ARG 1 level
 		ARG 2 pos
 		ARG 3 tintIndex
+	METHOD lambda$createDefault$10 (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/BlockAndTintGetter;Lnet/minecraft/core/BlockPos;I)I
+		ARG 0 state
+		ARG 1 level
+		ARG 2 pos
+		ARG 3 tintIndex
+	METHOD lambda$createDefault$11 (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/BlockAndTintGetter;Lnet/minecraft/core/BlockPos;I)I
+		ARG 0 state
+		ARG 1 level
+		ARG 2 pos
+		ARG 3 tintIndex
+	METHOD lambda$createDefault$12 (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/BlockAndTintGetter;Lnet/minecraft/core/BlockPos;I)I
+		ARG 0 state
+		ARG 1 level
+		ARG 2 pos
+		ARG 3 tintIndex
 	METHOD lambda$createDefault$2 (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/BlockAndTintGetter;Lnet/minecraft/core/BlockPos;I)I
 		ARG 0 state
 		ARG 1 level
@@ -62,21 +77,6 @@ CLASS net/minecraft/client/color/block/BlockColors
 		ARG 2 pos
 		ARG 3 tintIndex
 	METHOD lambda$createDefault$9 (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/BlockAndTintGetter;Lnet/minecraft/core/BlockPos;I)I
-		ARG 0 state
-		ARG 1 level
-		ARG 2 pos
-		ARG 3 tintIndex
-	METHOD lambda$createDefault$10 (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/BlockAndTintGetter;Lnet/minecraft/core/BlockPos;I)I
-		ARG 0 state
-		ARG 1 level
-		ARG 2 pos
-		ARG 3 tintIndex
-	METHOD lambda$createDefault$11 (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/BlockAndTintGetter;Lnet/minecraft/core/BlockPos;I)I
-		ARG 0 state
-		ARG 1 level
-		ARG 2 pos
-		ARG 3 tintIndex
-	METHOD lambda$createDefault$12 (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/BlockAndTintGetter;Lnet/minecraft/core/BlockPos;I)I
 		ARG 0 state
 		ARG 1 level
 		ARG 2 pos

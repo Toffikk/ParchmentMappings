@@ -35,15 +35,12 @@ CLASS net/minecraft/world/waypoints/TrackedWaypoint
 		ARG 1 level
 		ARG 2 camera
 		ARG 3 partialTickSupplier
-	CLASS AzimuthWaypoint
-		METHOD <init> (Lcom/mojang/datafixers/util/Either;Lnet/minecraft/world/waypoints/Waypoint$Icon;Lnet/minecraft/network/FriendlyByteBuf;)V
-			ARG 1 identifier
-			ARG 2 icon
-			ARG 3 byteBuf
-		METHOD <init> (Ljava/util/UUID;Lnet/minecraft/world/waypoints/Waypoint$Icon;F)V
-			ARG 1 identifier
-			ARG 2 icon
-			ARG 3 angle
+	CLASS Type
+		METHOD <init> (Ljava/lang/String;ILorg/apache/commons/lang3/function/TriFunction;)V
+			ARG 3 constructor
+	CLASS Projector
+		METHOD projectPointToScreen (Lnet/minecraft/world/phys/Vec3;)Lnet/minecraft/world/phys/Vec3;
+			ARG 1 point
 	CLASS ChunkWaypoint
 		METHOD <init> (Lcom/mojang/datafixers/util/Either;Lnet/minecraft/world/waypoints/Waypoint$Icon;Lnet/minecraft/network/FriendlyByteBuf;)V
 			ARG 1 identifier
@@ -62,12 +59,6 @@ CLASS net/minecraft/world/waypoints/TrackedWaypoint
 			ARG 3 byteBuf
 		METHOD <init> (Ljava/util/UUID;)V
 			ARG 1 identifier
-	CLASS Projector
-		METHOD projectPointToScreen (Lnet/minecraft/world/phys/Vec3;)Lnet/minecraft/world/phys/Vec3;
-			ARG 1 point
-	CLASS Type
-		METHOD <init> (Ljava/lang/String;ILorg/apache/commons/lang3/function/TriFunction;)V
-			ARG 3 constructor
 	CLASS Vec3iWaypoint
 		METHOD <init> (Lcom/mojang/datafixers/util/Either;Lnet/minecraft/world/waypoints/Waypoint$Icon;Lnet/minecraft/network/FriendlyByteBuf;)V
 			ARG 1 identifier
@@ -82,3 +73,12 @@ CLASS net/minecraft/world/waypoints/TrackedWaypoint
 		METHOD position (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/waypoints/PartialTickSupplier;)Lnet/minecraft/world/phys/Vec3;
 			ARG 1 level
 			ARG 2 partialTick
+	CLASS AzimuthWaypoint
+		METHOD <init> (Lcom/mojang/datafixers/util/Either;Lnet/minecraft/world/waypoints/Waypoint$Icon;Lnet/minecraft/network/FriendlyByteBuf;)V
+			ARG 1 identifier
+			ARG 2 icon
+			ARG 3 byteBuf
+		METHOD <init> (Ljava/util/UUID;Lnet/minecraft/world/waypoints/Waypoint$Icon;F)V
+			ARG 1 identifier
+			ARG 2 icon
+			ARG 3 angle

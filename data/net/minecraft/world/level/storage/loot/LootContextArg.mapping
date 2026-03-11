@@ -7,6 +7,9 @@ CLASS net/minecraft/world/level/storage/loot/LootContextArg
 		ARG 1 context
 	METHOD lambda$static$0 (Lnet/minecraft/world/level/storage/loot/LootContextArg$ArgCodecBuilder;)Lnet/minecraft/world/level/storage/loot/LootContextArg$ArgCodecBuilder;
 		ARG 0 builder
+	CLASS Getter
+		METHOD get (Ljava/lang/Object;)Ljava/lang/Object;
+			ARG 1 value
 	CLASS ArgCodecBuilder
 		METHOD anyBlockEntity (Ljava/util/function/Function;)Lnet/minecraft/world/level/storage/loot/LootContextArg$ArgCodecBuilder;
 			ARG 1 function
@@ -31,6 +34,3 @@ CLASS net/minecraft/world/level/storage/loot/LootContextArg
 			ARG 1 target
 		METHOD lambda$anyOf$0 (Ljava/lang/Object;)Lnet/minecraft/world/level/storage/loot/LootContextArg;
 			ARG 0 x$0
-	CLASS Getter
-		METHOD get (Ljava/lang/Object;)Ljava/lang/Object;
-			ARG 1 value

@@ -8,6 +8,10 @@ CLASS net/minecraft/server/commands/FillCommand
 		ARG 5 strict
 	METHOD lambda$register$1 (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/core/BlockPos;
 		ARG 0 c
+	METHOD lambda$register$10 (Lnet/minecraft/world/level/block/state/pattern/BlockInWorld;)Z
+		ARG 0 b
+	METHOD lambda$register$11 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 c
 	METHOD lambda$register$2 (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/core/BlockPos;
 		ARG 0 c
 	METHOD lambda$register$3 (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/commands/arguments/blocks/BlockInput;
@@ -23,10 +27,6 @@ CLASS net/minecraft/server/commands/FillCommand
 	METHOD lambda$register$8 (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/commands/arguments/blocks/BlockInput;
 		ARG 0 c
 	METHOD lambda$register$9 (Lcom/mojang/brigadier/context/CommandContext;)Ljava/util/function/Predicate;
-		ARG 0 c
-	METHOD lambda$register$10 (Lnet/minecraft/world/level/block/state/pattern/BlockInWorld;)Z
-		ARG 0 b
-	METHOD lambda$register$11 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 c
 	METHOD lambda$static$0 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 max
@@ -51,24 +51,6 @@ CLASS net/minecraft/server/commands/FillCommand
 		ARG 3 to
 		ARG 4 block
 		ARG 5 filter
-	CLASS Affector
-		METHOD affect (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;)Z
-			ARG 1 level
-			ARG 2 pos
-		METHOD lambda$static$0 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;)Z
-			ARG 0 l
-			ARG 1 p
-	CLASS Filter
-		METHOD filter (Lnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/core/BlockPos;Lnet/minecraft/commands/arguments/blocks/BlockInput;Lnet/minecraft/server/level/ServerLevel;)Lnet/minecraft/commands/arguments/blocks/BlockInput;
-			ARG 1 region
-			ARG 2 pos
-			ARG 3 block
-			ARG 4 level
-		METHOD lambda$static$0 (Lnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/core/BlockPos;Lnet/minecraft/commands/arguments/blocks/BlockInput;Lnet/minecraft/server/level/ServerLevel;)Lnet/minecraft/commands/arguments/blocks/BlockInput;
-			ARG 0 r
-			ARG 1 p
-			ARG 2 b
-			ARG 3 l
 	CLASS Mode
 		METHOD <init> (Ljava/lang/String;ILnet/minecraft/server/commands/FillCommand$Affector;Lnet/minecraft/server/commands/FillCommand$Filter;)V
 			ARG 3 affector
@@ -84,6 +66,24 @@ CLASS net/minecraft/server/commands/FillCommand
 			ARG 2 b
 			ARG 3 l
 		METHOD lambda$static$2 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;)Z
+			ARG 0 l
+			ARG 1 p
+	CLASS Filter
+		METHOD filter (Lnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/core/BlockPos;Lnet/minecraft/commands/arguments/blocks/BlockInput;Lnet/minecraft/server/level/ServerLevel;)Lnet/minecraft/commands/arguments/blocks/BlockInput;
+			ARG 1 region
+			ARG 2 pos
+			ARG 3 block
+			ARG 4 level
+		METHOD lambda$static$0 (Lnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/core/BlockPos;Lnet/minecraft/commands/arguments/blocks/BlockInput;Lnet/minecraft/server/level/ServerLevel;)Lnet/minecraft/commands/arguments/blocks/BlockInput;
+			ARG 0 r
+			ARG 1 p
+			ARG 2 b
+			ARG 3 l
+	CLASS Affector
+		METHOD affect (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;)Z
+			ARG 1 level
+			ARG 2 pos
+		METHOD lambda$static$0 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;)Z
 			ARG 0 l
 			ARG 1 p
 	CLASS NullableCommandFunction

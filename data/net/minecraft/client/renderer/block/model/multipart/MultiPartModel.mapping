@@ -2,6 +2,11 @@ CLASS net/minecraft/client/renderer/block/model/multipart/MultiPartModel
 	METHOD <init> (Lnet/minecraft/client/renderer/block/model/multipart/MultiPartModel$SharedBakedState;Lnet/minecraft/world/level/block/state/BlockState;)V
 		ARG 1 shared
 		ARG 2 blockState
+	CLASS Unbaked
+		METHOD <init> (Ljava/util/List;)V
+			ARG 1 selectors
+		METHOD lambda$resolveDependencies$0 (Lnet/minecraft/client/resources/model/ResolvableModel$Resolver;Lnet/minecraft/client/renderer/block/model/multipart/MultiPartModel$Selector;)V
+			ARG 1 s
 	CLASS Selector
 		METHOD with (Ljava/lang/Object;)Lnet/minecraft/client/renderer/block/model/multipart/MultiPartModel$Selector;
 			ARG 1 newModel
@@ -14,8 +19,3 @@ CLASS net/minecraft/client/renderer/block/model/multipart/MultiPartModel
 			ARG 1 selected
 		METHOD selectModels (Lnet/minecraft/world/level/block/state/BlockState;)Ljava/util/List;
 			ARG 1 state
-	CLASS Unbaked
-		METHOD <init> (Ljava/util/List;)V
-			ARG 1 selectors
-		METHOD lambda$resolveDependencies$0 (Lnet/minecraft/client/resources/model/ResolvableModel$Resolver;Lnet/minecraft/client/renderer/block/model/multipart/MultiPartModel$Selector;)V
-			ARG 1 s

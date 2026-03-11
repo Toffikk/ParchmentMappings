@@ -118,15 +118,6 @@ CLASS com/mojang/realmsclient/RealmsMainScreen
 	METHOD upgradeRealmAndPlay (Lcom/mojang/realmsclient/dto/RealmsServer;Lnet/minecraft/client/gui/screens/Screen;)V
 		ARG 0 server
 		ARG 1 cancelScreen
-	CLASS AvailableSnapshotEntry
-		METHOD <init> (Lcom/mojang/realmsclient/RealmsMainScreen;Lcom/mojang/realmsclient/dto/RealmsServer;)V
-			ARG 2 parent
-		METHOD lambda$addSnapshotRealm$0 (Lnet/minecraft/client/gui/components/PopupScreen;)V
-			ARG 1 popup
-	CLASS CrossButton
-		METHOD <init> (Lnet/minecraft/client/gui/components/Button$OnPress;Lnet/minecraft/network/chat/Component;)V
-			ARG 1 onPress
-			ARG 2 tooltip
 	CLASS Entry
 		METHOD drawRealmStatus (Lnet/minecraft/client/gui/GuiGraphics;IIIILnet/minecraft/resources/Identifier;Ljava/util/function/Supplier;)V
 			ARG 1 graphics
@@ -190,6 +181,28 @@ CLASS com/mojang/realmsclient/RealmsMainScreen
 			ARG 1 rowLeft
 			ARG 2 rowWidth
 			ARG 3 versionComponent
+	CLASS RealmsCall
+		METHOD request (Lcom/mojang/realmsclient/client/RealmsClient;)Ljava/lang/Object;
+			ARG 1 realmsClient
+	CLASS CrossButton
+		METHOD <init> (Lnet/minecraft/client/gui/components/Button$OnPress;Lnet/minecraft/network/chat/Component;)V
+			ARG 1 onPress
+			ARG 2 tooltip
+	CLASS ParentEntry
+		METHOD <init> (Lcom/mojang/realmsclient/RealmsMainScreen;Lcom/mojang/realmsclient/dto/RealmsServer;)V
+			ARG 2 server
+	CLASS ServerEntry
+		METHOD <init> (Lcom/mojang/realmsclient/RealmsMainScreen;Lcom/mojang/realmsclient/dto/RealmsServer;)V
+			ARG 2 serverData
+		METHOD renderOnlinePlayers (Lnet/minecraft/client/gui/GuiGraphics;IIIIIIF)Z
+			ARG 1 graphics
+			ARG 2 rowTop
+			ARG 3 rowLeft
+			ARG 4 rowWidth
+			ARG 5 rowHeight
+			ARG 6 mouseX
+			ARG 7 mouseY
+			ARG 8 a
 	CLASS NotificationButton
 		METHOD <init> (Lnet/minecraft/network/chat/Component;Lnet/minecraft/resources/Identifier;Lnet/minecraft/client/gui/components/Button$OnPress;Lnet/minecraft/network/chat/Component;)V
 			ARG 1 title
@@ -200,6 +213,20 @@ CLASS com/mojang/realmsclient/RealmsMainScreen
 			ARG 1 graphics
 		METHOD setNotificationCount (I)V
 			ARG 1 notificationCount
+	CLASS RealmSelectionList
+		METHOD addEntriesForNotification (Lcom/mojang/realmsclient/dto/RealmsNotification$VisitUrl;Lcom/mojang/realmsclient/RealmsMainScreen;Lcom/mojang/realmsclient/RealmsMainScreen$Entry;)V
+			ARG 1 visitUrl
+			ARG 2 realmsMainScreen
+			ARG 3 previouslySelected
+		METHOD refreshEntries (Lcom/mojang/realmsclient/RealmsMainScreen;)V
+			ARG 1 realmsMainScreen
+		METHOD refreshServerEntries (Lcom/mojang/realmsclient/RealmsMainScreen$Entry;)V
+			ARG 1 previouslySelected
+	CLASS AvailableSnapshotEntry
+		METHOD <init> (Lcom/mojang/realmsclient/RealmsMainScreen;Lcom/mojang/realmsclient/dto/RealmsServer;)V
+			ARG 2 parent
+		METHOD lambda$addSnapshotRealm$0 (Lnet/minecraft/client/gui/components/PopupScreen;)V
+			ARG 1 popup
 	CLASS NotificationMessageEntry
 		METHOD <init> (Lcom/mojang/realmsclient/RealmsMainScreen;Lcom/mojang/realmsclient/RealmsMainScreen;ILnet/minecraft/network/chat/Component;Lcom/mojang/realmsclient/dto/RealmsNotification$VisitUrl;)V
 			ARG 2 realmsMainScreen
@@ -214,30 +241,3 @@ CLASS com/mojang/realmsclient/RealmsMainScreen
 			ARG 1 entryWidth
 		METHOD textWidth (I)I
 			ARG 0 rowWidth
-	CLASS ParentEntry
-		METHOD <init> (Lcom/mojang/realmsclient/RealmsMainScreen;Lcom/mojang/realmsclient/dto/RealmsServer;)V
-			ARG 2 server
-	CLASS RealmsCall
-		METHOD request (Lcom/mojang/realmsclient/client/RealmsClient;)Ljava/lang/Object;
-			ARG 1 realmsClient
-	CLASS RealmSelectionList
-		METHOD addEntriesForNotification (Lcom/mojang/realmsclient/dto/RealmsNotification$VisitUrl;Lcom/mojang/realmsclient/RealmsMainScreen;Lcom/mojang/realmsclient/RealmsMainScreen$Entry;)V
-			ARG 1 visitUrl
-			ARG 2 realmsMainScreen
-			ARG 3 previouslySelected
-		METHOD refreshEntries (Lcom/mojang/realmsclient/RealmsMainScreen;)V
-			ARG 1 realmsMainScreen
-		METHOD refreshServerEntries (Lcom/mojang/realmsclient/RealmsMainScreen$Entry;)V
-			ARG 1 previouslySelected
-	CLASS ServerEntry
-		METHOD <init> (Lcom/mojang/realmsclient/RealmsMainScreen;Lcom/mojang/realmsclient/dto/RealmsServer;)V
-			ARG 2 serverData
-		METHOD renderOnlinePlayers (Lnet/minecraft/client/gui/GuiGraphics;IIIIIIF)Z
-			ARG 1 graphics
-			ARG 2 rowTop
-			ARG 3 rowLeft
-			ARG 4 rowWidth
-			ARG 5 rowHeight
-			ARG 6 mouseX
-			ARG 7 mouseY
-			ARG 8 a

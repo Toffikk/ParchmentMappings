@@ -27,12 +27,12 @@ CLASS net/minecraft/world/entity/monster/zombie/Zombie
 		ARG 1 inWaterTime
 	METHOD startUnderWaterConversion (I)V
 		ARG 1 time
+	CLASS ZombieGroupData
+		METHOD <init> (ZZ)V
+			ARG 1 baby
+			ARG 2 canSpawnJockey
 	CLASS ZombieAttackTurtleEggGoal
 		METHOD <init> (Lnet/minecraft/world/entity/monster/zombie/Zombie;Lnet/minecraft/world/entity/PathfinderMob;DI)V
 			ARG 2 mob
 			ARG 3 speedModifier
 			ARG 5 verticalSearchRange
-	CLASS ZombieGroupData
-		METHOD <init> (ZZ)V
-			ARG 1 baby
-			ARG 2 canSpawnJockey

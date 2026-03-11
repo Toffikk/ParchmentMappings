@@ -58,6 +58,9 @@ CLASS net/minecraft/world/entity/ai/gossip/GossipContainer
 		ARG 1 source
 		ARG 2 random
 		ARG 3 maxCount
+	CLASS GossipEntry
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
 	CLASS EntityGossips
 		METHOD lambda$unpack$2 (Ljava/util/UUID;Lit/unimi/dsi/fastutil/objects/Object2IntMap$Entry;)Lnet/minecraft/world/entity/ai/gossip/GossipContainer$GossipEntry;
 			ARG 1 e
@@ -73,6 +76,3 @@ CLASS net/minecraft/world/entity/ai/gossip/GossipContainer
 			ARG 1 target
 		METHOD weightedValue (Ljava/util/function/Predicate;)I
 			ARG 1 types
-	CLASS GossipEntry
-		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-			ARG 0 i

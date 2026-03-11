@@ -5,5 +5,5 @@ CLASS net/minecraft/world/level/storage/loot/predicates/ConditionReference
 		ARG 0 i
 	METHOD lambda$validate$1 (Lnet/minecraft/world/level/storage/loot/ValidationContext;Lnet/minecraft/core/Holder$Reference;)V
 		ARG 2 condition
-	METHOD test (Ljava/lang/Object;)Z
+	METHOD test (Lnet/minecraft/world/level/storage/loot/LootContext;)Z
 		ARG 1 lootContext

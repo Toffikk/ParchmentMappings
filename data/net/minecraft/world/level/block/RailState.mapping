@@ -5,9 +5,9 @@ CLASS net/minecraft/world/level/block/RailState
 		ARG 3 state
 	METHOD canConnectTo (Lnet/minecraft/world/level/block/RailState;)Z
 		ARG 1 rail
-	METHOD connectsTo (Lnet/minecraft/world/level/block/RailState;)Z
-		ARG 1 rail
 	METHOD connectTo (Lnet/minecraft/world/level/block/RailState;)V
+		ARG 1 rail
+	METHOD connectsTo (Lnet/minecraft/world/level/block/RailState;)Z
 		ARG 1 rail
 	METHOD getRail (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/RailState;
 		ARG 1 pos

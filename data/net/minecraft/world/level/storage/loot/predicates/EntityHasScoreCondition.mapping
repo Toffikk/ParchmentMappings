@@ -11,7 +11,7 @@ CLASS net/minecraft/world/level/storage/loot/predicates/EntityHasScoreCondition
 		ARG 0 r
 	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 i
-	METHOD test (Ljava/lang/Object;)Z
+	METHOD test (Lnet/minecraft/world/level/storage/loot/LootContext;)Z
 		ARG 1 context
 	CLASS Builder
 		METHOD <init> (Lnet/minecraft/world/level/storage/loot/LootContext$EntityTarget;)V

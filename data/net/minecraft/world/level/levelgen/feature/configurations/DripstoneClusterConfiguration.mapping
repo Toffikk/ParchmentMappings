@@ -15,6 +15,10 @@ CLASS net/minecraft/world/level/levelgen/feature/configurations/DripstoneCluster
 		ARG 0 c
 	METHOD lambda$static$1 (Lnet/minecraft/world/level/levelgen/feature/configurations/DripstoneClusterConfiguration;)Lnet/minecraft/util/valueproviders/IntProvider;
 		ARG 0 c
+	METHOD lambda$static$10 (Lnet/minecraft/world/level/levelgen/feature/configurations/DripstoneClusterConfiguration;)Ljava/lang/Integer;
+		ARG 0 c
+	METHOD lambda$static$11 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
 	METHOD lambda$static$2 (Lnet/minecraft/world/level/levelgen/feature/configurations/DripstoneClusterConfiguration;)Lnet/minecraft/util/valueproviders/IntProvider;
 		ARG 0 c
 	METHOD lambda$static$3 (Lnet/minecraft/world/level/levelgen/feature/configurations/DripstoneClusterConfiguration;)Ljava/lang/Integer;
@@ -31,7 +35,3 @@ CLASS net/minecraft/world/level/levelgen/feature/configurations/DripstoneCluster
 		ARG 0 c
 	METHOD lambda$static$9 (Lnet/minecraft/world/level/levelgen/feature/configurations/DripstoneClusterConfiguration;)Ljava/lang/Integer;
 		ARG 0 c
-	METHOD lambda$static$10 (Lnet/minecraft/world/level/levelgen/feature/configurations/DripstoneClusterConfiguration;)Ljava/lang/Integer;
-		ARG 0 c
-	METHOD lambda$static$11 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 i

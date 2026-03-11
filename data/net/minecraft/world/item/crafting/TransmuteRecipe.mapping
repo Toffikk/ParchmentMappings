@@ -10,6 +10,8 @@ CLASS net/minecraft/world/item/crafting/TransmuteRecipe
 			ARG 0 o
 		METHOD lambda$static$1 (Lnet/minecraft/world/item/crafting/TransmuteRecipe;)Lnet/minecraft/world/item/crafting/CraftingBookCategory;
 			ARG 0 o
+		METHOD lambda$static$10 (Lnet/minecraft/world/item/crafting/TransmuteRecipe;)Lnet/minecraft/world/item/crafting/TransmuteResult;
+			ARG 0 r
 		METHOD lambda$static$2 (Lnet/minecraft/world/item/crafting/TransmuteRecipe;)Lnet/minecraft/world/item/crafting/Ingredient;
 			ARG 0 o
 		METHOD lambda$static$3 (Lnet/minecraft/world/item/crafting/TransmuteRecipe;)Lnet/minecraft/world/item/crafting/Ingredient;
@@ -25,6 +27,4 @@ CLASS net/minecraft/world/item/crafting/TransmuteRecipe
 		METHOD lambda$static$8 (Lnet/minecraft/world/item/crafting/TransmuteRecipe;)Lnet/minecraft/world/item/crafting/Ingredient;
 			ARG 0 r
 		METHOD lambda$static$9 (Lnet/minecraft/world/item/crafting/TransmuteRecipe;)Lnet/minecraft/world/item/crafting/Ingredient;
-			ARG 0 r
-		METHOD lambda$static$10 (Lnet/minecraft/world/item/crafting/TransmuteRecipe;)Lnet/minecraft/world/item/crafting/TransmuteResult;
 			ARG 0 r

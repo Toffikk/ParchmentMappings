@@ -58,12 +58,6 @@ CLASS net/minecraft/server/commands/data/DataCommands
 		ARG 1 manipulator
 	METHOD lambda$decorateModification$37 (Ljava/util/function/BiConsumer;Lnet/minecraft/server/commands/data/DataCommands$DataProvider;Lcom/mojang/brigadier/builder/ArgumentBuilder;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
 		ARG 2 t
-	METHOD lambda$register$7 (Lnet/minecraft/server/commands/data/DataCommands$DataProvider;Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 1 c
-	METHOD lambda$register$8 (Lnet/minecraft/server/commands/data/DataCommands$DataProvider;Lcom/mojang/brigadier/builder/ArgumentBuilder;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
-		ARG 1 p
-	METHOD lambda$register$9 (Lnet/minecraft/server/commands/data/DataCommands$DataProvider;Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 1 c
 	METHOD lambda$register$10 (Lnet/minecraft/server/commands/data/DataCommands$DataProvider;Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 1 c
 	METHOD lambda$register$11 (Lnet/minecraft/server/commands/data/DataCommands$DataProvider;Lcom/mojang/brigadier/context/CommandContext;)I
@@ -102,6 +96,12 @@ CLASS net/minecraft/server/commands/data/DataCommands
 	METHOD lambda$register$20 (Lcom/mojang/brigadier/builder/ArgumentBuilder;Lnet/minecraft/server/commands/data/DataCommands$DataManipulatorDecorator;)V
 		ARG 0 parent
 		ARG 1 rest
+	METHOD lambda$register$7 (Lnet/minecraft/server/commands/data/DataCommands$DataProvider;Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 1 c
+	METHOD lambda$register$8 (Lnet/minecraft/server/commands/data/DataCommands$DataProvider;Lcom/mojang/brigadier/builder/ArgumentBuilder;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+		ARG 1 p
+	METHOD lambda$register$9 (Lnet/minecraft/server/commands/data/DataCommands$DataProvider;Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 1 c
 	METHOD lambda$static$0 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 path
 	METHOD lambda$static$1 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
@@ -149,21 +149,21 @@ CLASS net/minecraft/server/commands/data/DataCommands
 		ARG 0 input
 		ARG 1 start
 		ARG 2 end
-	CLASS DataManipulator
-		METHOD modify (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/commands/arguments/NbtPathArgument$NbtPath;Ljava/util/List;)I
-			ARG 1 context
-			ARG 2 targetData
-			ARG 3 targetPath
-			ARG 4 source
-	CLASS DataManipulatorDecorator
-		METHOD create (Lnet/minecraft/server/commands/data/DataCommands$DataManipulator;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
-			ARG 1 manipulator
 	CLASS DataProvider
 		METHOD access (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/server/commands/data/DataAccessor;
 			ARG 1 context
 		METHOD wrap (Lcom/mojang/brigadier/builder/ArgumentBuilder;Ljava/util/function/Function;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
 			ARG 1 parent
 			ARG 2 function
+	CLASS DataManipulator
+		METHOD modify (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/commands/arguments/NbtPathArgument$NbtPath;Ljava/util/List;)I
+			ARG 1 context
+			ARG 2 targetData
+			ARG 3 targetPath
+			ARG 4 source
 	CLASS StringProcessor
 		METHOD process (Ljava/lang/String;)Ljava/lang/String;
 			ARG 1 string
+	CLASS DataManipulatorDecorator
+		METHOD create (Lnet/minecraft/server/commands/data/DataCommands$DataManipulator;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+			ARG 1 manipulator

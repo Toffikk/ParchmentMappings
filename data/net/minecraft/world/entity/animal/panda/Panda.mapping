@@ -49,11 +49,9 @@ CLASS net/minecraft/world/entity/animal/panda/Panda
 		METHOD getVariantFromGenes (Lnet/minecraft/world/entity/animal/panda/Panda$Gene;Lnet/minecraft/world/entity/animal/panda/Panda$Gene;)Lnet/minecraft/world/entity/animal/panda/Panda$Gene;
 			ARG 0 mainGene
 			ARG 1 hiddenGene
-	CLASS PandaAttackGoal
-		METHOD <init> (Lnet/minecraft/world/entity/animal/panda/Panda;DZ)V
-			ARG 1 mob
-			ARG 2 speedModifier
-			ARG 4 trackTarget
+	CLASS PandaRollGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/panda/Panda;)V
+			ARG 1 panda
 	CLASS PandaAvoidGoal
 		METHOD <init> (Lnet/minecraft/world/entity/animal/panda/Panda;Ljava/lang/Class;FDD)V
 			ARG 1 panda
@@ -65,13 +63,28 @@ CLASS net/minecraft/world/entity/animal/panda/Panda
 		METHOD <init> (Lnet/minecraft/world/entity/animal/panda/Panda;D)V
 			ARG 1 panda
 			ARG 2 speedModifier
+	CLASS PandaPanicGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/panda/Panda;D)V
+			ARG 1 mob
+			ARG 2 speedModifier
+	CLASS PandaAttackGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/panda/Panda;DZ)V
+			ARG 1 mob
+			ARG 2 speedModifier
+			ARG 4 trackTarget
+	CLASS PandaSneezeGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/panda/Panda;)V
+			ARG 1 panda
+	CLASS PandaMoveControl
+		METHOD <init> (Lnet/minecraft/world/entity/animal/panda/Panda;)V
+			ARG 1 mob
+	CLASS PandaLieOnBackGoal
+		METHOD <init> (Lnet/minecraft/world/entity/animal/panda/Panda;)V
+			ARG 1 panda
 	CLASS PandaHurtByTargetGoal
 		METHOD <init> (Lnet/minecraft/world/entity/animal/panda/Panda;[Ljava/lang/Class;)V
 			ARG 1 mob
 			ARG 2 ignoreDamageFromTheseTypes
-	CLASS PandaLieOnBackGoal
-		METHOD <init> (Lnet/minecraft/world/entity/animal/panda/Panda;)V
-			ARG 1 panda
 	CLASS PandaLookAtPlayerGoal
 		METHOD <init> (Lnet/minecraft/world/entity/animal/panda/Panda;Ljava/lang/Class;F)V
 			ARG 1 mob
@@ -81,16 +94,3 @@ CLASS net/minecraft/world/entity/animal/panda/Panda
 			ARG 0 entity
 		METHOD setTarget (Lnet/minecraft/world/entity/LivingEntity;)V
 			ARG 1 entity
-	CLASS PandaMoveControl
-		METHOD <init> (Lnet/minecraft/world/entity/animal/panda/Panda;)V
-			ARG 1 mob
-	CLASS PandaPanicGoal
-		METHOD <init> (Lnet/minecraft/world/entity/animal/panda/Panda;D)V
-			ARG 1 mob
-			ARG 2 speedModifier
-	CLASS PandaRollGoal
-		METHOD <init> (Lnet/minecraft/world/entity/animal/panda/Panda;)V
-			ARG 1 panda
-	CLASS PandaSneezeGoal
-		METHOD <init> (Lnet/minecraft/world/entity/animal/panda/Panda;)V
-			ARG 1 panda

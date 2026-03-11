@@ -9,7 +9,7 @@ CLASS net/minecraft/commands/arguments/ResourceOrTagKeyArgument
 	METHOD listSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 context
 		ARG 2 builder
-	METHOD parse (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
+	METHOD parse (Lcom/mojang/brigadier/StringReader;)Lnet/minecraft/commands/arguments/ResourceOrTagKeyArgument$Result;
 		ARG 1 reader
 	METHOD resourceOrTagKey (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/commands/arguments/ResourceOrTagKeyArgument;
 		ARG 0 key
@@ -17,12 +17,12 @@ CLASS net/minecraft/commands/arguments/ResourceOrTagKeyArgument
 		CLASS Template
 			METHOD <init> (Lnet/minecraft/commands/arguments/ResourceOrTagKeyArgument$Info;Lnet/minecraft/resources/ResourceKey;)V
 				ARG 2 registryKey
-	CLASS ResourceResult
-		METHOD test (Ljava/lang/Object;)Z
-			ARG 1 holder
 	CLASS Result
 		METHOD cast (Lnet/minecraft/resources/ResourceKey;)Ljava/util/Optional;
 			ARG 1 registryKey
 	CLASS TagResult
-		METHOD test (Ljava/lang/Object;)Z
+		METHOD test (Lnet/minecraft/core/Holder;)Z
+			ARG 1 holder
+	CLASS ResourceResult
+		METHOD test (Lnet/minecraft/core/Holder;)Z
 			ARG 1 holder

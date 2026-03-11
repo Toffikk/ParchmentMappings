@@ -84,6 +84,8 @@ CLASS net/minecraft/world/level/saveddata/maps/MapItemSavedData
 		ARG 0 m
 	METHOD lambda$static$1 (Lnet/minecraft/world/level/saveddata/maps/MapItemSavedData;)Ljava/lang/Integer;
 		ARG 0 m
+	METHOD lambda$static$10 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
 	METHOD lambda$static$2 (Lnet/minecraft/world/level/saveddata/maps/MapItemSavedData;)Ljava/lang/Integer;
 		ARG 0 m
 	METHOD lambda$static$3 (Lnet/minecraft/world/level/saveddata/maps/MapItemSavedData;)Ljava/lang/Byte;
@@ -100,8 +102,6 @@ CLASS net/minecraft/world/level/saveddata/maps/MapItemSavedData
 		ARG 0 m
 	METHOD lambda$static$9 (Lnet/minecraft/world/level/saveddata/maps/MapItemSavedData;)Ljava/util/List;
 		ARG 0 m
-	METHOD lambda$static$10 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 i
 	METHOD lambda$tickCarriedBy$13 (Lnet/minecraft/world/entity/player/Player;Ljava/lang/String;Lnet/minecraft/world/item/component/MapDecorations$Entry;)V
 		ARG 2 id
 		ARG 3 entry
@@ -137,14 +137,6 @@ CLASS net/minecraft/world/level/saveddata/maps/MapItemSavedData
 		ARG 1 x
 		ARG 2 y
 		ARG 3 newColor
-	CLASS HoldingPlayer
-		METHOD <init> (Lnet/minecraft/world/level/saveddata/maps/MapItemSavedData;Lnet/minecraft/world/entity/player/Player;)V
-			ARG 2 player
-		METHOD markColorsDirty (II)V
-			ARG 1 x
-			ARG 2 y
-		METHOD nextUpdatePacket (Lnet/minecraft/world/level/saveddata/maps/MapId;)Lnet/minecraft/network/protocol/Packet;
-			ARG 1 id
 	CLASS MapPatch
 		METHOD applyToMap (Lnet/minecraft/world/level/saveddata/maps/MapItemSavedData;)V
 			ARG 1 map
@@ -153,3 +145,11 @@ CLASS net/minecraft/world/level/saveddata/maps/MapItemSavedData
 		METHOD write (Lio/netty/buffer/ByteBuf;Ljava/util/Optional;)V
 			ARG 0 output
 			ARG 1 optional
+	CLASS HoldingPlayer
+		METHOD <init> (Lnet/minecraft/world/level/saveddata/maps/MapItemSavedData;Lnet/minecraft/world/entity/player/Player;)V
+			ARG 2 player
+		METHOD markColorsDirty (II)V
+			ARG 1 x
+			ARG 2 y
+		METHOD nextUpdatePacket (Lnet/minecraft/world/level/saveddata/maps/MapId;)Lnet/minecraft/network/protocol/Packet;
+			ARG 1 id
