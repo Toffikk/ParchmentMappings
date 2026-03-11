@@ -1,0 +1,17 @@
+CLASS net/minecraft/client/renderer/blockentity/BlockEntityWithBoundingBoxRenderer
+	METHOD extract (Lnet/minecraft/world/level/block/entity/BlockEntity;Lnet/minecraft/client/renderer/blockentity/state/BlockEntityWithBoundingBoxRenderState;)V
+		ARG 0 blockEntity
+		ARG 1 state
+	METHOD lambda$renderStructureVoids$0 (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;III)V
+		ARG 1 direction
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD renderInvisibleBlocks (Lnet/minecraft/client/renderer/blockentity/state/BlockEntityWithBoundingBoxRenderState;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Vec3i;)V
+		ARG 1 state
+		ARG 2 localPos
+		ARG 3 size
+	METHOD renderStructureVoids (Lnet/minecraft/client/renderer/blockentity/state/BlockEntityWithBoundingBoxRenderState;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Vec3i;)V
+		ARG 1 state
+		ARG 2 startingPosition
+		ARG 3 size

@@ -1,0 +1,12 @@
+CLASS net/minecraft/client/renderer/debug/GameTestBlockHighlightRenderer
+	METHOD highlightPos (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;)V
+		ARG 1 absolutePos
+		ARG 2 relativePos
+	METHOD lambda$emitGizmos$0 (JLjava/util/Map$Entry;)Z
+		ARG 2 entry
+	METHOD lambda$emitGizmos$1 (Lnet/minecraft/core/BlockPos;Lnet/minecraft/client/renderer/debug/GameTestBlockHighlightRenderer$Marker;)V
+		ARG 1 pos
+		ARG 2 marker
+	METHOD renderMarker (Lnet/minecraft/core/BlockPos;Lnet/minecraft/client/renderer/debug/GameTestBlockHighlightRenderer$Marker;)V
+		ARG 1 pos
+		ARG 2 marker

@@ -1,0 +1,11 @@
+CLASS net/minecraft/client/model/animal/llama/LlamaModel
+	METHOD createBodyLayer (Lnet/minecraft/client/model/geom/builders/CubeDeformation;)Lnet/minecraft/client/model/geom/builders/LayerDefinition;
+		ARG 0 g
+	METHOD lambda$transformToBaby$0 (Lnet/minecraft/client/model/geom/PartPose;)Lnet/minecraft/client/model/geom/PartPose;
+		ARG 0 p
+	METHOD lambda$transformToBaby$1 (Lnet/minecraft/client/model/geom/PartPose;)Lnet/minecraft/client/model/geom/PartPose;
+		ARG 0 p
+	METHOD lambda$transformToBaby$2 (Lnet/minecraft/client/model/geom/PartPose;)Lnet/minecraft/client/model/geom/PartPose;
+		ARG 0 p
+	METHOD transformToBaby (Lnet/minecraft/client/model/geom/builders/MeshDefinition;)Lnet/minecraft/client/model/geom/builders/MeshDefinition;
+		ARG 0 mesh

@@ -1,0 +1,23 @@
+CLASS net/minecraft/client/gui/components/debug/DebugScreenEntryList
+	METHOD <init> (Ljava/io/File;)V
+		ARG 1 workingDirectory
+	METHOD getStatus (Lnet/minecraft/resources/Identifier;)Lnet/minecraft/client/gui/components/debug/DebugScreenEntryStatus;
+		ARG 1 location
+	METHOD isCurrentlyEnabled (Lnet/minecraft/resources/Identifier;)Z
+		ARG 1 location
+	METHOD isUsingProfile (Lnet/minecraft/client/gui/components/debug/DebugScreenProfile;)Z
+		ARG 1 profile
+	METHOD lambda$load$0 (Ljava/lang/String;)Ljava/io/IOException;
+		ARG 0 error
+	METHOD loadProfile (Lnet/minecraft/client/gui/components/debug/DebugScreenProfile;)V
+		ARG 1 profile
+	METHOD setOverlayVisible (Z)V
+		ARG 1 visible
+	METHOD setStatus (Lnet/minecraft/resources/Identifier;Lnet/minecraft/client/gui/components/debug/DebugScreenEntryStatus;)V
+		ARG 1 location
+		ARG 2 status
+	METHOD toggleStatus (Lnet/minecraft/resources/Identifier;)Z
+		ARG 1 location
+	CLASS SerializedOptions
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i

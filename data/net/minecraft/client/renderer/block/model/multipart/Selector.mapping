@@ -1,0 +1,9 @@
+CLASS net/minecraft/client/renderer/block/model/multipart/Selector
+	METHOD instantiate (Lnet/minecraft/world/level/block/state/StateDefinition;)Ljava/util/function/Predicate;
+		ARG 1 definition
+	METHOD lambda$instantiate$1 (Lnet/minecraft/world/level/block/state/StateDefinition;Lnet/minecraft/client/renderer/block/model/multipart/Condition;)Ljava/util/function/Predicate;
+		ARG 1 c
+	METHOD lambda$instantiate$2 (Lnet/minecraft/world/level/block/state/StateHolder;)Z
+		ARG 0 state
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

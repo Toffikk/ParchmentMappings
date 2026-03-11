@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/renderer/debug/StructureRenderer
+	METHOD lambda$emitGizmos$0 (Lnet/minecraft/world/level/ChunkPos;Ljava/util/List;)V
+		ARG 0 chunkPos
+		ARG 1 structures

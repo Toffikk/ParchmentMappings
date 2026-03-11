@@ -1,0 +1,8 @@
+CLASS net/minecraft/client/renderer/debug/ChunkDebugRenderer
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	CLASS ChunkData
+		METHOD <init> (Lnet/minecraft/client/renderer/debug/ChunkDebugRenderer;Lnet/minecraft/client/server/IntegratedServer;DD)V
+			ARG 2 server
+			ARG 3 camX
+			ARG 5 camZ

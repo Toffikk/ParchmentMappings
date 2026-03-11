@@ -1,0 +1,9 @@
+CLASS net/minecraft/util/ProgressListener
+	METHOD progressStage (Lnet/minecraft/network/chat/Component;)V
+		ARG 1 string
+	METHOD progressStagePercentage (I)V
+		ARG 1 i
+	METHOD progressStart (Lnet/minecraft/network/chat/Component;)V
+		ARG 1 string
+	METHOD progressStartNoAbort (Lnet/minecraft/network/chat/Component;)V
+		ARG 1 string

@@ -1,0 +1,7 @@
+CLASS net/minecraft/client/gui/components/debug/DebugEntryBiome
+	METHOD lambda$printBiome$0 (Lnet/minecraft/resources/ResourceKey;)Ljava/lang/String;
+		ARG 0 key
+	METHOD lambda$printBiome$1 (Lnet/minecraft/world/level/biome/Biome;)Ljava/lang/String;
+		ARG 0 l
+	METHOD printBiome (Lnet/minecraft/core/Holder;)Ljava/lang/String;
+		ARG 0 biome

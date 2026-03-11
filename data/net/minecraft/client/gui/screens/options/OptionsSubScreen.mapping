@@ -1,0 +1,11 @@
+CLASS net/minecraft/client/gui/screens/options/OptionsSubScreen
+	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;Lnet/minecraft/client/Options;Lnet/minecraft/network/chat/Component;)V
+		ARG 1 lastScreen
+		ARG 2 options
+		ARG 3 title
+	METHOD lambda$addFooter$1 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$init$0 (Lnet/minecraft/client/gui/screens/options/OptionsSubScreen;Lnet/minecraft/client/gui/components/events/GuiEventListener;)V
+		ARG 1 x$0
+	METHOD resetOption (Lnet/minecraft/client/OptionInstance;)V
+		ARG 1 option

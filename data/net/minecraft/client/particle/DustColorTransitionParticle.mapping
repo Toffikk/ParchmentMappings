@@ -1,0 +1,19 @@
+CLASS net/minecraft/client/particle/DustColorTransitionParticle
+	METHOD <init> (Lnet/minecraft/client/multiplayer/ClientLevel;DDDDDDLnet/minecraft/core/particles/DustColorTransitionOptions;Lnet/minecraft/client/particle/SpriteSet;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 xAux
+		ARG 10 yAux
+		ARG 12 zAux
+		ARG 14 options
+		ARG 15 sprites
+	METHOD lerpColors (F)V
+		ARG 1 partialTickTime
+	METHOD randomizeColor (Lorg/joml/Vector3f;F)Lorg/joml/Vector3f;
+		ARG 1 color
+		ARG 2 baseFactor
+	CLASS Provider
+		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
+			ARG 1 sprites

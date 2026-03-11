@@ -1,0 +1,8 @@
+CLASS net/minecraft/client/AttackIndicatorStatus
+	METHOD <init> (Ljava/lang/String;IILjava/lang/String;)V
+		ARG 3 id
+		ARG 4 key
+	METHOD lambda$static$0 (Lnet/minecraft/client/AttackIndicatorStatus;)I
+		ARG 0 s
+	METHOD lambda$static$1 (Lnet/minecraft/client/AttackIndicatorStatus;)Ljava/lang/Integer;
+		ARG 0 s

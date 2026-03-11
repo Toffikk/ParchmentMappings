@@ -1,0 +1,7 @@
+CLASS net/minecraft/client/renderer/entity/ZombieRenderer
+	METHOD <init> (Lnet/minecraft/client/renderer/entity/EntityRendererProvider$Context;Lnet/minecraft/client/model/geom/ModelLayerLocation;Lnet/minecraft/client/model/geom/ModelLayerLocation;Lnet/minecraft/client/renderer/entity/ArmorModelSet;Lnet/minecraft/client/renderer/entity/ArmorModelSet;)V
+		ARG 1 context
+		ARG 2 body
+		ARG 3 babyBody
+		ARG 4 armorSet
+		ARG 5 babyArmorSet

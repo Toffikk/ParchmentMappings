@@ -1,0 +1,9 @@
+CLASS net/minecraft/client/renderer/item/properties/select/ComponentContents
+	METHOD lambda$createType$1 (Lnet/minecraft/core/component/DataComponentType;)Lcom/mojang/serialization/DataResult;
+		ARG 0 t
+	METHOD lambda$createType$2 (Lnet/minecraft/client/renderer/item/SelectItemModel$UnbakedSwitch;)Lnet/minecraft/core/component/DataComponentType;
+		ARG 0 switchObject
+	METHOD lambda$createType$3 (Lnet/minecraft/core/component/DataComponentType;Ljava/util/List;)Lnet/minecraft/client/renderer/item/SelectItemModel$UnbakedSwitch;
+		ARG 1 cases
+	METHOD lambda$createType$4 (Lnet/minecraft/core/component/DataComponentType;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 componentType

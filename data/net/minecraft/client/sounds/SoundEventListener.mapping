@@ -1,0 +1,5 @@
+CLASS net/minecraft/client/sounds/SoundEventListener
+	METHOD onPlaySound (Lnet/minecraft/client/resources/sounds/SoundInstance;Lnet/minecraft/client/sounds/WeighedSoundEvents;F)V
+		ARG 1 sound
+		ARG 2 soundEvent
+		ARG 3 range

@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/renderer/entity/CamelHuskRenderer
+	METHOD lambda$createCamelSaddleLayer$0 (Lnet/minecraft/client/renderer/entity/state/CamelRenderState;)Lnet/minecraft/world/item/ItemStack;
+		ARG 0 state

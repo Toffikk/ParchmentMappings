@@ -1,0 +1,11 @@
+CLASS net/minecraft/client/renderer/texture/OverlayTexture
+	METHOD pack (FZ)I
+		ARG 0 whiteOverlayProgress
+		ARG 1 redOverlay
+	METHOD pack (II)I
+		ARG 0 u
+		ARG 1 v
+	METHOD u (F)I
+		ARG 0 whiteOverlayProgress
+	METHOD v (Z)I
+		ARG 0 hurtOverlay

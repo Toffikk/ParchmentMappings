@@ -1,0 +1,8 @@
+CLASS net/minecraft/client/renderer/debug/NeighborsUpdateRenderer
+	METHOD lambda$emitGizmos$0 (Ljava/util/Map;Lnet/minecraft/core/BlockPos;II)V
+		ARG 1 blockPos
+		ARG 2 remainingTicks
+		ARG 3 totalLifetime
+	CLASS LastUpdate
+		METHOD tryCount (I)Lnet/minecraft/client/renderer/debug/NeighborsUpdateRenderer$LastUpdate;
+			ARG 1 age

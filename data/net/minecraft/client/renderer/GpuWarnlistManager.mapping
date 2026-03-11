@@ -1,0 +1,20 @@
+CLASS net/minecraft/client/renderer/GpuWarnlistManager
+	METHOD compilePatterns (Lcom/google/gson/JsonArray;Ljava/util/List;)V
+		ARG 0 jsonArray
+		ARG 1 patternList
+	METHOD lambda$compilePatterns$1 (Ljava/util/List;Lcom/google/gson/JsonElement;)V
+		ARG 1 e
+	METHOD lambda$getAllWarnings$0 (Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 k
+		ARG 2 v
+	METHOD parseJson (Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)Lcom/google/gson/JsonObject;
+		ARG 0 manager
+		ARG 1 profiler
+	CLASS Preparations
+		METHOD <init> (Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
+			ARG 1 rendererPatterns
+			ARG 2 versionPatterns
+			ARG 3 vendorPatterns
+		METHOD matchAny (Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
+			ARG 0 patterns
+			ARG 1 input

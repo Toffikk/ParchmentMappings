@@ -1,0 +1,6 @@
+CLASS net/minecraft/client/renderer/entity/CreakingRenderer
+	METHOD lambda$new$0 (Lnet/minecraft/client/renderer/entity/state/CreakingRenderState;)Lnet/minecraft/resources/Identifier;
+		ARG 0 renderState
+	METHOD lambda$new$1 (Lnet/minecraft/client/renderer/entity/state/CreakingRenderState;F)F
+		ARG 0 state
+		ARG 1 ageInTicks

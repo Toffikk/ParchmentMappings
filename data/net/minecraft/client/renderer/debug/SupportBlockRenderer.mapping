@@ -1,0 +1,15 @@
+CLASS net/minecraft/client/renderer/debug/SupportBlockRenderer
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD drawHighlights (Lnet/minecraft/world/entity/Entity;Ljava/util/function/DoubleSupplier;I)V
+		ARG 1 entity
+		ARG 2 biasGetter
+		ARG 3 color
+	METHOD getBias (Lnet/minecraft/world/entity/Entity;)D
+		ARG 1 entity
+	METHOD highlightPosition (Lnet/minecraft/core/BlockPos;DI)V
+		ARG 1 pos
+		ARG 2 offset
+		ARG 4 color
+	METHOD lambda$drawHighlights$2 (Ljava/util/function/DoubleSupplier;Lnet/minecraft/world/entity/Entity;ILnet/minecraft/core/BlockPos;)V
+		ARG 4 bp

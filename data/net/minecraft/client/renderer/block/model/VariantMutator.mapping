@@ -1,0 +1,13 @@
+CLASS net/minecraft/client/renderer/block/model/VariantMutator
+	METHOD lambda$then$0 (Lnet/minecraft/client/renderer/block/model/VariantMutator;Lnet/minecraft/client/renderer/block/model/Variant;)Lnet/minecraft/client/renderer/block/model/Variant;
+		ARG 2 variant
+	METHOD then (Lnet/minecraft/client/renderer/block/model/VariantMutator;)Lnet/minecraft/client/renderer/block/model/VariantMutator;
+		ARG 1 other
+	CLASS VariantProperty
+		METHOD apply (Lnet/minecraft/client/renderer/block/model/Variant;Ljava/lang/Object;)Lnet/minecraft/client/renderer/block/model/Variant;
+			ARG 1 input
+			ARG 2 value
+		METHOD lambda$withValue$0 (Ljava/lang/Object;Lnet/minecraft/client/renderer/block/model/Variant;)Lnet/minecraft/client/renderer/block/model/Variant;
+			ARG 2 variant
+		METHOD withValue (Ljava/lang/Object;)Lnet/minecraft/client/renderer/block/model/VariantMutator;
+			ARG 1 value

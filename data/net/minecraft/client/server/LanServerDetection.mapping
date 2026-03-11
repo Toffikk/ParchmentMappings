@@ -1,0 +1,8 @@
+CLASS net/minecraft/client/server/LanServerDetection
+	CLASS LanServerDetector
+		METHOD <init> (Lnet/minecraft/client/server/LanServerDetection$LanServerList;)V
+			ARG 1 serverList
+	CLASS LanServerList
+		METHOD addServer (Ljava/lang/String;Ljava/net/InetAddress;)V
+			ARG 1 pingData
+			ARG 2 socketAddress

@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/model/object/projectile/ArrowModel
+	METHOD lambda$createBodyLayer$0 (Lnet/minecraft/client/model/geom/PartPose;)Lnet/minecraft/client/model/geom/PartPose;
+		ARG 0 pose

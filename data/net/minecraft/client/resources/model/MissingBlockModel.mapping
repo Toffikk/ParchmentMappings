@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/resources/model/MissingBlockModel
+	METHOD lambda$missingModel$0 (Lnet/minecraft/client/renderer/block/model/BlockElementFace$UVs;Lnet/minecraft/core/Direction;)Lnet/minecraft/client/renderer/block/model/BlockElementFace;
+		ARG 1 direction

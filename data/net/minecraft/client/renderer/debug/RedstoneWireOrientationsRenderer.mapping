@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/renderer/debug/RedstoneWireOrientationsRenderer
+	METHOD lambda$emitGizmos$0 (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/redstone/Orientation;)V
+		ARG 0 wirePos
+		ARG 1 orientation

@@ -1,0 +1,16 @@
+CLASS net/minecraft/client/tutorial/TutorialStepInstance
+	METHOD onDestroyBlock (Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;F)V
+		ARG 1 level
+		ARG 2 pos
+		ARG 3 state
+		ARG 4 percent
+	METHOD onGetItem (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 itemStack
+	METHOD onInput (Lnet/minecraft/client/player/ClientInput;)V
+		ARG 1 input
+	METHOD onLookAt (Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/world/phys/HitResult;)V
+		ARG 1 level
+		ARG 2 hit
+	METHOD onMouse (DD)V
+		ARG 1 xd
+		ARG 3 yd

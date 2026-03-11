@@ -1,0 +1,11 @@
+CLASS net/minecraft/client/renderer/rendertype/RenderType
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/client/renderer/rendertype/RenderSetup;)V
+		ARG 1 name
+		ARG 2 state
+	METHOD create (Ljava/lang/String;Lnet/minecraft/client/renderer/rendertype/RenderSetup;)Lnet/minecraft/client/renderer/rendertype/RenderType;
+		ARG 0 name
+		ARG 1 state
+	METHOD draw (Lcom/mojang/blaze3d/vertex/MeshData;)V
+		ARG 1 mesh
+	METHOD lambda$new$0 (Lnet/minecraft/client/renderer/rendertype/RenderSetup;Lnet/minecraft/client/renderer/rendertype/RenderSetup$TextureBinding;)Lnet/minecraft/client/renderer/rendertype/RenderType;
+		ARG 1 texture

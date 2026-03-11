@@ -1,0 +1,34 @@
+CLASS net/minecraft/client/renderer/block/model/BlockStateModel
+	METHOD collectParts (Lnet/minecraft/util/RandomSource;)Ljava/util/List;
+		ARG 1 random
+	METHOD collectParts (Lnet/minecraft/util/RandomSource;Ljava/util/List;)V
+		ARG 1 random
+		ARG 2 output
+	CLASS SimpleCachedUnbakedRoot
+		METHOD <init> (Lnet/minecraft/client/renderer/block/model/BlockStateModel$Unbaked;)V
+			ARG 1 contents
+	CLASS Unbaked
+		METHOD bake (Lnet/minecraft/client/resources/model/ModelBaker;)Lnet/minecraft/client/renderer/block/model/BlockStateModel;
+			ARG 1 modelBakery
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+		METHOD lambda$static$1 (Lnet/minecraft/util/random/Weighted;)Lnet/minecraft/util/random/Weighted;
+			ARG 0 e
+		METHOD lambda$static$2 (Ljava/util/List;)Lnet/minecraft/client/resources/model/WeightedVariants$Unbaked;
+			ARG 0 w
+		METHOD lambda$static$4 (Lnet/minecraft/client/resources/model/WeightedVariants$Unbaked;)Lcom/mojang/serialization/DataResult;
+			ARG 0 unbaked
+		METHOD lambda$static$5 (Lnet/minecraft/client/resources/model/WeightedVariants$Unbaked;)Ljava/lang/Record;
+			ARG 0 l
+		METHOD lambda$static$6 (Lnet/minecraft/client/renderer/block/model/SingleVariant$Unbaked;)Ljava/lang/Record;
+			ARG 0 r
+		METHOD lambda$static$7 (Lcom/mojang/datafixers/util/Either;)Lnet/minecraft/client/renderer/block/model/BlockStateModel$Unbaked;
+			ARG 0 v
+		METHOD lambda$static$9 (Lnet/minecraft/client/renderer/block/model/BlockStateModel$Unbaked;)Lcom/mojang/serialization/DataResult;
+			ARG 0 o
+	CLASS UnbakedRoot
+		METHOD bake (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/client/resources/model/ModelBaker;)Lnet/minecraft/client/renderer/block/model/BlockStateModel;
+			ARG 1 blockState
+			ARG 2 modelBakery
+		METHOD visualEqualityGroup (Lnet/minecraft/world/level/block/state/BlockState;)Ljava/lang/Object;
+			ARG 1 blockState

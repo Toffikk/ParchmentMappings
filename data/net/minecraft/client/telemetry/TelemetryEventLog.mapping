@@ -1,0 +1,6 @@
+CLASS net/minecraft/client/telemetry/TelemetryEventLog
+	METHOD <init> (Ljava/nio/channels/FileChannel;Ljava/util/concurrent/Executor;)V
+		ARG 1 channel
+		ARG 2 executor
+	METHOD lambda$logger$1 (Lnet/minecraft/client/telemetry/TelemetryEventInstance;)V
+		ARG 1 event

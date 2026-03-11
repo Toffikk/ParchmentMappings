@@ -1,0 +1,25 @@
+CLASS net/minecraft/client/gui/components/DebugScreenOverlay
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD lambda$getLevel$2 (Lnet/minecraft/client/server/IntegratedServer;)Ljava/util/Optional;
+		ARG 1 s
+	METHOD lambda$getServerChunk$3 (Lnet/minecraft/server/level/ChunkResult;)Lnet/minecraft/world/level/chunk/LevelChunk;
+		ARG 0 chunkResult
+	METHOD logFrameDuration (J)V
+		ARG 1 frameDuration
+	METHOD logRemoteSample ([JLnet/minecraft/util/debugchart/RemoteDebugSampleType;)V
+		ARG 1 sample
+		ARG 2 type
+	METHOD render (Lnet/minecraft/client/gui/GuiGraphics;)V
+		ARG 1 graphics
+	METHOD render3dCrosshair (Lnet/minecraft/client/Camera;)V
+		ARG 1 camera
+	METHOD renderLines (Lnet/minecraft/client/gui/GuiGraphics;Ljava/util/List;Z)V
+		ARG 1 graphics
+		ARG 2 lines
+		ARG 3 alignLeft
+	CLASS 1
+		METHOD lambda$addToGroup$0 (Lnet/minecraft/resources/Identifier;)Ljava/util/Collection;
+			ARG 0 k
+		METHOD lambda$addToGroup$1 (Lnet/minecraft/resources/Identifier;)Ljava/util/Collection;
+			ARG 0 k

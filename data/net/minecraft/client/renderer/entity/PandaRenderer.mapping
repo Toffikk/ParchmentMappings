@@ -1,0 +1,7 @@
+CLASS net/minecraft/client/renderer/entity/PandaRenderer
+	METHOD getAngle (FFIFF)F
+		ARG 1 thisAngle
+		ARG 2 nextAngle
+		ARG 3 nextRollPos
+		ARG 4 rollTransitionTime
+		ARG 5 threshold

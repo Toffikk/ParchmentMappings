@@ -1,0 +1,5 @@
+CLASS net/minecraft/client/renderer/SubmitNodeStorage
+	METHOD lambda$endFrame$1 (Lnet/minecraft/client/renderer/SubmitNodeCollection;)Z
+		ARG 0 collection
+	METHOD lambda$order$0 (I)Lnet/minecraft/client/renderer/SubmitNodeCollection;
+		ARG 1 ignored

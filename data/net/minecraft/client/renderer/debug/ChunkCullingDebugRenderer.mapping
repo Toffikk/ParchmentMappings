@@ -1,0 +1,17 @@
+CLASS net/minecraft/client/renderer/debug/ChunkCullingDebugRenderer
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD addFrustumLine (Lnet/minecraft/world/phys/Vec3;Lorg/joml/Vector4f;Lorg/joml/Vector4f;)V
+		ARG 1 offset
+		ARG 2 a
+		ARG 3 b
+	METHOD addFrustumQuad (Lnet/minecraft/world/phys/Vec3;[Lorg/joml/Vector4f;IIIIIII)V
+		ARG 1 offset
+		ARG 2 frustumPoints
+		ARG 3 i0
+		ARG 4 i1
+		ARG 5 i2
+		ARG 6 i3
+		ARG 7 r
+		ARG 8 g
+		ARG 9 b

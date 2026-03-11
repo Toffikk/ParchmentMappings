@@ -1,0 +1,5 @@
+CLASS net/minecraft/client/sounds/Weighted
+	METHOD getSound (Lnet/minecraft/util/RandomSource;)Ljava/lang/Object;
+		ARG 1 random
+	METHOD preloadIfRequired (Lnet/minecraft/client/sounds/SoundEngine;)V
+		ARG 1 soundEngine

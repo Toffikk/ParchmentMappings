@@ -1,0 +1,10 @@
+CLASS net/minecraft/client/gui/navigation/ScreenDirection
+	METHOD isAfter (II)Z
+		ARG 1 a
+		ARG 2 b
+	METHOD isBefore (II)Z
+		ARG 1 a
+		ARG 2 b
+	METHOD lambda$new$0 (II)I
+		ARG 1 k1
+		ARG 2 k2

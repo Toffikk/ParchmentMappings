@@ -1,6 +1,33 @@
 CLASS net/minecraft/client/gui/components/events/GuiEventListener
+	METHOD charTyped (Lnet/minecraft/client/input/CharacterEvent;)Z
+		ARG 1 event
+	METHOD getBorderForArrowNavigation (Lnet/minecraft/client/gui/navigation/ScreenDirection;)Lnet/minecraft/client/gui/navigation/ScreenRectangle;
+		ARG 1 opposite
+	METHOD isMouseOver (DD)Z
+		ARG 1 mouseX
+		ARG 3 mouseY
 	METHOD keyPressed (Lnet/minecraft/client/input/KeyEvent;)Z
+		ARG 1 event
+	METHOD keyReleased (Lnet/minecraft/client/input/KeyEvent;)Z
 		ARG 1 event
 	METHOD mouseClicked (Lnet/minecraft/client/input/MouseButtonEvent;Z)Z
 		ARG 1 event
 		ARG 2 doubleClick
+	METHOD mouseDragged (Lnet/minecraft/client/input/MouseButtonEvent;DD)Z
+		ARG 1 event
+		ARG 2 dx
+		ARG 4 dy
+	METHOD mouseMoved (DD)V
+		ARG 1 x
+		ARG 3 y
+	METHOD mouseReleased (Lnet/minecraft/client/input/MouseButtonEvent;)Z
+		ARG 1 event
+	METHOD mouseScrolled (DDDD)Z
+		ARG 1 x
+		ARG 3 y
+		ARG 5 scrollX
+		ARG 7 scrollY
+	METHOD nextFocusPath (Lnet/minecraft/client/gui/navigation/FocusNavigationEvent;)Lnet/minecraft/client/gui/ComponentPath;
+		ARG 1 navigationEvent
+	METHOD setFocused (Z)V
+		ARG 1 focused

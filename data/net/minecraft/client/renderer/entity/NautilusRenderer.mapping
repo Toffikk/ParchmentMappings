@@ -1,0 +1,5 @@
+CLASS net/minecraft/client/renderer/entity/NautilusRenderer
+	METHOD lambda$new$0 (Lnet/minecraft/client/renderer/entity/state/NautilusRenderState;)Lnet/minecraft/world/item/ItemStack;
+		ARG 0 state
+	METHOD lambda$new$1 (Lnet/minecraft/client/renderer/entity/state/NautilusRenderState;)Lnet/minecraft/world/item/ItemStack;
+		ARG 0 state

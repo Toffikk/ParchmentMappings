@@ -1,0 +1,4 @@
+CLASS net/minecraft/util/parsing/packrat/commands/ResourceLookupRule
+	METHOD validateElement (Lcom/mojang/brigadier/ImmutableStringReader;Lnet/minecraft/resources/Identifier;)Ljava/lang/Object;
+		ARG 1 reader
+		ARG 2 id

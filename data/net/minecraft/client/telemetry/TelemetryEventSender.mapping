@@ -1,0 +1,14 @@
+CLASS net/minecraft/client/telemetry/TelemetryEventSender
+	METHOD decorate (Ljava/util/function/Consumer;)Lnet/minecraft/client/telemetry/TelemetryEventSender;
+		ARG 1 decorator
+	METHOD lambda$decorate$1 (Ljava/util/function/Consumer;Ljava/util/function/Consumer;Lnet/minecraft/client/telemetry/TelemetryPropertyMap$Builder;)V
+		ARG 2 properties
+	METHOD lambda$decorate$2 (Ljava/util/function/Consumer;Lnet/minecraft/client/telemetry/TelemetryEventType;Ljava/util/function/Consumer;)V
+		ARG 2 type
+		ARG 3 buildFunction
+	METHOD lambda$static$0 (Lnet/minecraft/client/telemetry/TelemetryEventType;Ljava/util/function/Consumer;)V
+		ARG 0 type
+		ARG 1 buildFunction
+	METHOD send (Lnet/minecraft/client/telemetry/TelemetryEventType;Ljava/util/function/Consumer;)V
+		ARG 1 type
+		ARG 2 buildFunction

@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/renderer/debug/VillageSectionsDebugRenderer
+	METHOD lambda$emitGizmos$0 (Lnet/minecraft/core/BlockPos;Lnet/minecraft/util/Unit;)V
+		ARG 0 pos
+		ARG 1 ignored

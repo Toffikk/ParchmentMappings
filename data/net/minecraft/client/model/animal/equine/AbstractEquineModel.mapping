@@ -1,0 +1,7 @@
+CLASS net/minecraft/client/model/animal/equine/AbstractEquineModel
+	METHOD createBabyMesh (Lnet/minecraft/client/model/geom/builders/CubeDeformation;)Lnet/minecraft/client/model/geom/builders/MeshDefinition;
+		ARG 0 g
+	METHOD createBodyMesh (Lnet/minecraft/client/model/geom/builders/CubeDeformation;)Lnet/minecraft/client/model/geom/builders/MeshDefinition;
+		ARG 0 g
+	METHOD createFullScaleBabyMesh (Lnet/minecraft/client/model/geom/builders/CubeDeformation;)Lnet/minecraft/client/model/geom/builders/MeshDefinition;
+		ARG 0 g

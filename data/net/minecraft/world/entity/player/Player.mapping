@@ -23,6 +23,8 @@ CLASS net/minecraft/world/entity/player/Player
 		ARG 1 amount
 	METHOD giveExperiencePoints (I)V
 		ARG 1 i
+	METHOD handleCreativeModeItemDrop (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 stack
 	METHOD magicCrit (Lnet/minecraft/world/entity/Entity;)V
 		ARG 1 entity
 	METHOD onEnchantmentPerformed (Lnet/minecraft/world/item/ItemStack;I)V
@@ -38,11 +40,21 @@ CLASS net/minecraft/world/entity/player/Player
 	METHOD openItemGui (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/InteractionHand;)V
 		ARG 1 itemStack
 		ARG 2 hand
+	METHOD openJigsawBlock (Lnet/minecraft/world/level/block/entity/JigsawBlockEntity;)V
+		ARG 1 jigsawBlock
 	METHOD openMenu (Lnet/minecraft/world/MenuProvider;)Ljava/util/OptionalInt;
 		ARG 1 provider
+	METHOD openMinecartCommandBlock (Lnet/minecraft/world/entity/vehicle/minecart/MinecartCommandBlock;)V
+		ARG 1 commandBlock
 	METHOD openNautilusInventory (Lnet/minecraft/world/entity/animal/nautilus/AbstractNautilus;Lnet/minecraft/world/Container;)V
 		ARG 1 nautilus
 		ARG 2 container
+	METHOD openStructureBlock (Lnet/minecraft/world/level/block/entity/StructureBlockEntity;)V
+		ARG 1 structureBlock
+	METHOD openTestBlock (Lnet/minecraft/world/level/block/entity/TestBlockEntity;)V
+		ARG 1 testBlock
+	METHOD openTestInstanceBlock (Lnet/minecraft/world/level/block/entity/TestInstanceBlockEntity;)V
+		ARG 1 testInstanceBlock
 	METHOD openTextEdit (Lnet/minecraft/world/level/block/entity/SignBlockEntity;Z)V
 		ARG 1 sign
 		ARG 2 isFrontText
@@ -57,6 +69,8 @@ CLASS net/minecraft/world/entity/player/Player
 		ARG 4 merchantXp
 		ARG 5 showProgressBar
 		ARG 6 canRestock
+	METHOD setReducedDebugInfo (Z)V
+		ARG 1 reducedDebugInfo
 	METHOD startSleepInBed (Lnet/minecraft/core/BlockPos;)Lcom/mojang/datafixers/util/Either;
 		ARG 1 pos
 	METHOD stopSleepInBed (ZZ)V
@@ -65,3 +79,7 @@ CLASS net/minecraft/world/entity/player/Player
 	METHOD triggerRecipeCrafted (Lnet/minecraft/world/item/crafting/RecipeHolder;Ljava/util/List;)V
 		ARG 1 recipe
 		ARG 2 itemStacks
+	METHOD updateTutorialInventoryAction (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/inventory/ClickAction;)V
+		ARG 1 itemCarried
+		ARG 2 itemInSlot
+		ARG 3 clickAction

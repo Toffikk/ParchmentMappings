@@ -1,0 +1,5 @@
+CLASS net/minecraft/client/gui/screens/worldselection/WorldCreationContextMapper
+	METHOD apply (Lnet/minecraft/server/ReloadableServerResources;Lnet/minecraft/core/LayeredRegistryAccess;Lnet/minecraft/client/gui/screens/worldselection/DataPackReloadCookie;)Lnet/minecraft/client/gui/screens/worldselection/WorldCreationContext;
+		ARG 1 managers
+		ARG 2 registries
+		ARG 3 cookie

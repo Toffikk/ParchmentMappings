@@ -1,0 +1,10 @@
+CLASS net/minecraft/client/particle/FireflyParticle
+	METHOD getFadeAmount (FFF)F
+		ARG 0 lifetimeProgress
+		ARG 1 fadeInTime
+		ARG 2 fadeOutTime
+	METHOD getLifetimeProgress (F)F
+		ARG 1 currentAge
+	CLASS FireflyProvider
+		METHOD <init> (Lnet/minecraft/client/particle/SpriteSet;)V
+			ARG 1 sprite

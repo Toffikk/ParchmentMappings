@@ -1,0 +1,14 @@
+CLASS net/minecraft/world/level/chunk/ChunkSource
+	METHOD getChunk (IILnet/minecraft/world/level/chunk/status/ChunkStatus;Z)Lnet/minecraft/world/level/chunk/ChunkAccess;
+		ARG 1 x
+		ARG 2 z
+		ARG 3 targetStatus
+		ARG 4 loadOrGenerate
+	METHOD onSectionEmptinessChanged (IIIZ)V
+		ARG 1 sectionX
+		ARG 2 sectionY
+		ARG 3 sectionZ
+		ARG 4 empty
+	METHOD tick (Ljava/util/function/BooleanSupplier;Z)V
+		ARG 1 haveTime
+		ARG 2 tickChunks

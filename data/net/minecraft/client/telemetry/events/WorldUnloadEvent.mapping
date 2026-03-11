@@ -1,0 +1,11 @@
+CLASS net/minecraft/client/telemetry/events/WorldUnloadEvent
+	METHOD getTimeInSecondsSinceLoad (Ljava/time/Instant;)I
+		ARG 1 loadedTime
+	METHOD lambda$send$0 (Ljava/time/Instant;Lnet/minecraft/client/telemetry/TelemetryPropertyMap$Builder;)V
+		ARG 2 properties
+	METHOD lambda$send$1 (Lnet/minecraft/client/telemetry/TelemetryEventSender;Ljava/time/Instant;)V
+		ARG 2 loadedTime
+	METHOD send (Lnet/minecraft/client/telemetry/TelemetryEventSender;)V
+		ARG 1 eventSender
+	METHOD setTime (J)V
+		ARG 1 gameTime

@@ -1,0 +1,10 @@
+CLASS net/minecraft/client/model/monster/zombie/ZombieVillagerModel
+	METHOD createArmorLayerSet (Lnet/minecraft/client/model/geom/builders/CubeDeformation;Lnet/minecraft/client/model/geom/builders/CubeDeformation;)Lnet/minecraft/client/renderer/entity/ArmorModelSet;
+		ARG 0 innerDeformation
+		ARG 1 outerDeformation
+	METHOD createBaseArmorMesh (Lnet/minecraft/client/model/geom/builders/CubeDeformation;)Lnet/minecraft/client/model/geom/builders/MeshDefinition;
+		ARG 0 g
+	METHOD lambda$createArmorLayerSet$1 (Lnet/minecraft/client/model/geom/builders/MeshDefinition;)Lnet/minecraft/client/model/geom/builders/LayerDefinition;
+		ARG 0 mesh
+	METHOD lambda$createNoHatLayer$0 (Lnet/minecraft/client/model/geom/builders/MeshDefinition;)Lnet/minecraft/client/model/geom/builders/MeshDefinition;
+		ARG 0 mesh

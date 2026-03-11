@@ -1,0 +1,19 @@
+CLASS net/minecraft/client/renderer/item/BlockModelWrapper
+	METHOD <init> (Ljava/util/List;Ljava/util/List;Lnet/minecraft/client/renderer/item/ModelRenderProperties;Ljava/util/function/Function;)V
+		ARG 1 tints
+		ARG 2 quads
+		ARG 3 properties
+		ARG 4 renderType
+	METHOD computeExtents (Ljava/util/List;)[Lorg/joml/Vector3fc;
+		ARG 0 quads
+	METHOD detectRenderType (Ljava/util/List;)Ljava/util/function/Function;
+		ARG 0 quads
+	METHOD hasSpecialAnimatedTexture (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 itemStack
+	METHOD lambda$static$0 (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/client/renderer/rendertype/RenderType;
+		ARG 0 stack
+	METHOD lambda$static$1 (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/client/renderer/rendertype/RenderType;
+		ARG 0 stack
+	CLASS Unbaked
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i

@@ -1,0 +1,10 @@
+CLASS net/minecraft/client/renderer/entity/CopperGolemRenderer
+	METHOD lambda$extractRenderState$3 (Lnet/minecraft/world/item/ItemStack;)Ljava/util/Optional;
+		ARG 0 itemStack
+	METHOD lambda$getEyeTextureLocationProvider$2 (Lnet/minecraft/client/renderer/entity/state/CopperGolemRenderState;)Lnet/minecraft/resources/Identifier;
+		ARG 0 renderState
+	METHOD lambda$new$0 (Lnet/minecraft/client/renderer/entity/state/CopperGolemRenderState;F)F
+		ARG 0 copperGolem
+		ARG 1 ageInTicks
+	METHOD lambda$new$1 (Lnet/minecraft/client/renderer/entity/state/CopperGolemRenderState;)Ljava/util/Optional;
+		ARG 0 s

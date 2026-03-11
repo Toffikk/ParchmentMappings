@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/renderer/blockentity/TestInstanceRenderer
+	METHOD submitErrorMarker (Lnet/minecraft/world/level/block/entity/TestInstanceBlockEntity$ErrorMarker;)V
+		ARG 1 error

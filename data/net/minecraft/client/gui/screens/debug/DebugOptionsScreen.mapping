@@ -1,0 +1,38 @@
+CLASS net/minecraft/client/gui/screens/debug/DebugOptionsScreen
+	METHOD addProfileButton (Lnet/minecraft/client/gui/components/debug/DebugScreenProfile;Lnet/minecraft/client/gui/layouts/LinearLayout;)V
+		ARG 1 profile
+		ARG 2 bottomButtons
+	METHOD lambda$addProfileButton$3 (Lnet/minecraft/client/gui/components/debug/DebugScreenProfile;Lnet/minecraft/client/gui/components/Button;)V
+		ARG 2 button
+	METHOD lambda$init$0 (Ljava/lang/String;)V
+		ARG 1 value
+	METHOD lambda$init$1 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$init$2 (Lnet/minecraft/client/gui/screens/debug/DebugOptionsScreen;Lnet/minecraft/client/gui/components/events/GuiEventListener;)V
+		ARG 1 x$0
+	CLASS CategoryEntry
+		METHOD <init> (Lnet/minecraft/client/gui/screens/debug/DebugOptionsScreen;Lnet/minecraft/network/chat/Component;)V
+			ARG 2 category
+	CLASS OptionEntry
+		METHOD <init> (Lnet/minecraft/client/gui/screens/debug/DebugOptionsScreen;Lnet/minecraft/resources/Identifier;)V
+			ARG 2 location
+		METHOD lambda$new$0 (Lnet/minecraft/resources/Identifier;Lnet/minecraft/client/gui/components/CycleButton;Ljava/lang/Boolean;)V
+			ARG 2 button
+			ARG 3 newValue
+		METHOD lambda$new$1 (Lnet/minecraft/resources/Identifier;Lnet/minecraft/client/gui/components/CycleButton;Ljava/lang/Boolean;)V
+			ARG 2 button
+			ARG 3 newValue
+		METHOD lambda$new$2 (Lnet/minecraft/resources/Identifier;Lnet/minecraft/client/gui/components/CycleButton;Ljava/lang/Boolean;)V
+			ARG 2 button
+			ARG 3 newValue
+		METHOD narrateButton (Lnet/minecraft/client/gui/components/CycleButton;)Lnet/minecraft/network/chat/MutableComponent;
+			ARG 1 booleanCycleButton
+		METHOD setValue (Lnet/minecraft/resources/Identifier;Lnet/minecraft/client/gui/components/debug/DebugScreenEntryStatus;)V
+			ARG 1 location
+			ARG 2 never
+	CLASS OptionList
+		METHOD lambda$static$0 (Ljava/util/Map$Entry;Ljava/util/Map$Entry;)I
+			ARG 0 o1
+			ARG 1 o2
+		METHOD updateSearch (Ljava/lang/String;)V
+			ARG 1 value

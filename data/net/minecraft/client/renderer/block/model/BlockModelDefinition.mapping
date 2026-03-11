@@ -1,0 +1,26 @@
+CLASS net/minecraft/client/renderer/block/model/BlockModelDefinition
+	METHOD instantiate (Lnet/minecraft/world/level/block/state/StateDefinition;Ljava/util/function/Supplier;)Ljava/util/Map;
+		ARG 1 stateDefinition
+		ARG 2 source
+	METHOD lambda$instantiate$3 (Ljava/util/Map;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/client/renderer/block/model/BlockStateModel$UnbakedRoot;)V
+		ARG 1 state
+		ARG 2 model
+	METHOD lambda$instantiate$4 (Lnet/minecraft/world/level/block/state/StateDefinition;Ljava/util/function/Supplier;Ljava/util/Map;Lnet/minecraft/client/renderer/block/model/BlockModelDefinition$SimpleModelSelectors;)V
+		ARG 3 s
+	METHOD lambda$instantiate$5 (Lnet/minecraft/world/level/block/state/StateDefinition;Ljava/util/Map;Lnet/minecraft/client/renderer/block/model/BlockModelDefinition$MultiPartDefinition;)V
+		ARG 2 m
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	METHOD lambda$static$2 (Lnet/minecraft/client/renderer/block/model/BlockModelDefinition;)Lcom/mojang/serialization/DataResult;
+		ARG 0 o
+	CLASS MultiPartDefinition
+		METHOD instantiate (Lnet/minecraft/world/level/block/state/StateDefinition;)Lnet/minecraft/client/renderer/block/model/multipart/MultiPartModel$Unbaked;
+			ARG 1 stateDefinition
+	CLASS SimpleModelSelectors
+		METHOD instantiate (Lnet/minecraft/world/level/block/state/StateDefinition;Ljava/util/function/Supplier;Ljava/util/function/BiConsumer;)V
+			ARG 1 stateDefinition
+			ARG 2 source
+			ARG 3 output
+		METHOD lambda$instantiate$0 (Lnet/minecraft/world/level/block/state/StateDefinition;Ljava/util/function/BiConsumer;Ljava/util/function/Supplier;Ljava/lang/String;Lnet/minecraft/client/renderer/block/model/BlockStateModel$Unbaked;)V
+			ARG 3 selectorString
+			ARG 4 model

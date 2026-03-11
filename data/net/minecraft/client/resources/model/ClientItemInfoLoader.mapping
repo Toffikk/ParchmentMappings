@@ -1,0 +1,15 @@
+CLASS net/minecraft/client/resources/model/ClientItemInfoLoader
+	METHOD lambda$scheduleLoad$1 (Lnet/minecraft/resources/Identifier;Lnet/minecraft/server/packs/resources/Resource;Lcom/mojang/serialization/DataResult$Error;)V
+		ARG 2 error
+	METHOD lambda$scheduleLoad$2 (Lnet/minecraft/util/PlaceholderLookupProvider;Lnet/minecraft/client/renderer/item/ClientItem;)Lnet/minecraft/client/renderer/item/ClientItem;
+		ARG 1 clientItem
+	METHOD lambda$scheduleLoad$4 (Ljava/util/List;Lnet/minecraft/core/RegistryAccess$Frozen;Ljava/util/concurrent/Executor;Lnet/minecraft/resources/Identifier;Lnet/minecraft/server/packs/resources/Resource;)V
+		ARG 3 resourceId
+		ARG 4 resource
+	METHOD lambda$scheduleLoad$5 (Ljava/util/List;)Lnet/minecraft/client/resources/model/ClientItemInfoLoader$LoadedClientInfos;
+		ARG 0 loads
+	METHOD lambda$scheduleLoad$6 (Lnet/minecraft/core/RegistryAccess$Frozen;Ljava/util/concurrent/Executor;Ljava/util/Map;)Ljava/util/concurrent/CompletionStage;
+		ARG 2 resources
+	METHOD scheduleLoad (Lnet/minecraft/server/packs/resources/ResourceManager;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 manager
+		ARG 1 executor

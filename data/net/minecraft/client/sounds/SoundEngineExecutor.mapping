@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/sounds/SoundEngineExecutor
+	METHOD lambda$createThread$0 (Ljava/lang/Thread;Ljava/lang/Throwable;)V
+		ARG 0 t
+		ARG 1 e

@@ -1,0 +1,7 @@
+CLASS net/minecraft/client/resources/SplashManager
+	METHOD <init> (Lnet/minecraft/client/User;)V
+		ARG 1 user
+	METHOD lambda$prepare$0 (Ljava/lang/String;)Z
+		ARG 0 line
+	METHOD literalSplash (Ljava/lang/String;)Lnet/minecraft/network/chat/Component;
+		ARG 0 text

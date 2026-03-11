@@ -1,0 +1,22 @@
+CLASS net/minecraft/client/renderer/item/RangeSelectItemModel
+	METHOD <init> (Lnet/minecraft/client/renderer/item/properties/numeric/RangeSelectItemModelProperty;F[F[Lnet/minecraft/client/renderer/item/ItemModel;Lnet/minecraft/client/renderer/item/ItemModel;)V
+		ARG 1 property
+		ARG 2 scale
+		ARG 3 thresholds
+		ARG 4 models
+		ARG 5 fallback
+	METHOD lastIndexLessOrEqual ([FF)I
+		ARG 0 haystack
+		ARG 1 needle
+	CLASS Entry
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+	CLASS Unbaked
+		METHOD lambda$bake$1 (Lnet/minecraft/client/renderer/item/ItemModel$BakingContext;Lnet/minecraft/client/renderer/item/ItemModel$Unbaked;)Lnet/minecraft/client/renderer/item/ItemModel;
+			ARG 1 m
+		METHOD lambda$resolveDependencies$2 (Lnet/minecraft/client/resources/model/ResolvableModel$Resolver;Lnet/minecraft/client/renderer/item/ItemModel$Unbaked;)V
+			ARG 1 m
+		METHOD lambda$resolveDependencies$3 (Lnet/minecraft/client/resources/model/ResolvableModel$Resolver;Lnet/minecraft/client/renderer/item/RangeSelectItemModel$Entry;)V
+			ARG 1 entry
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i

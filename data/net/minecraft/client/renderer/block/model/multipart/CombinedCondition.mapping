@@ -1,0 +1,8 @@
+CLASS net/minecraft/client/renderer/block/model/multipart/CombinedCondition
+	METHOD lambda$instantiate$0 (Lnet/minecraft/world/level/block/state/StateDefinition;Lnet/minecraft/client/renderer/block/model/multipart/Condition;)Ljava/util/function/Predicate;
+		ARG 1 c
+	CLASS Operation
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+			ARG 3 name
+		METHOD apply (Ljava/util/List;)Ljava/util/function/Predicate;
+			ARG 1 terms

@@ -1,0 +1,8 @@
+CLASS net/minecraft/client/telemetry/events/WorldLoadTimesEvent
+	METHOD <init> (ZLjava/time/Duration;)V
+		ARG 1 newWorld
+		ARG 2 worldLoadDuration
+	METHOD lambda$send$0 (Lnet/minecraft/client/telemetry/TelemetryPropertyMap$Builder;)V
+		ARG 1 event
+	METHOD send (Lnet/minecraft/client/telemetry/TelemetryEventSender;)V
+		ARG 1 eventSender

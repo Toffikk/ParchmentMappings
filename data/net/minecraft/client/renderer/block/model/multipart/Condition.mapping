@@ -1,0 +1,17 @@
+CLASS net/minecraft/client/renderer/block/model/multipart/Condition
+	METHOD instantiate (Lnet/minecraft/world/level/block/state/StateDefinition;)Ljava/util/function/Predicate;
+		ARG 1 definition
+	METHOD lambda$static$1 (Ljava/util/Map;)Lcom/mojang/serialization/DataResult;
+		ARG 0 map
+	METHOD lambda$static$2 (Lnet/minecraft/client/renderer/block/model/multipart/CombinedCondition;)Ljava/util/Map;
+		ARG 0 condition
+	METHOD lambda$static$3 (Lnet/minecraft/client/renderer/block/model/multipart/CombinedCondition;)Ljava/lang/Record;
+		ARG 0 l
+	METHOD lambda$static$4 (Lnet/minecraft/client/renderer/block/model/multipart/KeyValueCondition;)Ljava/lang/Record;
+		ARG 0 r
+	METHOD lambda$static$5 (Lcom/mojang/datafixers/util/Either;)Lnet/minecraft/client/renderer/block/model/multipart/Condition;
+		ARG 0 either
+	METHOD lambda$static$7 (Lnet/minecraft/client/renderer/block/model/multipart/Condition;)Lcom/mojang/serialization/DataResult;
+		ARG 0 condition
+	METHOD lambda$static$8 (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
+		ARG 0 self

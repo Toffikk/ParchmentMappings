@@ -1,0 +1,7 @@
+CLASS net/minecraft/client/multiplayer/KnownPacksManager
+	METHOD lambda$new$0 (Lcom/google/common/collect/ImmutableMap$Builder;Lnet/minecraft/server/packs/PackLocationInfo;Lnet/minecraft/server/packs/repository/KnownPack;)V
+		ARG 2 knownPack
+	METHOD lambda$new$1 (Lcom/google/common/collect/ImmutableMap$Builder;Lnet/minecraft/server/packs/repository/Pack;)V
+		ARG 1 pack
+	METHOD trySelectingPacks (Ljava/util/List;)Ljava/util/List;
+		ARG 1 packsToSelect

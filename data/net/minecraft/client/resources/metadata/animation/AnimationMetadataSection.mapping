@@ -1,0 +1,6 @@
+CLASS net/minecraft/client/resources/metadata/animation/AnimationMetadataSection
+	METHOD calculateFrameSize (II)Lnet/minecraft/client/resources/metadata/animation/FrameSize;
+		ARG 1 spriteWidth
+		ARG 2 spriteHeight
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i

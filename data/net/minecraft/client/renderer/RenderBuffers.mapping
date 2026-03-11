@@ -1,0 +1,12 @@
+CLASS net/minecraft/client/renderer/RenderBuffers
+	METHOD <init> (I)V
+		ARG 1 maxSectionBuilders
+	METHOD lambda$new$0 (Lit/unimi/dsi/fastutil/objects/Object2ObjectLinkedOpenHashMap;)V
+		ARG 1 map
+	METHOD lambda$new$1 (Lit/unimi/dsi/fastutil/objects/Object2ObjectLinkedOpenHashMap;Lnet/minecraft/client/renderer/rendertype/RenderType;)V
+		ARG 1 type
+	METHOD lambda$new$2 (Lit/unimi/dsi/fastutil/objects/Object2ObjectLinkedOpenHashMap;)V
+		ARG 0 map
+	METHOD put (Lit/unimi/dsi/fastutil/objects/Object2ObjectLinkedOpenHashMap;Lnet/minecraft/client/renderer/rendertype/RenderType;)V
+		ARG 0 map
+		ARG 1 type

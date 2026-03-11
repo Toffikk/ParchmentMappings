@@ -1,0 +1,6 @@
+CLASS net/minecraft/commands/arguments/coordinates/LocalCoordinates
+	METHOD parse (Lcom/mojang/brigadier/StringReader;)Lnet/minecraft/commands/arguments/coordinates/LocalCoordinates;
+		ARG 0 reader
+	METHOD readDouble (Lcom/mojang/brigadier/StringReader;I)D
+		ARG 0 reader
+		ARG 1 start

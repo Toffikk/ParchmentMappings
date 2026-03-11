@@ -1,0 +1,17 @@
+CLASS net/minecraft/client/searchtree/SuffixArray
+	METHOD add (Ljava/lang/Object;Ljava/lang/String;)V
+		ARG 1 t
+		ARG 2 text
+	METHOD compare (Ljava/lang/String;I)I
+		ARG 1 text
+		ARG 2 index
+	METHOD getString (I)Ljava/lang/String;
+		ARG 1 i
+	METHOD lambda$generate$0 ([I[III)I
+		ARG 2 a
+		ARG 3 b
+	METHOD lambda$generate$1 ([I[I[III)V
+		ARG 3 a
+		ARG 4 b
+	METHOD search (Ljava/lang/String;)Ljava/util/List;
+		ARG 1 text

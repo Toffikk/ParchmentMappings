@@ -1,0 +1,12 @@
+CLASS net/minecraft/commands/arguments/coordinates/WorldCoordinates
+	METHOD absolute (DDD)Lnet/minecraft/commands/arguments/coordinates/WorldCoordinates;
+		ARG 0 x
+		ARG 2 y
+		ARG 4 z
+	METHOD absolute (Lnet/minecraft/world/phys/Vec2;)Lnet/minecraft/commands/arguments/coordinates/WorldCoordinates;
+		ARG 0 rotation
+	METHOD parseDouble (Lcom/mojang/brigadier/StringReader;Z)Lnet/minecraft/commands/arguments/coordinates/WorldCoordinates;
+		ARG 0 reader
+		ARG 1 centerCorrect
+	METHOD parseInt (Lcom/mojang/brigadier/StringReader;)Lnet/minecraft/commands/arguments/coordinates/WorldCoordinates;
+		ARG 0 reader

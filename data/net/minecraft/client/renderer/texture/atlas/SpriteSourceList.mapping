@@ -1,0 +1,12 @@
+CLASS net/minecraft/client/renderer/texture/atlas/SpriteSourceList
+	METHOD <init> (Ljava/util/List;)V
+		ARG 1 sources
+	METHOD lambda$list$0 (Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/client/renderer/texture/atlas/SpriteSource$Output;Lnet/minecraft/client/renderer/texture/atlas/SpriteSource;)V
+		ARG 2 s
+	METHOD lambda$list$1 (Lnet/minecraft/client/renderer/texture/atlas/SpriteResourceLoader;)Lnet/minecraft/client/renderer/texture/SpriteContents;
+		ARG 0 loader
+	METHOD list (Lnet/minecraft/server/packs/resources/ResourceManager;)Ljava/util/List;
+		ARG 1 resourceManager
+	METHOD load (Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/resources/Identifier;)Lnet/minecraft/client/renderer/texture/atlas/SpriteSourceList;
+		ARG 0 resourceManager
+		ARG 1 atlasId

@@ -1,0 +1,25 @@
+CLASS net/minecraft/client/renderer/debug/DebugRenderer
+	METHOD emitGizmos (Lnet/minecraft/client/renderer/culling/Frustum;DDDF)V
+		ARG 1 frustum
+		ARG 2 camX
+		ARG 4 camY
+		ARG 6 camZ
+		ARG 8 partialTicks
+	METHOD getTargetedEntity (Lnet/minecraft/world/entity/Entity;I)Ljava/util/Optional;
+		ARG 0 cameraEntity
+		ARG 1 maxTargetingRange
+	METHOD mixColor (F)Lnet/minecraft/world/phys/Vec3;
+		ARG 0 hueShift
+	METHOD shiftHue (FFFF)Lnet/minecraft/world/phys/Vec3;
+		ARG 0 r
+		ARG 1 g
+		ARG 2 b
+		ARG 3 hs
+	CLASS SimpleDebugRenderer
+		METHOD emitGizmos (DDDLnet/minecraft/util/debug/DebugValueAccess;Lnet/minecraft/client/renderer/culling/Frustum;F)V
+			ARG 1 camX
+			ARG 3 camY
+			ARG 5 camZ
+			ARG 7 debugValues
+			ARG 8 frustum
+			ARG 9 partialTicks

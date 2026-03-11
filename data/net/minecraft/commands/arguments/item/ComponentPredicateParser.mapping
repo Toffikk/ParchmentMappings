@@ -1,0 +1,67 @@
+CLASS net/minecraft/commands/arguments/item/ComponentPredicateParser
+	METHOD createGrammar (Lnet/minecraft/commands/arguments/item/ComponentPredicateParser$Context;)Lnet/minecraft/util/parsing/packrat/commands/Grammar;
+		ARG 0 context
+	METHOD lambda$createGrammar$0 (Lnet/minecraft/util/parsing/packrat/Atom;Lnet/minecraft/util/parsing/packrat/Atom;Lnet/minecraft/util/parsing/packrat/Scope;)Ljava/util/List;
+		ARG 2 scope
+	METHOD lambda$createGrammar$1 (Lnet/minecraft/util/parsing/packrat/Atom;Lnet/minecraft/util/parsing/packrat/Atom;Lnet/minecraft/util/parsing/packrat/Scope;)Ljava/util/Optional;
+		ARG 2 scope
+	METHOD lambda$createGrammar$2 (Lnet/minecraft/util/parsing/packrat/Scope;)Lnet/minecraft/util/Unit;
+		ARG 0 s
+	METHOD lambda$createGrammar$3 (Ljava/lang/Object;Ljava/util/List;)Ljava/util/List;
+		ARG 1 rest
+	METHOD lambda$createGrammar$4 (Lnet/minecraft/commands/arguments/item/ComponentPredicateParser$Context;Lnet/minecraft/util/parsing/packrat/Atom;Lnet/minecraft/util/parsing/packrat/Atom;Lnet/minecraft/util/parsing/packrat/Scope;)Ljava/util/List;
+		ARG 3 scope
+	METHOD lambda$createGrammar$5 (Ljava/lang/Object;Ljava/util/List;)Ljava/util/List;
+		ARG 1 rest
+	METHOD lambda$createGrammar$6 (Lnet/minecraft/util/parsing/packrat/Atom;Lnet/minecraft/util/parsing/packrat/Atom;Lnet/minecraft/util/parsing/packrat/Scope;)Ljava/util/List;
+		ARG 2 scope
+	METHOD lambda$createGrammar$7 (Lnet/minecraft/util/parsing/packrat/Atom;Lnet/minecraft/util/parsing/packrat/Atom;Lnet/minecraft/util/parsing/packrat/Scope;)Ljava/lang/Object;
+		ARG 2 scope
+	METHOD lambda$createGrammar$8 (Lnet/minecraft/commands/arguments/item/ComponentPredicateParser$Context;Lnet/minecraft/util/parsing/packrat/Atom;Lnet/minecraft/util/parsing/packrat/Scope;)Ljava/lang/Object;
+		ARG 2 scope
+	METHOD lambda$createGrammar$9 (Lnet/minecraft/util/parsing/packrat/Atom;Lnet/minecraft/util/parsing/packrat/Atom;Lnet/minecraft/commands/arguments/item/ComponentPredicateParser$Context;Lnet/minecraft/util/parsing/packrat/Atom;Lnet/minecraft/util/parsing/packrat/ParseState;)Ljava/lang/Object;
+		ARG 4 state
+	CLASS ComponentLookupRule
+		METHOD <init> (Lnet/minecraft/util/parsing/packrat/NamedRule;Lnet/minecraft/commands/arguments/item/ComponentPredicateParser$Context;)V
+			ARG 1 idParser
+			ARG 2 context
+	CLASS Context
+		METHOD anyOf (Ljava/util/List;)Ljava/lang/Object;
+			ARG 1 alternatives
+		METHOD createComponentTest (Lcom/mojang/brigadier/ImmutableStringReader;Ljava/lang/Object;)Ljava/lang/Object;
+			ARG 1 reader
+			ARG 2 componentType
+		METHOD createComponentTest (Lcom/mojang/brigadier/ImmutableStringReader;Ljava/lang/Object;Lcom/mojang/serialization/Dynamic;)Ljava/lang/Object;
+			ARG 1 reader
+			ARG 2 componentType
+			ARG 3 value
+		METHOD createPredicateTest (Lcom/mojang/brigadier/ImmutableStringReader;Ljava/lang/Object;Lcom/mojang/serialization/Dynamic;)Ljava/lang/Object;
+			ARG 1 reader
+			ARG 2 predicateType
+			ARG 3 value
+		METHOD forElementType (Lcom/mojang/brigadier/ImmutableStringReader;Lnet/minecraft/resources/Identifier;)Ljava/lang/Object;
+			ARG 1 reader
+			ARG 2 id
+		METHOD forTagType (Lcom/mojang/brigadier/ImmutableStringReader;Lnet/minecraft/resources/Identifier;)Ljava/lang/Object;
+			ARG 1 reader
+			ARG 2 id
+		METHOD lookupComponentType (Lcom/mojang/brigadier/ImmutableStringReader;Lnet/minecraft/resources/Identifier;)Ljava/lang/Object;
+			ARG 1 reader
+			ARG 2 id
+		METHOD lookupPredicateType (Lcom/mojang/brigadier/ImmutableStringReader;Lnet/minecraft/resources/Identifier;)Ljava/lang/Object;
+			ARG 1 reader
+			ARG 2 id
+		METHOD negate (Ljava/lang/Object;)Ljava/lang/Object;
+			ARG 1 value
+	CLASS ElementLookupRule
+		METHOD <init> (Lnet/minecraft/util/parsing/packrat/NamedRule;Lnet/minecraft/commands/arguments/item/ComponentPredicateParser$Context;)V
+			ARG 1 idParser
+			ARG 2 context
+	CLASS PredicateLookupRule
+		METHOD <init> (Lnet/minecraft/util/parsing/packrat/NamedRule;Lnet/minecraft/commands/arguments/item/ComponentPredicateParser$Context;)V
+			ARG 1 idParser
+			ARG 2 context
+	CLASS TagLookupRule
+		METHOD <init> (Lnet/minecraft/util/parsing/packrat/NamedRule;Lnet/minecraft/commands/arguments/item/ComponentPredicateParser$Context;)V
+			ARG 1 idParser
+			ARG 2 context

@@ -1,0 +1,5 @@
+CLASS net/minecraft/client/resources/model/EquipmentAssetManager
+	METHOD get (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/client/resources/model/EquipmentClientInfo;
+		ARG 1 id
+	METHOD lambda$apply$0 (Ljava/util/Map$Entry;)Lnet/minecraft/resources/ResourceKey;
+		ARG 0 e

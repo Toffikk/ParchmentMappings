@@ -1,0 +1,44 @@
+CLASS net/minecraft/client/renderer/item/SelectItemModel
+	METHOD <init> (Lnet/minecraft/client/renderer/item/properties/select/SelectItemModelProperty;Lnet/minecraft/client/renderer/item/SelectItemModel$ModelSelector;)V
+		ARG 1 property
+		ARG 2 models
+	CLASS ModelSelector
+		METHOD get (Ljava/lang/Object;Lnet/minecraft/client/multiplayer/ClientLevel;)Lnet/minecraft/client/renderer/item/ItemModel;
+			ARG 1 value
+			ARG 2 context
+	CLASS SwitchCase
+		METHOD codec (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
+			ARG 0 valueCodec
+		METHOD lambda$codec$0 (Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 1 i
+	CLASS Unbaked
+		METHOD lambda$bake$1 (Lnet/minecraft/client/renderer/item/ItemModel$BakingContext;Lnet/minecraft/client/renderer/item/ItemModel$Unbaked;)Lnet/minecraft/client/renderer/item/ItemModel;
+			ARG 1 m
+		METHOD lambda$resolveDependencies$2 (Lnet/minecraft/client/resources/model/ResolvableModel$Resolver;Lnet/minecraft/client/renderer/item/ItemModel$Unbaked;)V
+			ARG 1 m
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+	CLASS UnbakedSwitch
+		METHOD bake (Lnet/minecraft/client/renderer/item/ItemModel$BakingContext;Lnet/minecraft/client/renderer/item/ItemModel;)Lnet/minecraft/client/renderer/item/ItemModel;
+			ARG 1 context
+			ARG 2 fallback
+		METHOD createModelGetter (Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;Lnet/minecraft/util/RegistryContextSwapper;)Lnet/minecraft/client/renderer/item/SelectItemModel$ModelSelector;
+			ARG 1 originalModels
+			ARG 2 registrySwapper
+		METHOD lambda$createModelGetter$1 (Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;Ljava/lang/Object;Lnet/minecraft/client/multiplayer/ClientLevel;)Lnet/minecraft/client/renderer/item/ItemModel;
+			ARG 1 value
+			ARG 2 context
+		METHOD lambda$createModelGetter$2 (Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;Lnet/minecraft/client/renderer/item/ItemModel;Ljava/lang/Object;)V
+			ARG 2 remappedValue
+		METHOD lambda$createModelGetter$3 (Lnet/minecraft/util/RegistryContextSwapper;Lnet/minecraft/client/multiplayer/ClientLevel;Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;Ljava/lang/Object;Lnet/minecraft/client/renderer/item/ItemModel;)V
+			ARG 4 value
+			ARG 5 model
+		METHOD lambda$createModelGetter$4 (Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;Lnet/minecraft/client/renderer/item/ItemModel;Lnet/minecraft/util/RegistryContextSwapper;Lnet/minecraft/client/multiplayer/ClientLevel;)Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;
+			ARG 4 clientLevel
+		METHOD lambda$createModelGetter$5 (Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;Lnet/minecraft/client/renderer/item/ItemModel;Lnet/minecraft/client/multiplayer/CacheSlot;Ljava/lang/Object;Lnet/minecraft/client/multiplayer/ClientLevel;)Lnet/minecraft/client/renderer/item/ItemModel;
+			ARG 3 value
+			ARG 4 context
+		METHOD lambda$static$0 (Lnet/minecraft/client/renderer/item/SelectItemModel$UnbakedSwitch;)Lnet/minecraft/client/renderer/item/properties/select/SelectItemModelProperty$Type;
+			ARG 0 unbaked
+		METHOD resolveDependencies (Lnet/minecraft/client/resources/model/ResolvableModel$Resolver;)V
+			ARG 1 resolver

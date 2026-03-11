@@ -1,0 +1,21 @@
+CLASS net/minecraft/client/renderer/item/properties/select/SelectItemModelProperty
+	METHOD get (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/world/entity/LivingEntity;ILnet/minecraft/world/item/ItemDisplayContext;)Ljava/lang/Object;
+		ARG 1 itemStack
+		ARG 2 level
+		ARG 3 owner
+		ARG 4 seed
+		ARG 5 displayContext
+	CLASS Type
+		METHOD create (Lcom/mojang/serialization/MapCodec;Lcom/mojang/serialization/Codec;)Lnet/minecraft/client/renderer/item/properties/select/SelectItemModelProperty$Type;
+			ARG 0 propertyMapCodec
+			ARG 1 valueCodec
+		METHOD createCasesFieldCodec (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/MapCodec;
+			ARG 0 valueCodec
+		METHOD lambda$create$0 (Lcom/mojang/serialization/MapCodec;Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 2 i
+		METHOD lambda$validateCases$2 (Lcom/google/common/collect/Multiset$Entry;)Z
+			ARG 0 e
+		METHOD lambda$validateCases$3 (Lcom/google/common/collect/Multiset$Entry;)Ljava/lang/String;
+			ARG 0 e
+		METHOD validateCases (Ljava/util/List;)Lcom/mojang/serialization/DataResult;
+			ARG 0 cases

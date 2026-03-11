@@ -1,0 +1,9 @@
+CLASS net/minecraft/client/renderer/entity/layers/ItemInHandLayer
+	METHOD submitArmWithItem (Lnet/minecraft/client/renderer/entity/state/ArmedEntityRenderState;Lnet/minecraft/client/renderer/item/ItemStackRenderState;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/HumanoidArm;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;I)V
+		ARG 1 state
+		ARG 2 item
+		ARG 3 itemStack
+		ARG 4 arm
+		ARG 5 poseStack
+		ARG 6 submitNodeCollector
+		ARG 7 lightCoords

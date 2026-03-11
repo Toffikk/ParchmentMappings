@@ -1,0 +1,7 @@
+CLASS net/minecraft/world/level/block/DoubleBlockCombiner
+	CLASS Combiner
+		METHOD acceptDouble (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+			ARG 1 first
+			ARG 2 second
+		METHOD acceptSingle (Ljava/lang/Object;)Ljava/lang/Object;
+			ARG 1 single

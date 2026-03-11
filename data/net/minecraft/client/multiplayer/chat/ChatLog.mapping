@@ -1,0 +1,16 @@
+CLASS net/minecraft/client/multiplayer/chat/ChatLog
+	METHOD <init> (I)V
+		ARG 1 capacity
+	METHOD <init> (ILjava/util/List;)V
+		ARG 1 capacity
+		ARG 2 buffer
+	METHOD codec (I)Lcom/mojang/serialization/Codec;
+		ARG 0 capacity
+	METHOD index (I)I
+		ARG 1 id
+	METHOD lambda$codec$1 (ILjava/util/List;)Lcom/mojang/serialization/DataResult;
+		ARG 1 loggedChatEvents
+	METHOD lookup (I)Lnet/minecraft/client/multiplayer/chat/LoggedChatEvent;
+		ARG 1 id
+	METHOD push (Lnet/minecraft/client/multiplayer/chat/LoggedChatEvent;)V
+		ARG 1 event

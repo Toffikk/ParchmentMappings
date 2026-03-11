@@ -1,0 +1,5 @@
+CLASS net/minecraft/client/model/monster/blaze/BlazeModel
+	METHOD getPartName (I)Ljava/lang/String;
+		ARG 0 i
+	METHOD lambda$new$0 (Lnet/minecraft/client/model/geom/ModelPart;I)Lnet/minecraft/client/model/geom/ModelPart;
+		ARG 1 i

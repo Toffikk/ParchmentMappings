@@ -1,0 +1,6 @@
+CLASS net/minecraft/client/waypoints/ClientWaypointManager
+	METHOD forEachWaypoint (Lnet/minecraft/world/entity/Entity;Ljava/util/function/Consumer;)V
+		ARG 1 fromEntity
+		ARG 2 consumer
+	METHOD lambda$forEachWaypoint$0 (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/waypoints/TrackedWaypoint;)D
+		ARG 1 waypoint

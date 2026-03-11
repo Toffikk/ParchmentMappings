@@ -1,0 +1,13 @@
+CLASS net/minecraft/client/animation/KeyframeAnimations
+	METHOD degreeVec (FFF)Lorg/joml/Vector3f;
+		ARG 0 x
+		ARG 1 y
+		ARG 2 z
+	METHOD posVec (FFF)Lorg/joml/Vector3f;
+		ARG 0 x
+		ARG 1 y
+		ARG 2 z
+	METHOD scaleVec (DDD)Lorg/joml/Vector3f;
+		ARG 0 x
+		ARG 2 y
+		ARG 4 z

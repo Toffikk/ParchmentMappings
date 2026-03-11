@@ -1,0 +1,8 @@
+CLASS net/minecraft/client/resources/model/WeightedVariants
+	METHOD <init> (Lnet/minecraft/util/random/WeightedList;)V
+		ARG 1 list
+	CLASS Unbaked
+		METHOD lambda$bake$0 (Lnet/minecraft/client/resources/model/ModelBaker;Lnet/minecraft/client/renderer/block/model/BlockStateModel$Unbaked;)Lnet/minecraft/client/renderer/block/model/BlockStateModel;
+			ARG 1 m
+		METHOD lambda$resolveDependencies$1 (Lnet/minecraft/client/resources/model/ResolvableModel$Resolver;Lnet/minecraft/util/random/Weighted;)V
+			ARG 1 v

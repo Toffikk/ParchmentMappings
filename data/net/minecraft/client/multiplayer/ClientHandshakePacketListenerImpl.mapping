@@ -1,0 +1,27 @@
+CLASS net/minecraft/client/multiplayer/ClientHandshakePacketListenerImpl
+	METHOD <init> (Lnet/minecraft/network/Connection;Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/multiplayer/ServerData;Lnet/minecraft/client/gui/screens/Screen;ZLjava/time/Duration;Ljava/util/function/Consumer;Lnet/minecraft/client/multiplayer/LevelLoadTracker;Lnet/minecraft/client/multiplayer/TransferState;)V
+		ARG 1 connection
+		ARG 2 minecraft
+		ARG 3 serverData
+		ARG 4 parent
+		ARG 5 newWorld
+		ARG 6 worldLoadDuration
+		ARG 7 updateStatus
+		ARG 8 levelLoadTracker
+		ARG 9 transferState
+	METHOD authenticateServer (Ljava/lang/String;)Lnet/minecraft/network/chat/Component;
+		ARG 1 digest
+	METHOD lambda$switchState$0 (Lnet/minecraft/client/multiplayer/ClientHandshakePacketListenerImpl$State;Lnet/minecraft/client/multiplayer/ClientHandshakePacketListenerImpl$State;)Lnet/minecraft/client/multiplayer/ClientHandshakePacketListenerImpl$State;
+		ARG 1 lastState
+	METHOD setEncryption (Lnet/minecraft/network/protocol/login/ServerboundKeyPacket;Ljavax/crypto/Cipher;Ljavax/crypto/Cipher;)V
+		ARG 1 setKeyPacket
+		ARG 2 decryptCipher
+		ARG 3 encryptCipher
+	METHOD setMinigameName (Ljava/lang/String;)V
+		ARG 1 minigameName
+	METHOD switchState (Lnet/minecraft/client/multiplayer/ClientHandshakePacketListenerImpl$State;)V
+		ARG 1 toState
+	CLASS State
+		METHOD <init> (Ljava/lang/String;ILnet/minecraft/network/chat/Component;Ljava/util/Set;)V
+			ARG 3 message
+			ARG 4 fromStates

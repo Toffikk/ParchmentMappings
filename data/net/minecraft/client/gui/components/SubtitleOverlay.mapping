@@ -1,0 +1,24 @@
+CLASS net/minecraft/client/gui/components/SubtitleOverlay
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD render (Lnet/minecraft/client/gui/GuiGraphics;)V
+		ARG 1 graphics
+	CLASS Subtitle
+		METHOD <init> (Lnet/minecraft/network/chat/Component;FLnet/minecraft/world/phys/Vec3;)V
+			ARG 1 text
+			ARG 2 range
+			ARG 3 location
+		METHOD getClosest (Lnet/minecraft/world/phys/Vec3;)Lnet/minecraft/client/gui/components/SubtitleOverlay$SoundPlayedAt;
+			ARG 1 position
+		METHOD isAudibleFrom (Lnet/minecraft/world/phys/Vec3;)Z
+			ARG 1 camera
+		METHOD lambda$getClosest$0 (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/client/gui/components/SubtitleOverlay$SoundPlayedAt;)D
+			ARG 1 soundPlayedAt
+		METHOD lambda$purgeOldInstances$2 (JDLnet/minecraft/client/gui/components/SubtitleOverlay$SoundPlayedAt;)Z
+			ARG 4 soundPlayedAt
+		METHOD lambda$refresh$1 (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/client/gui/components/SubtitleOverlay$SoundPlayedAt;)Z
+			ARG 1 soundPlayedAt
+		METHOD purgeOldInstances (D)V
+			ARG 1 maxAge
+		METHOD refresh (Lnet/minecraft/world/phys/Vec3;)V
+			ARG 1 location

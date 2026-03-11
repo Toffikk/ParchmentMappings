@@ -1,0 +1,24 @@
+CLASS net/minecraft/client/renderer/PostChainConfig
+	METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 i
+	CLASS Input
+		METHOD lambda$static$0 (Lcom/mojang/datafixers/util/Either;)Lnet/minecraft/client/renderer/PostChainConfig$Input;
+			ARG 0 either
+		METHOD lambda$static$1 (Lnet/minecraft/client/renderer/PostChainConfig$Input;)Lcom/mojang/datafixers/util/Either;
+			ARG 0 input
+	CLASS InternalTarget
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+	CLASS Pass
+		METHOD lambda$referencedTargets$3 (Lnet/minecraft/client/renderer/PostChainConfig$Input;)Ljava/util/stream/Stream;
+			ARG 0 input
+		METHOD lambda$static$1 (Ljava/util/List;)Lcom/mojang/serialization/DataResult;
+			ARG 0 inputs
+		METHOD lambda$static$2 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+	CLASS TargetInput
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+	CLASS TextureInput
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i

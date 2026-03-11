@@ -1,0 +1,10 @@
+CLASS net/minecraft/client/gui/screens/recipebook/CraftingRecipeBookComponent
+	METHOD <init> (Lnet/minecraft/world/inventory/AbstractCraftingMenu;)V
+		ARG 1 menu
+	METHOD canDisplay (Lnet/minecraft/world/item/crafting/display/RecipeDisplay;)Z
+		ARG 1 display
+	METHOD lambda$fillGhostRecipe$0 (Ljava/util/List;Lnet/minecraft/client/gui/screens/recipebook/GhostSlots;Lnet/minecraft/util/context/ContextMap;Lnet/minecraft/world/item/crafting/display/SlotDisplay;III)V
+		ARG 3 ingredient
+		ARG 4 gridIndex
+		ARG 5 gridXPos
+		ARG 6 gridYPos

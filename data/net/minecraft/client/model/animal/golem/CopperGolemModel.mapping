@@ -1,0 +1,13 @@
+CLASS net/minecraft/client/model/animal/golem/CopperGolemModel
+	METHOD applyBlockOnAntennaTransform (Lcom/mojang/blaze3d/vertex/PoseStack;)V
+		ARG 1 poseStack
+	METHOD lambda$createBodyLayer$0 (Lnet/minecraft/client/model/geom/PartPose;)Lnet/minecraft/client/model/geom/PartPose;
+		ARG 0 p
+	METHOD lambda$createEyesLayer$4 (Lnet/minecraft/client/model/geom/builders/MeshDefinition;)Lnet/minecraft/client/model/geom/builders/MeshDefinition;
+		ARG 0 mesh
+	METHOD lambda$createRunningPoseBodyLayer$1 (Lnet/minecraft/client/model/geom/PartPose;)Lnet/minecraft/client/model/geom/PartPose;
+		ARG 0 p
+	METHOD lambda$createSittingPoseBodyLayer$2 (Lnet/minecraft/client/model/geom/PartPose;)Lnet/minecraft/client/model/geom/PartPose;
+		ARG 0 p
+	METHOD lambda$createStarPoseBodyLayer$3 (Lnet/minecraft/client/model/geom/PartPose;)Lnet/minecraft/client/model/geom/PartPose;
+		ARG 0 p

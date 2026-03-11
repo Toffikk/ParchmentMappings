@@ -1,0 +1,76 @@
+CLASS net/minecraft/client/gui/screens/achievement/StatsScreen
+	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;Lnet/minecraft/stats/StatsCounter;)V
+		ARG 1 lastScreen
+		ARG 2 stats
+	METHOD getTranslationKey (Lnet/minecraft/stats/Stat;)Ljava/lang/String;
+		ARG 0 stat
+	METHOD lambda$init$2 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$init$3 (Lnet/minecraft/client/gui/components/AbstractWidget;)V
+		ARG 1 button
+	METHOD lambda$new$0 (Lnet/minecraft/client/gui/screens/achievement/StatsScreen;Lnet/minecraft/client/gui/components/events/GuiEventListener;)V
+		ARG 1 x$0
+	METHOD lambda$new$1 (Lnet/minecraft/client/gui/screens/achievement/StatsScreen;Lnet/minecraft/client/gui/components/events/GuiEventListener;)V
+		ARG 1 x$0
+	METHOD lambda$repositionElements$4 (Lnet/minecraft/client/gui/navigation/ScreenRectangle;Lnet/minecraft/client/gui/components/AbstractWidget;)V
+		ARG 1 child
+	METHOD lambda$repositionElements$5 (Lnet/minecraft/client/gui/navigation/ScreenRectangle;Lnet/minecraft/client/gui/components/tabs/Tab;)V
+		ARG 1 tab
+	METHOD setTabActiveStateAndTooltip (I)V
+		ARG 1 index
+	CLASS GeneralStatisticsList
+		METHOD <init> (Lnet/minecraft/client/gui/screens/achievement/StatsScreen;Lnet/minecraft/client/Minecraft;)V
+			ARG 2 minecraft
+		METHOD lambda$new$0 (Lnet/minecraft/stats/Stat;)Ljava/lang/String;
+			ARG 0 k
+		CLASS Entry
+			METHOD <init> (Lnet/minecraft/client/gui/screens/achievement/StatsScreen$GeneralStatisticsList;Lnet/minecraft/stats/Stat;)V
+				ARG 2 stat
+	CLASS ItemStatisticsList
+		METHOD <init> (Lnet/minecraft/client/gui/screens/achievement/StatsScreen;Lnet/minecraft/client/Minecraft;)V
+			ARG 2 minecraft
+		METHOD getColumn (I)Lnet/minecraft/stats/StatType;
+			ARG 1 i
+		METHOD getColumnIndex (Lnet/minecraft/stats/StatType;)I
+			ARG 1 column
+		METHOD getColumnX (I)I
+			ARG 1 col
+		METHOD lambda$getItemRows$0 (Ljava/util/List;Lnet/minecraft/client/gui/screens/achievement/StatsScreen$ItemStatisticsList$Entry;)V
+			ARG 1 entry
+		METHOD sortByColumn (Lnet/minecraft/stats/StatType;)V
+			ARG 1 column
+		METHOD sortItems (Ljava/util/Comparator;)V
+			ARG 1 comparator
+		CLASS HeaderEntry
+			CLASS StatSortButton
+				METHOD <init> (Lnet/minecraft/client/gui/screens/achievement/StatsScreen$ItemStatisticsList$HeaderEntry;ILnet/minecraft/resources/Identifier;)V
+					ARG 2 column
+					ARG 3 sprite
+				METHOD lambda$new$0 (ILnet/minecraft/client/gui/screens/achievement/StatsScreen$ItemStatisticsList;Lnet/minecraft/client/gui/components/Button;)V
+					ARG 2 button
+		CLASS ItemRow
+			METHOD <init> (Lnet/minecraft/client/gui/screens/achievement/StatsScreen$ItemStatisticsList;Lnet/minecraft/world/item/Item;)V
+				ARG 2 item
+			METHOD renderStat (Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/stats/Stat;IIZ)V
+				ARG 1 graphics
+				ARG 2 stat
+				ARG 3 x
+				ARG 4 y
+				ARG 5 shaded
+			CLASS ItemRowWidget
+				METHOD <init> (Lnet/minecraft/client/gui/screens/achievement/StatsScreen$ItemStatisticsList$ItemRow;Lnet/minecraft/world/item/ItemStack;)V
+					ARG 2 itemStack
+		CLASS ItemRowComparator
+			METHOD compare (Ljava/lang/Object;Ljava/lang/Object;)I
+				ARG 1 one
+				ARG 2 two
+	CLASS MobsStatisticsList
+		METHOD <init> (Lnet/minecraft/client/gui/screens/achievement/StatsScreen;Lnet/minecraft/client/Minecraft;)V
+			ARG 2 minecraft
+		CLASS MobRow
+			METHOD <init> (Lnet/minecraft/client/gui/screens/achievement/StatsScreen$MobsStatisticsList;Lnet/minecraft/world/entity/EntityType;)V
+				ARG 2 type
+	CLASS StatisticsTab
+		METHOD <init> (Lnet/minecraft/client/gui/screens/achievement/StatsScreen;Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/gui/components/AbstractSelectionList;)V
+			ARG 2 title
+			ARG 3 list

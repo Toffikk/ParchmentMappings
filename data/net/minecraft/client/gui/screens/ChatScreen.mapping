@@ -1,0 +1,23 @@
+CLASS net/minecraft/client/gui/screens/ChatScreen
+	METHOD <init> (Ljava/lang/String;Z)V
+		ARG 1 initial
+		ARG 2 isDraft
+	METHOD formatChat (Ljava/lang/String;I)Lnet/minecraft/util/FormattedCharSequence;
+		ARG 1 text
+		ARG 2 offset
+	METHOD handleChatInput (Ljava/lang/String;Z)V
+		ARG 1 msg
+		ARG 2 addToRecent
+	METHOD handleComponentClicked (Lnet/minecraft/network/chat/Style;Z)Z
+		ARG 1 clicked
+		ARG 2 allowInsertions
+	METHOD moveInHistory (I)V
+		ARG 1 dir
+	METHOD normalizeChatMessage (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 message
+	METHOD onEdited (Ljava/lang/String;)V
+		ARG 1 value
+	CLASS ChatConstructor
+		METHOD create (Ljava/lang/String;Z)Lnet/minecraft/client/gui/screens/ChatScreen;
+			ARG 1 initial
+			ARG 2 isDraft

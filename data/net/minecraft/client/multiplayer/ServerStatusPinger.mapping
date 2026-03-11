@@ -1,0 +1,33 @@
+CLASS net/minecraft/client/multiplayer/ServerStatusPinger
+	METHOD formatPlayerCount (II)Lnet/minecraft/network/chat/Component;
+		ARG 0 curPlayers
+		ARG 1 maxPlayers
+	METHOD onPingFailed (Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/multiplayer/ServerData;)V
+		ARG 1 reason
+		ARG 2 data
+	METHOD pingLegacyServer (Ljava/net/InetSocketAddress;Lnet/minecraft/client/multiplayer/resolver/ServerAddress;Lnet/minecraft/client/multiplayer/ServerData;Lnet/minecraft/server/network/EventLoopGroupHolder;)V
+		ARG 1 resolvedAddress
+		ARG 2 rawAddress
+		ARG 3 data
+		ARG 4 eventLoopGroupHolder
+	METHOD pingServer (Lnet/minecraft/client/multiplayer/ServerData;Ljava/lang/Runnable;Ljava/lang/Runnable;Lnet/minecraft/server/network/EventLoopGroupHolder;)V
+		ARG 1 data
+		ARG 2 onPersistentDataChange
+		ARG 3 onPongResponse
+		ARG 4 eventLoopGroupHolder
+	CLASS 1
+		METHOD lambda$handleStatusResponse$0 (Lnet/minecraft/client/multiplayer/ServerData;Lnet/minecraft/network/protocol/status/ServerStatus$Version;)V
+			ARG 1 version
+		METHOD lambda$handleStatusResponse$2 (Lnet/minecraft/client/multiplayer/ServerData;Lnet/minecraft/network/protocol/status/ServerStatus$Players;)V
+			ARG 1 players
+		METHOD lambda$handleStatusResponse$4 (Lnet/minecraft/client/multiplayer/ServerData;Ljava/lang/Runnable;Lnet/minecraft/network/protocol/status/ServerStatus$Favicon;)V
+			ARG 2 newIcon
+	CLASS 2
+		METHOD initChannel (Lio/netty/channel/Channel;)V
+			ARG 1 channel
+		METHOD lambda$initChannel$0 (Lnet/minecraft/client/multiplayer/ServerData;ILjava/lang/String;Ljava/lang/String;II)V
+			ARG 1 protocolVersion
+			ARG 2 gameVersion
+			ARG 3 motd
+			ARG 4 players
+			ARG 5 maxPlayers

@@ -1,0 +1,12 @@
+CLASS net/minecraft/client/resources/sounds/BiomeAmbientSoundsHandler
+	METHOD <init> (Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/sounds/SoundManager;)V
+		ARG 1 player
+		ARG 2 soundManager
+	METHOD lambda$tick$0 (Lnet/minecraft/core/Holder;Lnet/minecraft/core/Holder;Lnet/minecraft/client/resources/sounds/BiomeAmbientSoundsHandler$LoopSoundInstance;)Lnet/minecraft/client/resources/sounds/BiomeAmbientSoundsHandler$LoopSoundInstance;
+		ARG 2 biomeKey
+		ARG 3 soundInstance
+	METHOD lambda$tick$1 (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/attribute/AmbientMoodSettings;)V
+		ARG 2 mood
+	CLASS LoopSoundInstance
+		METHOD <init> (Lnet/minecraft/sounds/SoundEvent;)V
+			ARG 1 soundEvent

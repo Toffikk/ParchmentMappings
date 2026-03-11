@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/level/chunk/LightChunkGetter
+	METHOD onLightUpdate (Lnet/minecraft/world/level/LightLayer;Lnet/minecraft/core/SectionPos;)V
+		ARG 1 layer
+		ARG 2 pos

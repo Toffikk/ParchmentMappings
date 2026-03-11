@@ -1,3 +1,5 @@
 CLASS net/minecraft/util/thread/TaskScheduler
+	METHOD schedule (Ljava/lang/Runnable;)V
+		ARG 1 r
 	METHOD wrapRunnable (Ljava/lang/Runnable;)Ljava/lang/Runnable;
 		ARG 1 runnable

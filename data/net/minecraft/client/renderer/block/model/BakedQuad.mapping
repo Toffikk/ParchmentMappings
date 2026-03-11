@@ -1,0 +1,5 @@
+CLASS net/minecraft/client/renderer/block/model/BakedQuad
+	METHOD packedUV (I)J
+		ARG 1 vertex
+	METHOD position (I)Lorg/joml/Vector3fc;
+		ARG 1 vertex

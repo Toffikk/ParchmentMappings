@@ -1,0 +1,12 @@
+CLASS net/minecraft/client/gui/components/LogoRenderer
+	METHOD <init> (Z)V
+		ARG 1 keepLogoThroughFade
+	METHOD renderLogo (Lnet/minecraft/client/gui/GuiGraphics;IF)V
+		ARG 1 graphics
+		ARG 2 width
+		ARG 3 alpha
+	METHOD renderLogo (Lnet/minecraft/client/gui/GuiGraphics;IFI)V
+		ARG 1 graphics
+		ARG 2 width
+		ARG 3 alpha
+		ARG 4 heightOffset

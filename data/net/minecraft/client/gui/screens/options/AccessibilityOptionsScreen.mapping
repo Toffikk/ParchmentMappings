@@ -1,0 +1,12 @@
+CLASS net/minecraft/client/gui/screens/options/AccessibilityOptionsScreen
+	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;Lnet/minecraft/client/Options;)V
+		ARG 1 lastScreen
+		ARG 2 options
+	METHOD lambda$addFooter$3 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$addOptions$0 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$addOptions$1 (Lnet/minecraft/client/OptionInstance;Lnet/minecraft/client/OptionInstance;)Z
+		ARG 1 instance
+	METHOD options (Lnet/minecraft/client/Options;)[Lnet/minecraft/client/OptionInstance;
+		ARG 0 options

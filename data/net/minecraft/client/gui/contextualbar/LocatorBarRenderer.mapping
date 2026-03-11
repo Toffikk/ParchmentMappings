@@ -1,0 +1,13 @@
+CLASS net/minecraft/client/gui/contextualbar/LocatorBarRenderer
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD lambda$render$0 (Lnet/minecraft/client/DeltaTracker;Lnet/minecraft/world/TickRateManager;Lnet/minecraft/world/entity/Entity;)F
+		ARG 2 entity
+	METHOD lambda$render$1 (Lnet/minecraft/world/entity/Entity;Ljava/util/UUID;)Ljava/lang/Boolean;
+		ARG 1 uuid
+	METHOD lambda$render$2 (Ljava/util/UUID;)Ljava/lang/Integer;
+		ARG 0 uuid
+	METHOD lambda$render$3 (Ljava/lang/String;)Ljava/lang/Integer;
+		ARG 0 name
+	METHOD lambda$render$5 (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/waypoints/PartialTickSupplier;Lnet/minecraft/client/gui/GuiGraphics;ILnet/minecraft/world/waypoints/TrackedWaypoint;)V
+		ARG 6 waypoint

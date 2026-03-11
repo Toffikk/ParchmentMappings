@@ -1,0 +1,6 @@
+CLASS net/minecraft/client/renderer/debug/GoalSelectorDebugRenderer
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD lambda$emitGizmos$0 (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/util/debug/DebugGoalInfo;)V
+		ARG 1 entity
+		ARG 2 goalInfo

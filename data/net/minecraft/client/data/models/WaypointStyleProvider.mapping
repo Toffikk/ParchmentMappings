@@ -1,0 +1,8 @@
+CLASS net/minecraft/client/data/models/WaypointStyleProvider
+	METHOD <init> (Lnet/minecraft/data/PackOutput;)V
+		ARG 1 output
+	METHOD bootstrap (Ljava/util/function/BiConsumer;)V
+		ARG 0 consumer
+	METHOD lambda$run$0 (Ljava/util/Map;Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/client/resources/WaypointStyle;)V
+		ARG 1 id
+		ARG 2 asset

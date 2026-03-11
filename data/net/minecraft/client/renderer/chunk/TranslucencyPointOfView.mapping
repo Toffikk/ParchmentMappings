@@ -1,0 +1,12 @@
+CLASS net/minecraft/client/renderer/chunk/TranslucencyPointOfView
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 other
+	METHOD getCoordinate (DI)I
+		ARG 0 cameraCoordinate
+		ARG 2 section
+	METHOD of (Lnet/minecraft/world/phys/Vec3;J)Lnet/minecraft/client/renderer/chunk/TranslucencyPointOfView;
+		ARG 0 cameraPos
+		ARG 1 sectionNode
+	METHOD set (Lnet/minecraft/world/phys/Vec3;J)Lnet/minecraft/client/renderer/chunk/TranslucencyPointOfView;
+		ARG 1 cameraPos
+		ARG 2 sectionPos

@@ -1,0 +1,17 @@
+CLASS net/minecraft/client/renderer/debug/OctreeDebugRenderer
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD getColorComponent (JF)F
+		ARG 0 size
+		ARG 2 multiplier
+	METHOD lambda$emitGizmos$0 (Lorg/apache/commons/lang3/mutable/MutableInt;Lnet/minecraft/client/renderer/Octree$Node;ZIZ)V
+		ARG 2 node
+		ARG 3 fullyVisible
+		ARG 4 depth
+		ARG 5 isClose
+	METHOD renderNode (Lnet/minecraft/client/renderer/Octree$Node;IZLorg/apache/commons/lang3/mutable/MutableInt;Z)V
+		ARG 1 node
+		ARG 2 depth
+		ARG 3 fullyVisible
+		ARG 4 count
+		ARG 5 isClose

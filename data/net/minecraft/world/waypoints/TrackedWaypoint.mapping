@@ -1,0 +1,4 @@
+CLASS net/minecraft/world/waypoints/TrackedWaypoint
+	CLASS Projector
+		METHOD projectPointToScreen (Lnet/minecraft/world/phys/Vec3;)Lnet/minecraft/world/phys/Vec3;
+			ARG 1 point

@@ -1,0 +1,22 @@
+CLASS net/minecraft/client/quickplay/QuickPlayLog
+	METHOD <init> (Ljava/lang/String;)V
+		ARG 1 quickPlayPath
+	METHOD lambda$log$0 (Lcom/google/gson/JsonElement;)V
+		ARG 1 json
+	METHOD log (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD of (Ljava/lang/String;)Lnet/minecraft/client/quickplay/QuickPlayLog;
+		ARG 0 path
+	METHOD setWorldData (Lnet/minecraft/client/quickplay/QuickPlayLog$Type;Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 type
+		ARG 2 id
+		ARG 3 name
+	CLASS QuickPlayEntry
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+	CLASS QuickPlayWorld
+		METHOD lambda$static$0 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 i
+	CLASS Type
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+			ARG 3 name

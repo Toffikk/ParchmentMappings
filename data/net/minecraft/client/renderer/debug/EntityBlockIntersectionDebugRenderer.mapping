@@ -1,0 +1,4 @@
+CLASS net/minecraft/client/renderer/debug/EntityBlockIntersectionDebugRenderer
+	METHOD lambda$emitGizmos$0 (Lnet/minecraft/core/BlockPos;Lnet/minecraft/util/debug/DebugEntityBlockIntersection;)V
+		ARG 0 pos
+		ARG 1 type

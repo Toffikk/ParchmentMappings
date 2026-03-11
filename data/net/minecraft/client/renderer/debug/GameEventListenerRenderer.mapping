@@ -1,0 +1,27 @@
+CLASS net/minecraft/client/renderer/debug/GameEventListenerRenderer
+	METHOD forEachListener (Lnet/minecraft/util/debug/DebugValueAccess;Lnet/minecraft/client/renderer/debug/GameEventListenerRenderer$ListenerVisitor;)V
+		ARG 1 debugValues
+		ARG 2 visitor
+	METHOD lambda$emitGizmos$2 (Lnet/minecraft/world/phys/Vec3;I)V
+		ARG 0 origin
+		ARG 1 radius
+	METHOD lambda$emitGizmos$3 (Lnet/minecraft/world/phys/Vec3;I)V
+		ARG 0 origin
+		ARG 1 radius
+	METHOD lambda$emitGizmos$4 (Lnet/minecraft/world/phys/Vec3;I)V
+		ARG 0 origin
+		ARG 1 radius
+	METHOD lambda$emitGizmos$5 (Lnet/minecraft/util/debug/DebugGameEventInfo;II)V
+		ARG 0 event
+		ARG 1 remainingTicks
+		ARG 2 totalLifetime
+	METHOD lambda$forEachListener$0 (Lnet/minecraft/client/renderer/debug/GameEventListenerRenderer$ListenerVisitor;Lnet/minecraft/core/BlockPos;Lnet/minecraft/util/debug/DebugGameEventListenerInfo;)V
+		ARG 1 blockPos
+		ARG 2 listener
+	METHOD lambda$forEachListener$1 (Lnet/minecraft/client/renderer/debug/GameEventListenerRenderer$ListenerVisitor;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/util/debug/DebugGameEventListenerInfo;)V
+		ARG 1 entity
+		ARG 2 listener
+	CLASS ListenerVisitor
+		METHOD accept (Lnet/minecraft/world/phys/Vec3;I)V
+			ARG 1 origin
+			ARG 2 radius

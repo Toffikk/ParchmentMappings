@@ -1,0 +1,24 @@
+CLASS net/minecraft/client/sounds/MusicManager
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD canReplace (Lnet/minecraft/sounds/Music;Lnet/minecraft/client/resources/sounds/SoundInstance;)Z
+		ARG 0 music
+		ARG 1 currentMusic
+	METHOD fadePlaying (F)Z
+		ARG 1 volume
+	METHOD isPlayingMusic (Lnet/minecraft/sounds/Music;)Z
+		ARG 1 music
+	METHOD setMinutesBetweenSongs (Lnet/minecraft/client/sounds/MusicManager$MusicFrequency;)V
+		ARG 1 musicFrequency
+	METHOD startPlaying (Lnet/minecraft/sounds/Music;)V
+		ARG 1 music
+	METHOD stopPlaying (Lnet/minecraft/sounds/Music;)V
+		ARG 1 music
+	CLASS MusicFrequency
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;I)V
+			ARG 3 name
+			ARG 4 translationKey
+			ARG 5 maxFrequencyMinutes
+		METHOD getNextSongDelay (Lnet/minecraft/sounds/Music;Lnet/minecraft/util/RandomSource;)I
+			ARG 1 music
+			ARG 2 random

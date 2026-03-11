@@ -1,0 +1,17 @@
+CLASS net/minecraft/client/gui/screens/AccessibilityOnboardingScreen
+	METHOD <init> (Lnet/minecraft/client/Options;Ljava/lang/Runnable;)V
+		ARG 1 options
+		ARG 2 onClose
+	METHOD close (ZLjava/lang/Runnable;)V
+		ARG 1 onboardingFinished
+		ARG 2 runnable
+	METHOD closeAndSetScreen (Lnet/minecraft/client/gui/screens/Screen;)V
+		ARG 1 screen
+	METHOD lambda$init$0 (Lnet/minecraft/client/gui/layouts/LayoutSettings;)V
+		ARG 0 w
+	METHOD lambda$init$1 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$init$2 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$init$3 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button

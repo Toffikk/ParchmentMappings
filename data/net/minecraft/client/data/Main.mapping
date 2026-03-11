@@ -1,0 +1,6 @@
+CLASS net/minecraft/client/data/Main
+	METHOD addClientProviders (Lnet/minecraft/data/DataGenerator;Z)V
+		ARG 0 generator
+		ARG 1 client
+	METHOD main ([Ljava/lang/String;)V
+		ARG 0 args

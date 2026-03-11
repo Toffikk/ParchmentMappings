@@ -1,0 +1,36 @@
+CLASS net/minecraft/client/gui/screens/CreateFlatWorldScreen
+	METHOD <init> (Lnet/minecraft/client/gui/screens/worldselection/CreateWorldScreen;Ljava/util/function/Consumer;Lnet/minecraft/world/level/levelgen/flat/FlatLevelGeneratorSettings;)V
+		ARG 1 parent
+		ARG 2 applySettings
+		ARG 3 generator
+	METHOD lambda$init$0 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$init$1 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$init$2 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD lambda$init$3 (Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD setConfig (Lnet/minecraft/world/level/levelgen/flat/FlatLevelGeneratorSettings;)V
+		ARG 1 generator
+	CLASS DetailsList
+		METHOD deleteLayer (Lnet/minecraft/client/gui/screens/CreateFlatWorldScreen$DetailsList$LayerEntry;)V
+			ARG 1 selectedLayerEntry
+		CLASS HeaderEntry
+			METHOD <init> (Lnet/minecraft/client/gui/Font;)V
+				ARG 1 font
+		CLASS LayerEntry
+			METHOD <init> (Lnet/minecraft/client/gui/screens/CreateFlatWorldScreen$DetailsList;Lnet/minecraft/world/level/levelgen/flat/FlatLayerInfo;I)V
+				ARG 2 layerInfo
+				ARG 3 index
+			METHOD blitSlot (Lnet/minecraft/client/gui/GuiGraphics;IILnet/minecraft/world/item/ItemStack;)V
+				ARG 1 graphics
+				ARG 2 x
+				ARG 3 y
+				ARG 4 itemStack
+			METHOD blitSlotBg (Lnet/minecraft/client/gui/GuiGraphics;II)V
+				ARG 1 graphics
+				ARG 2 x
+				ARG 3 y
+			METHOD getDisplayItem (Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/item/ItemStack;
+				ARG 1 blockState

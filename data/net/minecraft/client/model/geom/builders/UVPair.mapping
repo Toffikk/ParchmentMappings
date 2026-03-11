@@ -1,0 +1,8 @@
+CLASS net/minecraft/client/model/geom/builders/UVPair
+	METHOD pack (FF)J
+		ARG 0 u
+		ARG 1 v
+	METHOD unpackU (J)F
+		ARG 0 packedUV
+	METHOD unpackV (J)F
+		ARG 0 packedUV
